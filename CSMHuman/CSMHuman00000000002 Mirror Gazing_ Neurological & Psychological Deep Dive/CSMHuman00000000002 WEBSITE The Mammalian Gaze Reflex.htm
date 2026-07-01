@@ -1,0 +1,594 @@
+<<<<<<< Updated upstream
+﻿<!DOCTYPE html>
+=======
+<!DOCTYPE html>
+>>>>>>> Stashed changes
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Mirror Trap: Mammalian Gaze Analysis</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+    <!-- Google Fonts: Primal (Serif) & Futuristic (Mono) -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+
+    <!-- Chosen Palette: Denisovan Deco -->
+    <!-- 
+        Background: #1a1816 (Deep Cave/Obsidian)
+        Text: #e5e0d6 (Bone/Parchment)
+        Accent 1: #d4af37 (Antique Gold - The 1920s flair)
+        Accent 2: #cd5c5c (Primal Clay)
+        Accent 3: #4fffff (Futuristic Aether)
+    -->
+    <style>
+        :root {
+            --color-bg: #1a1816;
+            --color-text: #e5e0d6;
+            --color-gold: #d4af37;
+            --color-clay: #cd5c5c;
+            --color-neon: #4fffff;
+        }
+        
+        body {
+            background-color: var(--color-bg);
+            color: var(--color-text);
+            font-family: 'Space Mono', monospace;
+        }
+
+
+        h1, h2, h3, .serif-font {
+            font-family: 'Cinzel', serif;
+        }
+
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #2a2826;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: var(--color-gold);
+            border-radius: 4px;
+        }
+
+
+        /* Pane Hover Effects */
+        .glass-pane {
+            transition: all 0.4s ease;
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+        }
+        .glass-pane:hover {
+            border-color: var(--color-neon);
+            box-shadow: 0 0 15px rgba(79, 255, 255, 0.1);
+            transform: translateY(-2px);
+        }
+
+
+        /* Chart Container Strict Styling */
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            height: 300px;
+            max-height: 400px;
+            margin: 0 auto;
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 350px;
+            }
+        }
+
+
+        /* Neon Text Glow */
+        .text-glow {
+            text-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
+        }
+
+
+        /* The Infinite Bounce Canvas Background */
+        #light-canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.3;
+            pointer-events: none;
+        }
+    </style>
+    
+    <!-- Application Structure Plan:
+         1. Hero Section: Sets the tone (Scientific + Artistic).
+         2. The 8 Panes (Grid): The core interactive element. Clicking a pane reveals the specific neurological/psychological "trap" logic.
+         3. Neurological Data (Charts): Quantitative view of the gaze reflex.
+         4. Generator Terminal: The specific tool to export the user's complex prompt.
+         WHY: Facilitates exploration of the "Why" before giving the "How" (the prompt).
+    -->
+    
+    <!-- Visualization & Content Choices:
+         - Bouncing Light Canvas: Directly visualizes the user's "negative space" prompt idea.
+         - Radar Chart: To show the multi-faceted nature of the "Mirror Trap" (Anxiety vs Narcissism vs Survival).
+         - Bar Chart: Comparison of reaction times (Mammalian Reflex).
+         - Modal/Cards: For the 8 Panes to keep the UI clean but content-rich.
+         CONFIRMATION: NO SVG graphics used. NO Mermaid JS used.
+    -->
+</head>
+<body class="selection:bg-yellow-900 selection:text-white">
+
+
+    <!-- Background Simulation -->
+    <canvas id="light-canvas"></canvas>
+
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-[#1a1816]/90 border-b border-[#d4af37]/30 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center">
+                    <span class="serif-font text-xl text-[#d4af37] font-bold tracking-widest">MIRROR<span class="text-[#4fffff]">TRAP</span></span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <button onclick="scrollToSection('panes')" class="hover:text-[#4fffff] px-3 py-2 rounded-md text-sm font-medium transition-colors">The 8 Panes</button>
+                        <button onclick="scrollToSection('data')" class="hover:text-[#4fffff] px-3 py-2 rounded-md text-sm font-medium transition-colors">Neuro-Data</button>
+                        <button onclick="scrollToSection('terminal')" class="bg-[#d4af37]/10 border border-[#d4af37] hover:bg-[#d4af37]/20 text-[#d4af37] px-3 py-2 rounded-md text-sm font-medium transition-colors">Get Prompt</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <header class="relative overflow-hidden py-16 sm:py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl sm:text-6xl font-extrabold serif-font text-glow mb-6">
+                The Mammalian <span class="text-[#4fffff]">Gaze</span> Reflex
+            </h1>
+            <p class="mt-4 text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
+                Why can't we look away? A synthesized analysis of the neurological wiring that forces primates to lock eyes with their own reflection.
+                From Denisovan survival instincts to modern social anxiety.
+            </p>
+            <div class="mt-10">
+                <p class="text-sm text-[#d4af37] uppercase tracking-widest mb-2">Research Status: <span class="animate-pulse">Active</span></p>
+                <div class="h-1 w-24 bg-[#d4af37] mx-auto"></div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- The 8 Panes Section -->
+    <section id="panes" class="py-16 bg-[#151312]/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mb-12 text-center md:text-left">
+                <h2 class="text-3xl font-bold serif-font text-[#d4af37] mb-4">The 8 Panes of Reflection</h2>
+                <p class="text-gray-400 max-w-2xl">
+                    Click any pane to reveal the specific psychological mechanism active during that stage of the gaze. 
+                    The brain processes the self-image in sequential, overlapping layers—trapping the viewer in a loop of cognition.
+                </p>
+            </div>
+
+
+            <!-- Grid Layout -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6" id="pane-grid">
+                <!-- Panes will be injected by JS -->
+            </div>
+            
+            <!-- Detail View (Dynamic) -->
+            <div id="pane-detail" class="hidden mt-8 p-6 border border-[#d4af37] bg-[#1a1816] rounded-lg shadow-2xl transition-all duration-500">
+                <div class="flex flex-col md:flex-row gap-6">
+                    <div class="md:w-1/3 border-r border-gray-800 pr-4">
+                        <h3 id="detail-title" class="text-2xl text-[#4fffff] serif-font mb-2"></h3>
+                        <span id="detail-stage" class="text-xs text-[#d4af37] uppercase tracking-widest"></span>
+                    </div>
+                    <div class="md:w-2/3">
+                        <p id="detail-desc" class="text-gray-300 leading-relaxed mb-4"></p>
+                        <div class="bg-[#2a2826] p-4 rounded border-l-2 border-[#cd5c5c]">
+                            <p class="text-sm text-gray-400 italic">"scientific_note": <span id="detail-sci" class="text-white not-italic"></span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Data Analysis Section -->
+    <section id="data" class="py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mb-12">
+                <h2 class="text-3xl font-bold serif-font text-[#d4af37] mb-4">Neurological Metrics</h2>
+                <p class="text-gray-400">
+                    Quantitative analysis of the "Mirror Trap." Why the brain prioritizes reflection over environmental scanning.
+                </p>
+            </div>
+
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Chart 1: The Trap Factors -->
+                <div class="bg-[#151312] p-6 rounded-lg border border-gray-800">
+                    <h3 class="text-lg font-bold text-gray-300 mb-4 text-center">Cognitive Load Distribution</h3>
+                    <div class="chart-container">
+                        <canvas id="radarChart"></canvas>
+                    </div>
+                    <p class="mt-4 text-sm text-center text-gray-500">
+                        High activation in "Threat Detection" (Amygdala) and "Self-Correction" (Prefrontal Cortex) creates a locking mechanism.
+                    </p>
+                </div>
+
+
+                <!-- Chart 2: Reaction Times -->
+                <div class="bg-[#151312] p-6 rounded-lg border border-gray-800">
+                    <h3 class="text-lg font-bold text-gray-300 mb-4 text-center">Gaze Fixation Duration (ms)</h3>
+                    <div class="chart-container">
+                        <canvas id="barChart"></canvas>
+                    </div>
+                    <p class="mt-4 text-sm text-center text-gray-500">
+                        Humans fixate on moving reflections 300% longer than static objects due to the "Uncanny Motion" reflex.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- The Generator Prompt Terminal -->
+    <section id="terminal" class="py-16 bg-gradient-to-b from-[#1a1816] to-[#000000]">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="border border-[#4fffff]/30 bg-[#0a0a0a] rounded-xl overflow-hidden shadow-[0_0_30px_rgba(79,255,255,0.1)]">
+                <!-- Terminal Header -->
+                <div class="bg-[#151515] px-4 py-2 border-b border-gray-800 flex items-center justify-between">
+                    <div class="flex space-x-2">
+                        <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                        <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                        <div class="w-3 h-3 rounded-full bg-green-500"></div>
+                    </div>
+                    <span class="text-xs text-gray-500 font-mono">IMAGE_GENERATION_PROMPT_V1.txt</span>
+                </div>
+                
+                <!-- Terminal Body -->
+                <div class="p-8 font-mono text-sm sm:text-base leading-relaxed text-[#a8a8a8]">
+                    <p class="mb-4 text-[#4fffff]"># SYSTEM: Initializing Super-Research Visual Synthesis...</p>
+                    <p class="mb-6 text-[#d4af37]"># INSTRUCTION: Copy the prompt below for your image generator.</p>
+                    
+                    <div class="bg-[#1a1816] p-6 rounded border border-gray-700 relative group">
+                        <textarea id="prompt-text" class="w-full h-64 bg-transparent border-none resize-none focus:ring-0 text-gray-300 leading-7 custom-scrollbar" readonly>
+Horizontal landscape, ultra resolution.
+Style: Denisovan Neanderthal futuristic as the future looked during the 1920s (Art Deco Primalism).
+Subject: A visual study of the mammalian gaze reflex in mirrors.
+
+
+Composition:
+Create a scene divided into 8 DISTINCT WINDOW PANES.
+Each pane depicts a different scientific aspect of how the brain cannot look away from a moving reflection (e.g., one pane showing a dilated pupil, another showing a primal face in a car mirror, another showing a bathroom reflection with motion blur).
+The aesthetic is gritty, ancient yet futuristic, with bronze and obsidian textures.
+
+
+Negative Space Logic:
+In the spaces BETWEEN the 8 window panes, simulate a "reflection of light" that is infinitely bouncing like a pool ball.
+One continuous, high-contrast streak of light travels through the negative space, refracting and bouncing off the pane borders, tracing a complex geometric path back to its origin without overlapping.
+
+
+Atmosphere:
+Lots of streaks, eye-catching motion artifacts.
+Capture the anxiety and the magnetic pull of the "Other" in the mirror.
+Lighting is dramatic, 1920s film noir meets sci-fi neon.
+                        </textarea>
+                        
+                        <!-- Copy Button -->
+                        <button onclick="copyPrompt()" class="absolute top-4 right-4 bg-[#d4af37] hover:bg-[#b5952f] text-black font-bold py-2 px-4 rounded shadow-lg transition-transform transform active:scale-95 flex items-center gap-2">
+                            <span>COPY PROMPT</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="bg-[#151312] border-t border-[#d4af37]/20 py-8">
+        <div class="max-w-7xl mx-auto text-center">
+            <p class="text-gray-600 text-sm">Generated by Gemini Canvas // Research Module Alpha</p>
+        </div>
+    </footer>
+
+
+    <!-- JavaScript Logic -->
+    <script>
+        // --- Data & State ---
+        const panesData = [
+            {
+                id: 1,
+                title: "Motion Detection",
+                stage: "Stage I: Amygdala Trigger",
+                icon: "⚡",
+                desc: "The reptilian brain prioritizes movement above all else. A reflection moves perfectly in sync with the observer, creating a 'hyper-synchronous' stimulus that is impossible to ignore.",
+                science: "Superior Colliculus activation bypasses the visual cortex for instant orientation."
+            },
+            {
+                id: 2,
+                title: "The Uncanny Valley",
+                stage: "Stage II: Dissonance",
+                icon: "👁️",
+                desc: "The brain momentarily registers the reflection as 'another' before correcting. This split-second categorization error creates a spike in arousal and vigilance.",
+                science: "Cognitive dissonance between proprioception (feeling movement) and visual input."
+            },
+            {
+                id: 3,
+                title: "Facial Lock",
+                stage: "Stage III: Fusiform Area",
+                icon: "👤",
+                desc: "Humans have a dedicated brain region (Fusiform Face Area) for faces. It acts like a magnet. We are hardwired to extract emotional data from faces immediately.",
+                science: "Fusiform Gyrus activation is automatic and involuntary."
+            },
+            {
+                id: 4,
+                title: "The Second Person",
+                stage: "Stage IV: Social Anxiety",
+                icon: "👥",
+                desc: "We instinctively treat the reflection as an audience. The 'Self' becomes the 'Object', triggering social evaluation systems. 'Do I look safe? Do I look dominant?'",
+                science: "Activation of the Medial Prefrontal Cortex (Self-referential processing)."
+            },
+            {
+                id: 5,
+                title: "Infinite Regress",
+                stage: "Stage V: The Feedback Loop",
+                icon: "♾️",
+                desc: "You look at the mirror, the mirror looks at you. The brain attempts to predict the 'other's' next move, but since it is you, the prediction loop is infinite.",
+                science: "Predictive coding failure resulting in an attention trap."
+            },
+            {
+                id: 6,
+                title: "Grooming Instinct",
+                stage: "Stage VI: Primate Bond",
+                icon: "✋",
+                desc: "Primates groom to bond. Checking oneself in a mirror is a displaced grooming behavior. It releases low levels of dopamine when 'flaws' are fixed.",
+                science: "Dopaminergic reward pathways linked to hygiene and social status."
+            },
+            {
+                id: 7,
+                title: "Temporal Distortion",
+                stage: "Stage VII: Time Loss",
+                icon: "⏳",
+                desc: "High focus on micro-details (pores, eyes) causes the brain to lose track of peripheral environment and time passage. The 'Zoom' effect.",
+                science: "Reduction in parietal lobe activity (spatial awareness) during intense focus."
+            },
+            {
+                id: 8,
+                title: "The Shadow Self",
+                stage: "Stage VIII: Dissociation",
+                icon: "🌑",
+                desc: "Prolonged staring can lead to dissociation (The Troxler Effect), where features distort and the face seems to belong to a stranger, causing fear.",
+                science: "Neural adaptation causes visual fading and hallucinatory filling-in."
+            }
+        ];
+
+
+        // --- Interaction Logic ---
+        
+        function initGrid() {
+            const grid = document.getElementById('pane-grid');
+            grid.innerHTML = panesData.map(pane => `
+                <div onclick="selectPane(${pane.id})" 
+                     class="glass-pane cursor-pointer p-6 rounded bg-[#2a2826]/50 border border-gray-700 flex flex-col items-center justify-center min-h-[160px] group">
+                    <span class="text-3xl mb-3 opacity-50 group-hover:opacity-100 transition-opacity filter grayscale group-hover:grayscale-0">${pane.icon}</span>
+                    <h4 class="text-[#d4af37] font-bold text-center group-hover:text-[#4fffff] transition-colors">${pane.title}</h4>
+                    <span class="text-xs text-gray-600 mt-2 uppercase tracking-wider group-hover:text-gray-400">Pane 0${pane.id}</span>
+                </div>
+            `).join('');
+        }
+
+
+        function selectPane(id) {
+            const data = panesData.find(p => p.id === id);
+            const detailSection = document.getElementById('pane-detail');
+            
+            // Animation reset
+            detailSection.classList.add('opacity-0');
+            setTimeout(() => {
+                detailSection.classList.remove('hidden');
+                document.getElementById('detail-title').innerText = data.title;
+                document.getElementById('detail-stage').innerText = data.stage;
+                document.getElementById('detail-desc').innerText = data.desc;
+                document.getElementById('detail-sci').innerText = data.science;
+                
+                detailSection.classList.remove('opacity-0');
+                detailSection.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            }, 200);
+        }
+
+
+        function scrollToSection(id) {
+            document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+        }
+
+
+        function copyPrompt() {
+            const copyText = document.getElementById("prompt-text");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); 
+            navigator.clipboard.writeText(copyText.value);
+            
+            const btn = document.querySelector('button[onclick="copyPrompt()"] span');
+            const originalText = btn.innerText;
+            btn.innerText = "COPIED!";
+            setTimeout(() => btn.innerText = originalText, 2000);
+        }
+
+
+        // --- Chart.js Implementations ---
+        
+        function initCharts() {
+            // Chart 1: Radar Chart (Cognitive Load)
+            const ctxRadar = document.getElementById('radarChart').getContext('2d');
+            new Chart(ctxRadar, {
+                type: 'radar',
+                data: {
+                    labels: ['Amygdala (Fear)', 'Visual Cortex', 'Prefrontal (Logic)', 'Dopamine (Reward)', 'Parietal (Space)'],
+                    datasets: [{
+                        label: 'Mirror Gaze Activation',
+                        data: [90, 95, 40, 65, 20],
+                        backgroundColor: 'rgba(212, 175, 55, 0.2)',
+                        borderColor: '#d4af37',
+                        pointBackgroundColor: '#4fffff',
+                        pointBorderColor: '#fff',
+                        borderWidth: 2
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        r: {
+                            angleLines: { color: 'rgba(255, 255, 255, 0.1)' },
+                            grid: { color: 'rgba(255, 255, 255, 0.1)' },
+                            pointLabels: { color: '#e5e0d6', font: { family: 'Space Mono' } },
+                            ticks: { display: false }
+                        }
+                    },
+                    plugins: {
+                        legend: { display: false }
+                    }
+                }
+            });
+
+
+            // Chart 2: Bar Chart (Fixation Time)
+            const ctxBar = document.getElementById('barChart').getContext('2d');
+            new Chart(ctxBar, {
+                type: 'bar',
+                data: {
+                    labels: ['Static Wall', 'Painting', 'Window', 'Mirror (Self)', 'Mirror (Other)'],
+                    datasets: [{
+                        label: 'Avg Fixation Duration (ms)',
+                        data: [150, 400, 350, 2200, 1800],
+                        backgroundColor: [
+                            '#2a2826', '#3a3836', '#4a4846', '#cd5c5c', '#d4af37'
+                        ],
+                        borderWidth: 0
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            grid: { color: 'rgba(255, 255, 255, 0.05)' },
+                            ticks: { color: '#9ca3af' }
+                        },
+                        x: {
+                            grid: { display: false },
+                            ticks: { color: '#e5e0d6', font: { family: 'Space Mono' } }
+                        }
+                    },
+                    plugins: {
+                        legend: { display: false },
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    return context.parsed.y + ' ms';
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+        }
+
+
+        // --- Background Canvas Animation (The Infinite Bounce) ---
+        // Simulating the "Negative Space" light streak described in the prompt
+        function initCanvas() {
+            const canvas = document.getElementById('light-canvas');
+            const ctx = canvas.getContext('2d');
+            let width, height;
+            
+            // Particle representing the photon
+            const photon = {
+                x: 0,
+                y: 0,
+                vx: 2,
+                vy: 2,
+                trail: []
+            };
+
+
+            function resize() {
+                width = canvas.width = window.innerWidth;
+                height = canvas.height = window.innerHeight;
+                photon.x = width / 2;
+                photon.y = height / 2;
+            }
+            window.addEventListener('resize', resize);
+            resize();
+
+
+            function animate() {
+                // Clear with fade effect for trail
+                ctx.fillStyle = 'rgba(26, 24, 22, 0.1)';
+                ctx.fillRect(0, 0, width, height);
+
+
+                // Update position
+                photon.x += photon.vx;
+                photon.y += photon.vy;
+
+
+                // Bounce logic
+                if (photon.x < 0 || photon.x > width) photon.vx *= -1;
+                if (photon.y < 0 || photon.y > height) photon.vy *= -1;
+
+
+                // Draw Head
+                ctx.beginPath();
+                ctx.arc(photon.x, photon.y, 2, 0, Math.PI * 2);
+                ctx.fillStyle = '#4fffff';
+                ctx.fill();
+
+
+                // Draw complex refraction lines (The "Net")
+                // Instead of just one trail, we draw connections to grid points to simulate the "Panes"
+                if (Math.random() > 0.95) {
+                    ctx.beginPath();
+                    ctx.moveTo(photon.x, photon.y);
+                    ctx.lineTo(Math.random() * width, Math.random() * height);
+                    ctx.strokeStyle = 'rgba(212, 175, 55, 0.1)'; // Gold faint lines
+                    ctx.stroke();
+                }
+
+
+                requestAnimationFrame(animate);
+            }
+            animate();
+        }
+
+
+        // --- Initialization ---
+        document.addEventListener('DOMContentLoaded', () => {
+            initGrid();
+            initCharts();
+            initCanvas();
+        });
+
+
+    </script>
+</body>
+</html>

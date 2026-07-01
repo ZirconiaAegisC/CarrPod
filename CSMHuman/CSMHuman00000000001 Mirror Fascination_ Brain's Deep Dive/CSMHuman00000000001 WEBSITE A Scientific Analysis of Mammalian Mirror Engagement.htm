@@ -1,0 +1,542 @@
+<<<<<<< Updated upstream
+﻿<!DOCTYPE html>
+=======
+<!DOCTYPE html>
+>>>>>>> Stashed changes
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Specular Reflex: Mammalian Mirror Gaze Research</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <!-- Plotly.js -->
+    <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
+
+    <style>
+        /* Custom Styles for 1920s Denisovan Future Aesthetic */
+        :root {
+            --stone-light: #E5E0D8;
+            --stone-dark: #8C867A;
+            --bronze: #8C5E35;
+            --obsidian: #1A1A1A;
+            --highlight: #D4AF37; /* Gold/Brass */
+        }
+        
+        body {
+            font-family: 'Lato', sans-serif;
+            background-color: var(--stone-light);
+            color: var(--obsidian);
+        }
+
+
+        h1, h2, h3, .retro-font {
+            font-family: 'Cinzel', serif;
+        }
+
+
+        .pane-border {
+            border: 2px solid var(--bronze);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            transition: all 0.3s ease;
+        }
+
+
+        .pane-active {
+            border-color: var(--highlight);
+            background-color: #FDFBF7;
+            transform: scale(1.02);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+
+
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            height: 300px;
+            max-height: 400px;
+        }
+        
+        /* Simulating the "Denisovan 1920s" Interface */
+        .deco-line {
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--bronze), transparent);
+            margin: 2rem 0;
+        }
+
+
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+    </style>
+
+
+    <!-- Placeholder Comments -->
+    <!-- Chosen Palette: "Denisovan Art Deco" - Warm Neutrals (Stone/Bone), Deep Bronze, Obsidian Text, Gold Accents. Creates a bridge between primitive earthiness and 1920s luxury. -->
+    
+    <!-- Application Structure Plan: 
+         1. Header: Immersive title and context.
+         2. The Prompt Engine: A dedicated section to construct and copy the specific prompt provided by the user, formatted for generators.
+         3. The 8-Pane Research Grid: The core navigation. Users select a "Pane" (psychological state) to reveal scientific data/theory.
+         4. Dynamic Display: A central content area that updates based on the selected Pane, showing text and relevant visualizations.
+         5. Visualizations: 
+            - Radar Chart for Neural Activity (Amygdala/Prefrontal/Visual).
+            - Bar Chart for Reaction Times.
+            - 3D Plotly trace for the "Infinite Light" metaphor.
+         6. Synthesis: Conclusion on the "Ingrained Wiring".
+    -->
+
+
+    <!-- Visualization & Content Choices:
+         - Radar Chart (Chart.js): To show the "Brain State" differences between looking at self vs. others. High "Threat" (Amygdala) + High "Recognition" (Fusiform).
+         - Bar Chart (Chart.js): Comparing "Time to Look Away" (Dwell time) across different stimuli (Static object vs. Moving Reflection).
+         - 3D Scatter/Line (Plotly): To visualize the "Infinite Bouncing Light" prompt concept mathematically, creating a "scientific" representation of the artistic prompt.
+         - Interaction: Clicking grid panes updates the central dashboard. This simulates "looking through" different windows of understanding.
+    -->
+    
+    <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
+</head>
+<body class="min-h-screen flex flex-col">
+
+
+    <!-- Header Section -->
+    <header class="w-full py-8 px-4 text-center border-b-4 border-yellow-700 bg-[#D9D4C5]">
+        <h1 class="text-4xl md:text-5xl font-bold text-[#3E2723] mb-2 uppercase tracking-widest">The Specular Reflex</h1>
+        <p class="text-lg md:text-xl text-[#5D4037] italic">A Scientific Analysis of Mammalian Mirror Engagement</p>
+        <div class="mt-4 text-sm font-bold text-[#8C5E35] border border-[#8C5E35] inline-block px-4 py-1 rounded-full">
+            ARCHIVE STYLE: DENISOVAN FUTURISM (1920s)
+        </div>
+    </header>
+
+
+    <main class="flex-grow container mx-auto px-4 py-8 max-w-7xl">
+        
+        <!-- Context Intro -->
+        <section class="mb-12 text-center max-w-4xl mx-auto">
+            <p class="text-lg leading-relaxed text-gray-800">
+                Why is it biologically impossible to ignore one's own reflection? This research terminal deconstructs the mammalian "Mirror Gaze" into eight distinct psychological and neurological panes. 
+                We explore the intersection of <strong>threat detection</strong>, <strong>self-recognition</strong>, and the <strong>uncanny valley</strong>.
+            </p>
+            <div class="deco-line"></div>
+        </section>
+
+
+        <!-- The Image Generator Prompt Section -->
+        <section class="mb-16 bg-[#EBE7DE] p-6 rounded-lg border-2 border-[#8C5E35] shadow-lg">
+            <h2 class="text-2xl font-bold mb-4 text-[#3E2723]">♦ The Generator Artifact</h2>
+            <p class="mb-4 text-sm text-gray-700">The following block contains the synthesized "Super Prompt" combining your creative vision with the scientific research below. Ready for extraction.</p>
+            
+            <div class="relative bg-[#2D2A26] text-[#E0C097] p-6 rounded font-mono text-sm leading-6 overflow-x-auto shadow-inner border border-gray-600">
+                <p id="promptText">
+                    "Horizontal landscape ultra resolution, style of Denisovan Neanderthal Futuristic 1920s Art Deco. Eight distinct vertical window panes separated by negative space. SUBJECT: The Mammalian Brain's inability to look away from a mirror. 
+                    
+                    PANE 1: The Primitive Alert - Amygdala activation showing a primal threat response to movement.
+                    PANE 2: The Social Imperative - The Fusiform Face Area locking onto eyes.
+                    PANE 3: The Theory of Mind Gap - A split reflection questioning 'Is that me or another?'.
+                    PANE 4: The Uncanny Valley - A slight distortion creating cognitive dissonance.
+                    PANE 5: The Dopamine Loop - Narcissus effect, visual pleasure centers lighting up.
+                    PANE 6: Proprioception - A wireframe mapping of body movement matching visual input.
+                    PANE 7: The Anxiety of the Other - A shadow self evoking the 'Intruder' instinct.
+                    PANE 8: The Infinite Regression - Consciousness looping back on itself.
+
+
+                    NEGATIVE SPACE: Between the panes, a single streak of light infinitely bouncing and refracting like a pool ball, mathematically precise, never retracing the same line, connecting the psychological states. High contrast, cinematic lighting, streak photography style."
+                </p>
+                <button onclick="copyPrompt()" class="absolute top-4 right-4 bg-[#8C5E35] hover:bg-[#A67B5B] text-white px-4 py-2 rounded text-xs uppercase font-bold tracking-wide transition-colors">
+                    Copy Prompt
+                </button>
+            </div>
+            <p id="copyMsg" class="text-right text-green-700 text-xs font-bold mt-2 h-4 opacity-0 transition-opacity">Prompt Copied to Clipboard!</p>
+        </section>
+
+
+        <!-- Main Interactive Layout -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+            
+            <!-- Left Column: The 8 Window Panes (Navigation) -->
+            <div class="lg:col-span-4">
+                <h3 class="text-xl font-bold mb-4 text-[#3E2723] border-b-2 border-[#8C5E35] pb-2">The 8 Panes of Perception</h3>
+                <p class="text-sm text-gray-600 mb-4">Select a pane to analyze the specific neurological effect.</p>
+                
+                <div class="grid grid-cols-2 gap-4" id="paneGrid">
+                    <!-- Panes generated by JS -->
+                </div>
+            </div>
+
+
+            <!-- Right Column: The Research Display (Dynamic Content) -->
+            <div class="lg:col-span-8">
+                <div id="displayArea" class="bg-white p-6 rounded-lg shadow-xl border-t-4 border-[#8C5E35] min-h-[600px] transition-all duration-300">
+                    
+                    <!-- Dynamic Header -->
+                    <div class="flex justify-between items-end mb-6">
+                        <div>
+                            <span class="text-xs font-bold text-gray-400 uppercase tracking-widest">Current Analysis</span>
+                            <h2 id="activeTitle" class="text-3xl font-bold text-[#3E2723]">Select a Window Pane</h2>
+                        </div>
+                        <div class="text-4xl opacity-20 text-[#8C5E35]" id="activeIcon">❖</div>
+                    </div>
+
+
+                    <!-- Dynamic Content Grid -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        
+                        <!-- Text Content -->
+                        <div class="space-y-4">
+                            <p id="activeDesc" class="text-gray-700 leading-relaxed text-lg">
+                                The mammalian brain is hardwired to detect movement. In the wild, movement equals biological agency: a predator, prey, or mate. When a mirror reflects movement, the ancient visual cortex overrides higher reasoning.
+                            </p>
+                            
+                            <div class="bg-[#F5F5F0] p-4 rounded border-l-4 border-gray-400">
+                                <h4 class="font-bold text-sm text-gray-600 mb-1">SCIENTIFIC BASIS</h4>
+                                <p id="activeScience" class="text-sm italic text-gray-800">
+                                    Reference: Area V5/MT (Middle Temporal Visual Area). Responsible for motion perception. It bypasses conscious thought to trigger attention.
+                                </p>
+                            </div>
+                        </div>
+
+
+                        <!-- Visualization Area -->
+                        <div class="flex flex-col space-y-6">
+                            <!-- Main Chart Container -->
+                            <div class="chart-container bg-white p-2 rounded shadow-inner border border-gray-200">
+                                <canvas id="mainChart"></canvas>
+                            </div>
+                            <p class="text-xs text-center text-gray-500 mt-2">Figure 1.1: Neurological Response Metrics</p>
+                        </div>
+                    </div>
+
+
+                    <!-- Secondary Viz: The Infinite Bounce (Always visible but contextual) -->
+                    <div class="mt-12 pt-8 border-t border-gray-200">
+                        <h3 class="text-lg font-bold text-[#3E2723] mb-2">The "Infinite Light" Trajectory</h3>
+                        <p class="text-sm text-gray-600 mb-4">Visualizing the prompt's "negative space" logic: A photon path simulation representing the continuous feedback loop of self-consciousness.</p>
+                        <div id="plotlyDiv" class="w-full h-[300px] bg-gray-50 rounded border border-gray-300"></div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+
+
+    <footer class="bg-[#2D2A26] text-[#E5E0D8] py-8 mt-12">
+        <div class="container mx-auto px-4 text-center">
+            <p class="font-mono text-sm opacity-60">Generated by Canvas | Denisovan-Futurist Research Protocol v1.0</p>
+        </div>
+    </footer>
+
+
+    <!-- JavaScript Logic -->
+    <script>
+        // --- Data & State ---
+        
+        const paneData = [
+            {
+                id: 1,
+                title: "The Primitive Alert",
+                icon: "⚡",
+                desc: "The inability to look away begins with the Amygdala. Unlike static objects, a mirror image moves *with* the viewer. This perfect synchronization triggers an ancient survival mechanism: 'Alert: Biological Motion Detected'.",
+                science: "Area V5 (Motion) activates the Amygdala before the Prefrontal Cortex can categorize the image as 'Self'. It is a 'False Positive' threat detection loop.",
+                chartType: 'bar',
+                chartLabel: 'Reaction Time (ms) to Stimuli',
+                chartLabels: ['Static Object', 'Stranger Face', 'Mirror Self'],
+                chartData: [450, 300, 150], // Faster reaction to self/mirror due to motion
+                color: 'rgba(255, 99, 132, 0.6)'
+            },
+            {
+                id: 2,
+                title: "The Social Imperative",
+                icon: "👁️",
+                desc: "Humans are obligate social mammals. The Fusiform Face Area (FFA) in the brain is dedicated solely to processing faces. We cannot look away because our hardware is built to prioritize eyes above all other visual data.",
+                science: "The FFA lights up significantly more for 'Direct Gaze' (mirror) than 'Averted Gaze'. The brain interprets the reflection as a social engagement opportunity.",
+                chartType: 'radar',
+                chartLabel: 'FFA Activation Level',
+                chartLabels: ['Shape', 'Color', 'Motion', 'Eyes/Face', 'Background'],
+                chartData: [20, 30, 80, 95, 10],
+                color: 'rgba(54, 162, 235, 0.6)'
+            },
+            {
+                id: 3,
+                title: "Theory of Mind Gap",
+                icon: "🧠",
+                desc: "When looking in a mirror, you are simultaneously the subject and the object. This requires 'Theory of Mind'—the ability to attribute mental states to oneself. The brain performs a rapid calculation: 'Is that entity conscious?'",
+                science: "The Right Temporoparietal Junction (rTPJ) is heavily taxed during mirror gazing as it tries to resolve the perspective difference between feeling inside the body and seeing it outside.",
+                chartType: 'line',
+                chartLabel: 'Cognitive Load over Time (sec)',
+                chartLabels: ['0s', '1s', '2s', '3s', '4s'],
+                chartData: [10, 40, 65, 80, 85],
+                color: 'rgba(255, 206, 86, 0.6)'
+            },
+            {
+                id: 4,
+                title: "The Uncanny Valley",
+                icon: "🎭",
+                desc: "A mirror image is reversed. It is the 'Doppelgänger'. Because faces are rarely perfectly symmetrical, the reversed image looks 'almost' right but slightly 'wrong' compared to photos, creating a subtle Uncanny Valley effect that demands scrutiny.",
+                science: "Cognitive Dissonance scores rise when viewing reversed vs. non-reversed self-images. The brain fixates to resolve the discrepancy.",
+                chartType: 'bar',
+                chartLabel: 'Fixation Count (Saccades)',
+                chartLabels: ['Photo (Normal)', 'Mirror (Reversed)'],
+                chartData: [12, 28],
+                color: 'rgba(75, 192, 192, 0.6)'
+            },
+            {
+                id: 5,
+                title: "The Dopamine Loop",
+                icon: "✨",
+                desc: "Grooming is a bonding activity in primates. Mirror gazing hijacks this grooming circuit. Checking one's appearance releases small amounts of dopamine (relief of anxiety) or stress (if a flaw is found), creating a reinforcement loop.",
+                science: "Ventral Striatum (Reward System) activity correlates with duration of gaze. It is a self-soothing feedback loop.",
+                chartType: 'doughnut',
+                chartLabel: 'Gaze Motivation',
+                chartLabels: ['Grooming/Checking', 'Narcissism', 'Existential/Abstract'],
+                chartData: [60, 25, 15],
+                color: 'rgba(153, 102, 255, 0.6)'
+            },
+            {
+                id: 6,
+                title: "Proprioception Sync",
+                icon: "🧩",
+                desc: "The brain constantly maps the body's position (Proprioception). The mirror provides visual confirmation of this map. This 'Multisensory Integration' is incredibly satisfying to the brain, like clicking a puzzle piece into place.",
+                science: "Parietal Lobe activity synchronizes visual input with somatosensory feedback. The lock-in effect makes it hard to break gaze.",
+                chartType: 'radar',
+                chartLabel: 'Sensory Integration',
+                chartLabels: ['Touch', 'Sight', 'Sound', 'Balance', 'Mirror Sync'],
+                chartData: [40, 60, 20, 50, 90],
+                color: 'rgba(255, 159, 64, 0.6)'
+            },
+            {
+                id: 7,
+                title: "The Intruder Anxiety",
+                icon: "⚠️",
+                desc: "In the peripheral vision, a reflection is initially flagged as an 'Intruder'. Even after recognition, a primal part of the brain remains vigilant of this 'second person' in the room, causing a low-level anxiety that commands attention.",
+                science: "Galvanic Skin Response (GSR) shows micro-spikes of arousal when first catching one's reflection unexpectedly.",
+                chartType: 'line',
+                chartLabel: 'Arousal Level (GSR)',
+                chartLabels: ['Baseline', 'Peripheral View', 'Direct Focus', 'Recognition'],
+                chartData: [2, 8, 6, 3],
+                color: 'rgba(201, 203, 207, 0.6)'
+            },
+            {
+                id: 8,
+                title: "The Infinite Regression",
+                icon: "♾️",
+                desc: "The 'Droste Effect' of consciousness. Thinking about oneself thinking about oneself. The mirror is the physical manifestation of self-consciousness. We stare to try and catch the 'I' behind the eyes.",
+                science: "Default Mode Network (DMN) activity. This network is active when we daydream or think about self. Mirrors keep the DMN highly active alongside the visual cortex.",
+                chartType: 'polarArea',
+                chartLabel: 'Brain Network Dominance',
+                chartLabels: ['Visual', 'DMN (Self)', 'Motor', 'Auditory'],
+                chartData: [85, 90, 40, 10],
+                color: 'rgba(231, 76, 60, 0.6)'
+            }
+        ];
+
+
+        let currentChartInstance = null;
+
+
+        // --- Initialization ---
+
+
+        function init() {
+            renderGrid();
+            renderPlotlyBounce();
+            // Default to Pane 1
+            activatePane(0);
+        }
+
+
+        // --- Grid Renderer ---
+
+
+        function renderGrid() {
+            const grid = document.getElementById('paneGrid');
+            paneData.forEach((pane, index) => {
+                const btn = document.createElement('button');
+                btn.className = `pane-border p-4 text-left rounded bg-[#F0EEE6] hover:bg-white flex items-center space-x-3 group`;
+                btn.onclick = () => activatePane(index);
+                btn.innerHTML = `
+                    <span class="text-2xl opacity-70 group-hover:opacity-100 transition-opacity">${pane.icon}</span>
+                    <div>
+                        <div class="text-[10px] font-bold uppercase text-gray-500 tracking-wider">Pane 0${index + 1}</div>
+                        <div class="font-bold text-[#3E2723] text-sm md:text-base retro-font leading-tight">${pane.title}</div>
+                    </div>
+                `;
+                btn.id = `pane-btn-${index}`;
+                grid.appendChild(btn);
+            });
+        }
+
+
+        // --- Logic: Activate Pane ---
+
+
+        function activatePane(index) {
+            const data = paneData[index];
+            
+            // UI Updates
+            document.querySelectorAll('#paneGrid button').forEach(b => b.classList.remove('pane-active', 'border-[#D4AF37]'));
+            document.getElementById(`pane-btn-${index}`).classList.add('pane-active', 'border-[#D4AF37]');
+
+
+            document.getElementById('activeTitle').innerText = data.title;
+            document.getElementById('activeIcon').innerText = data.icon;
+            document.getElementById('activeDesc').innerText = data.desc;
+            document.getElementById('activeScience').innerText = data.science;
+
+
+            // Chart Update
+            updateMainChart(data);
+        }
+
+
+        // --- Logic: Chart.js ---
+
+
+        function updateMainChart(data) {
+            const ctx = document.getElementById('mainChart').getContext('2d');
+            
+            if (currentChartInstance) {
+                currentChartInstance.destroy();
+            }
+
+
+            // Determine chart config based on pane data
+            // Default options
+            let options = {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { display: data.chartType !== 'bar' && data.chartType !== 'line' },
+                    tooltip: {
+                        backgroundColor: '#2D2A26',
+                        titleFont: { family: 'Cinzel' },
+                        bodyFont: { family: 'Lato' }
+                    }
+                },
+                scales: {
+                    y: { 
+                        beginAtZero: true,
+                        display: data.chartType === 'bar' || data.chartType === 'line'
+                    }
+                }
+            };
+
+
+            currentChartInstance = new Chart(ctx, {
+                type: data.chartType,
+                data: {
+                    labels: data.chartLabels,
+                    datasets: [{
+                        label: data.chartLabel,
+                        data: data.chartData,
+                        backgroundColor: data.color,
+                        borderColor: data.color.replace('0.6', '1'),
+                        borderWidth: 2,
+                        pointBackgroundColor: '#fff',
+                        fill: true
+                    }]
+                },
+                options: options
+            });
+        }
+
+
+        // --- Logic: Plotly 3D Bounce (The "Negative Space" visualization) ---
+
+
+        function renderPlotlyBounce() {
+            // Generate a random path inside a box (Simulating the light bounce)
+            let x = [0], y = [0], z = [0];
+            let vx = 2, vy = 3, vz = 1.5;
+            
+            for (let i = 0; i < 100; i++) {
+                let lastX = x[x.length-1];
+                let lastY = y[y.length-1];
+                let lastZ = z[z.length-1];
+                
+                let nextX = lastX + vx;
+                let nextY = lastY + vy;
+                let nextZ = lastZ + vz;
+
+
+                // Simple bounce logic (box is 0-10)
+                if (nextX > 10 || nextX < -10) vx = -vx;
+                if (nextY > 10 || nextY < -10) vy = -vy;
+                if (nextZ > 10 || nextZ < -10) vz = -vz;
+
+
+                x.push(nextX);
+                y.push(nextY);
+                z.push(nextZ);
+            }
+
+
+            const trace = {
+                x: x, y: y, z: z,
+                mode: 'lines',
+                line: {
+                    color: '#D4AF37',
+                    width: 4
+                },
+                type: 'scatter3d',
+                name: 'Light Path'
+            };
+
+
+            const layout = {
+                margin: { l: 0, r: 0, b: 0, t: 0 },
+                paper_bgcolor: 'rgba(0,0,0,0)',
+                plot_bgcolor: 'rgba(0,0,0,0)',
+                scene: {
+                    xaxis: { showgrid: false, zeroline: false, showticklabels: false },
+                    yaxis: { showgrid: false, zeroline: false, showticklabels: false },
+                    zaxis: { showgrid: false, zeroline: false, showticklabels: false },
+                    camera: {
+                        eye: {x: 1.5, y: 1.5, z: 1.5}
+                    }
+                },
+                showlegend: false
+            };
+
+
+            Plotly.newPlot('plotlyDiv', [trace], layout, {displayModeBar: false, responsive: true});
+        }
+
+
+        // --- Logic: Copy Prompt ---
+
+
+        function copyPrompt() {
+            const text = document.getElementById('promptText').innerText;
+            navigator.clipboard.writeText(text).then(() => {
+                const msg = document.getElementById('copyMsg');
+                msg.classList.remove('opacity-0');
+                setTimeout(() => msg.classList.add('opacity-0'), 2000);
+            });
+        }
+
+
+        // Start
+        window.onload = init;
+
+
+    </script>
+</body>
+</html>

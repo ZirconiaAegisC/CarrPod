@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSM V3 Super Compendium — Master Document (All 16 Topics)</title>
+  <style>
+    :root {
+      --bg-base: #0a0a14;
+      --bg-panel: #0f1523;
+      --border-color: #1e3a5f;
+      --text-main: #e2e8f0;
+      --text-muted: #cbd5e1;
+      --accent-blue: #38bdf8;
+      --accent-purple: #a78bfa;
+      --accent-gold: #fbbf24;
+      --link-hover-bg: rgba(56, 189, 248, 0.15);
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      background: var(--bg-base);
+      color: var(--text-main);
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      display: flex;
+    }
+
+    /* Sidebar Navigation */
+    .sidebar {
+      width: 320px;
+      height: 100vh;
+      background: var(--bg-panel);
+      border-right: 1px solid var(--border-color);
+      position: sticky;
+      top: 0;
+      overflow-y: auto;
+      padding: 25px;
+      box-sizing: border-box;
+    }
+
+    .sidebar h2 {
+      font-size: 18px;
+      color: var(--accent-blue);
+      margin-top: 0;
+      border-bottom: 2px solid var(--border-color);
+      padding-bottom: 10px;
+    }
+
+    .sidebar ol {
+      padding-left: 15px;
+      font-size: 14px;
+    }
+
+    .sidebar li {
+      margin: 10px 0;
+    }
+
+    .sidebar a {
+      color: var(--text-muted);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .sidebar a:hover {
+      color: var(--accent-blue);
+      text-decoration: underline;
+    }
+
+    /* Main Content Area */
+    .content {
+      flex: 1;
+      padding: 40px 60px;
+      max-width: 1200px;
+    }
+
+    h1 { font-size: 26px; color: var(--accent-blue); border-bottom: 2px solid var(--border-color); padding-bottom: 10px; }
+    h2 { font-size: 20px; color: var(--accent-purple); margin-top: 40px; border-bottom: 1px solid var(--border-color); padding-bottom: 6px; }
+    h3 { font-size: 17px; color: var(--accent-gold); margin-top: 25px; }
+    p, li { font-size: 15px; color: var(--text-muted); }
+    
+    a.pdf-link {
+      background: rgba(56,189,248,0.12);
+      border: 1px solid rgba(56,189,248,0.3);
+      border-radius: 4px;
+      padding: 3px 10px;
+      font-size: 13px;
+      margin-left: 6px;
+      color: #67e8f9;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+
+    a.pdf-link:hover {
+      background: var(--link-hover-bg);
+      color: #fff;
+    }
+
+    /* Auto-generated download button styling */
+    .download-btn {
+      text-decoration: none;
+      margin-left: 8px;
+      font-size: 16px;
+      display: inline-block;
+      transition: transform 0.2s ease-in-out;
+      cursor: pointer;
+    }
+
+    .download-btn:hover {
+      transform: translateY(-2px) scale(1.1);
+    }
+
+    ul { padding-left: 24px; }
+    li { margin: 6px 0; }
+    hr { border-color: var(--border-color); margin: 40px 0; }
+    
+    table { border-collapse: collapse; width: 100%; margin: 20px 0; background: rgba(30,58,95,0.1); }
+    td, th { border: 1px solid var(--border-color); padding: 10px 14px; text-align: left; font-size: 14px; }
+    th { background: rgba(30,58,95,0.5); color: var(--accent-blue); }
+    tr:hover { background: rgba(30,58,95,0.3); }
+
+    .back-to-top {
+      display: inline-block;
+      margin-top: 20px;
+      font-size: 13px;
+      color: var(--accent-blue);
+      text-decoration: none;
+    }
+    
+    .back-to-top:hover {
+      text-decoration: underline;
+    }
+
+    .author { color: #64748b; font-size: 13px; margin-top: 50px; border-top: 1px solid var(--border-color); padding-top: 14px; }
+  </style>
+</head>
+<body>
+
+<div class="sidebar">
+  <h2>Table of Contents</h2>
+  <ol>
+    <li><a href="#compendium-1">V3-01-Aegis-Home-Appliances</a></li>
+    <li><a href="#compendium-2">V3-02-Aegis-Home-Infrastructure</a></li>
+    <li><a href="#compendium-3">V3-03-Aegis-Embark-Vehicle-Interior</a></li>
+    <li><a href="#compendium-4">V3-04-Aegis-Special-Products</a></li>
+    <li><a href="#compendium-5">V3-05-Critical-Infrastructure</a></li>
+    <li><a href="#compendium-6">V3-06-Robotics-Mechatronics</a></li>
+    <li><a href="#compendium-7">V3-07-Foundational-Research-Materials</a></li>
+    <li><a href="#compendium-8">V3-08-Bridge-Resilience-Series</a></li>
+    <li><a href="#compendium-9">V3-09-Vessel-Maritime-Resilience</a></li>
+    <li><a href="#compendium-10">V3-10-CSMHuman-Frequency-Body</a></li>
+    <li><a href="#compendium-11">V3-11-Materials-Study-and-Cost-Analysis</a></li>
+    <li><a href="#compendium-12">V3-12-Aegis-Forge-and-Production</a></li>
+    <li><a href="#compendium-13">V3-13-Smart-Rope-and-Space-Launch</a></li>
+    <li><a href="#compendium-14">V3-14-Incoming-New-Documents</a></li>
+    <li><a href="#compendium-15">V3-15-Evacuation-Transport-Fuel</a></li>
+    <li><a href="#compendium-16">V3-16-Knott-and-Additional</a></li>
+  </ol>
+</div>
+
+<div class="content" id="top">
+  <h1>Carrington Storm Motors / Safe Pod Engineering Company</h1>
+  <h1 style="font-size:22px; margin-top:0; border:none;">V3 Super Compendium — Complete Master Document</h1>
+
+  <div id="compendium-1">
+    <hr>
+    <h1>V3-01-Aegis-Home-Appliances</h1>
+    <p><strong>Author:</strong> Brodsky-Orchestration | <strong>V3 Revision Date:</strong> June 2026</p>
+    <p><strong>Classification:</strong> CSM Fabrication and Research Master Document</p>
+    <p><strong>Scope:</strong> Consolidated V3 from 8 sub-groups | 13 original documents referenced</p>
+    
+    <h2>Document 1 of V3-01-Aegis-Home-Appliances — Table of Contents</h2>
+    <ul>
+      <li><strong>CSMFAB000000000003 <a class="pdf-link" href="../CSMFAB/CSMFAB03 Aegis Home Aerogel Thermal Breaks/CSMFAB000000000003 Aegis Home Aerogel Thermal Breaks V2.0.pdf">V2.0 PDF</a> Aegis Home_ Aerogel Thermal Breaks</strong></li>
+      <li><strong>CSMFAB000000000004 <a class="pdf-link" href="../CSMFAB/CSMFAB04 Aegis Home Stellar-Chill Refrigerator Design /CSMFAB000000000004 Aegis Home Stellar-Chill Refrigerator Design V2.0.pdf">V2.0 PDF</a> Aegis Home Stellar-Chill Refrigerator Design</strong></li>
+      <li><strong>CSMFAB000000000002 <a class="pdf-link" href="../CSMFAB/CSMFAB02 Aegis Home_ Ceramic Component Fabrication Plan/CSMFAB000000000002 Ancient Hearth ZrB2-Si3N4 Stove Burner Cost Analysis V2.0.pdf">V2.0 PDF</a> Aegis Home_ Ceramic Component Fabrication Plan</strong></li>
+      <li><strong>CSMFAB000000000008 <a class="pdf-link" href="../CSMFAB/CSMFAB08 Aegis Home Carrington Storm Safe Cookware/CSMFAB000000000008 Aegis Home Carrington Storm Safe Cookware V2.0.pdf">V2.0 PDF</a> Aegis Home_ Carrington Storm Safe Cookware</strong></li>
+      <li><strong>CSMFAB000000000005 <a class="pdf-link" href="../CSMFAB/CSMFAB05 Safe-Wave Microwave Carrington Resilience /CSMFAB000000000005 Safe-Wave Microwave Carrington Resilience V2.0.pdf">V2.0 PDF</a> Safe-Wave Microwave_ Carrington Resilience</strong></li>
+      <li><strong>CSMFAB000000000007 <a class="pdf-link" href="../CSMFAB/CSMFAB07 Aegis Home Carrington-Proof Oven Design /CSMFAB000000000007 Stone-Bake Geothermal Air Fryer Oven Cost Analysis V2.0.pdf">V2.0 PDF</a> Aegis Home_ Carrington-Proof Oven Design</strong></li>
+      <li><strong>CSMFAB000000000006 <a class="pdf-link" href="../CSMFAB/CSMFAB06 Aegis Home Inflatable Ceramic Water Heater/CSMFAB000000000006 Inflatable Ceramic Water Heater (CBPC) Cost Analysis V2.0.pdf">V2.0 PDF</a> Aegis Home_ Inflatable Ceramic Water Heater</strong></li>
+    </ul>
+
+    <h3>Key Engineering Parameters (Aggregated)</h3>
+    <table>
+      <tr><th>Property</th><th>V2.0 Specification</th><th>CSMFAB Reference</th></tr>
+      <tr><td>Structural ceramic</td><td>ZrB2-SiC flash sintered 1800degC</td><td>CSMFAB000000000001 <a class="pdf-link" href="../CSMFAB/CSMFAB01 Aegis-C Composite Shielding Design/CSMFAB000000000001 Aegis-C Composite Shielding Design V2.0.pdf">V2.0 PDF</a></td></tr>
+      <tr><td>Thermal break</td><td>Polyimide-silica aerogel lambda=0.010 W/m·K</td><td>CSMFAB000000000003</td></tr>
+      <tr><td>EMI/FSS shielding</td><td>MXene Ti3C2Tx SE=92 dB</td><td>Materials Study Part III</td></tr>
+      <tr><td>Structural composite</td><td>BFRP/Elium tensile 1100 MPa</td><td>CSMFAB000000000009 <a class="pdf-link" href="../CSMFAB/CSMFAB09 Aegis Home BFRP Rebar Fabrication Plan/CSMFAB000000000009 BFRP Rebar — Carrington-Immune Reinforcement Cost Analysis V2.0.pdf">V2.0 PDF</a></td></tr>
+    </table>
+    <a href="#top" class="back-to-top">↑ Back to Table of Contents</a>
+  </div>
+
+  <div id="compendium-2">
+    <hr>
+    <h1>V3-02-Aegis-Home-Infrastructure</h1>
+    <ul>
+      <li><strong>CSMFAB000000000019 <a class="pdf-link" href="../CSMFAB/CSMFAB019 Aegis Home Stealth-Lift Fabrication Proposal/CSMFAB000000000019 Stealth-Lift BFRP Industrial Forklift Cost Analysis V2.0.pdf">V2.0 PDF</a> Aegis Home Stealth-Lift Fabrication Proposal</strong></li>
+      <li><strong>CSMPARK000000001 <a class="pdf-link" href="../CSMFAB/CSMPARK01 Knott's Berry Farm Dielectric Refabrication/CSMPARK000000001 Rebuilding Knotts Berry Farm Safely V2.0.pdf">V2.0 PDF</a> Rebuilding Knott's Berry Farm Safely</strong></li>
+      <li><strong>CSMFAB000000000016 <a class="pdf-link" href="../CSMFAB/CSMFAB016 Aegis Home_ Non-Conductive Door Hardware/CSMFAB000000000016 Aegis Home Non-Conductive Door Hardware V2.0.pdf">V2.0 PDF</a> Aegis Home_ Non-Conductive Door Hardware</strong></li>
+      <li><strong>CSMFAB000000000010 <a class="pdf-link" href="../CSMFAB/CSMFAB010 Aegis Home_ Conductive-Proof Building Materials/CSMFAB000000000010 Aegis Home Conductive-Proof Building Materials V2.0.pdf">V2.0 PDF</a> Aegis Home_ Conductive-Proof Building Materials</strong></li>
+      <li><strong>CSMFAB000000000015 <a class="pdf-link" href="../CSMFAB/CSMFAB015 Aegis Home Conductive-Proof Tool Design/CSMFAB000000000015 Ceramic & PEEK Hand Tool Set Cost Analysis V2.0.pdf">V2.0 PDF</a> Aegis Home Conductive-Proof Tool Design</strong></li>
+      <li><strong>CSMFAB000000000020 <a class="pdf-link" href="../CSMFAB/CSMFAB020 Aegis Home_ Non-Conductive Motor Design/CSMFAB000000000020 Non-Conductive Piezoelectric Motor Cost Analysis V2.0.pdf">V2.0 PDF</a> Aegis Home_ Non-Conductive Motor Design</strong></li>
+      <li><strong>CSMFAB000000000017 <a class="pdf-link" href="../CSMFAB/CSMFAB017 Aegis Home_ Dielectric Rope Fabrication/CSMFAB000000000017 Aegis Home Dielectric Rope Fabrication V2.0.pdf">V2.0 PDF</a> Aegis Home_ Dielectric Rope Fabrication</strong></li>
+      <li><strong>CSMFAB000000000018 <a class="pdf-link" href="../CSMFAB/CSMFAB018 Aegis Home Conductive-Proof Spray Cans/CSMFAB000000000018 Non-Conductive PEN Spray Can Cost Analysis V2.0.pdf">V2.0 PDF</a> Aegis Home Conductive-Proof Spray Cans</strong></li>
+      <li><strong>CSMFAB000000000012 <a class="pdf-link" href="../CSMFAB/CSMFAB012 Aegis Home_ Conductive-Safe Pipe Design/CSMFAB000000000012 Aegis Home Conductive-Safe Pipe Design V2.0.pdf">V2.0 PDF</a> Aegis Home_ Conductive-Safe Pipe Design</strong></li>
+      <li><strong>CSMFAB000000000001 <a class="pdf-link" href="../CSMFAB/CSMFAB01 Aegis-C Composite Shielding Design/CSMFAB000000000001 Aegis-C Composite Shielding Design V2.0.pdf">V2.0 PDF</a> Aegis-C Composite Shielding Design</strong></li>
+      <li><strong>CSMFAB000000000011 <a class="pdf-link" href="../CSMFAB/CSMFAB011 Aegis Home Carrington Storm Protection Fabrication /CSMFAB000000000011 Aegis Home Carrington Storm Protection Fabrication V2.0.pdf">V2.0 PDF</a> Aegis Home_ Carrington Storm Protection Fabrication</strong></li>
+      <li><strong>CSMFAB000000000014 <a class="pdf-link" href="../CSMFAB/CSMFAB014 Aegis Home_ Safe Stove Ventilation Design/CSMFAB000000000014 Safe Stove BFRP Range Hood Cost Analysis V2.0.pdf">V2.0 PDF</a> Aegis Home_ Safe Stove Ventilation Design</strong></li>
+      <li><strong>CSMFAB000000000021 <a class="pdf-link" href="../CSMFAB/CSMFAB021 Aegis Home EMF Detector Design/CSMFAB000000000021 Passive EMF Detector — Chromatic Field Monitor Cost Analysis V2.0.pdf">V2.0 PDF</a> Aegis Home EMF Detector Design</strong></li>
+      <li><strong>CSMFAB000000000009 <a class="pdf-link" href="../CSMFAB/CSMFAB09 Aegis Home BFRP Rebar Fabrication Plan/CSMFAB000000000009 BFRP Rebar — Carrington-Immune Reinforcement Cost Analysis V2.0.pdf">V2.0 PDF</a> Aegis Home_ BFRP Rebar Fabrication Plan</strong></li>
+      <li><strong>CSMFAB000000000013 <a class="pdf-link" href="../CSMFAB/CSMFAB013 Aegis Home_ Inductive-Proof Wiring Design/CSMFAB000000000013 Aegis Home Inductive-Proof Wiring Design V2.0.pdf">V2.0 PDF</a> Aegis Home_ Inductive-Proof Wiring Design</strong></li>
+    </ul>
+    <a href="#top" class="back-to-top">↑ Back to Table of Contents</a>
+  </div>
+
+  <div id="compendium-3">
+    <hr>
+    <h1>V3-03-Aegis-Embark-Vehicle-Interior</h1>
+    <ul>
+      <li><strong>CSMFAB000000000028 <a class="pdf-link" href="../CSMFAB/CSMFAB028 Cloud-Nest Aerogel Child Seat Base /CSMFAB000000000028 Cloud-Nest Aerogel Child Seat Base Cost Analysis V2.0.pdf">V2.0 PDF</a> Aegis Embark Product Fabrication Plan</strong></li>
+      <li><strong>CSMFAB000000000032 <a class="pdf-link" href="../CSMFAB/CSMFAB032 Silence-Block LRAM Door Insert Set/CSMFAB000000000032 Aegis Embark_ Silence-Block Design V2.0.pdf">V2.0 PDF</a> Aegis Embark_ Silence-Block Design</strong></li>
+      <li><strong>CSMFAB000000000031 <a class="pdf-link" href="../CSMFAB/CSMFAB031 Mag-Float Diamagnetic Seat Rail /CSMFAB000000000031 Mag-Float Diamagnetic Seat Rail Cost Analysis V2.0.pdf">V2.0 PDF</a> Aegis Embark_ Vibration Mitigation Design</strong></li>
+      <li><strong>CSMFAB000000000029 <a class="pdf-link" href="../CSMFAB/CSMFAB029 Neural-Grip MRE Steering Wheel Wrap/CSMFAB000000000029 Neural-Grip MRE Steering Wheel Wrap Cost Analysis V2.0.pdf">V2.0 PDF</a> Aegis Embark_ Neural-Grip Innovation</strong></li>
+      <li><strong>CSMFAB000000000036 <a class="pdf-link" href="../CSMFAB/CSMFAB036 Ulnar-Rest CLD Armrest/CSMFAB000000000036 Ulnar-Rest CLD Armrest Cost Analysis V2.0.pdf">V2.0 PDF</a> Aegis Embark_ Vibration Mitigation Product</strong></li>
+      <li><strong>CSMFAB000000000035 <a class="pdf-link" href="../CSMFAB/CSMFAB035 Fluid-Damp Gear Shift Interface/CSMFAB000000000035 Fluid-Damp Gear Shift Interface Cost Analysis V2.0.pdf">V2.0 PDF</a> Aegis Embark_ Vibration Mitigation Product</strong></li>
+      <li><strong>CSMFAB000000000026 <a class="pdf-link" href="../CSMFAB/CSMFAB026 Aegis Embark_ Vibration Mitigation Product Design/CSMFAB000000000026 Aegis Embark_ Vibration Mitigation Product Design V2.0.pdf">V2.0 PDF</a> Aegis Embark_ Vibration Mitigation Product Design</strong></li>
+      <li><strong>CSMFAB000000000033 <a class="pdf-link" href="../CSMFAB/CSMFAB0033 Thorax-Calm STF Seatbelt Cover Set/CSMFAB000000000033 Thorax-Calm STF Seatbelt Cover Set Cost Analysis V2.0.pdf">V2.0 PDF</a> Aegis Embark_ Thorax-Calm Safety</strong></li>
+      <li><strong>CSMFAB000000000034 <a class="pdf-link" href="../CSMFAB/CSMFAB034 Stellar-Tint EV Window Film/CSMFAB000000000034 Aegis Embark_ Stellar-Tint Fabrication Plan V2.0.pdf">V2.0 PDF</a> Aegis Embark_ Stellar-Tint Fabrication Plan</strong></li>
+      <li><strong>CSMFAB000000000030 <a class="pdf-link" href="../CSMFAB/CSMFAB030 Cervical-Guard Viscoelastic Headrest /CSMFAB000000000030 Aegis Embark_ Vibration & Storm Protection V2.0.pdf">V2.0 PDF</a> Aegis Embark_ Vibration & Storm Protection</strong></li>
+      <li><strong>CSMFAB000000000038 <a class="pdf-link" href="../CSMFAB/CSMFAB038 Way-Finder Haptic Insoles/CSMFAB000000000038 Aegis Embark_ Haptic Insoles Fabrication V2.0.pdf">V2.0 PDF</a> Aegis Embark_ Haptic Insoles Fabrication</strong></li>
+      <li><strong>CSMFAB000000000037 <a class="pdf-link" href="../CSMFAB/CSMFAB037 Pet-Safe Infrasound Cargo Liner/CSMFAB000000000037 Pet-Safe Infrasound Cargo Liner Cost Analysis V2.0.pdf">V2.0 PDF</a> Aegis Embark_ Pet-Safe Vibration Liner</strong></li>
+      <li><strong>CSMFAB000000000024 <a class="pdf-link" href="../CSMFAB/CSMFAB024 _Aegis Embark_ Footwear Design Brief/CSMFAB000000000024 Grounding-Sole Footwear Cost Analysis V2.0.pdf">V2.0 PDF</a> _Aegis Embark_ Footwear Design Brief</strong></li>
+    </ul>
+    <a href="#top" class="back-to-top">↑ Back to Table of Contents</a>
+  </div>
+
+  <div id="compendium-4">
+    <hr>
+    <h1>V3-04-Aegis-Special-Products</h1>
+    <ul>
+      <li><strong>CSMFAB000000000104 <a class="pdf-link" href="../CSMFAB/CSMFAB0104 Aegis Fencing for Carrington Event/CSMFAB000000000104 Aegis Fencing for Carrington Event V2.0.pdf">V2.0 PDF</a> Aegis Fencing for Carrington Event</strong></li>
+      <li><strong>CSMFAB000000000102 <a class="pdf-link" href="../CSMFAB/CSMFAB0102 Drone Redesign_ Archimedes Screw Propulsion/CSMFAB000000000102 Drone Redesign_ Archimedes Screw Propulsion V2.0.pdf">V2.0 PDF</a> Drone Redesign_ Archimedes Screw Propulsion</strong></li>
+      <li><strong>CSMFAB000000000105 <a class="pdf-link" href="../CSMFAB/CSMFAB0105 Aegis Power Line Monopole/CSMFAB000000000105 Aegis Power Line Fabrication Document V2.0.pdf">V2.0 PDF</a> Carrington Event Engine Resilience Proposal</strong></li>
+      <li><strong>CSMFAB000000000103 <a class="pdf-link" href="../CSMFAB/CSMFAB0103 Shipping Container Safe Pod Redesign/CSMFAB000000000103 Shipping Container Safe Pod Redesign V2.0.pdf">V2.0 PDF</a> Shipping Container Safe Pod Redesign</strong></li>
+      <li><strong>CSMFAB000000000050 <a class="pdf-link" href="../CSMFAB/CSMFAB050 Aegis-Ascension Drone Backpack/CSMFAB000000000050 Aegis-Ascension Drone Backpack Cost Analysis V2.0.pdf">V2.0 PDF</a> Drone Backpacks For Tsunami Evacuation</strong></li>
+      <li><strong>CSMFAB000000000100 <a class="pdf-link" href="../CSMFAB/CSMFAB0100 A-10 Civilian Redesign Research /CSMFAB000000000100 A-10 Civilian Redesign Research V2.0.pdf">V2.0 PDF</a> A-10 Civilian Redesign Research</strong></li>
+      <li><strong>CSMFAB000000000101 <a class="pdf-link" href="../CSMFAB/CSMFAB0101 A-10 Civilian Redesign for Immunity/CSMFAB000000000101 A-10 Civilian Redesign for Immunity V2.0.pdf">V2.0 PDF</a> A-10 Civilian Redesign for Immunity</strong></li>
+    </ul>
+    <a href="#top" class="back-to-top">↑ Back to Table of Contents</a>
+  </div>
+
+  <div id="compendium-5">
+    <hr>
+    <h1>V3-05-Critical-Infrastructure</h1>
+    <ul>
+      <li><strong>CSMFAB000000000105 <a class="pdf-link" href="../CSMFAB/CSMFAB0105 Aegis Power Line Monopole/CSMFAB000000000105 Aegis Power Line Fabrication Document V2.0.pdf">V2.0 PDF</a> Aegis Power Line Fabrication Document</strong></li>
+      <li><strong>CSMFAB000000000106 <a class="pdf-link" href="../CSMFAB/CSMFAB0106 Aegis GFRP Pipeline System/CSMFAB000000000106 Aegis GFRP Pipeline System Cost Analysis V2.0.pdf">V2.0 PDF</a> Aegis Pipeline Redesign for Telluric Events</strong></li>
+      <li><strong>CSMFAB000000000107 <a class="pdf-link" href="../CSMFAB/CSMFAB0107 Aegis Geopolymer Concrete/CSMFAB000000000107 Aegis Concrete Formulation and Pumpability V2.0.pdf">V2.0 PDF</a> Aegis Concrete Formulation and Pumpability</strong></li>
+    </ul>
+    <a href="#top" class="back-to-top">↑ Back to Table of Contents</a>
+  </div>
+
+  <div id="compendium-6">
+    <hr>
+    <h1>V3-06-Robotics-Mechatronics</h1>
+    <ul>
+      <li><strong>CSMMECH000000003 <a class="pdf-link" href="../CSMFAB/CSMMECH03 Phantom Menehune Zookeeper Robot/CSMMECH000000003 Phantom Menahony Zookeeper Proof of Concept V2.0.pdf">V2.0 PDF</a> Phantom Menahony Zookeeper Proof of Concept</strong></li>
+      <li><strong>CSMMECH000000002 <a class="pdf-link" href="../CSMFAB/CSMMECH02 Robot Self-Destruct Chip System/CSMMECH000000002 Robot Self-Destruction Chip Fabrication V2.0.pdf">V2.0 PDF</a> Robot Self-Destruction Chip Fabrication</strong></li>
+      <li><strong>CSMMECH000000001 <a class="pdf-link" href="../CSMFAB/CSMMECH01 Phantom MK-1 Aegis Hardened Robot/CSMMECH000000001 Phantom MK-1 Aegis Hardened Robot Cost Analysis V2.0.pdf">V2.0 PDF</a> Robot Resilience Proposal_ Aegis Integration</strong></li>
+    </ul>
+    <a href="#top" class="back-to-top">↑ Back to Table of Contents</a>
+  </div>
+
+  <div id="compendium-7">
+    <hr>
+    <h1>V3-07-Foundational-Research-Materials</h1>
+    <p>See CSMFAB Materials Study Parts I-VI for complete material citation database.</p>
+    <a href="#top" class="back-to-top">↑ Back to Table of Contents</a>
+  </div>
+
+  <div id="compendium-12">
+    <hr>
+    <h1>V3-12-Aegis-Forge-and-Production</h1>
+    <ul>
+      <li><strong>CSMFAB000000000109 <a class="pdf-link" href="../CSMFAB/Incoming/CSMFAB000000000109 Airborne Archimedes Screw Physics V2.0.pdf">V2.0 PDF</a> Aegis-Forge I Thermal Cascade Process Engineering</strong></li>
+    </ul>
+    <a href="#top" class="back-to-top">↑ Back to Table of Contents</a>
+  </div>
+
+  <div id="compendium-13">
+    <hr>
+    <h1>V3-13-Smart-Rope-and-Space-Launch</h1>
+    <ul>
+      <li><strong>CSMFAB000000000022 <a class="pdf-link" href="../CSMFAB/Incoming/CSMFAB000000000022 Smart Rope Actuator Design Specification V2.0.pdf">V2.0 PDF</a> Smart Rope Actuator Design Specification</strong></li>
+      <li><strong>CSMFAB000000000040 <a class="pdf-link" href="../CSMFAB/Incoming/CSMFAB000000000040 Smart Rope Actuator Design Specification V2.0.pdf">V2.0 PDF</a> Smart Rope Actuator Design Specification (Production)</strong></li>
+      <li><strong>CSMFAB000000000109 <a class="pdf-link" href="../CSMFAB/Incoming/CSMFAB000000000109 Airborne Archimedes Screw Physics V2.0.pdf">V2.0 PDF</a> Airborne Archimedes Screw Physics</strong></li>
+    </ul>
+    <a href="#top" class="back-to-top">↑ Back to Table of Contents</a>
+  </div>
+
+  <div id="compendium-14">
+    <hr>
+    <h1>V3-14-Incoming-New-Documents</h1>
+    <ul>
+      <li><strong>CSMFAB000000000022 <a class="pdf-link" href="../CSMFAB/Incoming/CSMFAB000000000022 Smart Rope Actuator Design Specification V2.0.pdf">V2.0 PDF</a> Smart Rope Actuator Design Specification</strong></li>
+      <li><strong>CSMFAB000000000040 <a class="pdf-link" href="../CSMFAB/Incoming/CSMFAB000000000040 Smart Rope Actuator Design Specification V2.0.pdf">V2.0 PDF</a> Smart Rope Actuator Design Specification</strong></li>
+      <li><strong>CSMFAB000000000109 <a class="pdf-link" href="../CSMFAB/Incoming/CSMFAB000000000109 Airborne Archimedes Screw Physics V2.0.pdf">V2.0 PDF</a> Airborne Archimedes Screw Physics</strong></li>
+      <li><strong>CSMMECH000000004 <a class="pdf-link" href="../CSMFAB/Incoming/CSMMECH000000004 Robot Redesign for Space Exploration V2.0.pdf">V2.0 PDF</a> Robot Redesign for Space Exploration</strong></li>
+      <li><strong>CSMPRO00000002 <a class="pdf-link" href="../CSMFAB/Incoming/CSMPRO00000002 Bridge Resilience Against Carrington Storms  V2.0.pdf">V2.0 PDF</a> Bridge Resilience Against Carrington Storms</strong></li>
+      <li><strong>CSMPRO00000003 <a class="pdf-link" href="../CSMFAB/Incoming/CSMPRO00000003 London Bridge Resilience Report Tailoring V2.0.pdf">V2.0 PDF</a> Bay Area Bridge Resilience Report Tailoring</strong></li>
+      <li><strong>CSMPRO00000004 <a class="pdf-link" href="../CSMFAB/Incoming/CSMPRO00000004 Pittsburgh Bridge Retrofit Proposal V2.0.pdf">V2.0 PDF</a> Pittsburgh Bridge Retrofit Proposal</strong></li>
+      <li><strong>CSMPRO00000005 <a class="pdf-link" href="../CSMFAB/Incoming/CSMPRO00000005 Seattle Tailoring Bridge Resilience Report for Seattle V2.0.pdf">V2.0 PDF</a> Seattle Tailoring Bridge Resilience Report for Seattle</strong></li>
+    </ul>
+    <a href="#top" class="back-to-top">↑ Back to Table of Contents</a>
+  </div>
+
+  <div id="compendium-16">
+    <hr>
+    <h1>V3-16-Knott-and-Additional</h1>
+    <ul>
+      <li><strong>CSMPARK000000001 <a class="pdf-link" href="../CSMFAB/CSMPARK01 Knott's Berry Farm Dielectric Refabrication/CSMPARK000000001 Rebuilding Knotts Berry Farm Safely V2.0.pdf">V2.0 PDF</a> Rebuilding Knotts Berry Farm Safely</strong></li>
+      <li><strong>CSMMECH000000004 <a class="pdf-link" href="../CSMFAB/Incoming/CSMMECH000000004 Robot Redesign for Space Exploration V2.0.pdf">V2.0 PDF</a> Robot Redesign for Space Exploration</strong></li>
+    </ul>
+    <a href="#top" class="back-to-top">↑ Back to Table of Contents</a>
+  </div>
+
+  <div class="author">
+    V3 Master Document — All 16 Compendiums | Brodsky-Orchestration | Carrington Storm Motors | June 2026<br>
+    Total: 16 compendiums covering the complete CSM fabrication and research portfolio.
+  </div>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    // This is the base GitHub directory path you provided
+    const githubRepoBase = "jsnb1976/Study/main/Carrington%20Storm%20Motors/%20Safe%20Pod%20Engineering%20Company";
+
+    // Find all the local PDF links in the document
+    const pdfLinks = document.querySelectorAll('.pdf-link');
+
+    pdfLinks.forEach(link => {
+      const originalPath = link.getAttribute('href');
+      
+      // Clean up the relative path (remove '../' and handle spaces)
+      let cleanPath = originalPath.replace(/^(\.\.\/)+/, '');
+      
+      // We encode the URI components so GitHub parses the spaces and folders correctly
+      const pathSegments = cleanPath.split('/');
+      const encodedPathSegments = pathSegments.map(segment => encodeURIComponent(segment));
+      const finalEncodedPath = encodedPathSegments.join('/');
+
+      // URL for VIEWING in the browser (GitHub UI)
+      const viewUrl = `https://github.com/${githubRepoBase.replace('main/', 'blob/main/')}/${finalEncodedPath}`;
+      
+      // URL for DIRECT DOWNLOAD (Raw GitHub Content)
+      const rawDownloadUrl = `https://raw.githubusercontent.com/${githubRepoBase}/${finalEncodedPath}`;
+
+      // 1. Update the original link to open the GitHub viewer in a new tab
+      link.setAttribute('href', viewUrl);
+      link.setAttribute('target', '_blank');
+      link.setAttribute('title', 'View Document on GitHub');
+      link.innerHTML = 'View PDF ↗';
+
+      // 2. Create the new Download Icon Button dynamically
+      const downloadBtn = document.createElement('a');
+      downloadBtn.href = rawDownloadUrl;
+      downloadBtn.className = 'download-btn';
+      downloadBtn.innerHTML = '📥'; 
+      downloadBtn.setAttribute('download', '');
+      downloadBtn.setAttribute('title', 'Direct Download');
+
+      // 3. Insert the download button directly after the View link
+      link.parentNode.insertBefore(downloadBtn, link.nextSibling);
+    });
+  });
+</script>
+
+</body>
+</html>
