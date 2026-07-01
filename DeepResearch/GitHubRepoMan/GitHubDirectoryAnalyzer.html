@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Directory Analyzer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 min-h-screen p-4 md:p-8">
+
+    <div class="max-w-4xl mx-auto bg-white p-6 md:p-8 rounded-xl shadow-lg">
+        
+        <h1 class="text-2xl md:text-3xl font-bold text-gray-800 mb-6 text-center">
+            GitHub Directory Analyzer
+        </h1>
+
+        <form id="repoForm" class="space-y-4">
+            <div>
+                <label for="owner" class="block text-sm font-medium text-gray-700 mb-1">Owner</label>
+                <input type="text" id="owner" name="owner" class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500" placeholder="e.g., facebook" required>
+            </div>
+            
+            <div>
+                <label for="repo" class="block text-sm font-medium text-gray-700 mb-1">Repo</label>
+                <input type="text" id="repo" name="repo" class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500" placeholder="e.g., react" required>
+            </div>
+            
+            <div>
+                <label for="path" class="block text-sm font-medium text-gray-700 mb-1">Path (optional)</label>
+                <input type="text" id="path" name="path" class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500" placeholder="e.g., packages/react-dom">
+            </div>
+            
+            <button type="submit" id="submitButton" class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors">
+                Analyze Directory
+            </button>
+        </form>
+
+        <div id="messageArea" class="mt-6 text-center text-sm font-medium"></div>
+
+        <div id="resultsContainer" class="hidden mt-8 w-full overflow-x-auto">
+            <table class="w-full border-collapse border border-gray-300 font-mono text-xs md:text-sm">
+                <tbody id="resultsBody">
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const form = document.getElementById('repoForm');
+            const submitButton = document.getElementById('submitButton');
+            const messageArea = document.getElementById('messageArea');
+            const resultsContainer = document.getElementById('resultsContainer');
+            const resultsBody = document.getElementById('resultsBody');
+
+            form.addEventListener('submit', async (e) => {
+                e.preventDefault();
+                
+                const owner = document.getElementById('owner').value.trim();
+                const repo = document.getElementById('repo').value.trim();
+                const path = document.getElementById('path').value.trim();
+
+                if (!owner || !repo) {
+                    showMessage('Owner and Repo fields are required.', 'error');
+                    return;
+                }
+
+                setLoading(true);
+                
+                const apiUrl = `https://api.github.com/repos/${owner}/${repo}/contents/${path}`;
+
+                try {
+                    const response = await fetch(apiUrl);
+                    
+                    if (!response.ok) {
+                        const errorData = await response.json();
+                        throw new Error(`Error ${response.status}: ${errorData.message || response.statusText}`);
+                    }
+                    
+                    const data = await response.json();
+                    
+                    if (Array.isArray(data)) {
+                        processData(data, owner, repo, path);
+                        showMessage('', 'success');
+                    } else if (data.type === 'file') {
+                        showMessage('The path points to a single file, not a directory. Please provide a path to a directory.', 'error');
+                        resultsContainer.classList.add('hidden');
+                    } else {
+                        showMessage('Received unexpected data from GitHub API.', 'error');
+                        resultsContainer.classList.add('hidden');
+                    }
+
+                } catch (error) {
+                    console.error('Fetch error:', error);
+                    showMessage(`Failed to fetch data: ${error.message}`, 'error');
+                    resultsContainer.classList.add('hidden');
+                } finally {
+                    setLoading(false);
+                }
+            });
+
+            function processData(data, owner, repo, path) {
+                const files = { lower: [], mixed: [], illegal: [] };
+                const dirs = { lower: [], mixed: [], illegal: [] };
+                
+                const illegalRegex = /[^a-zA-Z0-9._-]/;
+
+                data.forEach(item => {
+                    const name = item.name;
+                    let category;
+                    
+                    if (illegalRegex.test(name)) {
+                        category = 'illegal';
+                    } else if (name === name.toLowerCase()) {
+                        category = 'lower';
+                    } else {
+                        category = 'mixed';
+                    }
+                    
+                    if (item.type === 'file') {
+                        files[category].push(name);
+                    } else if (item.type === 'dir') {
+                        dirs[category].push(name);
+                    }
+                });
+
+                const totalFiles = files.lower.length + files.mixed.length + files.illegal.length;
+                const totalDirs = dirs.lower.length + dirs.mixed.length + dirs.illegal.length;
+                const fullPath = `${owner}/${repo}/${path || '(root)'}`;
+
+                const reportLines = [
+                    'DIRECTORY DETAILS:',
+                    fullPath,
+                    '———————',
+                    `LowerCase File Name Count: ${files.lower.length}`,
+                    `MixedCase File Name Count: ${files.mixed.length}`,
+                    `Illegal Internet Character File Name Count: ${files.illegal.length}`,
+                    `Total Count All Files: ${totalFiles}`,
+                    '———————',
+                    `LowerCase Directory Name Count: ${dirs.lower.length}`,
+                    `MixedCase Directory Name Count: ${dirs.mixed.length}`,
+                    `Illegal Internet Character Directory Name Count: ${dirs.illegal.length}`,
+                    `Total Count All Directories: ${totalDirs}`,
+                    '———————',
+                    `Total Count All Directories & Files: ${totalFiles + totalDirs}`,
+                    '———————',
+                    '———————',
+                    'List of LowerCase Named Files:',
+                    files.lower.join(', ') || 'None',
+                    '———————',
+                    'List of MixedCase Named Files:',
+                    files.mixed.join(', ') || 'None',
+                    '———————',
+                    'List of Illegal Internet Character Named Files:',
+                    files.illegal.join(', ') || 'None',
+                    '———————',
+                    'List of LowerCase Named Directories:',
+                    dirs.lower.join(', ') || 'None',
+                    '———————',
+                    'List of MixedCase Named Directories:',
+                    dirs.mixed.join(', ') || 'None',
+                    '———————',
+                    'List of Illegal Internet Character Named Directories:',
+                    dirs.illegal.join(', ') || 'None',
+                    '———————',
+                ];
+                
+                resultsBody.innerHTML = '';
+
+                reportLines.forEach(line => {
+                    const tr = document.createElement('tr');
+                    const td = document.createElement('td');
+                    td.className = 'border border-gray-300 p-2 whitespace-pre-wrap break-all';
+                    td.textContent = line;
+                    tr.appendChild(td);
+                    resultsBody.appendChild(tr);
+                });
+                
+                resultsContainer.classList.remove('hidden');
+            }
+
+            function showMessage(message, type) {
+                messageArea.textContent = message;
+                if (type === 'error') {
+                    messageArea.className = 'mt-6 text-center text-sm font-medium text-red-600';
+                } else if (type === 'success') {
+                    messageArea.className = 'mt-6 text-center text-sm font-medium text-green-600';
+                } else {
+                    messageArea.className = 'mt-6 text-center text-sm font-medium text-gray-700';
+                }
+            }
+
+            function setLoading(isLoading) {
+                if (isLoading) {
+                    submitButton.disabled = true;
+                    submitButton.textContent = 'Analyzing...';
+                    submitButton.classList.add('opacity-50', 'cursor-not-allowed');
+                    showMessage('Fetching data from GitHub...', 'loading');
+                    resultsContainer.classList.add('hidden');
+                } else {
+                    submitButton.disabled = false;
+                    submitButton.textContent = 'Analyze Directory';
+                    submitButton.classList.remove('opacity-50', 'cursor-not-allowed');
+                }
+            }
+        });
+    </script>
+</body>
+</html>

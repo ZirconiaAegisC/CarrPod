@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Therapeutic Protocols: Control and Finesse - Phase 1</title>
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --accent: #e74c3c;
+            --highlight: #3498db;
+            --bg: #fdfdfd;
+            --text: #333;
+            --panel: #f4f6f7;
+        }
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background: var(--bg);
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: var(--primary);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+        header h1 { margin: 0; font-size: 2.5rem; }
+        header.subtitle { font-size: 1.2rem; opacity: 0.9; margin-top: 1rem; }
+        
+        main {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        article { margin-bottom: 4rem; }
+        
+        h2 {
+            color: var(--primary);
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 0.5rem;
+            margin-top: 3rem;
+        }
+        h3 { color: var(--highlight); margin-top: 2rem; }
+        
+       .diagram-container {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 2rem 0;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+        
+        svg {
+            max-width: 100%;
+            height: auto;
+            font-family: sans-serif;
+        }
+        
+       .caption {
+            margin-top: 1rem;
+            font-style: italic;
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+       .exercise-box {
+            background: var(--panel);
+            border-left: 5px solid var(--highlight);
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+        
+       .exercise-title {
+            font-weight: bold;
+            color: var(--primary);
+            display: block;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+       .note {
+            background: #fff3cd;
+            border: 1px solid #ffeeba;
+            padding: 1rem;
+            border-radius: 4px;
+            font-size: 0.9rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th { background-color: var(--primary); color: white; }
+        tr:nth-child(even) { background-color: #f2f2f2; }
+
+        /* SVG Specific Styles */
+       .muscle { fill: #e57373; opacity: 0.8; }
+       .bone { fill: #ecf0f1; stroke: #bdc3c7; stroke-width: 2; }
+       .tooth { fill: #fff; stroke: #95a5a6; stroke-width: 1.5; }
+       .block { fill: #3498db; opacity: 0.9; }
+       .force-arrow { stroke: #e74c3c; stroke-width: 3; marker-end: url(#arrowhead); }
+       .nerve { stroke: #f1c40f; stroke-width: 2; fill: none; stroke-dasharray: 4; }
+        
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Craniomandibular Integration & Rehabilitation</h1>
+    <div class="subtitle">Phase 1: Establishing Mechanical Stability (The Bite Block)</div>
+</header>
+
+<main>
+
+    <section>
+        <p class="intro">
+            This research article provides a deep clinical analysis of <strong>Section 8.1 Phase 1</strong> of the comprehensive rehabilitative protocol. It specifically addresses the "misshapen" proprioception, orthodontic tracking failures (ankylosis), and speech pathology (lisping) originating from the loss of intrinsic mandibular stability. The following visual and textual guide details the biomechanics of the "Floating Bone" and the therapeutic use of the Bite Block to dissociate the tongue from the jaw.
+        </p>
+    </section>
+
+    <article id="biomechanics">
+        <h2>1. The Biomechanics of Instability</h2>
+        <p>The mandible is a class III lever suspended by a "sling" of muscles. In a pathological state (as described by the user), the jaw loses its dynamic stability and relies on rigid clenching or collapses into instability.</p>
+        
+        <div class="diagram-container">
+            <svg viewBox="0 0 600 400">
+                <defs>
+                    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+                        <polygon points="0 0, 10 3.5, 0 7" fill="#e74c3c" />
+                    </marker>
+                </defs>
+                
+                <path class="bone" d="M100,100 Q200,50 300,100 T500,200 L500,300 Q400,350 300,300 T100,250 Z" />
+                <path class="bone" d="M150,220 Q160,320 300,320 Q400,320 420,200 L400,180 Q380,280 300,280 Q200,280 180,220 Z" />
+                
+                <path class="muscle" d="M350,100 Q450,100 420,180 L400,180 Q420,120 350,100" />
+                <text x="360" y="90" fill="#c0392b" font-size="12">Temporalis (Stabilizer)</text>
+                
+                <path class="muscle" d="M380,180 L380,280 L420,280 L420,180 Z" />
+                <text x="430" y="240" fill="#c0392b" font-size="12">Masseter (Power)</text>
+                
+                <line x1="380" y1="280" x2="380" y2="200" class="force-arrow" />
+                <text x="320" y="250" fill="#e74c3c" font-size="14">Closing Force</text>
+                
+                <path d="M150,320 Q225,340 300,320" fill="none" stroke="#e74c3c" stroke-width="2" stroke-dasharray="5,5" />
+                <text x="180" y="360" fill="#e74c3c" font-size="12">Pathological "Wobble" & Deviation</text>
+            </svg>
+            <div class="caption">Fig 1. The Mandibular Sling. Stability relies on the balanced tension of the Masseter and Temporalis. In the user's case, this balance is lost, leading to "wobble" upon relaxation.</div>
+        </div>
+
+        <p>The user reports a sensation of the jaw connecting to the Atlas (C1) and the back. This is due to the <strong>Deep Front Line</strong> fascial continuity. When the jaw is unstable, the body recruits the suboccipital muscles (neck) to stabilize the head, creating a "false anchor" for the jaw.</p>
+    </article>
+
+    <article id="ankylosis">
+        <h2>2. The "Pivot Effect": Ankylosis & Deviation</h2>
+        <p>The user notes one tooth "straightened" while the other didn't, and a "metallic sound" upon tapping. This strongly suggests <strong>Dental Ankylosis</strong> (fusion of tooth to bone). The ankylosed tooth acts as a hard pivot point.</p>
+
+        <div class="diagram-container">
+            <svg viewBox="0 0 500 300">
+                <path class="bone" d="M50,200 Q250,250 450,200 L450,250 Q250,300 50,250 Z" />
+                
+                <rect x="150" y="170" width="30" height="40" class="tooth" />
+                <rect x="190" y="170" width="30" height="40" class="tooth" />
+                
+                <rect x="230" y="180" width="30" height="30" fill="#bdc3c7" stroke="red" stroke-width="3" />
+                <text x="210" y="160" fill="red" font-size="12">Ankylosed (Stuck)</text>
+                
+                <path d="M140,165 Q300,165 460,165" fill="none" stroke="#3498db" stroke-width="4" opacity="0.6" />
+                <text x="350" y="150" fill="#3498db" font-size="12">Aligner Track</text>
+                
+                <line x1="245" y1="180" x2="245" y2="100" stroke="#e67e22" stroke-width="2" stroke-dasharray="4"/>
+                <circle cx="245" cy="180" r="5" fill="#e67e22" />
+                
+                <path d="M400,220 Q420,240 440,210" fill="none" stroke="#e74c3c" stroke-width="3" marker-end="url(#arrowhead)" />
+                <text x="350" y="280" fill="#e74c3c" font-size="12">Jaw Deviates to accommodate rigid tooth</text>
+            </svg>
+            <div class="caption">Fig 2. The Pivot Effect. The ankylosed tooth (outlined in red) does not move. The jaw must rotate around it to close, causing the "misshapen" feeling and referred pain to the neck/Atlas.</div>
+        </div>
+    </article>
+
+    <article id="bite-block">
+        <h2>3. Phase 1: The Bite Block Protocol</h2>
+        <p>The primary therapeutic goal is <strong>Dissociation</strong>. We must teach the tongue to move independently of the jaw. Currently, the user's tongue and jaw are "coupled"—they move as one unit. The Bite Block breaks this coupling.</p>
+
+        <div class="diagram-container">
+            <svg viewBox="0 0 600 400">
+                <path class="bone" d="M100,50 Q250,50 300,150 L300,250 Q200,350 100,300 Z" fill="none" />
+                
+                <path class="bone" d="M150,220 L280,220 L280,260 L150,250 Z" />
+                
+                <rect x="220" y="200" width="40" height="20" class="block" rx="2" />
+                <text x="270" y="215" fill="#3498db" font-size="14">Bite Block (Stabilizer)</text>
+                
+                <path id="tongueLow" class="muscle" d="M180,250 Q220,250 240,250" fill="none" stroke="#e57373" stroke-width="10" opacity="0.3" />
+                
+                <path id="tongueHigh" class="muscle" d="M180,250 Q200,180 230,170" fill="none" stroke="#e74c3c" stroke-width="12" />
+                <circle cx="230" cy="170" r="5" fill="#c0392b" />
+                <text x="180" y="160" fill="#c0392b" font-weight="bold">Target: Alveolar Ridge</text>
+                
+                <line x1="220" y1="240" x2="220" y2="180" class="force-arrow" stroke-dasharray="4" />
+                <text x="50" y="200" fill="#2c3e50" font-size="12">Jaw stays FROZEN</text>
+                <text x="50" y="220" fill="#2c3e50" font-size="12">Tongue moves UP</text>
+            </svg>
+            <div class="caption">Fig 3. Tongue-Jaw Dissociation. The bite block (blue) artificially stabilizes the jaw. The tongue (red) is forced to lift to the palate using its intrinsic muscles (Superior Longitudinal) without assistance from the jaw elevators.</div>
+        </div>
+
+        <h3>The Protocol: "Control and Finesse"</h3>
+        <p>Perform these exercises daily. The goal is <strong>fatigue</strong> in the tongue, not pain in the joint.</p>
+
+        <div class="exercise-box">
+            <span class="exercise-title">Exercise 1: Isometric Anchor (The Foundation)</span>
+            <p><strong>Goal:</strong> Teach the jaw muscles to hold still without clenching.</p>
+            <ol>
+                <li>Place the bite block (or 3 stacked tongue depressors) between the back molars on the <strong>weak side</strong> (or alternate).</li>
+                <li>Bite down gently. Do not crush it. Just hold it.</li>
+                <li><strong>The Test:</strong> Tap your chin with your finger. Your jaw should not wobble. It should be "locked" by the muscles, not the joint.</li>
+                <li>Hold for 30 seconds. Repeat 5 times.</li>
+            </ol>
+        </div>
+
+        <div class="exercise-box">
+            <span class="exercise-title">Exercise 2: The "Spot" Push-Up</span>
+            <p><strong>Goal:</strong> Vertical dissociation (Lifting tongue without closing jaw).</p>
+            <ol>
+                <li>Insert Bite Block. Maintain steady bite.</li>
+                <li>Place tongue tip on "The Spot" (alveolar ridge, just behind upper front teeth).</li>
+                <li>Press the tongue tip firmly into the spot for 3 seconds.</li>
+                <li>Relax tongue to floor of mouth.</li>
+                <li><strong>CRITICAL:</strong> The jaw must not move. If the block slips, you moved your jaw.</li>
+                <li>Repeat 20 times.</li>
+            </ol>
+        </div>
+
+        <div class="exercise-box">
+            <span class="exercise-title">Exercise 3: The "Monkey" Stretch</span>
+            <p><strong>Goal:</strong> Anterior-Posterior dissociation (protrusion/retraction).</p>
+            <ol>
+                <li>Insert Bite Block.</li>
+                <li>Stick tongue out as far as possible (don't touch lips). Hold 3 sec.</li>
+                <li>Pull tongue back into throat (like swallowing). Hold 3 sec.</li>
+                <li>Repeat 10 cycles. This targets the <em>Styloglossus</em> muscle, crucial for the "high note" resonance.</li>
+            </ol>
+        </div>
+    </article>
+
+    <article id="resonance">
+        <h2>4. Vocal Acoustics: Lungs vs. Tongue</h2>
+        <p>The user correctly identified that low notes feel like "lungs" and high notes feel like "tongue". This is <strong>Source-Filter Theory</strong>.</p>
+
+        <div class="diagram-container">
+            <svg viewBox="0 0 700 300">
+                <g transform="translate(0,0)">
+                    <text x="100" y="30" font-weight="bold" fill="#2c3e50">Low Note (Bass)</text>
+                    <path class="bone" d="M100,50 Q150,50 150,150 L150,250" fill="none" stroke="black" />
+                    <path d="M110,200 Q130,200 150,200" stroke="#e74c3c" stroke-width="8" fill="none" />
+                    <circle cx="130" cy="260" r="20" fill="#f1c40f" opacity="0.6" />
+                    <text x="80" y="290" font-size="10">Chest Resonance</text>
+                    <text x="160" y="200" font-size="10">Flat Tongue = Large Cavity</text>
+                </g>
+
+                <g transform="translate(350,0)">
+                    <text x="100" y="30" font-weight="bold" fill="#2c3e50">High Note (Treble)</text>
+                    <path class="bone" d="M100,50 Q150,50 150,150 L150,250" fill="none" stroke="black" />
+                    <path d="M110,200 Q130,120 150,200" stroke="#e74c3c" stroke-width="8" fill="none" />
+                    <circle cx="130" cy="80" r="20" fill="#3498db" opacity="0.6" />
+                    <text x="80" y="60" font-size="10">Head Resonance</text>
+                    <text x="160" y="150" font-size="10">Arched Tongue = Small Cavity</text>
+                </g>
+            </svg>
+            <div class="caption">Fig 4. Resonance Tuning. Low notes require a large oral cavity (flat tongue) and resonate in the chest ("Lungs"). High notes require a small cavity, achieved by arching the tongue high ("Tongue"), shifting resonance to the head.</div>
+        </div>
+
+        <div class="exercise-box">
+            <span class="exercise-title">Exercise 4: The "Ng" Glide (Resonance Trainer)</span>
+            <p><strong>Goal:</strong> Train the tongue to create high notes without jaw tension.</p>
+            <ol>
+                <li>Insert Bite Block. This prevents the jaw from closing to help reach the high note.</li>
+                <li>Say "Sing" and hold the "ng" sound (back of tongue up).</li>
+                <li>Slide your pitch up and down like a siren.</li>
+                <li>Because the jaw is blocked, the <strong>Tongue</strong> must do all the work to tune the pitch. This confirms the user's "Tongue" sensation for high notes.</li>
+            </ol>
+        </div>
+    </article>
+
+    <article id="mentalis">
+        <h2>5. The Mentalis "Brake" & Lower Incisors</h2>
+        <p>Why did one tooth track and the other didn't? The <strong>Mentalis</strong> muscle (Chin) often becomes hyperactive, pushing back against the aligner, neutralizing the force meant to push the tooth forward.</p>
+        
+        <div class="diagram-container">
+            <svg viewBox="0 0 400 300">
+                <path class="tooth" d="M200,100 L200,200 L230,200 L230,100 Z" />
+                <path class="bone" d="M180,200 Q215,280 250,200" fill="#ecf0f1" />
+                
+                <path class="muscle" d="M200,220 Q180,260 200,280" stroke-width="15" fill="none" stroke="#e74c3c" />
+                <text x="100" y="250" fill="#c0392b" font-size="12">Mentalis Muscle (Tight)</text>
+                
+                <line x1="250" y1="150" x2="230" y2="150" class="force-arrow" stroke="#3498db" />
+                <text x="260" y="150" fill="#3498db" font-size="12">Aligner Push Force</text>
+                
+                <line x1="180" y1="150" x2="200" y2="150" class="force-arrow" stroke="#e74c3c" />
+                <text x="80" y="150" fill="#e74c3c" font-size="12">Mentalis Resistance</text>
+            </svg>
+            <div class="caption">Fig 5. The Mentalis Brake. The Mentalis muscle pushes the lower lip against the teeth. If it is too tight (from stress/habit), it cancels out the aligner's force, causing tracking failure.</div>
+        </div>
+
+        <div class="exercise-box">
+            <span class="exercise-title">Exercise 5: Mentalis Release</span>
+            <p><strong>Goal:</strong> Deactivate the chin muscle to allow tooth movement.</p>
+            <ol>
+                <li>Place index finger inside the lower lip, deep into the vestibule (between lip and gums).</li>
+                <li>Place thumb on the outside of the chin.</li>
+                <li>Pinch gently and roll the tissue. If it feels hard or lumpy ("golf ball chin"), it is hypertonic.</li>
+                <li>Massage downwards for 2 minutes before bed.</li>
+            </ol>
+        </div>
+    </article>
+
+    <footer style="margin-top: 4rem; padding-top: 2rem; border-top: 1px solid #ddd; font-size: 0.8rem; color: #777;">
+        <p><strong>References & Clinical Citations:</strong><br>
+        [1] Jaw, Teeth, Speech, and Body Connection.pdf (User Upload)<br>
+        Acoustics.org: Tongue changes in chest vs head voice.<br>
+        Ark Therapeutic: Jaw Grading Oral Motor Exercises.<br>
+        SciELO: Influence of mentalis muscle relaxation.<br>
+        Frontiers: Trigeminal-Limbic Pathway (Amygdala connection).
+        </p>
+    </footer>
+
+</main>
+</body>
+</html>

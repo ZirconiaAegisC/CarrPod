@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Therapeutic Protocols: Jaw Grading & Control</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Font Awesome (for icons, No SVG tags used directly) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Chosen Palette: "Clinical Warmth" -->
+    <!-- Background: #FAFAF9 (Stone-50) -->
+    <!-- Primary Text: #1C1917 (Stone-900) -->
+    <!-- Accents: #0D9488 (Teal-600) for clinical precision, #D97706 (Amber-600) for warmth/muscle -->
+    <!-- Secondary: #E7E5E4 (Stone-200) for panels -->
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clinical: {
+                            50: '#f0fdfa',
+                            100: '#ccfbf1',
+                            600: '#0d9488',
+                            800: '#115e59',
+                        },
+                        muscle: {
+                            100: '#ffedd5',
+                            600: '#d97706',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Chart Container Styling per Requirements */
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 300px; /* Base height */
+            max-height: 400px;
+        }
+
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 350px;
+            }
+        }
+
+        /* Custom Range Slider */
+        input[type=range] {
+            -webkit-appearance: none; 
+            background: transparent; 
+        }
+        
+        input[type=range]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            height: 20px;
+            width: 20px;
+            border-radius: 50%;
+            background: #0d9488;
+            cursor: pointer;
+            margin-top: -8px; 
+            box-shadow: 0 0 2px rgba(0,0,0,0.5);
+        }
+
+        input[type=range]::-webkit-slider-runnable-track {
+            width: 100%;
+            height: 4px;
+            cursor: pointer;
+            background: #d6d3d1;
+            border-radius: 2px;
+        }
+
+        body {
+            background-color: #FAFAF9;
+            color: #1C1917;
+        }
+    </style>
+
+    <!-- Application Structure Plan:
+        1. Header: Intro to Phase 2 (Finesse).
+        2. Mechanics Lab: Canvas visualization of Jaw Grading (High/Mid/Low). This replaces static diagrams with an interactive anatomical model.
+        3. The Physics of Speech: Chart.js scatter plot showing Vowel Space vs Jaw Height.
+        4. Protocol Dashboard: Tabbed interface for exercises (Isometrics, Slow Ramps, Vowel Ladders).
+        5. Finesse Simulator: Interactive slider game to practice "grading" control.
+        6. Outcomes: Data visualization of Stability vs. Velocity.
+    -->
+
+    <!-- Visualization & Content Choices:
+        1. Mechanics Canvas: Custom JS drawing of skull/mandible. Goal: Visualizing "Aperture".
+        2. Vowel Scatter Plot: Chart.js. Goal: Showing the relationship between sound and jaw height.
+        3. Protocol Tabs: Dynamic HTML. Goal: Organizing dense text into digestible steps.
+        4. Progress Chart: Chart.js Line chart. Goal: illustrating the learning curve of neuromuscular control.
+    -->
+    
+    <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. All graphics are Canvas or CSS/FontAwesome. -->
+</head>
+<body class="font-sans antialiased text-stone-800">
+
+    <!-- Header Section -->
+    <header class="bg-white border-b border-stone-200 sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 bg-clinical-600 rounded-lg flex items-center justify-center text-white">
+                    <i class="fa-solid fa-tooth text-xl"></i>
+                </div>
+                <div>
+                    <h1 class="text-xl font-bold text-stone-900 leading-tight">Therapeutic Protocols</h1>
+                    <p class="text-xs text-stone-500 font-medium tracking-wide">PHASE 2: JAW GRADING & FINESSE</p>
+                </div>
+            </div>
+            <nav class="hidden md:flex space-x-6 text-sm font-medium text-stone-600">
+                <button onclick="scrollToSection('mechanics')" class="hover:text-clinical-600 transition">Biomechanics</button>
+                <button onclick="scrollToSection('protocols')" class="hover:text-clinical-600 transition">Exercises</button>
+                <button onclick="scrollToSection('simulation')" class="hover:text-clinical-600 transition">Simulation</button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4 py-8 space-y-12">
+
+        <!-- Introduction -->
+        <section class="grid md:grid-cols-2 gap-8 items-center bg-white p-8 rounded-2xl shadow-sm border border-stone-100">
+            <div class="space-y-4">
+                <span class="inline-block px-3 py-1 bg-muscle-100 text-muscle-600 text-xs font-bold rounded-full uppercase tracking-wider">Research Context</span>
+                <h2 class="text-3xl font-bold text-stone-900">8.2 Phase 2: The Art of Finesse</h2>
+                <p class="text-stone-600 leading-relaxed">
+                    Following the establishment of gross stability (Phase 1), <strong>Jaw Grading</strong> focuses on the ability to control jaw excursions through small, precise increments. This is the "finesse" stage of rehabilitation. It is critical for speech intelligibility, specifically the dissociation of the mandible from the tongue and lips.
+                </p>
+                <div class="bg-stone-50 p-4 rounded-lg border-l-4 border-clinical-600">
+                    <p class="text-sm italic text-stone-700">"Grading is the ability to open the jaw to various distinct heights without sliding, shifting, or recruitment of accessory muscles."</p>
+                </div>
+            </div>
+            <div class="space-y-4">
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="p-4 bg-clinical-50 rounded-xl">
+                        <i class="fa-solid fa-layer-group text-clinical-600 text-2xl mb-2"></i>
+                        <h3 class="font-bold text-stone-800">Dissociation</h3>
+                        <p class="text-xs text-stone-600 mt-1">Separating jaw movement from tongue articulators.</p>
+                    </div>
+                    <div class="p-4 bg-orange-50 rounded-xl">
+                        <i class="fa-solid fa-ruler-combined text-orange-600 text-2xl mb-2"></i>
+                        <h3 class="font-bold text-stone-800">Proprioception</h3>
+                        <p class="text-xs text-stone-600 mt-1">Internal awareness of jaw position in space.</p>
+                    </div>
+                    <div class="p-4 bg-blue-50 rounded-xl">
+                        <i class="fa-solid fa-wave-square text-blue-600 text-2xl mb-2"></i>
+                        <h3 class="font-bold text-stone-800">Control</h3>
+                        <p class="text-xs text-stone-600 mt-1">Eliminating oscillatory tremors during movement.</p>
+                    </div>
+                    <div class="p-4 bg-purple-50 rounded-xl">
+                        <i class="fa-solid fa-microphone-lines text-purple-600 text-2xl mb-2"></i>
+                        <h3 class="font-bold text-stone-800">Phonation</h3>
+                        <p class="text-xs text-stone-600 mt-1">Maintaining aperture for clear vowel resonance.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Mechanics Visualizer -->
+        <section id="mechanics" class="scroll-mt-24">
+            <div class="mb-6">
+                <h2 class="text-2xl font-bold text-stone-900">Biomechanics of Grading</h2>
+                <p class="text-stone-600">Interact with the model to understand the three critical zones of jaw grading required for speech production.</p>
+            </div>
+
+            <div class="grid lg:grid-cols-3 gap-8">
+                <!-- Control Panel -->
+                <div class="lg:col-span-1 space-y-6 bg-white p-6 rounded-xl shadow-sm border border-stone-100 h-fit">
+                    <div>
+                        <label class="block text-sm font-bold text-stone-700 mb-2">Jaw Aperture Control</label>
+                        <input type="range" id="jawSlider" min="0" max="100" value="0" class="w-full h-2 bg-stone-200 rounded-lg appearance-none cursor-pointer">
+                        <div class="flex justify-between text-xs text-stone-500 mt-2">
+                            <span>Closed</span>
+                            <span>Max Open</span>
+                        </div>
+                    </div>
+
+                    <div id="zoneIndicator" class="p-4 rounded-lg bg-stone-100 border border-stone-200 transition-colors duration-300">
+                        <h4 class="text-sm font-bold uppercase tracking-wider text-stone-500">Current Zone</h4>
+                        <p id="zoneText" class="text-2xl font-bold text-stone-900 mt-1">Neutral</p>
+                        <p id="zoneDesc" class="text-sm text-stone-600 mt-2">The jaw is in a resting posture with lips sealed or slightly parted.</p>
+                    </div>
+
+                    <div class="space-y-2">
+                        <h4 class="text-sm font-bold text-stone-800">Key Muscles Involved</h4>
+                        <ul class="text-xs space-y-2 text-stone-600">
+                            <li class="flex items-center"><i class="fa-solid fa-circle text-[8px] mr-2 text-clinical-600"></i> Masseter (Stabilizer)</li>
+                            <li class="flex items-center"><i class="fa-solid fa-circle text-[8px] mr-2 text-clinical-600"></i> Temporalis (Retractor)</li>
+                            <li class="flex items-center"><i class="fa-solid fa-circle text-[8px] mr-2 text-clinical-600"></i> Lateral Pterygoid (Opener)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Canvas Visualizer -->
+                <div class="lg:col-span-2 bg-white rounded-xl shadow-sm border border-stone-100 p-4 flex flex-col items-center justify-center relative overflow-hidden">
+                    <div class="absolute top-4 left-4 bg-white/90 px-3 py-1 rounded-md text-xs font-mono text-stone-500 border border-stone-200">
+                        Fig 8.2.1: Mandibular Excursion Simulation
+                    </div>
+                    <canvas id="jawCanvas" width="500" height="350" class="max-w-full"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <!-- Research Data: Vowel Space -->
+        <section class="bg-white p-8 rounded-2xl shadow-sm border border-stone-100">
+            <div class="grid lg:grid-cols-2 gap-12">
+                <div class="space-y-6">
+                    <h2 class="text-2xl font-bold text-stone-900">The Vowel-Jaw Connection</h2>
+                    <p class="text-stone-600">
+                        Research indicates that clear speech relies on the jaw providing a stable "frame" for the tongue to work within. Poor grading results in the jaw "helping" the tongue too much, leading to muffled speech.
+                    </p>
+                    <p class="text-stone-600">
+                        This chart visualizes the <strong>Vowel Quadrilateral</strong> mapped to Jaw Height. Therapy targets the ability to hold these distinct heights without fluctuation.
+                    </p>
+                    <div class="space-y-3">
+                        <div class="flex items-center">
+                            <div class="w-3 h-3 rounded-full bg-clinical-600 mr-3"></div>
+                            <span class="text-sm text-stone-700"><strong>High Vowels (Target 1):</strong> Minimal opening. Example: /i/ (see), /u/ (moon).</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-3 h-3 rounded-full bg-yellow-500 mr-3"></div>
+                            <span class="text-sm text-stone-700"><strong>Mid Vowels (Target 2):</strong> Moderate opening. Example: /e/ (bed), /o/ (boat).</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-3 h-3 rounded-full bg-red-500 mr-3"></div>
+                            <span class="text-sm text-stone-700"><strong>Low Vowels (Target 3):</strong> Max functional opening. Example: /a/ (cat), /ae/ (bat).</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-center">
+                     <div class="chart-container">
+                        <canvas id="vowelChart"></canvas>
+                    </div>
+                    <p class="text-center text-xs text-stone-400 mt-4">Data Source: Acoustic Analysis of Vowel Formants & Mandibular Position</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Therapeutic Protocols Dashboard -->
+        <section id="protocols">
+            <h2 class="text-2xl font-bold text-stone-900 mb-6">Rehabilitation Methodology</h2>
+            
+            <!-- Protocol Tabs -->
+            <div class="flex flex-wrap gap-2 mb-6 border-b border-stone-200 pb-2">
+                <button onclick="switchTab('ex1')" id="tab-ex1" class="tab-btn px-4 py-2 rounded-t-lg bg-clinical-600 text-white font-medium text-sm transition-all">The "Elevator"</button>
+                <button onclick="switchTab('ex2')" id="tab-ex2" class="tab-btn px-4 py-2 rounded-t-lg bg-stone-100 text-stone-600 hover:bg-stone-200 font-medium text-sm transition-all">Vowel Isometrics</button>
+                <button onclick="switchTab('ex3')" id="tab-ex3" class="tab-btn px-4 py-2 rounded-t-lg bg-stone-100 text-stone-600 hover:bg-stone-200 font-medium text-sm transition-all">Bite Block Stacking</button>
+            </div>
+
+            <!-- Content Container -->
+            <div class="bg-white p-6 rounded-b-2xl rounded-tr-2xl shadow-sm border border-stone-100 min-h-[400px]">
+                
+                <!-- Exercise 1: The Elevator -->
+                <div id="content-ex1" class="protocol-content grid md:grid-cols-3 gap-8">
+                    <div class="md:col-span-2 space-y-4">
+                        <h3 class="text-xl font-bold text-stone-800">Protocol A: The Slow Elevator</h3>
+                        <p class="text-stone-600"><strong>Goal:</strong> To eliminate "jerky" movement (cogwheeling) and establish smooth neuromuscular firing patterns.</p>
+                        
+                        <div class="bg-stone-50 p-4 rounded-lg border border-stone-200">
+                            <h4 class="font-bold text-sm text-stone-800 mb-2">Instructions:</h4>
+                            <ol class="list-decimal list-inside space-y-2 text-sm text-stone-700">
+                                <li>Start with teeth lightly touching (Closed).</li>
+                                <li>Visualize the jaw as an elevator moving down floors.</li>
+                                <li>Slowly open to <strong>Floor 1</strong> (approx 10mm). Hold for 3 seconds.</li>
+                                <li>Descend smoothly to <strong>Floor 2</strong> (approx 20mm). Hold for 3 seconds.</li>
+                                <li>Descend to <strong>Floor 3</strong> (max comfortable opening). Hold.</li>
+                                <li>Reverse the process, pausing at each floor on the way up.</li>
+                            </ol>
+                        </div>
+
+                        <div class="flex gap-4">
+                            <div class="text-center p-3 bg-red-50 rounded-lg w-1/3">
+                                <div class="text-red-600 font-bold">Watch For</div>
+                                <div class="text-xs text-stone-600 mt-1">Lateral deviation (sliding sideways)</div>
+                            </div>
+                            <div class="text-center p-3 bg-green-50 rounded-lg w-1/3">
+                                <div class="text-green-600 font-bold">Goal</div>
+                                <div class="text-xs text-stone-600 mt-1">Movement takes >5 seconds</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Dynamic Visual for Elevator -->
+                    <div class="flex flex-col items-center justify-center bg-stone-900 rounded-xl p-4 relative">
+                        <div class="absolute inset-0 opacity-10 flex items-center justify-center">
+                            <i class="fa-solid fa-elevator text-9xl text-white"></i>
+                        </div>
+                        <div class="z-10 text-center space-y-4 w-full">
+                            <h4 class="text-white text-sm font-bold">Pacing Visualizer</h4>
+                            <div class="h-48 w-full bg-stone-800 rounded-full relative overflow-hidden mx-auto max-w-[60px]">
+                                <div id="elevatorBar" class="absolute bottom-0 w-full bg-gradient-to-t from-clinical-600 to-clinical-400 h-0 transition-all duration-[5000ms] ease-linear"></div>
+                            </div>
+                            <button onclick="runElevator()" class="px-4 py-2 bg-white text-stone-900 text-xs font-bold rounded shadow hover:bg-stone-200 transition">Start Simulation</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Exercise 2: Vowel Isometrics -->
+                <div id="content-ex2" class="protocol-content hidden grid md:grid-cols-3 gap-8">
+                    <div class="md:col-span-2 space-y-4">
+                        <h3 class="text-xl font-bold text-stone-800">Protocol B: Vowel Isometrics</h3>
+                        <p class="text-stone-600"><strong>Goal:</strong> To build "holding power" at specific apertures while voicing, dissociating the jaw from the phonation task.</p>
+                        
+                        <div class="bg-stone-50 p-4 rounded-lg border border-stone-200">
+                            <h4 class="font-bold text-sm text-stone-800 mb-2">Instructions:</h4>
+                            <ol class="list-decimal list-inside space-y-2 text-sm text-stone-700">
+                                <li><strong>Position 1 (High):</strong> Open slightly. Place index fingers on chin for feedback. Say "EEEE" for 5 seconds. Jaw must not move.</li>
+                                <li><strong>Position 2 (Mid):</strong> Open halfway. Say "EH" (as in bed). Hold jaw perfectly still.</li>
+                                <li><strong>Position 3 (Low):</strong> Open widely. Say "AH" (as in father). Monitor for TMJ popping.</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="bg-stone-100 rounded-xl p-6 flex flex-col items-center justify-center">
+                        <div class="text-center space-y-2">
+                            <i class="fa-solid fa-stopwatch text-4xl text-stone-400"></i>
+                            <h4 class="font-bold text-stone-700">Timer Tool</h4>
+                            <div id="isoTimer" class="text-3xl font-mono text-clinical-600 font-bold">00:00</div>
+                            <button onclick="startTimer()" class="text-xs uppercase tracking-widest text-stone-500 hover:text-stone-900 border-b border-stone-300">Start 5s Count</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Exercise 3: Bite Block Stacking -->
+                <div id="content-ex3" class="protocol-content hidden grid md:grid-cols-3 gap-8">
+                    <div class="md:col-span-2 space-y-4">
+                        <h3 class="text-xl font-bold text-stone-800">Protocol C: Bite Block Stacking</h3>
+                        <p class="text-stone-600"><strong>Goal:</strong> Tactile reinforcement of grading. Using graduated bite blocks provides an external "anchor" for the jaw muscles to map the sensation of height.</p>
+                        
+                        <div class="bg-stone-50 p-4 rounded-lg border border-stone-200">
+                            <h4 class="font-bold text-sm text-stone-800 mb-2">Methodology:</h4>
+                            <ul class="list-disc list-inside space-y-2 text-sm text-stone-700">
+                                <li>Use blocks of 5mm, 10mm, and 15mm thickness.</li>
+                                <li>Place block between molars on the weaker side.</li>
+                                <li>Bite down gently to stabilize. Remove hands.</li>
+                                <li>Perform tongue exercises (e.g., tip elevation) while maintaining the bite.</li>
+                                <li>This forces the tongue to work independently of the jaw (Dissociation).</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="bg-stone-100 rounded-xl p-6 flex flex-col items-center justify-center text-center">
+                        <i class="fa-solid fa-cubes-stacked text-4xl text-muscle-600 mb-4"></i>
+                        <p class="text-sm text-stone-600">Required Equipment: <br><strong>Graduated Bite Blocks</strong></p>
+                        <p class="text-xs text-stone-400 mt-2">Safety Note: Do not use if TMJ pain is present.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Finesse Simulator / Interactive Game -->
+        <section id="simulation" class="bg-stone-900 rounded-2xl p-8 text-white relative overflow-hidden">
+            <!-- Background Decoration -->
+            <div class="absolute top-0 right-0 w-64 h-64 bg-clinical-600 rounded-full mix-blend-multiply filter blur-3xl opacity-20"></div>
+            
+            <div class="relative z-10 grid md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <h2 class="text-3xl font-bold">Proprioception Trainer</h2>
+                    <p class="text-stone-300">
+                        Test your "Internal Grading". Can you match the target jaw height without looking? This simulation trains your brain to recognize the sensation of specific apertures.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-center text-sm">
+                            <span class="text-stone-400">Target Zone:</span>
+                            <span id="targetName" class="font-bold text-clinical-400">WAITING...</span>
+                        </div>
+                        
+                        <!-- Target Visual -->
+                        <div class="h-6 w-full bg-stone-800 rounded-full relative">
+                            <div id="targetBar" class="absolute h-full bg-clinical-600/50 border-2 border-clinical-500 rounded-full transition-all duration-300" style="left: 0%; width: 0%;"></div>
+                            <!-- User Cursor -->
+                            <div id="userCursor" class="absolute h-8 w-2 bg-white -top-1 rounded shadow-lg transition-all duration-75" style="left: 0%;"></div>
+                        </div>
+
+                        <input type="range" id="gameSlider" min="0" max="100" value="0" class="w-full mt-4">
+                        <p class="text-xs text-stone-500 text-center">Move slider to match the blue target zone</p>
+
+                        <button onclick="startGame()" class="w-full py-3 bg-clinical-600 hover:bg-clinical-500 rounded-lg font-bold transition shadow-lg shadow-clinical-900/50">Generate New Target</button>
+                        
+                        <div id="feedbackMsg" class="text-center font-bold h-6"></div>
+                    </div>
+                </div>
+
+                <div class="bg-stone-800/50 p-6 rounded-xl border border-stone-700">
+                     <div class="chart-container">
+                        <canvas id="progressChart"></canvas>
+                    </div>
+                    <p class="text-center text-xs text-stone-500 mt-4">Simulated Progress: Stability Over Time</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="border-t border-stone-200 py-8 text-center text-stone-500 text-sm">
+            <p><strong>Clinical Note:</strong> This interactive tool is for educational purposes based on therapeutic protocols for jaw grading. Consult a certified SLP or OMT for personal rehabilitation.</p>
+            <p class="mt-2 text-xs">Generated for Research Analysis of "Jaw, Teeth, Speech, and Body Connection"</p>
+        </footer>
+
+    </main>
+
+    <script>
+        // --- CHART JS CONFIGURATION ---
+        Chart.defaults.font.family = "'Inter', system-ui, sans-serif";
+        Chart.defaults.color = '#57534e';
+
+        // 1. Vowel Scatter Plot
+        const ctxVowel = document.getElementById('vowelChart').getContext('2d');
+        const vowelChart = new Chart(ctxVowel, {
+            type: 'scatter',
+            data: {
+                datasets: [
+                    {
+                        label: 'High Vowels (Grading 1)',
+                        data: [{x: 10, y: 90}, {x: 20, y: 92}, {x: 80, y: 90}], // i, u
+                        backgroundColor: '#0d9488', // Teal
+                        pointRadius: 8,
+                        pointHoverRadius: 10
+                    },
+                    {
+                        label: 'Mid Vowels (Grading 2)',
+                        data: [{x: 20, y: 50}, {x: 80, y: 55}, {x: 50, y: 45}], // e, o
+                        backgroundColor: '#eab308', // Yellow
+                        pointRadius: 8,
+                        pointHoverRadius: 10
+                    },
+                    {
+                        label: 'Low Vowels (Grading 3)',
+                        data: [{x: 50, y: 10}, {x: 45, y: 15}, {x: 55, y: 10}], // a, ae
+                        backgroundColor: '#ef4444', // Red
+                        pointRadius: 8,
+                        pointHoverRadius: 10
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    title: {
+                        display: true,
+                        text: 'Jaw Aperture vs. Tongue Position',
+                        font: { size: 14, weight: 'bold' }
+                    },
+                    legend: { position: 'bottom' },
+                    tooltip: {
+                        callbacks: {
+                            label: function(context) {
+                                return context.dataset.label;
+                            }
+                        }
+                    }
+                },
+                scales: {
+                    x: {
+                        title: { display: true, text: 'Tongue Advancement (Back <-> Front)' },
+                        min: 0, max: 100,
+                        grid: { color: '#e7e5e4' }
+                    },
+                    y: {
+                        title: { display: true, text: 'Jaw Height (Open <-> Closed)' },
+                        min: 0, max: 100,
+                        grid: { color: '#e7e5e4' }
+                    }
+                }
+            }
+        });
+
+        // 2. Progress Simulation Chart
+        const ctxProg = document.getElementById('progressChart').getContext('2d');
+        const progressChart = new Chart(ctxProg, {
+            type: 'line',
+            data: {
+                labels: ['Week 1', 'Week 2', 'Week 3', 'Week 4', 'Week 5', 'Week 6'],
+                datasets: [{
+                    label: 'Stability Score',
+                    data: [20, 35, 45, 60, 75, 85],
+                    borderColor: '#0d9488',
+                    backgroundColor: 'rgba(13, 148, 136, 0.2)',
+                    fill: true,
+                    tension: 0.4
+                },
+                {
+                    label: 'Tremor/Instability',
+                    data: [80, 60, 50, 30, 15, 10],
+                    borderColor: '#ef4444',
+                    borderDash: [5, 5],
+                    tension: 0.4
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { labels: { color: '#d6d3d1' } }
+                },
+                scales: {
+                    y: { grid: { color: '#44403c' }, ticks: { color: '#a8a29e' } },
+                    x: { grid: { color: '#44403c' }, ticks: { color: '#a8a29e' } }
+                }
+            }
+        });
+
+        // --- CANVAS MECHANICS VISUALIZER ---
+        // Draws a profile view of a skull where the jaw moves based on slider input
+        const canvas = document.getElementById('jawCanvas');
+        const ctx = canvas.getContext('2d');
+        const slider = document.getElementById('jawSlider');
+        const zoneText = document.getElementById('zoneText');
+        const zoneDesc = document.getElementById('zoneDesc');
+        const zoneIndicator = document.getElementById('zoneIndicator');
+
+        function drawHead(jawAngle) {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            
+            const centerX = canvas.width / 2;
+            const startY = 80;
+
+            // Draw Static Upper Skull (Cranium + Maxilla)
+            ctx.beginPath();
+            ctx.lineWidth = 4;
+            ctx.strokeStyle = '#57534e'; // Stone-600
+            
+            // Cranium curve
+            ctx.arc(centerX, startY, 60, Math.PI, 0); // Top of head
+            // Back of head
+            ctx.moveTo(centerX + 60, startY);
+            ctx.bezierCurveTo(centerX + 65, startY + 50, centerX + 50, startY + 100, centerX + 40, startY + 120); // Neck back
+            // Forehead / Nose / Maxilla
+            ctx.moveTo(centerX - 60, startY);
+            ctx.lineTo(centerX - 60, startY + 40); // Forehead
+            ctx.lineTo(centerX - 80, startY + 60); // Nose tip
+            ctx.lineTo(centerX - 65, startY + 70); // Under nose
+            ctx.lineTo(centerX - 65, startY + 85); // Upper lip
+            ctx.stroke();
+
+            // Upper Teeth Reference
+            ctx.fillStyle = '#e7e5e4';
+            ctx.fillRect(centerX - 60, startY + 85, 15, 10);
+            
+            // Draw Dynamic Mandible (Jaw)
+            // Pivot point is TMJ (approx near ear)
+            const pivotX = centerX + 10;
+            const pivotY = startY + 70;
+            
+            ctx.save();
+            ctx.translate(pivotX, pivotY);
+            ctx.rotate(jawAngle * Math.PI / 180); // Rotate based on slider
+            ctx.translate(-pivotX, -pivotY);
+
+            ctx.beginPath();
+            ctx.strokeStyle = '#0d9488'; // Clinical Teal for moving part
+            ctx.lineWidth = 5;
+            
+            // Mandible Shape
+            ctx.moveTo(pivotX, pivotY); // Condyle
+            ctx.quadraticCurveTo(pivotX + 5, pivotY + 40, pivotX - 20, pivotY + 60); // Angle of mandible
+            ctx.lineTo(centerX - 50, pivotY + 65); // Chin
+            ctx.lineTo(centerX - 50, pivotY + 40); // Lower lip area (simplified)
+            ctx.stroke();
+
+            // Lower Teeth
+            ctx.fillStyle = '#d6d3d1';
+            ctx.fillRect(centerX - 55, pivotY + 30, 15, 10);
+
+            // Chin Marker for Tracking
+            ctx.beginPath();
+            ctx.fillStyle = '#ef4444';
+            ctx.arc(centerX - 50, pivotY + 65, 4, 0, Math.PI * 2);
+            ctx.fill();
+
+            ctx.restore();
+
+            // TMJ Marker
+            ctx.beginPath();
+            ctx.fillStyle = '#d97706'; // Muscle color
+            ctx.arc(pivotX, pivotY, 6, 0, Math.PI * 2);
+            ctx.fill();
+            ctx.font = "10px sans-serif";
+            ctx.fillStyle = "#57534e";
+            ctx.fillText("TMJ", pivotX + 10, pivotY + 5);
+        }
+
+        // Initialize drawing
+        drawHead(0);
+
+        // Update loop
+        slider.addEventListener('input', (e) => {
+            const val = parseInt(e.target.value);
+            // Map 0-100 slider to 0-30 degrees opening
+            const angle = (val / 100) * 30;
+            drawHead(angle);
+
+            // Update UI Text
+            if(val < 15) {
+                zoneText.innerText = "Zone 1: Small (High Vowels)";
+                zoneDesc.innerText = "Used for /i/, /u/ sounds. Requires fine motor control to maintain minimal aperture without closing.";
+                zoneIndicator.className = "p-4 rounded-lg bg-clinical-50 border border-clinical-200 transition-colors duration-300";
+            } else if (val < 60) {
+                zoneText.innerText = "Zone 2: Medium (Mid Vowels)";
+                zoneDesc.innerText = "Used for /e/, /o/. The 'Home Base' for neutral speech. Common area of instability.";
+                zoneIndicator.className = "p-4 rounded-lg bg-yellow-50 border border-yellow-200 transition-colors duration-300";
+            } else {
+                zoneText.innerText = "Zone 3: Large (Low Vowels)";
+                zoneDesc.innerText = "Used for /a/. Max functional opening. Risk of subluxation if control is lost.";
+                zoneIndicator.className = "p-4 rounded-lg bg-red-50 border border-red-200 transition-colors duration-300";
+            }
+        });
+
+        // --- TAB LOGIC ---
+        function switchTab(id) {
+            // Hide all content
+            document.querySelectorAll('.protocol-content').forEach(el => el.classList.add('hidden'));
+            // Show selected
+            document.getElementById('content-' + id).classList.remove('hidden');
+            
+            // Reset buttons
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.classList.remove('bg-clinical-600', 'text-white');
+                btn.classList.add('bg-stone-100', 'text-stone-600');
+            });
+            // Highlight selected
+            const activeBtn = document.getElementById('tab-' + id);
+            activeBtn.classList.remove('bg-stone-100', 'text-stone-600');
+            activeBtn.classList.add('bg-clinical-600', 'text-white');
+        }
+
+        // --- ELEVATOR SIMULATION ---
+        function runElevator() {
+            const bar = document.getElementById('elevatorBar');
+            bar.style.transition = 'none';
+            bar.style.height = '0%';
+            
+            // Force reflow
+            void bar.offsetWidth;
+
+            // Start up
+            bar.style.transition = 'height 5s linear';
+            bar.style.height = '100%';
+
+            setTimeout(() => {
+                bar.style.transition = 'height 5s linear';
+                bar.style.height = '0%';
+            }, 5500);
+        }
+
+        // --- TIMER LOGIC ---
+        function startTimer() {
+            const display = document.getElementById('isoTimer');
+            let count = 5;
+            display.innerText = "00:05";
+            display.classList.add("text-red-500");
+            
+            const interval = setInterval(() => {
+                count--;
+                display.innerText = "00:0" + count;
+                if(count <= 0) {
+                    clearInterval(interval);
+                    display.innerText = "DONE";
+                    display.classList.remove("text-red-500");
+                    setTimeout(() => display.innerText = "00:00", 1000);
+                }
+            }, 1000);
+        }
+
+        // --- GAME LOGIC ---
+        let targetStart = 0;
+        let targetWidth = 0;
+
+        function startGame() {
+            const targetBar = document.getElementById('targetBar');
+            const feedback = document.getElementById('feedbackMsg');
+            const name = document.getElementById('targetName');
+            
+            // Random target between 10% and 80%
+            targetStart = Math.floor(Math.random() * 70) + 10;
+            targetWidth = 15; // Fixed difficulty width
+
+            targetBar.style.left = targetStart + '%';
+            targetBar.style.width = targetWidth + '%';
+
+            // Set name based on position
+            if(targetStart < 30) name.innerText = "HIGH VOWEL (/i/)";
+            else if(targetStart < 60) name.innerText = "MID VOWEL (/e/)";
+            else name.innerText = "LOW VOWEL (/a/)";
+
+            feedback.innerText = "";
+            feedback.className = "text-center font-bold h-6";
+        }
+
+        // Link Game slider to visuals
+        const gameSlider = document.getElementById('gameSlider');
+        const userCursor = document.getElementById('userCursor');
+        
+        gameSlider.addEventListener('input', (e) => {
+            const val = parseInt(e.target.value);
+            userCursor.style.left = val + '%';
+            
+            const feedback = document.getElementById('feedbackMsg');
+
+            // Check if inside target
+            if(val >= targetStart && val <= (targetStart + targetWidth)) {
+                feedback.innerText = "STABLE HOLD";
+                feedback.className = "text-center font-bold h-6 text-green-400";
+            } else {
+                feedback.innerText = "ADJUSTING...";
+                feedback.className = "text-center font-bold h-6 text-yellow-500";
+            }
+        });
+
+        function scrollToSection(id) {
+            document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Init game on load
+        startGame();
+
+    </script>
+</body>
+</html>
