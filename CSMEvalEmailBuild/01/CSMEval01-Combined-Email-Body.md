@@ -342,7 +342,7 @@ All parts: Williams Heuristic Communication Standard (CSMSOPP000001, MODULE-V2).
 **Compendium:** https://github.com/ZirconiaAegisC/CarrPod/blob/main/CSMGeneralOutreach/CSMGeneralOutreach-COMPILED-Compendium.md
 
 **Web:** www.CarrPod.Net
-**Email:** Zirconia@AegisC.Space | JasonBrodsky@HotMail.Com
+**Email:** Zirconia@AegisC.Space | JasonBrodsky@Hotmail.Com
 
 — Carrington Storm Motors | Safe Pod Engineering Company
 *CSMEval01 | June 2026*
