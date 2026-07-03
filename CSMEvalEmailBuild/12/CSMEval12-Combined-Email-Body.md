@@ -3,15 +3,11 @@ title: CSMEval12 Combined Email Body
 date: 2026-06-01
 ---
 
----
-
 > bracketed fields before sending, and route through the OEM's actual
 > open-innovation/supplier-scouting submission process where one exists,
 > rather than a generic executive inbox. Attach
 > `CSMEval12-COMPILED-Briefing-Packet.md`. Register: warm, moderate Williams
 > touch, per MODULE-V2 guidance.
-
----
 
 Not a concept pitch — a parts bin. Thirteen components, each with a design
 brief, each solving a vibration/EMI/navigation problem your team already

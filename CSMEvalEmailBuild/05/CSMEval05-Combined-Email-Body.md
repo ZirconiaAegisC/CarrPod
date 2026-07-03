@@ -3,13 +3,9 @@ title: CSMEval05 Combined Email Body
 date: 2026-06-01
 ---
 
----
-
 > bracketed fields before sending. Attach `CSMEval05-COMPILED-Briefing-Packet.md`.
 > Register: professional warmth, moderate Williams touch — engineering-to-
 > engineering audience, per MODULE-V2 guidance.
-
----
 
 Short version: your bridges are doing an electrical engineer's job they
 never applied for. We already wrote the job description. Four cities in,

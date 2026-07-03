@@ -3,14 +3,10 @@ title: CSMEval03 Combined Email Body
 date: 2026-06-01
 ---
 
----
-
 > bracketed fields before sending. Attach `CSMEval03-COMPILED-Briefing-Packet.md`.
 > Register: professional warmth, light Williams touch — this is a scientific/
 > technical peer audience, not a regulatory one; register calibrated
 > accordingly per MODULE-V2 guidance.
-
----
 
 I'll say the quiet part first: we're not asking you to buy or endorse
 anything. We're asking the people whose data we've been building on for two

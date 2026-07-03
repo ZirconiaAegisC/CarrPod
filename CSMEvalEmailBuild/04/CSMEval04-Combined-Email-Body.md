@@ -3,16 +3,12 @@ title: CSMEval04 Combined Email Body
 date: 2026-06-01
 ---
 
----
-
 > bracketed fields before sending. Attach `CSMEval04-COMPILED-Briefing-Packet.md`.
 > Register: minimal Williams — defense/procurement audience; precision and
 > professional restraint, per MODULE-V2 guidance for regulatory/institutional
 > correspondence. Route only through appropriate, formal channels (SBIR/STTR
 > portal, program-office technical exchange request) — not unsolicited direct
 > contact with individual military personnel.
-
----
 
 Keeping this direct, since I know unsolicited technical claims get exactly
 the scrutiny they should. Two worked examples, framed for whichever

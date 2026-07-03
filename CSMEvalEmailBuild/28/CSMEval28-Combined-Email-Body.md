@@ -3,13 +3,9 @@ title: CSMEval28 Combined Email Body
 date: 2026-06-01
 ---
 
----
-
 > bracketed fields before sending. Attach `CSMEval28-COMPILED-Briefing-Packet.md`.
 > Register: warm, fuller Williams touch — consumer-product audience, per
 > MODULE-V2 guidance.
-
----
 
 Not a concept. A finished dossier — fifteen SKUs, material specs, and the
 biophysical research behind each one, ready for your innovation team's

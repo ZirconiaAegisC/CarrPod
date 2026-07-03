@@ -3,13 +3,9 @@ title: CSMEval18 Combined Email Body
 date: 2026-06-01
 ---
 
----
-
 > bracketed fields before sending. Attach `CSMEval18-COMPILED-Briefing-Packet.md`.
 > Register: professional warmth, moderate Williams touch, per MODULE-V2
 > guidance.
-
----
 
 Twenty minutes, three ideas, concept stage and honestly labeled as such.
 Space weather already showed up in your orbit in 2024 — this is just us

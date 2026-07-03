@@ -3,13 +3,9 @@ title: CSMEval02 Combined Email Body
 date: 2026-06-01
 ---
 
----
-
 > bracketed fields before sending. Attach `CSMEval02-COMPILED-Briefing-Packet.md`.
 > Register: minimal Williams — this is a NERC-adjacent regulatory audience;
 > precision and professional warmth only, per MODULE-V2 guidance.
-
----
 
 Short and specific, because I know your review comment period isn't
 infinite. One attachment, three documents, and a genuine attempt to be a

@@ -3,15 +3,11 @@ title: CSMEval32 Combined Email Body
 date: 2026-06-01
 ---
 
----
-
 > bracketed fields before sending, and adapt tone for the specific
 > publication/creator/expo being contacted. Attach
 > `CSMEval32-COMPILED-Briefing-Packet.md`. Register: warm, fullest Williams
 > touch in this series — community/lifestyle audience, per MODULE-V2
 > guidance.
-
----
 
 Didn't have to sell you on independence from the grid — you already live
 it. Just offering the specific hardware and the specific reason it pays off.

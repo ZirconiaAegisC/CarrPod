@@ -3,12 +3,8 @@ title: CSMEval15 Combined Email Body
 date: 2026-06-01
 ---
 
----
-
 > bracketed fields before sending. Attach `CSMEval15-COMPILED-Briefing-Packet.md`.
 > Register: warm, moderate Williams touch, per MODULE-V2 guidance.
-
----
 
 Crowd, machine, and flood risk, all in one footprint — we already mapped it
 for one named park. Happy to see how it maps onto yours.

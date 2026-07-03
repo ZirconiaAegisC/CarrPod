@@ -3,14 +3,10 @@ title: CSMEval13 Combined Email Body
 date: 2026-06-01
 ---
 
----
-
 > bracketed fields before sending. Attach `CSMEval13-COMPILED-Briefing-Packet.md`.
 > Register: professional warmth, moderate Williams touch, per MODULE-V2
 > guidance. Route through the company's public advanced-concepts/open-
 > innovation submission channel where one exists.
-
----
 
 No deadline attached to this one on purpose. Two items, clearly labeled by
 maturity level, for whenever your advanced-concepts review has room.

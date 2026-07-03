@@ -3,13 +3,9 @@ title: CSMEval09 Combined Email Body
 date: 2026-06-01
 ---
 
----
-
 > bracketed fields before sending. Attach `CSMEval09-COMPILED-Briefing-Packet.md`.
 > Register: professional warmth, moderate Williams touch — scientific peer
 > audience, per MODULE-V2 guidance.
-
----
 
 Unusual ask coming: we'd like you to try to prove us wrong. Four materials
 claims, a Technology Transfer office is the natural channel, and we mean it

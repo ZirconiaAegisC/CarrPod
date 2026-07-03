@@ -3,13 +3,9 @@ title: CSMEval31 Combined Email Body
 date: 2026-06-01
 ---
 
----
-
 > bracketed fields before sending. Attach `CSMEval31-COMPILED-Briefing-Packet.md`.
 > Register: warm, fuller Williams touch — technically sophisticated hobbyist
 > audience, per MODULE-V2 guidance.
-
----
 
 You already know what R-scale means. So this one skips the explaining and
 gets straight to the research — including the speculative part, honestly

@@ -3,12 +3,8 @@ title: CSMEval22 Combined Email Body
 date: 2026-06-01
 ---
 
----
-
 > bracketed fields before sending. Attach `CSMEval22-COMPILED-Briefing-Packet.md`.
 > Register: warm, moderate Williams touch, per MODULE-V2 guidance.
-
----
 
 Aluminum and copper were optimized for weight and cost, not survivability.
 Two case studies already close that gap on paper — worth a look before

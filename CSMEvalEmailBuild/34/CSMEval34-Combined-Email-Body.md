@@ -3,12 +3,8 @@ title: CSMEval34 Combined Email Body
 date: 2026-06-01
 ---
 
----
-
 > bracketed fields before sending. Attach `CSMEval34-COMPILED-Briefing-Packet.md`.
 > Register: warm, fuller Williams touch, per MODULE-V2 guidance.
-
----
 
 Same GPS glitch that confused farm equipment in 2024 would confuse your
 nav unit sixty miles down a forest service road too. Here's the fix,

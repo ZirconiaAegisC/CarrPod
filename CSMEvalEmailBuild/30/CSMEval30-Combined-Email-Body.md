@@ -3,13 +3,9 @@ title: CSMEval30 Combined Email Body
 date: 2026-06-01
 ---
 
----
-
 > bracketed fields before sending. Attach `CSMEval30-COMPILED-Briefing-Packet.md`.
 > Register: minimal Williams — highest safety-of-life stakes in this series;
 > precision and professional warmth only, per MODULE-V2 guidance.
-
----
 
 Direct, because this sector doesn't get a grace period. Current backup
 planning assumes hours to days. The real worst case runs in months.

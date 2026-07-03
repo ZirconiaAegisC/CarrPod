@@ -3,12 +3,8 @@ title: CSMEval17 Combined Email Body
 date: 2026-06-01
 ---
 
----
-
 > bracketed fields before sending. Attach `CSMEval17-COMPILED-Briefing-Packet.md`.
 > Register: professional warmth, light Williams touch, per MODULE-V2 guidance.
-
----
 
 Two speeds in one email: hardware you could spec now, and a stranger idea
 for whoever runs your innovation lab. Both honestly labeled by how ready

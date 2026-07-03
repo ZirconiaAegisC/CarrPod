@@ -3,13 +3,9 @@ title: CSMEval26 Combined Email Body
 date: 2026-06-01
 ---
 
----
-
 > bracketed fields before sending. Attach `CSMEval26-COMPILED-Briefing-Packet.md`.
 > Register: minimal-to-professional Williams — clinical/regulatory-adjacent
 > audience, precision first, per MODULE-V2 guidance.
-
----
 
 Not asking you to trust unfamiliar science — asking you to check our
 synthesis against the evidence base your team already tracks.

@@ -3,12 +3,8 @@ title: CSMEval35 Combined Email Body
 date: 2026-06-01
 ---
 
----
-
 > bracketed fields before sending. Attach `CSMEval35-COMPILED-Briefing-Packet.md`.
 > Register: warm, playful-but-precise Williams touch, per MODULE-V2 guidance.
-
----
 
 Not asking for a review. Asking for a build log. Three concepts, sized for
 exactly the fabrication and prototyping skills this community already has.

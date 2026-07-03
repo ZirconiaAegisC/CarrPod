@@ -3,12 +3,8 @@ title: CSMEval14 Combined Email Body
 date: 2026-06-01
 ---
 
----
-
 > bracketed fields before sending. Attach `CSMEval14-COMPILED-Briefing-Packet.md`.
 > Register: warm, moderate Williams touch, per MODULE-V2 guidance.
-
----
 
 Your ship is a floating city with nowhere to walk to if the power fails.
 We already built the fix for one fleet. Here's what's in the retrofit.

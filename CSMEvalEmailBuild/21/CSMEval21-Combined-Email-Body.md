@@ -3,12 +3,8 @@ title: CSMEval21 Combined Email Body
 date: 2026-06-01
 ---
 
----
-
 > bracketed fields before sending. Attach `CSMEval21-COMPILED-Briefing-Packet.md`.
 > Register: professional warmth, light Williams touch, per MODULE-V2 guidance.
-
----
 
 Not new chemistry, just a new application for chemistry that already has a
 supply chain. Short packet, aimed at whoever specifies materials on your

@@ -3,12 +3,8 @@ title: CSMEval25 Combined Email Body
 date: 2026-06-01
 ---
 
----
-
 > bracketed fields before sending. Attach `CSMEval25-COMPILED-Briefing-Packet.md`.
 > Register: professional warmth, light Williams touch, per MODULE-V2 guidance.
-
----
 
 Not trying to compete with Niron or MP Materials — trying to be useful
 alongside them. Landscape map, recycling process, supply-chain risk data,

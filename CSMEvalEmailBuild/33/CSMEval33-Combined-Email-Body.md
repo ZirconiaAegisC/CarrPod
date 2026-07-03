@@ -3,12 +3,8 @@ title: CSMEval33 Combined Email Body
 date: 2026-06-01
 ---
 
----
-
 > bracketed fields before sending. Attach `CSMEval33-COMPILED-Briefing-Packet.md`.
 > Register: warm, moderate Williams touch, per MODULE-V2 guidance.
-
----
 
 You already track this better than most official channels. Not asking you
 to just read this — asking whether your data and ours might be worth

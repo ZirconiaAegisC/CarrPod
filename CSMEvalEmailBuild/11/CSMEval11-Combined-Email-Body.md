@@ -3,13 +3,9 @@ title: CSMEval11 Combined Email Body
 date: 2026-06-01
 ---
 
----
-
 > bracketed fields before sending. Attach `CSMEval11-COMPILED-Briefing-Packet.md`.
 > Register: professional warmth, light Williams touch — sophisticated
 > technical-financial audience, per MODULE-V2 guidance.
-
----
 
 You've already done the hard part — modeling the risk. This is the layer
 underneath it: what a client could actually buy to make the number smaller.

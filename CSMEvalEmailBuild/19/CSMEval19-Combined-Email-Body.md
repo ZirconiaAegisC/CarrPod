@@ -3,12 +3,8 @@ title: CSMEval19 Combined Email Body
 date: 2026-06-01
 ---
 
----
-
 > bracketed fields before sending. Attach `CSMEval19-COMPILED-Briefing-Packet.md`.
 > Register: professional warmth, light Williams touch, per MODULE-V2 guidance.
-
----
 
 Not a new discipline, just a new input to corrosion engineering's existing
 one. Short packet, straight to your team's actual vocabulary.

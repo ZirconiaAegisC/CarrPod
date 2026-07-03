@@ -3,15 +3,11 @@ title: CSMEval06 Combined Email Body
 date: 2026-06-01
 ---
 
----
-
 > bracketed fields before sending. Attach `CSMEval06-COMPILED-Briefing-Packet.md`.
 > Register: minimal Williams — this is the most safety-critical audience in
 > the entire series; precision and restraint only, per MODULE-V2 guidance for
 > regulatory correspondence ("For legal/regulatory: minimal Williams —
 > precision + professional warmth only").
-
----
 
 No banter in this one. Four documented incidents, three solar cycles, and a
 hardware package built specifically around that record. Straight to it.

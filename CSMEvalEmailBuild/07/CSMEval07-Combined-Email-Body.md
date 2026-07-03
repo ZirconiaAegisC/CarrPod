@@ -3,13 +3,9 @@ title: CSMEval07 Combined Email Body
 date: 2026-06-01
 ---
 
----
-
 > bracketed fields before sending. Attach `CSMEval07-COMPILED-Briefing-Packet.md`.
 > Register: professional warmth, moderate Williams touch, per MODULE-V2
 > guidance.
-
----
 
 Rail signaling doesn't get the GIC attention transmission lines do, even
 though it's carrying the same physics and a more immediate consequence.

@@ -3,14 +3,10 @@ title: CSMEval23 Combined Email Body
 date: 2026-06-01
 ---
 
----
-
 > bracketed fields before sending, and select the concept (propulsion,
 > evacuation, or research-platform) matching the specific recipient's
 > business. Attach `CSMEval23-COMPILED-Briefing-Packet.md`. Register: warm,
 > moderate Williams touch, per MODULE-V2 guidance.
-
----
 
 Picked the concept that actually matches what you build, not a generic
 drone pitch. Short packet, clearly labeled by maturity and use case.

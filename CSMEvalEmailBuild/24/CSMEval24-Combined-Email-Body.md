@@ -3,13 +3,9 @@ title: CSMEval24 Combined Email Body
 date: 2026-06-01
 ---
 
----
-
 > bracketed fields before sending. Attach `CSMEval24-COMPILED-Briefing-Packet.md`.
 > Register: warm, fuller Williams touch — consumer-product audience, per
 > MODULE-V2 guidance.
-
----
 
 Nobody has to explain what "still works during a long outage" means to a
 customer. That's the whole advantage of this pitch — for once, everyone

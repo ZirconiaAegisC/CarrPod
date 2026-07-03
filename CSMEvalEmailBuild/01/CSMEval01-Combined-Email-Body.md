@@ -3,15 +3,11 @@ title: CSMEval01 Combined Email Body
 date: 2026-06-01
 ---
 
----
-
 > identified or contacted. Fill in ``, ``,
 > ``, and sender contact details before sending. Attach
 > `CSMEval01-COMPILED-Briefing-Packet.md` (or a PDF export of it).
 > Register: minimal Williams — precision and professional warmth only, per
 > MODULE-V2 guidance for regulatory/government correspondence.
-
----
 
 I'll keep this short, because I know what your inbox looks like on a
 Tuesday, and it looks like mine. One paragraph, one attachment, one ask
