@@ -1,12 +1,41 @@
-Solar Cycle 25's confirmed peak sunspot number — SSN ~137, per NOAA SWPC's Q1 2026 progression report — is running about 19% above the forecast most current Hazard Mitigation Plans were built against.
+---
 
-I've attached a three-part briefing packet from Carrington Storm Motors' research and engineering group covering what that revision means for your evacuation-timing assumptions, a grid-down extraction and shelter hardware reference, and three ways to fold updated hazard data into a mitigation-plan cycle you're already running — HMP revision, BRIC grant scoping, or EMAC depot planning.
+> identified or contacted. Fill in ``, ``,
+> ``, and sender contact details before sending. Attach
+> `CSMEval01-COMPILED-Briefing-Packet.md` (or a PDF export of it).
+> Register: minimal Williams — precision and professional warmth only, per
+> MODULE-V2 guidance for regulatory/government correspondence.
 
-No ask beyond a read. If it's useful ahead of your next plan revision, I'd welcome a short call with your hazard mitigation planning lead.
+---
 
-Appreciate the work you do on the days nothing is wrong. It's the reason the days something is wrong go better than they otherwise would.
+I'll keep this short, because I know what your inbox looks like on a
+Tuesday, and it looks like mine. One paragraph, one attachment, one ask
+that costs you nothing but four minutes.
 
-— Carrington Storm Motors | Safe Pod Engineering Company
+────────────────────────────────────────────────────────────────────────────────
+Dear ,
+
+Solar Cycle 25's confirmed peak sunspot number (SSN ~137, per NOAA SWPC's Q1
+2026 progression report) is running about 19% above the forecast most current
+Hazard Mitigation Plans were built against. I've attached a three-part briefing
+packet from Carrington Storm Motors' research and engineering group covering:
+what that revision means for your evacuation-timing assumptions, a grid-down
+extraction/shelter hardware reference, and three ways to fold updated hazard
+data into a mitigation-plan cycle you're already running (HMP revision, BRIC
+grant scoping, or EMAC depot planning).
+
+No ask beyond a read. If it's useful ahead of your next plan revision, I'd
+welcome a short call with your hazard mitigation planning lead.
+────────────────────────────────────────────────────────────────────────────────
+
+Appreciate the work you do on the days nothing is wrong — it's the reason
+the days something is wrong go better than they otherwise would.
+
+ | Carrington Storm Motors | Safe Pod Engineering Company
+
+didn't already bring with you.
+
+---
 
 ---
 
@@ -342,7 +371,7 @@ All parts: Williams Heuristic Communication Standard (CSMSOPP000001, MODULE-V2).
 **Compendium:** https://github.com/ZirconiaAegisC/CarrPod/blob/main/CSMGeneralOutreach/CSMGeneralOutreach-COMPILED-Compendium.md
 
 **Web:** www.CarrPod.Net
-**Email:** Zirconia@AegisC.Space | JasonBrodsky@Hotmail.Com
+**Email:** Zirconia@AegisC.Space | JasonBrodsky@Hotmail.com
 
 — Carrington Storm Motors | Safe Pod Engineering Company
 *CSMEval01 | June 2026*
