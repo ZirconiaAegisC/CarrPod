@@ -1,4 +1,9 @@
 ---
+title: CSMEval02 Combined Email Body
+date: 2026-06-01
+---
+
+---
 
 > bracketed fields before sending. Attach `CSMEval02-COMPILED-Briefing-Packet.md`.
 > Register: minimal Williams — this is a NERC-adjacent regulatory audience;

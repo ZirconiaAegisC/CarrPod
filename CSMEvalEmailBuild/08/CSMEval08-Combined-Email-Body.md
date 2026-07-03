@@ -1,4 +1,9 @@
 ---
+title: CSMEval08 Combined Email Body
+date: 2026-06-01
+---
+
+---
 
 > bracketed fields before sending. Attach `CSMEval08-COMPILED-Briefing-Packet.md`.
 > Register: warm, moderate Williams touch — municipal/local-government

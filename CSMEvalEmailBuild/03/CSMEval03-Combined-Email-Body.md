@@ -1,4 +1,9 @@
 ---
+title: CSMEval03 Combined Email Body
+date: 2026-06-01
+---
+
+---
 
 > bracketed fields before sending. Attach `CSMEval03-COMPILED-Briefing-Packet.md`.
 > Register: professional warmth, light Williams touch — this is a scientific/

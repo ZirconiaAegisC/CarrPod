@@ -1,4 +1,9 @@
 ---
+title: CSMEval34 Combined Email Body
+date: 2026-06-01
+---
+
+---
 
 > bracketed fields before sending. Attach `CSMEval34-COMPILED-Briefing-Packet.md`.
 > Register: warm, fuller Williams touch, per MODULE-V2 guidance.

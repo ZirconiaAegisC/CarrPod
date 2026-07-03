@@ -1,4 +1,9 @@
 ---
+title: CSMEval12 Combined Email Body
+date: 2026-06-01
+---
+
+---
 
 > bracketed fields before sending, and route through the OEM's actual
 > open-innovation/supplier-scouting submission process where one exists,

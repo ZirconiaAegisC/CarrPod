@@ -1,4 +1,9 @@
 ---
+title: CSMEval04 Combined Email Body
+date: 2026-06-01
+---
+
+---
 
 > bracketed fields before sending. Attach `CSMEval04-COMPILED-Briefing-Packet.md`.
 > Register: minimal Williams — defense/procurement audience; precision and

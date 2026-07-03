@@ -1,4 +1,9 @@
 ---
+title: CSMEval26 Combined Email Body
+date: 2026-06-01
+---
+
+---
 
 > bracketed fields before sending. Attach `CSMEval26-COMPILED-Briefing-Packet.md`.
 > Register: minimal-to-professional Williams — clinical/regulatory-adjacent

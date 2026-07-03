@@ -1,4 +1,9 @@
 ---
+title: CSMEval01 Combined Email Body
+date: 2026-06-01
+---
+
+---
 
 > identified or contacted. Fill in ``, ``,
 > ``, and sender contact details before sending. Attach

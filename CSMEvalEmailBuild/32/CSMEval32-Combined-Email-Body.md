@@ -1,4 +1,9 @@
 ---
+title: CSMEval32 Combined Email Body
+date: 2026-06-01
+---
+
+---
 
 > bracketed fields before sending, and adapt tone for the specific
 > publication/creator/expo being contacted. Attach

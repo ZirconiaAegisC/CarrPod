@@ -1,4 +1,9 @@
 ---
+title: CSMEval06 Combined Email Body
+date: 2026-06-01
+---
+
+---
 
 > bracketed fields before sending. Attach `CSMEval06-COMPILED-Briefing-Packet.md`.
 > Register: minimal Williams — this is the most safety-critical audience in

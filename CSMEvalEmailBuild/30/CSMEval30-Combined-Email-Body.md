@@ -1,4 +1,9 @@
 ---
+title: CSMEval30 Combined Email Body
+date: 2026-06-01
+---
+
+---
 
 > bracketed fields before sending. Attach `CSMEval30-COMPILED-Briefing-Packet.md`.
 > Register: minimal Williams — highest safety-of-life stakes in this series;

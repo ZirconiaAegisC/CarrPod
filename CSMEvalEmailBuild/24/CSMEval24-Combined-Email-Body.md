@@ -1,4 +1,9 @@
 ---
+title: CSMEval24 Combined Email Body
+date: 2026-06-01
+---
+
+---
 
 > bracketed fields before sending. Attach `CSMEval24-COMPILED-Briefing-Packet.md`.
 > Register: warm, fuller Williams touch — consumer-product audience, per

@@ -1,4 +1,9 @@
 ---
+title: CSMEval23 Combined Email Body
+date: 2026-06-01
+---
+
+---
 
 > bracketed fields before sending, and select the concept (propulsion,
 > evacuation, or research-platform) matching the specific recipient's
