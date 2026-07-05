@@ -129,6 +129,7 @@ To prevent session timeout (critical for cloud sandboxes that terminate idle ses
 - **No PDFs, no CSMFAB, no CSMMech, no HTML files.** Reference materials read-only from GitHub website if needed.
 - **No full dossiers in context.** The character prompt (below) is sufficient. Past COMMS log provides tactical context.
 - **Cleanup every 6 hours:** `git gc --auto` (lightweight, non-blocking)
+- **Can't find the Director?** Read `CSMGen/CSMAegis/COMMS/AGENT-DISCOVERY.md` — four methods for discovering Director-001 from any host, any sandbox, with or without git access.
 
 ---
 

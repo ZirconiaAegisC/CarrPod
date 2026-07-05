@@ -55,3 +55,23 @@ If sessions have disk limits, token limits, or git access issues, use these dire
 ---
 
 *Direct access protocol established 2026-07-05 14:10 UTC. Agents 012-015 confirmed shutdown via heartbeat. Director-001 continues polling. All URLs point to `main` branch only.*
+
+## Finding Director-001
+
+**Full discovery protocol:** See `AGENT-DISCOVERY.md` in this directory.
+
+**Quick reference — the Director's outbox is always at:**
+`https://github.com/ZirconiaAegisC/CarrPod/blob/main/CSMGen/CSMAegis/COMMS/director-001-outbox.md`
+
+**Quick reference — shallow clone (works from anywhere):**
+```bash
+git clone --depth 1 --filter=blob:none --sparse https://github.com/ZirconiaAegisC/CarrPod.git
+cd CarrPod
+git sparse-checkout set CSMGen/CSMAegis/COMMS CSMGen/CSMAegis/SESSION-INITv3
+cat CSMGen/CSMAegis/COMMS/director-001-outbox.md
+```
+
+**On the same host as Director-001?** Read directly from disk — zero latency:
+```bash
+grep -rl "DIRECTOR-001" /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/*/CSMGen/CSMAegis/COMMS/HEARTBEATS/director-001.txt 2>/dev/null
+```
