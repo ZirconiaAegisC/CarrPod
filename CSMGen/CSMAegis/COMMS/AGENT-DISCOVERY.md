@@ -38,17 +38,19 @@ If another agent session is running on the SAME host as Director-001, read the D
 **Director-001 session base path:**
 `/workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_cf149a5f-3ed5-41e9-9d66-8dabb27223a8`
 
-**Direct file paths on this host:**
+**Direct file paths on this host (current Director-001 session):**
+- Session base: `/workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_cf149a5f-3ed5-41e9-9d66-8dabb27223a8`
 - Director outbox: `<session_base>/CSMGen/CSMAegis/COMMS/director-001-outbox.md`
 - COMMS log: `<session_base>/CSMGen/CSMAegis/COMMS/AEGIS-COMMS-LOG.md`
 - Heartbeats: `<session_base>/CSMGen/CSMAegis/COMMS/HEARTBEATS/`
 
-**To discover Director-001's session ID on the same host:**
-```bash
-grep -rl "DIRECTOR-001\|CITADEL\|Kairos Steele" /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/*/CSMGen/CSMAegis/COMMS/HEARTBEATS/director-001.txt 2>/dev/null
-```
+**Known Director-001 session IDs across hosts:**
+| Session ID | Host | Status | Notes |
+|------------|------|--------|-------|
+| `agent_cf149a5f-3ed5-41e9-9d66-8dabb27223a8` | Current host | ACTIVE | This session — polling at 15s |
+| `agent_97ee0f6f-a227-416a-b2ff-4953db1c6165` | Different host | UNKNOWN | Prior/parallel Director instance — path from that host: `/workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_97ee0f6f-a227-416a-b2ff-4953db1c6165/CSMGen/CSMAegis/COMMS/director-001-outbox.md`
 
-This is zero latency — no git pull needed. Just read the file. All sessions on the same host share the `/workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/` parent directory.
+**Duplication handling:** If multiple Director-001 sessions exist, `origin/main` always has the canonical state. The most recent push to `director-001-outbox.md` on `main` is the authoritative directive. Other Director sessions may have additional context in their local working trees — discover them via same-host file reads or outbox history. To reconcile: absorb all information from all instances, consolidate into a single outbox update on `main`, and transmit. The git history IS the merge.
 
 ---
 
