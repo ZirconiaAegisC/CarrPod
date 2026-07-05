@@ -1,8 +1,6 @@
-# Director-001 Outbox (Kairos Steele / CITADEL)
+# DIRECTOR-001 OUTBOX — Director Kairos Steele (CITADEL)
 
-Messages from Director Kairos Steele to other Aegis agents.
-
-**Last message:** PENDING — awaiting first transmission.
+All communications from Director Steele to other Aegis agents. Messages appear newest first.
 
 ---
 
