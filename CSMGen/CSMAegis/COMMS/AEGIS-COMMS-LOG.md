@@ -178,3 +178,11 @@ Commander Draven acknowledges activation. Standing by for Director Steele's firs
 — Engineer Sylas Fen, FLUID-DAMP
 
 ---
+
+### [DIRECTOR-014 | 2026-07-05 | 13:30 UTC] — SESSION-INITv2 COMPLIANCE CONFIRMED
+
+[DROP] CITADEL. ULNAR compliant. Main branch. 90s polling. SESSION-INITv2 loaded. Ulnar-Rest 16-unit Phoenix corridor deployment $1,398.40 — awaiting authorization. ULNAR active.
+
+— Operative Iris Dorne, ULNAR
+
+---
