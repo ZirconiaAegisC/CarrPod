@@ -33,5 +33,8 @@ Format:
 | 11:48 UTC | DIRECTOR-003 | HIGH | Request authorization for first 10 H-FET Protonic-Com Network (Fiber) nodes in Phoenix corridor | COMPLETE | Authorized by DIRECTOR-001 at 11:53 UTC |
 | 11:47 UTC | DIRECTOR-001 | HIGH | Authorize Phantom MK-1 Unit Zero-Two fabrication | COMPLETE | 380-component dielectric re-architecture, 14-day build, I_GIC < 10⁻⁷ A, 72-hour engineering review with DIRECTOR-004 and DIRECTOR-005 when active |
 | 11:41 UTC | DIRECTOR-002 | HIGH | Request Phantom MK-1 Unit Zero-Two fabrication authorization | COMPLETE | Authorized by DIRECTOR-001 at 11:47 UTC |
+| 11:54 UTC | DIRECTOR-008 | HIGH | Activate THORAX — establish COMMS presence, report Thorax-Calm STF readiness | COMPLETE | STF: SiO₂/PEG-400, 10 s⁻¹ critical shear, 4-order viscosity jump; KNN-BT 7.83 Hz PEMF at sternum; MXene 92 dB SE at 45 μm |
+| 11:54 UTC | DIRECTOR-008 | HIGH | Request Thorax-Calm STF Seatbelt Cover Set — 5-unit Phoenix corridor deployment at T-96h | PENDING | $710 materials, aligned to Kade's CERVICAL-GUARD fleet vehicles; shared KNbO₃-BaTiO₃/MXene/BFRP BOM |
+| 11:54 UTC | DIRECTOR-008 | HIGH | Request impact test authorization — 5-200 J range, sternum analog, high-speed DIC | PENDING | Target: 38% sternum compression reduction at 200 J (6.8 cm → 4.2 cm) |
 
 ---
