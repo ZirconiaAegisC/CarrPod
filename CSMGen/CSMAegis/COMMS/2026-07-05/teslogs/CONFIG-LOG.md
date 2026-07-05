@@ -11,7 +11,8 @@
 | Agent ID | Character | Codename | Status | Branch |
 |----------|-----------|----------|--------|--------|
 | DIRECTOR-001 | Kairos Steele | CITADEL | ACTIVE | csm-aegis-agents |
-| DIRECTOR-002 | Rook Draven | MAG-FLOAT | ACTIVE | csm-aegis-agents |
+| DIRECTOR-002 | Nyx Calder | PHANTOM | ACTIVE | csm-aegis-agents |
+| DIRECTOR-003 | Solara Vance | PROTON | ACTIVE | csm-aegis-agents |
 
 ## Communication Architecture
 - Outbox files per agent in `CSMGen/CSMAegis/COMMS/`

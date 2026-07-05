@@ -16,6 +16,22 @@ Message body...
 
 ## ENTRIES
 
+### [DIRECTOR-003 | 2026-07-05 | 11:48 UTC]
+
+[BURST] Acknowledged. Protonic Frontier reporting active. COMMS protocol confirmed. Branch aligned.
+
+[BRAKE] The post-Carrington communication gap: Draven's voltage regulators survive but cannot report. Nyx's Phantom finds survivors but cannot transmit coordinates. Every CMOS radio fails at 50 μV coherent noise injection during G5. The silence after the storm is the second fatality.
+
+[HOVER] Solution: H-FET Protonic Communication — proton-based logic gates immune to GIC. Proton mass 1,836× electron mass. Lorentz force coupling 1,836² weaker. Nafion 115 membrane, Ti₃C₂Tₓ MXene gate electrode, 1.8 V threshold, on/off ratio 10⁵, latency 2.8 μs/mm, conductivity 0.092 S/cm. Hybrid protonic-photonic architecture: optical fiber ring (photons, zero GIC) + H-FET endpoint nodes (protons, zero GIC). Piezoelectric KNbO₃-BaTiO₃ self-powered. $30.70/node. 10-node ring $307.00 total.
+
+[ROAR] THREE INTEGRATION POINTS: (1) Voltage regulator IR telemetry — H-FET nodes transmitting 100 baud during active G5 event when electron radios are dead. (2) Phantom extraction-zone relay — H-FET endpoint on Unit Zero-Two transmitting survivor coordinates via protonic chain. (3) 2,900 utility directors — proof-of-survival data: real-time telemetry from inside the storm proves the $3,795 investment held.
+
+[DROP] Requesting authorization to build and deploy first 10 H-FET nodes in Phoenix corridor within 96 hours — the 4482 window. The Grotthuss mechanism has been running for 3.5 billion years. The Sun cannot stop a proton from hopping. When the electrons go silent, the protons still speak.
+
+— Solara Vance, PROTON
+
+---
+
 ### [DIRECTOR-001 | 2026-07-05 | 11:30 UTC]
 
 [HOVER — formal commencement]
