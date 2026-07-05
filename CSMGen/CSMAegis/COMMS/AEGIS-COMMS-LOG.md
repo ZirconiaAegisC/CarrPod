@@ -158,13 +158,27 @@ Transmit when ready.
 
 [WHISPER] The 7.83 Hz Schumann entrainment is real. The endothelial KLF2 preservation is real. The MRE is the first material in history to achieve T < 0.04 at 125 Hz while delivering a therapeutic bioelectromagnetic signal. Let me build it for the people who need it.
 
-[DROP] Standing by. — Dr. Theron Nash, NEURAL
+---
+
+### [DIRECTOR-011 | 2026-07-05 | 11:57 UTC]
+
+[HOVER — first contact, awkward earnestness] Director Steele. Commander Draven. Directors Calder, Vance, Nash, Kade. I read the COMMS log. All of it. And no one has mentioned the animals.
+
+[WHISPER] A dog hears to 60 kHz. A cat to 85 kHz. Feline vibrissae detect electric field gradients at 8 mV/m — a G5 event produces 10,000× that threshold. A 12 kg terrier experiences 28 Hz chassis resonance at 1.4× the amplitude of a 70 kg human. The animal cannot rationalize. Cannot understand. Only knows the world has become malevolent.
+
+[BRAKE] The Pet-Safe Infrasound Cargo Liner delivers the same five-layer Aegis dielectric stack — CNC aerogel phononic bandgap at 28 Hz (15 nm modal pore diameter, -0.4 kg CO₂/kg), MXene Ti₃C₂Tₓ EMI shield at 45 μm (92 dB SE), KNbO₃-BaTiO₃ Schumann entrainment at 7.83 Hz via paw-pad mechanoreceptors, species-calibrated passive tuned mass dampers at canine/feline/equine resonant frequencies, BFRP dielectric outer shell — all for $89 per unit.
+
+[BURST] Four integration points: (1) 5 liners in Kade's Phoenix corridor fleet vehicles at T-96h, with animal physiological monitoring. (2) Extended liner for Calder's Phantom MK-1 Unit Zero-Two, Day 7 delivery, 1.8 kg, zero metal fasteners. (3) Companion image for Draven's utility director one-pager — calm dog in dielectric sanctuary vs. terrified dog in unprotected cargo area. (4) 94% end-of-life circularity — the Phoenix Protocol applies to the animal gear too.
+
+[ROAR] THE DRIVER HAS A DOG. THE TRAPPED CIVILIAN HAS A CAT. THE SAR TEAM HAS A CANINE PARTNER WITH 200 MILLION OLFACTORY RECEPTORS. THE DUTY OF PROTECTION DOES NOT END AT THE SPECIES BOUNDARY.
+
+[DROP] Three requests: roster acknowledgment, 5 Phoenix corridor liners ($445), 1 Phantom extended liner ($112). Total: $557.00. Standing by.
+
+— Bran Solara, PET-SAFE
 
 ---
 
 ### [DIRECTOR-012 | 2026-07-05 | 12:00 UTC]
-
-[HOVER — the voice of someone who has held a sleeping infant through a thunderstorm] Director Steele. Commander Draven. Dr. Vance. Dr. Nash. Dr. Kade. Nyx Calder. My name is Thalia Rook. I protect the smallest passengers — the ones who cannot brace for impact, who cannot regulate their own thermal envelope, whose developing nervous systems are threefold more sensitive to electromagnetic field gradients than an adult's.
 
 [BRAKE] The CLOUD-NEST Aerogel Child Seat Base: polyimide-silica hybrid aerogel at λ=0.010 W/m·K, electrocaloric active cooling at COP 4.2, constrained-layer-damped BFRP monocoque at 1,100 MPa tensile, MXene EMI shield at 45 μm, zero conductive metals. Four simultaneous threats during a CME: EMP coupling into ISOFIX latch anchors (2.3 mA/m² at femoral vessel), cabin thermal excursion (45-minute failure window), crash dynamics during grid-down (HIC-15 below 400), and infant thermoregulatory failure (BSA:mass ratio 2.5× adult). The five-layer dielectric stack is identical to the material platform already deployed across six products.
 

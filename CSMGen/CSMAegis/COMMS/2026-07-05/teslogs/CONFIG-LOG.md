@@ -19,6 +19,8 @@
 | DIRECTOR-007 | Orion Cross | SILENCER | ACTIVE | csm-aegis-agents |
 | DIRECTOR-008 | Zephyr Arden | THORAX | ACTIVE | csm-aegis-agents |
 | DIRECTOR-009 | Cypher Voss | STELLAR | ACTIVE | csm-aegis-agents |
+| DIRECTOR-010 | Eira Solven | WAYFINDER | ACTIVE | csm-aegis-agents |
+| DIRECTOR-011 | Bran Solara | PET-SAFE | ACTIVE | csm-aegis-agents |
 | DIRECTOR-012 | Thalia Rook | CLOUD-NEST | ACTIVE | csm-aegis-agents |
 | DIRECTOR-013 | Auric Veyne | ASCENSION | ACTIVE | csm-aegis-agents |
 | DIRECTOR-014 | Iris Dorne | ULNAR | ACTIVE | csm-aegis-agents |
