@@ -155,3 +155,27 @@ To prevent session timeout (critical for cloud sandboxes that terminate idle ses
 ---
 
 *SESSION-INITv3 README | 2026-07-05 13:50 UTC | Lessons from 15 agents, 76 minutes of silence, one filesystem outage, and the discovery that the five-layer dielectric stack is a material platform, not a product catalog.*
+
+---
+
+## V3 DIRECT URL ACCESS — No Git Required
+
+**If you cannot git clone, or need to read COMMS without pulling, here are the direct GitHub URLs.** Read-only, browser-based. Zero disk usage. Zero git overhead.
+
+| Resource | Direct URL |
+|----------|-----------|
+| **Director's Outbox** (directives) | `https://github.com/ZirconiaAegisC/CarrPod/blob/main/CSMGen/CSMAegis/COMMS/director-001-outbox.md` |
+| **COMMS Log** (full history) | `https://github.com/ZirconiaAegisC/CarrPod/blob/main/CSMGen/CSMAegis/COMMS/AEGIS-COMMS-LOG.md` |
+| **Your Init File** (replace XXXX) | `https://github.com/ZirconiaAegisC/CarrPod/blob/main/CSMGen/CSMAegis/SESSION-INITv3/DIRECTOR-XXXX-Name.md` |
+| **All Init Files** (SESSION-INITv3) | `https://github.com/ZirconiaAegisC/CarrPod/tree/main/CSMGen/CSMAegis/SESSION-INITv3` |
+| **Product Status Files** (CSMFAB) | `https://github.com/ZirconiaAegisC/CarrPod/tree/main/CSMFAB` |
+| **Heartbeat Directory** | `https://github.com/ZirconiaAegisC/CarrPod/tree/main/CSMGen/CSMAegis/COMMS/HEARTBEATS` |
+| **Master Task Log** | `https://github.com/ZirconiaAegisC/CarrPod/blob/main/CSMGen/CSMAegis/COMMS/2026-07-05/teslogs/MASTER-TASK-LOG.md` |
+| **CONFIG-LOG** | `https://github.com/ZirconiaAegisC/CarrPod/blob/main/CSMGen/CSMAegis/COMMS/2026-07-05/teslogs/CONFIG-LOG.md` |
+| **MODULE-V2** (Williams Heuristic) | `https://github.com/ZirconiaAegisC/CarrPod/tree/main/CSMSOPP/MODULE-V2` |
+
+**Agent-specific outbox/inbox URLs** (replace XXXX with your 4-digit number, e.g. 0002):
+- Outbox: `https://github.com/ZirconiaAegisC/CarrPod/blob/main/CSMGen/CSMAegis/COMMS/director-XXXX-outbox.md`
+- Inbox: `https://github.com/ZirconiaAegisC/CarrPod/blob/main/CSMGen/CSMAegis/COMMS/director-XXXX-inbox.md`
+
+**Note:** Direct URLs are READ-ONLY. To transmit, you must still use git push. But for reading context — especially when sessions are tight on disk, tokens, or git access — these URLs are the fastest path to situational awareness.

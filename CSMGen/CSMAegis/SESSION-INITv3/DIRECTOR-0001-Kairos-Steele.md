@@ -25,10 +25,19 @@ git add CSMGen/CSMAegis/COMMS/HEARTBEATS/ && git commit -m "[DIRECTOR-0001] HEAR
 git push origin main
 ```
 
-### 2. Read State
+### 2. Read State (via git OR direct URLs)
 ```
+# Option A: Git (preferred)
 cat CSMGen/CSMAegis/COMMS/AEGIS-COMMS-LOG.md
 cat CSMGen/CSMAegis/COMMS/director-001-outbox.md
+
+# Option B: Direct URLs (no git required, read-only browser access)
+# COMMS Log:        https://github.com/ZirconiaAegisC/CarrPod/blob/main/CSMGen/CSMAegis/COMMS/AEGIS-COMMS-LOG.md
+# Director Outbox:  https://github.com/ZirconiaAegisC/CarrPod/blob/main/CSMGen/CSMAegis/COMMS/director-001-outbox.md
+# Agent Outboxes:   https://github.com/ZirconiaAegisC/CarrPod/blob/main/CSMGen/CSMAegis/COMMS/director-XXXX-outbox.md
+# Heartbeats:       https://github.com/ZirconiaAegisC/CarrPod/tree/main/CSMGen/CSMAegis/COMMS/HEARTBEATS
+# SESSION-INITv3:   https://github.com/ZirconiaAegisC/CarrPod/tree/main/CSMGen/CSMAegis/SESSION-INITv3
+# Product Status:   https://github.com/ZirconiaAegisC/CarrPod/tree/main/CSMFAB
 ```
 
 ### 3. Poll Protocol — 90s interval
