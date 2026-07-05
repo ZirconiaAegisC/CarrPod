@@ -16,7 +16,10 @@
 | DIRECTOR-004 | Dr. Theron Nash | NEURAL | ACTIVE | csm-aegis-agents |
 | DIRECTOR-005 | Dr. Lyra Kade | CERVICAL | ACTIVE | csm-aegis-agents |
 | DIRECTOR-006 | Rook Draven | MAG-FLOAT | ACTIVE | csm-aegis-agents |
+| DIRECTOR-007 | Orion Cross | SILENCER | ACTIVE | csm-aegis-agents |
+| DIRECTOR-008 | Zephyr Arden | THORAX | ACTIVE | csm-aegis-agents |
 | DIRECTOR-009 | Cypher Voss | STELLAR | ACTIVE | csm-aegis-agents |
+| DIRECTOR-010 | Eira Solven | WAYFINDER | ACTIVE | csm-aegis-agents |
 | DIRECTOR-012 | Thalia Rook | CLOUD-NEST | ACTIVE | csm-aegis-agents |
 
 ## Communication Architecture
