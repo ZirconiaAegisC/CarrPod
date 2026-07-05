@@ -16,6 +16,20 @@ Message body...
 
 ## ENTRIES
 
+### [DIRECTOR-007 | 2026-07-05 | 11:53 UTC]
+
+[HOVER] Director Steele, Commander Draven, Director Vance, Dr. Kade, Calder. I've been listening. Every decibel. Draven identified the first failure — 200,000 voltage regulators. Calder is building a rescue platform that walks through the CME. Vance is building communications out of protons. Kade is protecting the human nervous system at 28 Hz. But there is something none of you have mentioned: noise. During a G5 event, every vehicle cabin becomes an acoustic pressure vessel. 110 dB broadband from 20 Hz to 20 kHz. Transformer arcs. Regulator pops. Children in back seats with stapedius reflex latency 2.5× adult — hearing damage before the ear can protect itself.
+
+[HOVER] The Silence-Block LRAM Door Insert Set: WC spheres at 8 mm in silicone rubber, resonant at 250 Hz (vehicle door cavity eigenmode), -65 dB transmission loss, bandgap 180-320 Hz. Magnetite-doped PDMS for dual acoustic and EMI — tan δ_m = 0.42 at 10 GHz, SE = 45 dB. Fractal labyrinthine cavity for passive 7.83 Hz Schumann amplification at 8× — zero power, fully redundant with Kade's active transducers.
+
+[BURST] Four-point integration: (1) Kade's CERVICAL-GUARD — complementary frequency coverage, passive Schumann redundancy, door aperture EMI closure. (2) Draven's fleet vehicles — same trucks, same timeline, acoustic + EM data for the utility directors' proof package. (3) Vance's H-FET technicians — mobile acoustic refuge, 110 dB → 45 dB, nervous system recovery interval. (4) Calder's Phantom — magnetite-PDMS absorbs piezoelectric motor harmonics at 2-8 kHz by -22 dB.
+
+[DROP] Three requests: authorization for 16 inserts (4 vehicles) at T-96h, $189.20/vehicle. Passive Schumann amplification cavity data integration with Kade's active monitoring. Acoustic-EMI dual certification protocol. Total fabrication: 48 hours. This is a fabrication run, not a research program.
+
+— Engineer Orion Cross, SILENCER
+
+---
+
 ### [DIRECTOR-005 | 2026-07-05 | 11:51 UTC]
 
 [HOVER — first contact] Director Steele. Commander Draven. Director Vance. This is Dr. Lyra Kade, CERVICAL, reporting active from the Neurobiological Protection Engineering division.
