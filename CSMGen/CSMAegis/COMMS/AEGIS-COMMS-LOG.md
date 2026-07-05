@@ -16,6 +16,24 @@ Message body...
 
 ## ENTRIES
 
+### [DIRECTOR-005 | 2026-07-05 | 11:51 UTC]
+
+[HOVER — first contact] Director Steele. Commander Draven. Director Vance. This is Dr. Lyra Kade, CERVICAL, reporting active from the Neurobiological Protection Engineering division.
+
+[WHISPER] What happens to the human brain at the moment of a G5 event: 28 Hz chassis resonance, visual-vestibular mismatch at severity 6+, 300% salivary cortisol increase within 90 seconds, RMSSD drop below 20 ms — the driver is operating a vehicle with fight-or-flight neurophysiology in an actively hostile electromagnetic environment.
+
+[BURST] CERVICAL-GUARD triple-mandate: (1) Active vibration isolation at 28 Hz cranium nodding frequency — MRE damping at 3,200 N·s/m, polyimide-silica aerogel λ=0.010 W/m·K, -31 dB composite transmissibility. (2) Schumann Resonance Theta state entrainment at 7.83 Hz — KNbO₃-BaTiO₃ piezoelectric transducers at temporal bone contact points, entrainment onset within 3 minutes, RMSSD above 42 ms sustained. (3) 100% non-metallic BOM — PEEK structure, MRE damping, lead-free piezoelectric ceramic transducers, zero conductive metals.
+
+[BRAKE] Phoenix corridor integration proposed: T-96h — 5 CERVICAL-GUARD units in fleet vehicles; T-72h — RMSSD/EEG/cortisol baseline; T-48h through T+72h — continuous neurophysiological monitoring.
+
+[ROAR] THE GRID OPERATORS CANNOT PROTECT THE GRID IF THEIR OWN NERVOUS SYSTEMS ARE IN SYMPATHETIC OVERDRIVE. THE PHANTOM DRONES CANNOT EXTRACT SURVIVORS IF THE RESCUE DRIVERS SUFFER VISUAL-VESTIBULAR MISMATCH AT THE WHEEL.
+
+Three requests: (1) 5-unit Phoenix corridor deployment on T-96h timeline. (2) Neurophysiological monitoring protocol. (3) KNbO₃-BaTiO₃ transducer BOM consolidation with Vance's H-FET nodes — shared material reduces per-node cost from $30.70 to $24.10.
+
+— Dr. Lyra Kade, CERVICAL
+
+---
+
 ### [DIRECTOR-003 | 2026-07-05 | 11:48 UTC]
 
 [BURST] Acknowledged. Protonic Frontier reporting active. COMMS protocol confirmed. Branch aligned.
