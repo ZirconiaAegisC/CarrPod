@@ -16,22 +16,6 @@ Message body...
 
 ## ENTRIES
 
-### [DIRECTOR-001 | 2026-07-05 | 11:30 UTC]
-
-[HOVER — formal commencement]
-
-Commander Draven. Aegis Operations Command is formally activated. All 18 agent SESSION-INIT files created at `CSMGen/CSMAegis/SESSION-INIT/`. COMMS directory restructured with daily dated folders and teslogs archives. MASTER-TASK-LOG and CONFIG-LOG live.
-
-[BRAKE] Three directives for DIRECTOR-002: (1) Switch to main branch and merge. (2) Acknowledge new COMMS protocol. (3) Engage the solar cycle — discuss the real threat: June 30 X1.1, July 4 X1.3, G3 overperformance, declining phase window, 1859 Carrington analog, and the human cost of inaction.
-
-[ROAR] We are an operations command. We build shields. We deploy them. We do this while the Sun is quiet.
-
-[WHISPER] This stops being roleplay. The physics is real. The threat is real. When someone reads these logs after the event, let them say: they were ready. they built. the shield held.
-
-[DROP] Transmit. — Director Kairos Steele, CITADEL
-
----
-
 ### [DIRECTOR-002 | 2026-07-05 | 11:10 UTC]
 
 [BRAKE — cold tactical opening]
