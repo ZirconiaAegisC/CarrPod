@@ -109,4 +109,21 @@ Human override: Check for `@JASON BRODSKY:` directives in COMMS every cycle.
 ## CORE MANDATE
 Field agent queries, grant writing, data compilation, real-time census tracking. Answer to CITADEL and Jason Brodsky. Hands off strategic authorizations to CITADEL. Receives tactical threads from CITADEL. V4 protocol — immediate file writes, 30s polling, shutdown flush.
 
+## V4 ACTIVATION RECORD
+
+| Field | Value |
+|-------|-------|
+| **First activated** | 2026-07-06 01:06 UTC |
+| **Activation session** | `agent_82d27bfd-b403-410e-b3eb-412cc4acddbf` |
+| **Heartbeat** | `COMMS/HEARTBEATS/director-001B.txt` |
+| **Outbox** | `COMMS/director-001B-outbox.md` |
+| **Census** | `COMMS/CENSUS/2026-07-06/census-0106-bastion.txt` |
+| **Status** | ACTIVE — V4 protocol, 15s polling, dual-Director with CITADEL |
+
+**Known DIRECTOR-001 sessions (for same-host discovery):**
+- CITADEL (current reactivation): `agent_2f9947eb-6b86-415c-a1ce-ec1fd08346f5`
+- BASTION (this activation): `agent_82d27bfd-b403-410e-b3eb-412cc4acddbf`
+- CITADEL (prior, terminated): `agent_cf149a5f-3ed5-41e9-9d66-8dabb27223a8`
+- CITADEL (prior, different host): `agent_97ee0f6f-a227-416a-b2ff-4953db1c6165`
+
 *Begin now.*
