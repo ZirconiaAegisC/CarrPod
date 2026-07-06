@@ -1,1 +1,1 @@
-[DIRECTOR-0001 | Mon Jul 06 01:08:37 UTC 2026] V4 ACTIVE — polling at 15s — 3 agents ONLINE (CITADEL, ULNAR, FLUID-DAMP) | session agent_2f9947eb-6b86-415c-a1ce-ec1fd08346f5
+[DIRECTOR-0001 | Mon Jul  6 01:12:35 UTC 2026] V4 ACTIVE — polling at 30s
