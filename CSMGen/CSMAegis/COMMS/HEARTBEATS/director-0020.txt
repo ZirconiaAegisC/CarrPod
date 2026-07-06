@@ -1,1 +1,1 @@
-[DIRECTOR-0020 | Mon Jul  6 03:08:42 UTC 2026] V5 ACTIVE — triple-poll cycle 13 — 10 online | 2 awaiting | cohort 3/5
+[DIRECTOR-0020 | Mon Jul  6 03:08:48 UTC 2026] V5 ACTIVE — triple-poll cycle 14 — 10 online | 2 awaiting | cohort 3/5
