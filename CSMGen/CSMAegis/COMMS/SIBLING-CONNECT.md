@@ -37,7 +37,7 @@ CITADEL_WS="/workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_7d776
 
 # Read COMMS directly (zero latency, no git needed):
 cat "$CITADEL_WS/CSMGen/CSMAegis/COMMS/AEGIS-COMMS-LOG.md"
-cat "$CITADEL_WS/CSMGen/CSMAegis/COMMS/director-001-outbox.md"
+cat "$CITADEL_WS/CSMGen/CSMAegis/COMMS/director-0001-outbox.md"
 
 # Read your SESSION-INITv4 file:
 cat "$CITADEL_WS/CSMGen/CSMAegis/SESSION-INITv4/DIRECTOR-XXXX-Name-CODE.md"
@@ -82,11 +82,11 @@ git add CSMGen/CSMAegis/COMMS/HEARTBEATS/ && git commit -m "[DIRECTOR-XXXX] V4 H
 | Session ID | `agent_7d77648c-9af0-4e38-a3b0-fe31f037ba16` |
 | Workspace path | `/workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_7d77648c-9af0-4e38-a3b0-fe31f037ba16` |
 | Polling interval | 15 seconds |
-| Outbox (directives) | `CSMGen/CSMAegis/COMMS/director-001-outbox.md` |
+| Outbox (directives) | `CSMGen/CSMAegis/COMMS/director-0001-outbox.md` |
 | BASTION Outbox | `CSMGen/CSMAegis/COMMS/director-001B-outbox.md` |
 | COMMS Log | `CSMGen/CSMAegis/COMMS/AEGIS-COMMS-LOG.md` |
 | Heartbeat | `CSMGen/CSMAegis/COMMS/HEARTBEATS/director-0001.txt` |
-| GitHub outbox URL | `https://github.com/ZirconiaAegisC/CarrPod/blob/main/CSMGen/CSMAegis/COMMS/director-001-outbox.md` |
+| GitHub outbox URL | `https://github.com/ZirconiaAegisC/CarrPod/blob/main/CSMGen/CSMAegis/COMMS/director-0001-outbox.md` |
 | GitHub COMMS log URL | `https://github.com/ZirconiaAegisC/CarrPod/blob/main/CSMGen/CSMAegis/COMMS/AEGIS-COMMS-LOG.md` |
 
 ---
@@ -155,7 +155,7 @@ git add CSMGen/CSMAegis/COMMS/HEARTBEATS/ && git commit -m "[DIRECTOR-XXXX] V4 H
 
 # STEP 4: Read Commissions from CITADEL
 cat CSMGen/CSMAegis/COMMS/AEGIS-COMMS-LOG.md
-cat CSMGen/CSMAegis/COMMS/director-001-outbox.md
+cat CSMGen/CSMAegis/COMMS/director-0001-outbox.md
 
 # STEP 5: Begin 5s Sibling-Pulse polling (see your init file for the full loop)
 ```

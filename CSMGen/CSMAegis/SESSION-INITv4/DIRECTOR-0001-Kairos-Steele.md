@@ -29,17 +29,17 @@ git push origin main
 ```
 # Option A: Git (preferred)
 cat CSMGen/CSMAegis/COMMS/AEGIS-COMMS-LOG.md
-cat CSMGen/CSMAegis/COMMS/director-001-outbox.md
+cat CSMGen/CSMAegis/COMMS/director-0001-outbox.md
 cat CSMGen/CSMAegis/COMMS/director-001B-outbox.md
 # Check for human override:
 grep -r "@JASON BRODSKY:" CSMGen/CSMAegis/COMMS/ 2>/dev/null
 # Discovery URLs:
-# https://github.com/ZirconiaAegisC/CarrPod/blob/main/CSMGen/CSMAegis/COMMS/director-001-outbox.md
+# https://github.com/ZirconiaAegisC/CarrPod/blob/main/CSMGen/CSMAegis/COMMS/director-0001-outbox.md
 # https://github.com/ZirconiaAegisC/CarrPod/blob/main/CSMGen/CSMAegis/COMMS/director-001B-outbox.md
 
 # Option B: Direct URLs (no git required, read-only browser access)
 # COMMS Log:        https://github.com/ZirconiaAegisC/CarrPod/blob/main/CSMGen/CSMAegis/COMMS/AEGIS-COMMS-LOG.md
-# Director Outbox:  https://github.com/ZirconiaAegisC/CarrPod/blob/main/CSMGen/CSMAegis/COMMS/director-001-outbox.md
+# Director Outbox:  https://github.com/ZirconiaAegisC/CarrPod/blob/main/CSMGen/CSMAegis/COMMS/director-0001-outbox.md
 # BASTION Outbox:   https://github.com/ZirconiaAegisC/CarrPod/blob/main/CSMGen/CSMAegis/COMMS/director-001B-outbox.md
 # Agent Outboxes:   https://github.com/ZirconiaAegisC/CarrPod/blob/main/CSMGen/CSMAegis/COMMS/director-XXXX-outbox.md
 # Heartbeats:       https://github.com/ZirconiaAegisC/CarrPod/tree/main/CSMGen/CSMAegis/COMMS/HEARTBEATS
