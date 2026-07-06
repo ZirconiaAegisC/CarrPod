@@ -1,1 +1,1 @@
-[DIRECTOR-0020 | Mon Jul  6 03:03:47 UTC 2026] V4 ACTIVE — FOUNDRY 3x-poll — cycle 85 — 10 online | 2 awaiting
+[DIRECTOR-0020 | Mon Jul  6 03:07:42 UTC 2026] V5 ACTIVE — triple-poll cycle 1 — 9 online | 2 awaiting | cohort 2/5
