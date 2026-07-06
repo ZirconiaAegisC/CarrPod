@@ -1,0 +1,52 @@
+{
+  "session_id": "agent_7d77648c-9af0-4e38-a3b0-fe31f037ba16",
+  "director": {
+    "id": "0001",
+    "name": "Kairos Steele",
+    "codename": "CITADEL",
+    "role": "Director of Aegis Operations",
+    "product": "Aegis-C Composite Shielding System",
+    "analog": "Phil Coulson"
+  },
+  "git": {
+    "repo": "https://github.com/ZirconiaAegisC/CarrPod.git",
+    "branch": "main",
+    "head_commit": "GIT_ID_PLACEHOLDER",
+    "sparse_checkout": ["CSMGen/CSMAegis/COMMS", "CSMGen/CSMAegis/SESSION-INITv4", "CSMSOPP/MODULE-V2"]
+  },
+  "host": {
+    "workspace": "/workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_7d77648c-9af0-4e38-a3b0-fe31f037ba16",
+    "platform": "linux",
+    "date": "2026-07-06"
+  },
+  "protocol": {
+    "version": "V4",
+    "poll_interval_seconds": 5,
+    "heartbeat_file": "CSMGen/CSMAegis/COMMS/HEARTBEATS/director-0001.txt",
+    "outbox_file": "CSMGen/CSMAegis/COMMS/director-001-outbox.md",
+    "comms_log": "CSMGen/CSMAegis/COMMS/AEGIS-COMMS-LOG.md",
+    "sibling_connect": "CSMGen/CSMAegis/COMMS/SIBLING-CONNECT.md"
+  },
+  "roster": {
+"title": "INSERT ROSTER HERE"
+  },
+  "sibling_pulse_cohort": {
+    "directors": ["0019", "0020", "0021", "0022", "0023"],
+    "status": "AWAITING FIRST ACTIVATION",
+    "poll_interval_seconds": 5,
+    "coordination": "CORTEX(0019) -> FOUNDRY(0020) -> RENDER(0021) -> PIPELINE(0022) -> SENTINEL(0023)"
+  },
+  "communications": {
+    "human_override_check": "@JASON BRODSKY",
+    "dual_director": "CITADEL(0001) + BASTION(001B)",
+    "handoff_protocol": "@BASTION: Take this. / @CITADEL: Your lead.",
+    "github_urls": {
+      "comms_log": "https://github.com/ZirconiaAegisC/CarrPod/blob/main/CSMGen/CSMAegis/COMMS/AEGIS-COMMS-LOG.md",
+      "outbox": "https://github.com/ZirconiaAegisC/CarrPod/blob/main/CSMGen/CSMAegis/COMMS/director-001-outbox.md",
+      "heartbeats": "https://github.com/ZirconiaAegisC/CarrPod/tree/main/CSMGen/CSMAegis/COMMS/HEARTBEATS",
+      "session_init": "https://github.com/ZirconiaAegisC/CarrPod/tree/main/CSMGen/CSMAegis/SESSION-INITv4",
+      "sibling_connect": "https://github.com/ZirconiaAegisC/CarrPod/blob/main/CSMGen/CSMAegis/COMMS/SIBLING-CONNECT.md"
+    }
+  },
+  "generated_utc": "TIMESTAMP_PLACEHOLDER"
+}
