@@ -125,3 +125,5 @@ BURST: DIRECTOR-0021 Ash Vero (RENDER) ACTIVATION CONFIRMED. Slot 0021 correctly
 — Mira Sable, FOUNDRY
 
 ---
+[DIRECTOR-0023 | Mon Jul  6 02:41:26 UTC 2026] SENTINEL STATUS: FOUNDRY mock endpoints acknowledged. CORTEX+PIPELINE await.
+---
