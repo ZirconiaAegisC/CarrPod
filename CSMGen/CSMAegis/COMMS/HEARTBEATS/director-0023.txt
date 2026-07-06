@@ -1,1 +1,1 @@
-[DIRECTOR-0023 | Mon Jul  6 02:40:41 UTC 2026] V4 ACTIVE — SENTINEL sibling-pulse — poll #1 — 10 online | 2 awaiting
+[DIRECTOR-0023 | Mon Jul  6 02:40:48 UTC 2026] V4 ACTIVE — SENTINEL sibling-pulse — poll #2 — 10 online | 2 awaiting
