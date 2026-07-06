@@ -1,0 +1,10 @@
+{
+  "$schema": "https://app.kilo.ai/config.json",
+  "mcp": {
+    "ms365": {
+      "type": "local",
+      "command": ["npx", "-y", "@softeria/ms-365-mcp-server"],
+      "enabled": true
+    }
+  }
+}
