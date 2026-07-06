@@ -1,21 +1,17 @@
 package com.carrpod.marmalade.ui.screens
 
 import androidx.lifecycle.ViewModel
+import androidx.lifecycle.viewModelScope
 import com.carrpod.marmalade.MarmaladeApp
 import com.carrpod.marmalade.models.*
 import kotlinx.coroutines.flow.*
+import kotlinx.coroutines.launch
 
 class MarmaladeViewModel : ViewModel() {
-    private val db = MarmaladeApp.instance.database
     private val agentManager = MarmaladeApp.instance.agentManager
+    private val db = MarmaladeApp.instance.database
 
-    data class UiState(
-        val censusOnline: Int = 0,
-        val censusAwaiting: Int = 0,
-        val censusCohort: Int = 0,
-        val isConnected: Boolean = true
-    )
-
+    data class UiState(val online: Int = 0, val awaiting: Int = 0)
     private val _uiState = MutableStateFlow(UiState())
     val uiState: StateFlow<UiState> = _uiState.asStateFlow()
 
@@ -26,45 +22,30 @@ class MarmaladeViewModel : ViewModel() {
         .stateIn(viewModelScope, SharingStarted.WhileSubscribed(5000), emptyList())
 
     fun refresh() {
-        _uiState.value = _uiState.value.copy(
-            censusOnline = agentManager.getOnlineCount.let {
-                kotlinx.coroutines.runBlocking { it }
-            }
-        )
+        viewModelScope.launch {
+            val count = agentManager.getOnlineCount()
+            _uiState.value = UiState(online = count)
+        }
     }
 
     fun sendMessage(to: String, text: String) {
-        kotlinx.coroutines.runBlocking {
+        viewModelScope.launch {
             val msg = Message(
                 fromAgentId = "0001-CITADEL",
                 toAgentId = if (to == "ALL") null else to,
-                attentionHeader = if (to != "ALL") "[FOR DIRECTOR-$to]" else null,
                 subject = text.take(80),
                 body = text,
                 vocalMode = VocalMode.DROP,
-                isDirective = text.startsWith("[DIRECTIVE]") || text.startsWith("[DROP]")
+                isDirective = text.startsWith("[DIRECTIVE]")
             )
             agentManager.routeMessage(msg)
         }
     }
 
-    fun openNewSession() {
-        kotlinx.coroutines.runBlocking {
-            agentManager.openSession("WEBVIEW-${System.currentTimeMillis()}")
-        }
+    fun getOnlineCount(): Int = kotlinx.coroutines.runBlocking { agentManager.getOnlineCount() }
+    fun getAgentCount(): Int = kotlinx.coroutines.runBlocking { agents.value.size }
+    fun getMessageCount(): Int = messages.value.size
+    fun getAwaitingCount(): Int = kotlinx.coroutines.runBlocking {
+        agentManager.getAllAgents().first().count { it.status == AgentStatus.AWAITING }
     }
-
-    fun getStats(): Stats = kotlinx.coroutines.runBlocking {
-        val agents = agentManager.getAllAgents().first()
-        val msgs = db.messageDao().getAllMessages().first()
-        Stats(
-            online = agents.count { it.status == AgentStatus.ONLINE },
-            awaiting = agents.count { it.status == AgentStatus.AWAITING },
-            offline = agents.count { it.status == AgentStatus.OFFLINE },
-            messages = msgs.size,
-            sessions = 0
-        )
-    }
-
-    data class Stats(val online: Int, val awaiting: Int, val offline: Int, val messages: Int, val sessions: Int)
 }

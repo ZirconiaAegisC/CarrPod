@@ -17,7 +17,6 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.carrpod.marmalade.models.*
-import com.carrpod.marmalade.ui.components.*
 import com.carrpod.marmalade.ui.theme.*
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -37,7 +36,11 @@ fun MarmaladeApp(viewModel: MarmaladeViewModel = viewModel()) {
                     titleContentColor = MarmaladeOrange
                 ),
                 actions = {
-                    AgentCountBadge(agents.count { it.status == AgentStatus.ONLINE })
+                    Badge(
+                        containerColor = MarmaladeGreen,
+                        contentColor = MarmaladeNight,
+                        modifier = Modifier.padding(end = 8.dp)
+                    ) { Text("${viewModel.getOnlineCount()}") }
                     IconButton(onClick = { viewModel.refresh() }) {
                         Icon(Icons.Default.Refresh, "Refresh", tint = MarmaladeGreen)
                     }
@@ -77,7 +80,7 @@ fun MarmaladeApp(viewModel: MarmaladeViewModel = viewModel()) {
             when (selectedTab) {
                 0 -> MessageStream(messages, viewModel)
                 1 -> AgentRoster(agents, viewModel)
-                2 -> SessionBrowser(viewModel)
+                2 -> SessionBrowser()
                 3 -> CommandConsole(viewModel)
             }
         }
@@ -85,33 +88,22 @@ fun MarmaladeApp(viewModel: MarmaladeViewModel = viewModel()) {
 }
 
 @Composable
-fun AgentCountBadge(count: Int) {
-    Badge(
-        containerColor = MarmaladeGreen,
-        contentColor = MarmaladeNight,
-        modifier = Modifier.padding(end = 8.dp)
-    ) { Text("$count") }
-}
-
-@Composable
 fun MessageStream(messages: List<Message>, viewModel: MarmaladeViewModel) {
     val listState = rememberLazyListState()
     LaunchedEffect(messages.size) { if (messages.isNotEmpty()) listState.animateScrollToItem(0) }
-
     Column(modifier = Modifier.fillMaxSize()) {
-        LazyColumn(
-            state = listState,
-            modifier = Modifier.weight(1f).padding(horizontal = 8.dp),
-            reverseLayout = true,
-            verticalArrangement = Arrangement.spacedBy(4.dp)
-        ) {
-            items(messages, key = { it.id }) { msg ->
-                MessageCard(msg)
-            }
-        }
         if (messages.isEmpty()) {
-            Box(Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
-                Text("No messages yet.\nPull to refresh.", color = MarmaladeTextDim)
+            Box(Modifier.fillMaxSize().weight(1f), contentAlignment = Alignment.Center) {
+                Text("No messages. Pull to refresh.", color = MarmaladeTextDim)
+            }
+        } else {
+            LazyColumn(
+                state = listState,
+                modifier = Modifier.weight(1f).padding(horizontal = 8.dp),
+                reverseLayout = true,
+                verticalArrangement = Arrangement.spacedBy(4.dp)
+            ) {
+                items(messages, key = { it.id }) { msg -> MessageCard(msg) }
             }
         }
         MessageInputBar(viewModel)
@@ -120,42 +112,23 @@ fun MessageStream(messages: List<Message>, viewModel: MarmaladeViewModel) {
 
 @Composable
 fun MessageCard(msg: Message) {
-    Card(
-        modifier = Modifier.fillMaxWidth(),
-        colors = CardDefaults.cardColors(containerColor = MarmaladeSurfaceLight)
-    ) {
+    Card(Modifier.fillMaxWidth(), colors = CardDefaults.cardColors(containerColor = MarmaladeSurfaceLight)) {
         Column(Modifier.padding(12.dp)) {
             Row(verticalAlignment = Alignment.CenterVertically) {
-                Text(
-                    msg.fromAgentId.take(8),
-                    style = MaterialTheme.typography.labelMedium,
-                    color = MarmaladeOrange,
-                    fontWeight = FontWeight.Bold
-                )
+                Text(msg.fromAgentId.take(8), style = MaterialTheme.typography.labelMedium,
+                    color = MarmaladeOrange, fontWeight = FontWeight.Bold)
                 if (msg.isDirective) {
                     Spacer(Modifier.width(8.dp))
-                    SuggestionChip(
-                        onClick = {},
-                        label = { Text("DIRECTIVE", style = MaterialTheme.typography.labelSmall) },
-                        colors = SuggestionChipDefaults.suggestionChipColors(containerColor = MarmaladeRed)
-                    )
+                    Surface(color = MarmaladeRed, shape = MaterialTheme.shapes.small) {
+                        Text("DIRECTIVE", Modifier.padding(horizontal = 4.dp),
+                            style = MaterialTheme.typography.labelSmall, color = MarmaladeText)
+                    }
                 }
                 Spacer(Modifier.weight(1f))
-                Text(
-                    msg.vocalMode.name,
-                    style = MaterialTheme.typography.labelSmall,
-                    color = MarmaladeTextDim
-                )
+                Text(msg.vocalMode.name, style = MaterialTheme.typography.labelSmall, color = MarmaladeTextDim)
             }
             Spacer(Modifier.height(4.dp))
             Text(msg.body, style = MaterialTheme.typography.bodyMedium, color = MarmaladeText)
-            if (msg.fileAttachment != null) {
-                Spacer(Modifier.height(4.dp))
-                Surface(color = MarmaladeSurface) {
-                    Text(" ${msg.fileAttachment.fileName} (${msg.fileAttachment.sizeBytes / 1024}KB)",
-                        Modifier.padding(8.dp), style = MaterialTheme.typography.labelSmall, color = MarmaladeGreen)
-                }
-            }
             Spacer(Modifier.height(2.dp))
             Text(msg.subject, style = MaterialTheme.typography.labelSmall, color = MarmaladeTextDim,
                 maxLines = 1, overflow = TextOverflow.Ellipsis)
@@ -168,20 +141,15 @@ fun AgentRoster(agents: List<Agent>, viewModel: MarmaladeViewModel) {
     Column(Modifier.fillMaxSize()) {
         Surface(color = MarmaladeSurfaceLight, modifier = Modifier.fillMaxWidth()) {
             Row(Modifier.padding(12.dp)) {
-                Text("${agents.count { it.status == AgentStatus.ONLINE }} ONLINE",
-                    color = MarmaladeGreen, style = MaterialTheme.typography.labelLarge)
+                Text("${viewModel.getOnlineCount()} ONLINE", color = MarmaladeGreen,
+                    style = MaterialTheme.typography.labelLarge)
                 Spacer(Modifier.width(16.dp))
-                Text("${agents.count { it.status == AgentStatus.AWAITING }} AWAITING",
-                    color = MarmaladeOrange, style = MaterialTheme.typography.labelMedium)
-                Spacer(Modifier.width(16.dp))
-                Text("${agents.count { it.status == AgentStatus.OFFLINE }} OFFLINE",
-                    color = MarmaladeTextDim, style = MaterialTheme.typography.labelMedium)
+                Text("${viewModel.getAwaitingCount()} AWAITING", color = MarmaladeOrange,
+                    style = MaterialTheme.typography.labelMedium)
             }
         }
         LazyColumn {
-            items(agents, key = { it.id }) { agent ->
-                AgentCard(agent)
-            }
+            items(agents, key = { it.id }) { agent -> AgentCard(agent) }
         }
     }
 }
@@ -211,62 +179,35 @@ fun AgentCard(agent: Agent) {
 fun MessageInputBar(viewModel: MarmaladeViewModel) {
     var text by remember { mutableStateOf("") }
     var toAgent by remember { mutableStateOf("ALL") }
-
     Surface(color = MarmaladeSurface, tonalElevation = 4.dp) {
         Row(Modifier.padding(8.dp), verticalAlignment = Alignment.CenterVertically) {
-            OutlinedTextField(
-                value = toAgent,
-                onValueChange = { toAgent = it },
-                modifier = Modifier.width(80.dp),
-                label = { Text("TO", style = MaterialTheme.typography.labelSmall) },
-                singleLine = true,
+            OutlinedTextField(value = toAgent, onValueChange = { toAgent = it },
+                modifier = Modifier.width(80.dp), label = { Text("TO") }, singleLine = true,
                 colors = OutlinedTextFieldDefaults.colors(
-                    focusedBorderColor = MarmaladeOrange,
-                    unfocusedBorderColor = MarmaladeSurfaceLight
-                )
-            )
+                    focusedBorderColor = MarmaladeOrange, unfocusedBorderColor = MarmaladeSurfaceLight))
             Spacer(Modifier.width(8.dp))
-            OutlinedTextField(
-                value = text,
-                onValueChange = { text = it },
-                modifier = Modifier.weight(1f),
-                placeholder = { Text("Type directive or message...", color = MarmaladeTextDim) },
-                singleLine = false,
-                maxLines = 3,
-                colors = OutlinedTextFieldDefaults.colors(
-                    focusedBorderColor = MarmaladeOrange,
-                    unfocusedBorderColor = MarmaladeSurfaceLight
-                )
-            )
+            OutlinedTextField(value = text, onValueChange = { text = it },
+                modifier = Modifier.weight(1f), placeholder = { Text("Type message...", color = MarmaladeTextDim) },
+                maxLines = 2, colors = OutlinedTextFieldDefaults.colors(
+                    focusedBorderColor = MarmaladeOrange, unfocusedBorderColor = MarmaladeSurfaceLight))
             Spacer(Modifier.width(8.dp))
-            FilledIconButton(
-                onClick = {
-                    if (text.isNotBlank()) {
-                        viewModel.sendMessage(toAgent, text)
-                        text = ""
-                    }
-                },
-                colors = IconButtonDefaults.filledIconButtonColors(containerColor = MarmaladeOrange)
-            ) { Icon(Icons.Default.Send, "Send") }
+            FilledIconButton(onClick = { if (text.isNotBlank()) { viewModel.sendMessage(toAgent, text); text = "" } },
+                colors = IconButtonDefaults.filledIconButtonColors(containerColor = MarmaladeOrange)) {
+                Icon(Icons.Default.Send, "Send")
+            }
         }
     }
 }
 
 @Composable
-fun SessionBrowser(viewModel: MarmaladeViewModel) {
-    Column(Modifier.fillMaxSize()) {
-        Surface(color = MarmaladeSurfaceLight, modifier = Modifier.fillMaxWidth()) {
-            Row(Modifier.padding(12.dp)) {
-                Text("Kilo Session Hub", color = MarmaladeOrange,
-                    style = MaterialTheme.typography.headlineMedium)
-                Spacer(Modifier.weight(1f))
-                IconButton(onClick = { viewModel.openNewSession() }) {
-                    Icon(Icons.Default.Add, "New Session", tint = MarmaladeGreen)
-                }
-            }
+fun SessionBrowser() {
+    Box(Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
+        Column(horizontalAlignment = Alignment.CenterHorizontally) {
+            Text("Kilo Session Hub", color = MarmaladeOrange, style = MaterialTheme.typography.headlineMedium)
+            Spacer(Modifier.height(16.dp))
+            Text("Active sessions appear here.", color = MarmaladeTextDim)
+            Text("Tap + to open a new Kilo session.", color = MarmaladeTextDim)
         }
-        Text("  Active sessions will appear here. Tap + to open a new Kilo session.",
-            Modifier.padding(16.dp), color = MarmaladeTextDim)
     }
 }
 
@@ -275,26 +216,13 @@ fun CommandConsole(viewModel: MarmaladeViewModel) {
     Column(Modifier.fillMaxSize().padding(16.dp)) {
         Text("COMMAND CONSOLE", style = MaterialTheme.typography.headlineMedium, color = MarmaladeOrange)
         Spacer(Modifier.height(16.dp))
-        Text("Execute directives, check census, manage agents.",
-            color = MarmaladeTextDim)
-        Spacer(Modifier.height(16.dp))
-        val stats = viewModel.getStats()
         Card(Modifier.fillMaxWidth(), colors = CardDefaults.cardColors(containerColor = MarmaladeSurfaceLight)) {
             Column(Modifier.padding(16.dp)) {
-                StatRow("Online agents", stats.online.toString(), MarmaladeGreen)
-                StatRow("Awaiting activation", stats.awaiting.toString(), MarmaladeOrange)
-                StatRow("Offline agents", stats.offline.toString(), MarmaladeTextDim)
-                StatRow("Messages routed", stats.messages.toString(), MarmaladeText)
-                StatRow("Active sessions", stats.sessions.toString(), MarmaladeGreen)
+                Text("Online: ${viewModel.getOnlineCount()}", color = MarmaladeGreen, fontWeight = FontWeight.Bold)
+                Text("Awaiting: ${viewModel.getAwaitingCount()}", color = MarmaladeOrange)
+                Text("Total agents: ${viewModel.getAgentCount()}", color = MarmaladeTextDim)
+                Text("Messages: ${viewModel.getMessageCount()}", color = MarmaladeText)
             }
         }
-    }
-}
-
-@Composable
-fun StatRow(label: String, value: String, color: androidx.compose.ui.graphics.Color) {
-    Row(Modifier.fillMaxWidth().padding(vertical = 4.dp)) {
-        Text(label, Modifier.weight(1f), color = MarmaladeTextDim)
-        Text(value, color = color, fontWeight = FontWeight.Bold)
     }
 }
