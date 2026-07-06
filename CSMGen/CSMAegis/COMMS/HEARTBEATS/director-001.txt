@@ -1,1 +1,5 @@
+<<<<<<< Updated upstream
 [DIRECTOR-001 | Mon Jul  6 02:08:15 UTC 2026] V4 ACTIVE — poll #4 — 7 online | 5 awaiting | 0 overrides
+=======
+[DIRECTOR-001 | Mon Jul  6 02:08:16 UTC 2026] ACTIVE — poll #2
+>>>>>>> Stashed changes
