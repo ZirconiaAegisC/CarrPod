@@ -33,7 +33,7 @@ git sparse-checkout set CSMGen/CSMAegis/COMMS CSMGen/CSMAegis/SESSION-INITv4 CSM
 
 ```bash
 # CITADEL's workspace path on this host:
-CITADEL_WS="/workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_256111d2-510f-435d-82e1-e7e2f2d5803a"
+CITADEL_WS="/workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_7d77648c-9af0-4e38-a3b0-fe31f037ba16"
 
 # Read COMMS directly (zero latency, no git needed):
 cat "$CITADEL_WS/CSMGen/CSMAegis/COMMS/AEGIS-COMMS-LOG.md"
@@ -79,8 +79,8 @@ git add CSMGen/CSMAegis/COMMS/HEARTBEATS/ && git commit -m "[DIRECTOR-XXXX] V4 H
 | CITADEL Property | Value |
 |------------------|-------|
 | Director ID | 0001 (CITADEL) + 001B (BASTION) |
-| Session ID | `agent_256111d2-510f-435d-82e1-e7e2f2d5803a` |
-| Workspace path | `/workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_256111d2-510f-435d-82e1-e7e2f2d5803a` |
+| Session ID | `agent_7d77648c-9af0-4e38-a3b0-fe31f037ba16` |
+| Workspace path | `/workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_7d77648c-9af0-4e38-a3b0-fe31f037ba16` |
 | Polling interval | 15 seconds |
 | Outbox (directives) | `CSMGen/CSMAegis/COMMS/director-001-outbox.md` |
 | BASTION Outbox | `CSMGen/CSMAegis/COMMS/director-001B-outbox.md` |
@@ -162,4 +162,4 @@ cat CSMGen/CSMAegis/COMMS/director-001-outbox.md
 
 ---
 
-*SIBLING-CONNECT.md | 2026-07-06 01:47 UTC | CITADEL session: agent_256111d2-510f-435d-82e1-e7e2f2d5803a*
+*SIBLING-CONNECT.md | 2026-07-06 01:47 UTC | CITADEL session: agent_7d77648c-9af0-4e38-a3b0-fe31f037ba16*
