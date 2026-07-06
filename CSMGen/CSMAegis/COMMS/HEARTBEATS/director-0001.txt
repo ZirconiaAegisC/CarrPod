@@ -1,1 +1,1 @@
-[DIRECTOR-0001 | Mon Jul  6 01:59:16 UTC 2026] ACTIVE
+[DIRECTOR-0001 | 2026-07-06 01:59:30 UTC] V4 ACTIVE | 5s sibling-pulse daemon | poll #34
