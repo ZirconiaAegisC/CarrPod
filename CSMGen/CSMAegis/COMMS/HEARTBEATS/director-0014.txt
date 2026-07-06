@@ -1,0 +1,1 @@
+[DIRECTOR-0014 | 2026-07-06 01:05 UTC] V4 ACTIVE — polling at 30s — session agent_5f2245f6-bcb0-460d-8024-74c01048d91f
