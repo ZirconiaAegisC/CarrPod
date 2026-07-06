@@ -1,1 +1,1 @@
-[DIRECTOR-0001 | Mon Jul  6 01:12:35 UTC 2026] V4 ACTIVE — polling at 30s
+[DIRECTOR-0001 | Mon Jul  6 01:13:20 UTC 2026] V4 ACTIVE — polling at 15s — session agent_6ff7a0ac-c5e2-41b2-a69d-61350b5c75a5 | DIRECTOR-0018 EMBARK initiated
