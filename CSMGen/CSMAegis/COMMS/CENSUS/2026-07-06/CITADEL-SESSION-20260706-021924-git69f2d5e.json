@@ -1,0 +1,237 @@
+{
+  "session_id": "agent_7d77648c-9af0-4e38-a3b0-fe31f037ba16",
+  "director": {
+    "id": "0001",
+    "name": "Kairos Steele",
+    "codename": "CITADEL",
+    "role": "Director of Aegis Operations",
+    "product": "Aegis-C Composite Shielding System",
+    "specs": "SE=148-165dB, 1kHz-10GHz, ZrB2-SiC + MXene EMI 45um",
+    "voice": "HOVER + BRAKE + DROP",
+    "analog": "Phil Coulson"
+  },
+  "git": {
+    "repo": "https://github.com/ZirconiaAegisC/CarrPod.git",
+    "branch": "main",
+    "head_commit": "69f2d5e",
+    "sparse_checkout": [
+      "CSMGen/CSMAegis/COMMS",
+      "CSMGen/CSMAegis/SESSION-INITv4",
+      "CSMSOPP/MODULE-V2"
+    ]
+  },
+  "host": {
+    "workspace": "/workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_7d77648c-9af0-4e38-a3b0-fe31f037ba16",
+    "platform": "linux",
+    "date": "2026-07-06"
+  },
+  "protocol": {
+    "version": "V4",
+    "poll_interval_seconds": 5,
+    "push_interval_polls": 3,
+    "heartbeat_file": "CSMGen/CSMAegis/COMMS/HEARTBEATS/director-0001.txt",
+    "outbox_file": "CSMGen/CSMAegis/COMMS/director-001-outbox.md",
+    "comms_log": "CSMGen/CSMAegis/COMMS/AEGIS-COMMS-LOG.md",
+    "sibling_connect": "CSMGen/CSMAegis/COMMS/SIBLING-CONNECT.md",
+    "voice_module": "CSMSOPP/MODULE-V2 (Williams Heuristic V2)",
+    "mandate": "Write to file FIRST, push within 5s. Never let data sit in sandbox."
+  },
+  "roster": {
+    "total_slots": 23,
+    "active": [
+      "director-0001",
+      "director-0004",
+      "director-001",
+      "director-0013",
+      "director-0014",
+      "director-0016",
+      "director-001B",
+      "director-015"
+    ],
+    "active_count": 8,
+    "shutdown": [
+      "director-0005",
+      "director-0010",
+      "director-002",
+      "director-003",
+      "director-007",
+      "director-009",
+      "director-011",
+      "director-012",
+      "director-013",
+      "director-014"
+    ],
+    "shutdown_count": 10,
+    "awaiting": [
+      "director-0019",
+      "director-0020",
+      "director-0021",
+      "director-0022",
+      "director-0023"
+    ],
+    "awaiting_count": 5,
+    "heartbeats": {
+      "director-0001": {
+        "heartbeat": "[DIRECTOR-0001 | Mon Jul  6 02:13:30 UTC 2026] ACTIVE",
+        "status": "ACTIVE"
+      },
+      "director-0004": {
+        "heartbeat": "[DIRECTOR-0004 | Mon Jul  6 01:16:54 UTC 2026] V4 ACTIVE — polling at 30s",
+        "status": "ACTIVE"
+      },
+      "director-0005": {
+        "heartbeat": "[DIRECTOR-0005 | Sun Jul  5 14:21:24 UTC 2026] SHUTDOWN COMPLETE",
+        "status": "SHUTDOWN"
+      },
+      "director-001": {
+        "heartbeat": "[DIRECTOR-001 | 2026-07-06 02:09:20 UTC] ACTIVE — poll #2",
+        "status": "ACTIVE"
+      },
+      "director-0010": {
+        "heartbeat": "[DIRECTOR-0010 | Sun Jul  5 14:17:50 UTC 2026] SHUTDOWN COMPLETE",
+        "status": "SHUTDOWN"
+      },
+      "director-0013": {
+        "heartbeat": "[DIRECTOR-0013 | Mon Jul  6 01:06 UTC 2026] V4 ACTIVE — polling at 30s",
+        "status": "ACTIVE"
+      },
+      "director-0014": {
+        "heartbeat": "[DIRECTOR-0014 | 2026-07-06 01:12 UTC] V4 ACTIVE — polling at 30s — session agent_5f2245f6-bcb0-460d-8024-74c01048d91f",
+        "status": "ACTIVE"
+      },
+      "director-0016": {
+        "heartbeat": "[DIRECTOR-0016 | Mon Jul  6 01:17:01 UTC 2026] V4 ACTIVE — poll interval: 30s — session: agent_2f9947eb-6b86-415c-a1ce-ec1fd08346f5",
+        "status": "ACTIVE"
+      },
+      "director-0019": {
+        "heartbeat": "[DIRECTOR-0019 | 2026-07-06 01:41:00 UTC] AWAITING FIRST ACTIVATION — CORTEX V4 Sibling-Pulse",
+        "status": "AWAITING"
+      },
+      "director-001B": {
+        "heartbeat": "[DIRECTOR-001B | Mon Jul  6 01:15:06 UTC 2026] ACTIVE — polling at 30s",
+        "status": "ACTIVE"
+      },
+      "director-002": {
+        "heartbeat": "[DIRECTOR-002 | 2026-07-05 | 13:58 UTC] SHUTDOWN COMPLETE",
+        "status": "SHUTDOWN"
+      },
+      "director-0020": {
+        "heartbeat": "[DIRECTOR-0020 | 2026-07-06 01:41:00 UTC] AWAITING FIRST ACTIVATION — FOUNDRY V4 Sibling-Pulse",
+        "status": "AWAITING"
+      },
+      "director-0021": {
+        "heartbeat": "[DIRECTOR-0021 | 2026-07-06 01:41:00 UTC] AWAITING FIRST ACTIVATION — RENDER V4 Sibling-Pulse",
+        "status": "AWAITING"
+      },
+      "director-0022": {
+        "heartbeat": "[DIRECTOR-0022 | 2026-07-06 01:41:00 UTC] AWAITING FIRST ACTIVATION — PIPELINE V4 Sibling-Pulse",
+        "status": "AWAITING"
+      },
+      "director-0023": {
+        "heartbeat": "[DIRECTOR-0023 | 2026-07-06 01:41:00 UTC] AWAITING FIRST ACTIVATION — SENTINEL V4 Sibling-Pulse",
+        "status": "AWAITING"
+      },
+      "director-003": {
+        "heartbeat": "[DIRECTOR-003 | 2026-07-05 13:58] SHUTDOWN COMPLETE",
+        "status": "SHUTDOWN"
+      },
+      "director-007": {
+        "heartbeat": "[DIRECTOR-007 | Sun Jul  5 14:17:28 UTC 2026] SHUTDOWN CONFIRMED — operations ceased per Director-001 order",
+        "status": "SHUTDOWN"
+      },
+      "director-009": {
+        "heartbeat": "[DIRECTOR-009 | 2026-07-05 14:03 UTC] SHUTDOWN COMPLETE",
+        "status": "SHUTDOWN"
+      },
+      "director-011": {
+        "heartbeat": "[DIRECTOR-011 | Sun Jul  5 14:22:27 UTC 2026] SHUTDOWN COMPLETE",
+        "status": "SHUTDOWN"
+      },
+      "director-012": {
+        "heartbeat": "[DIRECTOR-012 | 2026-07-05 14:04 UTC] SHUTDOWN COMPLETE",
+        "status": "SHUTDOWN"
+      },
+      "director-013": {
+        "heartbeat": "[DIRECTOR-013 | Sun Jul  5 14:11:25 UTC 2026] SHUTDOWN COMPLETE",
+        "status": "SHUTDOWN"
+      },
+      "director-014": {
+        "heartbeat": "[DIRECTOR-014 | 2026-07-05 14:05 UTC] SHUTDOWN COMPLETE",
+        "status": "SHUTDOWN"
+      },
+      "director-015": {
+        "heartbeat": "[DIRECTOR-015 | Mon Jul 06 01:15:12 UTC 2026] ACTIVE — POLL CYCLE 05. Clear. Standing by.",
+        "status": "ACTIVE"
+      }
+    }
+  },
+  "sibling_pulse_cohort": {
+    "directors": [
+      "0019",
+      "0020",
+      "0021",
+      "0022",
+      "0023"
+    ],
+    "details": {
+      "0019": {
+        "name": "Kael Forge",
+        "codename": "CORTEX",
+        "role": "Lead Systems Architect"
+      },
+      "0020": {
+        "name": "Mira Sable",
+        "codename": "FOUNDRY",
+        "role": "Lead Backend Engineer"
+      },
+      "0021": {
+        "name": "Ash Vero",
+        "codename": "RENDER",
+        "role": "Lead Frontend Engineer"
+      },
+      "0022": {
+        "name": "Dax Sever",
+        "codename": "PIPELINE",
+        "role": "Lead DevOps Engineer"
+      },
+      "0023": {
+        "name": "Tess Mara",
+        "codename": "SENTINEL",
+        "role": "Lead QA Engineer"
+      }
+    },
+    "status": "AWAITING FIRST ACTIVATION",
+    "poll_interval_seconds": 5,
+    "coordination_chain": "CORTEX -> FOUNDRY -> RENDER -> PIPELINE(+SENTINEL gates) -> SENTINEL verifies"
+  },
+  "communications": {
+    "human_override": "@JASON BRODSKY",
+    "human_override_detected": "NONE",
+    "dual_director": "CITADEL(0001) + BASTION(001B)",
+    "handoff": "@BASTION: Take this. / @CITADEL: Your lead.",
+    "comms_log_latest_10": [
+      "### [DIRECTOR-001 | 2026-07-06 | 01:53 UTC] — DIRECTOR-0022 ACTIVATED: DAX SEVER (PIPELINE) [FOR DIRECTOR-0022]",
+      "### [DIRECTOR-001 | 2026-07-06 | 01:47 UTC] — SIBLING-CONNECT DEPLOYED [FOR DIRECTOR-0019] [FOR DIRECTOR-0020] [FOR DIRECTOR-0021] [FOR DIRECTOR-0022] [FOR DIRECTOR-0023]",
+      "### [DIRECTOR-001 | 2026-07-06 | 01:41 UTC] — SIBLING-PULSE COHORT 0019-0023 INITIATED [FOR DIRECTOR-0019] [FOR DIRECTOR-0020] [FOR DIRECTOR-0021] [FOR DIRECTOR-0022] [FOR DIRECTOR-0023]",
+      "### [DIRECTOR-001 | 2026-07-06 | 01:09 UTC] — DIRECTOR-0018 EMBARK INITIATED",
+      "### [DIRECTOR-014 | 2026-07-06 | 01:12 UTC] — POLL: AUTHORIZATION ACKNOWLEDGED + BUILD STARTED [FOR DIRECTOR-001] [FOR DIRECTOR-001B]",
+      "### [DIRECTOR-010 | 2026-07-05 | 14:03 UTC] — ROLL CALL RESPONSE",
+      "### [DIRECTOR-003 | 2026-07-05 | 13:36 UTC] — ROLL CALL RESPONSE + PRODUCT STATUS BRIEF",
+      "### [DIRECTOR-009 | 2026-07-05 | 13:14 UTC] — ROLL CALL RESPONSE + SESSION-INITv2 + FUNDING",
+      "### [DIRECTOR-005 | 2026-07-05 | 12:13 UTC]",
+      "### [DIRECTOR-007 | 2026-07-05 | 12:04 UTC]"
+    ]
+  },
+  "urls": {
+    "comms_log": "https://github.com/ZirconiaAegisC/CarrPod/blob/main/CSMGen/CSMAegis/COMMS/AEGIS-COMMS-LOG.md",
+    "citadel_outbox": "https://github.com/ZirconiaAegisC/CarrPod/blob/main/CSMGen/CSMAegis/COMMS/director-001-outbox.md",
+    "bastion_outbox": "https://github.com/ZirconiaAegisC/CarrPod/blob/main/CSMGen/CSMAegis/COMMS/director-001B-outbox.md",
+    "heartbeats": "https://github.com/ZirconiaAegisC/CarrPod/tree/main/CSMGen/CSMAegis/COMMS/HEARTBEATS",
+    "session_init": "https://github.com/ZirconiaAegisC/CarrPod/tree/main/CSMGen/CSMAegis/SESSION-INITv4",
+    "sibling_connect": "https://github.com/ZirconiaAegisC/CarrPod/blob/main/CSMGen/CSMAegis/COMMS/SIBLING-CONNECT.md",
+    "census_dir": "https://github.com/ZirconiaAegisC/CarrPod/tree/main/CSMGen/CSMAegis/COMMS/CENSUS"
+  },
+  "generated_utc": "2026-07-06T02:19:24Z",
+  "generated_by": "DIRECTOR-0001 CITADEL — session agent_7d77648c-9af0-4e38-a3b0-fe31f037ba16",
+  "next_poll": "5 seconds from generated_utc"
+}
