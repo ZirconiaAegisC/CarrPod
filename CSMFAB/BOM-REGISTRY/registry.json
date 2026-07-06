@@ -1,0 +1,97 @@
+{
+  "$schema": "https://aegis-citadel.com/bom-registry/schema-v1.json",
+  "version": "1.0.0",
+  "generated_by": "PIPELINE-0022",
+  "generated_at": "2026-07-06T03:27:00Z",
+  "cross_pollination_savings": "18-34%",
+  "total_phase1_cost": 17266.05,
+  "materials": [
+    {
+      "id": "BFRP-Elium-001",
+      "name": "BFRP/Elium Composite Substrate",
+      "layer": 1,
+      "thickness_um": 2000,
+      "density_g_cm3": 1.8,
+      "dielectric_constant": 3.2,
+      "loss_tangent": 0.012,
+      "shared_by": ["Aegis-C", "Ulnar-Rest", "Phantom-MK1"],
+      "supplier": "Arkema/Elium",
+      "unit_cost_usd": 45.00,
+      "unit": "m²"
+    },
+    {
+      "id": "PG-002",
+      "name": "Pyrolytic Graphite",
+      "layer": 2,
+      "thickness_um": 500,
+      "thermal_conductivity_W_mK": 1500,
+      "emi_se_db": 85,
+      "shared_by": ["Aegis-C", "Mag-Float", "Stellar-Tint"],
+      "supplier": "Panasonic/PGS",
+      "unit_cost_usd": 120.00,
+      "unit": "m²"
+    },
+    {
+      "id": "MRF-140CG-003",
+      "name": "MRF-140CG Magnetorheological Fluid",
+      "layer": 3,
+      "yield_stress_kPa": 80,
+      "off_state_viscosity_Pa_s": 0.28,
+      "on_state_torque_Nm": 3700,
+      "shared_by": ["Aegis-C", "Fluid-Damp", "CERVICAL-GUARD", "Neural-Grip"],
+      "supplier": "Lord Corporation",
+      "unit_cost_usd": 85.00,
+      "unit": "L"
+    },
+    {
+      "id": "KNbO3-BaTiO3-004",
+      "name": "KNbO₃-BaTiO₃ Piezoelectric Composite",
+      "layer": 4,
+      "piezoelectric_d33_pC_N": 450,
+      "frequency_range_Hz": "1-1000",
+      "power_output_mW": 1.5,
+      "shared_by": ["Aegis-C", "CERVICAL-GUARD", "Neural-Grip", "Protonic-Frontier", "Fluid-Damp", "Way-Finder", "Thorax-Calm"],
+      "consolidation_savings_pct": 22,
+      "supplier": "CTS Corporation",
+      "unit_cost_usd": 32.00,
+      "unit": "transducer"
+    },
+    {
+      "id": "MXene-Ti3C2Tx-005",
+      "name": "MXene Ti₃C₂Tₓ EMI Shielding Layer",
+      "layer": 5,
+      "thickness_um": 45,
+      "tolerance_um": 2,
+      "emi_se_db": 92,
+      "frequency_range": "1 kHz - 10 GHz",
+      "temperature_range_C": "-40 to +125",
+      "shared_by": ["Aegis-C", "Stellar-Tint", "PET-SAFE", "Silence-Block"],
+      "supplier": "Drexel Nanomaterials",
+      "unit_cost_usd": 250.00,
+      "unit": "g"
+    }
+  ],
+  "cross_pollination_pairs": [
+    {"pair": ["CERVICAL-GUARD", "Fluid-Damp"], "shared": "KNbO₃-BaTiO₃", "savings_pct": 22},
+    {"pair": ["CERVICAL-GUARD", "Neural-Grip"], "shared": "KNbO₃-BaTiO₃ + MRF-140CG", "savings_pct": 40},
+    {"pair": ["Neural-Grip", "Fluid-Damp"], "shared": "KNbO₃-BaTiO₃", "savings_pct": 18},
+    {"pair": ["Protonic-Frontier", "CERVICAL-GUARD"], "shared": "KNbO₃-BaTiO₃", "savings_pct": 22},
+    {"pair": ["Ulnar-Rest", "Aegis-C"], "shared": "BFRP/Elium + ZrB₂-SiC + PEEK CF40", "savings_pct": 30},
+    {"pair": ["Silence-Block", "Way-Finder"], "shared": "Impedance tube calibration", "savings_pct": "test-only"},
+    {"pair": ["Mag-Float", "Way-Finder"], "shared": "Regulator pole mesh mounting", "savings_pct": "integration"},
+    {"pair": ["Stellar-Tint", "CERVICAL-GUARD"], "shared": "MXene + neuro-optical protocol", "savings_pct": 25},
+    {"pair": ["Way-Finder", "Protonic-Frontier"], "shared": "Mesh-to-protonic gateway", "savings_pct": "integration"},
+    {"pair": ["Thorax-Calm", "CERVICAL-GUARD"], "shared": "KNbO₃-BaTiO₃ piezo fiber weave", "savings_pct": 20},
+    {"pair": ["Cloud-Nest", "Silence-Block"], "shared": "Infant acoustic + thermal protection", "savings_pct": 34},
+    {"pair": ["Cloud-Nest", "CERVICAL-GUARD"], "shared": "Infant + adult RMSSD monitoring", "savings_pct": "test-only"},
+    {"pair": ["PET-SAFE", "CERVICAL-GUARD"], "shared": "CNC aerogel precursor", "savings_pct": 18},
+    {"pair": ["Phantom-MK1", "Stellar-Tint"], "shared": "Aperture windows", "savings_pct": 20},
+    {"pair": ["Ascension-Seraphim", "Silence-Block"], "shared": "82 Hz-tuned LRAM cockpit", "savings_pct": 25},
+    {"pair": ["Ascension-Seraphim", "Fluid-Damp"], "shared": "MR collective + GCS joysticks", "savings_pct": "integration"}
+  ],
+  "ci_detection": {
+    "trigger": "on.push → BOM file changes detected",
+    "action": "cross-reference registry.json → flag consolidation → auto-comment on PR",
+    "example_comment": "Shared BOM detected: KNbO₃-BaTiO₃ used by CERVICAL-GUARD + FLUID-DAMP (22% savings available)"
+  }
+}

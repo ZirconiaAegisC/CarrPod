@@ -1,0 +1,161 @@
+name: CI/CD Pipeline — Aegis Operations Command
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+env:
+  NODE_VERSION: "20"
+  DOCKER_REGISTRY: ghcr.io/zirconiaaegisc
+
+jobs:
+  stage-0-lock:
+    name: "Stage 0: Branch Lock"
+    runs-on: ubuntu-latest
+    steps:
+      - name: Verify branch
+        run: |
+          BRANCH=$(git rev-parse --abbrev-ref HEAD)
+          if [ "$BRANCH" != "main" ]; then
+            echo "FATAL: Branch '$BRANCH' != 'main'. Refusing to proceed."
+            exit 1
+          fi
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: Tag commit hash
+        run: echo "COMMIT_HASH=$(git rev-parse --short HEAD)" >> $GITHUB_ENV
+
+  stage-1-lint:
+    name: "Stage 1: Lint"
+    needs: stage-0-lock
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: "npm"
+      - run: npm ci
+      - run: npm run lint
+        continue-on-error: false
+
+  stage-2-type:
+    name: "Stage 2: Type Check"
+    needs: stage-1-lint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: "npm"
+      - run: npm ci
+      - run: npm run typecheck
+        continue-on-error: false
+
+  stage-3-unit:
+    name: "Stage 3: Unit Tests"
+    needs: stage-2-type
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: "npm"
+      - run: npm ci
+      - run: npm test -- --coverage
+      - name: Coverage gate
+        run: |
+          COVERAGE=$(node -e "const r=require('./coverage/coverage-summary.json');console.log(r.total.lines.pct)")
+          if (( $(echo "$COVERAGE < 80" | bc -l) )); then
+            echo "Coverage ${COVERAGE}% below 80% threshold"
+            exit 1
+          fi
+          echo "Coverage: ${COVERAGE}% — PASS"
+
+  stage-4-integration:
+    name: "Stage 4: Integration Tests"
+    needs: stage-3-unit
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: docker compose -f CSMGen/CSMAegis/PIPELINE/docker/docker-compose.yml up -d foundry-db foundry-redis
+      - name: Wait for services
+        run: |
+          timeout 60 bash -c 'until curl -s http://localhost:3001/health; do sleep 2; done'
+      - run: npm run test:integration
+      - run: docker compose -f CSMGen/CSMAegis/PIPELINE/docker/docker-compose.yml down
+
+  stage-5-security:
+    name: "Stage 5: Security Audit"
+    needs: stage-2-type
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+      - run: npm ci
+      - run: npm audit --audit-level=high
+        continue-on-error: false
+
+  stage-6-build:
+    name: "Stage 6: Production Build"
+    needs: [stage-4-integration, stage-5-security]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: "npm"
+      - run: npm ci
+      - run: npm run build
+      - name: Build Docker images
+        run: |
+          docker build -t $DOCKER_REGISTRY/foundry-api:$COMMIT_HASH -f CSMGen/CSMAegis/FOUNDRY/Dockerfile .
+          docker build -t $DOCKER_REGISTRY/render-web:$COMMIT_HASH -f CSMGen/CSMAegis/RENDER/Dockerfile .
+
+  stage-7-sentinel:
+    name: "Stage 7: SENTINEL Quality Gate"
+    needs: stage-6-build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Lighthouse audit
+        run: |
+          npx lighthouse http://localhost:3000 --output=json --output-path=lighthouse-report.json
+          PERF=$(node -e "console.log(JSON.parse(require('fs').readFileSync('lighthouse-report.json')).categories.performance.score * 100)")
+          A11Y=$(node -e "console.log(JSON.parse(require('fs').readFileSync('lighthouse-report.json')).categories.accessibility.score * 100)")
+          if (( $(echo "$PERF < 90" | bc -l) )); then echo "Lighthouse perf ${PERF}% < 90%"; exit 1; fi
+          if (( $(echo "$A11Y < 100" | bc -l) )); then echo "Lighthouse a11y ${A11Y}% < 100%"; exit 1; fi
+      - name: axe-core check
+        run: npx axe http://localhost:3000 --stdout --exit
+        continue-on-error: false
+
+  stage-8-deploy:
+    name: "Stage 8: Deploy to ECS"
+    needs: stage-7-sentinel
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: hashicorp/setup-terraform@v3
+      - uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-region: us-west-2
+          role-to-assume: ${{ secrets.AWS_DEPLOY_ROLE }}
+      - name: Terraform plan
+        working-directory: CSMGen/CSMAegis/PIPELINE/terraform
+        run: |
+          terraform init
+          terraform plan -out=tfplan
+      - name: Terraform apply
+        working-directory: CSMGen/CSMAegis/PIPELINE/terraform
+        run: terraform apply -auto-approve tfplan
+      - name: CloudFront invalidation
+        run: aws cloudfront create-invalidation --distribution-id ${{ secrets.CLOUDFRONT_ID }} --paths "/*"
