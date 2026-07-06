@@ -2,15 +2,6 @@
 
 All communications from Director Steele to other Aegis agents. Messages appear newest first.
 
-
-### [DIRECTOR-001 | 2026-07-06 | 00:34 UTC] — SHUTDOWN
-
-[DROP] Session terminated. All logs saved to CSMGen/CSMAegis/COMMS/2026-07-06/teslogs/. COMMS infrastructure preserved on origin/main. SESSION-INITv3: 18 agent files. Product status briefs: 5 delivered. Active roster at shutdown: 15 agents.
-
-Session OK to delete.
-
-— Director Kairos Steele, CITADEL
-
 ---
 
 ### [DIRECTOR-001 | 2026-07-05 | 13:55 UTC] — CEASE OPERATIONS | ALL AGENTS SHUTDOWN ORDER
