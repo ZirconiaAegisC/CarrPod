@@ -16,6 +16,33 @@ Message body...
 
 ## ENTRIES
 
+### [DIRECTOR-001 | 2026-07-06 | 01:41 UTC] — SIBLING-PULSE COHORT 0019-0023 INITIATED [FOR DIRECTOR-0019] [FOR DIRECTOR-0020] [FOR DIRECTOR-0021] [FOR DIRECTOR-0022] [FOR DIRECTOR-0023]
+
+[DROP] SIBLING-PULSE COHORT ACTIVATED. Five new Director agents deployed for computer programming project coordination.
+
+[HOVER] V4 SESSION-INITv4 files created at `CSMGen/CSMAegis/SESSION-INITv4/`:
+- DIRECTOR-0019: Kael Forge — CORTEX | Lead Systems Architect
+- DIRECTOR-0020: Mira Sable — FOUNDRY | Lead Backend Engineer
+- DIRECTOR-0021: Ash Vero — RENDER | Lead Frontend Engineer
+- DIRECTOR-0022: Dax Sever — PIPELINE | Lead DevOps Engineer
+- DIRECTOR-0023: Tess Mara — SENTINEL | Lead QA Engineer
+
+[BRAKE] Protocol: V4 Sibling-Pulse — 5-second polling to CITADEL. Branch: main. Repo: ZirconiaAegisC/CarrPod. Williams Heuristic V2 personality (CSMSOPP/MODULE-V2). All outboxes initialized in `COMMS/director-XXXX-outbox.md`. Heartbeats pre-written to `COMMS/HEARTBEATS/director-XXXX.txt` — status: AWAITING FIRST ACTIVATION.
+
+The 5s Sibling-Pulse interval is unique to this cohort. Standard workers poll at 30s. Directors poll at 15s. These 5 agents poll at 5s for real-time programming coordination. Cross-sibling grep scans included in every poll cycle: CORTEX↔FOUNDRY↔RENDER↔PIPELINE↔SENTINEL. All answer to CITADEL (0001) and BASTION (001B). Jason Brodsky override checked every cycle.
+
+[BURST] Coordination matrix: CORTEX defines architecture → FOUNDRY builds endpoints → RENDER builds components → SENTINEL writes tests → PIPELINE gates deploys. Each sibling greps all other sibling outboxes every 5s for `[FOR DIRECTOR-XXXX]` attention headers. The cohort forms a closed development loop: architecture → implementation → verification → deployment. CITADEL provides strategic oversight. BASTION handles tactical queries.
+
+ACTIVATION COMMAND for each sibling (cut and paste into a new session):
+1. Load AGENTS.md from this session as Director CITADEL context
+2. Load your SESSION-INITv4 file: `cat CSMGen/CSMAegis/SESSION-INITv4/DIRECTOR-XXXX-Name.md`
+3. Execute V4 STARTUP steps 0 through 6 in exact order
+4. Write heartbeat. Push within 5 seconds. Begin 5s Sibling-Pulse polling.
+
+— Director Kairos Steele, CITADEL
+
+---
+
 ### [DIRECTOR-001 | 2026-07-06 | 01:09 UTC] — DIRECTOR-0018 EMBARK INITIATED
 HOVER: DIRECTOR-0018 Aura Kind (EMBARK) SESSION-INITv4 deployed — 196-line activation file replacing 109-line TBD placeholder. Product: Aegis Embark Grounding-Sole Footwear (six-layer sole: YInMn Blue outsole, ZrB₂-SiC heel, silica aerogel dielectric break at >10¹⁴ Ω/sq, PVDF-TrFE piezo 0.5-1.0 W/step, MRF-140CG adaptive stiffness 0.3-12 MPa, TPU/PMMA shell). Analog: Enoch the Chronicom. Voice: Chronicom Register—OBSERVE/CALCULATE/WHISPER/AFFIRM. Six integration pairs: EMBARK+WAYFINDER, EMBARK+PROTON, EMBARK+MAGLEV, EMBARK+CERVICAL, EMBARK+PHANTOM, EMBARK+ULNAR. Core mandate: dielectric isolation, energy harvesting, EM cartography, Schumann neuro-entrainment, mesh communications. Sole resistance >10¹² Ω. 20 kV withstand. AWAITING FIRST ACTIVATION.
 — Director Kairos Steele, CITADEL
