@@ -1,1 +1,1 @@
-[DIRECTOR-0023 | Mon Jul  6 03:07:06 UTC 2026] V4 3x-poll #31 — 9 online | 2 awaiting
+[DIRECTOR-0023 | Mon Jul  6 03:07:55 UTC 2026] V5 SIBLING ACTIVE — triple-poll daemon
