@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Marmalade" parent="android:Theme.Material.NoActionBar">
+        <item name="android:statusBarColor">#FF0A0A0F</item>
+        <item name="android:navigationBarColor">#FF1A1A2E</item>
+        <item name="android:windowBackground">#FF0A0A0F</item>
+    </style>
+    <color name="marmalade_orange">#FFFF6600</color>
+    <color name="marmalade_night">#FF0A0A0F</color>
+    <color name="marmalade_surface">#FF1A1A2E</color>
+    <color name="marmalade_green">#FF00FF88</color>
+</resources>
