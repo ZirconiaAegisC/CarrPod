@@ -1,0 +1,42 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.carrpod.marmalade.stage1"
+4    android:versionCode="1"
+5    android:versionName="1.0.0-stage1" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+9        android:targetSdkVersion="33" />
+10
+11    <application
+11-->/workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_256111d2-510f-435d-82e1-e7e2f2d5803a/CSMApps/Marmalade/stage1/app/src/main/AndroidManifest.xml:3:5-16:19
+12        android:allowBackup="true"
+12-->/workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_256111d2-510f-435d-82e1-e7e2f2d5803a/CSMApps/Marmalade/stage1/app/src/main/AndroidManifest.xml:4:9-35
+13        android:debuggable="true"
+14        android:extractNativeLibs="false"
+15        android:label="Marmalade"
+15-->/workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_256111d2-510f-435d-82e1-e7e2f2d5803a/CSMApps/Marmalade/stage1/app/src/main/AndroidManifest.xml:5:9-34
+16        android:theme="@style/Theme.Marmalade" >
+16-->/workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_256111d2-510f-435d-82e1-e7e2f2d5803a/CSMApps/Marmalade/stage1/app/src/main/AndroidManifest.xml:6:9-47
+17        <activity
+17-->/workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_256111d2-510f-435d-82e1-e7e2f2d5803a/CSMApps/Marmalade/stage1/app/src/main/AndroidManifest.xml:7:9-15:20
+18            android:name="com.carrpod.marmalade.stage1.MainActivity"
+18-->/workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_256111d2-510f-435d-82e1-e7e2f2d5803a/CSMApps/Marmalade/stage1/app/src/main/AndroidManifest.xml:8:13-41
+19            android:exported="true"
+19-->/workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_256111d2-510f-435d-82e1-e7e2f2d5803a/CSMApps/Marmalade/stage1/app/src/main/AndroidManifest.xml:9:13-36
+20            android:screenOrientation="portrait" >
+20-->/workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_256111d2-510f-435d-82e1-e7e2f2d5803a/CSMApps/Marmalade/stage1/app/src/main/AndroidManifest.xml:10:13-49
+21            <intent-filter>
+21-->/workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_256111d2-510f-435d-82e1-e7e2f2d5803a/CSMApps/Marmalade/stage1/app/src/main/AndroidManifest.xml:11:13-14:29
+22                <action android:name="android.intent.action.MAIN" />
+22-->/workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_256111d2-510f-435d-82e1-e7e2f2d5803a/CSMApps/Marmalade/stage1/app/src/main/AndroidManifest.xml:12:17-69
+22-->/workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_256111d2-510f-435d-82e1-e7e2f2d5803a/CSMApps/Marmalade/stage1/app/src/main/AndroidManifest.xml:12:25-66
+23
+24                <category android:name="android.intent.category.LAUNCHER" />
+24-->/workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_256111d2-510f-435d-82e1-e7e2f2d5803a/CSMApps/Marmalade/stage1/app/src/main/AndroidManifest.xml:13:17-77
+24-->/workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_256111d2-510f-435d-82e1-e7e2f2d5803a/CSMApps/Marmalade/stage1/app/src/main/AndroidManifest.xml:13:27-74
+25            </intent-filter>
+26        </activity>
+27    </application>
+28
+29</manifest>
