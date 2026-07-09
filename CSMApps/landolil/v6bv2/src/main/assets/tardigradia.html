@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Land 'O Lil v3 — Subatomic Worldline Evolution | Microbe Icons</title>
+
+  <script src="js/three.min.js"></script>
+  <script src="js/OrbitControls.js"></script>
+  <script src="js/EffectComposer.js"></script>
+  <script src="js/RenderPass.js"></script>
+  <script src="js/ShaderPass.js"></script>
+  <script src="js/CopyShader.js"></script>
+  <script src="js/UnrealBloomPass.js"></script>
+  <script src="js/LuminosityHighPassShader.js"></script>
+  <script src="js/chart.umd.js"></script>
+
+  <style>
+    :root {
+      --electron:   #38bdf8; --proton:     #f43f5e; --neutron:    #94a3b8;
+      --photon:     #fef08a; --axion:      #10b981; --neutralino: #a855f7;
+      --gluon:      #f97316; --higgs:      #ec4899; --neutrino:   #67e8f9;
+      --quark-u:    #fbbf24; --quark-d:    #60a5fa; --muon:       #e879f9;
+      --pion:       #86efac; --kaon:       #fcd34d; --demon:      #4c1d95;
+      --graviton:   #d1fae5; --wboson:     #fb7185; --zboson:     #a78bfa;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: 'Orbitron', 'Rajdhani', sans-serif;
+      background: #030308; color: #e2e8f0; overflow: hidden; margin: 0;
+    }
+    #canvas-container {
+      position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1;
+    }
+    .hud {
+      background: rgba(5,8,20,0.82); backdrop-filter: blur(10px);
+      border: 1px solid rgba(56,189,248,0.25); border-radius: 8px;
+      z-index: 10; transition: opacity 0.4s ease, transform 0.4s ease;
+    }
+    .hud.hidden-hud { opacity: 0; pointer-events: none; transform: translateY(20px); }
+    .scrollable::-webkit-scrollbar { width:4px; }
+    .scrollable::-webkit-scrollbar-track { background:rgba(0,0,0,0.3); }
+    .scrollable::-webkit-scrollbar-thumb { background:rgba(56,189,248,0.5); border-radius:2px; }
+    .btn {
+      padding: 6px 12px; border-radius:5px; cursor:pointer; font-size:11px;
+      text-transform:uppercase; letter-spacing:0.05em; transition: all 0.2s; border: 1px solid;
+    }
+    .btn-cyan  { background:rgba(56,189,248,0.15); border-color:rgba(56,189,248,0.5); color:#38bdf8; }
+    .btn-cyan:hover  { background:rgba(56,189,248,0.35); }
+    .btn-green { background:rgba(16,185,129,0.15); border-color:rgba(16,185,129,0.5); color:#10b981; }
+    .btn-green:hover { background:rgba(16,185,129,0.35); }
+    .btn-purple{ background:rgba(168,85,247,0.15); border-color:rgba(168,85,247,0.5); color:#a855f7; }
+    .btn-purple:hover{ background:rgba(168,85,247,0.35); }
+    .btn-red   { background:rgba(244,63,94,0.15); border-color:rgba(244,63,94,0.5); color:#f43f5e; }
+    .btn-red:hover   { background:rgba(244,63,94,0.35); }
+    .btn-yellow{ background:rgba(254,240,138,0.15); border-color:rgba(254,240,138,0.5); color:#fef08a; }
+    .btn-yellow:hover{ background:rgba(254,240,138,0.35); }
+    .btn-orange{ background:rgba(249,115,22,0.15); border-color:rgba(249,115,22,0.5); color:#f97316; }
+    .btn-orange:hover{ background:rgba(249,115,22,0.35); }
+    #flight-progress {
+      position:absolute; bottom:0; left:0; height:3px;
+      background: linear-gradient(90deg,#38bdf8,#a855f7,#f43f5e);
+      transition: width 0.2s linear; z-index: 30;
+    }
+    .particle-legend span {
+      display:inline-block; width:8px; height:8px; border-radius:50%; margin-right:4px;
+    }
+    .flex { display: flex; } .justify-between { justify-content: space-between; }
+    .items-start { align-items: flex-start; } .items-end { align-items: flex-end; }
+    .grid { display: grid; } .grid-cols-2 { grid-template-columns: repeat(2, 1fr); }
+    .gap-1 { gap: 0.25rem; } .gap-2 { gap: 0.5rem; } .gap-3 { gap: 0.75rem; }
+    .space-y-2 > * + * { margin-top: 0.5rem; }
+    .w-full { width: 100%; } .h-screen { height: 100vh; }
+    .relative { position: relative; } .absolute { position: absolute; }
+    .top-0 { top: 0; } .left-0 { left: 0; }
+    .bottom-4 { bottom: 1rem; } .left-4 { left: 1rem; } .right-4 { right: 1rem; }
+    .top-20 { top: 5rem; } .left-1\/2 { left: 50%; }
+    .-translate-x-1\/2 { transform: translateX(-50%); }
+    .z-10 { z-index: 10; } .z-20 { z-index: 20; } .z-30 { z-index: 30; }
+    .pointer-events-none { pointer-events: none; } .pointer-events-auto { pointer-events: auto; }
+    .text-xs { font-size: 0.75rem; } .text-sm { font-size: 0.875rem; }
+    .text-xl { font-size: 1.25rem; } .text-2xl { font-size: 1.5rem; }
+    .text-4xl { font-size: 2.25rem; } .font-bold { font-weight: bold; }
+    .font-mono { font-family: monospace; } .uppercase { text-transform: uppercase; }
+    .tracking-wider { letter-spacing: 0.05em; } .text-center { text-align: center; }
+    .p-3 { padding: 0.75rem; } .p-4 { padding: 1rem; }
+    .pb-1 { padding-bottom: 0.25rem; } .mb-1 { margin-bottom: 0.25rem; }
+    .mb-2 { margin-bottom: 0.5rem; } .mb-3 { margin-bottom: 0.75rem; }
+    .mt-1 { margin-top: 0.25rem; } .mt-2 { margin-top: 0.5rem; }
+    .ml-2 { margin-left: 0.5rem; } .ml-3 { margin-left: 0.75rem; }
+    .pl-2 { padding-left: 0.5rem; } .pr-3 { padding-right: 0.75rem; }
+    .pb-0\.5 { padding-bottom: 0.125rem; }
+    .w-72 { width: 18rem; } .w-80 { width: 20rem; }
+    .max-h-40 { max-height: 10rem; } .overflow-y-auto { overflow-y: auto; }
+    .hidden { display: none; } .inline-block { display: inline-block; }
+    .block { display: block; } .flex-1 { flex: 1 1 0%; }
+    .animate-pulse { animation: pulse 2s cubic-bezier(0.4,0,0.6,1) infinite; }
+    @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:.5} }
+    .text-cyan-300{color:#67e8f9}.text-cyan-200{color:#a5f3fc}.text-cyan-400{color:#22d3ee}
+    .text-green-300{color:#86efac}.text-green-400{color:#4ade80}
+    .text-yellow-300{color:#fde047}.text-yellow-400{color:#facc15}
+    .text-purple-300{color:#d8b4fe}.text-purple-400{color:#c084fc}
+    .text-pink-300{color:#f9a8d4}.text-gray-300{color:#d1d5db}
+    .text-gray-400{color:#9ca3af}.text-gray-500{color:#6b7280}
+    .text-white{color:#fff}.text-transparent{color:transparent}
+    .bg-gray-700{background:#374151}.bg-gray-900{background:#111827}
+    .bg-clip-text{-webkit-background-clip:text;background-clip:text}
+    .bg-gradient-to-r{background-image:linear-gradient(to right,var(--tw-gradient-stops))}
+    .bg-gradient-to-b{background-image:linear-gradient(to bottom,var(--tw-gradient-stops))}
+    .from-black\/90{--tw-gradient-from:rgba(0,0,0,.9);--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to,transparent)}
+    .to-transparent{--tw-gradient-to:transparent}
+    .from-cyan-400{--tw-gradient-from:#22d3ee;--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to,transparent)}
+    .via-blue-500{--tw-gradient-stops:var(--tw-gradient-from),#3b82f6,var(--tw-gradient-to,transparent)}
+    .to-purple-600{--tw-gradient-to:#9333ea}
+    .from-cyan-500{--tw-gradient-from:#06b6d4;--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to,transparent)}
+    .to-purple-500{--tw-gradient-to:#a855f7}
+    .from-purple-500{--tw-gradient-from:#a855f7;--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to,transparent)}
+    .to-pink-500{--tw-gradient-to:#ec4899}
+    .drop-shadow-\[0_0_12px_rgba\(34\,211\,238\,0\.9\)\]{filter:drop-shadow(0 0 12px rgba(34,211,238,.9))}
+    .border-b{border-bottom-width:1px}.border-l-2{border-left-width:2px}
+    .border-cyan-900\/50{border-color:rgba(21,94,117,.5)}.border-yellow-900\/50{border-color:rgba(119,116,40,.5)}
+    .border-purple-900\/50{border-color:rgba(76,29,149,.5)}.border-green-900\/50{border-color:rgba(20,83,45,.5)}
+    .h-1{height:.25rem}.h-full{height:100%}.rounded{border-radius:.25rem}.rounded-full{border-radius:9999px}
+    .opacity-80{opacity:.8}.transition-none{transition:none}.leading-none{line-height:1}.cursor-pointer{cursor:pointer}
+  </style>
+</head>
+<body class="w-full h-screen relative">
+
+  <div id="canvas-container"></div>
+  <div id="flight-progress" style="width:0%"></div>
+
+  <!-- ══════════════════ HEADER ══════════════════ -->
+  <div id="hud-header" class="absolute top-0 left-0 w-full p-3 z-20 pointer-events-none flex justify-between items-start" style="background:linear-gradient(to bottom, rgba(0,0,0,0.9), transparent);">
+    <div class="pointer-events-auto">
+      <h1 class="text-2xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 drop-shadow-[0_0_12px_rgba(34,211,238,0.9)]" style="font-size:24px;">
+        SUBATOMIC WORLDLINE EVOLUTION
+      </h1>
+      <p class="text-xs text-cyan-300 mt-1 opacity-80">
+        <span class="font-bold text-white">Monistic Engine v3.0</span> — 18 particle species, microbe icon rendering.
+        <span id="icon-mode-label" class="text-orange-300 ml-2" style="color:#f97316;">Icon Mode: DOTS</span>
+      </p>
+    </div>
+    <div class="pointer-events-auto flex items-center gap-2 mt-1">
+      <button id="btn-follow" class="btn btn-green" onclick="CameraFollow.toggle()" style="font-size:10px;">🎯 Follow</button>
+      <button id="btn-motion" class="btn btn-orange" onclick="MotionMode.toggle()" style="font-size:10px;">📳 Motion</button>
+      <button id="btn-toggle-icons" class="btn btn-orange" onclick="sim.toggleIconMode()">🦠 Icons</button>
+      <button id="btn-toggle-hud" class="btn btn-cyan" onclick="UI.toggleHUD()">☰ Hide Panels</button>
+      <button id="btn-flight" class="btn btn-purple" onclick="Flight.start()">✈ Random Flight</button>
+      <button id="btn-credits" class="btn btn-yellow" onclick="UI.showCredits()" style="font-size:10px;">Credits</button>
+      <div id="live-badge" class="text-green-400 text-xs font-bold animate-pulse ml-3 hidden" style="display:none;">● LIVE</div>
+    </div>
+  </div>
+
+  <!-- ══════════════════ LEFT PANEL ══════════════════ -->
+  <div id="hud-left" class="absolute bottom-4 left-4 z-20 w-72 flex flex-col gap-3 pointer-events-none">
+    <div class="hud p-3 pointer-events-auto">
+      <h3 class="text-cyan-400 text-xs uppercase tracking-wider border-b border-cyan-900/50 pb-1 mb-2" style="font-family:'Orbitron',sans-serif;">Evolution Cycle</h3>
+      <div class="flex justify-between items-end mb-1">
+        <span class="text-gray-400 text-xs">Loop Time</span>
+        <span id="loop-timer" class="text-xl font-mono font-bold text-white">00.00s</span>
+      </div>
+      <div class="w-full bg-gray-900 h-1 rounded-full overflow-hidden">
+        <div id="progress-bar" class="h-full transition-none" style="background:linear-gradient(to right,#06b6d4,#a855f7);width:0%"></div>
+      </div>
+      <div class="flex justify-between text-xs text-gray-500 mt-1">
+        <span>Cycle <span id="cycle-count" class="text-cyan-300 font-bold">1</span></span>
+        <span>Max <span id="max-dur" class="text-cyan-300">5.0s</span></span>
+      </div>
+    </div>
+    <div class="hud p-3 pointer-events-auto">
+      <h3 class="text-yellow-400 text-xs uppercase tracking-wider border-b border-yellow-900/50 pb-1 mb-2" style="font-family:'Orbitron',sans-serif;">Particle Legend</h3>
+      <div class="grid grid-cols-2 gap-1 text-xs particle-legend">
+        <div><span style="background:var(--electron)"></span>Electron</div><div><span style="background:var(--proton)"></span>Proton</div>
+        <div><span style="background:var(--neutron)"></span>Neutron</div><div><span style="background:var(--photon)"></span>Photon</div>
+        <div><span style="background:var(--axion)"></span>Axion</div><div><span style="background:var(--neutralino)"></span>Neutralino</div>
+        <div><span style="background:var(--gluon)"></span>Gluon</div><div><span style="background:var(--higgs)"></span>Higgs</div>
+        <div><span style="background:var(--neutrino)"></span>Neutrino</div><div><span style="background:var(--quark-u)"></span>Up Quark</div>
+        <div><span style="background:var(--quark-d)"></span>Down Quark</div><div><span style="background:var(--muon)"></span>Muon</div>
+        <div><span style="background:var(--pion)"></span>Pion</div><div><span style="background:var(--kaon)"></span>Kaon</div>
+        <div><span style="background:var(--demon)"></span>Pines Demon</div><div><span style="background:var(--wboson)"></span>W Boson</div>
+        <div><span style="background:var(--zboson)"></span>Z Boson</div><div><span style="background:var(--graviton)"></span>Graviton</div>
+      </div>
+    </div>
+    <div class="hud p-3 pointer-events-auto">
+      <h3 class="text-green-400 text-xs uppercase tracking-wider border-b border-green-900/50 pb-1 mb-2" style="font-family:'Orbitron',sans-serif;">Camera Follow</h3>
+      <div class="flex justify-between text-xs text-gray-400 mb-1"><span>Target</span><span id="follow-target" class="text-green-300 font-bold">--</span></div>
+      <div class="flex justify-between text-xs text-gray-400 mb-1"><span>Hold</span><span id="follow-timer" class="text-green-300 font-mono">--</span></div>
+      <div class="w-full bg-gray-900 h-1 rounded-full overflow-hidden"><div id="follow-bar" class="h-full" style="background:#10b981;width:0%"></div></div>
+    </div>
+    <div class="hud p-3 pointer-events-auto max-h-40 overflow-y-auto scrollable">
+      <h3 class="text-purple-400 text-xs uppercase tracking-wider border-b border-purple-900/50 pb-1 mb-2" style="font-family:'Orbitron',sans-serif;">Quantum Events</h3>
+      <ul id="event-log" class="text-xs font-mono" style="list-style:none;padding:0;margin:0;line-height:1.4;">
+        <li class="text-gray-400">[INIT] Worldline topology established.</li>
+        <li class="text-gray-400">[INIT] Axion BEC field active.</li>
+        <li class="text-gray-400">[V3.0] Microbe icon system loaded.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ══════════════════ RIGHT PANEL ══════════════════ -->
+  <div id="hud-right" class="absolute bottom-4 right-4 z-20 w-72 flex flex-col gap-3 pointer-events-none">
+    <div class="hud p-3 pointer-events-auto">
+      <h3 class="text-green-400 text-xs uppercase tracking-wider border-b border-green-900/50 pb-1 mb-2" style="font-family:'Orbitron',sans-serif;">Simulation Controls</h3>
+      <div class="grid grid-cols-2 gap-1 text-xs mb-3">
+        <button onclick="sim.perturb()" class="btn btn-red">Perturb</button>
+        <button onclick="sim.toggleTrails()" class="btn btn-purple">Trails</button>
+        <button onclick="sim.spawnDemon()" class="btn btn-yellow">Pines Demon!</button>
+        <button onclick="sim.triggerFusion()" class="btn btn-green">Fusion Event</button>
+      </div>
+      <div class="space-y-2">
+        <div class="flex justify-between text-xs text-gray-400">
+          <span>Larmor Freq</span><span id="speed-val" class="text-cyan-300">1.0×</span>
+        </div>
+        <input type="range" min="0.1" max="4" step="0.1" value="1.0" class="w-full h-1 bg-gray-700 rounded cursor-pointer" oninput="sim.setSpeed(this.value)">
+        <div class="flex justify-between text-xs text-gray-400">
+          <span>Density</span><span id="dens-val" class="text-cyan-300">1500</span>
+        </div>
+        <input type="range" min="200" max="3000" step="100" value="1500" class="w-full h-1 bg-gray-700 rounded cursor-pointer" oninput="sim.setDensity(this.value)">
+      </div>
+    </div>
+    <div id="hud-flight" class="hud p-3 pointer-events-auto" style="display:none">
+      <h3 class="text-purple-400 text-xs uppercase tracking-wider border-b border-purple-900/50 pb-1 mb-2" style="font-family:'Orbitron',sans-serif;">Random Flight Path</h3>
+      <div class="flex justify-between text-xs text-gray-400 mb-1">
+        <span>Waypoint</span><span id="flight-wp" class="text-purple-300 font-bold">0 / 0</span>
+      </div>
+      <div class="w-full bg-gray-900 h-1 rounded-full overflow-hidden mb-2">
+        <div id="flight-bar" class="h-full" style="background:linear-gradient(to right,#a855f7,#ec4899);width:0%"></div>
+      </div>
+      <div class="flex gap-1">
+        <button id="btn-pause-flight" onclick="Flight.togglePause()" class="btn btn-purple flex-1">⏸ Pause</button>
+        <button onclick="Flight.stop()" class="btn btn-red flex-1">✕ Stop</button>
+      </div>
+    </div>
+    <div class="hud p-3 pointer-events-auto">
+      <h3 class="text-yellow-400 text-xs uppercase tracking-wider border-b border-yellow-900/50 pb-1 mb-2" style="font-family:'Orbitron',sans-serif;">Benevolence Monitor</h3>
+      <div style="position:relative;width:100%;height:120px">
+        <canvas id="metricsChart"></canvas>
+      </div>
+      <div class="mt-1 text-xs text-gray-500 text-center">
+        Action (S) · Benevolence (B = C·F·S) · Coherence (C)
+      </div>
+    </div>
+  </div>
+
+  <div id="hud-detail" class="hud absolute top-20 left-1/2 -translate-x-1/2 p-4 w-80 z-30" style="display:none; pointer-events:auto">
+    <div class="flex justify-between items-start mb-2">
+      <h3 id="detail-name" class="text-white font-bold text-sm" style="font-family:'Orbitron',sans-serif;"></h3>
+      <button onclick="document.getElementById('hud-detail').style.display='none'" style="background:none;border:none;color:#6b7280;cursor:pointer;font-size:20px;">×</button>
+    </div>
+    <table class="w-full text-xs text-gray-300" id="detail-table"></table>
+  </div>
+
+  <div id="hud-credits" class="hud absolute top-20 left-1/2 -translate-x-1/2 p-4 w-80 z-30" style="display:none; pointer-events:auto; max-height:70vh; overflow-y:auto;">
+    <div class="flex justify-between items-start mb-2">
+      <h3 class="text-yellow-400 text-xs uppercase tracking-wider" style="font-family:'Orbitron',sans-serif;">Library Credits</h3>
+      <button onclick="document.getElementById('hud-credits').style.display='none'" style="background:none;border:none;color:#6b7280;cursor:pointer;font-size:20px;">×</button>
+    </div>
+    <div style="font-size:10px;color:#9ca3af;line-height:1.6;">
+      <p><b style="color:#facc15;">Three.js r128</b> — MIT License<br>3D WebGL rendering engine</p>
+      <p><b style="color:#facc15;">Chart.js v4.4</b> — MIT License<br>Metrics visualization</p>
+      <p><b style="color:#facc15;">Particle Icons v3.0</b> — Procedural generation<br>18 microbe icons rendered from Canvas API</p>
+      <p><b style="color:#facc15;">Orbitron/Rajdhani Fonts</b> — SIL OFL 1.1</p>
+      <p><b style="color:#facc15;">Physics Data</b><br>CODATA 2022 · KATRIN 2024 · CMS 2024 · LHC Run 3 · LIGO O4 · JWST · FLAG 2024 · NA62 · NIF</p>
+      <p><b style="color:#facc15;">Land 'O Lil v3.0 — Tardigradia App Family</b><br>CarrPod / Safe Pod Engineering Company</p>
+    </div>
+  </div>
+
+  <script>
+  function androidBridge(m, d) {
+    if (typeof LandOLil !== 'undefined' && LandOLil[m]) LandOLil[m](JSON.stringify(d));
+  }
+
+  // ══════════════════════════════════════════════════════════
+  // PARTICLE ICON GENERATOR — Procedural Canvas Microbe Icons
+  // ══════════════════════════════════════════════════════════
+  function buildIconTexture(hexColor, symbol, size) {
+    size = size || 64;
+    var c = document.createElement('canvas');
+    c.width = c.height = size;
+    var ctx = c.getContext('2d');
+    var r = size / 2;
+    var cx = r, cy = r;
+
+    // Colored circle background
+    var grad = ctx.createRadialGradient(cx - r * 0.3, cy - r * 0.3, r * 0.1, cx, cy, r);
+    var color = '#' + new THREE.Color(hexColor).getHexString();
+    grad.addColorStop(0, '#ffffff');
+    grad.addColorStop(0.35, color);
+    grad.addColorStop(0.85, color);
+    grad.addColorStop(1, '#000000');
+    ctx.fillStyle = grad;
+    ctx.beginPath();
+    ctx.arc(cx, cy, r * 0.9, 0, Math.PI * 2);
+    ctx.fill();
+
+    // Outer glow ring
+    ctx.strokeStyle = color;
+    ctx.lineWidth = 2;
+    ctx.beginPath();
+    ctx.arc(cx, cy, r * 0.85, 0, Math.PI * 2);
+    ctx.stroke();
+
+    // Symbol in white
+    ctx.fillStyle = '#ffffff';
+    ctx.font = 'bold ' + (size * 0.42) + 'px sans-serif';
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'middle';
+    ctx.fillText(symbol, cx, cy);
+
+    var tex = new THREE.Texture(c);
+    tex.needsUpdate = true;
+    return tex;
+  }
+
+  // pre-built icon textures keyed by particle type
+  var ICON_TEXTURES = null;
+  var ICON_SYMBOLS = {
+    electron:    { hex: 0x38bdf8, sym: 'e⁻' },
+    proton:      { hex: 0xf43f5e, sym: 'p⁺' },
+    neutron:     { hex: 0x94a3b8, sym: 'n⁰' },
+    photon:      { hex: 0xfef08a, sym: 'γ' },
+    axion:       { hex: 0x10b981, sym: 'a' },
+    neutralino:  { hex: 0xa855f7, sym: 'χ' },
+    gluon:       { hex: 0xf97316, sym: 'g' },
+    higgs:       { hex: 0xec4899, sym: 'H⁰' },
+    neutrino:    { hex: 0x67e8f9, sym: 'ν' },
+    up_quark:    { hex: 0xfbbf24, sym: 'u' },
+    down_quark:  { hex: 0x60a5fa, sym: 'd' },
+    muon:        { hex: 0xe879f9, sym: 'μ' },
+    pion:        { hex: 0x86efac, sym: 'π' },
+    kaon:        { hex: 0xfcd34d, sym: 'K' },
+    demon:       { hex: 0x4c1d95, sym: '👻' },
+    graviton:    { hex: 0xd1fae5, sym: 'G' },
+    w_boson:     { hex: 0xfb7185, sym: 'W' },
+    z_boson:     { hex: 0xa78bfa, sym: 'Z' },
+  };
+
+  function initIconTextures() {
+    ICON_TEXTURES = {};
+    Object.keys(ICON_SYMBOLS).forEach(function(k) {
+      var s = ICON_SYMBOLS[k];
+      ICON_TEXTURES[k] = buildIconTexture(s.hex, s.sym, 48);
+    });
+  }
+
+  // ══════════════════════════════════════════════════════════
+  const PARTICLES = {
+    electron:   { color:0x38bdf8, size:0.35, mass:0.511,     lifetime:Infinity, spin:0.5, charge:-1, ratio:0.25, data:{ "Mass":"0.511 MeV","Charge":"-e","g-factor":"2.0023193 (CODATA 2022)","Lifetime":"Stable","V2 update":"Pines Demon mode added (2023)" }},
+    proton:     { color:0xf43f5e, size:0.8,  mass:938.3,    lifetime:1e34,     spin:0.5, charge:+1, ratio:0.08, data:{ "Mass":"938.272 MeV","Radius":"0.8409 fm (V2 resolved)","Spin":"Quark 0.32 + Gluon 0.20","V2 update":"Proton radius puzzle resolved (CODATA 2022)" }},
+    neutron:    { color:0x94a3b8, size:0.75, mass:939.6,    lifetime:878,      spin:0.5, charge:0,  ratio:0.07, data:{ "Mass":"939.565 MeV","Lifetime":"877.75±0.34 s (bottle)","EDM":"< 1.8×10⁻²⁶ e·cm","V2 update":"Neutron lifetime puzzle 3.4σ — dark decay possible" }},
+    photon:     { color:0xfef08a, size:0.45, mass:0,        lifetime:Infinity, spin:1,   charge:0,  ratio:0.07, data:{ "Mass":"< 7.1×10⁻²³ eV (FRB 2024)","Speed":"c","OAM":"L = 0,±1,...,±100 (V2)","V2 update":"Photon mass bound 13× tighter from FRB lensing" }},
+    axion:      { color:0x10b981, size:0.3,  mass:1e-5,     lifetime:Infinity, spin:0,   charge:0,  ratio:0.09, data:{ "Mass":"~10⁻⁵ eV (QCD axion)","BEC":"Coherence length ξ = ℏ/(m_a·v)","V2 update":"HAYSTAC 15.1 dB below SQL; FDM m_a > 10⁻²¹ eV (JWST)" }},
+    neutralino: { color:0xa855f7, size:0.9,  mass:1000,     lifetime:Infinity, spin:0.5, charge:0,  ratio:0.05, data:{ "Mass":"> 1 TeV (Run 3 2024)","Type":"Majorana fermion","V2 update":"m_χ̃ < 900 GeV excluded by LHC Run 3 + LZ 2024" }},
+    gluon:      { color:0xf97316, size:0.4,  mass:0,        lifetime:0,        spin:1,   charge:0,  ratio:0.07, data:{ "Colors":"8 (SU(3) octet)","Self-coupling":"Triple gluon vertex","V2 update":"Gluon OAM L_g~0.2ℏ (sPHENIX 2024); glueball X(2370) confirmed" }},
+    higgs:      { color:0xec4899, size:1.2,  mass:125200,   lifetime:1.6e-22,  spin:0,   charge:0,  ratio:0.02, data:{ "Mass":"125.20±0.11 GeV","VEV":"246 GeV","V2 update":"HH→bbγγ 3.4σ (2024); H→Zγ confirmed (2023)" }},
+    neutrino:   { color:0x67e8f9, size:0.25, mass:0.00045,  lifetime:Infinity, spin:0.5, charge:0,  ratio:0.08, data:{ "Mass":"< 0.45 eV (KATRIN 2024)","Mixing":"δ_CP = −135°","V2 update":"KATRIN 2024 final; IceCube τ-neutrino 2023; NH preferred 3.5σ" }},
+    up_quark:   { color:0xfbbf24, size:0.5,  mass:2.16,     lifetime:0,        spin:0.5, charge:2/3,ratio:0.04, data:{ "Mass":"2.16 MeV","Charge":"+2/3 e","Color":"R,G,B","V2 update":"m_u from FLAG 2024 lattice QCD precision" }},
+    down_quark: { color:0x60a5fa, size:0.5,  mass:4.67,     lifetime:0,        spin:0.5, charge:-1/3,ratio:0.04,data:{ "Mass":"4.67 MeV","Charge":"−1/3 e","Color":"R,G,B","V2 update":"m_d from FLAG 2024 lattice QCD" }},
+    muon:       { color:0xe879f9, size:0.6,  mass:105.66,   lifetime:2.197e-6, spin:0.5, charge:-1, ratio:0.03, data:{ "Mass":"105.66 MeV","Lifetime":"2.197 µs","g-2":"5.1σ (KNT18) or 1.5σ (BMW)","V2 update":"FNAL final result 2023; BMW lattice reduces tension" }},
+    pion:       { color:0x86efac, size:0.55, mass:139.6,    lifetime:2.6e-8,   spin:0,   charge:1,  ratio:0.03, data:{ "Mass":"139.6 MeV","Lifetime":"26 ns","F_π":"92.07 MeV (FLAG 2024)","V2 update":"Pionium τ measured (DIRAC); CLAS12 form factor" }},
+    kaon:       { color:0xfcd34d, size:0.6,  mass:493.7,    lifetime:1.24e-8,  spin:0,   charge:1,  ratio:0.02, data:{ "Mass":"493.7 MeV","Δm_K":"3.484×10⁻¹² MeV","V2 update":"NA62 K→πνν̄ 2.3σ above SM; CKMfitter 2024 updated" }},
+    demon:      { color:0x4c1d95, size:0.35, mass:0,        lifetime:Infinity, spin:0,   charge:0,  ratio:0.03, data:{ "Type":"Pines Demon (quasiparticle)","Velocity":"0.387 v_F (SrVO₃)","V2 update":"CONFIRMED 2023 — Husain/Kogar Science 2023; 67-year prediction validated" }},
+    graviton:   { color:0xd1fae5, size:0.3,  mass:0,        lifetime:Infinity, spin:2,   charge:0,  ratio:0.02, data:{ "Mass":"< 1.27×10⁻²³ eV (LIGO O4)","Spin":"2","V2 update":"LIGO O4 polarization confirms spin-2; O4 best mass bound 2024" }},
+    w_boson:    { color:0xfb7185, size:1.0,  mass:80360,    lifetime:3e-25,    spin:1,   charge:1,  ratio:0.02, data:{ "Mass":"80.360 GeV (CMS 2024)","V2 update":"CDF anomaly not confirmed by CMS/ATLAS; SM value retained in V2.0" }},
+    z_boson:    { color:0xa78bfa, size:1.0,  mass:91188,    lifetime:2.6e-25,  spin:1,   charge:0,  ratio:0.02, data:{ "Mass":"91.188 GeV","Width":"2495.5 MeV","N_ν":"2.9963±0.0074","V2 update":"Gfitter 2024 EW precision — all SM-consistent" }},
+  };
+
+  const CFG = { baseLoop:5000, loopInc:5000, particleCount:150000, flightWaypoints:12, flightDuration:18000, bloomStrength:1.3 };
+
+  const UI = {
+    hidden: false,
+    toggleHUD() {
+      this.hidden = !this.hidden;
+      ['hud-left','hud-right'].forEach(function(id){ document.getElementById(id).classList.toggle('hidden-hud', UI.hidden); });
+      document.getElementById('btn-toggle-hud').textContent = this.hidden ? '☰ Show Panels' : '☰ Hide Panels';
+      androidBridge('onHudToggled', {hidden:UI.hidden});
+    },
+    showCredits() { document.getElementById('hud-credits').style.display = 'block'; }
+  };
+
+  let chart;
+  function initChart() {
+    var ctx = document.getElementById('metricsChart').getContext('2d');
+    chart = new Chart(ctx, {type:'line',data:{labels:Array(30).fill(''),datasets:[{label:'Action S',data:Array(30).fill(0),borderColor:'#38bdf8',borderWidth:1.5,tension:0.4,pointRadius:0},{label:'Benevolence B',data:Array(30).fill(0),borderColor:'#10b981',borderWidth:1.5,tension:0.4,pointRadius:0},{label:'Coherence C',data:Array(30).fill(0),borderColor:'#a855f7',borderWidth:1.5,tension:0.4,pointRadius:0}]},options:{responsive:true,maintainAspectRatio:false,animation:false,plugins:{legend:{display:true,labels:{color:'#94a3b8',font:{size:9}}},tooltip:{enabled:false}},scales:{x:{display:false},y:{display:true,grid:{color:'#1e293b'},ticks:{color:'#475569',font:{size:8}}}}}});
+  }
+  function pushChart(a,b,c){
+    if(!chart)return;
+    chart.data.datasets[0].data.push(a);chart.data.datasets[0].data.shift();
+    chart.data.datasets[1].data.push(b);chart.data.datasets[1].data.shift();
+    chart.data.datasets[2].data.push(c);chart.data.datasets[2].data.shift();
+    chart.update('none');
+  }
+
+  const Flight = {
+    active:false,paused:false,waypoints:[],progress:0,startTime:0,animFrame:null,camera:null,controls:null,
+    init(cam,ctrl){this.camera=cam;this.controls=ctrl;},
+    generateWaypoints(){var pts=[];for(var i=0;i<CFG.flightWaypoints;i++){pts.push(new THREE.Vector3((Math.random()-0.5)*60,(Math.random()-0.5)*30,(Math.random()-0.5)*60));}pts.push(pts[0].clone());return pts;},
+    start(){if(this.active)this.stop();this.waypoints=this.generateWaypoints();this.progress=0;this.paused=false;this.active=true;this.startTime=performance.now();document.getElementById('hud-flight').style.display='block';document.getElementById('btn-flight').textContent='✈ Flying…';document.getElementById('btn-pause-flight').textContent='⏸ Pause';this.controls.enabled=false;this._tick();},
+    togglePause(){this.paused=!this.paused;if(!this.paused){this.startTime=performance.now()-this.progress*CFG.flightDuration;this._tick();}document.getElementById('btn-pause-flight').textContent=this.paused?'▶ Resume':'⏸ Pause';},
+    stop(){this.active=false;if(this.animFrame)cancelAnimationFrame(this.animFrame);this.controls.enabled=true;document.getElementById('hud-flight').style.display='none';document.getElementById('btn-flight').textContent='✈ Random Flight';document.getElementById('flight-progress').style.width='0%';document.getElementById('flight-bar').style.width='0%';},
+    _tick(){if(!this.active||this.paused)return;var now=performance.now();this.progress=Math.min((now-this.startTime)/CFG.flightDuration,1);var t=this.progress*(this.waypoints.length-1),i=Math.floor(t),f=t-i;var p0=this.waypoints[Math.max(0,i-1)],p1=this.waypoints[i],p2=this.waypoints[Math.min(this.waypoints.length-1,i+1)],p3=this.waypoints[Math.min(this.waypoints.length-1,i+2)];var pos=this._catmullRom(p0,p1,p2,p3,f),lookAhead=this._catmullRom(p0,p1,p2,p3,Math.min(f+0.05,1));this.camera.position.lerp(pos,0.06);var target=new THREE.Vector3().lerpVectors(this.controls.target,lookAhead,0.04);this.controls.target.copy(target);document.getElementById('flight-wp').textContent=Math.min(i+1,CFG.flightWaypoints)+' / '+CFG.flightWaypoints;document.getElementById('flight-bar').style.width=(this.progress*100)+'%';document.getElementById('flight-progress').style.width=(this.progress*100)+'%';if(this.progress>=1){this.stop();return;}this.animFrame=requestAnimationFrame(function(){Flight._tick();});},
+    _catmullRom(p0,p1,p2,p3,t){var t2=t*t,t3=t2*t;return new THREE.Vector3(0.5*((2*p1.x)+(-p0.x+p2.x)*t+(2*p0.x-5*p1.x+4*p2.x-p3.x)*t2+(-p0.x+3*p1.x-3*p2.x+p3.x)*t3),0.5*((2*p1.y)+(-p0.y+p2.y)*t+(2*p0.y-5*p1.y+4*p2.y-p3.y)*t2+(-p0.y+3*p1.y-3*p2.y+p3.y)*t3),0.5*((2*p1.z)+(-p0.z+p2.z)*t+(2*p0.z-5*p1.z+4*p2.z-p3.z)*t2+(-p0.z+3*p1.z-3*p2.z+p3.z)*t3));}
+  };
+
+  // ═══ CAMERA FOLLOW MODE ═══
+  const CameraFollow={active:false,targetIdx:null,holdDuration:5000,holdStart:0,transition:0,fromPos:null,toPos:null,
+    toggle(){this.active=!this.active;var btn=document.getElementById('btn-follow');
+      if(this.active){btn.textContent='🎯 Following…';this.pickNew();this.holdStart=performance.now()}
+      else{btn.textContent='🎯 Follow';document.getElementById('follow-target').textContent='--';
+        document.getElementById('follow-timer').textContent='--';document.getElementById('follow-bar').style.width='0%'}},
+    pickNew(){if(!sim.particles.length)return;this.targetIdx=Math.floor(Math.random()*sim.particles.length);
+      this.fromPos=sim.camera.position.clone();var p=sim.particles[this.targetIdx];
+      this.toPos=new THREE.Vector3(p.x,p.y+2,p.z+4);this.transition=0;
+      document.getElementById('follow-target').textContent=sim.particles[this.targetIdx].type.replace(/_/g,' ').toUpperCase()},
+    update(now){if(!this.active)return;var ep=now-this.holdStart,hp=Math.min(ep/this.holdDuration,1);
+      document.getElementById('follow-timer').textContent=(this.holdDuration/1000-ep/1000).toFixed(1)+'s';
+      document.getElementById('follow-bar').style.width=(hp*100)+'%';
+      if(ep>this.holdDuration){this.pickNew();this.holdStart=now;return}
+      this.transition=Math.min(this.transition+.03,1);
+      sim.camera.position.lerpVectors(this.fromPos,this.toPos,this.transition);
+      var p=sim.particles[this.targetIdx];sim.orbitControls.target.lerp(new THREE.Vector3(p.x,p.y,p.z),.05)}};
+
+  // ═══ MOTION SENSOR MODE ═══
+  var MotionMode={active:false,ax:0,ay:0,az:0,gx:0,gy:0,gz:0,
+    toggle(){this.active=!this.active;var btn=document.getElementById('btn-motion');
+      btn.textContent=this.active?'📳 ON':'📳 Motion';androidBridge('onMotionToggled',{active:this.active})},
+    updateMotion(ax,ay,az,gx,gy,gz){this.ax=ax;this.ay=ay;this.az=az;this.gx=gx;this.gy=gy;this.gz=gz},
+    apply(dt){if(!this.active)return;var s=1.8;sim.camera.position.x+=this.ay*s*dt;
+      sim.camera.position.y+=this.az*s*dt;sim.camera.position.z+=-this.ax*s*dt;sim.camera.position.clampLength(3,120);
+      sim.orbitControls.target.x+=this.ay*s*.5*dt;sim.orbitControls.target.y+=(this.az-.3)*s*.5*dt;
+      sim.orbitControls.target.z+=-this.ax*s*.5*dt;sim.orbitControls.target.clampLength(0,60)}};
+
+  function logEvent(msg){
+    var log=document.getElementById('event-log'),li=document.createElement('li');
+    var colors=['color:#67e8f9','color:#86efac','color:#fde047','color:#d8b4fe','color:#f9a8d4'];
+    li.setAttribute('style','border-left:2px solid rgba(21,94,117,0.5);padding-left:0.5rem;'+colors[Math.floor(Math.random()*colors.length)]);
+    li.textContent='['+new Date().toTimeString().slice(0,8)+'] '+msg;
+    log.insertBefore(li,log.firstChild);
+    while(log.children.length>25)log.lastChild.remove();
+  }
+
+  // ══════════════════════════════════════════════════════════
+  const sim = {
+    scene:null,camera:null,renderer:null,composer:null,orbitControls:null,clock:new THREE.Clock(),
+    particleSystem:null,particles:[],axionField:null,trails:[],trailDecay:true,
+    currentTime:0,maxTime:CFG.baseLoop,cycle:1,speed:1.0,
+    iconMode:false,iconSystems:{},typeOrder:[],typeIndices:{},
+
+    init(){
+      var container=document.getElementById('canvas-container');
+      this.scene=new THREE.Scene();this.scene.fog=new THREE.FogExp2(0x020208,0.018);
+      this.camera=new THREE.PerspectiveCamera(60,innerWidth/innerHeight,0.1,1000);this.camera.position.set(0,18,38);
+      this.renderer=new THREE.WebGLRenderer({antialias:true,alpha:true});
+      this.renderer.setSize(innerWidth,innerHeight);this.renderer.setPixelRatio(Math.min(devicePixelRatio,2));
+      container.appendChild(this.renderer.domElement);
+      this.orbitControls=new THREE.OrbitControls(this.camera,this.renderer.domElement);
+      this.orbitControls.enableDamping=true;this.orbitControls.dampingFactor=0.05;
+      this.orbitControls.autoRotate=true;this.orbitControls.autoRotateSpeed=0.4;
+      var rp=new THREE.RenderPass(this.scene,this.camera),bloom=new THREE.UnrealBloomPass(new THREE.Vector2(innerWidth,innerHeight),CFG.bloomStrength,0.5,0.8);
+      this.composer=new THREE.EffectComposer(this.renderer);this.composer.addPass(rp);this.composer.addPass(bloom);
+      this.scene.add(new THREE.AmbientLight(0x303050));var pt=new THREE.PointLight(0xffffff,2,200);this.scene.add(pt);
+      this._buildAxionField();this._buildParticles(CFG.particleCount);this._buildGridLines();
+      this._buildIconSystems();
+      Flight.init(this.camera,this.orbitControls);
+      window.addEventListener('resize',function(){
+        sim.camera.aspect=innerWidth/innerHeight;sim.camera.updateProjectionMatrix();
+        sim.renderer.setSize(innerWidth,innerHeight);sim.composer.setSize(innerWidth,innerHeight);
+      });
+      this.renderer.domElement.addEventListener('click',function(e){sim._raycastClick(e);});
+      initChart();this._animate();
+      androidBridge('onSimReady',{fps:0,particleCount:CFG.particleCount,species:Object.keys(PARTICLES).length});
+    },
+
+    _buildAxionField(){
+      var geo=new THREE.BufferGeometry(),N=2000,pos=new Float32Array(N*3);
+      for(var i=0;i<N;i++){pos[i*3]=(Math.random()-0.5)*120;pos[i*3+1]=(Math.random()-0.5)*40;pos[i*3+2]=(Math.random()-0.5)*120;}
+      geo.setAttribute('position',new THREE.BufferAttribute(pos,3));
+      var mat=new THREE.PointsMaterial({color:PARTICLES.axion.color,size:0.18,transparent:true,opacity:0.35,blending:THREE.AdditiveBlending,depthWrite:false});
+      this.axionField=new THREE.Points(geo,mat);this.scene.add(this.axionField);
+    },
+
+    _buildParticles(N){
+      var geo=new THREE.BufferGeometry(),pos=new Float32Array(N*3),col=new Float32Array(N*3),size=new Float32Array(N);
+      var types=Object.keys(PARTICLES),weights=types.map(function(t){return PARTICLES[t].ratio;}),cumsum=[],s=0;
+      weights.forEach(function(w){s+=w;cumsum.push(s);});var total=s;
+      for(var i=0;i<N;i++){
+        var r=Math.random()*total,typeIdx=cumsum.findIndex(function(c){return r<=c;});
+        var typeName=types[Math.min(typeIdx,types.length-1)],pd=PARTICLES[typeName],c=new THREE.Color(pd.color);
+        pos[i*3]=(Math.random()-0.5)*18;pos[i*3+1]=(Math.random()-0.5)*18;pos[i*3+2]=(Math.random()-0.5)*18;
+        col[i*3]=c.r;col[i*3+1]=c.g;col[i*3+2]=c.b;size[i]=pd.size*(0.8+Math.random()*0.4);
+        this.particles.push({type:typeName,x:pos[i*3],y:pos[i*3+1],z:pos[i*3+2],vx:0,vy:0,vz:0,a:Math.random()*0.25+0.05,b:Math.random()*0.25+0.05,phase:Math.random()*Math.PI*2,freq:Math.random()*2.5+0.3,berryPhase:0,proper_time:0,band:Math.floor(Math.random()*2)});
+      }
+      geo.setAttribute('position',new THREE.BufferAttribute(pos,3));
+      geo.setAttribute('color',new THREE.BufferAttribute(col,3));
+      geo.setAttribute('size',new THREE.BufferAttribute(size,1));
+      var mat=new THREE.PointsMaterial({size:0.5,vertexColors:true,map:this._glowTexture(),transparent:true,blending:THREE.AdditiveBlending,depthWrite:false});
+      this.particleSystem=new THREE.Points(geo,mat);this.scene.add(this.particleSystem);
+    },
+
+    _buildIconSystems() {
+      if (!ICON_TEXTURES) initIconTextures();
+      var self = this;
+
+      // Build per-type index maps
+      this.typeIndices = {};
+      this.typeOrder = Object.keys(PARTICLES);
+      this.typeOrder.forEach(function(t){ self.typeIndices[t] = []; });
+
+      for (var i = 0; i < this.particles.length; i++) {
+        var t = this.particles[i].type;
+        if (self.typeIndices[t]) self.typeIndices[t].push(i);
+      }
+
+      // Create one Points system per particle type (icon mode only, hidden by default)
+      this.iconSystems = {};
+      this.typeOrder.forEach(function(typeName) {
+        var indices = self.typeIndices[typeName];
+        if (!indices || indices.length === 0) return;
+
+        var geo = new THREE.BufferGeometry();
+        var posArr = new Float32Array(indices.length * 3);
+
+        for (var i = 0; i < indices.length; i++) {
+          var p = self.particles[indices[i]];
+          posArr[i*3] = p.x;
+          posArr[i*3+1] = p.y;
+          posArr[i*3+2] = p.z;
+        }
+
+        geo.setAttribute('position', new THREE.BufferAttribute(posArr, 3));
+
+        var tex = ICON_TEXTURES[typeName];
+        var mat = new THREE.PointsMaterial({
+          size: 1.8,
+          map: tex,
+          transparent: true,
+          blending: THREE.AdditiveBlending,
+          depthWrite: false,
+          color: PARTICLES[typeName].color,
+        });
+
+        var sys = new THREE.Points(geo, mat);
+        sys.visible = false;
+        sys._typeIndices = indices;
+        self.scene.add(sys);
+        self.iconSystems[typeName] = sys;
+      });
+    },
+
+    _updateIconPositions() {
+      var posMaster = this.particleSystem.geometry.attributes.position.array;
+      var self = this;
+
+      this.typeOrder.forEach(function(typeName) {
+        var sys = self.iconSystems[typeName];
+        if (!sys || !sys.visible) return;
+
+        var posArr = sys.geometry.attributes.position.array;
+        var indices = sys._typeIndices;
+        for (var i = 0; i < indices.length; i++) {
+          var idx = indices[i];
+          posArr[i*3] = posMaster[idx*3];
+          posArr[i*3+1] = posMaster[idx*3+1];
+          posArr[i*3+2] = posMaster[idx*3+2];
+        }
+        sys.geometry.attributes.position.needsUpdate = true;
+      });
+    },
+
+    toggleIconMode() {
+      this.iconMode = !this.iconMode;
+      var label = document.getElementById('icon-mode-label');
+      var btn = document.getElementById('btn-toggle-icons');
+
+      if (this.iconMode) {
+        // Switch to icon mode — hide dots, show per-type icon systems
+        this.particleSystem.visible = false;
+        var self = this;
+        this.typeOrder.forEach(function(t) {
+          if (self.iconSystems[t]) self.iconSystems[t].visible = true;
+        });
+        label.textContent = 'Icon Mode: MICROBES';
+        btn.textContent = '🦠 Dots';
+        btn.className = 'btn btn-cyan';
+        logEvent('[ICONS] Microbe mode activated — 18 particle types rendered with icons');
+        androidBridge('onIconModeChanged', {mode: 'icons'});
+      } else {
+        // Switch to dots mode — hide icon systems, show dots
+        this.particleSystem.visible = true;
+        var self = this;
+        this.typeOrder.forEach(function(t) {
+          if (self.iconSystems[t]) self.iconSystems[t].visible = false;
+        });
+        label.textContent = 'Icon Mode: DOTS';
+        btn.textContent = '🦠 Icons';
+        btn.className = 'btn btn-orange';
+        logEvent('[ICONS] Dots mode restored');
+        androidBridge('onIconModeChanged', {mode: 'dots'});
+      }
+    },
+
+    _buildGridLines(){
+      var mat=new THREE.LineBasicMaterial({color:0x0f172a,transparent:true,opacity:0.5}),size=40,step=8;
+      for(var x=-size;x<=size;x+=step){var g=new THREE.BufferGeometry().setFromPoints([new THREE.Vector3(x,-0.1,-size),new THREE.Vector3(x,-0.1,size)]);this.scene.add(new THREE.Line(g,mat));}
+      for(var z=-size;z<=size;z+=step){var g=new THREE.BufferGeometry().setFromPoints([new THREE.Vector3(-size,-0.1,z),new THREE.Vector3(size,-0.1,z)]);this.scene.add(new THREE.Line(g,mat));}
+    },
+
+    _glowTexture(){
+      var c=document.createElement('canvas');c.width=c.height=32;var ctx=c.getContext('2d');
+      var g=ctx.createRadialGradient(16,16,0,16,16,16);
+      g.addColorStop(0,'rgba(255,255,255,1)');g.addColorStop(0.25,'rgba(255,255,255,0.7)');g.addColorStop(0.6,'rgba(255,255,255,0.1)');g.addColorStop(1,'rgba(0,0,0,0)');
+      ctx.fillStyle=g;ctx.fillRect(0,0,32,32);var t=new THREE.Texture(c);t.needsUpdate=true;return t;
+    },
+
+    _updateParticles(dt){
+      var pos=this.particleSystem.geometry.attributes.position.array,t=Date.now()*0.0004*this.speed,action=0,benev=0,coh=0;
+      for(var i=0;i<this.particles.length;i++){
+        var p=this.particles[i];p.proper_time+=dt;var dx=0,dy=0,dz=0;
+        switch(p.type){
+          case'electron':case'muon':case'tau':dx=Math.sin(p.a*p.y+t)+Math.cos(p.b*p.x+t*0.7);dy=Math.sin(p.b*p.x-t*0.8)+Math.cos(p.a*p.y-t);dz=Math.sin(t*p.freq+p.phase)*0.8;p.berryPhase+=0.01*dx;action+=dx*dx+dy*dy+dz*dz;break;
+          case'proton':case'neutron':p.x+=Math.sin(t+p.phase)*dt*0.6;p.y+=Math.cos(t+p.phase)*dt*0.6;p.z+=Math.sin(t*0.4+p.phase)*dt*0.4;benev+=1.2;break;
+          case'photon':case'graviton':dx=Math.cos(p.phase)*12;dy=Math.sin(p.phase)*6;dz=8;p.x+=dx*dt;p.y+=dy*dt;p.z+=dz*dt;if(Math.abs(p.z)>55){p.z=-55;p.x=(Math.random()-0.5)*18;p.y=(Math.random()-0.5)*18;}break;
+          case'axion':p.x+=Math.sin(t*0.2+p.phase)*dt*0.4;p.y+=Math.cos(t*0.15+p.phase)*dt*0.4;p.z+=Math.sin(t*0.1+p.phase)*dt*0.3;coh+=0.8;break;
+          case'neutralino':p.x+=Math.sin(t*0.05+p.phase)*dt*0.8;p.y+=Math.cos(t*0.05)*dt*0.5;p.z+=dt*0.2;benev+=0.6;break;
+          case'gluon':dx=Math.sin(p.a*p.y*2+t*2);dy=Math.cos(p.b*p.x*2+t*2);dz=Math.sin(t*p.freq*1.5+p.phase);action+=(dx*dx+dy*dy)*0.5;break;
+          case'higgs':p.x+=(-p.x*0.002+Math.sin(t*0.3+p.phase)*0.5)*dt;p.y+=(-p.y*0.002+Math.cos(t*0.3+p.phase)*0.5)*dt;p.z+=Math.sin(t*0.2+p.phase)*dt*0.3;benev+=2.0;break;
+          case'demon':p.x+=Math.sin(p.phase+t*0.387)*dt*2;p.y+=Math.cos(p.phase+t*0.387)*dt*2;p.z+=Math.sin(t*0.387*p.freq)*dt;coh+=1.5;break;
+          case'neutrino':p.berryPhase+=dt*0.8;dx=Math.cos(p.phase)*8;dy=Math.sin(p.phase)*6;dz=10;p.x+=dx*dt;p.y+=dy*dt;p.z+=dz*dt;if(Math.abs(p.z)>55){p.z=-55;p.x=(Math.random()-0.5)*18;}coh+=0.5;break;
+          case'up_quark':case'down_quark':var cr=1.2;dx=Math.sin(t*3+p.phase)*cr;dy=Math.cos(t*3+p.a*p.phase)*cr;dz=Math.sin(t*2+p.phase)*cr*0.5;p.x=dx;p.y=dy;p.z+=dz*dt*0.1;break;
+          case'pion':case'kaon':p.x+=Math.sin(t*1.5+p.phase)*dt*1.5;p.y+=Math.cos(t*1.5+p.phase)*dt*1.5;p.z+=Math.sin(t+p.phase)*dt*0.8;break;
+          case'w_boson':case'z_boson':p.x+=(Math.random()-0.5)*dt*8;p.y+=(Math.random()-0.5)*dt*8;p.z+=(Math.random()-0.5)*dt*8;if(Math.abs(p.x)>5)p.x*=0.5;if(Math.abs(p.y)>5)p.y*=0.5;break;
+          default:dx=Math.sin(p.a*p.y+t)+Math.cos(p.b*p.x);dy=Math.sin(p.b*p.x-t)+Math.cos(p.a*p.y);dz=Math.sin(t*p.freq+p.phase);
+        }
+        if(dx||dy||dz){p.x+=dx*dt*1.5;p.y+=dy*dt*1.5;p.z+=dz*dt*1.5;}
+        pos[i*3]=p.x;pos[i*3+1]=p.y;pos[i*3+2]=p.z;
+      }
+      this.particleSystem.geometry.attributes.position.needsUpdate=true;
+      if (this.iconMode) this._updateIconPositions();
+      if(Math.random()<0.04){var n=this.particles.length;pushChart(action/n*10,benev/n*15,coh/n*20);}
+    },
+
+    _foldWorldlines(){
+      this.maxTime+=CFG.loopInc;this.cycle++;
+      var bloom=this.composer.passes[1],orig=bloom.strength;bloom.strength=5.0;
+      setTimeout(function(){bloom.strength=orig;},600);
+      if(this.trailDecay){
+        var hg=this.particleSystem.geometry.clone(),hm=new THREE.PointsMaterial({color:0x1e293b,size:0.08,transparent:true,opacity:0.25,blending:THREE.AdditiveBlending});
+        var hp=new THREE.Points(hg,hm);this.scene.add(hp);
+        setTimeout(function(){sim.scene.remove(hp);hg.dispose();hm.dispose();},this.maxTime*2);
+      }
+      document.getElementById('cycle-count').textContent=this.cycle;
+      document.getElementById('max-dur').textContent=(this.maxTime/1000).toFixed(1)+'s';
+      if(Math.random()<0.3)logEvent('[DEMON] Phase correlation detected — Pines Demon event');
+    },
+
+    _animate(){
+      requestAnimationFrame(function(){sim._animate();});
+      var dt=this.clock.getDelta(),now=performance.now();this.currentTime+=dt*1000;
+      if(this.currentTime>=this.maxTime){this.currentTime=0;this._foldWorldlines();}
+      document.getElementById('progress-bar').style.width=(this.currentTime/this.maxTime*100)+'%';
+      document.getElementById('loop-timer').textContent=(this.currentTime/1000).toFixed(2)+'s';
+      this._updateParticles(dt);
+      if(this.axionField){this.axionField.rotation.y+=0.0008;this.axionField.rotation.x=Math.sin(Date.now()*0.0001)*0.1;}
+      CameraFollow.update(now);MotionMode.apply(dt);
+      if(!Flight.active&&!CameraFollow.active&&!MotionMode.active)this.orbitControls.update();
+      this.composer.render();
+    },
+
+    _raycastClick(e){
+      var mouse=new THREE.Vector2((e.clientX/innerWidth)*2-1,-(e.clientY/innerHeight)*2+1),raycaster=new THREE.Raycaster();
+      raycaster.setFromCamera(mouse,this.camera);raycaster.params.Points.threshold=1.5;
+      var hits=raycaster.intersectObject(this.particleSystem);
+      if(hits.length>0){this._showDetail(this.particles[hits[0].index].type);}
+    },
+
+    _showDetail(typeName){
+      var pd=PARTICLES[typeName];if(!pd)return;
+      var div=document.getElementById('hud-detail'),name=document.getElementById('detail-name'),tbl=document.getElementById('detail-table');
+      var c=new THREE.Color(pd.color);name.style.color='#'+c.getHexString();name.textContent=typeName.replace(/_/g,' ').toUpperCase();
+      tbl.innerHTML=Object.entries(pd.data).map(function(x){return'<tr><td class="text-gray-500 pr-3 pb-0.5">'+x[0]+'</td><td class="text-cyan-200">'+x[1]+'</td></tr>';}).join('');
+      div.style.display='block';
+    },
+
+    perturb(){
+      this.particles.forEach(function(p){p.a=Math.random()*0.4+0.05;p.b=Math.random()*0.4+0.05;p.phase+=Math.random()*Math.PI;});
+      var bloom=this.composer.passes[1];bloom.strength=3.0;setTimeout(function(){bloom.strength=CFG.bloomStrength;},400);
+    },
+    toggleTrails(){this.trailDecay=!this.trailDecay;},
+    spawnDemon(){
+      var count=0;
+      for(var i=0;i<this.particles.length;i++){if(this.particles[i].type==='electron'&&count<15){this.particles[i].type='demon';var cidx=this.particleSystem.geometry.attributes.color,dc=new THREE.Color(PARTICLES.demon.color);cidx.array[i*3]=dc.r;cidx.array[i*3+1]=dc.g;cidx.array[i*3+2]=dc.b;count++;}}
+      this.particleSystem.geometry.attributes.color.needsUpdate=true;
+      var bloom=this.composer.passes[1];bloom.strength=4.5;setTimeout(function(){bloom.strength=CFG.bloomStrength;},800);
+    },
+    triggerFusion(){
+      var protons=this.particles.filter(function(p){return p.type==='proton';});
+      protons.slice(0,4).forEach(function(p){p.x=(Math.random()-0.5)*2;p.y=(Math.random()-0.5)*2;p.z=(Math.random()-0.5)*2;});
+      var bloom=this.composer.passes[1];bloom.strength=6.0;setTimeout(function(){bloom.strength=CFG.bloomStrength;},1000);
+    },
+    setSpeed(v){this.speed=parseFloat(v);document.getElementById('speed-val').textContent=parseFloat(v).toFixed(1)+'×';},
+    setDensity(v){document.getElementById('dens-val').textContent=v;}
+  };
+
+  window.addEventListener('DOMContentLoaded',function(){
+    initIconTextures();
+    sim.init();
+    document.getElementById('live-badge').style.display='block';
+    logEvent('[V6b] Land O Lil — Follow + Motion added');
+    logEvent('[V6b] Click 🦠 Icons for 18 particle icons');
+    logEvent('[V6b] 🎯 Follow sticks to random particles. 📳 Motion uses device sensors');
+  });
+  </script>
+</body>
+</html>
