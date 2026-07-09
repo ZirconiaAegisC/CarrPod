@@ -1,0 +1,8 @@
+[2026-07-09T13:38:47Z] WATCHDOG DAEMON V2 — Land O Lil v7b
+[2026-07-09T13:38:47Z] Expected time: 30s | Timeout: 60s | Retries: 3
+[2026-07-09T13:38:47Z] APK target: /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_bd9c3afd-d3d1-4c53-8888-d25c5232fcd8/CSMApps/landolil/v7b/out/LandOLil-v7b.apk
+[2026-07-09T13:38:47Z] ============================================
+[2026-07-09T13:38:47Z] EXECUTION (retry 1/3) | TIMEOUT: 60s
+[2026-07-09T13:38:47Z] COMMAND: python3 /workspace/bb8f9c5f-e866-4346-a29c-8d72daa0ad2d/sessions/agent_bd9c3afd-d3d1-4c53-8888-d25c5232fcd8/CSMApps/land...
+[2026-07-09T13:38:47Z] ============================================
+[2026-07-09T13:38:53Z] PASS | APK: 15162B | Time: 6s | Retry: 1/3
