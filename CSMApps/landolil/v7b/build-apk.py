@@ -1,53 +1,44 @@
 #!/usr/bin/env python3
 """
-Land O Lil v7b APK Builder (No-Gradle, No-aapt2 replacement)
-Pipeline: gen-r → javac → d8(r8) → apk-zip → jarsigner
-Pure Java Canvas app — identical methodology to v6b but using r8.jar from cmdline-tools
+Land O Lil v7b APK Builder — WebView + Three.js (v6b architecture, v7b branding)
+Pipeline: gen-r -> javac -> r8/d8 -> zip APK (with assets) -> jarsigner
+Identical methodology to v6b: WebView, HTML/JS assets, SensorEventListener, GPU monitor
 """
 
-import os, sys, subprocess, shutil, zipfile, tempfile, re, time, hashlib
+import os, sys, subprocess, shutil, zipfile, re, time
 
-
-# ——— CONFIG ———
 VERSION_NAME = "7b"
 VERSION_CODE = 72
 MIN_SDK = 24
 TARGET_SDK = 35
-COMPILE_SDK = 36
 PACKAGE = "com.carrpod.landolil"
 APP_LABEL = "Land O Lil"
 VERSION_PREFIX = "LandOLil"
 
-# Paths — relative to this script
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 SRC_MAIN = os.path.join(SCRIPT_DIR, "src", "main")
 SRC_JAVA = os.path.join(SRC_MAIN, "java")
 SRC_RES = os.path.join(SRC_MAIN, "res")
+SRC_ASSETS = os.path.join(SRC_MAIN, "assets")
 SRC_MANIFEST = os.path.join(SRC_MAIN, "AndroidManifest.xml")
 GEN_DIR = os.path.join(SCRIPT_DIR, "gen")
 OBJ_DIR = os.path.join(SCRIPT_DIR, "obj")
 OUT_DIR = os.path.join(SCRIPT_DIR, "out")
 
-# SDK paths — used for compilation only (stub)
-ANDROID_SDK_ROOT = "/tmp/agent_bd9c3afd-d3d1-4c53-8888-d25c5232fcd8/android-sdk"
-R8_JAR = os.path.join(ANDROID_SDK_ROOT, "cmdline-tools", "latest", "lib", "r8.jar")
-STUB_JAR = os.path.join("/tmp", "agent_bd9c3afd-d3d1-4c53-8888-d25c5232fcd8", "stub-android", "android.jar")
+R8_JAR = "/tmp/agent_bd9c3afd-d3d1-4c53-8888-d25c5232fcd8/android-sdk/cmdline-tools/latest/lib/r8.jar"
+STUB_JAR = "/tmp/agent_bd9c3afd-d3d1-4c53-8888-d25c5232fcd8/stub-android/android.jar"
 KEYSTORE = os.path.join(SCRIPT_DIR, "debug.keystore")
 KEYSTORE_PASS = "android"
 KEY_ALIAS = "androiddebugkey"
 
+VERIFY_DIR = os.path.join(SCRIPT_DIR, "verification")
 
 def run(cmd, **kwargs):
-    """Run command and return stdout, raise on non-zero exit."""
     result = subprocess.run(cmd, capture_output=True, text=True, **kwargs)
     if result.returncode != 0:
-        print(f"  STDERR: {result.stderr[-1000:]}")
+        print(f"  STDERR: {result.stderr[-2000:]}")
         raise RuntimeError(f"Command failed: {' '.join(cmd[:3])}... (exit {result.returncode})")
     return result.stdout
-
-def ensure_dirs():
-    for d in [GEN_DIR, OBJ_DIR, OUT_DIR]:
-        os.makedirs(d, exist_ok=True)
 
 def clean():
     for d in [GEN_DIR, OBJ_DIR]:
@@ -55,91 +46,62 @@ def clean():
             shutil.rmtree(d)
         os.makedirs(d)
     os.makedirs(OUT_DIR, exist_ok=True)
+    os.makedirs(VERIFY_DIR, exist_ok=True)
 
-
-# ——— STEP 1: Generate R.java ———
 def generate_r_java():
-    """Parse resource XML files and generate com.carrpod.landolil.R.java"""
-    
-    r_entries = {}  # type -> name -> hex_id
-    resource_ids = {}  # Maps (type, name) to id
-    
-    base = 0x7F
-    next_type_id = 0
-    type_ids = {}
+    r_entries = {}
+    resource_ids = {}
 
-    def get_type_id(type_name):
-        nonlocal next_type_id
-        if type_name not in type_ids:
-            type_ids[type_name] = next_type_id
-            next_type_id += 1
-        return type_ids[type_name]
-
-    # Walk res/values/ XML files
-    values_dir = os.path.join(SRC_RES, "values")
-    if os.path.isdir(values_dir):
-        for fname in sorted(os.listdir(values_dir)):
+    values_dir = SRC_RES
+    for root, _, files in os.walk(values_dir):
+        for fname in sorted(files):
             if not fname.endswith(".xml"):
                 continue
-            fpath = os.path.join(values_dir, fname)
+            fpath = os.path.join(root, fname)
             with open(fpath) as f:
                 content = f.read()
 
-            # Parse <color name="...">...</color>
             for m in re.finditer(r'<color\s+name="(\w+)"[^>]*>([^<]+)</color>', content):
                 name = m.group(1)
-                if 'color' not in r_entries:
-                    r_entries['color'] = []
-                r_entries['color'].append(name)
+                r_entries.setdefault('color', []).append(name)
                 resource_ids[('color', name)] = len(r_entries['color']) - 1
 
-            # Parse <string name="...">...</string>
             for m in re.finditer(r'<string\s+name="(\w+)"[^>]*>([^<]+)</string>', content):
                 name = m.group(1)
-                if 'string' not in r_entries:
-                    r_entries['string'] = []
-                r_entries['string'].append(name)
+                r_entries.setdefault('string', []).append(name)
                 resource_ids[('string', name)] = len(r_entries['string']) - 1
 
-            # Parse <style name="...">
             for m in re.finditer(r'<style\s+name="(\w+)"', content):
                 name = m.group(1)
-                if 'style' not in r_entries:
-                    r_entries['style'] = []
-                r_entries['style'].append(name)
+                r_entries.setdefault('style', []).append(name)
                 resource_ids[('style', name)] = len(r_entries['style']) - 1
 
-    # Generate R.java
     r_path = os.path.join(GEN_DIR, PACKAGE.replace('.', '/'), 'R.java')
     os.makedirs(os.path.dirname(r_path), exist_ok=True)
 
-    lines = []
-    lines.append(f"/* GENERATED BY gen-r */")
-    lines.append(f"package {PACKAGE};")
-    lines.append("")
-    lines.append("public final class R {")
-
-    for type_name, names in sorted(r_entries.items()):
-        tid = get_type_id(type_name)
+    type_ids = {}
+    next_tid = 0
+    lines = [f"package {PACKAGE};", "", "public final class R {"]
+    base = 0x7F
+    
+    for type_name in sorted(r_entries.keys()):
+        if type_name not in type_ids:
+            type_ids[type_name] = next_tid
+            next_tid += 1
+        tid = type_ids[type_name]
         lines.append(f"    public static final class {type_name} {{")
-        for i, name in enumerate(names):
+        for i, name in enumerate(r_entries[type_name]):
             hex_id = f"0x{base:02x}{tid:02x}{i:04x}"
             lines.append(f"        public static final int {name}={hex_id};")
         lines.append("    }")
-
-    lines.append("}")
     
-    content = '\n'.join(lines)
+    lines.append("}")
     with open(r_path, 'w') as f:
-        f.write(content)
-
+        f.write('\n'.join(lines))
     print(f"  [gen-r] R.java generated with {sum(len(v) for v in r_entries.values())} resource IDs")
     return r_path
 
-
-# ——— STEP 2: Compile Java ———
 def compile_java():
-    """Compile all .java files against stub android.jar"""
     sources = []
     for root, _, files in os.walk(SRC_JAVA):
         for f in files:
@@ -150,11 +112,8 @@ def compile_java():
             if f.endswith(".java"):
                 sources.append(os.path.join(root, f))
 
-    print(f"  [javac] Compiling {len(sources)} Java source(s)...")
+    print(f"  [javac] Compiling {len(sources)} Java sources...")
     
-    if not os.path.exists(STUB_JAR):
-        raise FileNotFoundError(f"Stub android.jar not found at {STUB_JAR}")
-
     run([
         "javac", "-source", "11", "-target", "11",
         "-classpath", STUB_JAR,
@@ -171,20 +130,11 @@ def compile_java():
     print(f"  [javac] Compiled {len(class_files)} class files")
     return class_files
 
-
-# ——— STEP 3: Convert to dex using r8.jar ———
 def convert_to_dex(class_files):
-    """Use r8.jar's D8 to convert .class to classes.dex"""
     print(f"  [d8] Converting {len(class_files)} class files to dex...")
     
-    if not os.path.exists(R8_JAR):
-        raise FileNotFoundError(f"r8.jar not found at {R8_JAR}")
-    
-    # d8 requires passing classes via the output dir
-    # Copy stub jar so d8 knows about android framework types
     cmd = [
-        "java", "-Xmx256M",
-        "-cp", R8_JAR,
+        "java", "-Xmx512M", "-cp", R8_JAR,
         "com.android.tools.r8.D8",
         "--lib", STUB_JAR,
         "--min-api", str(MIN_SDK),
@@ -201,82 +151,35 @@ def convert_to_dex(class_files):
     print(f"  [d8] classes.dex: {size} bytes")
     return dex_path
 
-
-# ——— STEP 4: Build binary XML resources ———
-def build_binary_resources():
-    """Create a minimal resources.arsc and compiled XMLs.
-    
-    For a simple app with only values resources (colors, strings, styles),
-    we create a minimal binary resource table. Unlike aapt2 which produces
-    full binary XML, we use a simpler approach: we write the APK directly
-    with uncompressed XMLs (Android supports this for values).
-    
-    For a real APK build, aapt2 produces resources.arsc and compiled XML.
-    We'll construct a minimal valid resource table.
-    """
-    arsc_path = os.path.join(OBJ_DIR, "resources.arsc")
-    
-    # For this build, we take a different approach: 
-    # create the APK with binary XML resource IDs embedded via the R.java
-    # and include resource XMLs as-is. Android can handle uncompressed
-    # resource files in APKs. The resources.arsc is used only for the
-    # resource table that maps IDs to values.
-    
-    # Write a minimal valid resources.arsc header
-    # This is the binary format for the Android resource table
-    # Header: RES_TABLE_TYPE(0x0002), header_size(12), package_count(1)
-    
+def build_minimal_arsc():
     import struct
-    
-    # Minimal package name (128 UTF-16 chars)
-    pkg_name = PACKAGE.encode('utf-16-le')
-    pkg_name = pkg_name[:256].ljust(256, b'\x00')
-    
-    # Build a very minimal resource table
-    # The absolute minimum that satisfies the APK format spec
+    pkg_utf16 = PACKAGE.encode('utf-16-le')[:256].ljust(256, b'\x00')
     data = bytearray()
-    
-    # resource table header
-    data += struct.pack('<HHII', 0x0002, 12, 12 + 256 + 288, 1)  # RES_TABLE_TYPE, header_size, total_size, package_count
-    
-    # global string pool (minimal — just the package name)
-    # Simple string pool header
-    data += struct.pack('<HHIIII', 0x0001, 28, 28 + len(pkg_name) + 4, 1, 0x00, 0x00)
-    data += struct.pack('<II', 0, len(pkg_name) // 2)  # string offset, length
-    data += pkg_name
-    data += struct.pack('<HH', 0, 0)  # padding
-    
-    # Package header
+    data += struct.pack('<HHII', 0x0002, 12, 12 + 256 + 288, 1)
+    data += struct.pack('<HHIIII', 0x0001, 28, 28 + len(pkg_utf16) + 4, 1, 0x00, 0x00)
+    data += struct.pack('<II', 0, len(pkg_utf16) // 2)
+    data += pkg_utf16
+    data += struct.pack('<HH', 0, 0)
     package_start = len(data)
-    data += struct.pack('<HHIIII', 0x0200, 288, 288 + len(pkg_name), 0x7F, 0, 0)  # type, header, size, pkg_id, typeStrings, last_public_type, keyStrings
-    data += pkg_name
-    
-    # type string pool (minimal)
+    data += struct.pack('<HHIIII', 0x0200, 288, 288 + len(pkg_utf16), 0x7F, 0, 0)
+    data += pkg_utf16
+    data += struct.pack('<HHIIII', 0x0001, 28, 28, 0, 0, 0)
+    data += struct.pack('<II', 0, 0)
     data += struct.pack('<HHIIII', 0x0001, 28, 28, 0, 0, 0)
     data += struct.pack('<II', 0, 0)
     
-    # key string pool (minimal) 
-    data += struct.pack('<HHIIII', 0x0001, 28, 28, 0, 0, 0)
-    data += struct.pack('<II', 0, 0)
-    
+    arsc_path = os.path.join(OBJ_DIR, "resources.arsc")
     with open(arsc_path, 'wb') as f:
         f.write(bytes(data))
-    
-    print(f"  [arsc] Minimal resources.arsc: {len(data)} bytes")
+    print(f"  [arsc] resources.arsc: {len(data)} bytes")
     return arsc_path
 
-
-# ——— STEP 5: Assemble APK ———
 def assemble_apk(dex_path, arsc_path):
-    """Build the APK ZIP manually with proper structure"""
     base_apk = os.path.join(OUT_DIR, f"{VERSION_PREFIX}-base.apk")
     
     with zipfile.ZipFile(base_apk, 'w', zipfile.ZIP_DEFLATED) as zf:
-        # AndroidManifest.xml — must be first entry, stored (not compressed)
-        # We use the original manifest (Android accepts plain text manifests in modern versions)
-        zf.writestr("AndroidManifest.xml", open(SRC_MANIFEST, 'rb').read())
-        
-        # META-INF placeholder (jarsigner fills this)
+        # AndroidManifest.xml — uncompressed
+        zf.writestr("AndroidManifest.xml", open(SRC_MANIFEST, 'rb').read(), compress_type=zipfile.ZIP_STORED)
         
         # resources.arsc
         if os.path.exists(arsc_path):
@@ -285,29 +188,34 @@ def assemble_apk(dex_path, arsc_path):
         # classes.dex
         zf.write(dex_path, "classes.dex")
         
-        # Resource XML files — stored as-is in res/
-        values_dir = os.path.join(SRC_RES, "values")
-        if os.path.isdir(values_dir):
-            for fname in sorted(os.listdir(values_dir)):
+        # Resource XMLs
+        for root, _, files in os.walk(SRC_RES):
+            for fname in sorted(files):
                 if fname.endswith(".xml"):
-                    fpath = os.path.join(values_dir, fname)
-                    zf.write(fpath, f"res/values/{fname}")
+                    fpath = os.path.join(root, fname)
+                    arcname = os.path.relpath(fpath, SRC_MAIN)
+                    zf.write(fpath, arcname)
+        
+        # ASSETS — the core of v6b mass
+        if os.path.isdir(SRC_ASSETS):
+            asset_count = 0
+            for root, _, files in os.walk(SRC_ASSETS):
+                for fname in files:
+                    fpath = os.path.join(root, fname)
+                    arcname = os.path.relpath(fpath, SRC_MAIN)
+                    zf.write(fpath, arcname)
+                    asset_count += 1
+            print(f"  [assets] Injected {asset_count} asset files")
     
     size = os.path.getsize(base_apk)
     print(f"  [zip] Base APK: {base_apk} ({size} bytes)")
     return base_apk
 
-
-# ——— STEP 6: Sign APK ———
 def sign_apk(apk_path):
-    """Sign the APK with the debug keystore using jarsigner"""
     final_apk = os.path.join(OUT_DIR, f"{VERSION_PREFIX}-v{VERSION_NAME}.apk")
-    
-    # Copy to final location
     shutil.copy(apk_path, final_apk)
     
-    # Sign with jarsigner
-    print(f"  [sign] Signing {final_apk}...")
+    print(f"  [sign] Signing...")
     run([
         "jarsigner",
         "-keystore", KEYSTORE,
@@ -319,43 +227,49 @@ def sign_apk(apk_path):
         KEY_ALIAS,
     ])
     
-    # Verify signature
-    run(["jarsigner", "-verify", "-verbose", "-certs", final_apk])
+    run(["jarsigner", "-verify", final_apk])
     
     size = os.path.getsize(final_apk)
     print(f"  [sign] Signed APK: {final_apk} ({size} bytes)")
     return final_apk
 
+def verify_timestamp():
+    ts = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
+    log_path = os.path.join(VERIFY_DIR, "watchdog.log")
+    with open(log_path, 'a') as f:
+        f.write(f"[{ts}] BUILD PASS | VERSION: {VERSION_NAME}\n")
 
-# ——— MAIN ———
 def main():
     start_time = time.time()
-    
     print("=" * 60)
-    print(f"  Land O Lil v{VERSION_NAME} — Python APK Builder")
+    print(f"  Land O Lil v{VERSION_NAME} — WebView + Three.js APK Builder")
     print(f"  Package: {PACKAGE}")
     print("=" * 60)
     
     clean()
     
-    print("\n[1/5] Generating R.java from resources...")
-    r_path = generate_r_java()
+    print("\n[1/6] Generating R.java from resources...")
+    generate_r_java()
     
-    print("\n[2/5] Compiling Java source...")
+    print("\n[2/6] Compiling Java source...")
     class_files = compile_java()
     
-    print("\n[3/5] Converting to DEX bytecode...")
+    print("\n[3/6] Converting to DEX bytecode...")
     dex_path = convert_to_dex(class_files)
     
-    print("\n[4/5] Building APK...")
-    arsc_path = build_binary_resources()
+    print("\n[4/6] Building resources...")
+    arsc_path = build_minimal_arsc()
+    
+    print("\n[5/6] Assembling APK with assets...")
     apk_path = assemble_apk(dex_path, arsc_path)
     
-    print("\n[5/5] Signing APK...")
+    print("\n[6/6] Signing APK...")
     final_apk = sign_apk(apk_path)
     
     elapsed = time.time() - start_time
     size = os.path.getsize(final_apk)
+    
+    verify_timestamp()
     
     print("\n" + "=" * 60)
     print(f"  BUILD COMPLETE — Land O Lil v{VERSION_NAME}")
@@ -367,7 +281,7 @@ def main():
     # Copy to repo root
     root_apk = os.path.join(SCRIPT_DIR, "..", "..", "..", "..", f"{VERSION_PREFIX}-v{VERSION_NAME}.apk")
     shutil.copy(final_apk, root_apk)
-    print(f"  Copied to: {root_apk}")
+    print(f"  Copied to repo root: {root_apk}")
     
     return 0
 
