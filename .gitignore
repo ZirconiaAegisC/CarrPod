@@ -1,0 +1,8 @@
+*.keystore
+*.jks
+*.p12
+*.pfx
+keystore.properties
+**/debug.keystore
+**/release.keystore
+*.log

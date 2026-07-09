@@ -28,7 +28,7 @@ OUT_DIR = os.path.join(SCRIPT_DIR, "out")
 R8_JAR = "/tmp/agent_bd9c3afd-d3d1-4c53-8888-d25c5232fcd8/android-sdk/cmdline-tools/latest/lib/r8.jar"
 STUB_JAR = "/tmp/agent_bd9c3afd-d3d1-4c53-8888-d25c5232fcd8/stub-android/android.jar"
 KEYSTORE = os.path.join(SCRIPT_DIR, "debug.keystore")
-KEYSTORE_PASS = "android"
+KEYSTORE_PASS = os.environ.get("ANDROID_KEYSTORE_PASS", "android")
 KEY_ALIAS = "androiddebugkey"
 
 VERIFY_DIR = os.path.join(SCRIPT_DIR, "verification")

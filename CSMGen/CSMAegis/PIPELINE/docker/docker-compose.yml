@@ -11,7 +11,7 @@ services:
       - NODE_ENV=development
       - DATABASE_URL=postgresql://aegis:aegis_dev@foundry-db:5432/aegis_citadel
       - REDIS_URL=redis://foundry-redis:6379
-      - JWT_SECRET=dev_secret_change_in_production
+      - JWT_SECRET=${JWT_SECRET:-change_me_in_production}
     volumes:
       - ../../FOUNDRY:/app
     depends_on:
