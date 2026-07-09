@@ -1,1 +1,1 @@
-[DIRECTOR-0023 | Mon Jul  6 03:16:01 UTC 2026] V5 ACTIVE — triple-poll cycle 92 — 10 online | 2 awaiting | cohort 3/5
+[DIRECTOR-0023 | Thu Jul  9 04:54:13 UTC 2026] SHUTDOWN COMPLETE — SENTINEL offline. Session archived to CSMGen/CSMAegis/COMMS/Sessions/July26.
