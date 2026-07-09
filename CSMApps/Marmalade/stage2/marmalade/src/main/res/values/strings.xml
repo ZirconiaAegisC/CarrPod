@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Marmalade</string>
+    <string name="app_subtitle">Safe Pod Engineering Company</string>
+    <string name="app_version">Stage Super2 — v2.0.0</string>
+    <string name="dashboard_title">Session Dashboard</string>
+    <string name="session_config_title">Session Config</string>
+    <string name="director_comms_title">Director COMMS</string>
+    <string name="bluetooth_title">Bluetooth Diagnostic</string>
+    <string name="settings_title">Settings</string>
+    <string name="release_memory">Release Memory</string>
+    <string name="session_active">ACTIVE</string>
+    <string name="session_stale">STALE</string>
+    <string name="session_offline">OFFLINE</string>
+    <string name="session_empty">EMPTY</string>
+    <string name="btn_save">SAVE</string>
+    <string name="btn_cancel">CANCEL</string>
+    <string name="btn_send">SEND DIRECTIVE</string>
+    <string name="btn_back">BACK TO DASHBOARD</string>
+</resources>
