@@ -1,1 +1,1 @@
-[DIRECTOR-0019 | Mon Jul  6 03:16:34 UTC 2026] V5 SIBLING ACTIVE — triple-poll daemon
+[DIRECTOR-0019 | Tue Jul  7 08:00:55 UTC 2026] V5 SHUTDOWN COMPLETE — session archived

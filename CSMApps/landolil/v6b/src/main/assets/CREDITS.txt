@@ -1,0 +1,73 @@
+LAND 'O LIL — LIBRARY CREDITS
+
+This application incorporates the following open-source libraries.
+All are self-contained within the APK assets. No network calls are
+made except for optional remote images.
+
+═══════════════════════════════════════════════════════════
+
+THREE.JS r128
+  License: MIT
+  Copyright (c) 2010-2021 Three.js Authors
+  https://github.com/mrdoob/three.js
+  Purpose: 3D WebGL rendering engine for the Subatomic Worldline
+           Evolution scene (150,000 particles, 18 species)
+
+THREE.JS ADDONS (r128 suite)
+  OrbitControls.js
+  EffectComposer.js
+  RenderPass.js
+  ShaderPass.js
+  CopyShader.js
+  UnrealBloomPass.js
+  LuminosityHighPassShader.js
+  License: MIT (part of Three.js project)
+  https://github.com/mrdoob/three.js/tree/dev/examples
+  Purpose: Camera controls, post-processing bloom effects,
+           and render pipeline management
+
+CHART.JS v4.4
+  License: MIT
+  Copyright (c) 2014-2023 Chart.js Contributors
+  https://github.com/chartjs/Chart.js
+  Purpose: Live-updating Benevolence Monitor chart
+           (Action, Benevolence, Coherence metrics)
+
+ORBITRON & RAJDHANI FONTS
+  License: SIL Open Font License 1.1
+  Copyright (c) 2020 The Orbitron Project Authors
+  Copyright (c) 2014 Indian Type Foundry
+  https://fonts.google.com/specimen/Orbitron
+  https://fonts.google.com/specimen/Rajdhani
+  Purpose: Typography for the HUD interface
+
+═══════════════════════════════════════════════════════════
+
+SUPERPARTICULATE ENGINE — Physics Attribution
+
+The particle catalog and worldline evolution model draws from:
+  CODATA 2022 recommended values
+  KATRIN 2024 — neutrino mass bound < 0.45 eV
+  HAYSTAC 2023 — axion dark matter search
+  LHC Run 3 2024 — neutralino mass exclusion > 900 GeV
+  FNAL Muon g-2 final result 2023
+  CMS 2024 — W boson mass 80.360 GeV
+  sPHENIX 2024 — gluon orbital angular momentum
+  Husain et al. Science 380 (2023) — Pines Demon confirmation
+  LIGO O4 2024 — graviton mass bound < 1.27×10⁻²³ eV
+  JWST 2023-2024 — fuzzy dark matter constraints
+  FLAG 2024 — lattice QCD precision (m_u, m_d, F_π)
+  NA62 2024 — K→πνν̄ branching ratio
+  NIF 2024 — fusion ignition Q > 1 (3.15 MJ)
+
+All physics data values current as of 2026-07-07.
+
+═══════════════════════════════════════════════════════════
+
+MARMLADE & LAND 'O LIL
+  Original Marmalade architecture: Director Kairos Steele (CITADEL)
+  CarrPod / Safe Pod Engineering Company
+  Tardigradia App Family
+
+Built with the No-Gradle Android pipeline:
+  aapt2, javac (OpenJDK 17), d8, zipalign, apksigner

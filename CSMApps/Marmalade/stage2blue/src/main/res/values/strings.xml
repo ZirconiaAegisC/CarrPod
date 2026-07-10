@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Marmalade</string>
+    <string name="bt_diagnostic">Bluetooth Diagnostic</string>
+    <string name="release_memory">Release Memory</string>
+    <string name="thank_you">Thank you.\nCarrPod AEGIS active.</string>
+    <string name="carrpod">CARRPOD</string>
+    <string name="tagline">Marmalade Stage 2 Blue \u2022 Tardigradia 2.0</string>
+</resources>

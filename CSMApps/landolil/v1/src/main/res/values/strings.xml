@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Land \'O Lil</string>
+    <string name="tagline">Tardigradia App Family \u2022 v1.0.0</string>
+    <string name="clean_view">Clean View</string>
+    <string name="html_overlay">HTML Overlays</string>
+    <string name="diagnostics">Diagnostics</string>
+</resources>

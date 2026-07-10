@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Land 'O Lil v4 — Proximity Engine | Tardigradia</title>
+  <script src="js/three.min.js"></script>
+  <script src="js/OrbitControls.js"></script>
+  <script src="js/EffectComposer.js"></script>
+  <script src="js/RenderPass.js"></script>
+  <script src="js/ShaderPass.js"></script>
+  <script src="js/CopyShader.js"></script>
+  <script src="js/UnrealBloomPass.js"></script>
+  <script src="js/LuminosityHighPassShader.js"></script>
+  <script src="js/chart.umd.js"></script>
+  <style>
+    :root {
+      --electron: #38bdf8; --proton: #f43f5e; --neutron: #94a3b8;
+      --photon: #fef08a; --axion: #10b981; --neutralino: #a855f7;
+      --gluon: #f97316; --higgs: #ec4899; --neutrino: #67e8f9;
+      --quark-u: #fbbf24; --quark-d: #60a5fa; --muon: #e879f9;
+      --pion: #86efac; --kaon: #fcd34d; --demon: #4c1d95;
+      --graviton: #d1fae5; --wboson: #fb7185; --zboson: #a78bfa;
+    }
+    *{box-sizing:border-box}body{font-family:'Orbitron','Rajdhani',sans-serif;background:#030308;color:#e2e8f0;overflow:hidden;margin:0}
+    #canvas-container{position:absolute;top:0;left:0;width:100%;height:100%;z-index:1}
+    .hud{background:rgba(5,8,20,0.82);backdrop-filter:blur(10px);border:1px solid rgba(56,189,248,0.25);border-radius:8px;z-index:10;transition:opacity 0.4s ease,transform 0.4s ease}
+    .hud.hidden-hud{opacity:0;pointer-events:none;transform:translateY(20px)}
+    .scrollable::-webkit-scrollbar{width:4px}.scrollable::-webkit-scrollbar-track{background:rgba(0,0,0,0.3)}.scrollable::-webkit-scrollbar-thumb{background:rgba(56,189,248,0.5);border-radius:2px}
+    .btn{padding:6px 12px;border-radius:5px;cursor:pointer;font-size:11px;text-transform:uppercase;letter-spacing:.05em;transition:all .2s;border:1px solid}
+    .btn-cyan{background:rgba(56,189,248,.15);border-color:rgba(56,189,248,.5);color:#38bdf8}.btn-cyan:hover{background:rgba(56,189,248,.35)}
+    .btn-green{background:rgba(16,185,129,.15);border-color:rgba(16,185,129,.5);color:#10b981}.btn-green:hover{background:rgba(16,185,129,.35)}
+    .btn-purple{background:rgba(168,85,247,.15);border-color:rgba(168,85,247,.5);color:#a855f7}.btn-purple:hover{background:rgba(168,85,247,.35)}
+    .btn-red{background:rgba(244,63,94,.15);border-color:rgba(244,63,94,.5);color:#f43f5e}.btn-red:hover{background:rgba(244,63,94,.35)}
+    .btn-yellow{background:rgba(254,240,138,.15);border-color:rgba(254,240,138,.5);color:#fef08a}.btn-yellow:hover{background:rgba(254,240,138,.35)}
+    .btn-orange{background:rgba(249,115,22,.15);border-color:rgba(249,115,22,.5);color:#f97316}.btn-orange:hover{background:rgba(249,115,22,.35)}
+    #flight-progress{position:absolute;bottom:0;left:0;height:3px;background:linear-gradient(90deg,#38bdf8,#a855f7,#f43f5e);transition:width .2s linear;z-index:30}
+    .flex{display:flex}.justify-between{justify-content:space-between}.items-start{align-items:flex-start}.items-end{align-items:flex-end}.grid{display:grid}.grid-cols-2{grid-template-columns:repeat(2,1fr)}.gap-1{gap:.25rem}.gap-2{gap:.5rem}.gap-3{gap:.75rem}.space-y-2>*+*{margin-top:.5rem}.w-full{width:100%}.h-screen{height:100vh}.relative{position:relative}.absolute{position:absolute}.top-0{top:0}.left-0{left:0}.bottom-4{bottom:1rem}.left-4{left:1rem}.right-4{right:1rem}.top-20{top:5rem}.left-1\/2{left:50%}.-translate-x-1\/2{transform:translateX(-50%)}.z-10{z-index:10}.z-20{z-index:20}.z-30{z-index:30}.pointer-events-none{pointer-events:none}.pointer-events-auto{pointer-events:auto}.text-xs{font-size:.75rem}.text-sm{font-size:.875rem}.text-xl{font-size:1.25rem}.font-bold{font-weight:bold}.font-mono{font-family:monospace}.uppercase{text-transform:uppercase}.tracking-wider{letter-spacing:.05em}.text-center{text-align:center}.p-3{padding:.75rem}.p-4{padding:1rem}.pb-1{padding-bottom:.25rem}.mb-1{margin-bottom:.25rem}.mb-2{margin-bottom:.5rem}.mt-1{margin-top:.25rem}.ml-2{margin-left:.5rem}.ml-3{margin-left:.75rem}.pl-2{padding-left:.5rem}.pr-3{padding-right:.75rem}.w-72{width:18rem}.w-80{width:20rem}.max-h-40{max-height:10rem}.overflow-y-auto{overflow-y:auto}.hidden{display:none}.inline-block{display:inline-block}.block{display:block}.flex-1{flex:1 1 0%}.animate-pulse{animation:pulse 2s cubic-bezier(.4,0,.6,1) infinite}@keyframes pulse{0%,100%{opacity:1}50%{opacity:.5}}.text-cyan-300{color:#67e8f9}.text-cyan-400{color:#22d3ee}.text-green-400{color:#4ade80}.text-yellow-400{color:#facc15}.text-purple-400{color:#c084fc}.text-gray-400{color:#9ca3af}.text-gray-500{color:#6b7280}.text-white{color:#fff}.bg-gray-700{background:#374151}.bg-gray-900{background:#111827}.border-b{border-bottom-width:1px}.border-cyan-900\/50{border-color:rgba(21,94,117,.5)}.border-yellow-900\/50{border-color:rgba(119,116,40,.5)}.border-purple-900\/50{border-color:rgba(76,29,149,.5)}.border-green-900\/50{border-color:rgba(20,83,45,.5)}.h-1{height:.25rem}.h-full{height:100%}.rounded{border-radius:.25rem}.rounded-full{border-radius:9999px}.opacity-80{opacity:.8}.leading-none{line-height:1}.cursor-pointer{cursor:pointer}
+  </style>
+</head>
+<body class="w-full h-screen relative">
+  <div id="canvas-container"></div>
+  <div id="flight-progress" style="width:0%"></div>
+
+  <div id="hud-header" class="absolute top-0 left-0 w-full p-3 z-20 pointer-events-none flex justify-between items-start" style="background:linear-gradient(to bottom,rgba(0,0,0,.9),transparent)">
+    <div class="pointer-events-auto">
+      <h1 style="font-size:22px;font-weight:bold;color:transparent;background:linear-gradient(to right,#22d3ee,#3b82f6,#9333ea);-webkit-background-clip:text;background-clip:text;filter:drop-shadow(0 0 12px rgba(34,211,238,.9))">SUBATOMIC WORLDLINE EVOLUTION</h1>
+      <p class="text-xs text-cyan-300 mt-1 opacity-80">
+        <span class="font-bold text-white">Monistic Engine v4.0</span>
+        <span id="mode-label" style="color:#f97316;margin-left:.5rem">Proximity + Motion + Follow</span>
+      </p>
+    </div>
+    <div class="pointer-events-auto flex items-center gap-2 mt-1">
+      <button id="btn-follow" class="btn btn-green" onclick="CameraFollow.toggle()" style="font-size:10px">🎯 Follow</button>
+      <button id="btn-motion" class="btn btn-orange" onclick="MotionMode.toggle()" style="font-size:10px">📳 Motion</button>
+      <button id="btn-toggle-hud" class="btn btn-cyan" onclick="UI.toggleHUD()">☰ Hide Panels</button>
+      <button id="btn-flight" class="btn btn-purple" onclick="Flight.start()">✈ Random Flight</button>
+      <button id="btn-credits" class="btn btn-yellow" onclick="UI.showCredits()" style="font-size:10px">Credits</button>
+    </div>
+  </div>
+
+  <div id="hud-left" class="absolute bottom-4 left-4 z-20 w-72 flex flex-col gap-3 pointer-events-none">
+    <div class="hud p-3 pointer-events-auto">
+      <h3 class="text-cyan-400 text-xs uppercase tracking-wider border-b border-cyan-900/50 pb-1 mb-2" style="font-family:'Orbitron',sans-serif">Evolution Cycle</h3>
+      <div class="flex justify-between items-end mb-1"><span class="text-gray-400 text-xs">Loop</span><span id="loop-timer" class="text-xl font-mono font-bold text-white">00.00s</span></div>
+      <div class="w-full bg-gray-900 h-1 rounded-full overflow-hidden"><div id="progress-bar" class="h-full" style="background:linear-gradient(to right,#06b6d4,#a855f7);width:0%"></div></div>
+      <div class="flex justify-between text-xs text-gray-500 mt-1"><span>Cycle <span id="cycle-count" class="text-cyan-300 font-bold">1</span></span><span>Max <span id="max-dur" class="text-cyan-300">5.0s</span></span></div>
+    </div>
+    <div class="hud p-3 pointer-events-auto">
+      <h3 class="text-yellow-400 text-xs uppercase tracking-wider border-b border-yellow-900/50 pb-1 mb-2" style="font-family:'Orbitron',sans-serif">Camera Follow</h3>
+      <div class="flex justify-between text-xs text-gray-400 mb-1"><span>Target</span><span id="follow-target" class="text-green-300 font-bold">--</span></div>
+      <div class="flex justify-between text-xs text-gray-400 mb-1"><span>Hold</span><span id="follow-timer" class="text-green-300 font-mono">--</span></div>
+      <div class="w-full bg-gray-900 h-1 rounded-full overflow-hidden"><div id="follow-bar" class="h-full" style="background:#10b981;width:0%"></div></div>
+    </div>
+  </div>
+
+  <div id="hud-right" class="absolute bottom-4 right-4 z-20 w-72 flex flex-col gap-3 pointer-events-none">
+    <div class="hud p-3 pointer-events-auto">
+      <h3 class="text-green-400 text-xs uppercase tracking-wider border-b border-green-900/50 pb-1 mb-2" style="font-family:'Orbitron',sans-serif">Controls</h3>
+      <div class="grid grid-cols-2 gap-1 text-xs mb-3">
+        <button onclick="sim.perturb()" class="btn btn-red">Perturb</button>
+        <button onclick="sim.toggleTrails()" class="btn btn-purple">Trails</button>
+        <button onclick="sim.spawnDemon()" class="btn btn-yellow">Pines Demon!</button>
+        <button onclick="sim.triggerFusion()" class="btn btn-green">Fusion</button>
+      </div>
+      <div class="space-y-2">
+        <div class="flex justify-between text-xs text-gray-400"><span>Icon Mix</span><span id="iconmix-val" class="text-cyan-300">50%</span></div>
+        <input type="range" id="iconmix-slider" min="0" max="100" value="50" class="w-full h-1 bg-gray-700 rounded cursor-pointer" oninput="sim.setIconMix(this.value)">
+        <div class="flex justify-between text-xs text-gray-400"><span>Proximity Sharpen</span><span id="prox-val" class="text-cyan-300">0.5</span></div>
+        <input type="range" id="prox-slider" min="0" max="100" value="50" class="w-full h-1 bg-gray-700 rounded cursor-pointer" oninput="sim.setProximity(this.value)">
+      </div>
+    </div>
+    <div class="hud p-3 pointer-events-auto">
+      <h3 class="text-yellow-400 text-xs uppercase tracking-wider border-b border-yellow-900/50 pb-1 mb-2" style="font-family:'Orbitron',sans-serif">Benevolence Monitor</h3>
+      <div style="position:relative;width:100%;height:100px"><canvas id="metricsChart"></canvas></div>
+    </div>
+  </div>
+
+  <div id="hud-credits" class="hud absolute top-20 left-1/2 -translate-x-1/2 p-4 w-80 z-30" style="display:none;pointer-events:auto;max-height:70vh;overflow-y:auto"><div class="flex justify-between items-start mb-2"><h3 class="text-yellow-400 text-xs uppercase tracking-wider">Credits</h3><button onclick="document.getElementById('hud-credits').style.display='none'" style="background:none;border:none;color:#6b7280;cursor:pointer;font-size:20px">×</button></div><div style="font-size:10px;color:#9ca3af;line-height:1.6"><p><b style="color:#facc15">Three.js r128</b> — MIT · WebGL 3D</p><p><b style="color:#facc15">Chart.js v4.4</b> — MIT · Metrics</p><p><b style="color:#facc15">Land 'O Lil v4.0</b> — Tardigradia App Family · CarrPod</p></div></div>
+
+  <script>
+  function androidBridge(m, d) { if (typeof LandOLil!=='undefined'&&LandOLil[m]) LandOLil[m](JSON.stringify(d)); }
+
+  // ═══════════════════════════════════════════════
+  // ICON TEXTURE GENERATOR (procedural, no downloads)
+  function buildIconTexture(hexColor, symbol, size) {
+    size = size || 48;
+    var c = document.createElement('canvas'); c.width = c.height = size;
+    var ctx = c.getContext('2d'), r = size / 2, cx = r, cy = r;
+    var grad = ctx.createRadialGradient(cx - r * 0.3, cy - r * 0.3, r * 0.1, cx, cy, r);
+    var color = '#' + new THREE.Color(hexColor).getHexString();
+    grad.addColorStop(0, '#ffffff'); grad.addColorStop(0.35, color);
+    grad.addColorStop(0.85, color); grad.addColorStop(1, '#000000');
+    ctx.fillStyle = grad; ctx.beginPath(); ctx.arc(cx, cy, r * 0.88, 0, Math.PI * 2); ctx.fill();
+    ctx.strokeStyle = color; ctx.lineWidth = 2; ctx.beginPath(); ctx.arc(cx, cy, r * 0.84, 0, Math.PI * 2); ctx.stroke();
+    ctx.fillStyle = '#ffffff'; ctx.font = 'bold ' + (size * 0.38) + 'px sans-serif';
+    ctx.textAlign = 'center'; ctx.textBaseline = 'middle'; ctx.fillText(symbol, cx, cy);
+    var tex = new THREE.Texture(c); tex.needsUpdate = true; return tex;
+  }
+
+  var ICON_TEXTURES = {};
+  function initIconTextures() {
+    var syms = {
+      electron:'e⁻', proton:'p⁺', neutron:'n⁰', photon:'γ', axion:'a', neutralino:'χ',
+      gluon:'g', higgs:'H⁰', neutrino:'ν', up_quark:'u', down_quark:'d', muon:'μ',
+      pion:'π', kaon:'K', demon:'👻', graviton:'G', w_boson:'W', z_boson:'Z'
+    };
+    var colors = {
+      electron:0x38bdf8, proton:0xf43f5e, neutron:0x94a3b8, photon:0xfef08a,
+      axion:0x10b981, neutralino:0xa855f7, gluon:0xf97316, higgs:0xec4899,
+      neutrino:0x67e8f9, up_quark:0xfbbf24, down_quark:0x60a5fa, muon:0xe879f9,
+      pion:0x86efac, kaon:0xfcd34d, demon:0x4c1d95, graviton:0xd1fae5,
+      w_boson:0xfb7185, z_boson:0xa78bfa
+    };
+    Object.keys(syms).forEach(function(k) { ICON_TEXTURES[k] = buildIconTexture(colors[k], syms[k], 48); });
+  }
+
+  // ═══════════════════════════════════════════════
+  const PARTICLES = {
+    electron:{color:0x38bdf8,size:.35,ratio:.25,data:{"Mass":"0.511 MeV","Charge":"-e","g-factor":"2.0023193"}},
+    proton:{color:0xf43f5e,size:.8,ratio:.08,data:{"Mass":"938.272 MeV","Radius":"0.8409 fm","Spin":"Quark+Gluon"}},
+    neutron:{color:0x94a3b8,size:.75,ratio:.07,data:{"Mass":"939.565 MeV","Lifetime":"877.75±0.34 s (bottle)"}},
+    photon:{color:0xfef08a,size:.45,ratio:.07,data:{"Mass":"< 7.1×10⁻²³ eV","Speed":"c"}},
+    axion:{color:0x10b981,size:.3,ratio:.09,data:{"Mass":"~10⁻⁵ eV","BEC":"HAYSTAC+JWST"}},
+    neutralino:{color:0xa855f7,size:.9,ratio:.05,data:{"Mass":"> 1 TeV","Type":"Majorana fermion"}},
+    gluon:{color:0xf97316,size:.4,ratio:.07,data:{"Colors":"8 (SU(3))"}},
+    higgs:{color:0xec4899,size:1.2,ratio:.02,data:{"Mass":"125.20±0.11 GeV","VEV":"246 GeV"}},
+    neutrino:{color:0x67e8f9,size:.25,ratio:.08,data:{"Mass":"< 0.45 eV (KATRIN 2024)"}},
+    up_quark:{color:0xfbbf24,size:.5,ratio:.04,data:{"Mass":"2.16 MeV","Charge":"+2/3 e"}},
+    down_quark:{color:0x60a5fa,size:.5,ratio:.04,data:{"Mass":"4.67 MeV","Charge":"−1/3 e"}},
+    muon:{color:0xe879f9,size:.6,ratio:.03,data:{"Mass":"105.66 MeV","g-2":"FNAL 2023"}},
+    pion:{color:0x86efac,size:.55,ratio:.03,data:{"Mass":"139.6 MeV","F_π":"92.07 MeV"}},
+    kaon:{color:0xfcd34d,size:.6,ratio:.02,data:{"Mass":"493.7 MeV","Δm_K":"3.484×10⁻¹²"}},
+    demon:{color:0x4c1d95,size:.35,ratio:.03,data:{"Velocity":"0.387 v_F","Confirmed":"2023"}},
+    graviton:{color:0xd1fae5,size:.3,ratio:.02,data:{"Mass":"<1.27×10⁻²³ eV","Spin":"2"}},
+    w_boson:{color:0xfb7185,size:1,ratio:.02,data:{"Mass":"80.360 GeV","CMS 2024"}},
+    z_boson:{color:0xa78bfa,size:1,ratio:.02,data:{"Mass":"91.188 GeV","N_ν":"2.9963"}}
+  };
+  const CFG = { baseLoop:5000, loopInc:5000, particleCount:150000, flightWaypoints:12, flightDuration:18000, bloomStrength:1.3 };
+
+  const UI = {
+    hidden: false,
+    toggleHUD() {
+      this.hidden = !this.hidden;
+      ['hud-left','hud-right'].forEach(function(id){ document.getElementById(id).classList.toggle('hidden-hud',UI.hidden); });
+      document.getElementById('btn-toggle-hud').textContent = this.hidden ? '☰ Show' : '☰ Hide';
+    }
+  };
+  UI.showCredits = function() { document.getElementById('hud-credits').style.display = 'block'; };
+
+  let chart;
+  function initChart() {
+    var ctx = document.getElementById('metricsChart').getContext('2d');
+    chart = new Chart(ctx, {type:'line',data:{labels:Array(30).fill(''),datasets:[{label:'S',data:Array(30).fill(0),borderColor:'#38bdf8',borderWidth:1.5,tension:.4,pointRadius:0},{label:'B',data:Array(30).fill(0),borderColor:'#10b981',borderWidth:1.5,tension:.4,pointRadius:0},{label:'C',data:Array(30).fill(0),borderColor:'#a855f7',borderWidth:1.5,tension:.4,pointRadius:0}]},options:{responsive:true,maintainAspectRatio:false,animation:false,plugins:{legend:{display:true,labels:{color:'#94a3b8',font:{size:9}}}},scales:{x:{display:false},y:{display:true,grid:{color:'#1e293b'},ticks:{color:'#475569',font:{size:8}}}}}});
+  }
+  function pushChart(a,b,c) { if(!chart)return; chart.data.datasets[0].data.push(a);chart.data.datasets[0].data.shift();chart.data.datasets[1].data.push(b);chart.data.datasets[1].data.shift();chart.data.datasets[2].data.push(c);chart.data.datasets[2].data.shift();chart.update('none'); }
+
+  const Flight = {
+    active:false,paused:false,waypoints:[],progress:0,startTime:0,animFrame:null,camera:null,controls:null,
+    init(cam,ctrl){this.camera=cam;this.controls=ctrl},
+    start(){if(this.active)this.stop();this.waypoints=[];for(var i=0;i<CFG.flightWaypoints;i++){this.waypoints.push(new THREE.Vector3((Math.random()-.5)*60,(Math.random()-.5)*30,(Math.random()-.5)*60));}this.waypoints.push(this.waypoints[0].clone());this.progress=0;this.paused=false;this.active=true;this.startTime=performance.now();this.controls.enabled=false;document.getElementById('flight-progress').style.width='0%';this._tick()},
+    stop(){this.active=false;if(this.animFrame)cancelAnimationFrame(this.animFrame);this.controls.enabled=true;document.getElementById('flight-progress').style.width='0%'},
+    _tick(){if(!this.active||this.paused)return;var n=performance.now();this.progress=Math.min((n-this.startTime)/CFG.flightDuration,1);var t=this.progress*(this.waypoints.length-1),i=Math.floor(t),f=t-i;var p0=this.waypoints[Math.max(0,i-1)],p1=this.waypoints[i],p2=this.waypoints[Math.min(this.waypoints.length-1,i+1)],p3=this.waypoints[Math.min(this.waypoints.length-1,i+2)],t2=f*f,t3=t2*f;var pos=new THREE.Vector3(.5*((2*p1.x)+(-p0.x+p2.x)*f+(2*p0.x-5*p1.x+4*p2.x-p3.x)*t2+(-p0.x+3*p1.x-3*p2.x+p3.x)*t3),.5*((2*p1.y)+(-p0.y+p2.y)*f+(2*p0.y-5*p1.y+4*p2.y-p3.y)*t2+(-p0.y+3*p1.y-3*p2.y+p3.y)*t3),.5*((2*p1.z)+(-p0.z+p2.z)*f+(2*p0.z-5*p1.z+4*p2.z-p3.z)*t2+(-p0.z+3*p1.z-3*p2.z+p3.z)*t3));this.camera.position.lerp(pos,.06);this.controls.target.lerp(this.waypoints[Math.min(i+1,CFG.flightWaypoints)],.04);document.getElementById('flight-progress').style.width=(this.progress*100)+'%';if(this.progress>=1){this.stop();return}this.animFrame=requestAnimationFrame(function(){Flight._tick()})}
+  };
+
+  // ═══════════════════════════════════════════════
+  // CAMERA FOLLOW MODE — stick to particles
+  const CameraFollow = {
+    active: false, targetIdx: null, particleType: null,
+    holdDuration: 5000, holdStart: 0, nextSwitchAt: 0,
+    transition: 0, fromPos: null, toPos: null,
+
+    toggle() {
+      this.active = !this.active;
+      var btn = document.getElementById('btn-follow');
+      if (this.active) {
+        btn.textContent = '🎯 Following…'; btn.className = 'btn btn-green';
+        this.pickNew(); this.holdStart = performance.now(); this.nextSwitchAt = this.holdStart + this.holdDuration;
+      } else {
+        btn.textContent = '🎯 Follow'; btn.className = 'btn btn-green';
+        document.getElementById('follow-target').textContent = '--';
+        document.getElementById('follow-timer').textContent = '--';
+        document.getElementById('follow-bar').style.width = '0%';
+      }
+    },
+
+    pickNew() {
+      if (!sim.particles.length) return;
+      this.targetIdx = Math.floor(Math.random() * sim.particles.length);
+      this.particleType = sim.particles[this.targetIdx].type;
+      this.fromPos = sim.camera.position.clone();
+      var p = sim.particles[this.targetIdx];
+      this.toPos = new THREE.Vector3(p.x, p.y + 2, p.z + 4);
+      this.transition = 0;
+      document.getElementById('follow-target').textContent = this.particleType.replace(/_/g,' ').toUpperCase();
+    },
+
+    update(now) {
+      if (!this.active) return;
+      var elapsed = now - this.holdStart;
+      var holdPct = Math.min(elapsed / this.holdDuration, 1);
+      document.getElementById('follow-timer').textContent = (this.holdDuration/1000 - elapsed/1000).toFixed(1) + 's';
+      document.getElementById('follow-bar').style.width = (holdPct * 100) + '%';
+
+      if (elapsed > this.holdDuration) {
+        this.pickNew(); this.holdStart = now;
+        return;
+      }
+
+      this.transition = Math.min(this.transition + 0.03, 1);
+      sim.camera.position.lerpVectors(this.fromPos, this.toPos, this.transition);
+      var p = sim.particles[this.targetIdx];
+      sim.orbitControls.target.lerp(new THREE.Vector3(p.x, p.y, p.z), 0.05);
+    }
+  };
+
+  // ═══════════════════════════════════════════════
+  // MOTION SENSOR MODE — accelerometer drives camera
+  var MotionMode = {
+    active: false, ax: 0, ay: 0, az: 0, gx: 0, gy: 0, gz: 0,
+
+    toggle() {
+      this.active = !this.active;
+      var btn = document.getElementById('btn-motion');
+      if (this.active) {
+        btn.textContent = '📳 Motion ON'; btn.className = 'btn btn-orange';
+        androidBridge('onMotionToggled', {active: true});
+      } else {
+        btn.textContent = '📳 Motion'; btn.className = 'btn btn-orange';
+        androidBridge('onMotionToggled', {active: false});
+      }
+    },
+
+    updateMotion(ax, ay, az, gx, gy, gz) {
+      this.ax = ax; this.ay = ay; this.az = az;
+      this.gx = gx; this.gy = gy; this.gz = gz;
+    },
+
+    apply(dt) {
+      if (!this.active) return;
+      var s = 1.8;
+      sim.camera.position.x += this.ay * s * dt;
+      sim.camera.position.y += this.az * s * dt;
+      sim.camera.position.z += -this.ax * s * dt;
+      sim.camera.position.clampLength(3, 120);
+
+      sim.orbitControls.target.x += this.ay * s * 0.5 * dt;
+      sim.orbitControls.target.y += (this.az - 0.3) * s * 0.5 * dt;
+      sim.orbitControls.target.z += -this.ax * s * 0.5 * dt;
+      sim.orbitControls.target.clampLength(0, 60);
+
+      androidBridge('onMotionUpdate', {ax:this.ax, ay:this.ay, az:this.az});
+    }
+  };
+
+  // ═══════════════════════════════════════════════
+  // MAIN SIMULATION
+  const sim = {
+    scene:null,camera:null,renderer:null,composer:null,orbitControls:null,clock:new THREE.Clock(),
+    particleSystem:null,particles:[],axionField:null,trails:[],trailDecay:true,
+    currentTime:0,maxTime:CFG.baseLoop,cycle:1,speed:1.0,
+    iconMix:0.5, proximityFactor:0.5,
+    iconSystems:{}, typeOrder:[], typeIndices:{}, masterPosArr:null,
+
+    init(){
+      var container = document.getElementById('canvas-container');
+      this.scene = new THREE.Scene(); this.scene.fog = new THREE.FogExp2(0x020208, 0.018);
+      this.camera = new THREE.PerspectiveCamera(60, innerWidth/innerHeight, 0.1, 1000); this.camera.position.set(0, 18, 38);
+      this.renderer = new THREE.WebGLRenderer({antialias:true,alpha:true});
+      this.renderer.setSize(innerWidth, innerHeight); this.renderer.setPixelRatio(Math.min(devicePixelRatio,2));
+      container.appendChild(this.renderer.domElement);
+      this.orbitControls = new THREE.OrbitControls(this.camera, this.renderer.domElement);
+      this.orbitControls.enableDamping = true; this.orbitControls.dampingFactor = 0.05;
+      this.orbitControls.autoRotate = true; this.orbitControls.autoRotateSpeed = 0.4;
+      var rp = new THREE.RenderPass(this.scene, this.camera), bloom = new THREE.UnrealBloomPass(new THREE.Vector2(innerWidth, innerHeight), CFG.bloomStrength, 0.5, 0.8);
+      this.composer = new THREE.EffectComposer(this.renderer); this.composer.addPass(rp); this.composer.addPass(bloom);
+      this.scene.add(new THREE.AmbientLight(0x303050)); this.scene.add(new THREE.PointLight(0xffffff, 2, 200));
+      this._buildAxionField(); this._buildParticles(CFG.particleCount); this._buildGridLines();
+      this._buildIconSystems(); Flight.init(this.camera, this.orbitControls);
+      window.addEventListener('resize', () => {
+        this.camera.aspect = innerWidth/innerHeight; this.camera.updateProjectionMatrix();
+        this.renderer.setSize(innerWidth, innerHeight); this.composer.setSize(innerWidth, innerHeight);
+      });
+      initChart(); this._animate();
+      androidBridge('onSimReady', {fps:0, particles:CFG.particleCount});
+    },
+
+    _buildAxionField() {
+      var geo = new THREE.BufferGeometry(), N = 2000, pos = new Float32Array(N*3);
+      for (var i = 0; i < N; i++) { pos[i*3] = (Math.random()-0.5)*120; pos[i*3+1] = (Math.random()-0.5)*40; pos[i*3+2] = (Math.random()-0.5)*120; }
+      geo.setAttribute('position', new THREE.BufferAttribute(pos, 3));
+      this.axionField = new THREE.Points(geo, new THREE.PointsMaterial({color:PARTICLES.axion.color,size:.18,transparent:true,opacity:.35,blending:THREE.AdditiveBlending,depthWrite:false}));
+      this.scene.add(this.axionField);
+    },
+
+    _buildParticles(N) {
+      var geo = new THREE.BufferGeometry(), pos = new Float32Array(N*3), col = new Float32Array(N*3), sz = new Float32Array(N);
+      var types = Object.keys(PARTICLES), weights = types.map(function(t){return PARTICLES[t].ratio}), cumsum=[], s=0;
+      weights.forEach(function(w){s+=w;cumsum.push(s)}); var total = s;
+      for (var i = 0; i < N; i++) {
+        var r = Math.random()*total, ti = cumsum.findIndex(function(c){return r<=c});
+        var tn = types[Math.min(ti, types.length-1)], pd = PARTICLES[tn], c = new THREE.Color(pd.color);
+        pos[i*3] = (Math.random()-.5)*18; pos[i*3+1] = (Math.random()-.5)*18; pos[i*3+2] = (Math.random()-.5)*18;
+        col[i*3] = c.r; col[i*3+1] = c.g; col[i*3+2] = c.b; sz[i] = pd.size*(.8+Math.random()*.4);
+        this.particles.push({type:tn,x:pos[i*3],y:pos[i*3+1],z:pos[i*3+2],a:Math.random()*.25+.05,b:Math.random()*.25+.05,phase:Math.random()*Math.PI*2,freq:Math.random()*2.5+.3,origSize:sz[i]});
+      }
+      geo.setAttribute('position', new THREE.BufferAttribute(pos, 3));
+      geo.setAttribute('color', new THREE.BufferAttribute(col, 3));
+      geo.setAttribute('size', new THREE.BufferAttribute(sz, 1));
+      this.particleSystem = new THREE.Points(geo, new THREE.PointsMaterial({size:.5,vertexColors:true,map:this._glowTexture(),transparent:true,blending:THREE.AdditiveBlending,depthWrite:false}));
+      this.scene.add(this.particleSystem);
+      this.masterPosArr = pos;
+    },
+
+    _buildIconSystems() {
+      if (!Object.keys(ICON_TEXTURES).length) initIconTextures();
+      var self = this; this.typeIndices = {}; this.typeOrder = Object.keys(PARTICLES);
+      this.typeOrder.forEach(function(t){self.typeIndices[t]=[]});
+      for (var i = 0; i < this.particles.length; i++) { var t = this.particles[i].type; if (self.typeIndices[t]) self.typeIndices[t].push(i); }
+      this.iconSystems = {};
+      this.typeOrder.forEach(function(tn) {
+        var idxs = self.typeIndices[tn]; if (!idxs || !idxs.length) return;
+        var geo = new THREE.BufferGeometry(), pArr = new Float32Array(idxs.length*3);
+        for (var i = 0; i < idxs.length; i++) { var p = self.particles[idxs[i]]; pArr[i*3]=p.x; pArr[i*3+1]=p.y; pArr[i*3+2]=p.z; }
+        geo.setAttribute('position', new THREE.BufferAttribute(pArr, 3));
+        var mat = new THREE.PointsMaterial({size:1.6, map:ICON_TEXTURES[tn], transparent:true, opacity:.7, blending:THREE.AdditiveBlending, depthWrite:false, color:PARTICLES[tn].color});
+        var sys = new THREE.Points(geo, mat); sys._typeIndices = idxs; self.scene.add(sys); self.iconSystems[tn] = sys;
+      });
+    },
+
+    _buildGridLines() {
+      var mat = new THREE.LineBasicMaterial({color:0x0f172a,transparent:true,opacity:.5}), size=40, step=8;
+      for (var x=-size;x<=size;x+=step){this.scene.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints([new THREE.Vector3(x,-.1,-size),new THREE.Vector3(x,-.1,size)]),mat))}
+      for (var z=-size;z<=size;z+=step){this.scene.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints([new THREE.Vector3(-size,-.1,z),new THREE.Vector3(size,-.1,z)]),mat))}
+    },
+
+    _glowTexture() {
+      var c = document.createElement('canvas'); c.width = c.height = 32;
+      var ctx = c.getContext('2d'), g = ctx.createRadialGradient(16,16,0,16,16,16);
+      g.addColorStop(0,'rgba(255,255,255,1)'); g.addColorStop(.25,'rgba(255,255,255,.7)');
+      g.addColorStop(.6,'rgba(255,255,255,.1)'); g.addColorStop(1,'rgba(0,0,0,0)');
+      ctx.fillStyle = g; ctx.fillRect(0,0,32,32); var t = new THREE.Texture(c); t.needsUpdate = true; return t;
+    },
+
+    // ══ PROXIMITY SHARPENING ══
+    _applyProximity(dt) {
+      var camPos = this.camera.position;
+      var cArr = this.particleSystem.geometry.attributes.color.array;
+      var sArr = this.particleSystem.geometry.attributes.size.array;
+      var p = this.particles;
+      var pf = this.proximityFactor;
+      var maxDist = 25;
+
+      for (var i = 0; i < Math.min(p.length, 5000); i += Math.max(1, Math.floor(p.length / 5000))) {
+        var idx = Math.floor(Math.random() * p.length);
+        var dx = p[idx].x - camPos.x, dy = p[idx].y - camPos.y, dz = p[idx].z - camPos.z;
+        var dist = Math.sqrt(dx*dx+dy*dy+dz*dz);
+        var sharp = Math.max(0, Math.min(1, 1 - dist / maxDist));
+        var sat = 0.25 + sharp * 0.75 * pf;
+        var pd = PARTICLES[p[idx].type], c = new THREE.Color(pd.color);
+        c.r = Math.min(1, c.r * (0.5 + sat)); c.g = Math.min(1, c.g * (0.5 + sat)); c.b = Math.min(1, c.b * (0.5 + sat));
+        cArr[idx*3]=c.r; cArr[idx*3+1]=c.g; cArr[idx*3+2]=c.b;
+        sArr[idx] = p[idx].origSize * (0.6 + sharp * 2.5 * pf + 0.4);
+      }
+      this.particleSystem.geometry.attributes.color.needsUpdate = true;
+      this.particleSystem.geometry.attributes.size.needsUpdate = true;
+    },
+
+    _updateParticles(dt) {
+      var pos = this.masterPosArr, t = Date.now() * 0.0004 * this.speed, action = 0, benev = 0, coh = 0;
+      for (var i = 0; i < this.particles.length; i++) {
+        var p = this.particles[i], dx = 0, dy = 0, dz = 0;
+        switch(p.type) {
+          case'electron':case'muon':dx=Math.sin(p.a*p.y+t)+Math.cos(p.b*p.x+t*.7);dy=Math.sin(p.b*p.x-t*.8)+Math.cos(p.a*p.y-t);dz=Math.sin(t*p.freq+p.phase)*.8;action+=dx*dx+dy*dy+dz*dz;break;
+          case'proton':case'neutron':p.x+=Math.sin(t+p.phase)*dt*.6;p.y+=Math.cos(t+p.phase)*dt*.6;p.z+=Math.sin(t*.4+p.phase)*dt*.4;benev+=1.2;break;
+          case'photon':case'graviton':dx=Math.cos(p.phase)*12;dy=Math.sin(p.phase)*6;dz=8;p.x+=dx*dt;p.y+=dy*dt;p.z+=dz*dt;if(Math.abs(p.z)>55){p.z=-55;p.x=(Math.random()-.5)*18;p.y=(Math.random()-.5)*18}break;
+          case'axion':p.x+=Math.sin(t*.2+p.phase)*dt*.4;p.y+=Math.cos(t*.15+p.phase)*dt*.4;coh+=.8;break;
+          case'neutralino':p.x+=Math.sin(t*.05+p.phase)*dt*.8;p.y+=Math.cos(t*.05)*dt*.5;benev+=.6;break;
+          case'gluon':dx=Math.sin(p.a*p.y*2+t*2);dy=Math.cos(p.b*p.x*2+t*2);action+=(dx*dx+dy*dy)*.5;break;
+          case'higgs':p.x+=(-p.x*.002+Math.sin(t*.3+p.phase)*.5)*dt;p.y+=(-p.y*.002+Math.cos(t*.3+p.phase)*.5)*dt;benev+=2;break;
+          case'demon':p.x+=Math.sin(p.phase+t*.387)*dt*2;p.y+=Math.cos(p.phase+t*.387)*dt*2;coh+=1.5;break;
+          case'neutrino':dx=Math.cos(p.phase)*8;dy=Math.sin(p.phase)*6;dz=10;p.x+=dx*dt;p.y+=dy*dt;p.z+=dz*dt;if(Math.abs(p.z)>55){p.z=-55;p.x=(Math.random()-.5)*18}break;
+          case'up_quark':case'down_quark':var cr=1.2;dx=Math.sin(t*3+p.phase)*cr;dy=Math.cos(t*3+p.a*p.phase)*cr;dz=Math.sin(t*2+p.phase)*cr*.5;p.x=dx;p.y=dy;p.z+=dz*dt*.1;break;
+          case'pion':case'kaon':p.x+=Math.sin(t*1.5+p.phase)*dt*1.5;p.y+=Math.cos(t*1.5+p.phase)*dt*1.5;break;
+          case'w_boson':case'z_boson':p.x+=(Math.random()-.5)*dt*8;p.y+=(Math.random()-.5)*dt*8;if(Math.abs(p.x)>5)p.x*=.5;if(Math.abs(p.y)>5)p.y*=.5;break;
+          default:dx=Math.sin(p.a*p.y+t)+Math.cos(p.b*p.x);dy=Math.sin(p.b*p.x-t)+Math.cos(p.a*p.y);
+        }
+        if(dx||dy||dz){p.x+=dx*dt*1.5;p.y+=dy*dt*1.5;p.z+=dz*dt*1.5}
+        pos[i*3]=p.x;pos[i*3+1]=p.y;pos[i*3+2]=p.z;
+      }
+      this.particleSystem.geometry.attributes.position.needsUpdate = true;
+      this._updateIconPositions();
+      this._applyProximity(dt);
+      if (Math.random() < 0.04) pushChart(action/this.particles.length*10, benev/this.particles.length*15, coh/this.particles.length*20);
+    },
+
+    _updateIconPositions() {
+      var self = this;
+      var mix = this.iconMix;
+      this.particleSystem.material.opacity = 0.5 + (1 - mix) * 0.5;
+
+      this.typeOrder.forEach(function(tn) {
+        var sys = self.iconSystems[tn]; if (!sys) return;
+        sys.material.opacity = mix * 0.85;
+        var idxs = sys._typeIndices, pArr = sys.geometry.attributes.position.array;
+        for (var i = 0; i < idxs.length; i++) { var idx = idxs[i]; pArr[i*3]=self.masterPosArr[idx*3]; pArr[i*3+1]=self.masterPosArr[idx*3+1]; pArr[i*3+2]=self.masterPosArr[idx*3+2]; }
+        sys.geometry.attributes.position.needsUpdate = true;
+      });
+    },
+
+    _foldWorldlines() {
+      this.maxTime += CFG.loopInc; this.cycle++;
+      var bloom = this.composer.passes[1], orig = bloom.strength; bloom.strength = 5.0;
+      setTimeout(function(){bloom.strength=orig}, 600);
+      document.getElementById('cycle-count').textContent = this.cycle;
+      document.getElementById('max-dur').textContent = (this.maxTime/1000).toFixed(1)+'s';
+    },
+
+    _animate() {
+      requestAnimationFrame(function(){sim._animate()});
+      var dt = this.clock.getDelta(), now = performance.now();
+      this.currentTime += dt * 1000;
+      if (this.currentTime >= this.maxTime) { this.currentTime = 0; this._foldWorldlines(); }
+      document.getElementById('progress-bar').style.width = (this.currentTime/this.maxTime*100) + '%';
+      document.getElementById('loop-timer').textContent = (this.currentTime/1000).toFixed(2)+'s';
+      this._updateParticles(dt);
+      if (this.axionField) { this.axionField.rotation.y += 0.0008; this.axionField.rotation.x = Math.sin(Date.now()*0.0001)*0.1; }
+      CameraFollow.update(now);
+      MotionMode.apply(dt);
+      if (!Flight.active && !CameraFollow.active && !MotionMode.active) this.orbitControls.update();
+      this.composer.render();
+    },
+
+    setIconMix(v) { this.iconMix = parseInt(v) / 100; document.getElementById('iconmix-val').textContent = v + '%'; },
+    setProximity(v) { this.proximityFactor = parseInt(v) / 100; document.getElementById('prox-val').textContent = this.proximityFactor.toFixed(2); },
+    perturb() { this.particles.forEach(function(p){p.a=Math.random()*.4+.05;p.b=Math.random()*.4+.05}); var b=this.composer.passes[1],o=b.strength;b.strength=3;setTimeout(function(){b.strength=o},400) },
+    toggleTrails() { this.trailDecay=!this.trailDecay },
+    spawnDemon() { var c=0;for(var i=0;i<this.particles.length&&c<15;i++){if(this.particles[i].type==='electron'){this.particles[i].type='demon';c++}} },
+    triggerFusion() { var ps=this.particles.filter(function(p){return p.type==='proton'});ps.slice(0,4).forEach(function(p){p.x=(Math.random()-.5)*2;p.y=(Math.random()-.5)*2});var b=this.composer.passes[1],o=b.strength;b.strength=6;setTimeout(function(){b.strength=o},1000) },
+  };
+
+  window.addEventListener('DOMContentLoaded', function() {
+    initIconTextures(); sim.init();
+  });
+  </script>
+</body>
+</html>
