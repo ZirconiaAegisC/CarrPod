@@ -1,0 +1,1 @@
+# CSMFAB0116-84 — USB HOST FIN: USB 3.2 Gen2x2 (20 Gbps) host controller. Type-C connector on fin edge. PD 3.1 source (up to 100W output to peripherals). DP Alt Mode. Peripheral enumeration: keyboard, mouse, storage, camera.

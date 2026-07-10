@@ -1,0 +1,1 @@
+# CSMFAB0116-83 — CAN BUS FIN: CAN 2.0B + CAN FD (5 Mbps). MCP2518FD controller + TCAN4550 transceiver. ISO 11898-2. Dual channel. J1939 protocol stack. OBD-II PID library. Vehicle diagnostics, industrial automation.

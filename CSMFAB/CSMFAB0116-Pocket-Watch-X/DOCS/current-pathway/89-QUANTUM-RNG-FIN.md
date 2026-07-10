@@ -1,0 +1,1 @@
+# CSMFAB0116-89 — QUANTUM RNG FIN: ID Quantique Quantis QRNG chip. True quantum entropy source (photon shot noise). 4 Mbps entropy. Health monitoring: continuous statistical tests (NIST SP800-90B). Interface via fin bus as /dev/hwrng. Post-processing: SHA-512 conditioner.

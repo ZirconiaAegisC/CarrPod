@@ -1,0 +1,1 @@
+# CSMFAB0116-75 — EMF/EMI DETECTOR FIN: Broadband 10 kHz — 6 GHz. Field strength measurement in V/m. Carrington event early warning: monitors geomagnetic-induced current precursors. Spectrum waterfall display. Integration with Aegis-C shield monitoring.

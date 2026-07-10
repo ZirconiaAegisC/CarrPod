@@ -1,0 +1,1 @@
+# CSMFAB0116-87 — SECURE ENCLAVE FIN: NXP SE050 + Microchip ATECC608B. CC EAL 6+. Key storage: ECC P-256/P-384, RSA 2048/4096, AES-256. Crypto acceleration: ECDSA, ECDH, AES-GCM. Post-quantum: CRYSTALS-Kyber, CRYSTALS-Dilithium (future firmware).

@@ -1,0 +1,1 @@
+# CSMFAB0116-62 — BIOIMPEDANCE ANALYSIS FIN: Multi-frequency (1-1000 kHz) BIA via wrist electrodes. Body composition: body fat%, muscle mass, water%, bone mass. Accuracy validated against DEXA. Hydration status monitoring. Research-grade raw data export.

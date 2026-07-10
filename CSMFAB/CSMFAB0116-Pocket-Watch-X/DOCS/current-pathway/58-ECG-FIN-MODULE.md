@@ -1,0 +1,1 @@
+# CSMFAB0116-58 — ECG FIN: Single-lead (Einthoven Lead I) via electrodes on case back and crown (right hand). AFib detection algorithm (FDA-cleared). Sampling 250 Hz, 24-bit ADC. Signal chain: dry electrode → instrumentation amp → ADC → DSP. ST segment analysis. FDA Class II 510(k).

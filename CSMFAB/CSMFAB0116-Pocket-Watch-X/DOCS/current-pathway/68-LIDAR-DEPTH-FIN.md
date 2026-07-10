@@ -1,0 +1,1 @@
+# CSMFAB0116-68 — LiDAR DEPTH SENSOR FIN: STMicro VL53L8CX ToF sensor, 8×8 zone, range 0-2m, accuracy ±5mm at 1m. 3D room scanning at 60 Hz. AR occlusion detection. Eye-safe Class 1 laser (940nm VCSEL). Hand gesture recognition via depth map.

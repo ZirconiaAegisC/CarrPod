@@ -1,0 +1,1 @@
+# CSMFAB0116-72 — IR THERMAL CAMERA FIN: FLIR Lepton 3.5 microbolometer, 160×120 resolution, 8.6 Hz. -10 to 140°C (high gain), up to 450°C (low gain). Accuracy ±5°C. Applications: PCB debug, building inspection, wildlife spotting, fever screening.

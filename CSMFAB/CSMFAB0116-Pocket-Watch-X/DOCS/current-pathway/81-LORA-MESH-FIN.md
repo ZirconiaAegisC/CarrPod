@@ -1,0 +1,1 @@
+# CSMFAB0116-81 — LORA MESH FIN: Semtech SX1262, 863-928 MHz. LoRaWAN 1.1 + point-to-point mesh. CSMFAB0115 FEATHER node compatible. Range: 15km+ LOS. Mesh protocol: store-and-forward, up to 255 hops. Off-grid emergency comm.

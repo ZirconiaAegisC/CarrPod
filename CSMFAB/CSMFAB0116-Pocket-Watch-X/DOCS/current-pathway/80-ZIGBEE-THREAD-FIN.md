@@ -1,0 +1,1 @@
+# CSMFAB0116-80 — ZIGBEE/THREAD FIN: Silicon Labs EFR32MG24, 802.15.4 PHY. Thread 1.3 Border Router, Zigbee 3.0 Coordinator. Matter 1.2 Controller. Mesh: up to 250 nodes. Power: 15mW RX, 50mW TX. Smart home hub functionality.
