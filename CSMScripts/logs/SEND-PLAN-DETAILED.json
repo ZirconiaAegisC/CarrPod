@@ -1,0 +1,1127 @@
+[
+  {
+    "batch": "BATCH-01-Insurance-Reinsurance",
+    "id": "E001-Lloyds-London-Futureset-Exposure-Mgmt",
+    "to": "Head of Exposure Management, Lloyd's Futureset / Lloyd's Market Association"
+  },
+  {
+    "batch": "BATCH-01-Insurance-Reinsurance",
+    "id": "E002-Reinsurance-Association-America",
+    "to": "Reinsurance Association of America, Washington D.C. \u2014 Government & Industry Affa"
+  },
+  {
+    "batch": "BATCH-01-Insurance-Reinsurance",
+    "id": "E003-Bermuda-Monte-Carlo-Reinsurers",
+    "to": "Chief Underwriting Officers, Bermuda & European Reinsurance Markets"
+  },
+  {
+    "batch": "BATCH-01-Insurance-Reinsurance",
+    "id": "E004-Specialty-Underwriters-Energy-Marine",
+    "to": "Heads of Specialty Underwriting \u2014 Energy, Marine, Aviation, Satellite, and Busin"
+  },
+  {
+    "batch": "BATCH-01-Insurance-Reinsurance",
+    "id": "E005-Global-Brokers-Risk-Engineering",
+    "to": "Broker Risk Engineering & Client Advisory Practice Leaders \u2014 Global Brokerages"
+  },
+  {
+    "batch": "BATCH-01-Insurance-Reinsurance",
+    "id": "E006-Cat-Model-Vendors-RMS-AIR",
+    "to": "Product Managers \u2014 Emerging Perils / Systemic Risk \u2014 RMS, AIR Worldwide, CoreLog"
+  },
+  {
+    "batch": "BATCH-01-Insurance-Reinsurance",
+    "id": "E007-RIMS-Conference-Outreach",
+    "to": "RIMS Conference Program Committee / Exhibitor & Sponsor Relations"
+  },
+  {
+    "batch": "BATCH-02-Energy-Utilities",
+    "id": "E008-EEI-Investor-Owned-Utilities",
+    "to": "EEI Member Companies \u2014 VP Transmission & Distribution / Grid Resilience / Chief "
+  },
+  {
+    "batch": "BATCH-02-Energy-Utilities",
+    "id": "E009-NRECA-Rural-Electric-Cooperatives",
+    "to": "NRECA Member Cooperatives \u2014 Director of Engineering / Emergency Preparedness"
+  },
+  {
+    "batch": "BATCH-02-Energy-Utilities",
+    "id": "E010-NERC-GMD-Task-Force",
+    "to": "NERC GMD Task Force / Project 2013-03 Standards Development Team"
+  },
+  {
+    "batch": "BATCH-02-Energy-Utilities",
+    "id": "E011-EPRI-SUNBURST-Grid-Research",
+    "to": "EPRI \u2014 Program Manager Grid Resilience / SUNBURST GMD Program"
+  },
+  {
+    "batch": "BATCH-02-Energy-Utilities",
+    "id": "E012-APPA-Public-Power",
+    "to": "APPA Member Utilities \u2014 Engineering & Operations Directors"
+  },
+  {
+    "batch": "BATCH-02-Energy-Utilities",
+    "id": "E013-NEI-Nuclear-Energy-Institute",
+    "to": "NEI \u2014 Director of Nuclear Infrastructure Resilience / Plant Design Engineering M"
+  },
+  {
+    "batch": "BATCH-02-Energy-Utilities",
+    "id": "E014-State-PUCs-Grid-Modernization",
+    "to": "State PUC Staff Engineers \u2014 Grid Modernization / Reliability Divisions"
+  },
+  {
+    "batch": "BATCH-02-Energy-Utilities",
+    "id": "E015-IEEE-PES-GMD-Working-Group",
+    "to": "IEEE PES \u2014 GMD Working Group / Transmission & Distribution Committee"
+  },
+  {
+    "batch": "BATCH-03-Govt-Emergency-Mgmt",
+    "id": "E016-FEMA-National-Continuity-Programs",
+    "to": "FEMA \u2014 Director of National Continuity Programs / State Hazard Mitigation Office"
+  },
+  {
+    "batch": "BATCH-03-Govt-Emergency-Mgmt",
+    "id": "E017-DHS-CISA-Infrastructure-Security",
+    "to": "DHS CISA \u2014 Chief of Infrastructure Security Division / National Critical Functio"
+  },
+  {
+    "batch": "BATCH-03-Govt-Emergency-Mgmt",
+    "id": "E018-IAEM-Conference-EMEX-2026",
+    "to": "IAEM Conference Program Committee / EMEX 2026 Organizers"
+  },
+  {
+    "batch": "BATCH-03-Govt-Emergency-Mgmt",
+    "id": "E019-NEMA-EMAC-State-Coordinators",
+    "to": "NEMA Member State Directors / EMAC (Emergency Management Assistance Compact) Sta"
+  },
+  {
+    "batch": "BATCH-03-Govt-Emergency-Mgmt",
+    "id": "E020-AASHTO-Bridge-Engineers",
+    "to": "AASHTO Committee on Bridges and Structures \u2014 State DOT Chief Bridge Engineers"
+  },
+  {
+    "batch": "BATCH-03-Govt-Emergency-Mgmt",
+    "id": "E021-FHWA-Bridge-Preservation",
+    "to": "FHWA Office of Bridges and Structures \u2014 Resilience Program Lead"
+  },
+  {
+    "batch": "BATCH-03-Govt-Emergency-Mgmt",
+    "id": "E022-ASCE-SEI-Structural-Engineering",
+    "to": "ASCE/SEI Technical Committee Members / Structures Congress Program Committee"
+  },
+  {
+    "batch": "BATCH-03-Govt-Emergency-Mgmt",
+    "id": "E023-National-Labs-Sandia-NREL",
+    "to": "Sandia National Laboratories \u2014 Electromagnetic Effects Research / NREL Materials"
+  },
+  {
+    "batch": "BATCH-03-Govt-Emergency-Mgmt",
+    "id": "E024-DOE-Critical-Materials-Institute",
+    "to": "DOE Critical Materials Institute / National Mining Association"
+  },
+  {
+    "batch": "BATCH-03-Govt-Emergency-Mgmt",
+    "id": "E025-NIST-Electromagnetics-Division",
+    "to": "NIST Electromagnetics Division \u2014 Program Lead"
+  },
+  {
+    "batch": "BATCH-04-Aerospace-Defense",
+    "id": "E026-DARPA-Defense-Sciences",
+    "to": "DARPA Defense Sciences"
+  },
+  {
+    "batch": "BATCH-04-Aerospace-Defense",
+    "id": "E027-AFRL-Directed-Energy",
+    "to": "AFRL Directed Energy"
+  },
+  {
+    "batch": "BATCH-04-Aerospace-Defense",
+    "id": "E028-NASA-Heliophysics",
+    "to": "NASA Heliophysics"
+  },
+  {
+    "batch": "BATCH-04-Aerospace-Defense",
+    "id": "E029-NOAA-SWPC-Public-Affairs",
+    "to": "NOAA SWPC Public Affairs"
+  },
+  {
+    "batch": "BATCH-04-Aerospace-Defense",
+    "id": "E030-AIAA-SciTech-Forum",
+    "to": "AIAA SciTech Forum"
+  },
+  {
+    "batch": "BATCH-04-Aerospace-Defense",
+    "id": "E031-Space-Symposium-Foundation",
+    "to": "Space Symposium Foundation"
+  },
+  {
+    "batch": "BATCH-04-Aerospace-Defense",
+    "id": "E032-Aerospace-Defense-Contractors",
+    "to": "Aerospace Defense Contractors"
+  },
+  {
+    "batch": "BATCH-04-Aerospace-Defense",
+    "id": "E033-NDIA-Symposia",
+    "to": "NDIA Symposia"
+  },
+  {
+    "batch": "BATCH-05-Marine-Maritime",
+    "id": "E034-CLIA-Cruise-Line-International",
+    "to": "CLIA \u2014 VP"
+  },
+  {
+    "batch": "BATCH-05-Marine-Maritime",
+    "id": "E035-SNAME-Naval-Architects",
+    "to": "SNAME \u2014 Chief"
+  },
+  {
+    "batch": "BATCH-05-Marine-Maritime",
+    "id": "E036-DNV-ABS-Lloyds-Classification",
+    "to": "DNV / ABS"
+  },
+  {
+    "batch": "BATCH-05-Marine-Maritime",
+    "id": "E037-IMO-International-Maritime",
+    "to": "IMO \u2014 Maritime"
+  },
+  {
+    "batch": "BATCH-05-Marine-Maritime",
+    "id": "E038-Amusement-Parks-IAAPA",
+    "to": "IAAPA \u2014 VP"
+  },
+  {
+    "batch": "BATCH-05-Marine-Maritime",
+    "id": "E039-AAR-Freight-Rail",
+    "to": "IAAAR \u2014 Chief"
+  },
+  {
+    "batch": "BATCH-05-Marine-Maritime",
+    "id": "E040-APTA-Passenger-Transit",
+    "to": "APTA \u2014 Director"
+  },
+  {
+    "batch": "BATCH-05-Marine-Maritime",
+    "id": "E041-Pipeline-Midstream-AMPP",
+    "to": "AMPP / API"
+  },
+  {
+    "batch": "BATCH-06-Data-Telecom",
+    "id": "E042-Uptime-Institute-Data-Centers",
+    "to": "Uptime Institute \u2014 Data Center Engineering"
+  },
+  {
+    "batch": "BATCH-06-Data-Telecom",
+    "id": "E043-DCD-Data-Center-Dynamics",
+    "to": "DCD (Data Center Dynamics) \u2014 Conference"
+  },
+  {
+    "batch": "BATCH-06-Data-Telecom",
+    "id": "E044-7x24-Exchange-AFCOM",
+    "to": "7x24 Exchange / AFCOM \u2014 Critical Facilities"
+  },
+  {
+    "batch": "BATCH-06-Data-Telecom",
+    "id": "E045-CTIA-Telecom-Carriers",
+    "to": "CTIA \u2014 VP Network Engineering"
+  },
+  {
+    "batch": "BATCH-06-Data-Telecom",
+    "id": "E046-FCC-Public-Safety-Homeland",
+    "to": "FCC Public Safety and Homeland Security Bureau"
+  },
+  {
+    "batch": "BATCH-06-Data-Telecom",
+    "id": "E047-Satellite-Industry-Association",
+    "to": "SIA \u2014 Director Advanced Systems"
+  },
+  {
+    "batch": "BATCH-06-Data-Telecom",
+    "id": "E048-IAC-Astronautical-Congress",
+    "to": "IAC (International Astronautical Congress)"
+  },
+  {
+    "batch": "BATCH-06-Data-Telecom",
+    "id": "E049-NTCA-Rural-Broadband",
+    "to": "NTCA \u2014 Rural Broadband Association"
+  },
+  {
+    "batch": "BATCH-07-National-Outreach",
+    "id": "E050-National-Outreach-Part-01",
+    "to": "National Audience \u2014 General Outreach Distribution"
+  },
+  {
+    "batch": "BATCH-07-National-Outreach",
+    "id": "E051-National-Outreach-Part-02",
+    "to": "National Audience \u2014 General Outreach Distribution"
+  },
+  {
+    "batch": "BATCH-07-National-Outreach",
+    "id": "E052-National-Outreach-Part-03",
+    "to": "National Audience \u2014 General Outreach Distribution"
+  },
+  {
+    "batch": "BATCH-07-National-Outreach",
+    "id": "E053-National-Outreach-Part-04",
+    "to": "National Audience \u2014 General Outreach Distribution"
+  },
+  {
+    "batch": "BATCH-07-National-Outreach",
+    "id": "E054-National-Outreach-Part-05",
+    "to": "National Audience \u2014 General Outreach Distribution"
+  },
+  {
+    "batch": "BATCH-07-National-Outreach",
+    "id": "E055-National-Outreach-Part-06",
+    "to": "National Audience \u2014 General Outreach Distribution"
+  },
+  {
+    "batch": "BATCH-07-National-Outreach",
+    "id": "E056-National-Outreach-Part-07",
+    "to": "National Audience \u2014 General Outreach Distribution"
+  },
+  {
+    "batch": "BATCH-07-National-Outreach",
+    "id": "E057-National-Outreach-Part-08",
+    "to": "National Audience \u2014 General Outreach Distribution"
+  },
+  {
+    "batch": "BATCH-07-National-Outreach",
+    "id": "E058-National-Outreach-Part-09",
+    "to": "National Audience \u2014 General Outreach Distribution"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-afghanistan",
+    "to": "Afghanistan \u2014 Government/Utility/Industry | **FROM:** Jason Brodsky, zirconia@ae"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-albania",
+    "to": "Albania \u2014 Government, Utility, and Industry Contacts"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-algeria",
+    "to": "Algeria \u2014 Government, Utility, and Industry Contacts (per CSMGlobal distribution"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-angola",
+    "to": "Angola \u2014 Government/Utility/Industry | **FROM:** Jason Brodsky, zirconia@aegisc."
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-argentina",
+    "to": "Argentina \u2014 Government, Utility, and Industry Contacts (per CSMGlobal distributi"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-armenia",
+    "to": "Armenia \u2014 Government, Utility, and Industry Contacts"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-australia",
+    "to": "Australia \u2014 Government, Utility, and Industry Contacts (per CSMGlobal distributi"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-austria",
+    "to": "Austria \u2014 Government, Utility, and Industry Contacts (per CSMGlobal distribution"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-azerbaijan",
+    "to": "Azerbaijan \u2014 Government, Utility, and Industry Contacts"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-bahamas",
+    "to": "Bahamas \u2014 Government, Utility, and Industry Contacts"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-bahrain",
+    "to": "Bahrain \u2014 Government, Utility, and Industry Contacts"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-bangladesh",
+    "to": "Bangladesh \u2014 Government, Utility, and Industry Contacts (per CSMGlobal distribut"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-barbados",
+    "to": "Barbados \u2014 Government/Utility/Industry | **FROM:** Jason Brodsky, zirconia@aegis"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-belarus",
+    "to": "Belarus \u2014 Government, Utility, and Industry Contacts"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-belgium",
+    "to": "Belgium \u2014 Government, Utility, and Industry Contacts (per CSMGlobal distribution"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-belize",
+    "to": "Belize \u2014 Government/Utility/Industry | **FROM:** Jason Brodsky, zirconia@aegisc."
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-benin",
+    "to": "Benin \u2014 Government/Utility/Industry | **FROM:** Jason Brodsky, zirconia@aegisc.s"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-bhutan",
+    "to": "Bhutan \u2014 Government/Utility/Industry | **FROM:** Jason Brodsky, zirconia@aegisc."
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-bolivia",
+    "to": "Bolivia \u2014 Government, Utility, and Industry Contacts"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-bosnia-herzegovina",
+    "to": "Bosnia-Herzegovina \u2014 Government, Utility, and Industry Contacts"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-botswana",
+    "to": "Botswana \u2014 Government, Utility, and Industry Contacts"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-brazil",
+    "to": "Brazil \u2014 Government, Utility, and Industry Contacts (per CSMGlobal distribution "
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-brunei",
+    "to": "Brunei \u2014 Government, Utility, and Industry Contacts"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-bulgaria",
+    "to": "Bulgaria \u2014 Government, Utility, and Industry Contacts (per CSMGlobal distributio"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-burkina-faso",
+    "to": "Burkina-Faso \u2014 Government/Utility/Industry | **FROM:** Jason Brodsky, zirconia@a"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-cambodia",
+    "to": "Cambodia \u2014 Government, Utility, and Industry Contacts"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-cameroon",
+    "to": "Cameroon \u2014 Government, Utility, and Industry Contacts"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-canada",
+    "to": "Canada \u2014 Government, Utility, and Industry Contacts (per CSMGlobal distribution "
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-chad",
+    "to": "Chad \u2014 Government/Utility/Industry | **FROM:** Jason Brodsky, zirconia@aegisc.sp"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-chile",
+    "to": "Chile \u2014 Government, Utility, and Industry Contacts (per CSMGlobal distribution g"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-china",
+    "to": "China \u2014 Government, Utility, and Industry Contacts (per CSMGlobal distribution g"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-colombia",
+    "to": "Colombia \u2014 Government, Utility, and Industry Contacts (per CSMGlobal distributio"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-congo-republic",
+    "to": "Congo-Republic \u2014 Government/Utility/Industry | **FROM:** Jason Brodsky, zirconia"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-costa-rica",
+    "to": "Costa-Rica \u2014 Government, Utility, and Industry Contacts (per CSMGlobal distribut"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-cote-divoire",
+    "to": "Cote-dIvoire \u2014 Government, Utility, and Industry Contacts"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-croatia",
+    "to": "Croatia \u2014 Government, Utility, and Industry Contacts (per CSMGlobal distribution"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-cuba",
+    "to": "Cuba \u2014 Government/Utility/Industry | **FROM:** Jason Brodsky, zirconia@aegisc.sp"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-cyprus",
+    "to": "Cyprus \u2014 Government, Utility, and Industry Contacts"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-czech-republic",
+    "to": "Czech-Republic \u2014 Government, Utility, and Industry Contacts (per CSMGlobal distr"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-democratic-republic-congo",
+    "to": "Democratic-Republic-Congo \u2014 Government/Utility/Industry | **FROM:** Jason Brodsk"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-denmark",
+    "to": "Denmark \u2014 Government, Utility, and Industry Contacts (per CSMGlobal distribution"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-dominican-republic",
+    "to": "Dominican-Republic \u2014 Government, Utility, and Industry Contacts"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-ecuador",
+    "to": "Ecuador \u2014 Government, Utility, and Industry Contacts"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-egypt",
+    "to": "Egypt \u2014 Government, Utility, and Industry Contacts (per CSMGlobal distribution g"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-el-salvador",
+    "to": "El-Salvador \u2014 Government/Utility/Industry | **FROM:** Jason Brodsky, zirconia@ae"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-estonia",
+    "to": "Estonia \u2014 Government, Utility, and Industry Contacts (per CSMGlobal distribution"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-ethiopia",
+    "to": "Ethiopia \u2014 Government, Utility, and Industry Contacts"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-fiji",
+    "to": "Fiji \u2014 Government, Utility, and Industry Contacts"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-finland",
+    "to": "Finland \u2014 Government, Utility, and Industry Contacts (per CSMGlobal distribution"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-france",
+    "to": "France \u2014 Government, Utility, and Industry Contacts (per CSMGlobal distribution "
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-gabon",
+    "to": "Gabon \u2014 Government/Utility/Industry | **FROM:** Jason Brodsky, zirconia@aegisc.s"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-georgia",
+    "to": "Georgia \u2014 Government, Utility, and Industry Contacts"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-germany",
+    "to": "Germany \u2014 Government, Utility, and Industry Contacts (per CSMGlobal distribution"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-ghana",
+    "to": "Ghana \u2014 Government, Utility, and Industry Contacts"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-greece",
+    "to": "Greece \u2014 Government, Utility, and Industry Contacts (per CSMGlobal distribution "
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-guatemala",
+    "to": "Guatemala \u2014 Government, Utility, and Industry Contacts"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-guinea",
+    "to": "Guinea \u2014 Government/Utility/Industry | **FROM:** Jason Brodsky, zirconia@aegisc."
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-guyana",
+    "to": "Guyana \u2014 Government/Utility/Industry | **FROM:** Jason Brodsky, zirconia@aegisc."
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-haiti",
+    "to": "Haiti \u2014 Government/Utility/Industry | **FROM:** Jason Brodsky, zirconia@aegisc.s"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-honduras",
+    "to": "Honduras \u2014 Government, Utility, and Industry Contacts"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-hungary",
+    "to": "Hungary \u2014 Government, Utility, and Industry Contacts (per CSMGlobal distribution"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-iceland",
+    "to": "Iceland \u2014 Government, Utility, and Industry Contacts"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-india",
+    "to": "India \u2014 Government, Utility, and Industry Contacts (per CSMGlobal distribution g"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-indonesia",
+    "to": "Indonesia \u2014 Government, Utility, and Industry Contacts (per CSMGlobal distributi"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-iran",
+    "to": "Iran \u2014 Government, Utility, and Industry Contacts (per CSMGlobal distribution gu"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-iraq",
+    "to": "Iraq \u2014 Government, Utility, and Industry Contacts (per CSMGlobal distribution gu"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-ireland",
+    "to": "Ireland \u2014 Government, Utility, and Industry Contacts (per CSMGlobal distribution"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-israel",
+    "to": "Israel \u2014 Government, Utility, and Industry Contacts (per CSMGlobal distribution "
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-italy",
+    "to": "Italy \u2014 Government, Utility, and Industry Contacts (per CSMGlobal distribution g"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-jamaica",
+    "to": "Jamaica \u2014 Government, Utility, and Industry Contacts"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-japan",
+    "to": "Japan \u2014 Government, Utility, and Industry Contacts (per CSMGlobal distribution g"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-jordan",
+    "to": "Jordan \u2014 Government, Utility, and Industry Contacts"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-kazakhstan",
+    "to": "Kazakhstan \u2014 Government, Utility, and Industry Contacts (per CSMGlobal distribut"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-kenya",
+    "to": "Kenya \u2014 Government, Utility, and Industry Contacts"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-kuwait",
+    "to": "Kuwait \u2014 Government, Utility, and Industry Contacts (per CSMGlobal distribution "
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-kyrgyzstan",
+    "to": "Kyrgyzstan \u2014 Government/Utility/Industry | **FROM:** Jason Brodsky, zirconia@aeg"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-laos",
+    "to": "Laos \u2014 Government, Utility, and Industry Contacts"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-latvia",
+    "to": "Latvia \u2014 Government, Utility, and Industry Contacts (per CSMGlobal distribution "
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-lebanon",
+    "to": "Lebanon \u2014 Government, Utility, and Industry Contacts"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-liberia",
+    "to": "Liberia \u2014 Government/Utility/Industry | **FROM:** Jason Brodsky, zirconia@aegisc"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-libya",
+    "to": "Libya \u2014 Government/Utility/Industry | **FROM:** Jason Brodsky, zirconia@aegisc.s"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-lithuania",
+    "to": "Lithuania \u2014 Government, Utility, and Industry Contacts (per CSMGlobal distributi"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-luxembourg",
+    "to": "Luxembourg \u2014 Government, Utility, and Industry Contacts"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-madagascar",
+    "to": "Madagascar \u2014 Government/Utility/Industry | **FROM:** Jason Brodsky, zirconia@aeg"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-malawi",
+    "to": "Malawi \u2014 Government/Utility/Industry | **FROM:** Jason Brodsky, zirconia@aegisc."
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-malaysia",
+    "to": "Malaysia \u2014 Government, Utility, and Industry Contacts (per CSMGlobal distributio"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-maldives",
+    "to": "Maldives \u2014 Government/Utility/Industry | **FROM:** Jason Brodsky, zirconia@aegis"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-mali",
+    "to": "Mali \u2014 Government/Utility/Industry | **FROM:** Jason Brodsky, zirconia@aegisc.sp"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-malta",
+    "to": "Malta \u2014 Government, Utility, and Industry Contacts"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-mauritania",
+    "to": "Mauritania \u2014 Government/Utility/Industry | **FROM:** Jason Brodsky, zirconia@aeg"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-mauritius",
+    "to": "Mauritius \u2014 Government/Utility/Industry | **FROM:** Jason Brodsky, zirconia@aegi"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-mexico",
+    "to": "Mexico \u2014 Government, Utility, and Industry Contacts (per CSMGlobal distribution "
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-moldova",
+    "to": "Moldova \u2014 Government, Utility, and Industry Contacts"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-mongolia",
+    "to": "Mongolia \u2014 Government, Utility, and Industry Contacts"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-montenegro",
+    "to": "Montenegro \u2014 Government, Utility, and Industry Contacts"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-morocco",
+    "to": "Morocco \u2014 Government, Utility, and Industry Contacts (per CSMGlobal distribution"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-mozambique",
+    "to": "Mozambique \u2014 Government, Utility, and Industry Contacts"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-myanmar",
+    "to": "Myanmar \u2014 Government, Utility, and Industry Contacts"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-namibia",
+    "to": "Namibia \u2014 Government, Utility, and Industry Contacts"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-nepal",
+    "to": "Nepal \u2014 Government, Utility, and Industry Contacts"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-netherlands",
+    "to": "Netherlands \u2014 Government, Utility, and Industry Contacts (per CSMGlobal distribu"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-new-zealand",
+    "to": "New-Zealand \u2014 Government, Utility, and Industry Contacts (per CSMGlobal distribu"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-nicaragua",
+    "to": "Nicaragua \u2014 Government/Utility/Industry | **FROM:** Jason Brodsky, zirconia@aegi"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-niger",
+    "to": "Niger \u2014 Government/Utility/Industry | **FROM:** Jason Brodsky, zirconia@aegisc.s"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-nigeria",
+    "to": "Nigeria \u2014 Government, Utility, and Industry Contacts (per CSMGlobal distribution"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-north-macedonia",
+    "to": "North-Macedonia \u2014 Government, Utility, and Industry Contacts"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-norway",
+    "to": "Norway \u2014 Government, Utility, and Industry Contacts (per CSMGlobal distribution "
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-oman",
+    "to": "Oman \u2014 Government, Utility, and Industry Contacts"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-pakistan",
+    "to": "Pakistan \u2014 Government, Utility, and Industry Contacts (per CSMGlobal distributio"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-panama",
+    "to": "Panama \u2014 Government, Utility, and Industry Contacts (per CSMGlobal distribution "
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-papua-new-guinea",
+    "to": "Papua-New-Guinea \u2014 Government, Utility, and Industry Contacts"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-paraguay",
+    "to": "Paraguay \u2014 Government, Utility, and Industry Contacts"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-peru",
+    "to": "Peru \u2014 Government, Utility, and Industry Contacts (per CSMGlobal distribution gu"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-philippines",
+    "to": "Philippines \u2014 Government, Utility, and Industry Contacts (per CSMGlobal distribu"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-poland",
+    "to": "Poland \u2014 Government, Utility, and Industry Contacts (per CSMGlobal distribution "
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-portugal",
+    "to": "Portugal \u2014 Government, Utility, and Industry Contacts (per CSMGlobal distributio"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-qatar",
+    "to": "Qatar \u2014 Government, Utility, and Industry Contacts (per CSMGlobal distribution g"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-romania",
+    "to": "Romania \u2014 Government, Utility, and Industry Contacts (per CSMGlobal distribution"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-russia",
+    "to": "Russia \u2014 Government, Utility, and Industry Contacts (per CSMGlobal distribution "
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-rwanda",
+    "to": "Rwanda \u2014 Government/Utility/Industry | **FROM:** Jason Brodsky, zirconia@aegisc."
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-saudi-arabia",
+    "to": "Saudi-Arabia \u2014 Government, Utility, and Industry Contacts (per CSMGlobal distrib"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-senegal",
+    "to": "Senegal \u2014 Government, Utility, and Industry Contacts"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-serbia",
+    "to": "Serbia \u2014 Government, Utility, and Industry Contacts"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-sierra-leone",
+    "to": "Sierra-Leone \u2014 Government/Utility/Industry | **FROM:** Jason Brodsky, zirconia@a"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-singapore",
+    "to": "Singapore \u2014 Government, Utility, and Industry Contacts (per CSMGlobal distributi"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-slovakia",
+    "to": "Slovakia \u2014 Government, Utility, and Industry Contacts (per CSMGlobal distributio"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-slovenia",
+    "to": "Slovenia \u2014 Government, Utility, and Industry Contacts (per CSMGlobal distributio"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-south-africa",
+    "to": "South-Africa \u2014 Government, Utility, and Industry Contacts (per CSMGlobal distrib"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-south-korea",
+    "to": "South-Korea \u2014 Government, Utility, and Industry Contacts (per CSMGlobal distribu"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-spain",
+    "to": "Spain \u2014 Government, Utility, and Industry Contacts (per CSMGlobal distribution g"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-sri-lanka",
+    "to": "Sri-Lanka \u2014 Government, Utility, and Industry Contacts"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-sudan",
+    "to": "Sudan \u2014 Government/Utility/Industry | **FROM:** Jason Brodsky, zirconia@aegisc.s"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-suriname",
+    "to": "Suriname \u2014 Government/Utility/Industry | **FROM:** Jason Brodsky, zirconia@aegis"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-sweden",
+    "to": "Sweden \u2014 Government, Utility, and Industry Contacts (per CSMGlobal distribution "
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-switzerland",
+    "to": "Switzerland \u2014 Government, Utility, and Industry Contacts (per CSMGlobal distribu"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-syria",
+    "to": "Syria \u2014 Government/Utility/Industry | **FROM:** Jason Brodsky, zirconia@aegisc.s"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-taiwan",
+    "to": "Taiwan \u2014 Government, Utility, and Industry Contacts (per CSMGlobal distribution "
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-tajikistan",
+    "to": "Tajikistan \u2014 Government/Utility/Industry | **FROM:** Jason Brodsky, zirconia@aeg"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-tanzania",
+    "to": "Tanzania \u2014 Government, Utility, and Industry Contacts"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-thailand",
+    "to": "Thailand \u2014 Government, Utility, and Industry Contacts (per CSMGlobal distributio"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-togo",
+    "to": "Togo \u2014 Government/Utility/Industry | **FROM:** Jason Brodsky, zirconia@aegisc.sp"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-trinidad-tobago",
+    "to": "Trinidad-Tobago \u2014 Government, Utility, and Industry Contacts"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-tunisia",
+    "to": "Tunisia \u2014 Government, Utility, and Industry Contacts"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-turkey",
+    "to": "Turkey \u2014 Government, Utility, and Industry Contacts (per CSMGlobal distribution "
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-turkmenistan",
+    "to": "Turkmenistan \u2014 Government/Utility/Industry | **FROM:** Jason Brodsky, zirconia@a"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-uae",
+    "to": "UAE \u2014 Government, Utility, and Industry Contacts (per CSMGlobal distribution gui"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-uganda",
+    "to": "Uganda \u2014 Government, Utility, and Industry Contacts"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-ukraine",
+    "to": "Ukraine \u2014 Government, Utility, and Industry Contacts (per CSMGlobal distribution"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-united-kingdom",
+    "to": "United-Kingdom \u2014 Government, Utility, and Industry Contacts (per CSMGlobal distr"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-united-states",
+    "to": "United-States \u2014 Government, Utility, and Industry Contacts (per CSMGlobal distri"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-uruguay",
+    "to": "Uruguay \u2014 Government, Utility, and Industry Contacts (per CSMGlobal distribution"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-uzbekistan",
+    "to": "Uzbekistan \u2014 Government/Utility/Industry | **FROM:** Jason Brodsky, zirconia@aeg"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-venezuela",
+    "to": "Venezuela \u2014 Government, Utility, and Industry Contacts (per CSMGlobal distributi"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-vietnam",
+    "to": "Vietnam \u2014 Government, Utility, and Industry Contacts (per CSMGlobal distribution"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-yemen",
+    "to": "Yemen \u2014 Government/Utility/Industry | **FROM:** Jason Brodsky, zirconia@aegisc.s"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-zambia",
+    "to": "Zambia \u2014 Government, Utility, and Industry Contacts"
+  },
+  {
+    "batch": "BATCH-08-Global-Outreach",
+    "id": "E-GLOBAL-zimbabwe",
+    "to": "Zimbabwe \u2014 Government, Utility, and Industry Contacts"
+  },
+  {
+    "batch": "BATCH-09-Community-Specialist",
+    "id": "E059-ARRL-Amateur-Radio",
+    "to": "ARRL \u2014 Section Emergency Coordinator / ARES-RACES"
+  },
+  {
+    "batch": "BATCH-09-Community-Specialist",
+    "id": "E060-Hamvention-Dayton",
+    "to": "Hamvention Dayton \u2014 ARRL National Convention"
+  },
+  {
+    "batch": "BATCH-09-Community-Specialist",
+    "id": "E061-Disaster-Preparedness-Community",
+    "to": "Off-grid / Homesteading publications and forums"
+  },
+  {
+    "batch": "BATCH-09-Community-Specialist",
+    "id": "E062-Overland-Expo-RV-Vanlife",
+    "to": "Overland Expo / RVIA \u2014 Event organizers and vanlife community"
+  },
+  {
+    "batch": "BATCH-09-Community-Specialist",
+    "id": "E063-Maker-Faire-DIY-3DPrinting",
+    "to": "Maker Faire / Makerspace directors"
+  },
+  {
+    "batch": "BATCH-09-Community-Specialist",
+    "id": "E064-Astronomical-League-Astronomy",
+    "to": "Astronomical League / Regional star parties"
+  },
+  {
+    "batch": "BATCH-09-Community-Specialist",
+    "id": "E065-Aurora-Chasing-Community",
+    "to": "Aurora-chasing community group administrators"
+  },
+  {
+    "batch": "BATCH-09-Community-Specialist",
+    "id": "E066-Tripoli-Rocketry-NAR",
+    "to": "Tripoli Rocketry Association / NAR"
+  },
+  {
+    "batch": "BATCH-09-Community-Specialist",
+    "id": "E067-EAA-Experimental-Aircraft",
+    "to": "EAA (Experimental Aircraft Association)"
+  },
+  {
+    "batch": "BATCH-09-Community-Specialist",
+    "id": "E068-EV-Conversion-DIY-Community",
+    "to": "EV conversion hobbyist forums and makerspaces"
+  }
+]

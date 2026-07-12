@@ -1,0 +1,21 @@
+{
+  "total": 225,
+  "batches": [
+    "BATCH-01-Insurance-Reinsurance",
+    "BATCH-02-Energy-Utilities",
+    "BATCH-03-Govt-Emergency-Mgmt",
+    "BATCH-04-Aerospace-Defense",
+    "BATCH-05-Marine-Maritime",
+    "BATCH-06-Data-Telecom",
+    "BATCH-07-National-Outreach",
+    "BATCH-08-Global-Outreach",
+    "BATCH-09-Community-Specialist"
+  ],
+  "attachments": [
+    "CSMEval11-COMPILED-Briefing-Packet.pdf",
+    "CSMGeneralOutreach-COMPILED-Compendium.pdf",
+    "COMPENDIUM-MINI.pdf"
+  ],
+  "sent": [],
+  "failed": []
+}
