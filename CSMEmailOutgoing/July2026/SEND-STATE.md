@@ -52,7 +52,14 @@
 | E031 | SPACE-SYM-01 | Space Symposium Foundation | ✅ Delivered + 3 PDFs attached |
 | E032 | AIA-DEF-01 | Aerospace Industries Association | ✅ Delivered + 3 PDFs attached |
 | E033 | NDIA-SYM-01 | NDIA Symposia | ✅ Delivered + 3 PDFs attached |
+| E034 | CLIA-REG-01 | CLIA Cruise Lines Intl | ✅ Delivered + 3 PDFs attached |
 | Batch | BATCH-04 | Aerospace/Defense | ✅ COMPLETE |
+| Batch | BATCH-05 | Marine/Maritime (8) | 1/8 sent — E035-E041 researched |
+| Batch | BATCH-06 | Data/Telecom/Satellite (8) | Pending |
+| Batch | BATCH-07 | National Outreach (9) | Pending |
+| Batch | BATCH-08 | Global Outreach (157) | Pending |
+| Batch | BATCH-09 | Community/Specialist (10) | Pending |
+| Date | 2026-07-12T05:16Z | BATCH-04 done, BATCH-05 started | CSM-AEGIS-Starlight |
 
 ## UNDELIVERABLE / BOUNCED
 
