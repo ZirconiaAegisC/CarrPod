@@ -1,0 +1,20 @@
+<html><body style="font-family:Georgia,serif;font-size:15px;color:#1a1a1a;line-height:1.5;max-width:700px;">
+<p><strong>Dear Mr. Corwin,</strong></p>
+<p>You already know where the risk is. This is about the next line in the spreadsheet — three pieces of hardware, one twelve-month number, and a channel matched to how your organization actually approves capital.</p>
+<p>Attached is a briefing packet on physical GIC-hardening hardware (composite structures, dielectric fencing, low-cost field monitoring) positioned as direct capital-budget line items following a TPL-007 vulnerability assessment, alongside the Lloyd's of London figures on transformer-replacement-timescale exposure that make the cost case. Happy to route this through whichever venue fits — EEI, NRECA TechAdvantage, APPA, or DistribuTECH.</p>
+<p><strong>Briefing A — Turning a Vulnerability Assessment Into a Capital Line Item:</strong></p>
+<ul>
+<li>Aegis Power Line Monopole &amp; Dielectric Fencing — structure- and perimeter-level GIC path removal</li>
+<li>Chromatic Field Monitor — low-cost passive GIC/EMF field monitoring for fleet-wide deployment</li>
+<li>Non-Conductive Facility Materials — the full Aegis Home building-materials suite for utility-owned facilities</li>
+<li>Rare-Earth-Free Magnet Supply Option — supply-chain risk mitigation for generator and transformer components</li>
+</ul>
+<p><strong>Briefing B — The Twelve-Month Number:</strong> Lloyd's models put the cost of a Carrington-level event on the North American grid at $0.6–2.6 trillion, hinging directly on transformer replacement lead times of up to 12 months. The May 2024 Gannon Storm already produced measurable transformer stress — a preview at a fraction of Carrington severity. Physical hardening is one of the few levers that reduces probability, not just consequence.</p>
+<p><strong>Briefing C — Matched to Your Ownership Structure:</strong> IOUs (PUC rate-case), cooperatives (NRECA TechAdvantage), municipals (APPA National Conference), with cross-cutting IEEE PES and DistribuTECH reach. Same hardware, different rooms.</p>
+<p><strong>Next Step:</strong> Happy to present at APPA's National Conference or Engineering &amp; Operations Technical Conference. We build the hardening. You decide where it's needed most.</p>
+<p>Thanks for keeping the lights on through every storm that didn't make the news — that's most of them, and it's not nothing.</p>
+<br>
+<p>— Jason Brodsky<br>Director of External Affairs &amp; Strategic Partnerships<br>Carrington Storm Motors | Safe Pod Engineering Company<br>zirconia@aegisc.space</p>
+<br>
+<p style="font-size:12px;color:#888;"><em>CSMEval10: Investor-Owned &amp; Cooperative Electric Utilities Briefing | Updated July 2026 | www.CarrPod.Net</em></p>
+</body></html>
