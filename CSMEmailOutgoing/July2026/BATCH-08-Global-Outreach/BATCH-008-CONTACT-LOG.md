@@ -1,0 +1,165 @@
+# BATCH-008 CONTACT LOG
+## CSMEmailOutgoing | July 2026 | Prepared by Jason Brodsky
+
+---
+Total Emails: 157
+Sender: Jason Brodsky, zirconia@aegisc.space
+Status: READY FOR SEND
+
+- E-GLOBAL-afghanistan | ** Solar Cycle 25 peaking — the Carrington-level hardening data your country needs
+- E-GLOBAL-albania | ** Solar Cycle 25 peaking — hardening data for Albania critical infrastructure
+- E-GLOBAL-algeria | ** Solar Cycle 25 is peaking — the Carrington-level hardening data your
+- E-GLOBAL-angola | ** Solar Cycle 25 peaking — the Carrington-level hardening data your country needs
+- E-GLOBAL-argentina | ** Solar Cycle 25 is peaking — the Carrington-level hardening data your
+- E-GLOBAL-armenia | ** Solar Cycle 25 peaking — hardening data for Armenia critical infrastructure
+- E-GLOBAL-australia | ** Solar Cycle 25 is peaking — the Carrington-level hardening data your
+- E-GLOBAL-austria | ** Solar Cycle 25 is peaking — the Carrington-level hardening data your
+- E-GLOBAL-azerbaijan | ** Solar Cycle 25 peaking — hardening data for Azerbaijan critical infrastructure
+- E-GLOBAL-bahamas | ** Solar Cycle 25 peaking — hardening data for Bahamas critical infrastructure
+- E-GLOBAL-bahrain | ** Solar Cycle 25 peaking — hardening data for Bahrain critical infrastructure
+- E-GLOBAL-bangladesh | ** Solar Cycle 25 is peaking — the Carrington-level hardening data your
+- E-GLOBAL-barbados | ** Solar Cycle 25 peaking — the Carrington-level hardening data your country needs
+- E-GLOBAL-belarus | ** Solar Cycle 25 peaking — hardening data for Belarus critical infrastructure
+- E-GLOBAL-belgium | ** Solar Cycle 25 is peaking — the Carrington-level hardening data your
+- E-GLOBAL-belize | ** Solar Cycle 25 peaking — the Carrington-level hardening data your country needs
+- E-GLOBAL-benin | ** Solar Cycle 25 peaking — the Carrington-level hardening data your country needs
+- E-GLOBAL-bhutan | ** Solar Cycle 25 peaking — the Carrington-level hardening data your country needs
+- E-GLOBAL-bolivia | ** Solar Cycle 25 peaking — hardening data for Bolivia critical infrastructure
+- E-GLOBAL-bosnia-herzegovina | ** Solar Cycle 25 peaking — hardening data for Bosnia-Herzegovina critical infrastructure
+- E-GLOBAL-botswana | ** Solar Cycle 25 peaking — hardening data for Botswana critical infrastructure
+- E-GLOBAL-brazil | ** Solar Cycle 25 is peaking — the Carrington-level hardening data your
+- E-GLOBAL-brunei | ** Solar Cycle 25 peaking — hardening data for Brunei critical infrastructure
+- E-GLOBAL-bulgaria | ** Solar Cycle 25 is peaking — the Carrington-level hardening data your
+- E-GLOBAL-burkina-faso | ** Solar Cycle 25 peaking — the Carrington-level hardening data your country needs
+- E-GLOBAL-cambodia | ** Solar Cycle 25 peaking — hardening data for Cambodia critical infrastructure
+- E-GLOBAL-cameroon | ** Solar Cycle 25 peaking — hardening data for Cameroon critical infrastructure
+- E-GLOBAL-canada | ** Solar Cycle 25 is peaking — the Carrington-level hardening data your
+- E-GLOBAL-chad | ** Solar Cycle 25 peaking — the Carrington-level hardening data your country needs
+- E-GLOBAL-chile | ** Solar Cycle 25 is peaking — the Carrington-level hardening data your
+- E-GLOBAL-china | ** Solar Cycle 25 is peaking — the Carrington-level hardening data your
+- E-GLOBAL-colombia | ** Solar Cycle 25 is peaking — the Carrington-level hardening data your
+- E-GLOBAL-congo-republic | ** Solar Cycle 25 peaking — the Carrington-level hardening data your country needs
+- E-GLOBAL-costa-rica | ** Solar Cycle 25 is peaking — the Carrington-level hardening data your
+- E-GLOBAL-cote-divoire | ** Solar Cycle 25 peaking — hardening data for Cote-dIvoire critical infrastructure
+- E-GLOBAL-croatia | ** Solar Cycle 25 is peaking — the Carrington-level hardening data your
+- E-GLOBAL-cuba | ** Solar Cycle 25 peaking — the Carrington-level hardening data your country needs
+- E-GLOBAL-cyprus | ** Solar Cycle 25 peaking — hardening data for Cyprus critical infrastructure
+- E-GLOBAL-czech-republic | ** Solar Cycle 25 is peaking — the Carrington-level hardening data your
+- E-GLOBAL-democratic-republic-congo | ** Solar Cycle 25 peaking — the Carrington-level hardening data your country needs
+- E-GLOBAL-denmark | ** Solar Cycle 25 is peaking — the Carrington-level hardening data your
+- E-GLOBAL-dominican-republic | ** Solar Cycle 25 peaking — hardening data for Dominican-Republic critical infrastructure
+- E-GLOBAL-ecuador | ** Solar Cycle 25 peaking — hardening data for Ecuador critical infrastructure
+- E-GLOBAL-egypt | ** Solar Cycle 25 is peaking — the Carrington-level hardening data your
+- E-GLOBAL-el-salvador | ** Solar Cycle 25 peaking — the Carrington-level hardening data your country needs
+- E-GLOBAL-estonia | ** Solar Cycle 25 is peaking — the Carrington-level hardening data your
+- E-GLOBAL-ethiopia | ** Solar Cycle 25 peaking — hardening data for Ethiopia critical infrastructure
+- E-GLOBAL-fiji | ** Solar Cycle 25 peaking — hardening data for Fiji critical infrastructure
+- E-GLOBAL-finland | ** Solar Cycle 25 is peaking — the Carrington-level hardening data your
+- E-GLOBAL-france | ** Solar Cycle 25 is peaking — the Carrington-level hardening data your
+- E-GLOBAL-gabon | ** Solar Cycle 25 peaking — the Carrington-level hardening data your country needs
+- E-GLOBAL-georgia | ** Solar Cycle 25 peaking — hardening data for Georgia critical infrastructure
+- E-GLOBAL-germany | ** Solar Cycle 25 is peaking — the Carrington-level hardening data your
+- E-GLOBAL-ghana | ** Solar Cycle 25 peaking — hardening data for Ghana critical infrastructure
+- E-GLOBAL-greece | ** Solar Cycle 25 is peaking — the Carrington-level hardening data your
+- E-GLOBAL-guatemala | ** Solar Cycle 25 peaking — hardening data for Guatemala critical infrastructure
+- E-GLOBAL-guinea | ** Solar Cycle 25 peaking — the Carrington-level hardening data your country needs
+- E-GLOBAL-guyana | ** Solar Cycle 25 peaking — the Carrington-level hardening data your country needs
+- E-GLOBAL-haiti | ** Solar Cycle 25 peaking — the Carrington-level hardening data your country needs
+- E-GLOBAL-honduras | ** Solar Cycle 25 peaking — hardening data for Honduras critical infrastructure
+- E-GLOBAL-hungary | ** Solar Cycle 25 is peaking — the Carrington-level hardening data your
+- E-GLOBAL-iceland | ** Solar Cycle 25 peaking — hardening data for Iceland critical infrastructure
+- E-GLOBAL-india | ** Solar Cycle 25 is peaking — the Carrington-level hardening data your
+- E-GLOBAL-indonesia | ** Solar Cycle 25 is peaking — the Carrington-level hardening data your
+- E-GLOBAL-iran | ** Solar Cycle 25 is peaking — the Carrington-level hardening data your
+- E-GLOBAL-iraq | ** Solar Cycle 25 is peaking — the Carrington-level hardening data your
+- E-GLOBAL-ireland | ** Solar Cycle 25 is peaking — the Carrington-level hardening data your
+- E-GLOBAL-israel | ** Solar Cycle 25 is peaking — the Carrington-level hardening data your
+- E-GLOBAL-italy | ** Solar Cycle 25 is peaking — the Carrington-level hardening data your
+- E-GLOBAL-jamaica | ** Solar Cycle 25 peaking — hardening data for Jamaica critical infrastructure
+- E-GLOBAL-japan | ** Solar Cycle 25 is peaking — the Carrington-level hardening data your
+- E-GLOBAL-jordan | ** Solar Cycle 25 peaking — hardening data for Jordan critical infrastructure
+- E-GLOBAL-kazakhstan | ** Solar Cycle 25 is peaking — the Carrington-level hardening data your
+- E-GLOBAL-kenya | ** Solar Cycle 25 peaking — hardening data for Kenya critical infrastructure
+- E-GLOBAL-kuwait | ** Solar Cycle 25 is peaking — the Carrington-level hardening data your
+- E-GLOBAL-kyrgyzstan | ** Solar Cycle 25 peaking — the Carrington-level hardening data your country needs
+- E-GLOBAL-laos | ** Solar Cycle 25 peaking — hardening data for Laos critical infrastructure
+- E-GLOBAL-latvia | ** Solar Cycle 25 is peaking — the Carrington-level hardening data your
+- E-GLOBAL-lebanon | ** Solar Cycle 25 peaking — hardening data for Lebanon critical infrastructure
+- E-GLOBAL-liberia | ** Solar Cycle 25 peaking — the Carrington-level hardening data your country needs
+- E-GLOBAL-libya | ** Solar Cycle 25 peaking — the Carrington-level hardening data your country needs
+- E-GLOBAL-lithuania | ** Solar Cycle 25 is peaking — the Carrington-level hardening data your
+- E-GLOBAL-luxembourg | ** Solar Cycle 25 peaking — hardening data for Luxembourg critical infrastructure
+- E-GLOBAL-madagascar | ** Solar Cycle 25 peaking — the Carrington-level hardening data your country needs
+- E-GLOBAL-malawi | ** Solar Cycle 25 peaking — the Carrington-level hardening data your country needs
+- E-GLOBAL-malaysia | ** Solar Cycle 25 is peaking — the Carrington-level hardening data your
+- E-GLOBAL-maldives | ** Solar Cycle 25 peaking — the Carrington-level hardening data your country needs
+- E-GLOBAL-mali | ** Solar Cycle 25 peaking — the Carrington-level hardening data your country needs
+- E-GLOBAL-malta | ** Solar Cycle 25 peaking — hardening data for Malta critical infrastructure
+- E-GLOBAL-mauritania | ** Solar Cycle 25 peaking — the Carrington-level hardening data your country needs
+- E-GLOBAL-mauritius | ** Solar Cycle 25 peaking — the Carrington-level hardening data your country needs
+- E-GLOBAL-mexico | ** Solar Cycle 25 is peaking — the Carrington-level hardening data your
+- E-GLOBAL-moldova | ** Solar Cycle 25 peaking — hardening data for Moldova critical infrastructure
+- E-GLOBAL-mongolia | ** Solar Cycle 25 peaking — hardening data for Mongolia critical infrastructure
+- E-GLOBAL-montenegro | ** Solar Cycle 25 peaking — hardening data for Montenegro critical infrastructure
+- E-GLOBAL-morocco | ** Solar Cycle 25 is peaking — the Carrington-level hardening data your
+- E-GLOBAL-mozambique | ** Solar Cycle 25 peaking — hardening data for Mozambique critical infrastructure
+- E-GLOBAL-myanmar | ** Solar Cycle 25 peaking — hardening data for Myanmar critical infrastructure
+- E-GLOBAL-namibia | ** Solar Cycle 25 peaking — hardening data for Namibia critical infrastructure
+- E-GLOBAL-nepal | ** Solar Cycle 25 peaking — hardening data for Nepal critical infrastructure
+- E-GLOBAL-netherlands | ** Solar Cycle 25 is peaking — the Carrington-level hardening data your
+- E-GLOBAL-new-zealand | ** Solar Cycle 25 is peaking — the Carrington-level hardening data your
+- E-GLOBAL-nicaragua | ** Solar Cycle 25 peaking — the Carrington-level hardening data your country needs
+- E-GLOBAL-niger | ** Solar Cycle 25 peaking — the Carrington-level hardening data your country needs
+- E-GLOBAL-nigeria | ** Solar Cycle 25 is peaking — the Carrington-level hardening data your
+- E-GLOBAL-north-macedonia | ** Solar Cycle 25 peaking — hardening data for North-Macedonia critical infrastructure
+- E-GLOBAL-norway | ** Solar Cycle 25 is peaking — the Carrington-level hardening data your
+- E-GLOBAL-oman | ** Solar Cycle 25 peaking — hardening data for Oman critical infrastructure
+- E-GLOBAL-pakistan | ** Solar Cycle 25 is peaking — the Carrington-level hardening data your
+- E-GLOBAL-panama | ** Solar Cycle 25 is peaking — the Carrington-level hardening data your
+- E-GLOBAL-papua-new-guinea | ** Solar Cycle 25 peaking — hardening data for Papua-New-Guinea critical infrastructure
+- E-GLOBAL-paraguay | ** Solar Cycle 25 peaking — hardening data for Paraguay critical infrastructure
+- E-GLOBAL-peru | ** Solar Cycle 25 is peaking — the Carrington-level hardening data your
+- E-GLOBAL-philippines | ** Solar Cycle 25 is peaking — the Carrington-level hardening data your
+- E-GLOBAL-poland | ** Solar Cycle 25 is peaking — the Carrington-level hardening data your
+- E-GLOBAL-portugal | ** Solar Cycle 25 is peaking — the Carrington-level hardening data your
+- E-GLOBAL-qatar | ** Solar Cycle 25 is peaking — the Carrington-level hardening data your
+- E-GLOBAL-romania | ** Solar Cycle 25 is peaking — the Carrington-level hardening data your
+- E-GLOBAL-russia | ** Solar Cycle 25 is peaking — the Carrington-level hardening data your
+- E-GLOBAL-rwanda | ** Solar Cycle 25 peaking — the Carrington-level hardening data your country needs
+- E-GLOBAL-saudi-arabia | ** Solar Cycle 25 is peaking — the Carrington-level hardening data your
+- E-GLOBAL-senegal | ** Solar Cycle 25 peaking — hardening data for Senegal critical infrastructure
+- E-GLOBAL-serbia | ** Solar Cycle 25 peaking — hardening data for Serbia critical infrastructure
+- E-GLOBAL-sierra-leone | ** Solar Cycle 25 peaking — the Carrington-level hardening data your country needs
+- E-GLOBAL-singapore | ** Solar Cycle 25 is peaking — the Carrington-level hardening data your
+- E-GLOBAL-slovakia | ** Solar Cycle 25 is peaking — the Carrington-level hardening data your
+- E-GLOBAL-slovenia | ** Solar Cycle 25 is peaking — the Carrington-level hardening data your
+- E-GLOBAL-south-africa | ** Solar Cycle 25 is peaking — the Carrington-level hardening data your
+- E-GLOBAL-south-korea | ** Solar Cycle 25 is peaking — the Carrington-level hardening data your
+- E-GLOBAL-spain | ** Solar Cycle 25 is peaking — the Carrington-level hardening data your
+- E-GLOBAL-sri-lanka | ** Solar Cycle 25 peaking — hardening data for Sri-Lanka critical infrastructure
+- E-GLOBAL-sudan | ** Solar Cycle 25 peaking — the Carrington-level hardening data your country needs
+- E-GLOBAL-suriname | ** Solar Cycle 25 peaking — the Carrington-level hardening data your country needs
+- E-GLOBAL-sweden | ** Solar Cycle 25 is peaking — the Carrington-level hardening data your
+- E-GLOBAL-switzerland | ** Solar Cycle 25 is peaking — the Carrington-level hardening data your
+- E-GLOBAL-syria | ** Solar Cycle 25 peaking — the Carrington-level hardening data your country needs
+- E-GLOBAL-taiwan | ** Solar Cycle 25 is peaking — the Carrington-level hardening data your
+- E-GLOBAL-tajikistan | ** Solar Cycle 25 peaking — the Carrington-level hardening data your country needs
+- E-GLOBAL-tanzania | ** Solar Cycle 25 peaking — hardening data for Tanzania critical infrastructure
+- E-GLOBAL-thailand | ** Solar Cycle 25 is peaking — the Carrington-level hardening data your
+- E-GLOBAL-togo | ** Solar Cycle 25 peaking — the Carrington-level hardening data your country needs
+- E-GLOBAL-trinidad-tobago | ** Solar Cycle 25 peaking — hardening data for Trinidad-Tobago critical infrastructure
+- E-GLOBAL-tunisia | ** Solar Cycle 25 peaking — hardening data for Tunisia critical infrastructure
+- E-GLOBAL-turkey | ** Solar Cycle 25 is peaking — the Carrington-level hardening data your
+- E-GLOBAL-turkmenistan | ** Solar Cycle 25 peaking — the Carrington-level hardening data your country needs
+- E-GLOBAL-uae | ** Solar Cycle 25 is peaking — the Carrington-level hardening data your
+- E-GLOBAL-uganda | ** Solar Cycle 25 peaking — hardening data for Uganda critical infrastructure
+- E-GLOBAL-ukraine | ** Solar Cycle 25 is peaking — the Carrington-level hardening data your
+- E-GLOBAL-united-kingdom | ** Solar Cycle 25 is peaking — the Carrington-level hardening data your
+- E-GLOBAL-united-states | ** Solar Cycle 25 is peaking — the Carrington-level hardening data your
+- E-GLOBAL-uruguay | ** Solar Cycle 25 is peaking — the Carrington-level hardening data your
+- E-GLOBAL-uzbekistan | ** Solar Cycle 25 peaking — the Carrington-level hardening data your country needs
+- E-GLOBAL-venezuela | ** Solar Cycle 25 is peaking — the Carrington-level hardening data your
+- E-GLOBAL-vietnam | ** Solar Cycle 25 is peaking — the Carrington-level hardening data your
+- E-GLOBAL-yemen | ** Solar Cycle 25 peaking — the Carrington-level hardening data your country needs
+- E-GLOBAL-zambia | ** Solar Cycle 25 peaking — hardening data for Zambia critical infrastructure
+- E-GLOBAL-zimbabwe | ** Solar Cycle 25 peaking — hardening data for Zimbabwe critical infrastructure
