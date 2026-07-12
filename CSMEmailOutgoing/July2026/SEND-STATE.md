@@ -44,6 +44,7 @@
 | E009-e | IAEM-INFO-01 | IAEM — General | ✅ Delivered + PDF attached |
 | E010-a | NEMA-ED-01 | NEMA — Exec Dir | ✅ Delivered + PDF attached |
 | E010-b | NEMA-ADMIN-01 | NEMA — Admin | ✅ Delivered + PDF attached |
+| E026 | DARPA-DSO-01 | DARPA Defense Sciences | ✅ Delivered + 3 PDFs attached |
 
 ## UNDELIVERABLE / BOUNCED
 
