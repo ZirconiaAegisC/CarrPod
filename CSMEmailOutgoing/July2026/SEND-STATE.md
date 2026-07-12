@@ -45,6 +45,14 @@
 | E010-a | NEMA-ED-01 | NEMA — Exec Dir | ✅ Delivered + PDF attached |
 | E010-b | NEMA-ADMIN-01 | NEMA — Admin | ✅ Delivered + PDF attached |
 | E026 | DARPA-DSO-01 | DARPA Defense Sciences | ✅ Delivered + 3 PDFs attached |
+| E027 | AFRL-DE-01 | AFRL Directed Energy | ✅ Delivered + 3 PDFs attached |
+| E028 | NASA-HELIO-01 | NASA Heliophysics | ✅ Delivered + 3 PDFs attached |
+| E029 | NOAA-SWPC-01 | NOAA SWPC | ✅ Delivered + 3 PDFs attached |
+| E030 | AIAA-SciTech-01 | AIAA SciTech Forum | ✅ Delivered + 3 PDFs attached |
+| E031 | SPACE-SYM-01 | Space Symposium Foundation | ✅ Delivered + 3 PDFs attached |
+| E032 | AIA-DEF-01 | Aerospace Industries Association | ✅ Delivered + 3 PDFs attached |
+| E033 | NDIA-SYM-01 | NDIA Symposia | ✅ Delivered + 3 PDFs attached |
+| Batch | BATCH-04 | Aerospace/Defense | ✅ COMPLETE |
 
 ## UNDELIVERABLE / BOUNCED
 
