@@ -1,0 +1,35 @@
+[
+  {
+    "body": {
+      "AttachmentItem": {
+        "attachmentType": "file",
+        "name": "CSMEval11-COMPILED-Briefing-Packet.pdf",
+        "size": 46939
+      }
+    },
+    "messageId": "AAMkAGI3NGFjYzg4LTc3ZjctNDFlNC1hM2U1LTQ5YTA5MDliZDk0YwBGAAAAAAAe3LK_HiAnQ5bt_iTJ4aPCBwD4yrgtyCB-S4agEHXKN3NsAAAAAAEPAAD4yrgtyCB-S4agEHXKN3NsAAAGZG3lAAA=",
+    "file_path": "CSMEmailOutgoing/July2026/ATTACHMENTS/CSMEval11-COMPILED-Briefing-Packet.pdf"
+  },
+  {
+    "body": {
+      "AttachmentItem": {
+        "attachmentType": "file",
+        "name": "CSMGeneralOutreach-COMPILED-Compendium.pdf",
+        "size": 95221
+      }
+    },
+    "messageId": "AAMkAGI3NGFjYzg4LTc3ZjctNDFlNC1hM2U1LTQ5YTA5MDliZDk0YwBGAAAAAAAe3LK_HiAnQ5bt_iTJ4aPCBwD4yrgtyCB-S4agEHXKN3NsAAAAAAEPAAD4yrgtyCB-S4agEHXKN3NsAAAGZG3lAAA=",
+    "file_path": "CSMEmailOutgoing/July2026/ATTACHMENTS/CSMGeneralOutreach-COMPILED-Compendium.pdf"
+  },
+  {
+    "body": {
+      "AttachmentItem": {
+        "attachmentType": "file",
+        "name": "COMPENDIUM-MINI.pdf",
+        "size": 37833
+      }
+    },
+    "messageId": "AAMkAGI3NGFjYzg4LTc3ZjctNDFlNC1hM2U1LTQ5YTA5MDliZDk0YwBGAAAAAAAe3LK_HiAnQ5bt_iTJ4aPCBwD4yrgtyCB-S4agEHXKN3NsAAAAAAEPAAD4yrgtyCB-S4agEHXKN3NsAAAGZG3lAAA=",
+    "file_path": "CSMEmailOutgoing/July2026/ATTACHMENTS/COMPENDIUM-MINI.pdf"
+  }
+]
