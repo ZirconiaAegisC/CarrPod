@@ -1,10 +1,19 @@
 # CSM EMAIL CAMPAIGN — FINAL STATE (Session Pause)
 ## July 2026 | Aegis Operations
-### State file for resume after DNS repair
+### State file for resume after DNS repair — DNS FIXED
 
 ---
 
-## CAMPAIGN STATUS AT PAUSE
+## DNS STATUS: RESOLVED
+- SPF record corrected (GoDaddy secureserver.net entry removed)
+- DKIM selectors active (selector1/selector2 CNAME verified)
+- DMARC active (p=none monitoring)
+- M365 outbound path confirmed: upload sessions create + curl PUT succeed (201)
+- 5-step pipeline: create-draft → upload-session → curl PUT → send-draft — proven working
+
+---
+
+## CAMPAIGN STATUS — UPDATED 2026-07-13T22:00Z
 
 | Field | Value |
 |-------|-------|
@@ -14,7 +23,7 @@
 | Bounced / blocked by domain | ~12 (NASA, NERC, Sandia, NDIA, Space Foundation, CTIA, FCC, ITU) |
 | Sent from Hotmail (also blocked) | 6 |
 | Date of last send | 2026-07-12T06:45:00Z |
-| Current state | **PAUSED — DNS authentication needed** |
+| Current state | **ACTIVE — DNS Fixed, M365 tools available when MCP loaded** |
 
 ---
 
