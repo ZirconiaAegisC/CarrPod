@@ -1,135 +1,97 @@
-# CSM EMAIL CAMPAIGN — FINAL STATE (Session Pause)
-## July 2026 | Aegis Operations
-### State file for resume after DNS repair — DNS FIXED
+# CSM EMAIL CAMPAIGN — FINAL STATE
+## July 2026 | Aegis Ops — DNS FIXED
 
 ---
 
 ## DNS STATUS: RESOLVED
-- SPF record corrected (GoDaddy secureserver.net entry removed)
-- DKIM selectors active (selector1/selector2 CNAME verified)
-- DMARC active (p=none monitoring)
-- M365 outbound path confirmed: upload sessions create + curl PUT succeed (201)
-- 5-step pipeline: create-draft → upload-session → curl PUT → send-draft — proven working
+- SPF record corrected (conflicting registrar entry removed)
+- DKIM selectors active
+- DMARC active
+- M365 outbound confirmed: upload sessions + curl PUT = 201
+- Proven 5-step pipeline: draft → upload-session → curl PUT → send-draft
 
 ---
 
-## CAMPAIGN STATUS — UPDATED 2026-07-13T22:00Z
+## CAMPAIGN STATUS
 
 | Field | Value |
 |-------|-------|
-| Total emails crafted | 225 |
-| Emails sent (all attempts) | ~60 |
-| Confirmed delivered with PDFs | ~35 |
-| Bounced / blocked by domain | ~12 (NASA, NERC, Sandia, NDIA, Space Foundation, CTIA, FCC, ITU) |
-| Sent from Hotmail (also blocked) | 6 |
-| Date of last send | 2026-07-12T06:45:00Z |
-| Current state | **ACTIVE — DNS Fixed, M365 tools available when MCP loaded** |
+| Total crafted | 225 |
+| Sent (all attempts) | ~60 |
+| Confirmed delivered + PDFs | ~35 |
+| Bounced/blocked | ~12 (.gov/.mil domains + .org policy blocks) |
+| DNS fix date | 2026-07-13 |
+| Pipeline | **ACTIVE — resume when MCP loaded** |
 
 ---
 
-## DOMAIN DELIVERY STATUS
+## DOMAIN DELIVERY
 
-### ✅ Delivering Successfully (from zirconia@aegisc.space)
-| Domain | Orgs |
+### ✅ Accepting
+| Domain Pattern | Count |
 |--------|------|
-| @lmalloyds.com | LMA |
-| @reinsurance.org | RAA |
-| @rims.org | RIMS |
-| @rms.com | RMS |
-| @iaem.com | IAEM (all 5 contacts) |
-| @csg.org | NEMA (Trina Sheets) |
-| @eei.org | EEI (Scott Aaronson) |
-| @fema.dhs.gov | FEMA |
-| @cisa.dhs.gov | CISA (Scott Breor) |
-| @aar.org | AAR (Kollmar) |
-| @naruc.org | NARUC (Byrnett) |
-| @aashto.org | AASHTO (Bush) |
-| @epri.com | EPRI (Perry, askepri) |
-| @ameslab.gov | CMI (Lograsso — auto-reply) |
-| @verdad.com | ASCE/SEI (Guglielmo) |
-| @nreca.coop | NRECA (Venkat, Patti, ContactCenter) |
-| @itu.int | ITU (delivered, unknown if bounce) |
-| @fcc.gov | FCC (blocked — tried both) |
-| @ctia.org | CTIA (blocked — tried both) |
+| *.org (most) | ~15 |
+| *.com (most) | ~8 |
+| *.dkv/major .gov | 4 |
+| *.coop | 1 |
 
-### ❌ Blocking (need DNS fix to resolve)
-| Domain | Reason |
-|--------|--------|
-| @nasa.gov | Domain policy rejection |
-| @nerc.com | Domain policy rejection |
-| @nerc.net | Domain policy rejection |
-| @sandia.gov | Domain policy rejection |
-| @api.org | Domain policy rejection |
-| @darpa.mil | Domain policy rejection |
-| @us.af.mil | Domain policy rejection |
-| @ndia.org | Domain policy rejection |
-| @spacefoundation.org | Domain policy rejection |
-| @nist.gov | Likely blocked (no bounce yet, no reply) |
-
-### ❓ Unknown
-| Domain | Status |
-|--------|--------|
-| @cruising.org | CLIA (bdarr@ — may have gone through) |
-| @recycling.org | Unknown |
-| @apta.com | APTA — unknown |
-| @apha.org | APHA — unknown |
-| @awwa.org | AWWA — unknown |
-| @astm.org | ASTM — unknown |
-| @undrr.org | UNDRR — unknown |
-| @arrl.org | ARRL — unknown |
-| @safetyequipment.org | ISEA — unknown |
-| @automate.org | A3 — unknown |
-| @datacentercoalition.org | DCC — unknown |
-| @sae.org | SAE — unknown |
-| @auvsi.org | AUVSI — unknown |
-| @sfia.org | SFIA — unknown |
-| @criticalmaterials.org | CMI info — unknown |
-| @advamed.org | AdvaMed — unknown |
+### ❌ Blocking (domain policy)
+| Pattern | Type |
+|--------|------|
+| *.gov (specific agencies) | Policy rejection |
+| *.mil | Policy rejection |
+| *.com (specific) | Policy rejection |
 
 ---
 
-## DNS REQUIREMENTS FOR RESUME
+## EMAILS SENT WITH PDFs (DNS-FIXED SESSION)
 
-To make `zirconia@aegisc.space` a valid sender:
-
-1. **SPF Record:** Add to aegisc.space DNS:
-   `v=spf1 include:spf.protection.outlook.com -all`
-
-2. **DKIM:** Enable DKIM signing in Microsoft 365 Admin Center for aegisc.space domain
-
-3. **DMARC Record:** Add to aegisc.space DNS:
-   `v=DMARC1; p=none; rua=mailto:postmaster@aegisc.space`
-
-Without these, corporate email servers will continue to flag/reject.
+| # | Recipient | Org | PDFs |
+|---|-----------|-----|------|
+| 1 | D.B. | NARUC | ✅ |
+| 2 | E.G. | ASCE/SEI | ✅ |
+| 3 | P.B. | AASHTO | ✅ |
+| 4 | R.K. | AAR | ✅ |
+| 5 | C.P. | EPRI | ✅ |
+| 6 | T.L. | DOE CMI | ✅ |
 
 ---
 
-## NEXT SESSION RESUME
-
-```bash
-git checkout main && git pull
-# cat CSMEmailOutgoing/July2026/SEND-STATE.md
-# Fix DNS (SPF/DKIM/DMARC)
-# Continue from BATCH-04 Aerospace onward
-# Retry blocked domains after DNS fix
-# Verify via ms365_list-mail-folder-messages(sentitems) + inbox bounce check
+## PROVEN PIPELINE
+```
+1. create-draft → draft ID
+2. upload-session → curl PUT (within 5 sec)
+3. upload-session → curl PUT
+4. upload-session → curl PUT
+5. send-draft → SENT
+CRITICAL: Sequential only. Never parallel. ~90 sec session tokens.
 ```
 
 ---
 
-## LEARNED PITFALLS (Updated)
-
-1. **NEVER use ms365_send-mail for attachments** — 5-step draft pipeline only
-2. **Upload sessions expire in ~90 seconds** — sequential, curl within 5 seconds
-3. **Parallel curl causes auth race (401)** — always sequential
-4. **aegisc.space lacks SPF/DKIM/DMARC** — blocks delivery to .gov and .mil domains
-5. **Hotmail also blocked** — Outlook.com spam filter triggers on volume
-6. **.org domains generally accept** — prioritize these for outreach
-7. **Always check sent folder AND inbox for bounces after every 5 sends**
-8. **Company-specific 9-paragraph emails with 3 PDFs is the proven format**
-9. **Williams opening + Aegis Agent precision = highest engagement**
-10. **The 256-node LoRa mesh and Aegis-C are the most referenced products**
+## RESUME
+```
+git pull && cat CSMEmailOutgoing/July2026/SEND-STATE.md
+# M365 MCP required: /mcps → enable → new session
+# Login with company email
+# Scan sent folder for hasAttachments=false
+# Fix each, then continue BATCH-04 through BATCH-09 (~180 remaining)
+```
 
 ---
 
-*State file updated 2026-07-12T06:50:00Z — PAUSED for DNS repair*
+## PITFALLS
+1. Never send-mail for attachments — 5-step pipeline only
+2. Upload sessions expire ~90 sec — sequential, fast curl
+3. Parallel curl = 401 auth race
+4. Registrar default SPF conflicts with M365 — remove it
+5. Duplicate DMARC records cause issues
+6. Check sent + inbox for bounces every 5 sends
+7. Williams opening + precision body = proven
+8. Company-specific body + 3 PDFs = deliverable
+9. Never include technical troubleshooting in recipient emails
+
+---
+
+*State file updated 2026-07-13T22:05Z — DNS FIXED, pipeline confirmed*
+*All identifiers abbreviated. No email addresses, no full names.*
