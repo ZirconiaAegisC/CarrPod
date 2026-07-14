@@ -1,0 +1,1 @@
+# CSMFAB0116-67 — GESTURE RECOGNITION FIN: mmWave radar sensor (60 GHz, Infineon BGT60LTR11). Mid-air gestures: swipe, wave, pinch, rotate. Range 0.1-3m. Always-on power 2mW. Privacy-preserving (no camera). Automotive cabin gesture control integration.

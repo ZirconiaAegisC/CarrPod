@@ -1,0 +1,1 @@
+# CSMFAB0116-63 — ENVIRONMENTAL SENSOR FIN: Bosch BME688 gas sensor (VOC, CO₂ equivalent, IAQ index) + barometric pressure + humidity + temp. Air quality index calculation. Breath VOC analysis (research mode). Wildfire smoke detection. Sampling 1-300s intervals.

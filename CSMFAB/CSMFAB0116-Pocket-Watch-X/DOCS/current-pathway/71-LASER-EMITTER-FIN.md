@@ -1,0 +1,1 @@
+# CSMFAB0116-71 — LASER EMITTER FIN: 520nm green laser, Class 2 (<1 mW). 5mW max. Presentation pointer. Star pointing (astronomy). Laser line for alignment. Safety: 3-second auto-off, requires finger-on-button for activation.

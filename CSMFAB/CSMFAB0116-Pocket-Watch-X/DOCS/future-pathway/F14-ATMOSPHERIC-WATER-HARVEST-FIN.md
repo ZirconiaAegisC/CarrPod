@@ -1,0 +1,1 @@
+# CSMFAB0116-F14 — ATMOSPHERIC WATER HARVESTING PATHWAY: Metal-Organic Framework (MOF) or hydrogel-based water capture from air. Release via solar/body heat. Application: self-cleaning environmental sensors, micro-cooling via evaporation. Research: Omar Yaghi group (UC Berkeley), MIT (Evelyn Wang). Timeline: 2028-2032. Power: passive (no energy input for adsorption).

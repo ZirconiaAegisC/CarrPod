@@ -1,0 +1,1 @@
+# CSMFAB0116-57 — SpO2 PULSE OXIMETRY FIN: Red/IR LED pair transmissive, Maxim MAX86178, SpO2 accuracy ±2% (70-100%), sampling 25-100 Hz. Calibration with clinical reference (co-oximeter). FDA 510(k) pathway for medical claims. Perfusion index, plethysmogram waveform.

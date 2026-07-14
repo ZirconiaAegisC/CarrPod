@@ -1,0 +1,1 @@
+# CSMFAB0116-82 — ETHERNET FIN: 10/100/1000 Base-T. RJ45 or M12 industrial connector on fin edge. PoE PD (IEEE 802.3at, 25.5W). Wake-on-LAN. Deterministic networking (TSN-ready PHY). Industrial automation, lab equipment.

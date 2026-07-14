@@ -1,0 +1,1 @@
+# CSMFAB0116-56 — HEART RATE PPG FIN: Multi-LED PPG sensor (green 530nm, red 660nm, IR 940nm), Maxim MAX86178, SNR 110dB, HR accuracy ±2 bpm, sampling 25-512 Hz, power 15mW active, 0.5mW standby. Heart rate variability (HRV) time and frequency domain. Resting HR and workout HR zones. Medical device classification pathway: FDA Class II 510(k) exempt consumer wellness.

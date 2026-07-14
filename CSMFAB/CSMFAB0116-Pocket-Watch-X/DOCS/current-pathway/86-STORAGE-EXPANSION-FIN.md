@@ -1,0 +1,1 @@
+# CSMFAB0116-86 — STORAGE EXPANSION FIN: NVMe SSD, PCIe Gen4 ×4. Capacities: 256GB-2TB. Form: M.2 2230 equivalent in fin form factor. 7000 MB/s read, 5000 MB/s write. Hardware encryption (AES-256-XTS). Power: 4W active, 50mW idle.

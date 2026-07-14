@@ -1,0 +1,1 @@
+# CSMFAB0116-61 — GSR/EDA FIN: Gold-plated electrodes on case back, 0.5-100 µS range. Measures sympathetic nervous system activity. Stress index, emotional arousal. Applications: stress management, biofeedback, lie detection research, meditation guidance.

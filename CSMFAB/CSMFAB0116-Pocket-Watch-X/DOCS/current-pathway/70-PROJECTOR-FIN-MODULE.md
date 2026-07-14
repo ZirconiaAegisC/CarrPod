@@ -1,0 +1,1 @@
+# CSMFAB0116-70 — PICO PROJECTOR FIN: DLP230NP 720p DLP engine, 50 lm, LED light source, 0.23-inch DMD. Fin dimensions extended: 22×12×4.5mm. Battery impact significant (2.5W). Autofocus. Use cases: impromptu presentations, photo sharing.

@@ -1,0 +1,1 @@
+# CSMFAB0116-74 — GEIGER RADIATION DETECTOR FIN: SI-3BG GM tube or solid-state PIN photodiode. 0.01-1000 µSv/h. α/β/γ discrimination. Carrington storm monitoring integration. Background radiation logging (crowdsourced radiation map).

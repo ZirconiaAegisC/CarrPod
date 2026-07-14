@@ -1,0 +1,1 @@
+# CSMFAB0116-76 — MAGSTRIPE READER FIN: 3-track magnetic head, ISO 7810/7811. Bi-directional swipe. Encryption: DUKPT, AES-256. PCI PTS 6.x compliant. Legacy POS integration. Tip: swipe card through fin slot (external mag head on fin edge).

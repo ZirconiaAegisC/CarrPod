@@ -1,0 +1,1 @@
+# CSMFAB0116-69 — E-INK SECONDARY DISPLAY FIN: 1.5-inch circular ePaper (E-Ink Carta 1300), 240×240, 226 PPI. Always-on content: time, notifications, compass, weather, custom images. Update 350ms full, 120ms partial. Zero static power. Sunlight readable. Fin form factor: 22×12×2.0mm.

@@ -1,0 +1,1 @@
+# CSMFAB0116-60 — SKIN TEMPERATURE SENSOR FIN: Melexis MLX90632 FIR thermopile, accuracy ±0.2°C, resolution 0.01°C. Nightly wrist temperature for cycle tracking. Core body temp estimation via heat flux algorithm. Fever detection alerts.

@@ -1,0 +1,1 @@
+# CSMFAB0116-59 — CUFFLESS BLOOD PRESSURE FIN: PTT-based (Pulse Transit Time) using ECG+PPG. Calibration required with cuff-based reference. Accuracy ±5 mmHg target (IEEE 1708). Requires periodic recalibration. PWV-derived arterial stiffness index.
