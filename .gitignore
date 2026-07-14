@@ -6,3 +6,4 @@ keystore.properties
 **/debug.keystore
 **/release.keystore
 *.log
+.sdk
