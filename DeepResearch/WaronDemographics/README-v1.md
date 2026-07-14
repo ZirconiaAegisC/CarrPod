@@ -1,0 +1,15 @@
+DeepResearch/WaronDemographics
+
+The Population Dynamics of a Post-Carrington World. Featuring Mork, Chester, and Zirconia.
+
+THE QUICK PITCH
+
+A Carrington event will not kill people directly. It will kill them indirectly — through the collapse of the electrical systems that provide water, food, healthcare, and public safety. But those deaths will not be uniformly distributed across populations. The elderly, the medically fragile, the economically vulnerable, and the geographically isolated will die at higher rates. The regions with the weakest healthcare infrastructure will experience the highest excess mortality. The WaronDemographics project models the demographic impact of a Carrington-class event — the excess mortality by age, income, geography, and pre-existing health status — and quantifies what CSM hardening can prevent. The project is stark. It models deaths. It does so because the alternative — not modeling them — is to pretend that the humanitarian cost of a Carrington event is unknowable, which makes it unactionable. The numbers are difficult. They are also necessary. We are at the forefront of tomorrow today. The demographics are modeled. The prevention is priced. Come on board.
+
+(Demographics research office. Population pyramids and excess mortality curves fill a large display. Mork is adjusting the healthcare-infrastructure-fragility parameter. Chester is reviewing the excess mortality projections for Tier 3 CSMReach nations. Burrito on the desk — a small comfort.)
+
+ZIRCONIA: WaronDemographics. I am Zirconia, and these are Mork and Chester. This is the hardest project in DeepResearch. Mork, the model.
+
+MORK: Nanu nanu. The model has three layers. Layer one: the grid-collapse layer — which regions lose power, for how long, based on the CSMQuantum geoelectric field model and the national grid topology data from the CSMReach outreach research. Layer two: the healthcare-fragility layer — what is the baseline mortality rate in each region, what percentage of the population depends on electrically powered medical equipment, what is the hospital bed and backup generator capacity. Layer three: the CSM-intervention layer — how much does hardening reduce the excess mortality in each region, based on the CarrPod deployment density, the Charlemagne fleet evacuation capacity, and the water system resilience measures. The model estimates that full CSM intervention reduces excess mortality by 60 to 80 percent in Tier 1 nations and 40 to 60 percent in Tier 3 nations.
+
+CHESTER: The numbers are hard to read. They are supposed to be. The project exists because the alternative — a qualitative description of a "catastrophic" event — does not drive resource allocation. Decision-makers allocate resources to quantified risks. "Approximately 2 to 5 million excess deaths globally in a no-preparation scenario" is a quantified risk. It is also a number that should make anyone who reads it very, very motivated to fund the preparation scenario. Dude. This is the project that nobody wants to read but everyone needs to.
