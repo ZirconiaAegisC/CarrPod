@@ -1,0 +1,1 @@
+# CSMFAB0116-65 — MAGNETOMETER FIN: AKM AK09970N 3-axis Hall magnetometer, ±4912 µT, 0.15 µT/LSB, 200 Hz. Hard-iron and soft-iron compensation. Compass heading + IMU fusion. Magnetic anomaly detection. Integration with EMF detector fin (75).

@@ -1,0 +1,1 @@
+# CSMFAB0116-66 — ALTIMETER/BAROMETER FIN: Bosch BMP581, 300-1250 hPa, ±6 Pa (5cm altitude). 24-bit ADC, 400 Hz output. Storm alert via pressure trend. Floor-level tracking indoors. Drone altitude reference. Weather station data logging.

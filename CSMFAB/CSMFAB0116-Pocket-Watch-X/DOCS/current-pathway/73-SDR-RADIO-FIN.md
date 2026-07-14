@@ -1,0 +1,1 @@
+# CSMFAB0116-73 — SOFTWARE DEFINED RADIO FIN: RTL2832U-based SDR, 500 kHz — 1.7 GHz. 2.4 MHz bandwidth. 8-bit I/Q samples over USB (fin bus). Applications: amateur radio, spectrum analysis, ADS-B aircraft tracking, weather satellite reception.

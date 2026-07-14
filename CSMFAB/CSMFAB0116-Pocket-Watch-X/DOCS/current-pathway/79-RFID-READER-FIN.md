@@ -1,0 +1,1 @@
+# CSMFAB0116-79 — RFID READER FIN: UHF EPC Gen2 (860-960 MHz) + HF (13.56 MHz). Read range up to 3m (UHF). Antenna: on-fin PIFA. Multi-tag: anti-collision, 200 tags/sec. Inventory, asset tracking, access control.

@@ -1,0 +1,1 @@
+# CSMFAB0116-88 — AI ACCELERATOR FIN: Google Coral Edge TPU (4 TOPS INT8) or Hailo-8 (26 TOPS). Power 1.5-5W. On-device ML inference. Models: MobileNet, EfficientNet, YOLO, Whisper. TensorFlow Lite / ONNX runtime. Applications: real-time object detection, voice transcription, pose estimation.

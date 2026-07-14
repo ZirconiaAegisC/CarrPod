@@ -1,0 +1,1 @@
+# CSMFAB0116-78 — BARCODE SCANNER FIN: 1D/2D CMOS imager (Zebra SE4710-class). Decode: Code 39/128, EAN/UPC, QR, Data Matrix, PDF417. Speed < 100ms decode. LED aimer + illumination. Inventory/warehouse integration.
