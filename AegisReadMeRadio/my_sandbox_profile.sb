@@ -1,0 +1,31 @@
+(version 1)
+(deny default)
+
+; --- CORE PROCESS & EXECUTION RULES (WITH FIXED SPACE) ---
+(allow process-exec (literal "/Users/macuser/desktop/box/QimageOne.app/Contents/MacOS/Qimage One"))
+(allow process-exec (subpath "/usr/lib"))
+(allow process-fork)
+
+; --- FILE SYSTEM READ PERMISSIONS ---
+(allow file-read* (subpath "/Users/macuser/desktop/box"))
+(allow file-read* (subpath "/System"))
+(allow file-read* (subpath "/Library"))
+(allow file-read* (subpath "/usr"))
+(allow file-read* (subpath "/private/var"))
+(allow file-read* (subpath "/dev"))
+
+; --- LOCALIZATION & FONTS (GUI DEPENDENCIES) ---
+(allow file-read* (subpath "/private/etc/localtime"))
+
+; --- WRITE RESTRICTIONS ---
+(allow file-write* (subpath "/tmp"))
+(allow file-write* (subpath "/private/tmp"))
+(allow file-write* (subpath "/private/var/tmp"))
+(allow file-read* (subpath "/Users/macuser/Downloads"))
+(allow file-write* (subpath "/Users/macuser/Downloads"))
+
+; --- MANDATORY GRAPHICS INTERACTION ---
+(allow iokit-open)
+(allow sysctl-read)
+(allow mach-lookup (global-name "com.apple.windowserver.active"))
+(allow mach-lookup (global-name "com.apple.lsd.mapdb"))
