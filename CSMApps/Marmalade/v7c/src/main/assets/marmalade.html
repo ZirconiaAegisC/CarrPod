@@ -51,7 +51,7 @@
   <div id="hud-header" class="absolute top-0 left-0 w-full p-3 z-20 pointer-events-none flex justify-between items-start" style="background:linear-gradient(to bottom,rgba(0,0,0,.9),transparent)">
     <div class="pointer-events-auto">
       <h1 style="font-size:22px;font-weight:bold;color:transparent;background:linear-gradient(to right,#FF6600,#4488FF,#00FF88);-webkit-background-clip:text;background-clip:text;filter:drop-shadow(0 0 12px rgba(255,102,0,.9))">MARMALADE — 3D ALPHABET ENGINE</h1>
-      <p class="text-xs text-orange mt-1" style="opacity:.8"><span class="font-bold text-white">Monistic Engine v7c</span><span style="color:#4488FF;margin-left:.5rem">Tab-Tuck Panels</span></p>
+      <p class="text-xs text-orange mt-1" style="opacity:.8"><span class="font-bold text-white">Monistic Engine v7c</span><span style="color:#4488FF;margin-left:.5rem">Collision Physics · Bouncing Spheres</span></p>
     </div>
     <div class="pointer-events-auto flex items-center gap-2 mt-1">
       <button id="btn-fly" class="btn btn-orange" onclick="Engine.startFly()">FLY</button>
@@ -137,6 +137,11 @@
       });
       this._animate();
       androidBridge('onSimReady',{loaded:true});
+      var self=this;setTimeout(function(){
+        self.letters.concat(self.numbers).forEach(function(s){
+          s.userData.vx=(Math.random()-.5)*3;s.userData.vy=(Math.random()-.5)*3;s.userData.vz=(Math.random()-.5)*3;
+        });
+      },500);
     },
     _buildGrid(){
       var m=new THREE.LineBasicMaterial({color:0x0f172a,transparent:true,opacity:.4});
@@ -164,7 +169,7 @@
         var texture=this._makeTextTexture(ch,COLORS[i%COLORS.length],128);
         var spriteMat=new THREE.SpriteMaterial({map:texture,transparent:true,blending:THREE.AdditiveBlending,depthWrite:false,opacity:.9});
         var sprite=new THREE.Sprite(spriteMat);sprite.scale.set(2,2,1);sprite.position.set(x,y,z);
-        sprite.userData={char:ch,home:{x:x,y:y,z:z},color:COLORS[i%COLORS.length],phase:Math.random()*Math.PI*2,freq:.5+Math.random()*.5};
+        sprite.userData={char:ch,home:{x:x,y:y,z:z},color:COLORS[i%COLORS.length],phase:Math.random()*Math.PI*2,vx:0,vy:0,vz:0,mass:1,radius:1.8};
         this.scene.add(sprite);
         var bubbleGeo=new THREE.SphereGeometry(1.8,32,16);
         var bubbleMat=new THREE.MeshBasicMaterial({color:COLORS[i%COLORS.length],wireframe:true,transparent:true,opacity:.15,blending:THREE.AdditiveBlending,depthWrite:false});
@@ -183,7 +188,7 @@
         var texture=this._makeTextTexture(ch,0x4488FF,128);
         var spriteMat=new THREE.SpriteMaterial({map:texture,transparent:true,blending:THREE.AdditiveBlending,depthWrite:false,opacity:.85});
         var sprite=new THREE.Sprite(spriteMat);sprite.scale.set(2,2,1);sprite.position.set(x,y,z);
-        sprite.userData={char:ch,home:{x:x,y:y,z:z},color:0x4488FF,phase:Math.random()*Math.PI*2,freq:.5+Math.random()*.5};
+        sprite.userData={char:ch,home:{x:x,y:y,z:z},color:0x4488FF,phase:Math.random()*Math.PI*2,vx:0,vy:0,vz:0,mass:.8,radius:1.6};
         this.scene.add(sprite);
         var bubbleGeo=new THREE.SphereGeometry(1.8,32,16);
         var bubbleMat=new THREE.MeshBasicMaterial({color:0x4488FF,wireframe:true,transparent:true,opacity:.12,blending:THREE.AdditiveBlending,depthWrite:false});
@@ -322,20 +327,40 @@
       var wp=[];for(var i=0;i<8;i++)wp.push(new THREE.Vector3((Math.random()-.5)*50,(Math.random()-.5)*20,(Math.random()-.5)*50));
       this._flyWaypoints=wp;this.flyProgress=0;
     },
+    _updatePhysics(dt){
+      dt=Math.min(dt,.05);
+      var all=this.letters.concat(this.numbers),n=all.length;
+      var K_REPEL=8,MIN_DIST=2.5,K_HOME=.15,DAMPING=.88;
+      for(var i=0;i<n;i++){
+        var a=all[i],ud=a.userData,ax=0,ay=0,az=0;
+        for(var j=i+1;j<n;j++){
+          var b=all[j],bud=b.userData;
+          var dx=a.position.x-b.position.x,dy=a.position.y-b.position.y,dz=a.position.z-b.position.z;
+          var dist=Math.sqrt(dx*dx+dy*dy+dz*dz)+.001;
+          var minSep=ud.radius+bud.radius+.5;
+          if(dist<minSep*3){
+            var overlap=minSep-dist;
+            if(overlap>0){
+              var nx=dx/dist,ny=dy/dist,nz=dz/dist;
+              var f=overlap*overlap*K_REPEL/(ud.mass+bud.mass);
+              ax+=nx*f;ay+=ny*f;az+=nz*f;
+              bud.vx-=nx*f/bud.mass;bud.vy-=ny*f/bud.mass;bud.vz-=nz*f/bud.mass;
+            }
+          }
+        }
+        var hx=ud.home.x-a.position.x,hy=ud.home.y-a.position.y,hz=ud.home.z-a.position.z;
+        ud.vx=(ud.vx+ax+hx*K_HOME)*DAMPING;
+        ud.vy=(ud.vy+ay+hy*K_HOME)*DAMPING;
+        ud.vz=(ud.vz+az+hz*K_HOME)*DAMPING;
+        a.position.x+=ud.vx*dt;a.position.y+=ud.vy*dt;a.position.z+=ud.vz*dt;
+        a.material.opacity=.7+Math.min(Math.abs(ud.vx)+Math.abs(ud.vy),1.5)*.12;
+      }
+    },
     _animate(){
       requestAnimationFrame(function(){Engine._animate()});
       var dt=Engine.clock.getDelta(),now=Date.now();
       Engine._updateDots(dt);Engine._updateBubbles(dt);
-      Engine.letters.forEach(function(s,idx){
-        var h=s.userData.home;
-        s.position.lerp(new THREE.Vector3(h.x+Math.sin(now*.0008+idx)*.4,h.y+Math.sin(now*.001+idx*.5)*.3,h.z+Math.cos(now*.0007+idx)*.4),.04);
-        s.material.opacity=.7+Math.sin(now*.002+idx)*.15;
-      });
-      Engine.numbers.forEach(function(s,idx){
-        var h=s.userData.home;
-        s.position.lerp(new THREE.Vector3(h.x+Math.sin(now*.0006+idx)*.3,h.y+Math.cos(now*.0012+idx*.5)*.25,h.z+Math.sin(now*.0008+idx)*.35),.04);
-        s.material.opacity=.65+Math.sin(now*.0018+idx)*.12;
-      });
+      Engine._updatePhysics(dt);
       if(Engine.flyActive&&Engine._flyWaypoints){
         var t=Math.min(Engine.flyProgress/15000,1);Engine.flyProgress+=dt*1000;
         var wp=Engine._flyWaypoints,i=Math.floor(t*(wp.length-1)),f=(t*(wp.length-1))%1;

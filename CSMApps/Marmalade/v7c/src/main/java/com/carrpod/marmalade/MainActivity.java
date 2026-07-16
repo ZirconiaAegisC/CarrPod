@@ -109,7 +109,7 @@ public class MainActivity extends Activity {
         logo.setGravity(Gravity.CENTER);
 
         TextView tag = new TextView(this);
-        tag.setText("Monistic Engine v7c \u2022 3D Alphabet Engine \u2022 CarrPod");
+        tag.setText("Monistic Engine v7c \u2022 Collision Physics \u2022 CarrPod");
         tag.setTextSize(11f);
         tag.setTextColor(Color.parseColor("#E8E8F0"));
         tag.setGravity(Gravity.CENTER);
