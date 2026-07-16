@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marmalade v7b — 3D Alphabet Engine | CarrPod</title>
+  <script src="js/three.min.js"></script>
+  <script src="js/OrbitControls.js"></script>
+  <script src="js/EffectComposer.js"></script>
+  <script src="js/RenderPass.js"></script>
+  <script src="js/ShaderPass.js"></script>
+  <script src="js/CopyShader.js"></script>
+  <script src="js/UnrealBloomPass.js"></script>
+  <script src="js/LuminosityHighPassShader.js"></script>
+  <script src="js/chart.umd.js"></script>
+  <style>
+    :root{--marm-orange:#FF6600;--marm-green:#00FF88;--marm-blue:#4488FF;--marm-yellow:#FFCC00;--marm-red:#FF4466;--marm-gray:#8888A0;--marm-bg:#0A0A0F;--marm-fg:#E8E8F0}
+    *{box-sizing:border-box}body{font-family:sans-serif;background:#030308;color:#e2e8f0;overflow:hidden;margin:0}
+    #canvas-container{position:absolute;top:0;left:0;width:100%;height:100%;z-index:1}
+    .hud{background:rgba(5,8,20,.85);backdrop-filter:blur(10px);border:1px solid rgba(255,102,0,.3);border-radius:8px;z-index:10;transition:opacity .4s ease,transform .4s ease}
+    .hud.hidden-hud{opacity:0;pointer-events:none;transform:translateY(20px)}
+    .hud.draggable{cursor:grab;user-select:none;-webkit-user-select:none;touch-action:pan-x;transition:none}
+    .hud.draggable:active{cursor:grabbing}
+    .hud.drag-handle{cursor:grab;user-select:none;-webkit-user-select:none;padding:4px 0;text-align:center;font-size:11px;color:#FF6600;letter-spacing:.05em;border-bottom:1px solid rgba(255,102,0,.2);margin-bottom:6px}
+    #drag-indicator{position:absolute;top:0;left:50%;transform:translateX(-50%);z-index:25;font-size:10px;color:#FF6600;pointer-events:none;opacity:0;transition:opacity .3s}
+    .btn{padding:6px 12px;border-radius:5px;cursor:pointer;font-size:11px;text-transform:uppercase;letter-spacing:.05em;transition:all .2s;border:1px solid}
+    .btn-orange{background:rgba(255,102,0,.15);border-color:rgba(255,102,0,.5);color:#FF6600}.btn-orange:hover{background:rgba(255,102,0,.35)}
+    .btn-green{background:rgba(0,255,136,.15);border-color:rgba(0,255,136,.5);color:#00FF88}.btn-green:hover{background:rgba(0,255,136,.35)}
+    .btn-blue{background:rgba(68,136,255,.15);border-color:rgba(68,136,255,.5);color:#4488FF}.btn-blue:hover{background:rgba(68,136,255,.35)}
+    .btn-yellow{background:rgba(255,204,0,.15);border-color:rgba(255,204,0,.5);color:#FFCC00}.btn-yellow:hover{background:rgba(255,204,0,.35)}
+    .btn-purple{background:rgba(168,85,247,.15);border-color:rgba(168,85,247,.5);color:#a855f7}.btn-purple:hover{background:rgba(168,85,247,.35)}
+    .btn-red{background:rgba(244,63,94,.15);border-color:rgba(244,63,94,.5);color:#f43f5e}.btn-red:hover{background:rgba(244,63,94,.35)}
+    .flex{display:flex}.justify-between{justify-content:space-between}.gap-2{gap:.5rem}
+    .w-full{width:100%}.h-screen{height:100vh}.absolute{position:absolute}.top-0{top:0}.left-0{left:0}.bottom-4{bottom:1rem}.left-4{left:1rem}.right-4{right:1rem}.z-10{z-index:10}.z-20{z-index:20}
+    .text-xs{font-size:.75rem}.text-2xl{font-size:1.5rem}.font-bold{font-weight:bold}.font-mono{font-family:monospace}.uppercase{text-transform:uppercase}.p-3{padding:.75rem}.pb-1{padding-bottom:.25rem}.mb-1{margin-bottom:.25rem}.mb-2{margin-bottom:.5rem}.mt-1{margin-top:.25rem}.ml-2{margin-left:.5rem}.w-80{width:20rem}
+    .overflow-y-auto{overflow-y:auto}.space-y-2>*+*{margin-top:.5rem}.pointer-events-none{pointer-events:none}.pointer-events-auto{pointer-events:auto}
+    .text-orange{color:#FF6600}.text-green{color:#00FF88}.text-blue{color:#4488FF}.text-yellow{color:#FFCC00}.text-gray-400{color:#9ca3af}.text-white{color:#fff}
+    .border-b{border-bottom-width:1px}.border-orange\/50{border-color:rgba(255,102,0,.4)}.h-1{height:.25rem}.rounded-full{border-radius:9999px}
+    #feature-list{font-size:9px;line-height:1.6;max-height:380px;overflow-y:auto}
+    #feature-list li{padding:3px 0;border-bottom:1px solid rgba(255,102,0,.1);color:#9ca3af}
+    #feature-list li .feat-name{color:#FF6600;font-weight:bold}
+    .scrollable::-webkit-scrollbar{width:3px}.scrollable::-webkit-scrollbar-thumb{background:rgba(255,102,0,.4);border-radius:2px}
+  </style>
+</head>
+<body class="w-full h-screen">
+  <div id="canvas-container"></div>
+  <div id="drag-indicator">← PANELS OFFSCREEN · DOUBLE-TAP TO RESET →</div>
+
+  <div id="hud-header" class="absolute top-0 left-0 w-full p-3 z-20 pointer-events-none flex justify-between items-start" style="background:linear-gradient(to bottom,rgba(0,0,0,.9),transparent)">
+    <div class="pointer-events-auto">
+      <h1 style="font-size:22px;font-weight:bold;color:transparent;background:linear-gradient(to right,#FF6600,#4488FF,#00FF88);-webkit-background-clip:text;background-clip:text;filter:drop-shadow(0 0 12px rgba(255,102,0,.9))">MARMALADE — 3D ALPHABET ENGINE</h1>
+      <p class="text-xs text-orange mt-1" style="opacity:.8"><span class="font-bold text-white">Monistic Engine v7c</span><span style="color:#4488FF;margin-left:.5rem">Draggable HUD · Double-Tap Reset</span></p>
+    </div>
+    <div class="pointer-events-auto flex items-center gap-2 mt-1">
+      <button id="btn-fly" class="btn btn-orange" onclick="Engine.startFly()">FLY</button>
+      <button id="btn-spin" class="btn btn-blue" onclick="Engine.toggleSpin()">SPIN</button>
+      <button id="btn-toggle-hud" class="btn btn-green" onclick="UI.toggleHUD()">HIDE</button>
+    </div>
+  </div>
+
+  <div id="hud-left" class="absolute bottom-4 left-4 z-20 w-80 flex flex-col gap-3 pointer-events-none" style="transform:translateX(0);transition:transform .5s cubic-bezier(.25,.46,.45,.94)">
+    <div class="hud p-3 pointer-events-auto">
+      <div class="drag-handle" data-panel="left-top">≡ ≡ ≡ DRAG TO MOVE ≡ ≡ ≡</div>
+      <h3 class="text-orange text-xs uppercase font-bold border-b border-orange/50 pb-1 mb-2">LETTER ENGINE STATUS</h3>
+      <div class="flex justify-between text-xs text-gray-400 mb-1"><span>Active Letters</span><span id="letter-count" class="text-orange font-bold font-mono">26</span></div>
+      <div class="flex justify-between text-xs text-gray-400 mb-1"><span>Active Numbers</span><span id="number-count" class="text-blue font-bold font-mono">10</span></div>
+      <div class="flex justify-between text-xs text-gray-400 mb-1"><span>Floating Dots</span><span id="dot-count" class="text-green font-bold font-mono">--</span></div>
+      <div class="w-full bg-gray-900 h-1 rounded-full overflow-hidden mt-2"><div id="letter-progress" class="h-full" style="background:linear-gradient(to right,#FF6600,#4488FF,#00FF88);width:100%"></div></div>
+    </div>
+    <div class="hud p-3 pointer-events-auto scrollable">
+      <div class="drag-handle" data-panel="left-bottom">≡ ≡ ≡ DRAG TO MOVE ≡ ≡ ≡</div>
+      <h3 class="text-blue text-xs uppercase font-bold border-b border-blue/50 pb-1 mb-2">FEATURE LIST</h3>
+      <ul id="feature-list" class="space-y-2"></ul>
+    </div>
+  </div>
+
+  <div id="hud-right" class="absolute bottom-4 right-4 z-20 w-80 flex flex-col gap-3 pointer-events-none" style="transform:translateX(0);transition:transform .5s cubic-bezier(.25,.46,.45,.94)">
+    <div class="hud p-3 pointer-events-auto">
+      <div class="drag-handle" data-panel="right-top">≡ ≡ ≡ DRAG TO MOVE ≡ ≡ ≡</div>
+      <h3 class="text-green text-xs uppercase font-bold border-b border-green/50 pb-1 mb-2">CONTROLS</h3>
+      <div class="flex gap-2 flex-wrap">
+        <button onclick="Engine.burstAll()" class="btn btn-orange">BURST</button>
+        <button onclick="Engine.convergeAll()" class="btn btn-green">CONVERGE</button>
+        <button onclick="Engine.scatterAll()" class="btn btn-blue">SCATTER</button>
+        <button onclick="Engine.pulseAll()" class="btn btn-yellow">PULSE</button>
+      </div>
+    </div>
+    <div class="hud p-3 pointer-events-auto">
+      <div class="drag-handle" data-panel="right-bottom">≡ ≡ ≡ DRAG TO MOVE ≡ ≡ ≡</div>
+      <h3 class="text-yellow text-xs uppercase font-bold border-b border-yellow/50 pb-1 mb-2">ABOUT</h3>
+      <div class="text-xs text-gray-400" style="line-height:1.6">
+        <p><span class="text-orange font-bold">Marmalade v7c</span> — 3D Alphabet Engine</p>
+        <p class="mt-1">Three.js r128 rendering engine with UnrealBloomPass. 26 letters + 10 digits as 3D text sprites in bubble containers with floating luminous dots.</p>
+        <p class="mt-1"><span class="text-blue">CarrPod</span> — Safe Pod Engineering Company</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+  function androidBridge(m,d){if(typeof Marmalade!=='undefined'&&Marmalade[m])Marmalade[m](JSON.stringify(d))}
+
+  const ALPHABET='ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+  const DIGITS='0123456789';
+  const COLORS=[0xFF6600,0x4488FF,0x00FF88,0xFFCC00,0xFF4466,0xC084FC,0x38BDF8,0x86EFAC,0xF97316,0xEC4899,0x67E8F9,0xFBBF24,0x60A5FA,0xE879F9,0xA78BFA,0xFB7185,0x94A3B8,0xD1FAE5,0x4ADE80,0xFACC15,0xF43F5E,0x10B981,0xA855F7,0xFEF08A,0x22D3EE,0x818CF8];
+
+  const Engine={
+    scene:null,camera:null,renderer:null,composer:null,controls:null,clock:new THREE.Clock(),
+    letters:[],numbers:[],letterMeshes:{},numberMeshes:{},
+    bubbles:[],dots:[],spinActive:false,flyActive:false,flyProgress:0,
+    init(){
+      var c=document.getElementById('canvas-container');
+      this.scene=new THREE.Scene();
+      this.scene.fog=new THREE.FogExp2(0x020208,.012);
+      this.camera=new THREE.PerspectiveCamera(60,innerWidth/innerHeight,.1,1000);
+      this.camera.position.set(0,12,42);
+      this.renderer=new THREE.WebGLRenderer({antialias:true,alpha:true});
+      this.renderer.setSize(innerWidth,innerHeight);
+      this.renderer.setPixelRatio(Math.min(devicePixelRatio,2));
+      c.appendChild(this.renderer.domElement);
+      this.controls=new THREE.OrbitControls(this.camera,this.renderer.domElement);
+      this.controls.enableDamping=true;this.controls.dampingFactor=.06;
+      this.controls.autoRotate=true;this.controls.autoRotateSpeed=.3;
+      var rp=new THREE.RenderPass(this.scene,this.camera);
+      var bloom=new THREE.UnrealBloomPass(new THREE.Vector2(innerWidth,innerHeight),1.2,.4,.85);
+      this.composer=new THREE.EffectComposer(this.renderer);
+      this.composer.addPass(rp);this.composer.addPass(bloom);
+      this.scene.add(new THREE.AmbientLight(0x202040));
+      this.scene.add(new THREE.PointLight(0xffffff,2,200));
+      this._buildGrid();
+      this._buildAlphabet();
+      this._buildNumbers();
+      this._buildDots();
+      this._buildFeatureList();
+      window.addEventListener('resize',()=>{
+        this.camera.aspect=innerWidth/innerHeight;this.camera.updateProjectionMatrix();
+        this.renderer.setSize(innerWidth,innerHeight);this.composer.setSize(innerWidth,innerHeight)
+      });
+      this._animate();
+      androidBridge('onSimReady',{loaded:true});
+    },
+    _buildGrid(){
+      var m=new THREE.LineBasicMaterial({color:0x0f172a,transparent:true,opacity:.4});
+      for(var x=-30;x<=30;x+=6){this.scene.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints([new THREE.Vector3(x,-.1,-30),new THREE.Vector3(x,-.1,30)]),m))}
+      for(var z=-30;z<=30;z+=6){this.scene.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints([new THREE.Vector3(-30,-.1,z),new THREE.Vector3(30,-.1,z)]),m))}
+    },
+    _makeTextTexture(char,colorHex,size){
+      size=size||128;
+      var canvas=document.createElement('canvas');canvas.width=canvas.height=size;
+      var ctx=canvas.getContext('2d'),cx=size/2,cy=size/2;
+      var col='#'+new THREE.Color(colorHex).getHexString();
+      var g=ctx.createRadialGradient(cx-size*.15,cy-size*.15,size*.05,cx,cy,size*.55);
+      g.addColorStop(0,'#ffffff');g.addColorStop(.3,col);g.addColorStop(.7,'rgba(0,0,0,.3)');g.addColorStop(1,'rgba(0,0,0,0)');
+      ctx.fillStyle=g;ctx.beginPath();ctx.arc(cx,cy,size*.48,0,Math.PI*2);ctx.fill();
+      ctx.strokeStyle=col;ctx.lineWidth=3;ctx.beginPath();ctx.arc(cx,cy,size*.46,0,Math.PI*2);ctx.stroke();
+      ctx.fillStyle='#ffffff';ctx.font='bold '+(size*.5)+'px sans-serif';ctx.textAlign='center';ctx.textBaseline='middle';ctx.fillText(char,cx,cy);
+      var t=new THREE.Texture(canvas);t.needsUpdate=true;return t;
+    },
+    _buildAlphabet(){
+      var rows=Math.ceil(Math.sqrt(ALPHABET.length)),spacing=5;
+      for(var i=0;i<ALPHABET.length;i++){
+        var ch=ALPHABET[i];
+        var row=Math.floor(i/rows),col=i%rows;
+        var x=(col-rows/2+.5)*spacing,y=0,z=(row-rows/2+.5)*spacing;
+        var texture=this._makeTextTexture(ch,COLORS[i%COLORS.length],128);
+        var spriteMat=new THREE.SpriteMaterial({map:texture,transparent:true,blending:THREE.AdditiveBlending,depthWrite:false,opacity:.9});
+        var sprite=new THREE.Sprite(spriteMat);sprite.scale.set(2,2,1);sprite.position.set(x,y,z);
+        sprite.userData={char:ch,home:{x:x,y:y,z:z},color:COLORS[i%COLORS.length],phase:Math.random()*Math.PI*2,freq:.5+Math.random()*.5};
+        this.scene.add(sprite);
+        var bubbleGeo=new THREE.SphereGeometry(1.8,32,16);
+        var bubbleMat=new THREE.MeshBasicMaterial({color:COLORS[i%COLORS.length],wireframe:true,transparent:true,opacity:.15,blending:THREE.AdditiveBlending,depthWrite:false});
+        var bubble=new THREE.Mesh(bubbleGeo,bubbleMat);bubble.position.copy(sprite.position);
+        bubble.userData={parent:sprite};this.scene.add(bubble);
+        this.letterMeshes[ch]=sprite;this.letters.push(sprite);this.bubbles.push(bubble);
+      }
+      document.getElementById('letter-count').textContent=this.letters.length;
+    },
+    _buildNumbers(){
+      var rows=4,spacing=5;
+      for(var i=0;i<DIGITS.length;i++){
+        var ch=DIGITS[i];
+        var row=Math.floor(i/rows),col=i%rows;
+        var x=(col-1.5)*spacing+16,y=0,z=20+row*spacing;
+        var texture=this._makeTextTexture(ch,0x4488FF,128);
+        var spriteMat=new THREE.SpriteMaterial({map:texture,transparent:true,blending:THREE.AdditiveBlending,depthWrite:false,opacity:.85});
+        var sprite=new THREE.Sprite(spriteMat);sprite.scale.set(2,2,1);sprite.position.set(x,y,z);
+        sprite.userData={char:ch,home:{x:x,y:y,z:z},color:0x4488FF,phase:Math.random()*Math.PI*2,freq:.5+Math.random()*.5};
+        this.scene.add(sprite);
+        var bubbleGeo=new THREE.SphereGeometry(1.8,32,16);
+        var bubbleMat=new THREE.MeshBasicMaterial({color:0x4488FF,wireframe:true,transparent:true,opacity:.12,blending:THREE.AdditiveBlending,depthWrite:false});
+        var bubble=new THREE.Mesh(bubbleGeo,bubbleMat);bubble.position.copy(sprite.position);
+        bubble.userData={parent:sprite};this.scene.add(bubble);
+        this.numberMeshes[ch]=sprite;this.numbers.push(sprite);this.bubbles.push(bubble);
+      }
+      document.getElementById('number-count').textContent=this.numbers.length;
+    },
+    _buildDots(){
+      var dotCount=0;
+      for(var i=0;i<this.letters.length;i++){
+        var spr=this.letters[i];
+        var numDots=30+Math.floor(Math.random()*20);
+        for(var j=0;j<numDots;j++){
+          var dotGeo=new THREE.SphereGeometry(.08,4,4);
+          var dotMat=new THREE.MeshBasicMaterial({color:spr.userData.color,transparent:true,opacity:.7,blending:THREE.AdditiveBlending,depthWrite:false});
+          var dot=new THREE.Mesh(dotGeo,dotMat);
+          var angle=Math.random()*Math.PI*2;var r=.3+Math.random()*1.5;
+          dot.position.set(spr.position.x+Math.cos(angle)*r,spr.position.y+(Math.random()-.5)*2,spr.position.z+Math.sin(angle)*r);
+          dot.userData={parent:spr,baseR:r,angle:angle,speed:.3+Math.random()*1.5,vertPhase:Math.random()*Math.PI*2};
+          this.scene.add(dot);this.dots.push(dot);dotCount++;
+        }
+      }
+      for(var i=0;i<this.numbers.length;i++){
+        var spr=this.numbers[i];
+        var numDots=15+Math.floor(Math.random()*10);
+        for(var j=0;j<numDots;j++){
+          var dotGeo=new THREE.SphereGeometry(.06,4,4);
+          var dotMat=new THREE.MeshBasicMaterial({color:0x4488FF,transparent:true,opacity:.6,blending:THREE.AdditiveBlending,depthWrite:false});
+          var dot=new THREE.Mesh(dotGeo,dotMat);
+          var angle=Math.random()*Math.PI*2;var r=.3+Math.random()*1.2;
+          dot.position.set(spr.position.x+Math.cos(angle)*r,spr.position.y+(Math.random()-.5)*1.5,spr.position.z+Math.sin(angle)*r);
+          dot.userData={parent:spr,baseR:r,angle:angle,speed:.4+Math.random()*1.2,vertPhase:Math.random()*Math.PI*2};
+          this.scene.add(dot);this.dots.push(dot);dotCount++;
+        }
+      }
+      document.getElementById('dot-count').textContent=dotCount;
+    },
+    _buildFeatureList(){
+      var features=[
+        {name:'3D Alphabet Engine',desc:'26 letters rendered as luminous text sprites'},
+        {name:'3D Number System',desc:'10 digits in dedicated bubble containers'},
+        {name:'Bubble Container Physics',desc:'Wireframe sphere cages per glyph'},
+        {name:'Floating Dot Swarms',desc:'Luminous particles orbiting each glyph'},
+        {name:'UnrealBloomPass Rendering',desc:'High-dynamic-range glow pipeline'},
+        {name:'Orbit Camera Controls',desc:'Pan, zoom, and rotate the scene'},
+        {name:'Flight Path Animation',desc:'Cinematic camera traversal'},
+        {name:'Burst/Converge/Scatter',desc:'Dynamic glyph manipulation modes'},
+        {name:'Pulse Animation',desc:'Rhythmic scaling pulse effect'},
+        {name:'Grid Floor Reference',desc:'Subtle grid plane for orientation'},
+        {name:'Feature List HUD',desc:'Built-in feature tracking panel'},
+        {name:'Marmalade Session Dashboard',desc:'Agent session grid management'},
+        {name:'Director COMMS Integration',desc:'Git-based message relay system'},
+        {name:'Bluetooth Diagnostic',desc:'Device and sensor diagnostics'},
+        {name:'Session Configuration',desc:'Agent slot picker and config'},
+        {name:'Settings Panel',desc:'App-wide settings persistence'},
+        {name:'Watchdog Daemon',desc:'Health monitoring for build'},
+        {name:'GitComms Helper',desc:'GitHub raw URL utility'},
+        {name:'aapt2 Build Pipeline',desc:'Proper SDK build-tools pipeline'},
+        {name:'Adaptive Icon Support',desc:'v6b-style adaptive launcher icon'},
+        {name:'Three.js r128 Core',desc:'Original 3D generation engine intact'},
+        {name:'No-Gradle Build',desc:'Pure CLI: aapt2 + javac + d8 + zipalign + apksigner'},
+        {name:'Target SDK 35',desc:'Compatible with modern Android'},
+        {name:'Min SDK 24',desc:'Broad device support'},
+      ];
+      var ul=document.getElementById('feature-list');
+      features.forEach(function(f){
+        var li=document.createElement('li');
+        li.innerHTML='<span class="feat-name">&#10003; '+f.name+'</span><br><span style="font-size:8px;color:#6b7280">'+f.desc+'</span>';
+        ul.appendChild(li);
+      });
+    },
+    _updateDots(dt){
+      for(var i=0;i<this.dots.length;i++){
+        var dot=this.dots[i],ud=dot.userData,spr=ud.parent;
+        if(!spr)continue;
+        ud.angle+=ud.speed*dt;
+        dot.position.x=spr.position.x+Math.cos(ud.angle)*ud.baseR;
+        dot.position.y=spr.position.y+Math.sin(ud.vertPhase+Date.now()*.001*ud.speed)*.6;
+        dot.position.z=spr.position.z+Math.sin(ud.angle)*ud.baseR;
+        dot.material.opacity=.4+Math.sin(ud.angle*.7+Date.now()*.002)*.3;
+      }
+    },
+    _updateBubbles(dt){
+      for(var i=0;i<this.letters.length;i++){
+        var spr=this.letters[i];var b=this.bubbles[i];
+        if(!b)continue;
+        b.position.lerp(spr.position,.1);b.rotation.y+=.2*dt;b.rotation.x+=.1*dt;
+        b.scale.setScalar(1+Math.sin(Date.now()*.002+spr.userData.phase)*.08);
+      }
+      for(var i=0;i<this.numbers.length;i++){
+        var bi=this.letters.length+i;
+        if(!this.bubbles[bi])continue;
+        this.bubbles[bi].position.lerp(this.numbers[i].position,.1);
+        this.bubbles[bi].rotation.y+=.15*dt;
+        this.bubbles[bi].scale.setScalar(1+Math.sin(Date.now()*.0015+i)*.05);
+      }
+    },
+    burstAll(){
+      this.dots.forEach(function(d){var u=d.userData;u.baseR=2+Math.random()*4;u.speed=3+Math.random()*6});
+      setTimeout(function(){Engine.dots.forEach(function(d){var u=d.userData;u.baseR=.3+Math.random()*1.5;u.speed=.3+Math.random()*1.5})},1500);
+    },
+    convergeAll(){
+      var self=this;
+      this.letters.forEach(function(s){s.userData.home={x:0,y:0,z:0}});
+      this.numbers.forEach(function(s){s.userData.home={x:0,y:0,z:0}});
+      setTimeout(function(){
+        var rows=Math.ceil(Math.sqrt(ALPHABET.length)),spacing=5;
+        self.letters.forEach(function(s,i){
+          var row=Math.floor(i/rows),col=i%rows;
+          s.userData.home={x:(col-rows/2+.5)*spacing,y:0,z:(row-rows/2+.5)*spacing};
+        });
+        self.numbers.forEach(function(s,i){
+          s.userData.home={x:(i%4-1.5)*5+16,y:0,z:20+Math.floor(i/4)*5};
+        });
+      },2500);
+    },
+    scatterAll(){
+      this.letters.forEach(function(s){s.userData.home={x:(Math.random()-.5)*50,y:(Math.random()-.5)*30,z:(Math.random()-.5)*50}});
+      this.numbers.forEach(function(s){s.userData.home={x:(Math.random()-.5)*50,y:(Math.random()-.5)*30,z:(Math.random()-.5)*50}});
+    },
+    pulseAll(){
+      var self=this,count=0;
+      var iv=setInterval(function(){
+        var idx=count%self.letters.length,spr=self.letters[idx];
+        spr.scale.set(3,3,1);setTimeout(function(){spr.scale.set(2,2,1)},300);
+        if(++count>self.letters.length*2)clearInterval(iv);
+      },150);
+    },
+    toggleSpin(){this.spinActive=!this.spinActive;this.controls.autoRotate=this.spinActive;
+      document.getElementById('btn-spin').textContent=this.spinActive?'SPIN ON':'SPIN'},
+    startFly(){
+      this.flyActive=!this.flyActive;
+      if(!this.flyActive){this.controls.autoRotate=true;return}
+      var wp=[];for(var i=0;i<8;i++)wp.push(new THREE.Vector3((Math.random()-.5)*50,(Math.random()-.5)*20,(Math.random()-.5)*50));
+      this._flyWaypoints=wp;this.flyProgress=0;
+    },
+    _animate(){
+      requestAnimationFrame(function(){Engine._animate()});
+      var dt=Engine.clock.getDelta(),now=Date.now();
+      Engine._updateDots(dt);Engine._updateBubbles(dt);
+      Engine.letters.forEach(function(s,idx){
+        var h=s.userData.home;
+        s.position.lerp(new THREE.Vector3(h.x+Math.sin(now*.0008+idx)*.4,h.y+Math.sin(now*.001+idx*.5)*.3,h.z+Math.cos(now*.0007+idx)*.4),.04);
+        s.material.opacity=.7+Math.sin(now*.002+idx)*.15;
+      });
+      Engine.numbers.forEach(function(s,idx){
+        var h=s.userData.home;
+        s.position.lerp(new THREE.Vector3(h.x+Math.sin(now*.0006+idx)*.3,h.y+Math.cos(now*.0012+idx*.5)*.25,h.z+Math.sin(now*.0008+idx)*.35),.04);
+        s.material.opacity=.65+Math.sin(now*.0018+idx)*.12;
+      });
+      if(Engine.flyActive&&Engine._flyWaypoints){
+        var t=Math.min(Engine.flyProgress/15000,1);Engine.flyProgress+=dt*1000;
+        var wp=Engine._flyWaypoints,i=Math.floor(t*(wp.length-1)),f=(t*(wp.length-1))%1;
+        var p0=wp[Math.max(0,i-1)],p1=wp[i],p2=wp[Math.min(wp.length-1,i+1)],p3=wp[Math.min(wp.length-1,i+2)];
+        var f2=f*f,f3=f2*f;
+        var pos=new THREE.Vector3(.5*((2*p1.x)+(-p0.x+p2.x)*f+(2*p0.x-5*p1.x+4*p2.x-p3.x)*f2+(-p0.x+3*p1.x-3*p2.x+p3.x)*f3),.5*((2*p1.y)+(-p0.y+p2.y)*f+(2*p0.y-5*p1.y+4*p2.y-p3.y)*f2+(-p0.y+3*p1.y-3*p2.y+p3.y)*f3),.5*((2*p1.z)+(-p0.z+p2.z)*f+(2*p0.z-5*p1.z+4*p2.z-p3.z)*f2+(-p0.z+3*p1.z-3*p2.z+p3.z)*f3));
+        Engine.camera.position.lerp(pos,.05);
+        if(t>=1){Engine.flyActive=false;Engine.controls.autoRotate=true}
+      }
+      Engine.controls.update();Engine.composer.render();
+    }
+  };
+
+  const UI={hidden:false,
+    panelOffsets:{left:0,right:0},
+    initDraggable(){
+      var self=this;
+      var drags=document.querySelectorAll('.drag-handle');
+      var startX=0,startOff=0,activePanel=null,lastTap=0;
+      drags.forEach(function(dh){
+        dh.addEventListener('pointerdown',function(e){
+          e.preventDefault();e.stopPropagation();
+          var panelId=dh.getAttribute('data-panel');
+          activePanel=panelId;startX=e.clientX;
+          startOff=panelId.indexOf('left')===0?self.panelOffsets.left:self.panelOffsets.right;
+          dh.style.cursor='grabbing';document.getElementById('drag-indicator').style.opacity='1';
+        });
+      });
+      document.addEventListener('pointermove',function(e){
+        if(!activePanel)return;
+        var dx=e.clientX-startX,side=activePanel.indexOf('left')===0?'left':'right';
+        var newOff=startOff+(side==='left'?dx:-dx);
+        newOff=Math.max(-400,Math.min(400,newOff));
+        self.panelOffsets[side]=newOff;
+        var el=document.getElementById('hud-'+side);
+        if(side==='left')el.style.transform='translateX('+newOff+'px)';
+        else el.style.transform='translateX('+(-newOff)+'px)';
+      });
+      document.addEventListener('pointerup',function(e){
+        if(!activePanel)return;
+        activePanel=null;
+        document.querySelectorAll('.drag-handle').forEach(function(dh){dh.style.cursor='grab'});
+        document.getElementById('drag-indicator').style.opacity='0';
+        var now=Date.now(),side=activePanel||'left';
+        if(now-lastTap<300&&Math.abs(self.panelOffsets.left)>10){
+          self.resetPanels();
+        }
+        lastTap=now;
+      });
+      document.addEventListener('pointercancel',function(){activePanel=null});
+    },
+    resetPanels(){
+      this.panelOffsets={left:0,right:0};
+      var l=document.getElementById('hud-left'),r=document.getElementById('hud-right');
+      if(l)l.style.transform='translateX(0)';if(r)r.style.transform='translateX(0)';
+    },
+    clearAll(){
+      this.panelOffsets={left:-400,right:-400};
+      var l=document.getElementById('hud-left'),r=document.getElementById('hud-right');
+      if(l)l.style.transform='translateX(-420px)';if(r)r.style.transform='translateX(420px)';
+    },
+    toggleHUD(){this.hidden=!this.hidden;
+      ['hud-left','hud-right'].forEach(function(id){document.getElementById(id).classList.toggle('hidden-hud',UI.hidden)});
+      document.getElementById('btn-toggle-hud').textContent=this.hidden?'SHOW':'HIDE'}
+  };
+
+  window.addEventListener('DOMContentLoaded',function(){Engine.init();UI.initDraggable()});
+  </script>
+</body>
+</html>
