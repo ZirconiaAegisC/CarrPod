@@ -145,17 +145,16 @@ public class MainActivity extends Activity {
             public void onClick(View v) { injectJs("Engine.scatterAll()"); }
         }));
 
-        clearUiBtn = barBtn("CLEAR UI", "#10b981", new View.OnClickListener() {
+        clearUiBtn = barBtn("TUCK", "#10b981", new View.OnClickListener() {
             public void onClick(View v) {
                 panelsCleared = !panelsCleared;
                 if (panelsCleared) {
-                    injectJs("UI.clearAll()");
-                    clearUiBtn.setText("RESET UI");
+                    injectJs("UI.tuckAll()");
+                    clearUiBtn.setText("UNTUCK");
                     clearUiBtn.setTextColor(Color.parseColor("#FFCC00"));
-                    Toast.makeText(MainActivity.this, "Panels moved off screen — drag or tap RESET", Toast.LENGTH_SHORT).show();
                 } else {
-                    injectJs("UI.resetPanels()");
-                    clearUiBtn.setText("CLEAR UI");
+                    injectJs("UI.untuckAll()");
+                    clearUiBtn.setText("TUCK");
                     clearUiBtn.setTextColor(Color.parseColor("#10b981"));
                 }
             }
