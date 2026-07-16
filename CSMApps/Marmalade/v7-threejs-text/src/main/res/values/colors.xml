@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="marmalade_bg">#0A0A0F</color>
+    <color name="marmalade_fg">#E8E8F0</color>
+    <color name="marmalade_orange">#FF6600</color>
+    <color name="marmalade_green">#00FF88</color>
+    <color name="marmalade_blue">#4488FF</color>
+</resources>
