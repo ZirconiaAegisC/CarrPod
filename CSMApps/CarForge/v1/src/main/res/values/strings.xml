@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CarForge</string>
+    <string name="tagline">3D Alphabet Engine \u2022 v1.0 \u2022 CarrPod</string>
+    <string name="clean_view">Clean View</string>
+</resources>
