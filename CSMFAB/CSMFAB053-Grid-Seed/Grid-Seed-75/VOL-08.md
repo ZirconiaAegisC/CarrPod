@@ -1,0 +1,4 @@
+# Grid-Seed VOL-08: Core-1 Control Board
+## CSMFAB053-75 | 80×50mm | FEATHER LoRa | S-Bus | E-Ink Driver
+
+Two Core-1 PCBs in parallel: one dedicated to battery management and solar MPPT, one dedicated to inverter control and communications. Each Core-1: 80×50mm, 4-layer FR-4, ENIG finish. Components: Protonic-HFET MPPT controller, LFP BMS (8-channel), SX1262 LoRa transceiver (+22 dBm, 915 MHz), S-Bus protocol stack, 300W inverter gate driver, e-ink display driver (SPI, 2.9" Waveshare). Firmware: OTA update via FEATHER mesh. Watchdog: 2-second hardware reset. Power: 5V/100mA from battery bus via separate LDO. S-Bus message types: Power Status, Grid Status, Battery SOC, Solar Input, Load Power, Temperature, Error Code, Firmware Version. "The Arduino of Carrington preparedness — two of them run the whole Grid-Seed." — CSMFAB059.
