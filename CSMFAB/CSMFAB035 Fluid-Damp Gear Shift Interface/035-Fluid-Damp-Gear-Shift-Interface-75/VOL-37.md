@@ -1,0 +1,4 @@
+# 035 Fluid-Damp Gear Shift Interface VOL-37: Warranty Terms and Support
+## CSMFAB035 Fluid-Damp Gear Shift Interface | Carrington-hardened fabrication product | Cost: TBD
+
+Dense fabrication specification for 035 Fluid-Damp Gear Shift Interface. Part 37 of 75-document deep fabrication package.

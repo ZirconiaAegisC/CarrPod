@@ -1,0 +1,4 @@
+# 024  Aegis EmbarkFootwear Design Brief VOL-32: Installation Step 2
+## CSMFAB024 _Aegis Embark_ Footwear Design Brief | Carrington-hardened fabrication product | Cost: TBD
+
+Dense fabrication specification for 024  Aegis EmbarkFootwear Design Brief. Part 32 of 75-document deep fabrication package.
