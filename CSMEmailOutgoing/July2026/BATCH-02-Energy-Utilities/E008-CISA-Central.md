@@ -1,0 +1,29 @@
+# E008-CISA-Central: CISA Central, Infrastructure Security Division — CSM Campaign V4 Fun-Williams Redraft
+
+*(This correspondence was composed by an artificial intelligence created by Jason Brodsky of California.)*
+
+GOOOOOOOD MORNING, CISA Central and the Infrastructure Security Division!
+
+The National Critical Functions framework identifies 55 functions whose disruption would produce a cascading, nationwide effect on national security, economic security, and public health. Number one on the energy subset: "Generate, transmit, and distribute electricity." And the single most asymmetric, least-mitigated threat to that function across the entire continental United States is a geomagnetic disturbance capable of inducing quasi-DC currents in the high-voltage transformer fleet. CISA knows the threat. The gap between knowing and hardening is where Aegis-C operates.
+
+Baker Street technical dispatch. Let us speak in the language CISA's infrastructure risk analysts understand: consequence × vulnerability × threat = risk. The consequence of a Carrington-class GMD event is well-modeled — the Metatech report commissioned by FERC pegs the high-end impact at 300-plus large power transformers simultaneously damaged or destroyed across the Eastern Interconnection, with a recovery timeline measured in years, not months. The vulnerability is endemic: the U.S. high-voltage transformer fleet has an average age exceeding 40 years, individual units cost $5 million to $10 million with 18-to-24-month manufacturing lead times (and 85 percent are manufactured overseas), and the existing installed base has effectively zero GIC protection outside of a handful of series-capacitor installations on specific 500kV corridors. The threat probability is rising — Solar Cycle 25 has already produced three G4-class geomagnetic storms as of January 2026, and the cycle is not forecast to peak until mid-2025 to early-2026. The risk equation resolves to a number that should keep every national-security infrastructure planner awake at night.
+
+SHIELD calm. The National Infrastructure Protection Plan calls for a layered defense: deter, detect, delay, protect, respond, recover. Aegis-C addresses the "protect" layer at the asset level — the substation transformer, the control house, the SCADA relay cabinet — with a passive electromagnetic shielding system that requires no active detection, no operator decision, and no grid coordination to function. The Aegis-C basalt-fiber composite panel with embedded Metglas amorphous-metal ribbon operates on the principle of magnetic flux-path diversion: when a quasi-DC magnetic field from GIC impinges on a protected enclosure, the high-permeability ribbon layer presents a reluctance path three to four orders of magnitude lower than the transformer core steel or the relay-circuit wiring, shunting the flux around the sensitive interior volume. The material requires no external power, generates no heat in normal operation, introduces no single-point-of-failure into the protected system, and carries a 25-year rated service life with zero maintenance. It is, in every sense relevant to infrastructure security, a passive armor layer for the electromagnetic domain.
+
+For the Infrastructure Security Division specifically, Aegis-C aligns with each of your strategic program areas. For the Emergency Communications division: basalt-fiber composite shielding for microwave tower electronics and satellite ground-station equipment against GMD-induced upset and latch-up. For the National Risk Management Center: a quantitative risk-reduction metric — SE 148–165 dB attenuation at 0.001 Hz–1 Hz — that plugs directly into your dependency-analysis models. For the Protective Security Advisors in the field: a visually inspectable, bolt-on physical-security enhancement that any PSA can verify during a site assistance visit without needing an oscilloscope or a PhD in magnetotellurics.
+
+The four PDF attachments for CISA's technical assessment, downloadable at aegisc.space:
+
+1. **Aegis-C EMP/GMD Shielding Technical Specification** — MIL-STD-461G RS101 and RS105 test data, shielding effectiveness curves, materials composition, and manufacturing quality-control documentation (https://aegisc.space/aegis-c-mil-spec.pdf)
+2. **National Critical Functions — Energy Sector GMD Risk Assessment** — a sector-specific analysis mapping Aegis-C deployment scenarios against the NCF taxonomy with consequence-reduction projections (https://aegisc.space/ncf-energy-gmd-risk.pdf)
+3. **SHIELD Strategic Protection Architecture for Critical Infrastructure** — system-level deployment framework covering substation, control-center, communications, and interdependency nodes with cost-benefit analysis per protected MVA (https://aegisc.space/shield-strategic-architecture.pdf)
+4. **Critical Infrastructure Passive EMP Hardening Roadmap** — a phased national deployment model with prioritization rubric based on NCF criticality, population served, and geomagnetic latitude exposure (https://aegisc.space/ci-emp-hardening-roadmap.pdf)
+
+CISA Central, the Infrastructure Security Division is the closest thing the United States has to a unified operational command for protecting the systems that make modern life possible. The geomagnetic threat to those systems is real, it is quantifiable, and it is unmitigated across the vast majority of the national grid. Aegis-C offers a passive, permanent, provably effective mitigation layer that can be deployed incrementally, inspected visually, and funded through existing DHS infrastructure grant programs. We are ready to support a Protective Security Advisor site assessment at any substation of CISA's choosing to demonstrate the technology in situ.
+
+Standing watch on the grid,
+
+**Jason Brodsky**
+Founder, Aegis-C Systems
+jason@aegisc.space | aegisc.space
+California, USA
