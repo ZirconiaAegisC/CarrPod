@@ -1,4 +1,4 @@
-# Aegis-Haven VOL-02: Design Specification Summary
-## CSMFAB-CSMFAB056-Aegis-Haven-75 | Modular Deployable Family Shelter | Cost: $4,200
+# 056-Aegis-Haven VOL-02: IDENTITY & SPECS
+## CSMFAB | General | Priority: Active
 
-3×3m, ZrB₂-SiC panels, wedge-and-pin assembly 20min, 100W solar roof, 2kWh battery, aerogel floor, Stellar-Tint windows.
+Material composition: CSM-spec advanced composites and ceramics. Manufacturing method: flash sintering (ceramics), VARTM (BFRP composites), twin-screw extrusion (CNT polymers), or geopolymer casting per product line. All processes validated to CSM-MAT standards with ISO 9001:2015 QMS documentation.

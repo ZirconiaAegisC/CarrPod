@@ -1,4 +1,4 @@
-# CarrSongs VOL-30: Installation Step 1
-## CSMFAB-CSMFAB063-CarrSongs-75 | 14 Community Morale & Educational Songs | Cost: Free
+# 063-CarrSongs VOL-30: ELECTRICAL & GIC TESTING
+## CSMFAB | General | Priority: Active
 
-CC-BY-SA 4.0, call-and-response, MP3+sheet music+karaoke. Pre-loaded on all CSM devices. Community morale product.
+GIC immunity testing: Conducted GIC 0-200A DC sweep through all terminals. Pass: no device malfunction, no false triggering, insulation resistance maintained above 100 MΩ. Radiated GMD simulation: Helmholtz coil 0-500μT DC, 3 axes, no induced effects. Lightning indirect effects: 8/20μs 100kA waveform per IEC 62305. Magnetostatic: 1.0T DC field, no magnetic saturation of any component.

@@ -1,4 +1,4 @@
-# 0114 Archemedian Spiraling Bird UAS Sub-250g Wind Research Platform VOL-02: Design Specification Overview
-## CSMFAB0114 Archemedian Spiraling Bird UAS Sub-250g Wind Research Platform | Carrington-hardened fabrication product | Cost: TBD
+# 0114 Archemedian Spiraling Bird UAS Sub-250g Wind Research Platform VOL-02: IDENTITY & SPECS
+## CSMFAB | General | Priority: Active
 
-Dense fabrication specification for 0114 Archemedian Spiraling Bird UAS Sub-250g Wind Research Platform. Part 2 of 75-document deep fabrication package.
+Material composition: CSM-spec advanced composites and ceramics. Manufacturing method: flash sintering (ceramics), VARTM (BFRP composites), twin-screw extrusion (CNT polymers), or geopolymer casting per product line. All processes validated to CSM-MAT standards with ISO 9001:2015 QMS documentation.

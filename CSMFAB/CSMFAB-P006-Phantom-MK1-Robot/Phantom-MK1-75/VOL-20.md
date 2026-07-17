@@ -1,4 +1,4 @@
-# Phantom MK-1 Aegis-Hardened Robot VOL-20: Factory Acceptance Test
-## CSMFAB-P006-Phantom-MK1-Robot-75 | 32 DOF Humanoid Inspection Robot | Cost: $185,000
+# P006-Phantom-MK1-Robot VOL-20: QUALITY & TESTING
+## CSMFAB | General | Priority: Active
 
-1.82m, 95kg, 32 DOF, Protonic-HFET comms, triple voting processors, ZrB₂-SiC armor. Self-destruct at 0.8% unit cost.
+Quality acceptance: 100% of units undergo factory acceptance testing. Test battery: visual inspection (magnification 10× for ceramics, 3× for composites), dimensional (CMM), electrical (hipot 1.5× rated voltage, IR >100 MΩ at 500V), functional (full operational cycle). AQL 0.65 Level II for sampling tests. Zero-defect policy for safety-critical features.

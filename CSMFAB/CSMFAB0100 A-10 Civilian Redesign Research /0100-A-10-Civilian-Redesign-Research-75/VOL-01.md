@@ -1,4 +1,4 @@
-# 0100 A-10 Civilian Redesign Research VOL-01: Product Identity and Mission
-## CSMFAB0100 A-10 Civilian Redesign Research  | Carrington-hardened fabrication product | Cost: TBD
+# 0100 A-10 Civilian Redesign Research VOL-01: IDENTITY & SPECS
+## CSMFAB | Unmanned Aerial Systems | Priority: Active
 
-Dense fabrication specification for 0100 A-10 Civilian Redesign Research. Part 1 of 75-document deep fabrication package.
+Primary Carrington-hardened fabrication product. Category: Unmanned Aerial Systems. All CSMFAB standards apply: dielectric construction, non-conductive throughout, GIC-immunity verified at >10⁸ Ω·m, BFRP enclosure where applicable, FEATHER LoRa mesh integration standard, S-Bus protocol support. Target deployment: 2026-2028 pilot, 2029+ scaled production.

@@ -1,4 +1,4 @@
-# 018 Aegis Home Conductive-Proof Spray Cans VOL-31: Installation Step 1
-## CSMFAB018 Aegis Home Conductive-Proof Spray Cans | Carrington-hardened fabrication product | Cost: TBD
+# 018 Aegis Home Conductive-Proof Spray Cans VOL-31: MECHANICAL & ENVIRONMENTAL
+## CSMFAB | Residential Hardening | Priority: Active
 
-Dense fabrication specification for 018 Aegis Home Conductive-Proof Spray Cans. Part 31 of 75-document deep fabrication package.
+Residential Hardening product specification. Section 31 of 75-document deep fabrication package. Material: BFRP-Elium composite (BF-002 Marine Grade), CNT-doped polymers, MXene coatings, ZTA ceramics, geopol. All specifications per CSM-MAT and CSM-TEST standards. Full traceability from raw material to finished assembly. ISO 9001:2015 QMS documented at every critical control point. FEATHER mesh integrated where applicable. S-Bus protocol support standard. Carr-Forge open-source documentation available.

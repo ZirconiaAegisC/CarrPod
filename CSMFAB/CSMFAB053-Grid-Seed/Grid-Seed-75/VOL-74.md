@@ -1,4 +1,4 @@
-# Grid-Seed VOL-74: Risk Register
-## CSMFAB053-75 | Home Microgrid
+# 053-Grid-Seed VOL-74: SUPPLY CHAIN & EXECUTIVE SUMMARY
+## CSMFAB | General | Priority: Active
 
-Top 5: 1) Single-source CNT (Nanocyl) — buffer 12mo, Syluria US qual. 2) Tariff 25% on Chinese batteries — exclusion application, Korean alt. 3) UL certification delay — 14wk timeline per plan. 4) Cell price increase — long-term contract with EVE. 5) Field infant mortality — conservative burn-in, 10-unit beta. All mitigations in place.
+General product specification. Section 74 of 75-document deep fabrication package. Material: CSM-spec advanced composites and ceramics. All specifications per CSM-MAT and CSM-TEST standards. Full traceability from raw material to finished assembly. ISO 9001:2015 QMS documented at every critical control point. FEATHER mesh integrated where applicable. S-Bus protocol support standard. Carr-Forge open-source documentation available.

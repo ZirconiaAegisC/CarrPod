@@ -1,4 +1,4 @@
-# Cold-Root VOL-55: Government Incentive Eligibility
-## CSMFAB-CSMFAB055-Cold-Root-75 | Geothermal Phase-Change Refrigerator | Cost: $178
+# 055-Cold-Root VOL-55: HOMEOWNER & COMMISSIONING
+## CSMFAB | General | Priority: Active
 
-1.0×1.0×1.5m, 200L, CaCl₂·6H₂O PCM at 4°C, 0.5m burial, zero electricity, infinite life.
+User operation: No routine user action required for passive products (bearings, joints, insulators). For active products: FEATHER mesh provides remote status monitoring via Carr-Library, Pocket Watch X, or S-Bus dashboard. Local status: e-ink display or LED indicator. Troubleshooting: error codes displayed, reference card provided, FEATHER mesh support messaging available 24/7. Emergency: 911 for life-threatening situations, CSM support for product issues via FEATHER message relay.

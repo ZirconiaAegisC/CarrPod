@@ -1,4 +1,4 @@
-# -P001-Ceramic-Bridge-Bearings-500T VOL-05: Critical Materials Specification
-## CSMFAB-P001-Ceramic-Bridge-Bearings-500T | Carrington-hardened fabrication product | Cost: TBD
+# P001-Ceramic-Bridge-Bearings-500T VOL-05: IDENTITY & SPECS
+## CSMFAB | Residential Hardening | Priority: Active
 
-Dense fabrication specification for -P001-Ceramic-Bridge-Bearings-500T. Part 5 of 75-document deep fabrication package.
+Critical material specifications: All components dielectric and non-conductive. No steel, aluminum, or copper in any structural or exposed element. 100% GIC path break per installed component. FEATHER mesh integrated.. Testing per CSM-TEST protocol suite. Every material lot tested for: composition (XRF/XRD), particle size (laser diffraction for powders, SEM for composites), dielectric strength (ASTM D149), DC resistivity (ASTM D257), mechanical properties (ASTM per material class).

@@ -1,4 +1,4 @@
-# Grid-Seed VOL-05: MRF-140CG Smart Contactor
-## CSMFAB053-75 | Magnetorheological Fluid | Arc-Free | Silent | Wear-Free
+# 053-Grid-Seed VOL-05: IDENTITY & SPECS
+## CSMFAB | General | Priority: Active
 
-Carbonyl iron particles (2-5μm, 40% volume fraction) suspended in silicone oil. 500-turn 28AWG coil on BFRP bobbin. Rated 140A continuous, 400A surge (1sec). Off-state: MR fluid is insulating oil (>10⁶ Ω·m), contacts physically separated. On-state: coil energized, MR fluid aligns into conductive chains, bridges contacts with liquid metal-like path. Switching: <1ms to open (field collapse), <5ms to close (field establish). Arc quenching: MR fluid extinguishes arc in <1ms by absorbing arc energy into phase change. No mechanical clunk — silent operation. No contact wear — liquid bridge self-heals. BFRP housing with PTFE seals. MR fluid service life: >1M cycles. Control: Protonic-HFET logic, 12V/200mA coil drive. "The contactor that never arcs, never wears, and never makes a sound." — CSMFAB053.
+Critical material specifications: Fully dielectric. GIC immune. FEATHER mesh integrated. S-Bus compatible. BFRP enclosure standard.. Testing per CSM-TEST protocol suite. Every material lot tested for: composition (XRF/XRD), particle size (laser diffraction for powders, SEM for composites), dielectric strength (ASTM D149), DC resistivity (ASTM D257), mechanical properties (ASTM per material class).

@@ -1,4 +1,4 @@
-# 033 Thorax-Calm STF Seatbelt Cover Set VOL-04: Bill of Materials Summary
-## CSMFAB033 Thorax-Calm STF Seatbelt Cover Set | Carrington-hardened fabrication product | Cost: TBD
+# 033 Thorax-Calm STF Seatbelt Cover Set VOL-04: IDENTITY & SPECS
+## CSMFAB | Vehicle Hardening | Priority: Active
 
-Dense fabrication specification for 033 Thorax-Calm STF Seatbelt Cover Set. Part 4 of 75-document deep fabrication package.
+Bill of Materials summary: Primary material BFRP composites, STF (shear thickening fluid), MRF (magnetorheological fluid), C... Subcomponent count: 5-18 depending on product complexity. All suppliers qualified to CSM-SUP-001 standard with dual-source alternatives validated. Lead times documented. MOQ minimums established for all specialty materials.

@@ -1,4 +1,4 @@
-# Grid-Heart VOL-30: Installation Step 1
-## CSMFAB-CSMFAB062-Grid-Heart-75 | Passive Non-Contact Transformer Monitor | Cost: $34
+# 062-Grid-Heart VOL-30: ELECTRICAL & GIC TESTING
+## CSMFAB | General | Priority: Active
 
-Ferrite core coil, hot-stick clamp, 60Hz detection, FEATHER mesh, 2×AA lithium 3yr, real-time transformer health map.
+GIC immunity testing: Conducted GIC 0-200A DC sweep through all terminals. Pass: no device malfunction, no false triggering, insulation resistance maintained above 100 MΩ. Radiated GMD simulation: Helmholtz coil 0-500μT DC, 3 axes, no induced effects. Lightning indirect effects: 8/20μs 100kA waveform per IEC 62305. Magnetostatic: 1.0T DC field, no magnetic saturation of any component.

@@ -1,4 +1,4 @@
-# Grid-Seed VOL-57: FEATHER Mesh Registration
-## CSMFAB053-75 | Home Microgrid
+# 053-Grid-Seed VOL-57: COST & BOM
+## CSMFAB | General | Priority: Active
 
-Electrician initiates join. Auto-discovers node. Registers with NannyCam. Homeowner gets mesh address GS-XXXX. Remote status via Carr-Library or Pocket Watch X.
+General product specification. Section 57 of 75-document deep fabrication package. Material: CSM-spec advanced composites and ceramics. All specifications per CSM-MAT and CSM-TEST standards. Full traceability from raw material to finished assembly. ISO 9001:2015 QMS documented at every critical control point. FEATHER mesh integrated where applicable. S-Bus protocol support standard. Carr-Forge open-source documentation available.

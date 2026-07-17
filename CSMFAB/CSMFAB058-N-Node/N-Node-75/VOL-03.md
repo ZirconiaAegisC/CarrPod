@@ -1,4 +1,4 @@
-# N-Node VOL-03: Electrical Architecture
-## CSMFAB-CSMFAB058-N-Node-75 | 20ft ISO Container Community Resilience Hub | Cost: $28,000
+# 058-N-Node VOL-03: IDENTITY & SPECS
+## CSMFAB | General | Priority: Active
 
-20kWh LFP, 2kW solar, FEATHER gateway 8dBi, ham radio, water purification, Cold-Root, Carr-Library, serves 200 households.
+System architecture: Fully dielectric. GIC immune. FEATHER mesh integrated. S-Bus compatible. BFRP enclosure standard.. Power path (if applicable): CNT-polymer conductors throughout, Protonic-HFET charge control, MRF contactors for switching, LFP battery storage. All signal paths: FEATHER LoRa + S-Bus protocol. No silicon semiconductors in critical paths — GaN or Protonic-HFET exclusively.

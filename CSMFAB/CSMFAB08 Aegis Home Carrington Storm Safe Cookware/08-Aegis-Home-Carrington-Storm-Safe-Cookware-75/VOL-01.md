@@ -1,4 +1,4 @@
-# 08 Aegis Home Carrington Storm Safe Cookware VOL-01: Product Identity and Mission
-## CSMFAB08 Aegis Home Carrington Storm Safe Cookware | Carrington-hardened fabrication product | Cost: TBD
+# 08 Aegis Home Carrington Storm Safe Cookware VOL-01: IDENTITY & SPECS
+## CSMFAB | Residential Hardening | Priority: Active
 
-Dense fabrication specification for 08 Aegis Home Carrington Storm Safe Cookware. Part 1 of 75-document deep fabrication package.
+Primary Carrington-hardened fabrication product. Category: Residential Hardening. All CSMFAB standards apply: dielectric construction, non-conductive throughout, GIC-immunity verified at >10⁸ Ω·m, BFRP enclosure where applicable, FEATHER LoRa mesh integration standard, S-Bus protocol support. Target deployment: 2026-2028 pilot, 2029+ scaled production.

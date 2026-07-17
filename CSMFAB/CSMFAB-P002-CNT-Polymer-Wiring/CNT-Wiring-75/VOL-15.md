@@ -1,4 +1,4 @@
-# CNT-Doped Polymer Wiring VOL-15: Critical Control Point 2
-## CSMFAB-P002-CNT-Polymer-Wiring-75 | 4-Grade Frequency-Selective Conductor | Cost: $0.85-180/m
+# P002-CNT-Polymer-Wiring VOL-15: MANUFACTURING
+## CSMFAB | Residential Hardening | Priority: Active
 
-CNT-001 Residential to CNT-004 Bus Bar. MWCNT in PEEK/PEI/PPS. 60Hz AC near-copper, DC >10⁸ Ω·m.
+Manufacturing process: BFRP-Elium composite (BF-002 Marine Grade), CNT-doped polyme... Batch size 25-100 units per production run. Cycle time 4-8 hours per unit depending on complexity. In-process inspection at 5 critical control points. Statistical process control: Cpk >1.33 required for all critical dimensions. Out-of-spec: root cause analysis within 24 hours, corrective action within 72 hours.

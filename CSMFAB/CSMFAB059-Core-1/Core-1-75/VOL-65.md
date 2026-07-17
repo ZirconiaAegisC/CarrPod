@@ -1,4 +1,4 @@
-# Core-1 VOL-65: Continuous Improvement Process
-## CSMFAB-CSMFAB059-Core-1-75 | Standardized Power Management Module | Cost: $42 BOM
+# 059-Core-1 VOL-65: PRICING & REVENUE
+## CSMFAB | General | Priority: Active
 
-80×50mm PCB, Protonic-HFET MPPT, LFP BMS, 300W inverter, LoRa S-Bus, e-ink driver. Shared across ALL CSM products.
+Revenue projection (5-year): Year 1 (pilot, 50-500 units): $0.5-2M. Year 2 (2,000-5,000 units): $4-12M. Year 3 (5,000-15,000 units): $10-35M. Year 4 (12,000-50,000 units): $25-100M. Year 5 (25,000-100,000 units): $50-200M. Revenue range depends on product class: consumer ($50-500 MSRP), commercial ($2,000-50,000), infrastructure ($10,000-500,000).

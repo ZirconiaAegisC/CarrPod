@@ -1,4 +1,4 @@
-# Phantom MK-1 Aegis-Hardened Robot VOL-25: GIC Immunity Test
-## CSMFAB-P006-Phantom-MK1-Robot-75 | 32 DOF Humanoid Inspection Robot | Cost: $185,000
+# P006-Phantom-MK1-Robot VOL-25: CERTIFICATION & COMPLIANCE
+## CSMFAB | General | Priority: Active
 
-1.82m, 95kg, 32 DOF, Protonic-HFET comms, triple voting processors, ZrB₂-SiC armor. Self-destruct at 0.8% unit cost.
+Certification status: UL listing in progress (UL 9540 for energy storage, UL 1741 for inverters, UL 1973 for batteries). FCC Part 15 Class B (unintentional radiators). IEEE 1547 (grid interconnection where applicable). NFPA 70 NEC Articles 690 (solar), 706 (storage), applicable sections. CE Mark (EU). UKCA (UK). RCM (Australia). Certification budget: $85K per product, 14-week timeline.

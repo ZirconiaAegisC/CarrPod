@@ -1,4 +1,4 @@
-# CNT-Doped Polymer Wiring VOL-04: Materials Bill of Materials
-## CSMFAB-P002-CNT-Polymer-Wiring-75 | 4-Grade Frequency-Selective Conductor | Cost: $0.85-180/m
+# P002-CNT-Polymer-Wiring VOL-04: IDENTITY & SPECS
+## CSMFAB | Residential Hardening | Priority: Active
 
-CNT-001 Residential to CNT-004 Bus Bar. MWCNT in PEEK/PEI/PPS. 60Hz AC near-copper, DC >10⁸ Ω·m.
+Bill of Materials summary: Primary material BFRP-Elium composite (BF-002 Marine Grade), CNT-doped polymers, MXene coatings, ... Subcomponent count: 5-18 depending on product complexity. All suppliers qualified to CSM-SUP-001 standard with dual-source alternatives validated. Lead times documented. MOQ minimums established for all specialty materials.

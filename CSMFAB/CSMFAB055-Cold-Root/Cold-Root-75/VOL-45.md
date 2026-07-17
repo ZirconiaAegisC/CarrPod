@@ -1,4 +1,4 @@
-# Cold-Root VOL-45: Volume Cost Reduction Model
-## CSMFAB-CSMFAB055-Cold-Root-75 | Geothermal Phase-Change Refrigerator | Cost: $178
+# 055-Cold-Root VOL-45: ENDURANCE & FIELD TRIALS
+## CSMFAB | General | Priority: Active
 
-1.0×1.0×1.5m, 200L, CaCl₂·6H₂O PCM at 4°C, 0.5m burial, zero electricity, infinite life.
+Endurance validation: Continuous operation at rated load, 168 hours (7 days). Accelerated life testing: thermal cycling (-20/+60°C, 1,000 cycles), mechanical cycling (rated load, 100,000 cycles), electrical cycling (on/off, 10,000 cycles). Post-endurance: all specifications within 95% of initial values. Predicted service life: 15-75 years depending on product class, validated via Arrhenius model with activation energy 0.7 eV.

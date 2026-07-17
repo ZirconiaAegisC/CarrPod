@@ -1,4 +1,4 @@
-# 014 Aegis HomeSafe Stove Ventilation Design VOL-17: Supplier Qualification Matrix
-## CSMFAB014 Aegis Home_ Safe Stove Ventilation Design | Carrington-hardened fabrication product | Cost: TBD
+# 014 Aegis Home  Safe Stove Ventilation Design VOL-17: QUALITY & TESTING
+## CSMFAB | Residential Hardening | Priority: Active
 
-Dense fabrication specification for 014 Aegis HomeSafe Stove Ventilation Design. Part 17 of 75-document deep fabrication package.
+Residential Hardening product specification. Section 17 of 75-document deep fabrication package. Material: BFRP-Elium composite (BF-002 Marine Grade), CNT-doped polymers, MXene coatings, ZTA ceramics, geopol. All specifications per CSM-MAT and CSM-TEST standards. Full traceability from raw material to finished assembly. ISO 9001:2015 QMS documented at every critical control point. FEATHER mesh integrated where applicable. S-Bus protocol support standard. Carr-Forge open-source documentation available.

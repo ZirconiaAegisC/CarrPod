@@ -1,4 +1,4 @@
-# 026 Aegis EmbarkVibration Mitigation Product Design VOL-05: Critical Materials Specification
-## CSMFAB026 Aegis Embark_ Vibration Mitigation Product Design | Carrington-hardened fabrication product | Cost: TBD
+# 026 Aegis Embark  Vibration Mitigation Product Design VOL-05: IDENTITY & SPECS
+## CSMFAB | Vehicle Hardening | Priority: Active
 
-Dense fabrication specification for 026 Aegis EmbarkVibration Mitigation Product Design. Part 5 of 75-document deep fabrication package.
+Critical material specifications: All components non-conductive. Faraday cage integration for EV battery compartments. Vibration damping: 40-60% reduction at 20-500Hz. EMI shielding: >60 dB SE. Weight penalty: <8% of baseline OEM component.. Testing per CSM-TEST protocol suite. Every material lot tested for: composition (XRF/XRD), particle size (laser diffraction for powders, SEM for composites), dielectric strength (ASTM D149), DC resistivity (ASTM D257), mechanical properties (ASTM per material class).

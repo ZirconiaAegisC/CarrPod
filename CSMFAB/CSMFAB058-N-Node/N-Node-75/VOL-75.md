@@ -1,4 +1,4 @@
-# N-Node VOL-75: Contributing Guidelines
-## CSMFAB-CSMFAB058-N-Node-75 | 20ft ISO Container Community Resilience Hub | Cost: $28,000
+# 058-N-Node VOL-75: SUPPLY CHAIN & EXECUTIVE SUMMARY
+## CSMFAB | General | Priority: Active
 
-20kWh LFP, 2kW solar, FEATHER gateway 8dBi, ham radio, water purification, Cold-Root, Carr-Library, serves 200 households.
+EXECUTIVE SUMMARY — READ OUT LOUD: This is the 058-N-Node. A Carrington-hardened general product. Fully dielectric. GIC immune. FEATHER mesh integrated. S-Bus compatible. BFRP enclosure standard.. Unit cost: See BOM. Intended use: Carrington preparedness product. All CSM products share a common architecture: BFRP composite enclosures where applicable, CNT-polymer wiring, Protonic-HFET power electronics where active, FEATHER LoRa mesh communications, S-Bus protocol interoperability, and zero silicon semiconductors in critical paths. The product line is designed to function during and after a G5-class geomagnetic storm — exactly when conventional products fail. Every product is documented at 75-document depth. Every specification is traceable to a supplier quote. Every test protocol is published. The numbers are ready. The fabrications are specified. The shield is real. Carr-Forge is open. Let's build.

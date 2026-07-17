@@ -1,4 +1,4 @@
-# Faraday Alarm GIC Detection Sensor VOL-25: GIC Immunity Test
-## CSMFAB-P007-Faraday-Alarm-75 | MEMS Magnetometer + Rogowski Coil | Cost: $340 Home / $1,850 Industrial
+# P007-Faraday-Alarm VOL-25: CERTIFICATION & COMPLIANCE
+## CSMFAB | General | Priority: Active
 
-Clamp-on Rogowski, MEMS 3-axis, progressive alarm 5A/50A/100A, FEATHER mesh. Every panel needs one.
+Certification status: UL listing in progress (UL 9540 for energy storage, UL 1741 for inverters, UL 1973 for batteries). FCC Part 15 Class B (unintentional radiators). IEEE 1547 (grid interconnection where applicable). NFPA 70 NEC Articles 690 (solar), 706 (storage), applicable sections. CE Mark (EU). UKCA (UK). RCM (Australia). Certification budget: $85K per product, 14-week timeline.

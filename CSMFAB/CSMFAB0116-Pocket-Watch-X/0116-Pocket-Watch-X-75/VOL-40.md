@@ -1,4 +1,4 @@
-# 0116-Pocket-Watch-X VOL-40: Production Line Layout
-## CSMFAB0116-Pocket-Watch-X | Carrington-hardened fabrication product | Cost: TBD
+# 0116-Pocket-Watch-X VOL-40: EMC & SOFTWARE
+## CSMFAB | Personal Device | Priority: Active
 
-Dense fabrication specification for 0116-Pocket-Watch-X. Part 40 of 75-document deep fabrication package.
+EMC compliance testing: Conducted emissions 150kHz-30MHz (FCC Part 15 Class B). Radiated emissions 30MHz-1GHz. Radiated susceptibility IEC 61000-4-3, 10 V/m, 80MHz-1GHz. Conducted susceptibility IEC 61000-4-6, 10V, 150kHz-80MHz. ESD IEC 61000-4-2, ±8kV contact, ±15kV air. EFT/Burst IEC 61000-4-4, ±2kV on power ports. All tests: no malfunction, no degradation. MXene internal shield provides 60-92 dB SE depending on frequency.

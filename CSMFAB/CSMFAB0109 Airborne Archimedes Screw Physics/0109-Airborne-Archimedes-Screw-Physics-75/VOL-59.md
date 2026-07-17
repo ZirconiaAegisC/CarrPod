@@ -1,4 +1,4 @@
-# 0109 Airborne Archimedes Screw Physics VOL-59: Supply Chain Map
-## CSMFAB0109 Airborne Archimedes Screw Physics | Carrington-hardened fabrication product | Cost: TBD
+# 0109 Airborne Archimedes Screw Physics VOL-59: COST & BOM
+## CSMFAB | Unmanned Aerial Systems | Priority: Active
 
-Dense fabrication specification for 0109 Airborne Archimedes Screw Physics. Part 59 of 75-document deep fabrication package.
+Unmanned Aerial Systems product specification. Section 59 of 75-document deep fabrication package. Material: BFRP airframe, CNT-polymer wiring, Protonic-HFET avionics, Archimedes screw propulsion (variable pit. All specifications per CSM-MAT and CSM-TEST standards. Full traceability from raw material to finished assembly. ISO 9001:2015 QMS documented at every critical control point. FEATHER mesh integrated where applicable. S-Bus protocol support standard. Carr-Forge open-source documentation available.

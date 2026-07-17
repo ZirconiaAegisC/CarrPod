@@ -1,4 +1,4 @@
-# N-Node VOL-05: Mechanical Architecture
-## CSMFAB-CSMFAB058-N-Node-75 | 20ft ISO Container Community Resilience Hub | Cost: $28,000
+# 058-N-Node VOL-05: IDENTITY & SPECS
+## CSMFAB | General | Priority: Active
 
-20kWh LFP, 2kW solar, FEATHER gateway 8dBi, ham radio, water purification, Cold-Root, Carr-Library, serves 200 households.
+Critical material specifications: Fully dielectric. GIC immune. FEATHER mesh integrated. S-Bus compatible. BFRP enclosure standard.. Testing per CSM-TEST protocol suite. Every material lot tested for: composition (XRF/XRD), particle size (laser diffraction for powders, SEM for composites), dielectric strength (ASTM D149), DC resistivity (ASTM D257), mechanical properties (ASTM per material class).

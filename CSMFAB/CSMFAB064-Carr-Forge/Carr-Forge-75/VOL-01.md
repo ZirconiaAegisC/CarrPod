@@ -1,4 +1,4 @@
-# Carr-Forge VOL-01: Product Identity and Mission
-## CSMFAB-CSMFAB064-Carr-Forge-75 | Open-Source Fabrication Platform | Cost: $48/mo hosting
+# 064-Carr-Forge VOL-01: IDENTITY & SPECS
+## CSMFAB | General | Priority: Active
 
-Git-based, KiCad+FreeCAD, CERN-OHL-S 2.0, CC-BY-SA 4.0. CI/CD Gerber generation. CarrPod.org.
+Primary Carrington-hardened fabrication product. Category: General. All CSMFAB standards apply: dielectric construction, non-conductive throughout, GIC-immunity verified at >10⁸ Ω·m, BFRP enclosure where applicable, FEATHER LoRa mesh integration standard, S-Bus protocol support. Target deployment: 2026-2028 pilot, 2029+ scaled production.

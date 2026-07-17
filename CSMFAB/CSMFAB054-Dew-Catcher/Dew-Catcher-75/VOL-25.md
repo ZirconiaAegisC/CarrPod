@@ -1,4 +1,4 @@
-# Dew-Catcher VOL-25: GIC Immunity Test
-## CSMFAB-CSMFAB054-Dew-Catcher-75 | Solar Atmospheric Water Generator + Medication Cooler | Cost: $290
+# 054-Dew-Catcher VOL-25: CERTIFICATION & COMPLIANCE
+## CSMFAB | General | Priority: Active
 
-8.2kg backpack, 100W folding solar, Peltier condenser, 2-5L/day water, 4°C med compartment.
+Certification status: UL listing in progress (UL 9540 for energy storage, UL 1741 for inverters, UL 1973 for batteries). FCC Part 15 Class B (unintentional radiators). IEEE 1547 (grid interconnection where applicable). NFPA 70 NEC Articles 690 (solar), 706 (storage), applicable sections. CE Mark (EU). UKCA (UK). RCM (Australia). Certification budget: $85K per product, 14-week timeline.

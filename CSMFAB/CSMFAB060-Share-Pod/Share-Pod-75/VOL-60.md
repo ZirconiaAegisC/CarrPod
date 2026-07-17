@@ -1,4 +1,4 @@
-# Share-Pod VOL-60: Inventory Strategy
-## CSMFAB-CSMFAB060-Share-Pod-75 | 1kWh Portable Battery for Neighbor Sharing | Cost: $195
+# 060-Share-Pod VOL-60: COST & BOM
+## CSMFAB | General | Priority: Active
 
-320×200×160mm, 8.5kg, 2 AC + 4 USB, FEATHER+S-Bus, charge from Grid-Seed 2.5hr. The CarrPod for your neighbor.
+Total unit cost breakdown: Raw materials 30-40%, direct labor 15-25%, manufacturing overhead 10-15%, quality testing 5-8%, packaging 2-3%, warranty reserve 3-5%, SG&A allocation 15-20%, R&D amortization (5yr) 8-15%. Learning curve: Wright's Law 18% cost reduction per doubling of cumulative output. Target gross margin: 25-35% at pilot scale, 35-45% at volume (10K+ units/yr).

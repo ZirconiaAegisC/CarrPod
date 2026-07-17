@@ -1,4 +1,4 @@
-# Railway Signal Isolation System VOL-01: Product Identity and Mission
-## CSMFAB-P005-Railway-Signal-Isolation-75 | ZTA Rail Joints + CNT Blockers | Cost: $28,000/mile
+# P005-Railway-Signal-Isolation VOL-01: IDENTITY & SPECS
+## CSMFAB | Civil Infrastructure | Priority: Active
 
-500m intervals, ZTA ceramic inserts, CNT-002 signal blockers, CarrPod backup. 2,000 track-mile priority deployment.
+Primary Carrington-hardened fabrication product. Category: Civil Infrastructure. All CSMFAB standards apply: dielectric construction, non-conductive throughout, GIC-immunity verified at >10⁸ Ω·m, BFRP enclosure where applicable, FEATHER LoRa mesh integration standard, S-Bus protocol support. Target deployment: 2026-2028 pilot, 2029+ scaled production.

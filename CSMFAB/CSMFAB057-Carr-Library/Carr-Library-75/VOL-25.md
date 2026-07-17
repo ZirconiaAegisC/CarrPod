@@ -1,4 +1,4 @@
-# Carr-Library VOL-25: GIC Immunity Test
-## CSMFAB-CSMFAB057-Carr-Library-75 | Offline Solar Survival Knowledge Tablet | Cost: $118
+# 057-Carr-Library VOL-25: CERTIFICATION & COMPLIANCE
+## CSMFAB | General | Priority: Active
 
-7.8" e-ink, 100K page turns, 32GB, 5W solar, FEATHER mesh, IP67, 420g. No browser, no apps.
+Certification status: UL listing in progress (UL 9540 for energy storage, UL 1741 for inverters, UL 1973 for batteries). FCC Part 15 Class B (unintentional radiators). IEEE 1547 (grid interconnection where applicable). NFPA 70 NEC Articles 690 (solar), 706 (storage), applicable sections. CE Mark (EU). UKCA (UK). RCM (Australia). Certification budget: $85K per product, 14-week timeline.

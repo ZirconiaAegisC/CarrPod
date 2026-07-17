@@ -1,4 +1,4 @@
-# Cold-Root VOL-65: Continuous Improvement Process
-## CSMFAB-CSMFAB055-Cold-Root-75 | Geothermal Phase-Change Refrigerator | Cost: $178
+# 055-Cold-Root VOL-65: PRICING & REVENUE
+## CSMFAB | General | Priority: Active
 
-1.0×1.0×1.5m, 200L, CaCl₂·6H₂O PCM at 4°C, 0.5m burial, zero electricity, infinite life.
+Revenue projection (5-year): Year 1 (pilot, 50-500 units): $0.5-2M. Year 2 (2,000-5,000 units): $4-12M. Year 3 (5,000-15,000 units): $10-35M. Year 4 (12,000-50,000 units): $25-100M. Year 5 (25,000-100,000 units): $50-200M. Revenue range depends on product class: consumer ($50-500 MSRP), commercial ($2,000-50,000), infrastructure ($10,000-500,000).

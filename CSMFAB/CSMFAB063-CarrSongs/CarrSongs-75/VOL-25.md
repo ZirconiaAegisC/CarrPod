@@ -1,4 +1,4 @@
-# CarrSongs VOL-25: GIC Immunity Test
-## CSMFAB-CSMFAB063-CarrSongs-75 | 14 Community Morale & Educational Songs | Cost: Free
+# 063-CarrSongs VOL-25: CERTIFICATION & COMPLIANCE
+## CSMFAB | General | Priority: Active
 
-CC-BY-SA 4.0, call-and-response, MP3+sheet music+karaoke. Pre-loaded on all CSM devices. Community morale product.
+Certification status: UL listing in progress (UL 9540 for energy storage, UL 1741 for inverters, UL 1973 for batteries). FCC Part 15 Class B (unintentional radiators). IEEE 1547 (grid interconnection where applicable). NFPA 70 NEC Articles 690 (solar), 706 (storage), applicable sections. CE Mark (EU). UKCA (UK). RCM (Australia). Certification budget: $85K per product, 14-week timeline.

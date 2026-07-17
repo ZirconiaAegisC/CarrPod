@@ -1,4 +1,4 @@
-# 0105 Carrington Event Engine Resilience Proposal VOL-03: Architecture and Topology
-## CSMFAB0105 Carrington Event Engine Resilience Proposal | Carrington-hardened fabrication product | Cost: TBD
+# 0105 Carrington Event Engine Resilience Proposal VOL-03: IDENTITY & SPECS
+## CSMFAB | General | Priority: Active
 
-Dense fabrication specification for 0105 Carrington Event Engine Resilience Proposal. Part 3 of 75-document deep fabrication package.
+System architecture: Fully dielectric. GIC immune. FEATHER mesh integrated. S-Bus compatible. BFRP enclosure standard.. Power path (if applicable): CNT-polymer conductors throughout, Protonic-HFET charge control, MRF contactors for switching, LFP battery storage. All signal paths: FEATHER LoRa + S-Bus protocol. No silicon semiconductors in critical paths — GaN or Protonic-HFET exclusively.

@@ -1,4 +1,4 @@
-# Transformer Neutral GIC Blocker 250kV VOL-60: Inventory Strategy
-## CSMFAB-P003-Transformer-GIC-Blocker-75 | CNT-Polymer Solid-State GIC Diverter | Cost: $185,000
+# P003-Transformer-GIC-Blocker VOL-60: COST & BOM
+## CSMFAB | Civil Infrastructure | Priority: Active
 
-250kV, 400A 60Hz, 40kA fault, 20kV DC blocking. CNT-PPS core 200mm. BFRP+MXene enclosure.
+Total unit cost breakdown: Raw materials 30-40%, direct labor 15-25%, manufacturing overhead 10-15%, quality testing 5-8%, packaging 2-3%, warranty reserve 3-5%, SG&A allocation 15-20%, R&D amortization (5yr) 8-15%. Learning curve: Wright's Law 18% cost reduction per doubling of cumulative output. Target gross margin: 25-35% at pilot scale, 35-45% at volume (10K+ units/yr).

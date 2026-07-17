@@ -1,4 +1,4 @@
-# 011 Aegis Home Carrington Storm Protection Fabrication VOL-55: NFPA/NEC Code Compliance
-## CSMFAB011 Aegis Home Carrington Storm Protection Fabrication  | Carrington-hardened fabrication product | Cost: TBD
+# 011 Aegis Home Carrington Storm Protection Fabrication VOL-55: HOMEOWNER & COMMISSIONING
+## CSMFAB | Residential Hardening | Priority: Active
 
-Dense fabrication specification for 011 Aegis Home Carrington Storm Protection Fabrication. Part 55 of 75-document deep fabrication package.
+User operation: No routine user action required for passive products (bearings, joints, insulators). For active products: FEATHER mesh provides remote status monitoring via Carr-Library, Pocket Watch X, or S-Bus dashboard. Local status: e-ink display or LED indicator. Troubleshooting: error codes displayed, reference card provided, FEATHER mesh support messaging available 24/7. Emergency: 911 for life-threatening situations, CSM support for product issues via FEATHER message relay.

@@ -1,4 +1,4 @@
-# Railway Signal Isolation System VOL-60: Inventory Strategy
-## CSMFAB-P005-Railway-Signal-Isolation-75 | ZTA Rail Joints + CNT Blockers | Cost: $28,000/mile
+# P005-Railway-Signal-Isolation VOL-60: COST & BOM
+## CSMFAB | Civil Infrastructure | Priority: Active
 
-500m intervals, ZTA ceramic inserts, CNT-002 signal blockers, CarrPod backup. 2,000 track-mile priority deployment.
+Total unit cost breakdown: Raw materials 30-40%, direct labor 15-25%, manufacturing overhead 10-15%, quality testing 5-8%, packaging 2-3%, warranty reserve 3-5%, SG&A allocation 15-20%, R&D amortization (5yr) 8-15%. Learning curve: Wright's Law 18% cost reduction per doubling of cumulative output. Target gross margin: 25-35% at pilot scale, 35-45% at volume (10K+ units/yr).

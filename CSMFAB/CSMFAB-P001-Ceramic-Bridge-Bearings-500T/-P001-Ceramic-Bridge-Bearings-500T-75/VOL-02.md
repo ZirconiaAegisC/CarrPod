@@ -1,4 +1,4 @@
-# -P001-Ceramic-Bridge-Bearings-500T VOL-02: Design Specification Overview
-## CSMFAB-P001-Ceramic-Bridge-Bearings-500T | Carrington-hardened fabrication product | Cost: TBD
+# P001-Ceramic-Bridge-Bearings-500T VOL-02: IDENTITY & SPECS
+## CSMFAB | Residential Hardening | Priority: Active
 
-Dense fabrication specification for -P001-Ceramic-Bridge-Bearings-500T. Part 2 of 75-document deep fabrication package.
+Material composition: BFRP-Elium composite (BF-002 Marine Grade), CNT-doped polymers, MXene coatings, ZTA ceramics, geopolymer concrete. Manufacturing method: flash sintering (ceramics), VARTM (BFRP composites), twin-screw extrusion (CNT polymers), or geopolymer casting per product line. All processes validated to CSM-MAT standards with ISO 9001:2015 QMS documentation.

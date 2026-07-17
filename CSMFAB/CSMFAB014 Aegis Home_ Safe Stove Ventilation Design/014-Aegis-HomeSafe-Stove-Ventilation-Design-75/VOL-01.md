@@ -1,4 +1,4 @@
-# 014 Aegis HomeSafe Stove Ventilation Design VOL-01: Product Identity and Mission
-## CSMFAB014 Aegis Home_ Safe Stove Ventilation Design | Carrington-hardened fabrication product | Cost: TBD
+# 014 Aegis Home  Safe Stove Ventilation Design VOL-01: IDENTITY & SPECS
+## CSMFAB | Residential Hardening | Priority: Active
 
-Dense fabrication specification for 014 Aegis HomeSafe Stove Ventilation Design. Part 1 of 75-document deep fabrication package.
+Primary Carrington-hardened fabrication product. Category: Residential Hardening. All CSMFAB standards apply: dielectric construction, non-conductive throughout, GIC-immunity verified at >10⁸ Ω·m, BFRP enclosure where applicable, FEATHER LoRa mesh integration standard, S-Bus protocol support. Target deployment: 2026-2028 pilot, 2029+ scaled production.

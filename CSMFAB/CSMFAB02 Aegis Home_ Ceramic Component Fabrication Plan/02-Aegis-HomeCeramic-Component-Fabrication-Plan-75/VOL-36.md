@@ -1,4 +1,4 @@
-# 02 Aegis HomeCeramic Component Fabrication Plan VOL-36: FEATHER Mesh Integration
-## CSMFAB02 Aegis Home_ Ceramic Component Fabrication Plan | Carrington-hardened fabrication product | Cost: TBD
+# 02 Aegis Home  Ceramic Component Fabrication Plan VOL-36: EMC & SOFTWARE
+## CSMFAB | Ceramics | Priority: Active
 
-Dense fabrication specification for 02 Aegis HomeCeramic Component Fabrication Plan. Part 36 of 75-document deep fabrication package.
+Ceramics product specification. Section 36 of 75-document deep fabrication package. Material: ZTA (Zirconia-Toughened Alumina): 72% ZrO₂ (3Y-TZP, 40nm, Tosoh), 27% Al₂O₃ (AKP-53, 100nm, Sumitomo. All specifications per CSM-MAT and CSM-TEST standards. Full traceability from raw material to finished assembly. ISO 9001:2015 QMS documented at every critical control point. FEATHER mesh integrated where applicable. S-Bus protocol support standard. Carr-Forge open-source documentation available.

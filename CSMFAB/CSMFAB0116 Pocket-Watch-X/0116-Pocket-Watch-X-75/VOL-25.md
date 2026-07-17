@@ -1,4 +1,4 @@
-# 0116 Pocket-Watch-X VOL-25: EMC/EMI Test Protocol
-## CSMFAB0116 Pocket-Watch-X | Carrington-hardened fabrication product | Cost: TBD
+# 0116 Pocket-Watch-X VOL-25: CERTIFICATION & COMPLIANCE
+## CSMFAB | Personal Device | Priority: Active
 
-Dense fabrication specification for 0116 Pocket-Watch-X. Part 25 of 75-document deep fabrication package.
+Certification status: UL listing in progress (UL 9540 for energy storage, UL 1741 for inverters, UL 1973 for batteries). FCC Part 15 Class B (unintentional radiators). IEEE 1547 (grid interconnection where applicable). NFPA 70 NEC Articles 690 (solar), 706 (storage), applicable sections. CE Mark (EU). UKCA (UK). RCM (Australia). Certification budget: $85K per product, 14-week timeline.

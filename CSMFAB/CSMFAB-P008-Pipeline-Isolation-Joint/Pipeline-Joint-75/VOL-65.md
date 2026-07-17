@@ -1,4 +1,4 @@
-# Pipeline Isolation Joint Class 600 VOL-65: Continuous Improvement Process
-## CSMFAB-P008-Pipeline-Isolation-Joint-75 | Si₃N₄ Ceramic 24" Dielectric Joint | Cost: $12,500
+# P008-Pipeline-Isolation-Joint VOL-65: PRICING & REVENUE
+## CSMFAB | Residential Hardening | Priority: Active
 
-610mm OD, 10.2 MPa, 32× M36 BFRP bolts, PTFE gasket. Breaks telluric current every 50km.
+Revenue projection (5-year): Year 1 (pilot, 50-500 units): $0.5-2M. Year 2 (2,000-5,000 units): $4-12M. Year 3 (5,000-15,000 units): $10-35M. Year 4 (12,000-50,000 units): $25-100M. Year 5 (25,000-100,000 units): $50-200M. Revenue range depends on product class: consumer ($50-500 MSRP), commercial ($2,000-50,000), infrastructure ($10,000-500,000).

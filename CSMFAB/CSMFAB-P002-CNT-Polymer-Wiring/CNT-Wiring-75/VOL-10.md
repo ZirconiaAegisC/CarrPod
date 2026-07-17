@@ -1,4 +1,4 @@
-# CNT-Doped Polymer Wiring VOL-10: Critical Manufacturing Step 1
-## CSMFAB-P002-CNT-Polymer-Wiring-75 | 4-Grade Frequency-Selective Conductor | Cost: $0.85-180/m
+# P002-CNT-Polymer-Wiring VOL-10: SUBCOMPONENTS
+## CSMFAB | Residential Hardening | Priority: Active
 
-CNT-001 Residential to CNT-004 Bus Bar. MWCNT in PEEK/PEI/PPS. 60Hz AC near-copper, DC >10⁸ Ω·m.
+Subcomponent detail: Each subcomponent fabricated to CSM-MAT standards with full traceability from raw material lot to finished assembly. Serial number tracking implemented per ISO 9001. Critical dimensions verified via CMM (±0.05mm for ceramics, ±0.5mm for composites). Surface finish: Ra <0.2μm for ceramic bearing surfaces, Ra <3.2μm for composite enclosures.

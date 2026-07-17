@@ -1,4 +1,4 @@
-# 026 Aegis EmbarkVibration Mitigation Product Design VOL-02: Design Specification Overview
-## CSMFAB026 Aegis Embark_ Vibration Mitigation Product Design | Carrington-hardened fabrication product | Cost: TBD
+# 026 Aegis Embark  Vibration Mitigation Product Design VOL-02: IDENTITY & SPECS
+## CSMFAB | Vehicle Hardening | Priority: Active
 
-Dense fabrication specification for 026 Aegis EmbarkVibration Mitigation Product Design. Part 2 of 75-document deep fabrication package.
+Material composition: BFRP composites, STF (shear thickening fluid), MRF (magnetorheological fluid), CLD (constrained layer damping), LRAM (layered acoustic metamaterial), aerogel, MXene films, Stellar-Chrome coatings. Manufacturing method: flash sintering (ceramics), VARTM (BFRP composites), twin-screw extrusion (CNT polymers), or geopolymer casting per product line. All processes validated to CSM-MAT standards with ISO 9001:2015 QMS documentation.

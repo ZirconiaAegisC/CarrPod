@@ -1,4 +1,4 @@
-# Phantom MK-1 Aegis-Hardened Robot VOL-65: Continuous Improvement Process
-## CSMFAB-P006-Phantom-MK1-Robot-75 | 32 DOF Humanoid Inspection Robot | Cost: $185,000
+# P006-Phantom-MK1-Robot VOL-65: PRICING & REVENUE
+## CSMFAB | General | Priority: Active
 
-1.82m, 95kg, 32 DOF, Protonic-HFET comms, triple voting processors, ZrB₂-SiC armor. Self-destruct at 0.8% unit cost.
+Revenue projection (5-year): Year 1 (pilot, 50-500 units): $0.5-2M. Year 2 (2,000-5,000 units): $4-12M. Year 3 (5,000-15,000 units): $10-35M. Year 4 (12,000-50,000 units): $25-100M. Year 5 (25,000-100,000 units): $50-200M. Revenue range depends on product class: consumer ($50-500 MSRP), commercial ($2,000-50,000), infrastructure ($10,000-500,000).

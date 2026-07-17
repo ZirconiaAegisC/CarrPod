@@ -1,4 +1,4 @@
-# 0200 DRONE-X VOL-08: Subcomponent C Detail
-## CSMFAB0200 DRONE-X  | Carrington-hardened fabrication product | Cost: TBD
+# 0200 DRONE-X VOL-08: SUBCOMPONENTS
+## CSMFAB | Unmanned Aerial Systems | Priority: Active
 
-Dense fabrication specification for 0200 DRONE-X. Part 8 of 75-document deep fabrication package.
+Unmanned Aerial Systems product specification. Section 8 of 75-document deep fabrication package. Material: BFRP airframe, CNT-polymer wiring, Protonic-HFET avionics, Archimedes screw propulsion (variable pit. All specifications per CSM-MAT and CSM-TEST standards. Full traceability from raw material to finished assembly. ISO 9001:2015 QMS documented at every critical control point. FEATHER mesh integrated where applicable. S-Bus protocol support standard. Carr-Forge open-source documentation available.

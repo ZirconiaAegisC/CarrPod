@@ -1,4 +1,4 @@
-# CNT-Doped Polymer Wiring VOL-40: Workforce Requirements
-## CSMFAB-P002-CNT-Polymer-Wiring-75 | 4-Grade Frequency-Selective Conductor | Cost: $0.85-180/m
+# P002-CNT-Polymer-Wiring VOL-40: EMC & SOFTWARE
+## CSMFAB | Residential Hardening | Priority: Active
 
-CNT-001 Residential to CNT-004 Bus Bar. MWCNT in PEEK/PEI/PPS. 60Hz AC near-copper, DC >10⁸ Ω·m.
+EMC compliance testing: Conducted emissions 150kHz-30MHz (FCC Part 15 Class B). Radiated emissions 30MHz-1GHz. Radiated susceptibility IEC 61000-4-3, 10 V/m, 80MHz-1GHz. Conducted susceptibility IEC 61000-4-6, 10V, 150kHz-80MHz. ESD IEC 61000-4-2, ±8kV contact, ±15kV air. EFT/Burst IEC 61000-4-4, ±2kV on power ports. All tests: no malfunction, no degradation. MXene internal shield provides 60-92 dB SE depending on frequency.

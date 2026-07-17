@@ -1,4 +1,4 @@
-# Substation Dielectric Ground-Grid VOL-02: Design Specification Summary
-## CSMFAB-P004-Substation-Ground-Grid-75 | Per-Acre EM Hardening Retrofit | Cost: $340,000/acre
+# P004-Substation-Ground-Grid VOL-02: IDENTITY & SPECS
+## CSMFAB | Civil Infrastructure | Priority: Active
 
-Geopolymer 150mm, 4× CNT-003 rods, 8 FEATHER nodes, ZTA pads. 19:1 ROI vs transformer replacement.
+Material composition: Geopolymer concrete (85 MPa), BFRP rebar, ZTA ceramic bearings, CNT-polymer ground rods, Si₃N₄ pipeline joints, ZTA rail insulators. Manufacturing method: flash sintering (ceramics), VARTM (BFRP composites), twin-screw extrusion (CNT polymers), or geopolymer casting per product line. All processes validated to CSM-MAT standards with ISO 9001:2015 QMS documentation.

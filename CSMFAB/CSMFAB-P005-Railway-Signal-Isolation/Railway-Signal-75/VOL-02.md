@@ -1,4 +1,4 @@
-# Railway Signal Isolation System VOL-02: Design Specification Summary
-## CSMFAB-P005-Railway-Signal-Isolation-75 | ZTA Rail Joints + CNT Blockers | Cost: $28,000/mile
+# P005-Railway-Signal-Isolation VOL-02: IDENTITY & SPECS
+## CSMFAB | Civil Infrastructure | Priority: Active
 
-500m intervals, ZTA ceramic inserts, CNT-002 signal blockers, CarrPod backup. 2,000 track-mile priority deployment.
+Material composition: Geopolymer concrete (85 MPa), BFRP rebar, ZTA ceramic bearings, CNT-polymer ground rods, Si₃N₄ pipeline joints, ZTA rail insulators. Manufacturing method: flash sintering (ceramics), VARTM (BFRP composites), twin-screw extrusion (CNT polymers), or geopolymer casting per product line. All processes validated to CSM-MAT standards with ISO 9001:2015 QMS documentation.

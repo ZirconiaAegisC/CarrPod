@@ -1,4 +1,4 @@
-# 02 Aegis HomeCeramic Component Fabrication Plan VOL-03: Architecture and Topology
-## CSMFAB02 Aegis Home_ Ceramic Component Fabrication Plan | Carrington-hardened fabrication product | Cost: TBD
+# 02 Aegis Home  Ceramic Component Fabrication Plan VOL-03: IDENTITY & SPECS
+## CSMFAB | Ceramics | Priority: Active
 
-Dense fabrication specification for 02 Aegis HomeCeramic Component Fabrication Plan. Part 3 of 75-document deep fabrication package.
+System architecture: Flash sintered at 120V/cm DC, 850°C, <5sec flash. Density >99.5% TD. Vickers 1,450 HV10. Flexural 1,100 MPa. Fracture toughness 12 MPa·m½. DC resistivity >10⁸ Ω·m. Dielectric 42 kV/mm. Non-magnetic.. Power path (if applicable): CNT-polymer conductors throughout, Protonic-HFET charge control, MRF contactors for switching, LFP battery storage. All signal paths: FEATHER LoRa + S-Bus protocol. No silicon semiconductors in critical paths — GaN or Protonic-HFET exclusively.

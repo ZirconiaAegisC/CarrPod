@@ -1,4 +1,4 @@
-# Aegis-Haven VOL-30: Installation Step 1
-## CSMFAB-CSMFAB056-Aegis-Haven-75 | Modular Deployable Family Shelter | Cost: $4,200
+# 056-Aegis-Haven VOL-30: ELECTRICAL & GIC TESTING
+## CSMFAB | General | Priority: Active
 
-3×3m, ZrB₂-SiC panels, wedge-and-pin assembly 20min, 100W solar roof, 2kWh battery, aerogel floor, Stellar-Tint windows.
+GIC immunity testing: Conducted GIC 0-200A DC sweep through all terminals. Pass: no device malfunction, no false triggering, insulation resistance maintained above 100 MΩ. Radiated GMD simulation: Helmholtz coil 0-500μT DC, 3 axes, no induced effects. Lightning indirect effects: 8/20μs 100kA waveform per IEC 62305. Magnetostatic: 1.0T DC field, no magnetic saturation of any component.

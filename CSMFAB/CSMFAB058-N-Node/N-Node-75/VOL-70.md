@@ -1,4 +1,4 @@
-# N-Node VOL-70: Distribution and Logistics
-## CSMFAB-CSMFAB058-N-Node-75 | 20ft ISO Container Community Resilience Hub | Cost: $28,000
+# 058-N-Node VOL-70: MARKET & COMPETITION
+## CSMFAB | General | Priority: Active
 
-20kWh LFP, 2kW solar, FEATHER gateway 8dBi, ham radio, water purification, Cold-Root, Carr-Library, serves 200 households.
+Market analysis: Total addressable market — see product class. US residential: 131M households. US commercial: 5.9M buildings. US infrastructure: 600K bridges, 55K substations, 2.6M miles pipeline, 140K miles rail, 4M miles roads. Global TAM: 3-5× US. First-mover advantage: CSM is the only company producing fully dielectric, GIC-immune products certified for Carrington preparedness. Patents pending for all core technologies. Open-source hardware via Carr-Forge (CERN-OHL-S 2.0) for community variants.

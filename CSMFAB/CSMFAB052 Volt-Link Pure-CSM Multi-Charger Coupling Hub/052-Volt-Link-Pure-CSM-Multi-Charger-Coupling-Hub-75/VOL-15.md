@@ -1,4 +1,4 @@
-# 052 Volt-Link Pure-CSM Multi-Charger Coupling Hub VOL-15: CCP-02: In-Process
-## CSMFAB052 Volt-Link Pure-CSM Multi-Charger Coupling Hub | Carrington-hardened fabrication product | Cost: TBD
+# 052 Volt-Link Pure-CSM Multi-Charger Coupling Hub VOL-15: MANUFACTURING
+## CSMFAB | Power Distribution | Priority: Active
 
-Dense fabrication specification for 052 Volt-Link Pure-CSM Multi-Charger Coupling Hub. Part 15 of 75-document deep fabrication package.
+Manufacturing process: BFRP enclosure, MRF-140CG contactors, Protonic-HFET load bal... Batch size 25-100 units per production run. Cycle time 4-8 hours per unit depending on complexity. In-process inspection at 5 critical control points. Statistical process control: Cpk >1.33 required for all critical dimensions. Out-of-spec: root cause analysis within 24 hours, corrective action within 72 hours.

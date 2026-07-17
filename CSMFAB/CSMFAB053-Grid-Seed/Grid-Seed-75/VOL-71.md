@@ -1,4 +1,4 @@
-# Grid-Seed VOL-71: Total Addressable Market
-## CSMFAB053-75 | Home Microgrid
+# 053-Grid-Seed VOL-71: SUPPLY CHAIN & EXECUTIVE SUMMARY
+## CSMFAB | General | Priority: Active
 
-131M US households. 82M single-family. 4.5M with critical medical equipment. 32M hurricane-prone. 12M CA wildfire PSPS. 4M with solar. Conservative TAM: 20M households × $2,400 = $48B.
+General product specification. Section 71 of 75-document deep fabrication package. Material: CSM-spec advanced composites and ceramics. All specifications per CSM-MAT and CSM-TEST standards. Full traceability from raw material to finished assembly. ISO 9001:2015 QMS documented at every critical control point. FEATHER mesh integrated where applicable. S-Bus protocol support standard. Carr-Forge open-source documentation available.

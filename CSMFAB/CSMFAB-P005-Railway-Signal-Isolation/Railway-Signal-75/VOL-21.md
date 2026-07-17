@@ -1,4 +1,4 @@
-# Railway Signal Isolation System VOL-21: Performance Test Protocol
-## CSMFAB-P005-Railway-Signal-Isolation-75 | ZTA Rail Joints + CNT Blockers | Cost: $28,000/mile
+# P005-Railway-Signal-Isolation VOL-21: CERTIFICATION & COMPLIANCE
+## CSMFAB | Civil Infrastructure | Priority: Active
 
-500m intervals, ZTA ceramic inserts, CNT-002 signal blockers, CarrPod backup. 2,000 track-mile priority deployment.
+Civil Infrastructure product specification. Section 21 of 75-document deep fabrication package. Material: Geopolymer concrete (85 MPa), BFRP rebar, ZTA ceramic bearings, CNT-polymer ground rods, Si₃N₄ pipel. All specifications per CSM-MAT and CSM-TEST standards. Full traceability from raw material to finished assembly. ISO 9001:2015 QMS documented at every critical control point. FEATHER mesh integrated where applicable. S-Bus protocol support standard. Carr-Forge open-source documentation available.

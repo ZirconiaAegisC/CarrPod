@@ -1,4 +1,4 @@
-# 0105 Carrington Event Engine Resilience Proposal VOL-15: CCP-02: In-Process
-## CSMFAB0105 Carrington Event Engine Resilience Proposal | Carrington-hardened fabrication product | Cost: TBD
+# 0105 Carrington Event Engine Resilience Proposal VOL-15: MANUFACTURING
+## CSMFAB | General | Priority: Active
 
-Dense fabrication specification for 0105 Carrington Event Engine Resilience Proposal. Part 15 of 75-document deep fabrication package.
+Manufacturing process: CSM-spec advanced composites and ceramics... Batch size 25-100 units per production run. Cycle time 4-8 hours per unit depending on complexity. In-process inspection at 5 critical control points. Statistical process control: Cpk >1.33 required for all critical dimensions. Out-of-spec: root cause analysis within 24 hours, corrective action within 72 hours.

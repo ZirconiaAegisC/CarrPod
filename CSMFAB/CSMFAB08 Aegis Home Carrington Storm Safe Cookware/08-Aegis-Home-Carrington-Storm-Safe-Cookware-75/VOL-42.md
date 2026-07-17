@@ -1,4 +1,4 @@
-# 08 Aegis Home Carrington Storm Safe Cookware VOL-42: BOM Cost Breakdown
-## CSMFAB08 Aegis Home Carrington Storm Safe Cookware | Carrington-hardened fabrication product | Cost: TBD
+# 08 Aegis Home Carrington Storm Safe Cookware VOL-42: ENDURANCE & FIELD TRIALS
+## CSMFAB | Residential Hardening | Priority: Active
 
-Dense fabrication specification for 08 Aegis Home Carrington Storm Safe Cookware. Part 42 of 75-document deep fabrication package.
+Residential Hardening product specification. Section 42 of 75-document deep fabrication package. Material: BFRP-Elium composite (BF-002 Marine Grade), CNT-doped polymers, MXene coatings, ZTA ceramics, geopol. All specifications per CSM-MAT and CSM-TEST standards. Full traceability from raw material to finished assembly. ISO 9001:2015 QMS documented at every critical control point. FEATHER mesh integrated where applicable. S-Bus protocol support standard. Carr-Forge open-source documentation available.

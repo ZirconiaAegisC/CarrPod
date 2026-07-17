@@ -1,4 +1,4 @@
-# Railway Signal Isolation System VOL-05: Mechanical Architecture
-## CSMFAB-P005-Railway-Signal-Isolation-75 | ZTA Rail Joints + CNT Blockers | Cost: $28,000/mile
+# P005-Railway-Signal-Isolation VOL-05: IDENTITY & SPECS
+## CSMFAB | Civil Infrastructure | Priority: Active
 
-500m intervals, ZTA ceramic inserts, CNT-002 signal blockers, CarrPod backup. 2,000 track-mile priority deployment.
+Critical material specifications: All components dielectric with GIC blocking >10⁸ Ω·m. Designed for 75-year service life with zero maintenance. Seismic rated to 0.5g. Thermal range -40°C to +85°C.. Testing per CSM-TEST protocol suite. Every material lot tested for: composition (XRF/XRD), particle size (laser diffraction for powders, SEM for composites), dielectric strength (ASTM D149), DC resistivity (ASTM D257), mechanical properties (ASTM per material class).

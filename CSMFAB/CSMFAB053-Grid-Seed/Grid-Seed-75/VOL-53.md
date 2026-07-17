@@ -1,4 +1,4 @@
-# Grid-Seed VOL-53: Solar Integration: Existing PV
-## CSMFAB053-75 | Home Microgrid
+# 053-Grid-Seed VOL-53: HOMEOWNER & COMMISSIONING
+## CSMFAB | General | Priority: Active
 
-Reroute solar AC from main panel to Grid-Seed solar input. Protonic-HFET MPPT handles AC-coupled solar. Priority: battery charge → loads → grid export (if permitted).
+General product specification. Section 53 of 75-document deep fabrication package. Material: CSM-spec advanced composites and ceramics. All specifications per CSM-MAT and CSM-TEST standards. Full traceability from raw material to finished assembly. ISO 9001:2015 QMS documented at every critical control point. FEATHER mesh integrated where applicable. S-Bus protocol support standard. Carr-Forge open-source documentation available.

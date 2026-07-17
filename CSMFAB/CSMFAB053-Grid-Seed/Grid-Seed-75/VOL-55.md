@@ -1,4 +1,4 @@
-# Grid-Seed VOL-55: Commissioning Checklist
-## CSMFAB053-75 | Home Microgrid
+# 053-Grid-Seed VOL-55: HOMEOWNER & COMMISSIONING
+## CSMFAB | General | Priority: Active
 
-1) Verify connections torque/polarity. 2) Energize: display GRID OK, BATTERY 50%. 3) Test transfer: open input breaker, measure <50ms. 4) Restore grid: verify retransfer. 5) Full load: all critical circuits on. 6) Document: photos, serial, guide delivery.
+User operation: No routine user action required for passive products (bearings, joints, insulators). For active products: FEATHER mesh provides remote status monitoring via Carr-Library, Pocket Watch X, or S-Bus dashboard. Local status: e-ink display or LED indicator. Troubleshooting: error codes displayed, reference card provided, FEATHER mesh support messaging available 24/7. Emergency: 911 for life-threatening situations, CSM support for product issues via FEATHER message relay.

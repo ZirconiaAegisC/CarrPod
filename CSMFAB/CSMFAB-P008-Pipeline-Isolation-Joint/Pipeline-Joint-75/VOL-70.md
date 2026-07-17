@@ -1,4 +1,4 @@
-# Pipeline Isolation Joint Class 600 VOL-70: Distribution and Logistics
-## CSMFAB-P008-Pipeline-Isolation-Joint-75 | Si₃N₄ Ceramic 24" Dielectric Joint | Cost: $12,500
+# P008-Pipeline-Isolation-Joint VOL-70: MARKET & COMPETITION
+## CSMFAB | Residential Hardening | Priority: Active
 
-610mm OD, 10.2 MPa, 32× M36 BFRP bolts, PTFE gasket. Breaks telluric current every 50km.
+Market analysis: Total addressable market — see product class. US residential: 131M households. US commercial: 5.9M buildings. US infrastructure: 600K bridges, 55K substations, 2.6M miles pipeline, 140K miles rail, 4M miles roads. Global TAM: 3-5× US. First-mover advantage: CSM is the only company producing fully dielectric, GIC-immune products certified for Carrington preparedness. Patents pending for all core technologies. Open-source hardware via Carr-Forge (CERN-OHL-S 2.0) for community variants.

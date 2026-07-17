@@ -1,4 +1,4 @@
-# 0103 Shipping Container Safe Pod Redesign VOL-02: Design Specification Overview
-## CSMFAB0103 Shipping Container Safe Pod Redesign | Carrington-hardened fabrication product | Cost: TBD
+# 0103 Shipping Container Safe Pod Redesign VOL-02: IDENTITY & SPECS
+## CSMFAB | Modular Infrastructure | Priority: Active
 
-Dense fabrication specification for 0103 Shipping Container Safe Pod Redesign. Part 2 of 75-document deep fabrication package.
+Material composition: 20ft ISO container with BFRP interior panels, MXene EMI lining, CNT-polymer wiring, FEATHER node, Grid-Seed battery bank, CarrPod modules. Manufacturing method: flash sintering (ceramics), VARTM (BFRP composites), twin-screw extrusion (CNT polymers), or geopolymer casting per product line. All processes validated to CSM-MAT standards with ISO 9001:2015 QMS documentation.

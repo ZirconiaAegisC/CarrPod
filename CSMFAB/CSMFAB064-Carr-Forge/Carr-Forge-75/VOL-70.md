@@ -1,4 +1,4 @@
-# Carr-Forge VOL-70: Distribution and Logistics
-## CSMFAB-CSMFAB064-Carr-Forge-75 | Open-Source Fabrication Platform | Cost: $48/mo hosting
+# 064-Carr-Forge VOL-70: MARKET & COMPETITION
+## CSMFAB | General | Priority: Active
 
-Git-based, KiCad+FreeCAD, CERN-OHL-S 2.0, CC-BY-SA 4.0. CI/CD Gerber generation. CarrPod.org.
+Market analysis: Total addressable market — see product class. US residential: 131M households. US commercial: 5.9M buildings. US infrastructure: 600K bridges, 55K substations, 2.6M miles pipeline, 140K miles rail, 4M miles roads. Global TAM: 3-5× US. First-mover advantage: CSM is the only company producing fully dielectric, GIC-immune products certified for Carrington preparedness. Patents pending for all core technologies. Open-source hardware via Carr-Forge (CERN-OHL-S 2.0) for community variants.

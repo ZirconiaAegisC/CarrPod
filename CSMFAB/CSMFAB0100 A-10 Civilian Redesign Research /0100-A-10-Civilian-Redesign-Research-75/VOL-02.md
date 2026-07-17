@@ -1,4 +1,4 @@
-# 0100 A-10 Civilian Redesign Research VOL-02: Design Specification Overview
-## CSMFAB0100 A-10 Civilian Redesign Research  | Carrington-hardened fabrication product | Cost: TBD
+# 0100 A-10 Civilian Redesign Research VOL-02: IDENTITY & SPECS
+## CSMFAB | Unmanned Aerial Systems | Priority: Active
 
-Dense fabrication specification for 0100 A-10 Civilian Redesign Research. Part 2 of 75-document deep fabrication package.
+Material composition: BFRP airframe, CNT-polymer wiring, Protonic-HFET avionics, Archimedes screw propulsion (variable pitch), LiFePO₄ battery, FEATHER telemetry. Manufacturing method: flash sintering (ceramics), VARTM (BFRP composites), twin-screw extrusion (CNT polymers), or geopolymer casting per product line. All processes validated to CSM-MAT standards with ISO 9001:2015 QMS documentation.

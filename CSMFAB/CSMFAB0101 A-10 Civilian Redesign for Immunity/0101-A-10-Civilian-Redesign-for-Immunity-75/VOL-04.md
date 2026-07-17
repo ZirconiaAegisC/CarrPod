@@ -1,4 +1,4 @@
-# 0101 A-10 Civilian Redesign for Immunity VOL-04: Bill of Materials Summary
-## CSMFAB0101 A-10 Civilian Redesign for Immunity | Carrington-hardened fabrication product | Cost: TBD
+# 0101 A-10 Civilian Redesign for Immunity VOL-04: IDENTITY & SPECS
+## CSMFAB | Unmanned Aerial Systems | Priority: Active
 
-Dense fabrication specification for 0101 A-10 Civilian Redesign for Immunity. Part 4 of 75-document deep fabrication package.
+Bill of Materials summary: Primary material BFRP airframe, CNT-polymer wiring, Protonic-HFET avionics, Archimedes screw prop... Subcomponent count: 5-18 depending on product complexity. All suppliers qualified to CSM-SUP-001 standard with dual-source alternatives validated. Lead times documented. MOQ minimums established for all specialty materials.

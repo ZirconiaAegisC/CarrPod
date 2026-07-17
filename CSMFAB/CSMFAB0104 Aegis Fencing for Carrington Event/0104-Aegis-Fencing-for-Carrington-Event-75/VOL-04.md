@@ -1,4 +1,4 @@
-# 0104 Aegis Fencing for Carrington Event VOL-04: Bill of Materials Summary
-## CSMFAB0104 Aegis Fencing for Carrington Event | Carrington-hardened fabrication product | Cost: TBD
+# 0104 Aegis Fencing for Carrington Event VOL-04: IDENTITY & SPECS
+## CSMFAB | Civil Infrastructure | Priority: Active
 
-Dense fabrication specification for 0104 Aegis Fencing for Carrington Event. Part 4 of 75-document deep fabrication package.
+Bill of Materials summary: Primary material Geopolymer concrete (85 MPa), BFRP rebar, ZTA ceramic bearings, CNT-polymer grou... Subcomponent count: 5-18 depending on product complexity. All suppliers qualified to CSM-SUP-001 standard with dual-source alternatives validated. Lead times documented. MOQ minimums established for all specialty materials.

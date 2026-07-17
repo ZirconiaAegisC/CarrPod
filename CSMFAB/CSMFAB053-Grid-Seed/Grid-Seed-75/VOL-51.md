@@ -1,4 +1,4 @@
-# Grid-Seed VOL-51: Mounting Procedure
-## CSMFAB053-75 | Home Microgrid
+# 053-Grid-Seed VOL-51: HOMEOWNER & COMMISSIONING
+## CSMFAB | General | Priority: Active
 
-Locate studs 16/24 OC. Mark 4 holes at 400×260mm. Drill 10mm × 80mm. HIT-RE 500 V3 epoxy insert. 2-person lift 42kg. M8 BFRP bolts 25 N·m. Level ±1°.
+General product specification. Section 51 of 75-document deep fabrication package. Material: CSM-spec advanced composites and ceramics. All specifications per CSM-MAT and CSM-TEST standards. Full traceability from raw material to finished assembly. ISO 9001:2015 QMS documented at every critical control point. FEATHER mesh integrated where applicable. S-Bus protocol support standard. Carr-Forge open-source documentation available.

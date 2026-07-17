@@ -1,4 +1,4 @@
-# Grid-Seed VOL-25: NFPA 855 Residential Installation
-## CSMFAB053-75 | Home Microgrid | 4kWh LFP | 3kW Inverter
+# 053-Grid-Seed VOL-25: CERTIFICATION & COMPLIANCE
+## CSMFAB | General | Priority: Active
 
-Applies to >20kWh residential ESS. Grid-Seed is 4kWh — exempt. But compliance documentation prepared for: UL 9540A fire test (thermal runaway propagation), spacing from habitable spaces (no requirement at 4kWh), impact protection (inherent in BFRP enclosure). Documentation available for AHJ review.
+Certification status: UL listing in progress (UL 9540 for energy storage, UL 1741 for inverters, UL 1973 for batteries). FCC Part 15 Class B (unintentional radiators). IEEE 1547 (grid interconnection where applicable). NFPA 70 NEC Articles 690 (solar), 706 (storage), applicable sections. CE Mark (EU). UKCA (UK). RCM (Australia). Certification budget: $85K per product, 14-week timeline.

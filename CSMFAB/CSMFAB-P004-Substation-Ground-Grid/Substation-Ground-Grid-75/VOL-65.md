@@ -1,4 +1,4 @@
-# Substation Dielectric Ground-Grid VOL-65: Continuous Improvement Process
-## CSMFAB-P004-Substation-Ground-Grid-75 | Per-Acre EM Hardening Retrofit | Cost: $340,000/acre
+# P004-Substation-Ground-Grid VOL-65: PRICING & REVENUE
+## CSMFAB | Civil Infrastructure | Priority: Active
 
-Geopolymer 150mm, 4× CNT-003 rods, 8 FEATHER nodes, ZTA pads. 19:1 ROI vs transformer replacement.
+Revenue projection (5-year): Year 1 (pilot, 50-500 units): $0.5-2M. Year 2 (2,000-5,000 units): $4-12M. Year 3 (5,000-15,000 units): $10-35M. Year 4 (12,000-50,000 units): $25-100M. Year 5 (25,000-100,000 units): $50-200M. Revenue range depends on product class: consumer ($50-500 MSRP), commercial ($2,000-50,000), infrastructure ($10,000-500,000).

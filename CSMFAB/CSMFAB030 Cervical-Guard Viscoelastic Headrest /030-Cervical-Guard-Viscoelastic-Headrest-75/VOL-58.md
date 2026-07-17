@@ -1,4 +1,4 @@
-# 030 Cervical-Guard Viscoelastic Headrest VOL-58: Carbon Lifecycle Assessment
-## CSMFAB030 Cervical-Guard Viscoelastic Headrest  | Carrington-hardened fabrication product | Cost: TBD
+# 030 Cervical-Guard Viscoelastic Headrest VOL-58: COST & BOM
+## CSMFAB | Vehicle Hardening | Priority: Active
 
-Dense fabrication specification for 030 Cervical-Guard Viscoelastic Headrest. Part 58 of 75-document deep fabrication package.
+Vehicle Hardening product specification. Section 58 of 75-document deep fabrication package. Material: BFRP composites, STF (shear thickening fluid), MRF (magnetorheological fluid), CLD (constrained laye. All specifications per CSM-MAT and CSM-TEST standards. Full traceability from raw material to finished assembly. ISO 9001:2015 QMS documented at every critical control point. FEATHER mesh integrated where applicable. S-Bus protocol support standard. Carr-Forge open-source documentation available.

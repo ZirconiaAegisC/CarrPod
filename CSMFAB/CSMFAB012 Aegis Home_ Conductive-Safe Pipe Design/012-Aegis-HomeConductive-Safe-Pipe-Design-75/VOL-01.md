@@ -1,4 +1,4 @@
-# 012 Aegis HomeConductive-Safe Pipe Design VOL-01: Product Identity and Mission
-## CSMFAB012 Aegis Home_ Conductive-Safe Pipe Design | Carrington-hardened fabrication product | Cost: TBD
+# 012 Aegis Home  Conductive-Safe Pipe Design VOL-01: IDENTITY & SPECS
+## CSMFAB | Residential Hardening | Priority: Active
 
-Dense fabrication specification for 012 Aegis HomeConductive-Safe Pipe Design. Part 1 of 75-document deep fabrication package.
+Primary Carrington-hardened fabrication product. Category: Residential Hardening. All CSMFAB standards apply: dielectric construction, non-conductive throughout, GIC-immunity verified at >10⁸ Ω·m, BFRP enclosure where applicable, FEATHER LoRa mesh integration standard, S-Bus protocol support. Target deployment: 2026-2028 pilot, 2029+ scaled production.

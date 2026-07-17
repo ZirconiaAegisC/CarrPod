@@ -1,4 +1,4 @@
-# 0107 Aegis Geopolymer Concrete VOL-37: Warranty Terms and Support
-## CSMFAB0107 Aegis Geopolymer Concrete | Carrington-hardened fabrication product | Cost: TBD
+# 0107 Aegis Geopolymer Concrete VOL-37: EMC & SOFTWARE
+## CSMFAB | Advanced Concrete | Priority: Active
 
-Dense fabrication specification for 0107 Aegis Geopolymer Concrete. Part 37 of 75-document deep fabrication package.
+Advanced Concrete product specification. Section 37 of 75-document deep fabrication package. Material: CSM-MAT-GP-001: fly ash/slag geopolymer with CNT dopant (0.3% by weight) and BFRP fiber reinforcemen. All specifications per CSM-MAT and CSM-TEST standards. Full traceability from raw material to finished assembly. ISO 9001:2015 QMS documented at every critical control point. FEATHER mesh integrated where applicable. S-Bus protocol support standard. Carr-Forge open-source documentation available.

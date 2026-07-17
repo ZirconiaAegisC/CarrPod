@@ -1,4 +1,4 @@
-# 013 Aegis HomeInductive-Proof Wiring Design VOL-18: Incoming Inspection Protocol
-## CSMFAB013 Aegis Home_ Inductive-Proof Wiring Design | Carrington-hardened fabrication product | Cost: TBD
+# 013 Aegis Home  Inductive-Proof Wiring Design VOL-18: QUALITY & TESTING
+## CSMFAB | Residential Hardening | Priority: Active
 
-Dense fabrication specification for 013 Aegis HomeInductive-Proof Wiring Design. Part 18 of 75-document deep fabrication package.
+Residential Hardening product specification. Section 18 of 75-document deep fabrication package. Material: BFRP-Elium composite (BF-002 Marine Grade), CNT-doped polymers, MXene coatings, ZTA ceramics, geopol. All specifications per CSM-MAT and CSM-TEST standards. Full traceability from raw material to finished assembly. ISO 9001:2015 QMS documented at every critical control point. FEATHER mesh integrated where applicable. S-Bus protocol support standard. Carr-Forge open-source documentation available.

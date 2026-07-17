@@ -1,4 +1,4 @@
-# 033 Thorax-Calm STF Seatbelt Cover Set VOL-15: CCP-02: In-Process
-## CSMFAB033 Thorax-Calm STF Seatbelt Cover Set | Carrington-hardened fabrication product | Cost: TBD
+# 033 Thorax-Calm STF Seatbelt Cover Set VOL-15: MANUFACTURING
+## CSMFAB | Vehicle Hardening | Priority: Active
 
-Dense fabrication specification for 033 Thorax-Calm STF Seatbelt Cover Set. Part 15 of 75-document deep fabrication package.
+Manufacturing process: BFRP composites, STF (shear thickening fluid), MRF (magnetor... Batch size 25-100 units per production run. Cycle time 4-8 hours per unit depending on complexity. In-process inspection at 5 critical control points. Statistical process control: Cpk >1.33 required for all critical dimensions. Out-of-spec: root cause analysis within 24 hours, corrective action within 72 hours.

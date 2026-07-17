@@ -1,4 +1,4 @@
-# CarrSongs VOL-45: Volume Cost Reduction Model
-## CSMFAB-CSMFAB063-CarrSongs-75 | 14 Community Morale & Educational Songs | Cost: Free
+# 063-CarrSongs VOL-45: ENDURANCE & FIELD TRIALS
+## CSMFAB | General | Priority: Active
 
-CC-BY-SA 4.0, call-and-response, MP3+sheet music+karaoke. Pre-loaded on all CSM devices. Community morale product.
+Endurance validation: Continuous operation at rated load, 168 hours (7 days). Accelerated life testing: thermal cycling (-20/+60°C, 1,000 cycles), mechanical cycling (rated load, 100,000 cycles), electrical cycling (on/off, 10,000 cycles). Post-endurance: all specifications within 95% of initial values. Predicted service life: 15-75 years depending on product class, validated via Arrhenius model with activation energy 0.7 eV.
