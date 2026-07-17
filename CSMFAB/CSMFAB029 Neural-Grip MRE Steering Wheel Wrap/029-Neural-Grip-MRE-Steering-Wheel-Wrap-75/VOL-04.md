@@ -1,4 +1,4 @@
-# 029 Neural-Grip MRE Steering Wheel Wrap VOL-04: Bill of Materials Summary
-## CSMFAB029 Neural-Grip MRE Steering Wheel Wrap | Carrington-hardened fabrication product | Cost: TBD
+# 029 Neural-Grip MRE Steering Wheel Wrap VOL-04: IDENTITY & SPECS
+## CSMFAB | Vehicle Hardening | Priority: Active
 
-Dense fabrication specification for 029 Neural-Grip MRE Steering Wheel Wrap. Part 4 of 75-document deep fabrication package.
+Bill of Materials summary: Primary material BFRP composites, STF (shear thickening fluid), MRF (magnetorheological fluid), C... Subcomponent count: 5-18 depending on product complexity. All suppliers qualified to CSM-SUP-001 standard with dual-source alternatives validated. Lead times documented. MOQ minimums established for all specialty materials.

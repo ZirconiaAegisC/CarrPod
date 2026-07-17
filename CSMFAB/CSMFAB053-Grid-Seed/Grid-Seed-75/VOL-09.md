@@ -1,4 +1,4 @@
-# Grid-Seed VOL-09: Display System
-## CSMFAB053-75 | Home Microgrid | 4kWh LFP | 3kW Inverter
+# 053-Grid-Seed VOL-09: SUBCOMPONENTS
+## CSMFAB | General | Priority: Active
 
-E-ink 2.9" 296×128, SPI, Waveshare module. Full refresh 2s, partial 0.3s. Viewable in sunlight, no backlight. Shows: grid status, battery SOC (bar graph+%), load watts, solar input watts, time to empty, error codes. <1mW static power.
+General product specification. Section 9 of 75-document deep fabrication package. Material: CSM-spec advanced composites and ceramics. All specifications per CSM-MAT and CSM-TEST standards. Full traceability from raw material to finished assembly. ISO 9001:2015 QMS documented at every critical control point. FEATHER mesh integrated where applicable. S-Bus protocol support standard. Carr-Forge open-source documentation available.

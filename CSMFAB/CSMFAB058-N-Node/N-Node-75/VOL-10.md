@@ -1,4 +1,4 @@
-# N-Node VOL-10: Critical Manufacturing Step 1
-## CSMFAB-CSMFAB058-N-Node-75 | 20ft ISO Container Community Resilience Hub | Cost: $28,000
+# 058-N-Node VOL-10: SUBCOMPONENTS
+## CSMFAB | General | Priority: Active
 
-20kWh LFP, 2kW solar, FEATHER gateway 8dBi, ham radio, water purification, Cold-Root, Carr-Library, serves 200 households.
+Subcomponent detail: Each subcomponent fabricated to CSM-MAT standards with full traceability from raw material lot to finished assembly. Serial number tracking implemented per ISO 9001. Critical dimensions verified via CMM (±0.05mm for ceramics, ±0.5mm for composites). Surface finish: Ra <0.2μm for ceramic bearing surfaces, Ra <3.2μm for composite enclosures.

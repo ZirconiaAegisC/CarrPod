@@ -1,4 +1,4 @@
-# Faraday Alarm GIC Detection Sensor VOL-55: Government Incentive Eligibility
-## CSMFAB-P007-Faraday-Alarm-75 | MEMS Magnetometer + Rogowski Coil | Cost: $340 Home / $1,850 Industrial
+# P007-Faraday-Alarm VOL-55: HOMEOWNER & COMMISSIONING
+## CSMFAB | General | Priority: Active
 
-Clamp-on Rogowski, MEMS 3-axis, progressive alarm 5A/50A/100A, FEATHER mesh. Every panel needs one.
+User operation: No routine user action required for passive products (bearings, joints, insulators). For active products: FEATHER mesh provides remote status monitoring via Carr-Library, Pocket Watch X, or S-Bus dashboard. Local status: e-ink display or LED indicator. Troubleshooting: error codes displayed, reference card provided, FEATHER mesh support messaging available 24/7. Emergency: 911 for life-threatening situations, CSM support for product issues via FEATHER message relay.

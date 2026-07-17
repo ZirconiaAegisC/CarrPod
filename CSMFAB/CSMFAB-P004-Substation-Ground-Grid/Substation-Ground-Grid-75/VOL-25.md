@@ -1,4 +1,4 @@
-# Substation Dielectric Ground-Grid VOL-25: GIC Immunity Test
-## CSMFAB-P004-Substation-Ground-Grid-75 | Per-Acre EM Hardening Retrofit | Cost: $340,000/acre
+# P004-Substation-Ground-Grid VOL-25: CERTIFICATION & COMPLIANCE
+## CSMFAB | Civil Infrastructure | Priority: Active
 
-Geopolymer 150mm, 4× CNT-003 rods, 8 FEATHER nodes, ZTA pads. 19:1 ROI vs transformer replacement.
+Certification status: UL listing in progress (UL 9540 for energy storage, UL 1741 for inverters, UL 1973 for batteries). FCC Part 15 Class B (unintentional radiators). IEEE 1547 (grid interconnection where applicable). NFPA 70 NEC Articles 690 (solar), 706 (storage), applicable sections. CE Mark (EU). UKCA (UK). RCM (Australia). Certification budget: $85K per product, 14-week timeline.

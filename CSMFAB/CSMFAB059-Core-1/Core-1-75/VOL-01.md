@@ -1,4 +1,4 @@
-# Core-1 VOL-01: Product Identity and Mission
-## CSMFAB-CSMFAB059-Core-1-75 | Standardized Power Management Module | Cost: $42 BOM
+# 059-Core-1 VOL-01: IDENTITY & SPECS
+## CSMFAB | General | Priority: Active
 
-80×50mm PCB, Protonic-HFET MPPT, LFP BMS, 300W inverter, LoRa S-Bus, e-ink driver. Shared across ALL CSM products.
+Primary Carrington-hardened fabrication product. Category: General. All CSMFAB standards apply: dielectric construction, non-conductive throughout, GIC-immunity verified at >10⁸ Ω·m, BFRP enclosure where applicable, FEATHER LoRa mesh integration standard, S-Bus protocol support. Target deployment: 2026-2028 pilot, 2029+ scaled production.

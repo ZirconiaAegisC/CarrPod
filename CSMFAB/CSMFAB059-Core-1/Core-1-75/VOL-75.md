@@ -1,4 +1,4 @@
-# Core-1 VOL-75: Contributing Guidelines
-## CSMFAB-CSMFAB059-Core-1-75 | Standardized Power Management Module | Cost: $42 BOM
+# 059-Core-1 VOL-75: SUPPLY CHAIN & EXECUTIVE SUMMARY
+## CSMFAB | General | Priority: Active
 
-80×50mm PCB, Protonic-HFET MPPT, LFP BMS, 300W inverter, LoRa S-Bus, e-ink driver. Shared across ALL CSM products.
+EXECUTIVE SUMMARY — READ OUT LOUD: This is the 059-Core-1. A Carrington-hardened general product. Fully dielectric. GIC immune. FEATHER mesh integrated. S-Bus compatible. BFRP enclosure standard.. Unit cost: See BOM. Intended use: Carrington preparedness product. All CSM products share a common architecture: BFRP composite enclosures where applicable, CNT-polymer wiring, Protonic-HFET power electronics where active, FEATHER LoRa mesh communications, S-Bus protocol interoperability, and zero silicon semiconductors in critical paths. The product line is designed to function during and after a G5-class geomagnetic storm — exactly when conventional products fail. Every product is documented at 75-document depth. Every specification is traceable to a supplier quote. Every test protocol is published. The numbers are ready. The fabrications are specified. The shield is real. Carr-Forge is open. Let's build.

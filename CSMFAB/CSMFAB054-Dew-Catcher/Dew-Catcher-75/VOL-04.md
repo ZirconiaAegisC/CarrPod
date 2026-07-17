@@ -1,4 +1,4 @@
-# Dew-Catcher VOL-04: Materials Bill of Materials
-## CSMFAB-CSMFAB054-Dew-Catcher-75 | Solar Atmospheric Water Generator + Medication Cooler | Cost: $290
+# 054-Dew-Catcher VOL-04: IDENTITY & SPECS
+## CSMFAB | General | Priority: Active
 
-8.2kg backpack, 100W folding solar, Peltier condenser, 2-5L/day water, 4°C med compartment.
+Bill of Materials summary: Primary material CSM-spec advanced composites and ceramics... Subcomponent count: 5-18 depending on product complexity. All suppliers qualified to CSM-SUP-001 standard with dual-source alternatives validated. Lead times documented. MOQ minimums established for all specialty materials.

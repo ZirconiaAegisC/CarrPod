@@ -1,4 +1,4 @@
-# Grid-Seed VOL-16: PCB Assembly and Test
-## CSMFAB053-75 | Home Microgrid | 4kWh LFP | 3kW Inverter
+# 053-Grid-Seed VOL-16: QUALITY & TESTING
+## CSMFAB | General | Priority: Active
 
-Core-1 PCB: PCBWay (Shenzhen) or Advanced Circuits (US). 4-layer 1.6mm FR-4, ENIG. SMT components by pick-and-place reflow. GaN hand-soldered (ESD-sensitive). Conformal coating: acrylic 50μm spray. Test: bed-of-nails, functional at 3kW load 1hr burn-in.
+General product specification. Section 16 of 75-document deep fabrication package. Material: CSM-spec advanced composites and ceramics. All specifications per CSM-MAT and CSM-TEST standards. Full traceability from raw material to finished assembly. ISO 9001:2015 QMS documented at every critical control point. FEATHER mesh integrated where applicable. S-Bus protocol support standard. Carr-Forge open-source documentation available.

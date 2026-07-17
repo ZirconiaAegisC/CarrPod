@@ -1,4 +1,4 @@
-# Share-Pod VOL-50: Intellectual Property
-## CSMFAB-CSMFAB060-Share-Pod-75 | 1kWh Portable Battery for Neighbor Sharing | Cost: $195
+# 060-Share-Pod VOL-50: INSTALLATION & DEPLOYMENT
+## CSMFAB | General | Priority: Active
 
-320×200×160mm, 8.5kg, 2 AC + 4 USB, FEATHER+S-Bus, charge from Grid-Seed 2.5hr. The CarrPod for your neighbor.
+Deployment logistics: Packaging in custom foam crate (PE 32 kg/m³) with desiccant (4× 50g silica gel), shock indicator (ShockWatch MAG 2000, 50G threshold). LTL freight Class 70 for domestic. Sea freight for international (20ft container, 40-120 units per container depending on product size). Warehouse: climate-controlled 15-25°C, <60% RH. Shelf life: 2 years for products with LFP batteries (ship at 50% SOC), unlimited for passive products (ceramic, BFRP composite).

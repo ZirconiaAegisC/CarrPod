@@ -1,4 +1,4 @@
-# Substation Dielectric Ground-Grid VOL-04: Materials Bill of Materials
-## CSMFAB-P004-Substation-Ground-Grid-75 | Per-Acre EM Hardening Retrofit | Cost: $340,000/acre
+# P004-Substation-Ground-Grid VOL-04: IDENTITY & SPECS
+## CSMFAB | Civil Infrastructure | Priority: Active
 
-Geopolymer 150mm, 4× CNT-003 rods, 8 FEATHER nodes, ZTA pads. 19:1 ROI vs transformer replacement.
+Bill of Materials summary: Primary material Geopolymer concrete (85 MPa), BFRP rebar, ZTA ceramic bearings, CNT-polymer grou... Subcomponent count: 5-18 depending on product complexity. All suppliers qualified to CSM-SUP-001 standard with dual-source alternatives validated. Lead times documented. MOQ minimums established for all specialty materials.

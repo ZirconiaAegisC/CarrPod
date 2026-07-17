@@ -1,4 +1,4 @@
-# Grid-Seed VOL-52: AC Wiring Procedure
-## CSMFAB053-75 | Home Microgrid
+# 053-Grid-Seed VOL-52: HOMEOWNER & COMMISSIONING
+## CSMFAB | General | Priority: Active
 
-Shut off main. 25A double-pole breaker in main panel. CNT-001 12/2 to Grid-Seed AC in. Critical circuits: move from main bus to Grid-Seed bus via junction box. Label all: GRID-SEED PROTECTED.
+General product specification. Section 52 of 75-document deep fabrication package. Material: CSM-spec advanced composites and ceramics. All specifications per CSM-MAT and CSM-TEST standards. Full traceability from raw material to finished assembly. ISO 9001:2015 QMS documented at every critical control point. FEATHER mesh integrated where applicable. S-Bus protocol support standard. Carr-Forge open-source documentation available.

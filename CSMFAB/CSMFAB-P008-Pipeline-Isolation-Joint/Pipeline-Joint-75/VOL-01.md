@@ -1,4 +1,4 @@
-# Pipeline Isolation Joint Class 600 VOL-01: Product Identity and Mission
-## CSMFAB-P008-Pipeline-Isolation-Joint-75 | Si₃N₄ Ceramic 24" Dielectric Joint | Cost: $12,500
+# P008-Pipeline-Isolation-Joint VOL-01: IDENTITY & SPECS
+## CSMFAB | Residential Hardening | Priority: Active
 
-610mm OD, 10.2 MPa, 32× M36 BFRP bolts, PTFE gasket. Breaks telluric current every 50km.
+Primary Carrington-hardened fabrication product. Category: Residential Hardening. All CSMFAB standards apply: dielectric construction, non-conductive throughout, GIC-immunity verified at >10⁸ Ω·m, BFRP enclosure where applicable, FEATHER LoRa mesh integration standard, S-Bus protocol support. Target deployment: 2026-2028 pilot, 2029+ scaled production.

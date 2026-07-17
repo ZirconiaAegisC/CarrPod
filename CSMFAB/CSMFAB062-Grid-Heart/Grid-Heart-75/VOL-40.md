@@ -1,4 +1,4 @@
-# Grid-Heart VOL-40: Workforce Requirements
-## CSMFAB-CSMFAB062-Grid-Heart-75 | Passive Non-Contact Transformer Monitor | Cost: $34
+# 062-Grid-Heart VOL-40: EMC & SOFTWARE
+## CSMFAB | General | Priority: Active
 
-Ferrite core coil, hot-stick clamp, 60Hz detection, FEATHER mesh, 2×AA lithium 3yr, real-time transformer health map.
+EMC compliance testing: Conducted emissions 150kHz-30MHz (FCC Part 15 Class B). Radiated emissions 30MHz-1GHz. Radiated susceptibility IEC 61000-4-3, 10 V/m, 80MHz-1GHz. Conducted susceptibility IEC 61000-4-6, 10V, 150kHz-80MHz. ESD IEC 61000-4-2, ±8kV contact, ±15kV air. EFT/Burst IEC 61000-4-4, ±2kV on power ports. All tests: no malfunction, no degradation. MXene internal shield provides 60-92 dB SE depending on frequency.

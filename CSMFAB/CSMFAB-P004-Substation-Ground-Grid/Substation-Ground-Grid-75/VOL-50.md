@@ -1,4 +1,4 @@
-# Substation Dielectric Ground-Grid VOL-50: Intellectual Property
-## CSMFAB-P004-Substation-Ground-Grid-75 | Per-Acre EM Hardening Retrofit | Cost: $340,000/acre
+# P004-Substation-Ground-Grid VOL-50: INSTALLATION & DEPLOYMENT
+## CSMFAB | Civil Infrastructure | Priority: Active
 
-Geopolymer 150mm, 4× CNT-003 rods, 8 FEATHER nodes, ZTA pads. 19:1 ROI vs transformer replacement.
+Deployment logistics: Packaging in custom foam crate (PE 32 kg/m³) with desiccant (4× 50g silica gel), shock indicator (ShockWatch MAG 2000, 50G threshold). LTL freight Class 70 for domestic. Sea freight for international (20ft container, 40-120 units per container depending on product size). Warehouse: climate-controlled 15-25°C, <60% RH. Shelf life: 2 years for products with LFP batteries (ship at 50% SOC), unlimited for passive products (ceramic, BFRP composite).

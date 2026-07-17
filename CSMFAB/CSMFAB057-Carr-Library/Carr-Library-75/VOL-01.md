@@ -1,4 +1,4 @@
-# Carr-Library VOL-01: Product Identity and Mission
-## CSMFAB-CSMFAB057-Carr-Library-75 | Offline Solar Survival Knowledge Tablet | Cost: $118
+# 057-Carr-Library VOL-01: IDENTITY & SPECS
+## CSMFAB | General | Priority: Active
 
-7.8" e-ink, 100K page turns, 32GB, 5W solar, FEATHER mesh, IP67, 420g. No browser, no apps.
+Primary Carrington-hardened fabrication product. Category: General. All CSMFAB standards apply: dielectric construction, non-conductive throughout, GIC-immunity verified at >10⁸ Ω·m, BFRP enclosure where applicable, FEATHER LoRa mesh integration standard, S-Bus protocol support. Target deployment: 2026-2028 pilot, 2029+ scaled production.

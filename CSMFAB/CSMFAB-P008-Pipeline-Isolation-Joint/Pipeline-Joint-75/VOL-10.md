@@ -1,4 +1,4 @@
-# Pipeline Isolation Joint Class 600 VOL-10: Critical Manufacturing Step 1
-## CSMFAB-P008-Pipeline-Isolation-Joint-75 | Si₃N₄ Ceramic 24" Dielectric Joint | Cost: $12,500
+# P008-Pipeline-Isolation-Joint VOL-10: SUBCOMPONENTS
+## CSMFAB | Residential Hardening | Priority: Active
 
-610mm OD, 10.2 MPa, 32× M36 BFRP bolts, PTFE gasket. Breaks telluric current every 50km.
+Subcomponent detail: Each subcomponent fabricated to CSM-MAT standards with full traceability from raw material lot to finished assembly. Serial number tracking implemented per ISO 9001. Critical dimensions verified via CMM (±0.05mm for ceramics, ±0.5mm for composites). Surface finish: Ra <0.2μm for ceramic bearing surfaces, Ra <3.2μm for composite enclosures.

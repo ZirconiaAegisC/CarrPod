@@ -1,4 +1,4 @@
-# Cold-Root VOL-05: Mechanical Architecture
-## CSMFAB-CSMFAB055-Cold-Root-75 | Geothermal Phase-Change Refrigerator | Cost: $178
+# 055-Cold-Root VOL-05: IDENTITY & SPECS
+## CSMFAB | General | Priority: Active
 
-1.0×1.0×1.5m, 200L, CaCl₂·6H₂O PCM at 4°C, 0.5m burial, zero electricity, infinite life.
+Critical material specifications: Fully dielectric. GIC immune. FEATHER mesh integrated. S-Bus compatible. BFRP enclosure standard.. Testing per CSM-TEST protocol suite. Every material lot tested for: composition (XRF/XRD), particle size (laser diffraction for powders, SEM for composites), dielectric strength (ASTM D149), DC resistivity (ASTM D257), mechanical properties (ASTM per material class).

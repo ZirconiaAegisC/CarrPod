@@ -1,4 +1,4 @@
-# Phantom MK-1 Aegis-Hardened Robot VOL-03: Electrical Architecture
-## CSMFAB-P006-Phantom-MK1-Robot-75 | 32 DOF Humanoid Inspection Robot | Cost: $185,000
+# P006-Phantom-MK1-Robot VOL-03: IDENTITY & SPECS
+## CSMFAB | General | Priority: Active
 
-1.82m, 95kg, 32 DOF, Protonic-HFET comms, triple voting processors, ZrB₂-SiC armor. Self-destruct at 0.8% unit cost.
+System architecture: Fully dielectric. GIC immune. FEATHER mesh integrated. S-Bus compatible. BFRP enclosure standard.. Power path (if applicable): CNT-polymer conductors throughout, Protonic-HFET charge control, MRF contactors for switching, LFP battery storage. All signal paths: FEATHER LoRa + S-Bus protocol. No silicon semiconductors in critical paths — GaN or Protonic-HFET exclusively.

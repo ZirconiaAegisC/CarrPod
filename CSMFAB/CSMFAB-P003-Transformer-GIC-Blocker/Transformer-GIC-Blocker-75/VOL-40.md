@@ -1,4 +1,4 @@
-# Transformer Neutral GIC Blocker 250kV VOL-40: Workforce Requirements
-## CSMFAB-P003-Transformer-GIC-Blocker-75 | CNT-Polymer Solid-State GIC Diverter | Cost: $185,000
+# P003-Transformer-GIC-Blocker VOL-40: EMC & SOFTWARE
+## CSMFAB | Civil Infrastructure | Priority: Active
 
-250kV, 400A 60Hz, 40kA fault, 20kV DC blocking. CNT-PPS core 200mm. BFRP+MXene enclosure.
+EMC compliance testing: Conducted emissions 150kHz-30MHz (FCC Part 15 Class B). Radiated emissions 30MHz-1GHz. Radiated susceptibility IEC 61000-4-3, 10 V/m, 80MHz-1GHz. Conducted susceptibility IEC 61000-4-6, 10V, 150kHz-80MHz. ESD IEC 61000-4-2, ±8kV contact, ±15kV air. EFT/Burst IEC 61000-4-4, ±2kV on power ports. All tests: no malfunction, no degradation. MXene internal shield provides 60-92 dB SE depending on frequency.

@@ -1,4 +1,4 @@
-# Earth-Pulse VOL-03: Electrical Architecture
-## CSMFAB-CSMFAB061-Earth-Pulse-75 | Seismic GIC Early Warning Network | Cost: $420/node
+# 061-Earth-Pulse VOL-03: IDENTITY & SPECS
+## CSMFAB | General | Priority: Active
 
-Geophone 4.5Hz, Core-1 FFT, 0.01-1Hz GIC detection, FEATHER alert 5-15min before E3 onset. 5-10km node spacing.
+System architecture: Fully dielectric. GIC immune. FEATHER mesh integrated. S-Bus compatible. BFRP enclosure standard.. Power path (if applicable): CNT-polymer conductors throughout, Protonic-HFET charge control, MRF contactors for switching, LFP battery storage. All signal paths: FEATHER LoRa + S-Bus protocol. No silicon semiconductors in critical paths — GaN or Protonic-HFET exclusively.

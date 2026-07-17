@@ -1,4 +1,4 @@
-# Faraday Alarm GIC Detection Sensor VOL-10: Critical Manufacturing Step 1
-## CSMFAB-P007-Faraday-Alarm-75 | MEMS Magnetometer + Rogowski Coil | Cost: $340 Home / $1,850 Industrial
+# P007-Faraday-Alarm VOL-10: SUBCOMPONENTS
+## CSMFAB | General | Priority: Active
 
-Clamp-on Rogowski, MEMS 3-axis, progressive alarm 5A/50A/100A, FEATHER mesh. Every panel needs one.
+Subcomponent detail: Each subcomponent fabricated to CSM-MAT standards with full traceability from raw material lot to finished assembly. Serial number tracking implemented per ISO 9001. Critical dimensions verified via CMM (±0.05mm for ceramics, ±0.5mm for composites). Surface finish: Ra <0.2μm for ceramic bearing surfaces, Ra <3.2μm for composite enclosures.

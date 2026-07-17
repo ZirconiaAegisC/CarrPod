@@ -1,4 +1,4 @@
-# Carr-Library VOL-05: Mechanical Architecture
-## CSMFAB-CSMFAB057-Carr-Library-75 | Offline Solar Survival Knowledge Tablet | Cost: $118
+# 057-Carr-Library VOL-05: IDENTITY & SPECS
+## CSMFAB | General | Priority: Active
 
-7.8" e-ink, 100K page turns, 32GB, 5W solar, FEATHER mesh, IP67, 420g. No browser, no apps.
+Critical material specifications: Fully dielectric. GIC immune. FEATHER mesh integrated. S-Bus compatible. BFRP enclosure standard.. Testing per CSM-TEST protocol suite. Every material lot tested for: composition (XRF/XRD), particle size (laser diffraction for powders, SEM for composites), dielectric strength (ASTM D149), DC resistivity (ASTM D257), mechanical properties (ASTM per material class).

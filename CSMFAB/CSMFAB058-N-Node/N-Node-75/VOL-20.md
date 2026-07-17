@@ -1,4 +1,4 @@
-# N-Node VOL-20: Factory Acceptance Test
-## CSMFAB-CSMFAB058-N-Node-75 | 20ft ISO Container Community Resilience Hub | Cost: $28,000
+# 058-N-Node VOL-20: QUALITY & TESTING
+## CSMFAB | General | Priority: Active
 
-20kWh LFP, 2kW solar, FEATHER gateway 8dBi, ham radio, water purification, Cold-Root, Carr-Library, serves 200 households.
+Quality acceptance: 100% of units undergo factory acceptance testing. Test battery: visual inspection (magnification 10× for ceramics, 3× for composites), dimensional (CMM), electrical (hipot 1.5× rated voltage, IR >100 MΩ at 500V), functional (full operational cycle). AQL 0.65 Level II for sampling tests. Zero-defect policy for safety-critical features.

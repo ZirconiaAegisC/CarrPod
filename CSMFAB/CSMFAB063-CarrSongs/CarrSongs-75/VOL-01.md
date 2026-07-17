@@ -1,4 +1,4 @@
-# CarrSongs VOL-01: Product Identity and Mission
-## CSMFAB-CSMFAB063-CarrSongs-75 | 14 Community Morale & Educational Songs | Cost: Free
+# 063-CarrSongs VOL-01: IDENTITY & SPECS
+## CSMFAB | General | Priority: Active
 
-CC-BY-SA 4.0, call-and-response, MP3+sheet music+karaoke. Pre-loaded on all CSM devices. Community morale product.
+Primary Carrington-hardened fabrication product. Category: General. All CSMFAB standards apply: dielectric construction, non-conductive throughout, GIC-immunity verified at >10⁸ Ω·m, BFRP enclosure where applicable, FEATHER LoRa mesh integration standard, S-Bus protocol support. Target deployment: 2026-2028 pilot, 2029+ scaled production.

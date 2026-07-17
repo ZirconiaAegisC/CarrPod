@@ -1,4 +1,4 @@
-# Substation Dielectric Ground-Grid VOL-15: Critical Control Point 2
-## CSMFAB-P004-Substation-Ground-Grid-75 | Per-Acre EM Hardening Retrofit | Cost: $340,000/acre
+# P004-Substation-Ground-Grid VOL-15: MANUFACTURING
+## CSMFAB | Civil Infrastructure | Priority: Active
 
-Geopolymer 150mm, 4× CNT-003 rods, 8 FEATHER nodes, ZTA pads. 19:1 ROI vs transformer replacement.
+Manufacturing process: Geopolymer concrete (85 MPa), BFRP rebar, ZTA ceramic bearin... Batch size 25-100 units per production run. Cycle time 4-8 hours per unit depending on complexity. In-process inspection at 5 critical control points. Statistical process control: Cpk >1.33 required for all critical dimensions. Out-of-spec: root cause analysis within 24 hours, corrective action within 72 hours.

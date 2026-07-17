@@ -1,4 +1,4 @@
-# Share-Pod VOL-02: Design Specification Summary
-## CSMFAB-CSMFAB060-Share-Pod-75 | 1kWh Portable Battery for Neighbor Sharing | Cost: $195
+# 060-Share-Pod VOL-02: IDENTITY & SPECS
+## CSMFAB | General | Priority: Active
 
-320×200×160mm, 8.5kg, 2 AC + 4 USB, FEATHER+S-Bus, charge from Grid-Seed 2.5hr. The CarrPod for your neighbor.
+Material composition: CSM-spec advanced composites and ceramics. Manufacturing method: flash sintering (ceramics), VARTM (BFRP composites), twin-screw extrusion (CNT polymers), or geopolymer casting per product line. All processes validated to CSM-MAT standards with ISO 9001:2015 QMS documentation.

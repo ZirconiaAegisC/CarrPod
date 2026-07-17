@@ -1,4 +1,4 @@
-# Grid-Heart VOL-02: Design Specification Summary
-## CSMFAB-CSMFAB062-Grid-Heart-75 | Passive Non-Contact Transformer Monitor | Cost: $34
+# 062-Grid-Heart VOL-02: IDENTITY & SPECS
+## CSMFAB | General | Priority: Active
 
-Ferrite core coil, hot-stick clamp, 60Hz detection, FEATHER mesh, 2×AA lithium 3yr, real-time transformer health map.
+Material composition: CSM-spec advanced composites and ceramics. Manufacturing method: flash sintering (ceramics), VARTM (BFRP composites), twin-screw extrusion (CNT polymers), or geopolymer casting per product line. All processes validated to CSM-MAT standards with ISO 9001:2015 QMS documentation.

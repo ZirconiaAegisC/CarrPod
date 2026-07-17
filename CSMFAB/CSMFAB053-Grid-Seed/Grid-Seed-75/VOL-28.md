@@ -1,4 +1,4 @@
-# Grid-Seed VOL-28: Transfer Time Measurement
-## CSMFAB053-75 | Home Microgrid | 4kWh LFP | 3kW Inverter
+# 053-Grid-Seed VOL-28: ELECTRICAL & GIC TESTING
+## CSMFAB | General | Priority: Active
 
-Oscilloscope on critical load outlet. Grid side breaker opened to simulate failure. Measure: time from last grid zero-crossing to inverter output stable at 120V ±10%. Pass: <50ms at 0W, <50ms at 500W, <50ms at 2kW load. Equipment: Tektronix TDS2024C. 100% of units.
+General product specification. Section 28 of 75-document deep fabrication package. Material: CSM-spec advanced composites and ceramics. All specifications per CSM-MAT and CSM-TEST standards. Full traceability from raw material to finished assembly. ISO 9001:2015 QMS documented at every critical control point. FEATHER mesh integrated where applicable. S-Bus protocol support standard. Carr-Forge open-source documentation available.

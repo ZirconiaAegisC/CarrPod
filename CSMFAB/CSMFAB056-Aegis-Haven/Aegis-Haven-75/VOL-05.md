@@ -1,4 +1,4 @@
-# Aegis-Haven VOL-05: Mechanical Architecture
-## CSMFAB-CSMFAB056-Aegis-Haven-75 | Modular Deployable Family Shelter | Cost: $4,200
+# 056-Aegis-Haven VOL-05: IDENTITY & SPECS
+## CSMFAB | General | Priority: Active
 
-3×3m, ZrB₂-SiC panels, wedge-and-pin assembly 20min, 100W solar roof, 2kWh battery, aerogel floor, Stellar-Tint windows.
+Critical material specifications: Fully dielectric. GIC immune. FEATHER mesh integrated. S-Bus compatible. BFRP enclosure standard.. Testing per CSM-TEST protocol suite. Every material lot tested for: composition (XRF/XRD), particle size (laser diffraction for powders, SEM for composites), dielectric strength (ASTM D149), DC resistivity (ASTM D257), mechanical properties (ASTM per material class).

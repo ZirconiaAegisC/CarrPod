@@ -1,4 +1,4 @@
-# 0106 Aegis GFRP Pipeline System VOL-09: Manufacturing Process Flow
-## CSMFAB0106 Aegis GFRP Pipeline System | Carrington-hardened fabrication product | Cost: TBD
+# 0106 Aegis GFRP Pipeline System VOL-09: SUBCOMPONENTS
+## CSMFAB | Pipeline Infrastructure | Priority: Active
 
-Dense fabrication specification for 0106 Aegis GFRP Pipeline System. Part 9 of 75-document deep fabrication package.
+Pipeline Infrastructure product specification. Section 9 of 75-document deep fabrication package. Material: BFRP pipe with CNT-polymer matrix, ZTA ceramic joint inserts, BFRP flange bolts, PTFE gaskets. All specifications per CSM-MAT and CSM-TEST standards. Full traceability from raw material to finished assembly. ISO 9001:2015 QMS documented at every critical control point. FEATHER mesh integrated where applicable. S-Bus protocol support standard. Carr-Forge open-source documentation available.

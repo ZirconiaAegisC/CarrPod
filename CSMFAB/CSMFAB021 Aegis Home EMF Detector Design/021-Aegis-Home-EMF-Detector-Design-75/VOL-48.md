@@ -1,4 +1,4 @@
-# 021 Aegis Home EMF Detector Design VOL-48: Revenue Projection 5-Year
-## CSMFAB021 Aegis Home EMF Detector Design | Carrington-hardened fabrication product | Cost: TBD
+# 021 Aegis Home EMF Detector Design VOL-48: INSTALLATION & DEPLOYMENT
+## CSMFAB | Residential Hardening | Priority: Active
 
-Dense fabrication specification for 021 Aegis Home EMF Detector Design. Part 48 of 75-document deep fabrication package.
+Residential Hardening product specification. Section 48 of 75-document deep fabrication package. Material: BFRP-Elium composite (BF-002 Marine Grade), CNT-doped polymers, MXene coatings, ZTA ceramics, geopol. All specifications per CSM-MAT and CSM-TEST standards. Full traceability from raw material to finished assembly. ISO 9001:2015 QMS documented at every critical control point. FEATHER mesh integrated where applicable. S-Bus protocol support standard. Carr-Forge open-source documentation available.

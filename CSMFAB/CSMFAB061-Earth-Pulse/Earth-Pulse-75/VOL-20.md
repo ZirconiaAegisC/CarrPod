@@ -1,4 +1,4 @@
-# Earth-Pulse VOL-20: Factory Acceptance Test
-## CSMFAB-CSMFAB061-Earth-Pulse-75 | Seismic GIC Early Warning Network | Cost: $420/node
+# 061-Earth-Pulse VOL-20: QUALITY & TESTING
+## CSMFAB | General | Priority: Active
 
-Geophone 4.5Hz, Core-1 FFT, 0.01-1Hz GIC detection, FEATHER alert 5-15min before E3 onset. 5-10km node spacing.
+Quality acceptance: 100% of units undergo factory acceptance testing. Test battery: visual inspection (magnification 10× for ceramics, 3× for composites), dimensional (CMM), electrical (hipot 1.5× rated voltage, IR >100 MΩ at 500V), functional (full operational cycle). AQL 0.65 Level II for sampling tests. Zero-defect policy for safety-critical features.

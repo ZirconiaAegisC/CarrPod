@@ -1,4 +1,4 @@
-# Earth-Pulse VOL-70: Distribution and Logistics
-## CSMFAB-CSMFAB061-Earth-Pulse-75 | Seismic GIC Early Warning Network | Cost: $420/node
+# 061-Earth-Pulse VOL-70: MARKET & COMPETITION
+## CSMFAB | General | Priority: Active
 
-Geophone 4.5Hz, Core-1 FFT, 0.01-1Hz GIC detection, FEATHER alert 5-15min before E3 onset. 5-10km node spacing.
+Market analysis: Total addressable market — see product class. US residential: 131M households. US commercial: 5.9M buildings. US infrastructure: 600K bridges, 55K substations, 2.6M miles pipeline, 140K miles rail, 4M miles roads. Global TAM: 3-5× US. First-mover advantage: CSM is the only company producing fully dielectric, GIC-immune products certified for Carrington preparedness. Patents pending for all core technologies. Open-source hardware via Carr-Forge (CERN-OHL-S 2.0) for community variants.

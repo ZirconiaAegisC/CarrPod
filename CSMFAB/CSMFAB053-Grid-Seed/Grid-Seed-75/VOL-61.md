@@ -1,4 +1,4 @@
-# Grid-Seed VOL-61: BOM: Electronics
-## CSMFAB053-75 | Home Microgrid
+# 053-Grid-Seed VOL-61: PRICING & REVENUE
+## CSMFAB | General | Priority: Active
 
-Core-1 ×2 at $42 = $84. GaN HEMT ×4 at $12.40 = $49.60. Inverter magnetics $46. MRF contactor $85. MPPT magnetics $52. Display $22. LoRa $47. BMS board $48. Misc PCB $38. Total electronics: $471.60.
+General product specification. Section 61 of 75-document deep fabrication package. Material: CSM-spec advanced composites and ceramics. All specifications per CSM-MAT and CSM-TEST standards. Full traceability from raw material to finished assembly. ISO 9001:2015 QMS documented at every critical control point. FEATHER mesh integrated where applicable. S-Bus protocol support standard. Carr-Forge open-source documentation available.

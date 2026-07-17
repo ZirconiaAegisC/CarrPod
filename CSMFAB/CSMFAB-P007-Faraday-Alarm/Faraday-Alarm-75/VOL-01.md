@@ -1,4 +1,4 @@
-# Faraday Alarm GIC Detection Sensor VOL-01: Product Identity and Mission
-## CSMFAB-P007-Faraday-Alarm-75 | MEMS Magnetometer + Rogowski Coil | Cost: $340 Home / $1,850 Industrial
+# P007-Faraday-Alarm VOL-01: IDENTITY & SPECS
+## CSMFAB | General | Priority: Active
 
-Clamp-on Rogowski, MEMS 3-axis, progressive alarm 5A/50A/100A, FEATHER mesh. Every panel needs one.
+Primary Carrington-hardened fabrication product. Category: General. All CSMFAB standards apply: dielectric construction, non-conductive throughout, GIC-immunity verified at >10⁸ Ω·m, BFRP enclosure where applicable, FEATHER LoRa mesh integration standard, S-Bus protocol support. Target deployment: 2026-2028 pilot, 2029+ scaled production.

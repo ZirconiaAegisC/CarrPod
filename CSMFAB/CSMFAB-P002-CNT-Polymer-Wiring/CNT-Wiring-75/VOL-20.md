@@ -1,4 +1,4 @@
-# CNT-Doped Polymer Wiring VOL-20: Factory Acceptance Test
-## CSMFAB-P002-CNT-Polymer-Wiring-75 | 4-Grade Frequency-Selective Conductor | Cost: $0.85-180/m
+# P002-CNT-Polymer-Wiring VOL-20: QUALITY & TESTING
+## CSMFAB | Residential Hardening | Priority: Active
 
-CNT-001 Residential to CNT-004 Bus Bar. MWCNT in PEEK/PEI/PPS. 60Hz AC near-copper, DC >10⁸ Ω·m.
+Quality acceptance: 100% of units undergo factory acceptance testing. Test battery: visual inspection (magnification 10× for ceramics, 3× for composites), dimensional (CMM), electrical (hipot 1.5× rated voltage, IR >100 MΩ at 500V), functional (full operational cycle). AQL 0.65 Level II for sampling tests. Zero-defect policy for safety-critical features.

@@ -1,4 +1,4 @@
-# 050 Aegis-Ascension Drone Backpack VOL-02: Design Specification Overview
-## CSMFAB050 Aegis-Ascension Drone Backpack | Carrington-hardened fabrication product | Cost: TBD
+# 050 Aegis-Ascension Drone Backpack VOL-02: IDENTITY & SPECS
+## CSMFAB | Unmanned Aerial Systems | Priority: Active
 
-Dense fabrication specification for 050 Aegis-Ascension Drone Backpack. Part 2 of 75-document deep fabrication package.
+Material composition: BFRP airframe, CNT-polymer wiring, Protonic-HFET avionics, Archimedes screw propulsion (variable pitch), LiFePO₄ battery, FEATHER telemetry. Manufacturing method: flash sintering (ceramics), VARTM (BFRP composites), twin-screw extrusion (CNT polymers), or geopolymer casting per product line. All processes validated to CSM-MAT standards with ISO 9001:2015 QMS documentation.

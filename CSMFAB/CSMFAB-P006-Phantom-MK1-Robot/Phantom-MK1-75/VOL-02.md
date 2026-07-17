@@ -1,4 +1,4 @@
-# Phantom MK-1 Aegis-Hardened Robot VOL-02: Design Specification Summary
-## CSMFAB-P006-Phantom-MK1-Robot-75 | 32 DOF Humanoid Inspection Robot | Cost: $185,000
+# P006-Phantom-MK1-Robot VOL-02: IDENTITY & SPECS
+## CSMFAB | General | Priority: Active
 
-1.82m, 95kg, 32 DOF, Protonic-HFET comms, triple voting processors, ZrB₂-SiC armor. Self-destruct at 0.8% unit cost.
+Material composition: CSM-spec advanced composites and ceramics. Manufacturing method: flash sintering (ceramics), VARTM (BFRP composites), twin-screw extrusion (CNT polymers), or geopolymer casting per product line. All processes validated to CSM-MAT standards with ISO 9001:2015 QMS documentation.

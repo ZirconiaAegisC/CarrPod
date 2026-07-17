@@ -1,4 +1,4 @@
-# Grid-Heart VOL-75: Contributing Guidelines
-## CSMFAB-CSMFAB062-Grid-Heart-75 | Passive Non-Contact Transformer Monitor | Cost: $34
+# 062-Grid-Heart VOL-75: SUPPLY CHAIN & EXECUTIVE SUMMARY
+## CSMFAB | General | Priority: Active
 
-Ferrite core coil, hot-stick clamp, 60Hz detection, FEATHER mesh, 2×AA lithium 3yr, real-time transformer health map.
+EXECUTIVE SUMMARY — READ OUT LOUD: This is the 062-Grid-Heart. A Carrington-hardened general product. Fully dielectric. GIC immune. FEATHER mesh integrated. S-Bus compatible. BFRP enclosure standard.. Unit cost: See BOM. Intended use: Carrington preparedness product. All CSM products share a common architecture: BFRP composite enclosures where applicable, CNT-polymer wiring, Protonic-HFET power electronics where active, FEATHER LoRa mesh communications, S-Bus protocol interoperability, and zero silicon semiconductors in critical paths. The product line is designed to function during and after a G5-class geomagnetic storm — exactly when conventional products fail. Every product is documented at 75-document depth. Every specification is traceable to a supplier quote. Every test protocol is published. The numbers are ready. The fabrications are specified. The shield is real. Carr-Forge is open. Let's build.

@@ -1,4 +1,4 @@
-# Faraday Alarm GIC Detection Sensor VOL-35: FEATHER Mesh Integration
-## CSMFAB-P007-Faraday-Alarm-75 | MEMS Magnetometer + Rogowski Coil | Cost: $340 Home / $1,850 Industrial
+# P007-Faraday-Alarm VOL-35: MECHANICAL & ENVIRONMENTAL
+## CSMFAB | General | Priority: Active
 
-Clamp-on Rogowski, MEMS 3-axis, progressive alarm 5A/50A/100A, FEATHER mesh. Every panel needs one.
+Environmental testing: High temp operational +85°C ambient, 4 hours at rated load. Low temp -40°C, 4 hours. Thermal shock -40°C/+85°C, 10 cycles, 2hr dwell. Humidity 40°C/93% RH, 96 hours non-condensing. Salt fog ASTM B117, 1,000 hours (BFRP corrosion-immune, but connectors verified). IP rating: IP54 minimum for indoor products, IP67 for outdoor/deployed products. UV exposure: 5,000 hours QUV (ASTM G154) — no degradation of BFRP or MXene coating.

@@ -1,4 +1,4 @@
-# 026 Aegis EmbarkVibration Mitigation Product Design VOL-01: Product Identity and Mission
-## CSMFAB026 Aegis Embark_ Vibration Mitigation Product Design | Carrington-hardened fabrication product | Cost: TBD
+# 026 Aegis Embark  Vibration Mitigation Product Design VOL-01: IDENTITY & SPECS
+## CSMFAB | Vehicle Hardening | Priority: Active
 
-Dense fabrication specification for 026 Aegis EmbarkVibration Mitigation Product Design. Part 1 of 75-document deep fabrication package.
+Primary Carrington-hardened fabrication product. Category: Vehicle Hardening. All CSMFAB standards apply: dielectric construction, non-conductive throughout, GIC-immunity verified at >10⁸ Ω·m, BFRP enclosure where applicable, FEATHER LoRa mesh integration standard, S-Bus protocol support. Target deployment: 2026-2028 pilot, 2029+ scaled production.

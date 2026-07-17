@@ -1,4 +1,4 @@
-# 0115 FEATHER LoRa Mesh Network Node VOL-15: CCP-02: In-Process
-## CSMFAB0115 FEATHER LoRa Mesh Network Node | Carrington-hardened fabrication product | Cost: TBD
+# 0115 FEATHER LoRa Mesh Network Node VOL-15: MANUFACTURING
+## CSMFAB | Communications Mesh | Priority: Active
 
-Dense fabrication specification for 0115 FEATHER LoRa Mesh Network Node. Part 15 of 75-document deep fabrication package.
+Manufacturing process: BFRP enclosure, MXene EMI shield, GaN RF front-end, Protonic... Batch size 25-100 units per production run. Cycle time 4-8 hours per unit depending on complexity. In-process inspection at 5 critical control points. Statistical process control: Cpk >1.33 required for all critical dimensions. Out-of-spec: root cause analysis within 24 hours, corrective action within 72 hours.

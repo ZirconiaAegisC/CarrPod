@@ -1,4 +1,4 @@
-# Core-1 VOL-20: Factory Acceptance Test
-## CSMFAB-CSMFAB059-Core-1-75 | Standardized Power Management Module | Cost: $42 BOM
+# 059-Core-1 VOL-20: QUALITY & TESTING
+## CSMFAB | General | Priority: Active
 
-80×50mm PCB, Protonic-HFET MPPT, LFP BMS, 300W inverter, LoRa S-Bus, e-ink driver. Shared across ALL CSM products.
+Quality acceptance: 100% of units undergo factory acceptance testing. Test battery: visual inspection (magnification 10× for ceramics, 3× for composites), dimensional (CMM), electrical (hipot 1.5× rated voltage, IR >100 MΩ at 500V), functional (full operational cycle). AQL 0.65 Level II for sampling tests. Zero-defect policy for safety-critical features.

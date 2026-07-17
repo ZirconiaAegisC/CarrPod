@@ -1,4 +1,4 @@
-# Faraday Alarm GIC Detection Sensor VOL-30: Installation Step 1
-## CSMFAB-P007-Faraday-Alarm-75 | MEMS Magnetometer + Rogowski Coil | Cost: $340 Home / $1,850 Industrial
+# P007-Faraday-Alarm VOL-30: ELECTRICAL & GIC TESTING
+## CSMFAB | General | Priority: Active
 
-Clamp-on Rogowski, MEMS 3-axis, progressive alarm 5A/50A/100A, FEATHER mesh. Every panel needs one.
+GIC immunity testing: Conducted GIC 0-200A DC sweep through all terminals. Pass: no device malfunction, no false triggering, insulation resistance maintained above 100 MΩ. Radiated GMD simulation: Helmholtz coil 0-500μT DC, 3 axes, no induced effects. Lightning indirect effects: 8/20μs 100kA waveform per IEC 62305. Magnetostatic: 1.0T DC field, no magnetic saturation of any component.

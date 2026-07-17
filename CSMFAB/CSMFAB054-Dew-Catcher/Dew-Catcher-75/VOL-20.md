@@ -1,4 +1,4 @@
-# Dew-Catcher VOL-20: Factory Acceptance Test
-## CSMFAB-CSMFAB054-Dew-Catcher-75 | Solar Atmospheric Water Generator + Medication Cooler | Cost: $290
+# 054-Dew-Catcher VOL-20: QUALITY & TESTING
+## CSMFAB | General | Priority: Active
 
-8.2kg backpack, 100W folding solar, Peltier condenser, 2-5L/day water, 4°C med compartment.
+Quality acceptance: 100% of units undergo factory acceptance testing. Test battery: visual inspection (magnification 10× for ceramics, 3× for composites), dimensional (CMM), electrical (hipot 1.5× rated voltage, IR >100 MΩ at 500V), functional (full operational cycle). AQL 0.65 Level II for sampling tests. Zero-defect policy for safety-critical features.

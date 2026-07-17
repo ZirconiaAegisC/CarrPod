@@ -1,4 +1,4 @@
-# Substation Dielectric Ground-Grid VOL-55: Government Incentive Eligibility
-## CSMFAB-P004-Substation-Ground-Grid-75 | Per-Acre EM Hardening Retrofit | Cost: $340,000/acre
+# P004-Substation-Ground-Grid VOL-55: HOMEOWNER & COMMISSIONING
+## CSMFAB | Civil Infrastructure | Priority: Active
 
-Geopolymer 150mm, 4× CNT-003 rods, 8 FEATHER nodes, ZTA pads. 19:1 ROI vs transformer replacement.
+User operation: No routine user action required for passive products (bearings, joints, insulators). For active products: FEATHER mesh provides remote status monitoring via Carr-Library, Pocket Watch X, or S-Bus dashboard. Local status: e-ink display or LED indicator. Troubleshooting: error codes displayed, reference card provided, FEATHER mesh support messaging available 24/7. Emergency: 911 for life-threatening situations, CSM support for product issues via FEATHER message relay.

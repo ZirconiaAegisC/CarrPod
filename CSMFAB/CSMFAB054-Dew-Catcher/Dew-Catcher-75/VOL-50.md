@@ -1,4 +1,4 @@
-# Dew-Catcher VOL-50: Intellectual Property
-## CSMFAB-CSMFAB054-Dew-Catcher-75 | Solar Atmospheric Water Generator + Medication Cooler | Cost: $290
+# 054-Dew-Catcher VOL-50: INSTALLATION & DEPLOYMENT
+## CSMFAB | General | Priority: Active
 
-8.2kg backpack, 100W folding solar, Peltier condenser, 2-5L/day water, 4°C med compartment.
+Deployment logistics: Packaging in custom foam crate (PE 32 kg/m³) with desiccant (4× 50g silica gel), shock indicator (ShockWatch MAG 2000, 50G threshold). LTL freight Class 70 for domestic. Sea freight for international (20ft container, 40-120 units per container depending on product size). Warehouse: climate-controlled 15-25°C, <60% RH. Shelf life: 2 years for products with LFP batteries (ship at 50% SOC), unlimited for passive products (ceramic, BFRP composite).

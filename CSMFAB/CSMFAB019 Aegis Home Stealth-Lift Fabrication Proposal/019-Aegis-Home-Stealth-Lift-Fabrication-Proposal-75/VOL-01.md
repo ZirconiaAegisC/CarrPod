@@ -1,4 +1,4 @@
-# 019 Aegis Home Stealth-Lift Fabrication Proposal VOL-01: Product Identity and Mission
-## CSMFAB019 Aegis Home Stealth-Lift Fabrication Proposal | Carrington-hardened fabrication product | Cost: TBD
+# 019 Aegis Home Stealth-Lift Fabrication Proposal VOL-01: IDENTITY & SPECS
+## CSMFAB | Residential Hardening | Priority: Active
 
-Dense fabrication specification for 019 Aegis Home Stealth-Lift Fabrication Proposal. Part 1 of 75-document deep fabrication package.
+Primary Carrington-hardened fabrication product. Category: Residential Hardening. All CSMFAB standards apply: dielectric construction, non-conductive throughout, GIC-immunity verified at >10⁸ Ω·m, BFRP enclosure where applicable, FEATHER LoRa mesh integration standard, S-Bus protocol support. Target deployment: 2026-2028 pilot, 2029+ scaled production.

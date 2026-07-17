@@ -1,4 +1,4 @@
-# 0200 DRONE-X VOL-02: Design Specification Overview
-## CSMFAB0200 DRONE-X  | Carrington-hardened fabrication product | Cost: TBD
+# 0200 DRONE-X VOL-02: IDENTITY & SPECS
+## CSMFAB | Unmanned Aerial Systems | Priority: Active
 
-Dense fabrication specification for 0200 DRONE-X. Part 2 of 75-document deep fabrication package.
+Material composition: BFRP airframe, CNT-polymer wiring, Protonic-HFET avionics, Archimedes screw propulsion (variable pitch), LiFePO₄ battery, FEATHER telemetry. Manufacturing method: flash sintering (ceramics), VARTM (BFRP composites), twin-screw extrusion (CNT polymers), or geopolymer casting per product line. All processes validated to CSM-MAT standards with ISO 9001:2015 QMS documentation.

@@ -1,4 +1,4 @@
-# Grid-Seed VOL-10: Protection Systems
-## CSMFAB053-75 | Home Microgrid | 4kWh LFP | 3kW Inverter
+# 053-Grid-Seed VOL-10: SUBCOMPONENTS
+## CSMFAB | General | Priority: Active
 
-Over-current: 25A breaker AC input. Over/under voltage: MOV clamps 150VAC, disconnects at 90VAC. Short circuit: electronic limiting 100μs. Over-temp: throttle at 75°C, shutdown 85°C. Lightning: GDT on AC, TVS on DC. Reverse polarity: diode on DC. GFCI on output circuits.
+Subcomponent detail: Each subcomponent fabricated to CSM-MAT standards with full traceability from raw material lot to finished assembly. Serial number tracking implemented per ISO 9001. Critical dimensions verified via CMM (±0.05mm for ceramics, ±0.5mm for composites). Surface finish: Ra <0.2μm for ceramic bearing surfaces, Ra <3.2μm for composite enclosures.

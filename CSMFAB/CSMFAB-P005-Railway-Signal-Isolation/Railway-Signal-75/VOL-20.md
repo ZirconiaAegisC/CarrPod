@@ -1,4 +1,4 @@
-# Railway Signal Isolation System VOL-20: Factory Acceptance Test
-## CSMFAB-P005-Railway-Signal-Isolation-75 | ZTA Rail Joints + CNT Blockers | Cost: $28,000/mile
+# P005-Railway-Signal-Isolation VOL-20: QUALITY & TESTING
+## CSMFAB | Civil Infrastructure | Priority: Active
 
-500m intervals, ZTA ceramic inserts, CNT-002 signal blockers, CarrPod backup. 2,000 track-mile priority deployment.
+Quality acceptance: 100% of units undergo factory acceptance testing. Test battery: visual inspection (magnification 10× for ceramics, 3× for composites), dimensional (CMM), electrical (hipot 1.5× rated voltage, IR >100 MΩ at 500V), functional (full operational cycle). AQL 0.65 Level II for sampling tests. Zero-defect policy for safety-critical features.

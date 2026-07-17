@@ -1,4 +1,4 @@
-# Grid-Seed VOL-17: Final Assembly Sequence
-## CSMFAB053-75 | Home Microgrid | 4kWh LFP | 3kW Inverter
+# 053-Grid-Seed VOL-17: QUALITY & TESTING
+## CSMFAB | General | Priority: Active
 
-1) Battery pack installed lower section. 2) Electronics tray (3mm BFRP sheet) mounted 10mm standoffs. 3) Core-1×2, inverter, MPPT, contactor mounted. 4) Wiring: AC torqued 2.5 N·m, DC 5 N·m. 5) Antenna PG9 gland. 6) Display on door. 7) Gasket seat, door close, latch. Time: 3hr.
+General product specification. Section 17 of 75-document deep fabrication package. Material: CSM-spec advanced composites and ceramics. All specifications per CSM-MAT and CSM-TEST standards. Full traceability from raw material to finished assembly. ISO 9001:2015 QMS documented at every critical control point. FEATHER mesh integrated where applicable. S-Bus protocol support standard. Carr-Forge open-source documentation available.

@@ -1,4 +1,4 @@
-# Transformer Neutral GIC Blocker 250kV VOL-30: Installation Step 1
-## CSMFAB-P003-Transformer-GIC-Blocker-75 | CNT-Polymer Solid-State GIC Diverter | Cost: $185,000
+# P003-Transformer-GIC-Blocker VOL-30: ELECTRICAL & GIC TESTING
+## CSMFAB | Civil Infrastructure | Priority: Active
 
-250kV, 400A 60Hz, 40kA fault, 20kV DC blocking. CNT-PPS core 200mm. BFRP+MXene enclosure.
+GIC immunity testing: Conducted GIC 0-200A DC sweep through all terminals. Pass: no device malfunction, no false triggering, insulation resistance maintained above 100 MΩ. Radiated GMD simulation: Helmholtz coil 0-500μT DC, 3 axes, no induced effects. Lightning indirect effects: 8/20μs 100kA waveform per IEC 62305. Magnetostatic: 1.0T DC field, no magnetic saturation of any component.

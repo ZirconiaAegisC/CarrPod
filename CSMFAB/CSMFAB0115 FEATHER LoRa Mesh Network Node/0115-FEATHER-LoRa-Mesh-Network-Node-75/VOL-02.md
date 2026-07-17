@@ -1,4 +1,4 @@
-# 0115 FEATHER LoRa Mesh Network Node VOL-02: Design Specification Overview
-## CSMFAB0115 FEATHER LoRa Mesh Network Node | Carrington-hardened fabrication product | Cost: TBD
+# 0115 FEATHER LoRa Mesh Network Node VOL-02: IDENTITY & SPECS
+## CSMFAB | Communications Mesh | Priority: Active
 
-Dense fabrication specification for 0115 FEATHER LoRa Mesh Network Node. Part 2 of 75-document deep fabrication package.
+Material composition: BFRP enclosure, MXene EMI shield, GaN RF front-end, Protonic-HFET for mesh routing logic, CNT-polymer antenna, LiFePO₄ battery with 5W solar. Manufacturing method: flash sintering (ceramics), VARTM (BFRP composites), twin-screw extrusion (CNT polymers), or geopolymer casting per product line. All processes validated to CSM-MAT standards with ISO 9001:2015 QMS documentation.

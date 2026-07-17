@@ -1,4 +1,4 @@
-# Carr-Forge VOL-20: Factory Acceptance Test
-## CSMFAB-CSMFAB064-Carr-Forge-75 | Open-Source Fabrication Platform | Cost: $48/mo hosting
+# 064-Carr-Forge VOL-20: QUALITY & TESTING
+## CSMFAB | General | Priority: Active
 
-Git-based, KiCad+FreeCAD, CERN-OHL-S 2.0, CC-BY-SA 4.0. CI/CD Gerber generation. CarrPod.org.
+Quality acceptance: 100% of units undergo factory acceptance testing. Test battery: visual inspection (magnification 10× for ceramics, 3× for composites), dimensional (CMM), electrical (hipot 1.5× rated voltage, IR >100 MΩ at 500V), functional (full operational cycle). AQL 0.65 Level II for sampling tests. Zero-defect policy for safety-critical features.

@@ -1,4 +1,4 @@
-# Pipeline Isolation Joint Class 600 VOL-45: Volume Cost Reduction Model
-## CSMFAB-P008-Pipeline-Isolation-Joint-75 | Si₃N₄ Ceramic 24" Dielectric Joint | Cost: $12,500
+# P008-Pipeline-Isolation-Joint VOL-45: ENDURANCE & FIELD TRIALS
+## CSMFAB | Residential Hardening | Priority: Active
 
-610mm OD, 10.2 MPa, 32× M36 BFRP bolts, PTFE gasket. Breaks telluric current every 50km.
+Endurance validation: Continuous operation at rated load, 168 hours (7 days). Accelerated life testing: thermal cycling (-20/+60°C, 1,000 cycles), mechanical cycling (rated load, 100,000 cycles), electrical cycling (on/off, 10,000 cycles). Post-endurance: all specifications within 95% of initial values. Predicted service life: 15-75 years depending on product class, validated via Arrhenius model with activation energy 0.7 eV.

@@ -1,4 +1,4 @@
-# Grid-Heart VOL-05: Mechanical Architecture
-## CSMFAB-CSMFAB062-Grid-Heart-75 | Passive Non-Contact Transformer Monitor | Cost: $34
+# 062-Grid-Heart VOL-05: IDENTITY & SPECS
+## CSMFAB | General | Priority: Active
 
-Ferrite core coil, hot-stick clamp, 60Hz detection, FEATHER mesh, 2×AA lithium 3yr, real-time transformer health map.
+Critical material specifications: Fully dielectric. GIC immune. FEATHER mesh integrated. S-Bus compatible. BFRP enclosure standard.. Testing per CSM-TEST protocol suite. Every material lot tested for: composition (XRF/XRD), particle size (laser diffraction for powders, SEM for composites), dielectric strength (ASTM D149), DC resistivity (ASTM D257), mechanical properties (ASTM per material class).

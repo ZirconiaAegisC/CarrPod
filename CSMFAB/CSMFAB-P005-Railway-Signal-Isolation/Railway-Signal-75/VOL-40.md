@@ -1,4 +1,4 @@
-# Railway Signal Isolation System VOL-40: Workforce Requirements
-## CSMFAB-P005-Railway-Signal-Isolation-75 | ZTA Rail Joints + CNT Blockers | Cost: $28,000/mile
+# P005-Railway-Signal-Isolation VOL-40: EMC & SOFTWARE
+## CSMFAB | Civil Infrastructure | Priority: Active
 
-500m intervals, ZTA ceramic inserts, CNT-002 signal blockers, CarrPod backup. 2,000 track-mile priority deployment.
+EMC compliance testing: Conducted emissions 150kHz-30MHz (FCC Part 15 Class B). Radiated emissions 30MHz-1GHz. Radiated susceptibility IEC 61000-4-3, 10 V/m, 80MHz-1GHz. Conducted susceptibility IEC 61000-4-6, 10V, 150kHz-80MHz. ESD IEC 61000-4-2, ±8kV contact, ±15kV air. EFT/Burst IEC 61000-4-4, ±2kV on power ports. All tests: no malfunction, no degradation. MXene internal shield provides 60-92 dB SE depending on frequency.

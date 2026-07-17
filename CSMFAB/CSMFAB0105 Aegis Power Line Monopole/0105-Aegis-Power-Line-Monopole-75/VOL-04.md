@@ -1,4 +1,4 @@
-# 0105 Aegis Power Line Monopole VOL-04: Bill of Materials Summary
-## CSMFAB0105 Aegis Power Line Monopole | Carrington-hardened fabrication product | Cost: TBD
+# 0105 Aegis Power Line Monopole VOL-04: IDENTITY & SPECS
+## CSMFAB | Transmission Infrastructure | Priority: Active
 
-Dense fabrication specification for 0105 Aegis Power Line Monopole. Part 4 of 75-document deep fabrication package.
+Bill of Materials summary: Primary material BFRP monopole with CNT-polymer core and MXene exterior coating. ZTA insulator st... Subcomponent count: 5-18 depending on product complexity. All suppliers qualified to CSM-SUP-001 standard with dual-source alternatives validated. Lead times documented. MOQ minimums established for all specialty materials.

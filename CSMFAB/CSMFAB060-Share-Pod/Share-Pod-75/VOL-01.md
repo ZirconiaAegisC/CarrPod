@@ -1,4 +1,4 @@
-# Share-Pod VOL-01: Product Identity and Mission
-## CSMFAB-CSMFAB060-Share-Pod-75 | 1kWh Portable Battery for Neighbor Sharing | Cost: $195
+# 060-Share-Pod VOL-01: IDENTITY & SPECS
+## CSMFAB | General | Priority: Active
 
-320×200×160mm, 8.5kg, 2 AC + 4 USB, FEATHER+S-Bus, charge from Grid-Seed 2.5hr. The CarrPod for your neighbor.
+Primary Carrington-hardened fabrication product. Category: General. All CSMFAB standards apply: dielectric construction, non-conductive throughout, GIC-immunity verified at >10⁸ Ω·m, BFRP enclosure where applicable, FEATHER LoRa mesh integration standard, S-Bus protocol support. Target deployment: 2026-2028 pilot, 2029+ scaled production.

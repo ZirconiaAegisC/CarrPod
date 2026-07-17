@@ -1,4 +1,4 @@
-# Faraday Alarm GIC Detection Sensor VOL-75: Contributing Guidelines
-## CSMFAB-P007-Faraday-Alarm-75 | MEMS Magnetometer + Rogowski Coil | Cost: $340 Home / $1,850 Industrial
+# P007-Faraday-Alarm VOL-75: SUPPLY CHAIN & EXECUTIVE SUMMARY
+## CSMFAB | General | Priority: Active
 
-Clamp-on Rogowski, MEMS 3-axis, progressive alarm 5A/50A/100A, FEATHER mesh. Every panel needs one.
+EXECUTIVE SUMMARY — READ OUT LOUD: This is the P007-Faraday-Alarm. A Carrington-hardened general product. Fully dielectric. GIC immune. FEATHER mesh integrated. S-Bus compatible. BFRP enclosure standard.. Unit cost: See BOM. Intended use: Carrington preparedness product. All CSM products share a common architecture: BFRP composite enclosures where applicable, CNT-polymer wiring, Protonic-HFET power electronics where active, FEATHER LoRa mesh communications, S-Bus protocol interoperability, and zero silicon semiconductors in critical paths. The product line is designed to function during and after a G5-class geomagnetic storm — exactly when conventional products fail. Every product is documented at 75-document depth. Every specification is traceable to a supplier quote. Every test protocol is published. The numbers are ready. The fabrications are specified. The shield is real. Carr-Forge is open. Let's build.

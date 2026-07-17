@@ -1,4 +1,4 @@
-# Transformer Neutral GIC Blocker 250kV VOL-50: Intellectual Property
-## CSMFAB-P003-Transformer-GIC-Blocker-75 | CNT-Polymer Solid-State GIC Diverter | Cost: $185,000
+# P003-Transformer-GIC-Blocker VOL-50: INSTALLATION & DEPLOYMENT
+## CSMFAB | Civil Infrastructure | Priority: Active
 
-250kV, 400A 60Hz, 40kA fault, 20kV DC blocking. CNT-PPS core 200mm. BFRP+MXene enclosure.
+Deployment logistics: Packaging in custom foam crate (PE 32 kg/m³) with desiccant (4× 50g silica gel), shock indicator (ShockWatch MAG 2000, 50G threshold). LTL freight Class 70 for domestic. Sea freight for international (20ft container, 40-120 units per container depending on product size). Warehouse: climate-controlled 15-25°C, <60% RH. Shelf life: 2 years for products with LFP batteries (ship at 50% SOC), unlimited for passive products (ceramic, BFRP composite).

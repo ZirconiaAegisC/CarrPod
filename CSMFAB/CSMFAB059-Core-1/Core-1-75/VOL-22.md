@@ -1,4 +1,4 @@
-# Core-1 VOL-22: Electrical Safety Test
-## CSMFAB-CSMFAB059-Core-1-75 | Standardized Power Management Module | Cost: $42 BOM
+# 059-Core-1 VOL-22: CERTIFICATION & COMPLIANCE
+## CSMFAB | General | Priority: Active
 
-80×50mm PCB, Protonic-HFET MPPT, LFP BMS, 300W inverter, LoRa S-Bus, e-ink driver. Shared across ALL CSM products.
+General product specification. Section 22 of 75-document deep fabrication package. Material: CSM-spec advanced composites and ceramics. All specifications per CSM-MAT and CSM-TEST standards. Full traceability from raw material to finished assembly. ISO 9001:2015 QMS documented at every critical control point. FEATHER mesh integrated where applicable. S-Bus protocol support standard. Carr-Forge open-source documentation available.

@@ -1,4 +1,4 @@
-# Railway Signal Isolation System VOL-04: Materials Bill of Materials
-## CSMFAB-P005-Railway-Signal-Isolation-75 | ZTA Rail Joints + CNT Blockers | Cost: $28,000/mile
+# P005-Railway-Signal-Isolation VOL-04: IDENTITY & SPECS
+## CSMFAB | Civil Infrastructure | Priority: Active
 
-500m intervals, ZTA ceramic inserts, CNT-002 signal blockers, CarrPod backup. 2,000 track-mile priority deployment.
+Bill of Materials summary: Primary material Geopolymer concrete (85 MPa), BFRP rebar, ZTA ceramic bearings, CNT-polymer grou... Subcomponent count: 5-18 depending on product complexity. All suppliers qualified to CSM-SUP-001 standard with dual-source alternatives validated. Lead times documented. MOQ minimums established for all specialty materials.

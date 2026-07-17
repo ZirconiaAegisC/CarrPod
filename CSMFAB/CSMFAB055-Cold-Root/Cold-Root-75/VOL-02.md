@@ -1,4 +1,4 @@
-# Cold-Root VOL-02: Design Specification Summary
-## CSMFAB-CSMFAB055-Cold-Root-75 | Geothermal Phase-Change Refrigerator | Cost: $178
+# 055-Cold-Root VOL-02: IDENTITY & SPECS
+## CSMFAB | General | Priority: Active
 
-1.0×1.0×1.5m, 200L, CaCl₂·6H₂O PCM at 4°C, 0.5m burial, zero electricity, infinite life.
+Material composition: CSM-spec advanced composites and ceramics. Manufacturing method: flash sintering (ceramics), VARTM (BFRP composites), twin-screw extrusion (CNT polymers), or geopolymer casting per product line. All processes validated to CSM-MAT standards with ISO 9001:2015 QMS documentation.

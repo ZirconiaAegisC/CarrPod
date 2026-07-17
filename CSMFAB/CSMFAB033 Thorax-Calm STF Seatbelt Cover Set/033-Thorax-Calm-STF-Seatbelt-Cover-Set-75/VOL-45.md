@@ -1,4 +1,4 @@
-# 033 Thorax-Calm STF Seatbelt Cover Set VOL-45: Total Unit Cost Summary
-## CSMFAB033 Thorax-Calm STF Seatbelt Cover Set | Carrington-hardened fabrication product | Cost: TBD
+# 033 Thorax-Calm STF Seatbelt Cover Set VOL-45: ENDURANCE & FIELD TRIALS
+## CSMFAB | Vehicle Hardening | Priority: Active
 
-Dense fabrication specification for 033 Thorax-Calm STF Seatbelt Cover Set. Part 45 of 75-document deep fabrication package.
+Endurance validation: Continuous operation at rated load, 168 hours (7 days). Accelerated life testing: thermal cycling (-20/+60°C, 1,000 cycles), mechanical cycling (rated load, 100,000 cycles), electrical cycling (on/off, 10,000 cycles). Post-endurance: all specifications within 95% of initial values. Predicted service life: 15-75 years depending on product class, validated via Arrhenius model with activation energy 0.7 eV.

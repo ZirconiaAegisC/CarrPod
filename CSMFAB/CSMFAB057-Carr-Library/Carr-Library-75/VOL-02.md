@@ -1,4 +1,4 @@
-# Carr-Library VOL-02: Design Specification Summary
-## CSMFAB-CSMFAB057-Carr-Library-75 | Offline Solar Survival Knowledge Tablet | Cost: $118
+# 057-Carr-Library VOL-02: IDENTITY & SPECS
+## CSMFAB | General | Priority: Active
 
-7.8" e-ink, 100K page turns, 32GB, 5W solar, FEATHER mesh, IP67, 420g. No browser, no apps.
+Material composition: CSM-spec advanced composites and ceramics. Manufacturing method: flash sintering (ceramics), VARTM (BFRP composites), twin-screw extrusion (CNT polymers), or geopolymer casting per product line. All processes validated to CSM-MAT standards with ISO 9001:2015 QMS documentation.

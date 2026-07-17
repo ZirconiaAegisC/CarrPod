@@ -1,4 +1,4 @@
-# Carr-Library VOL-70: Distribution and Logistics
-## CSMFAB-CSMFAB057-Carr-Library-75 | Offline Solar Survival Knowledge Tablet | Cost: $118
+# 057-Carr-Library VOL-70: MARKET & COMPETITION
+## CSMFAB | General | Priority: Active
 
-7.8" e-ink, 100K page turns, 32GB, 5W solar, FEATHER mesh, IP67, 420g. No browser, no apps.
+Market analysis: Total addressable market — see product class. US residential: 131M households. US commercial: 5.9M buildings. US infrastructure: 600K bridges, 55K substations, 2.6M miles pipeline, 140K miles rail, 4M miles roads. Global TAM: 3-5× US. First-mover advantage: CSM is the only company producing fully dielectric, GIC-immune products certified for Carrington preparedness. Patents pending for all core technologies. Open-source hardware via Carr-Forge (CERN-OHL-S 2.0) for community variants.

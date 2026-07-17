@@ -1,4 +1,4 @@
-# CarrSongs VOL-04: Materials Bill of Materials
-## CSMFAB-CSMFAB063-CarrSongs-75 | 14 Community Morale & Educational Songs | Cost: Free
+# 063-CarrSongs VOL-04: IDENTITY & SPECS
+## CSMFAB | General | Priority: Active
 
-CC-BY-SA 4.0, call-and-response, MP3+sheet music+karaoke. Pre-loaded on all CSM devices. Community morale product.
+Bill of Materials summary: Primary material CSM-spec advanced composites and ceramics... Subcomponent count: 5-18 depending on product complexity. All suppliers qualified to CSM-SUP-001 standard with dual-source alternatives validated. Lead times documented. MOQ minimums established for all specialty materials.

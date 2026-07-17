@@ -1,4 +1,4 @@
-# 040 Smart Rope Actuator Design Specification VOL-04: Bill of Materials Summary
-## CSMFAB040 Smart Rope Actuator Design Specification | Carrington-hardened fabrication product | Cost: TBD
+# 040 Smart Rope Actuator Design Specification VOL-04: IDENTITY & SPECS
+## CSMFAB | Actuation | Priority: Active
 
-Dense fabrication specification for 040 Smart Rope Actuator Design Specification. Part 4 of 75-document deep fabrication package.
+Bill of Materials summary: Primary material CNT-doped polymer fiber bundles with Smart Muscle (SMA) actuation. Dielectric sh... Subcomponent count: 5-18 depending on product complexity. All suppliers qualified to CSM-SUP-001 standard with dual-source alternatives validated. Lead times documented. MOQ minimums established for all specialty materials.

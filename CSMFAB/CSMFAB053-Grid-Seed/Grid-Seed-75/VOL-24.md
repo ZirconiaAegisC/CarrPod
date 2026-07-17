@@ -1,4 +1,4 @@
-# Grid-Seed VOL-24: NFPA 70 NEC Article 706 Compliance
-## CSMFAB053-75 | Home Microgrid | 4kWh LFP | 3kW Inverter
+# 053-Grid-Seed VOL-24: CERTIFICATION & COMPLIANCE
+## CSMFAB | General | Priority: Active
 
-Article 706: Energy Storage Systems. Requirements: disconnecting means, overcurrent protection, ventilation, working space, signage. Grid-Seed: integral 25A breaker is disconnect. Passive cooling — no ventilation requirement. Wall-mounted satisfies working space (762mm front). Label: 'ENERGY STORAGE SYSTEM — DO NOT DISCONNECT UNDER LOAD' affixed to enclosure.
+General product specification. Section 24 of 75-document deep fabrication package. Material: CSM-spec advanced composites and ceramics. All specifications per CSM-MAT and CSM-TEST standards. Full traceability from raw material to finished assembly. ISO 9001:2015 QMS documented at every critical control point. FEATHER mesh integrated where applicable. S-Bus protocol support standard. Carr-Forge open-source documentation available.

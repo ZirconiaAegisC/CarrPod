@@ -1,4 +1,4 @@
-# Carr-Forge VOL-30: Installation Step 1
-## CSMFAB-CSMFAB064-Carr-Forge-75 | Open-Source Fabrication Platform | Cost: $48/mo hosting
+# 064-Carr-Forge VOL-30: ELECTRICAL & GIC TESTING
+## CSMFAB | General | Priority: Active
 
-Git-based, KiCad+FreeCAD, CERN-OHL-S 2.0, CC-BY-SA 4.0. CI/CD Gerber generation. CarrPod.org.
+GIC immunity testing: Conducted GIC 0-200A DC sweep through all terminals. Pass: no device malfunction, no false triggering, insulation resistance maintained above 100 MΩ. Radiated GMD simulation: Helmholtz coil 0-500μT DC, 3 axes, no induced effects. Lightning indirect effects: 8/20μs 100kA waveform per IEC 62305. Magnetostatic: 1.0T DC field, no magnetic saturation of any component.

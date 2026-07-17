@@ -1,4 +1,4 @@
-# 0104 Aegis Fencing for Carrington Event VOL-01: Product Identity and Mission
-## CSMFAB0104 Aegis Fencing for Carrington Event | Carrington-hardened fabrication product | Cost: TBD
+# 0104 Aegis Fencing for Carrington Event VOL-01: IDENTITY & SPECS
+## CSMFAB | Civil Infrastructure | Priority: Active
 
-Dense fabrication specification for 0104 Aegis Fencing for Carrington Event. Part 1 of 75-document deep fabrication package.
+Primary Carrington-hardened fabrication product. Category: Civil Infrastructure. All CSMFAB standards apply: dielectric construction, non-conductive throughout, GIC-immunity verified at >10⁸ Ω·m, BFRP enclosure where applicable, FEATHER LoRa mesh integration standard, S-Bus protocol support. Target deployment: 2026-2028 pilot, 2029+ scaled production.

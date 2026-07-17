@@ -1,4 +1,4 @@
-# Earth-Pulse VOL-05: Mechanical Architecture
-## CSMFAB-CSMFAB061-Earth-Pulse-75 | Seismic GIC Early Warning Network | Cost: $420/node
+# 061-Earth-Pulse VOL-05: IDENTITY & SPECS
+## CSMFAB | General | Priority: Active
 
-Geophone 4.5Hz, Core-1 FFT, 0.01-1Hz GIC detection, FEATHER alert 5-15min before E3 onset. 5-10km node spacing.
+Critical material specifications: Fully dielectric. GIC immune. FEATHER mesh integrated. S-Bus compatible. BFRP enclosure standard.. Testing per CSM-TEST protocol suite. Every material lot tested for: composition (XRF/XRD), particle size (laser diffraction for powders, SEM for composites), dielectric strength (ASTM D149), DC resistivity (ASTM D257), mechanical properties (ASTM per material class).

@@ -1,4 +1,4 @@
-# Grid-Heart VOL-10: Critical Manufacturing Step 1
-## CSMFAB-CSMFAB062-Grid-Heart-75 | Passive Non-Contact Transformer Monitor | Cost: $34
+# 062-Grid-Heart VOL-10: SUBCOMPONENTS
+## CSMFAB | General | Priority: Active
 
-Ferrite core coil, hot-stick clamp, 60Hz detection, FEATHER mesh, 2×AA lithium 3yr, real-time transformer health map.
+Subcomponent detail: Each subcomponent fabricated to CSM-MAT standards with full traceability from raw material lot to finished assembly. Serial number tracking implemented per ISO 9001. Critical dimensions verified via CMM (±0.05mm for ceramics, ±0.5mm for composites). Surface finish: Ra <0.2μm for ceramic bearing surfaces, Ra <3.2μm for composite enclosures.

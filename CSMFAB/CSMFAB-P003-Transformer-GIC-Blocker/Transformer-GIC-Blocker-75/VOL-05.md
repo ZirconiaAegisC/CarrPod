@@ -1,4 +1,4 @@
-# Transformer Neutral GIC Blocker 250kV VOL-05: Mechanical Architecture
-## CSMFAB-P003-Transformer-GIC-Blocker-75 | CNT-Polymer Solid-State GIC Diverter | Cost: $185,000
+# P003-Transformer-GIC-Blocker VOL-05: IDENTITY & SPECS
+## CSMFAB | Civil Infrastructure | Priority: Active
 
-250kV, 400A 60Hz, 40kA fault, 20kV DC blocking. CNT-PPS core 200mm. BFRP+MXene enclosure.
+Critical material specifications: All components dielectric with GIC blocking >10⁸ Ω·m. Designed for 75-year service life with zero maintenance. Seismic rated to 0.5g. Thermal range -40°C to +85°C.. Testing per CSM-TEST protocol suite. Every material lot tested for: composition (XRF/XRD), particle size (laser diffraction for powders, SEM for composites), dielectric strength (ASTM D149), DC resistivity (ASTM D257), mechanical properties (ASTM per material class).

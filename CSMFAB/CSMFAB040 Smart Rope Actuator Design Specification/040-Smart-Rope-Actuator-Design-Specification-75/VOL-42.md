@@ -1,4 +1,4 @@
-# 040 Smart Rope Actuator Design Specification VOL-42: BOM Cost Breakdown
-## CSMFAB040 Smart Rope Actuator Design Specification | Carrington-hardened fabrication product | Cost: TBD
+# 040 Smart Rope Actuator Design Specification VOL-42: ENDURANCE & FIELD TRIALS
+## CSMFAB | Actuation | Priority: Active
 
-Dense fabrication specification for 040 Smart Rope Actuator Design Specification. Part 42 of 75-document deep fabrication package.
+Actuation product specification. Section 42 of 75-document deep fabrication package. Material: CNT-doped polymer fiber bundles with Smart Muscle (SMA) actuation. Dielectric sheath (BFRP braid). M. All specifications per CSM-MAT and CSM-TEST standards. Full traceability from raw material to finished assembly. ISO 9001:2015 QMS documented at every critical control point. FEATHER mesh integrated where applicable. S-Bus protocol support standard. Carr-Forge open-source documentation available.

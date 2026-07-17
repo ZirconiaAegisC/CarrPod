@@ -1,4 +1,4 @@
-# Grid-Seed VOL-23: IEEE 1547 Grid Interconnection
-## CSMFAB053-75 | Home Microgrid | 4kWh LFP | 3kW Inverter
+# 053-Grid-Seed VOL-23: CERTIFICATION & COMPLIANCE
+## CSMFAB | General | Priority: Active
 
-Required for grid-tied operation. Voltage ride-through, frequency ride-through, anti-islanding, power quality. Grid-Seed is behind-the-meter — interconnection agreement with utility required. IEEE 1547-2018 compliant. UL 1741 SA (California) for smart inverter functions.
+General product specification. Section 23 of 75-document deep fabrication package. Material: CSM-spec advanced composites and ceramics. All specifications per CSM-MAT and CSM-TEST standards. Full traceability from raw material to finished assembly. ISO 9001:2015 QMS documented at every critical control point. FEATHER mesh integrated where applicable. S-Bus protocol support standard. Carr-Forge open-source documentation available.

@@ -1,4 +1,4 @@
-# Core-1 VOL-10: Critical Manufacturing Step 1
-## CSMFAB-CSMFAB059-Core-1-75 | Standardized Power Management Module | Cost: $42 BOM
+# 059-Core-1 VOL-10: SUBCOMPONENTS
+## CSMFAB | General | Priority: Active
 
-80×50mm PCB, Protonic-HFET MPPT, LFP BMS, 300W inverter, LoRa S-Bus, e-ink driver. Shared across ALL CSM products.
+Subcomponent detail: Each subcomponent fabricated to CSM-MAT standards with full traceability from raw material lot to finished assembly. Serial number tracking implemented per ISO 9001. Critical dimensions verified via CMM (±0.05mm for ceramics, ±0.5mm for composites). Surface finish: Ra <0.2μm for ceramic bearing surfaces, Ra <3.2μm for composite enclosures.

@@ -1,4 +1,4 @@
-# Grid-Seed VOL-66: Pricing Strategy
-## CSMFAB053-75 | Home Microgrid
+# 053-Grid-Seed VOL-66: MARKET & COMPETITION
+## CSMFAB | General | Priority: Active
 
-MSRP $2,400. Wholesale $1,920. Direct $2,400. Gross margin 25% at 1K/yr. Net margin 12% after R&D amort. Breakeven 380 units.
+General product specification. Section 66 of 75-document deep fabrication package. Material: CSM-spec advanced composites and ceramics. All specifications per CSM-MAT and CSM-TEST standards. Full traceability from raw material to finished assembly. ISO 9001:2015 QMS documented at every critical control point. FEATHER mesh integrated where applicable. S-Bus protocol support standard. Carr-Forge open-source documentation available.

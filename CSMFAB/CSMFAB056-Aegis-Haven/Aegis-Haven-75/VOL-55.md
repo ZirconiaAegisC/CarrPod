@@ -1,4 +1,4 @@
-# Aegis-Haven VOL-55: Government Incentive Eligibility
-## CSMFAB-CSMFAB056-Aegis-Haven-75 | Modular Deployable Family Shelter | Cost: $4,200
+# 056-Aegis-Haven VOL-55: HOMEOWNER & COMMISSIONING
+## CSMFAB | General | Priority: Active
 
-3×3m, ZrB₂-SiC panels, wedge-and-pin assembly 20min, 100W solar roof, 2kWh battery, aerogel floor, Stellar-Tint windows.
+User operation: No routine user action required for passive products (bearings, joints, insulators). For active products: FEATHER mesh provides remote status monitoring via Carr-Library, Pocket Watch X, or S-Bus dashboard. Local status: e-ink display or LED indicator. Troubleshooting: error codes displayed, reference card provided, FEATHER mesh support messaging available 24/7. Emergency: 911 for life-threatening situations, CSM support for product issues via FEATHER message relay.

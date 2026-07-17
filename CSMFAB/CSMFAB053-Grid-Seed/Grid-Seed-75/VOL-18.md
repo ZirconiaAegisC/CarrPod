@@ -1,4 +1,4 @@
-# Grid-Seed VOL-18: Factory Acceptance Testing
-## CSMFAB053-75 | Home Microgrid | 4kWh LFP | 3kW Inverter
+# 053-Grid-Seed VOL-18: QUALITY & TESTING
+## CSMFAB | General | Priority: Active
 
-100% units: 1) Visual. 2) IR >100MΩ at 500VDC all terminals. 3) Battery full cycle capacity ±2%. 4) Inverter 3kW 1hr THD<3%. 5) Transfer <50ms at 0W/500W/2kW. 6) MPPT >97%. 7) Comms mesh join+S-Bus relay. 8) HI-POT 1500VAC 60sec <1mA. Serial linked to test DB.
+General product specification. Section 18 of 75-document deep fabrication package. Material: CSM-spec advanced composites and ceramics. All specifications per CSM-MAT and CSM-TEST standards. Full traceability from raw material to finished assembly. ISO 9001:2015 QMS documented at every critical control point. FEATHER mesh integrated where applicable. S-Bus protocol support standard. Carr-Forge open-source documentation available.

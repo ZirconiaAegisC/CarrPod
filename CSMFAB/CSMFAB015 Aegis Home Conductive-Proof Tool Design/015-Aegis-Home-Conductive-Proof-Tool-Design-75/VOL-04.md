@@ -1,4 +1,4 @@
-# 015 Aegis Home Conductive-Proof Tool Design VOL-04: Bill of Materials Summary
-## CSMFAB015 Aegis Home Conductive-Proof Tool Design | Carrington-hardened fabrication product | Cost: TBD
+# 015 Aegis Home Conductive-Proof Tool Design VOL-04: IDENTITY & SPECS
+## CSMFAB | Residential Hardening | Priority: Active
 
-Dense fabrication specification for 015 Aegis Home Conductive-Proof Tool Design. Part 4 of 75-document deep fabrication package.
+Bill of Materials summary: Primary material BFRP-Elium composite (BF-002 Marine Grade), CNT-doped polymers, MXene coatings, ... Subcomponent count: 5-18 depending on product complexity. All suppliers qualified to CSM-SUP-001 standard with dual-source alternatives validated. Lead times documented. MOQ minimums established for all specialty materials.

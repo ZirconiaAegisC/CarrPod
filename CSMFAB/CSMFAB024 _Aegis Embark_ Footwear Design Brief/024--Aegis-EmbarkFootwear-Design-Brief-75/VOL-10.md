@@ -1,4 +1,4 @@
-# 024  Aegis EmbarkFootwear Design Brief VOL-10: Process Step 1: Preparation
-## CSMFAB024 _Aegis Embark_ Footwear Design Brief | Carrington-hardened fabrication product | Cost: TBD
+# 024  Aegis Embark  Footwear Design Brief VOL-10: SUBCOMPONENTS
+## CSMFAB | Vehicle Hardening | Priority: Active
 
-Dense fabrication specification for 024  Aegis EmbarkFootwear Design Brief. Part 10 of 75-document deep fabrication package.
+Subcomponent detail: Each subcomponent fabricated to CSM-MAT standards with full traceability from raw material lot to finished assembly. Serial number tracking implemented per ISO 9001. Critical dimensions verified via CMM (±0.05mm for ceramics, ±0.5mm for composites). Surface finish: Ra <0.2μm for ceramic bearing surfaces, Ra <3.2μm for composite enclosures.

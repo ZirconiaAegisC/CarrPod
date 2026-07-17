@@ -1,4 +1,4 @@
-# Transformer Neutral GIC Blocker 250kV VOL-04: Materials Bill of Materials
-## CSMFAB-P003-Transformer-GIC-Blocker-75 | CNT-Polymer Solid-State GIC Diverter | Cost: $185,000
+# P003-Transformer-GIC-Blocker VOL-04: IDENTITY & SPECS
+## CSMFAB | Civil Infrastructure | Priority: Active
 
-250kV, 400A 60Hz, 40kA fault, 20kV DC blocking. CNT-PPS core 200mm. BFRP+MXene enclosure.
+Bill of Materials summary: Primary material Geopolymer concrete (85 MPa), BFRP rebar, ZTA ceramic bearings, CNT-polymer grou... Subcomponent count: 5-18 depending on product complexity. All suppliers qualified to CSM-SUP-001 standard with dual-source alternatives validated. Lead times documented. MOQ minimums established for all specialty materials.

@@ -1,4 +1,4 @@
-# Transformer Neutral GIC Blocker 250kV VOL-55: Government Incentive Eligibility
-## CSMFAB-P003-Transformer-GIC-Blocker-75 | CNT-Polymer Solid-State GIC Diverter | Cost: $185,000
+# P003-Transformer-GIC-Blocker VOL-55: HOMEOWNER & COMMISSIONING
+## CSMFAB | Civil Infrastructure | Priority: Active
 
-250kV, 400A 60Hz, 40kA fault, 20kV DC blocking. CNT-PPS core 200mm. BFRP+MXene enclosure.
+User operation: No routine user action required for passive products (bearings, joints, insulators). For active products: FEATHER mesh provides remote status monitoring via Carr-Library, Pocket Watch X, or S-Bus dashboard. Local status: e-ink display or LED indicator. Troubleshooting: error codes displayed, reference card provided, FEATHER mesh support messaging available 24/7. Emergency: 911 for life-threatening situations, CSM support for product issues via FEATHER message relay.

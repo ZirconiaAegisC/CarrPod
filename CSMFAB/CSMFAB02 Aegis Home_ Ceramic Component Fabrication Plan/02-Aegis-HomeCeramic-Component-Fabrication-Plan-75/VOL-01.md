@@ -1,4 +1,4 @@
-# 02 Aegis HomeCeramic Component Fabrication Plan VOL-01: Product Identity and Mission
-## CSMFAB02 Aegis Home_ Ceramic Component Fabrication Plan | Carrington-hardened fabrication product | Cost: TBD
+# 02 Aegis Home  Ceramic Component Fabrication Plan VOL-01: IDENTITY & SPECS
+## CSMFAB | Ceramics | Priority: Active
 
-Dense fabrication specification for 02 Aegis HomeCeramic Component Fabrication Plan. Part 1 of 75-document deep fabrication package.
+Primary Carrington-hardened fabrication product. Category: Ceramics. All CSMFAB standards apply: dielectric construction, non-conductive throughout, GIC-immunity verified at >10⁸ Ω·m, BFRP enclosure where applicable, FEATHER LoRa mesh integration standard, S-Bus protocol support. Target deployment: 2026-2028 pilot, 2029+ scaled production.

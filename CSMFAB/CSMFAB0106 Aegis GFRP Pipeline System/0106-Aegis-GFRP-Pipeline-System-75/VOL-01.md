@@ -1,4 +1,4 @@
-# 0106 Aegis GFRP Pipeline System VOL-01: Product Identity and Mission
-## CSMFAB0106 Aegis GFRP Pipeline System | Carrington-hardened fabrication product | Cost: TBD
+# 0106 Aegis GFRP Pipeline System VOL-01: IDENTITY & SPECS
+## CSMFAB | Pipeline Infrastructure | Priority: Active
 
-Dense fabrication specification for 0106 Aegis GFRP Pipeline System. Part 1 of 75-document deep fabrication package.
+Primary Carrington-hardened fabrication product. Category: Pipeline Infrastructure. All CSMFAB standards apply: dielectric construction, non-conductive throughout, GIC-immunity verified at >10⁸ Ω·m, BFRP enclosure where applicable, FEATHER LoRa mesh integration standard, S-Bus protocol support. Target deployment: 2026-2028 pilot, 2029+ scaled production.

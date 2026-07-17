@@ -1,4 +1,4 @@
-# Carr-Forge VOL-15: Critical Control Point 2
-## CSMFAB-CSMFAB064-Carr-Forge-75 | Open-Source Fabrication Platform | Cost: $48/mo hosting
+# 064-Carr-Forge VOL-15: MANUFACTURING
+## CSMFAB | General | Priority: Active
 
-Git-based, KiCad+FreeCAD, CERN-OHL-S 2.0, CC-BY-SA 4.0. CI/CD Gerber generation. CarrPod.org.
+Manufacturing process: CSM-spec advanced composites and ceramics... Batch size 25-100 units per production run. Cycle time 4-8 hours per unit depending on complexity. In-process inspection at 5 critical control points. Statistical process control: Cpk >1.33 required for all critical dimensions. Out-of-spec: root cause analysis within 24 hours, corrective action within 72 hours.

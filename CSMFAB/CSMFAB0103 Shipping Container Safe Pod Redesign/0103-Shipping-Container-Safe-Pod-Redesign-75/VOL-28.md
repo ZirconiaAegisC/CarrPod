@@ -1,4 +1,4 @@
-# 0103 Shipping Container Safe Pod Redesign VOL-28: Field Trial Deployment Plan
-## CSMFAB0103 Shipping Container Safe Pod Redesign | Carrington-hardened fabrication product | Cost: TBD
+# 0103 Shipping Container Safe Pod Redesign VOL-28: ELECTRICAL & GIC TESTING
+## CSMFAB | Modular Infrastructure | Priority: Active
 
-Dense fabrication specification for 0103 Shipping Container Safe Pod Redesign. Part 28 of 75-document deep fabrication package.
+Modular Infrastructure product specification. Section 28 of 75-document deep fabrication package. Material: 20ft ISO container with BFRP interior panels, MXene EMI lining, CNT-polymer wiring, FEATHER node, Gr. All specifications per CSM-MAT and CSM-TEST standards. Full traceability from raw material to finished assembly. ISO 9001:2015 QMS documented at every critical control point. FEATHER mesh integrated where applicable. S-Bus protocol support standard. Carr-Forge open-source documentation available.

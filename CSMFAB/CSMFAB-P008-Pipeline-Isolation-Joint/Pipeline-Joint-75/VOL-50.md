@@ -1,4 +1,4 @@
-# Pipeline Isolation Joint Class 600 VOL-50: Intellectual Property
-## CSMFAB-P008-Pipeline-Isolation-Joint-75 | Si₃N₄ Ceramic 24" Dielectric Joint | Cost: $12,500
+# P008-Pipeline-Isolation-Joint VOL-50: INSTALLATION & DEPLOYMENT
+## CSMFAB | Residential Hardening | Priority: Active
 
-610mm OD, 10.2 MPa, 32× M36 BFRP bolts, PTFE gasket. Breaks telluric current every 50km.
+Deployment logistics: Packaging in custom foam crate (PE 32 kg/m³) with desiccant (4× 50g silica gel), shock indicator (ShockWatch MAG 2000, 50G threshold). LTL freight Class 70 for domestic. Sea freight for international (20ft container, 40-120 units per container depending on product size). Warehouse: climate-controlled 15-25°C, <60% RH. Shelf life: 2 years for products with LFP batteries (ship at 50% SOC), unlimited for passive products (ceramic, BFRP composite).

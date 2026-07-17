@@ -1,4 +1,4 @@
-# Dew-Catcher VOL-60: Inventory Strategy
-## CSMFAB-CSMFAB054-Dew-Catcher-75 | Solar Atmospheric Water Generator + Medication Cooler | Cost: $290
+# 054-Dew-Catcher VOL-60: COST & BOM
+## CSMFAB | General | Priority: Active
 
-8.2kg backpack, 100W folding solar, Peltier condenser, 2-5L/day water, 4°C med compartment.
+Total unit cost breakdown: Raw materials 30-40%, direct labor 15-25%, manufacturing overhead 10-15%, quality testing 5-8%, packaging 2-3%, warranty reserve 3-5%, SG&A allocation 15-20%, R&D amortization (5yr) 8-15%. Learning curve: Wright's Law 18% cost reduction per doubling of cumulative output. Target gross margin: 25-35% at pilot scale, 35-45% at volume (10K+ units/yr).

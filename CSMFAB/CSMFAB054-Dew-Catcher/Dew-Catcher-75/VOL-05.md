@@ -1,4 +1,4 @@
-# Dew-Catcher VOL-05: Mechanical Architecture
-## CSMFAB-CSMFAB054-Dew-Catcher-75 | Solar Atmospheric Water Generator + Medication Cooler | Cost: $290
+# 054-Dew-Catcher VOL-05: IDENTITY & SPECS
+## CSMFAB | General | Priority: Active
 
-8.2kg backpack, 100W folding solar, Peltier condenser, 2-5L/day water, 4°C med compartment.
+Critical material specifications: Fully dielectric. GIC immune. FEATHER mesh integrated. S-Bus compatible. BFRP enclosure standard.. Testing per CSM-TEST protocol suite. Every material lot tested for: composition (XRF/XRD), particle size (laser diffraction for powders, SEM for composites), dielectric strength (ASTM D149), DC resistivity (ASTM D257), mechanical properties (ASTM per material class).

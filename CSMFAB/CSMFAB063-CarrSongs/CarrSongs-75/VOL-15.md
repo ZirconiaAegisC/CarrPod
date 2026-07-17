@@ -1,4 +1,4 @@
-# CarrSongs VOL-15: Critical Control Point 2
-## CSMFAB-CSMFAB063-CarrSongs-75 | 14 Community Morale & Educational Songs | Cost: Free
+# 063-CarrSongs VOL-15: MANUFACTURING
+## CSMFAB | General | Priority: Active
 
-CC-BY-SA 4.0, call-and-response, MP3+sheet music+karaoke. Pre-loaded on all CSM devices. Community morale product.
+Manufacturing process: CSM-spec advanced composites and ceramics... Batch size 25-100 units per production run. Cycle time 4-8 hours per unit depending on complexity. In-process inspection at 5 critical control points. Statistical process control: Cpk >1.33 required for all critical dimensions. Out-of-spec: root cause analysis within 24 hours, corrective action within 72 hours.

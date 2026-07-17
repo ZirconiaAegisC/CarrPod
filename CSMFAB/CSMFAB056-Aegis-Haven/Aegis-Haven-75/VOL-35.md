@@ -1,4 +1,4 @@
-# Aegis-Haven VOL-35: FEATHER Mesh Integration
-## CSMFAB-CSMFAB056-Aegis-Haven-75 | Modular Deployable Family Shelter | Cost: $4,200
+# 056-Aegis-Haven VOL-35: MECHANICAL & ENVIRONMENTAL
+## CSMFAB | General | Priority: Active
 
-3×3m, ZrB₂-SiC panels, wedge-and-pin assembly 20min, 100W solar roof, 2kWh battery, aerogel floor, Stellar-Tint windows.
+Environmental testing: High temp operational +85°C ambient, 4 hours at rated load. Low temp -40°C, 4 hours. Thermal shock -40°C/+85°C, 10 cycles, 2hr dwell. Humidity 40°C/93% RH, 96 hours non-condensing. Salt fog ASTM B117, 1,000 hours (BFRP corrosion-immune, but connectors verified). IP rating: IP54 minimum for indoor products, IP67 for outdoor/deployed products. UV exposure: 5,000 hours QUV (ASTM G154) — no degradation of BFRP or MXene coating.

@@ -1,4 +1,4 @@
-# 016 Aegis HomeNon-Conductive Door Hardware VOL-01: Product Identity and Mission
-## CSMFAB016 Aegis Home_ Non-Conductive Door Hardware | Carrington-hardened fabrication product | Cost: TBD
+# 016 Aegis Home  Non-Conductive Door Hardware VOL-01: IDENTITY & SPECS
+## CSMFAB | Residential Hardening | Priority: Active
 
-Dense fabrication specification for 016 Aegis HomeNon-Conductive Door Hardware. Part 1 of 75-document deep fabrication package.
+Primary Carrington-hardened fabrication product. Category: Residential Hardening. All CSMFAB standards apply: dielectric construction, non-conductive throughout, GIC-immunity verified at >10⁸ Ω·m, BFRP enclosure where applicable, FEATHER LoRa mesh integration standard, S-Bus protocol support. Target deployment: 2026-2028 pilot, 2029+ scaled production.

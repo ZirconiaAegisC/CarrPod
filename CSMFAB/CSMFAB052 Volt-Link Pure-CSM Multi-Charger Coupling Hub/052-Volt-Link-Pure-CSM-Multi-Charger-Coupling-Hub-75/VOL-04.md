@@ -1,4 +1,4 @@
-# 052 Volt-Link Pure-CSM Multi-Charger Coupling Hub VOL-04: Bill of Materials Summary
-## CSMFAB052 Volt-Link Pure-CSM Multi-Charger Coupling Hub | Carrington-hardened fabrication product | Cost: TBD
+# 052 Volt-Link Pure-CSM Multi-Charger Coupling Hub VOL-04: IDENTITY & SPECS
+## CSMFAB | Power Distribution | Priority: Active
 
-Dense fabrication specification for 052 Volt-Link Pure-CSM Multi-Charger Coupling Hub. Part 4 of 75-document deep fabrication package.
+Bill of Materials summary: Primary material BFRP enclosure, MRF-140CG contactors, Protonic-HFET load balancing, CNT-polymer ... Subcomponent count: 5-18 depending on product complexity. All suppliers qualified to CSM-SUP-001 standard with dual-source alternatives validated. Lead times documented. MOQ minimums established for all specialty materials.

@@ -1,4 +1,4 @@
-# CNT-Doped Polymer Wiring VOL-60: Inventory Strategy
-## CSMFAB-P002-CNT-Polymer-Wiring-75 | 4-Grade Frequency-Selective Conductor | Cost: $0.85-180/m
+# P002-CNT-Polymer-Wiring VOL-60: COST & BOM
+## CSMFAB | Residential Hardening | Priority: Active
 
-CNT-001 Residential to CNT-004 Bus Bar. MWCNT in PEEK/PEI/PPS. 60Hz AC near-copper, DC >10⁸ Ω·m.
+Total unit cost breakdown: Raw materials 30-40%, direct labor 15-25%, manufacturing overhead 10-15%, quality testing 5-8%, packaging 2-3%, warranty reserve 3-5%, SG&A allocation 15-20%, R&D amortization (5yr) 8-15%. Learning curve: Wright's Law 18% cost reduction per doubling of cumulative output. Target gross margin: 25-35% at pilot scale, 35-45% at volume (10K+ units/yr).

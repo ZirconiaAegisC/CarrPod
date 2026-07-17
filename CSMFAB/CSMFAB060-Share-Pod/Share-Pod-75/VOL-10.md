@@ -1,4 +1,4 @@
-# Share-Pod VOL-10: Critical Manufacturing Step 1
-## CSMFAB-CSMFAB060-Share-Pod-75 | 1kWh Portable Battery for Neighbor Sharing | Cost: $195
+# 060-Share-Pod VOL-10: SUBCOMPONENTS
+## CSMFAB | General | Priority: Active
 
-320×200×160mm, 8.5kg, 2 AC + 4 USB, FEATHER+S-Bus, charge from Grid-Seed 2.5hr. The CarrPod for your neighbor.
+Subcomponent detail: Each subcomponent fabricated to CSM-MAT standards with full traceability from raw material lot to finished assembly. Serial number tracking implemented per ISO 9001. Critical dimensions verified via CMM (±0.05mm for ceramics, ±0.5mm for composites). Surface finish: Ra <0.2μm for ceramic bearing surfaces, Ra <3.2μm for composite enclosures.

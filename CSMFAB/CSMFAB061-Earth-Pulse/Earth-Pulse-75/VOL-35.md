@@ -1,4 +1,4 @@
-# Earth-Pulse VOL-35: FEATHER Mesh Integration
-## CSMFAB-CSMFAB061-Earth-Pulse-75 | Seismic GIC Early Warning Network | Cost: $420/node
+# 061-Earth-Pulse VOL-35: MECHANICAL & ENVIRONMENTAL
+## CSMFAB | General | Priority: Active
 
-Geophone 4.5Hz, Core-1 FFT, 0.01-1Hz GIC detection, FEATHER alert 5-15min before E3 onset. 5-10km node spacing.
+Environmental testing: High temp operational +85°C ambient, 4 hours at rated load. Low temp -40°C, 4 hours. Thermal shock -40°C/+85°C, 10 cycles, 2hr dwell. Humidity 40°C/93% RH, 96 hours non-condensing. Salt fog ASTM B117, 1,000 hours (BFRP corrosion-immune, but connectors verified). IP rating: IP54 minimum for indoor products, IP67 for outdoor/deployed products. UV exposure: 5,000 hours QUV (ASTM G154) — no degradation of BFRP or MXene coating.

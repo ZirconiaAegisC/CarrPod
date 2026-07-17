@@ -1,4 +1,4 @@
-# 0114 Archemedian Spiraling Bird UAS Sub-250g Wind Research Platform VOL-05: Critical Materials Specification
-## CSMFAB0114 Archemedian Spiraling Bird UAS Sub-250g Wind Research Platform | Carrington-hardened fabrication product | Cost: TBD
+# 0114 Archemedian Spiraling Bird UAS Sub-250g Wind Research Platform VOL-05: IDENTITY & SPECS
+## CSMFAB | General | Priority: Active
 
-Dense fabrication specification for 0114 Archemedian Spiraling Bird UAS Sub-250g Wind Research Platform. Part 5 of 75-document deep fabrication package.
+Critical material specifications: Fully dielectric. GIC immune. FEATHER mesh integrated. S-Bus compatible. BFRP enclosure standard.. Testing per CSM-TEST protocol suite. Every material lot tested for: composition (XRF/XRD), particle size (laser diffraction for powders, SEM for composites), dielectric strength (ASTM D149), DC resistivity (ASTM D257), mechanical properties (ASTM per material class).

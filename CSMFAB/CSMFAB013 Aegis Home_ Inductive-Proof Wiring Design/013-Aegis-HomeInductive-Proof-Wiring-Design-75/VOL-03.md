@@ -1,4 +1,4 @@
-# 013 Aegis HomeInductive-Proof Wiring Design VOL-03: Architecture and Topology
-## CSMFAB013 Aegis Home_ Inductive-Proof Wiring Design | Carrington-hardened fabrication product | Cost: TBD
+# 013 Aegis Home  Inductive-Proof Wiring Design VOL-03: IDENTITY & SPECS
+## CSMFAB | Residential Hardening | Priority: Active
 
-Dense fabrication specification for 013 Aegis HomeInductive-Proof Wiring Design. Part 3 of 75-document deep fabrication package.
+System architecture: All components dielectric and non-conductive. No steel, aluminum, or copper in any structural or exposed element. 100% GIC path break per installed component. FEATHER mesh integrated.. Power path (if applicable): CNT-polymer conductors throughout, Protonic-HFET charge control, MRF contactors for switching, LFP battery storage. All signal paths: FEATHER LoRa + S-Bus protocol. No silicon semiconductors in critical paths — GaN or Protonic-HFET exclusively.

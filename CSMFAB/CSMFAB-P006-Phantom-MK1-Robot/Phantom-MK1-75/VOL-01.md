@@ -1,4 +1,4 @@
-# Phantom MK-1 Aegis-Hardened Robot VOL-01: Product Identity and Mission
-## CSMFAB-P006-Phantom-MK1-Robot-75 | 32 DOF Humanoid Inspection Robot | Cost: $185,000
+# P006-Phantom-MK1-Robot VOL-01: IDENTITY & SPECS
+## CSMFAB | General | Priority: Active
 
-1.82m, 95kg, 32 DOF, Protonic-HFET comms, triple voting processors, ZrB₂-SiC armor. Self-destruct at 0.8% unit cost.
+Primary Carrington-hardened fabrication product. Category: General. All CSMFAB standards apply: dielectric construction, non-conductive throughout, GIC-immunity verified at >10⁸ Ω·m, BFRP enclosure where applicable, FEATHER LoRa mesh integration standard, S-Bus protocol support. Target deployment: 2026-2028 pilot, 2029+ scaled production.

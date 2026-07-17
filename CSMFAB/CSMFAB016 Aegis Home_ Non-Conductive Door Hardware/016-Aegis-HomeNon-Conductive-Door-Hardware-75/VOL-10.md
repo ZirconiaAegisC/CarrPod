@@ -1,4 +1,4 @@
-# 016 Aegis HomeNon-Conductive Door Hardware VOL-10: Process Step 1: Preparation
-## CSMFAB016 Aegis Home_ Non-Conductive Door Hardware | Carrington-hardened fabrication product | Cost: TBD
+# 016 Aegis Home  Non-Conductive Door Hardware VOL-10: SUBCOMPONENTS
+## CSMFAB | Residential Hardening | Priority: Active
 
-Dense fabrication specification for 016 Aegis HomeNon-Conductive Door Hardware. Part 10 of 75-document deep fabrication package.
+Subcomponent detail: Each subcomponent fabricated to CSM-MAT standards with full traceability from raw material lot to finished assembly. Serial number tracking implemented per ISO 9001. Critical dimensions verified via CMM (±0.05mm for ceramics, ±0.5mm for composites). Surface finish: Ra <0.2μm for ceramic bearing surfaces, Ra <3.2μm for composite enclosures.

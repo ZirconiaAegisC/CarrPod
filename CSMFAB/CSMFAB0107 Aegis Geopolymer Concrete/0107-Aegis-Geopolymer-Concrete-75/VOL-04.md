@@ -1,4 +1,4 @@
-# 0107 Aegis Geopolymer Concrete VOL-04: Bill of Materials Summary
-## CSMFAB0107 Aegis Geopolymer Concrete | Carrington-hardened fabrication product | Cost: TBD
+# 0107 Aegis Geopolymer Concrete VOL-04: IDENTITY & SPECS
+## CSMFAB | Advanced Concrete | Priority: Active
 
-Dense fabrication specification for 0107 Aegis Geopolymer Concrete. Part 4 of 75-document deep fabrication package.
+Bill of Materials summary: Primary material CSM-MAT-GP-001: fly ash/slag geopolymer with CNT dopant (0.3% by weight) and BFR... Subcomponent count: 5-18 depending on product complexity. All suppliers qualified to CSM-SUP-001 standard with dual-source alternatives validated. Lead times documented. MOQ minimums established for all specialty materials.

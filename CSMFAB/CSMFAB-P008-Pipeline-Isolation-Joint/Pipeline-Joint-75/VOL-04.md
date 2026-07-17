@@ -1,4 +1,4 @@
-# Pipeline Isolation Joint Class 600 VOL-04: Materials Bill of Materials
-## CSMFAB-P008-Pipeline-Isolation-Joint-75 | Si₃N₄ Ceramic 24" Dielectric Joint | Cost: $12,500
+# P008-Pipeline-Isolation-Joint VOL-04: IDENTITY & SPECS
+## CSMFAB | Residential Hardening | Priority: Active
 
-610mm OD, 10.2 MPa, 32× M36 BFRP bolts, PTFE gasket. Breaks telluric current every 50km.
+Bill of Materials summary: Primary material BFRP-Elium composite (BF-002 Marine Grade), CNT-doped polymers, MXene coatings, ... Subcomponent count: 5-18 depending on product complexity. All suppliers qualified to CSM-SUP-001 standard with dual-source alternatives validated. Lead times documented. MOQ minimums established for all specialty materials.

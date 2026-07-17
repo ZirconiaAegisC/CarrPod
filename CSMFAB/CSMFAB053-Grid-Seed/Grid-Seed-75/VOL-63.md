@@ -1,4 +1,4 @@
-# Grid-Seed VOL-63: BOM: Wiring and Connectors
-## CSMFAB053-75 | Home Microgrid
+# 053-Grid-Seed VOL-63: PRICING & REVENUE
+## CSMFAB | General | Priority: Active
 
-CNT-001 12/2 5m $4.25. CNT-002 battery bus 1m $3.40. Anderson SB120 $18. MC4 connectors $12. Terminal blocks $8. Compression lugs $6. Labels $3. Total: $54.65.
+General product specification. Section 63 of 75-document deep fabrication package. Material: CSM-spec advanced composites and ceramics. All specifications per CSM-MAT and CSM-TEST standards. Full traceability from raw material to finished assembly. ISO 9001:2015 QMS documented at every critical control point. FEATHER mesh integrated where applicable. S-Bus protocol support standard. Carr-Forge open-source documentation available.

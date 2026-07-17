@@ -1,4 +1,4 @@
-# Pipeline Isolation Joint Class 600 VOL-58: Supply Chain Map
-## CSMFAB-P008-Pipeline-Isolation-Joint-75 | Si₃N₄ Ceramic 24" Dielectric Joint | Cost: $12,500
+# P008-Pipeline-Isolation-Joint VOL-58: COST & BOM
+## CSMFAB | Residential Hardening | Priority: Active
 
-610mm OD, 10.2 MPa, 32× M36 BFRP bolts, PTFE gasket. Breaks telluric current every 50km.
+Residential Hardening product specification. Section 58 of 75-document deep fabrication package. Material: BFRP-Elium composite (BF-002 Marine Grade), CNT-doped polymers, MXene coatings, ZTA ceramics, geopol. All specifications per CSM-MAT and CSM-TEST standards. Full traceability from raw material to finished assembly. ISO 9001:2015 QMS documented at every critical control point. FEATHER mesh integrated where applicable. S-Bus protocol support standard. Carr-Forge open-source documentation available.

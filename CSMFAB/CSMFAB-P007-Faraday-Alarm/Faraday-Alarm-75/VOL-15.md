@@ -1,4 +1,4 @@
-# Faraday Alarm GIC Detection Sensor VOL-15: Critical Control Point 2
-## CSMFAB-P007-Faraday-Alarm-75 | MEMS Magnetometer + Rogowski Coil | Cost: $340 Home / $1,850 Industrial
+# P007-Faraday-Alarm VOL-15: MANUFACTURING
+## CSMFAB | General | Priority: Active
 
-Clamp-on Rogowski, MEMS 3-axis, progressive alarm 5A/50A/100A, FEATHER mesh. Every panel needs one.
+Manufacturing process: CSM-spec advanced composites and ceramics... Batch size 25-100 units per production run. Cycle time 4-8 hours per unit depending on complexity. In-process inspection at 5 critical control points. Statistical process control: Cpk >1.33 required for all critical dimensions. Out-of-spec: root cause analysis within 24 hours, corrective action within 72 hours.

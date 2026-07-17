@@ -1,4 +1,4 @@
-# Cold-Root VOL-75: Contributing Guidelines
-## CSMFAB-CSMFAB055-Cold-Root-75 | Geothermal Phase-Change Refrigerator | Cost: $178
+# 055-Cold-Root VOL-75: SUPPLY CHAIN & EXECUTIVE SUMMARY
+## CSMFAB | General | Priority: Active
 
-1.0×1.0×1.5m, 200L, CaCl₂·6H₂O PCM at 4°C, 0.5m burial, zero electricity, infinite life.
+EXECUTIVE SUMMARY — READ OUT LOUD: This is the 055-Cold-Root. A Carrington-hardened general product. Fully dielectric. GIC immune. FEATHER mesh integrated. S-Bus compatible. BFRP enclosure standard.. Unit cost: See BOM. Intended use: Carrington preparedness product. All CSM products share a common architecture: BFRP composite enclosures where applicable, CNT-polymer wiring, Protonic-HFET power electronics where active, FEATHER LoRa mesh communications, S-Bus protocol interoperability, and zero silicon semiconductors in critical paths. The product line is designed to function during and after a G5-class geomagnetic storm — exactly when conventional products fail. Every product is documented at 75-document depth. Every specification is traceable to a supplier quote. Every test protocol is published. The numbers are ready. The fabrications are specified. The shield is real. Carr-Forge is open. Let's build.

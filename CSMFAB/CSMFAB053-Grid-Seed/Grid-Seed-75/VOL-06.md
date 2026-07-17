@@ -1,4 +1,4 @@
-# Grid-Seed VOL-06: Protonic-HFET Solar MPPT
-## CSMFAB053-75 | Passive Magnetics | No Silicon | GIC-Immune
+# 053-Grid-Seed VOL-06: SUBCOMPONENTS
+## CSMFAB | General | Priority: Active
 
-Palladium gate electrode on Nafion proton exchange membrane. 1kHz PWM switching (1,836× heavier charge carrier than electrons = immune to geomagnetic frequencies). Ferrite EE55 core transformer with CNT-polymer windings (primary: 20 turns, secondary: varies by panel voltage). MPPT algorithm: perturb-and-observe, 0.5 sec update interval, 98% tracking efficiency from 20-500W input. Auto-detects panel voltage 12/24/48V nominal. No silicon semiconductors — no SEU vulnerability. No firmware — analog control loop with Protonic-HFET comparator. Reverse polarity protected (Protonic-HFET is unidirectional). GIC immunity: infinite impedance at DC — no GIC path from solar array through charge controller to battery. "The charge controller that cannot be killed by a Carrington event because it has nothing that a Carrington event can kill." — CSMFAB053.
+General product specification. Section 6 of 75-document deep fabrication package. Material: CSM-spec advanced composites and ceramics. All specifications per CSM-MAT and CSM-TEST standards. Full traceability from raw material to finished assembly. ISO 9001:2015 QMS documented at every critical control point. FEATHER mesh integrated where applicable. S-Bus protocol support standard. Carr-Forge open-source documentation available.

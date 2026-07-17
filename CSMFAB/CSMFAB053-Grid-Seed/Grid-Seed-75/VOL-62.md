@@ -1,4 +1,4 @@
-# Grid-Seed VOL-62: BOM: Enclosure and Hardware
-## CSMFAB053-75 | Home Microgrid
+# 053-Grid-Seed VOL-62: PRICING & REVENUE
+## CSMFAB | General | Priority: Active
 
-BFRP panels $120. MXene spray $18. CNC machining $35. Silicone gasket $8. ZTA hinges $22. BFRP latch $14. Cable glands $15. Fasteners $35. Total: $267.
+General product specification. Section 62 of 75-document deep fabrication package. Material: CSM-spec advanced composites and ceramics. All specifications per CSM-MAT and CSM-TEST standards. Full traceability from raw material to finished assembly. ISO 9001:2015 QMS documented at every critical control point. FEATHER mesh integrated where applicable. S-Bus protocol support standard. Carr-Forge open-source documentation available.

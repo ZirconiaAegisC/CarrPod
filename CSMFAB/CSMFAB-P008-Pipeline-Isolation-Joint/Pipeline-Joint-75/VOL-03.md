@@ -1,4 +1,4 @@
-# Pipeline Isolation Joint Class 600 VOL-03: Electrical Architecture
-## CSMFAB-P008-Pipeline-Isolation-Joint-75 | Si₃N₄ Ceramic 24" Dielectric Joint | Cost: $12,500
+# P008-Pipeline-Isolation-Joint VOL-03: IDENTITY & SPECS
+## CSMFAB | Residential Hardening | Priority: Active
 
-610mm OD, 10.2 MPa, 32× M36 BFRP bolts, PTFE gasket. Breaks telluric current every 50km.
+System architecture: All components dielectric and non-conductive. No steel, aluminum, or copper in any structural or exposed element. 100% GIC path break per installed component. FEATHER mesh integrated.. Power path (if applicable): CNT-polymer conductors throughout, Protonic-HFET charge control, MRF contactors for switching, LFP battery storage. All signal paths: FEATHER LoRa + S-Bus protocol. No silicon semiconductors in critical paths — GaN or Protonic-HFET exclusively.

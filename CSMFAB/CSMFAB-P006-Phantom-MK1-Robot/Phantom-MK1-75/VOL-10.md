@@ -1,4 +1,4 @@
-# Phantom MK-1 Aegis-Hardened Robot VOL-10: Critical Manufacturing Step 1
-## CSMFAB-P006-Phantom-MK1-Robot-75 | 32 DOF Humanoid Inspection Robot | Cost: $185,000
+# P006-Phantom-MK1-Robot VOL-10: SUBCOMPONENTS
+## CSMFAB | General | Priority: Active
 
-1.82m, 95kg, 32 DOF, Protonic-HFET comms, triple voting processors, ZrB₂-SiC armor. Self-destruct at 0.8% unit cost.
+Subcomponent detail: Each subcomponent fabricated to CSM-MAT standards with full traceability from raw material lot to finished assembly. Serial number tracking implemented per ISO 9001. Critical dimensions verified via CMM (±0.05mm for ceramics, ±0.5mm for composites). Surface finish: Ra <0.2μm for ceramic bearing surfaces, Ra <3.2μm for composite enclosures.

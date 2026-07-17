@@ -1,4 +1,4 @@
-# Cold-Root VOL-25: GIC Immunity Test
-## CSMFAB-CSMFAB055-Cold-Root-75 | Geothermal Phase-Change Refrigerator | Cost: $178
+# 055-Cold-Root VOL-25: CERTIFICATION & COMPLIANCE
+## CSMFAB | General | Priority: Active
 
-1.0×1.0×1.5m, 200L, CaCl₂·6H₂O PCM at 4°C, 0.5m burial, zero electricity, infinite life.
+Certification status: UL listing in progress (UL 9540 for energy storage, UL 1741 for inverters, UL 1973 for batteries). FCC Part 15 Class B (unintentional radiators). IEEE 1547 (grid interconnection where applicable). NFPA 70 NEC Articles 690 (solar), 706 (storage), applicable sections. CE Mark (EU). UKCA (UK). RCM (Australia). Certification budget: $85K per product, 14-week timeline.

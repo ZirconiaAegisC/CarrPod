@@ -1,4 +1,4 @@
-# Grid-Heart VOL-35: FEATHER Mesh Integration
-## CSMFAB-CSMFAB062-Grid-Heart-75 | Passive Non-Contact Transformer Monitor | Cost: $34
+# 062-Grid-Heart VOL-35: MECHANICAL & ENVIRONMENTAL
+## CSMFAB | General | Priority: Active
 
-Ferrite core coil, hot-stick clamp, 60Hz detection, FEATHER mesh, 2×AA lithium 3yr, real-time transformer health map.
+Environmental testing: High temp operational +85°C ambient, 4 hours at rated load. Low temp -40°C, 4 hours. Thermal shock -40°C/+85°C, 10 cycles, 2hr dwell. Humidity 40°C/93% RH, 96 hours non-condensing. Salt fog ASTM B117, 1,000 hours (BFRP corrosion-immune, but connectors verified). IP rating: IP54 minimum for indoor products, IP67 for outdoor/deployed products. UV exposure: 5,000 hours QUV (ASTM G154) — no degradation of BFRP or MXene coating.
