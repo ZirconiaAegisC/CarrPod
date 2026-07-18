@@ -233,6 +233,8 @@ button:disabled {
     </div>
     <div class="controls">
       <button id="btnPlay" title="Play">▶ PLAY</button>
+      <button id="btnPrev" title="Previous Segment">⏮</button>
+      <button id="btnNext" title="Next Segment">⏭</button>
       <button id="btnStop" title="Stop">■ STOP</button>
       <button id="btnScreen" title="Keep Screen On">📱 AWAKE</button>
       <button id="btnSleep" title="Prevent Sleep">💤 NOSLEEP</button>
@@ -820,6 +822,37 @@ function stopPlayback() {
   targetParticleEnergy = 0.3;
 }
 
+function skipForward() {
+  if (!isPlaying || playQueue.length === 0) return;
+  speechSynthesis.cancel();
+  // Find next segment (skip commercials)
+  let next = queueIndex + 1;
+  while (next < playQueue.length && playQueue[next].type === 'commercial') next++;
+  if (next >= playQueue.length) {
+    stopPlayback();
+    return;
+  }
+  queueIndex = next;
+  document.getElementById('statPlaying').textContent = `📻 Segment ${playQueue[next].index + 1}/${episodeSegments.length}`;
+  processQueue();
+}
+
+function skipBackward() {
+  if (!isPlaying || playQueue.length === 0) return;
+  speechSynthesis.cancel();
+  // Find previous segment (skip commercials)
+  let prev = queueIndex - 1;
+  while (prev >= 0 && playQueue[prev].type === 'commercial') prev--;
+  if (prev < 0) {
+    // Go to first segment
+    queueIndex = 0;
+  } else {
+    queueIndex = prev;
+  }
+  document.getElementById('statPlaying').textContent = `📻 Segment ${playQueue[queueIndex].index + 1}/${episodeSegments.length}`;
+  processQueue();
+}
+
 function togglePause() {
   if (!isPlaying) return;
   if (isPaused) {
@@ -914,6 +947,8 @@ document.getElementById('btnPlay').addEventListener('click', async () => {
 });
 
 document.getElementById('btnStop').addEventListener('click', stopPlayback);
+document.getElementById('btnPrev').addEventListener('click', skipBackward);
+document.getElementById('btnNext').addEventListener('click', skipForward);
 document.getElementById('btnScreen').addEventListener('click', toggleScreenLock);
 document.getElementById('btnSleep').addEventListener('click', toggleSleepLock);
 
