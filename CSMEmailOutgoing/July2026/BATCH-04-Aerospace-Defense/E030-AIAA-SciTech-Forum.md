@@ -1,11 +1,11 @@
-# E028-NASA-Heliophysics — NASA HELIOPHYSICS
-## NASA Heliophysics — SWPC integration and sensor hardening partnership
+# E030-AIAA-SciTech-Forum — AIAA SCITECH FORUM
+## AIAA SciTech Forum — composite redesign and Smart Rope paper submission
 ### CSMEmailOutgoing | BATCH-04 | July 2026
 
-**TO:** NASA Heliophysics
+**TO:** AIAA SciTech Forum
 **FROM:** Jason Brodsky, Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
 **REPLY-TO:** zirconia@aegisc.space
-**SUBJECT:** NASA Heliophysics — SWPC integration and sensor hardening partnership
+**SUBJECT:** AIAA SciTech Forum — composite redesign and Smart Rope paper submission
 
 ---
 

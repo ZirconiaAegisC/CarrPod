@@ -1,11 +1,11 @@
-# E028-NASA-Heliophysics — NASA HELIOPHYSICS
-## NASA Heliophysics — SWPC integration and sensor hardening partnership
+# E031-Space-Symposium-Foundation — SPACE SYMPOSIUM FOUNDATION
+## Space Foundation Space Symposium — satellite hardening exhibit proposal
 ### CSMEmailOutgoing | BATCH-04 | July 2026
 
-**TO:** NASA Heliophysics
+**TO:** Space Symposium Foundation
 **FROM:** Jason Brodsky, Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
 **REPLY-TO:** zirconia@aegisc.space
-**SUBJECT:** NASA Heliophysics — SWPC integration and sensor hardening partnership
+**SUBJECT:** Space Foundation Space Symposium — satellite hardening exhibit proposal
 
 ---
 
