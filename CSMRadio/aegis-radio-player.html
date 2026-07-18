@@ -469,17 +469,8 @@ const particleMat = new THREE.PointsMaterial({
 const particles = new THREE.Points(particleGeom, particleMat);
 scene.add(particles);
 
-// ──────────────────────────────────────
-// DYNAMIC BASE PATH — works from any hosted location
-// ──────────────────────────────────────
-function getBasePath() {
-  const loc = window.location.href;
-  if (loc.startsWith('http')) return loc.replace(/\/[^\/]*$/, '/');
-  return './';
-}
-const BASE = getBasePath();
-
-// GitHub raw URL base for fallback when local files aren't available
+// GitHub raw URL — the HTML player loads all content exclusively from here
+// So you can open this file from anywhere: phone, desktop, any folder — it just works
 const GITHUB_RAW = 'https://raw.githubusercontent.com/ZirconiaAegisC/CarrPod/main/CSMRadio/';
 
 
@@ -513,31 +504,21 @@ const EPISODE_MANIFEST = [
 async function loadEpisode(filename) {
   currentEpisodeContent = '';
   episodeSegments = [];
-  let loadError = false;
   
-  // Try local first, then GitHub raw as fallback
-  const urls = [
-    BASE + 'sf-episodes/' + filename,
-    GITHUB_RAW + 'sf-episodes/' + filename,
-    BASE + filename,
-    GITHUB_RAW + filename,
-    'sf-episodes/' + filename,
-  ];
+  // Load exclusively from GitHub raw — this HTML is designed to work anywhere
+  const url = GITHUB_RAW + 'sf-episodes/' + filename;
   
-  for (const url of urls) {
-    try {
-      const resp = await fetch(url);
-      if (!resp.ok) continue;
-      const text = await resp.text();
-      if (text.length < 100) continue; // Too short, probably not content
-      currentEpisodeContent = text;
-      break;
-    } catch(e) { continue; }
-  }
-  
-  if (!currentEpisodeContent) {
-    currentEpisodeContent = "Episode content could not be loaded. Please verify the files are in the same folder as this player.";
-    loadError = true;
+  try {
+    const resp = await fetch(url);
+    if (!resp.ok) throw new Error('HTTP ' + resp.status);
+    const text = await resp.text();
+    if (text.length < 100) throw new Error('Content too short');
+    currentEpisodeContent = text;
+  } catch(e) {
+    currentEpisodeContent = "Connecting to broadcast... Please wait. If this persists, check your internet connection.";
+    episodeSegments = [currentEpisodeContent];
+    document.getElementById('statPlaying').textContent = '⚠ Loading...';
+    return;
   }
   
   // Split into segments on markdown headers or double newlines
@@ -557,52 +538,34 @@ async function loadEpisode(filename) {
   const epEntry = EPISODE_MANIFEST.find(e => e.file === filename);
   if (epEntry) {
     document.getElementById('now-playing').textContent = `📻 Ep ${epEntry.num}: ${epEntry.title}`;
-  } else {
-    const titleMatch = currentEpisodeContent.match(/^#\s+(.+)$/m);
-    const subtitleMatch = currentEpisodeContent.match(/^##\s+(.+)$/m);
-    let title = filename.replace(/CSMSFRadio\d+-?/, '').replace(/\.md$/, '').replace(/-/g, ' ');
-    if (subtitleMatch) title = subtitleMatch[1];
-    else if (titleMatch) title = titleMatch[1];
-    document.getElementById('now-playing').textContent = `📻 ${title}`;
-  }
-  
-  if (loadError) {
-    document.getElementById('statPlaying').textContent = '⚠ Load failed';
   }
 }
 
 async function loadCommercials() {
   const batchDirs = ['BATCH-001', 'BATCH-002', 'BATCH-003', 'BATCH-004', 'BATCH-005', 'BATCH-006', 'BATCH-007', 'BATCH-008', 'BATCH-009'];
   const dir = batchDirs[Math.floor(Math.random() * batchDirs.length)];
-  const dirName = 'CSMCommercials/' + dir + '/';
-  const baseUrls = [
-    BASE + dirName,
-    GITHUB_RAW + dirName,
-  ];
+  const baseUrl = GITHUB_RAW + 'CSMCommercials/' + dir + '/';
   
-  for (const baseUrl of baseUrls) {
-    try {
-      const dirResp = await fetch(baseUrl);
-      if (!dirResp.ok) continue;
-      const dirText = await dirResp.text();
-      const parser = new DOMParser();
-      const dirDoc = parser.parseFromString(dirText, 'text/html');
-      const links = [...dirDoc.querySelectorAll('a')].map(a => a.textContent);
-      const batchFile = links.find(l => l.endsWith('.md')) || '';
-      if (!batchFile) continue;
-      
-      const resp = await fetch(baseUrl + batchFile);
-      if (!resp.ok) continue;
-      const text = await resp.text();
-      const spots = text.split(/^##\s+COMM-/m).filter(s => s.trim().length > 60);
-      if (spots.length === 0) {
-        const altSpots = text.split(/^---$/m).filter(s => s.trim().length > 60);
-        return altSpots.map(s => s.trim());
-      }
-      return spots.map(s => 'COMM-' + s.trim());
-    } catch(e) { continue; }
-  }
-  return [];
+  try {
+    const dirResp = await fetch(baseUrl);
+    if (!dirResp.ok) return [];
+    const dirText = await dirResp.text();
+    const parser = new DOMParser();
+    const dirDoc = parser.parseFromString(dirText, 'text/html');
+    const links = [...dirDoc.querySelectorAll('a')].map(a => a.textContent);
+    const batchFile = links.find(l => l.endsWith('.md')) || '';
+    if (!batchFile) return [];
+    
+    const resp = await fetch(baseUrl + batchFile);
+    if (!resp.ok) return [];
+    const text = await resp.text();
+    const spots = text.split(/^##\s+COMM-/m).filter(s => s.trim().length > 60);
+    if (spots.length === 0) {
+      const altSpots = text.split(/^---$/m).filter(s => s.trim().length > 60);
+      return altSpots.map(s => s.trim());
+    }
+    return spots.map(s => 'COMM-' + s.trim());
+  } catch(e) { return []; }
 }
 
 // ──────────────────────────────────────
