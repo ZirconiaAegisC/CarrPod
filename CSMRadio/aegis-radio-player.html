@@ -517,6 +517,7 @@ const EPISODE_MANIFEST = [
 async function loadEpisode(filename) {
   currentEpisodeContent = '';
   episodeSegments = [];
+  let loadError = false;
   
   // Try sf-episodes folder relative to BASE
   const urls = [
@@ -598,6 +599,33 @@ async function loadCommercials() {
     return spots.map(s => 'COMM-' + s.trim());
   } catch(e) { return []; }
 }
+
+// ──────────────────────────────────────
+// INITIALIZE UI — populate dropdowns immediately
+// ──────────────────────────────────────
+function populateEpisodeSelect() {
+  const sel = document.getElementById('episodeSelect');
+  if (!sel) return;
+  sel.innerHTML = '<option value="">🎙 — Select Episode —</option>';
+  EPISODE_MANIFEST.forEach(ep => {
+    const opt = document.createElement('option');
+    opt.value = ep.file;
+    const titleShort = ep.title.length > 55 ? ep.title.substring(0, 52) + '...' : ep.title;
+    opt.textContent = `Ep ${ep.num} — ${titleShort}`;
+    sel.appendChild(opt);
+  });
+}
+
+function updateStats() {
+  const epEl = document.getElementById('statEpisodes');
+  const adEl = document.getElementById('statCommercials');
+  if (epEl) epEl.textContent = `Episodes: ${EPISODE_MANIFEST.length}`;
+  if (adEl) adEl.textContent = `Ads: 196 commercials (9 batches)`;
+}
+
+// Fire immediately — document is ready at this point
+populateEpisodeSelect();
+updateStats();
 
 // Stats are already initialized above
 setTimeout(() => {
