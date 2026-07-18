@@ -473,19 +473,15 @@ scene.add(particles);
 // DYNAMIC BASE PATH — works from any hosted location
 // ──────────────────────────────────────
 function getBasePath() {
-  // Detect where this HTML file is hosted
-  const scriptEl = document.currentScript;
-  if (scriptEl && scriptEl.src) {
-    return scriptEl.src.replace(/\/[^\/]*$/, '/');
-  }
-  // Fallback: use the HTML file's own location
   const loc = window.location.href;
-  if (loc.startsWith('http')) {
-    return loc.replace(/\/[^\/]*$/, '/');
-  }
+  if (loc.startsWith('http')) return loc.replace(/\/[^\/]*$/, '/');
   return './';
 }
 const BASE = getBasePath();
+
+// GitHub raw URL base for fallback when local files aren't available
+const GITHUB_RAW = 'https://raw.githubusercontent.com/ZirconiaAegisC/CarrPod/main/CSMRadio/';
+
 
 // ──────────────────────────────────────
 // KNOWN EPISODE MANIFEST — clean ep-XX.md naming
@@ -519,10 +515,12 @@ async function loadEpisode(filename) {
   episodeSegments = [];
   let loadError = false;
   
-  // Try sf-episodes folder relative to BASE
+  // Try local first, then GitHub raw as fallback
   const urls = [
     BASE + 'sf-episodes/' + filename,
+    GITHUB_RAW + 'sf-episodes/' + filename,
     BASE + filename,
+    GITHUB_RAW + filename,
     'sf-episodes/' + filename,
   ];
   
@@ -576,28 +574,35 @@ async function loadEpisode(filename) {
 async function loadCommercials() {
   const batchDirs = ['BATCH-001', 'BATCH-002', 'BATCH-003', 'BATCH-004', 'BATCH-005', 'BATCH-006', 'BATCH-007', 'BATCH-008', 'BATCH-009'];
   const dir = batchDirs[Math.floor(Math.random() * batchDirs.length)];
-  const baseUrl = BASE + 'CSMCommercials/' + dir + '/';
+  const dirName = 'CSMCommercials/' + dir + '/';
+  const baseUrls = [
+    BASE + dirName,
+    GITHUB_RAW + dirName,
+  ];
   
-  try {
-    const dirResp = await fetch(baseUrl);
-    if (!dirResp.ok) return [];
-    const dirText = await dirResp.text();
-    const parser = new DOMParser();
-    const dirDoc = parser.parseFromString(dirText, 'text/html');
-    const links = [...dirDoc.querySelectorAll('a')].map(a => a.textContent);
-    const batchFile = links.find(l => l.endsWith('.md')) || '';
-    if (!batchFile) return [];
-    
-    const resp = await fetch(baseUrl + batchFile);
-    if (!resp.ok) return [];
-    const text = await resp.text();
-    const spots = text.split(/^##\s+COMM-/m).filter(s => s.trim().length > 60);
-    if (spots.length === 0) {
-      const altSpots = text.split(/^---$/m).filter(s => s.trim().length > 60);
-      return altSpots.map(s => s.trim());
-    }
-    return spots.map(s => 'COMM-' + s.trim());
-  } catch(e) { return []; }
+  for (const baseUrl of baseUrls) {
+    try {
+      const dirResp = await fetch(baseUrl);
+      if (!dirResp.ok) continue;
+      const dirText = await dirResp.text();
+      const parser = new DOMParser();
+      const dirDoc = parser.parseFromString(dirText, 'text/html');
+      const links = [...dirDoc.querySelectorAll('a')].map(a => a.textContent);
+      const batchFile = links.find(l => l.endsWith('.md')) || '';
+      if (!batchFile) continue;
+      
+      const resp = await fetch(baseUrl + batchFile);
+      if (!resp.ok) continue;
+      const text = await resp.text();
+      const spots = text.split(/^##\s+COMM-/m).filter(s => s.trim().length > 60);
+      if (spots.length === 0) {
+        const altSpots = text.split(/^---$/m).filter(s => s.trim().length > 60);
+        return altSpots.map(s => s.trim());
+      }
+      return spots.map(s => 'COMM-' + s.trim());
+    } catch(e) { continue; }
+  }
+  return [];
 }
 
 // ──────────────────────────────────────
@@ -1028,8 +1033,8 @@ resize();
 animate();
 // V2 — manifest-based loading, no directory listing needed
 console.log('🎙 Aegis Radio — SiblingFrequency V2 — Ready');
-console.log(`📻 ${EPISODE_MANIFEST.length} episodes loaded from manifest`);
-console.log('📻 Portable — works from any hosted URL location');
+console.log('🎙 Aegis Radio — SiblingFrequency V2.3 — Ready');
+console.log(`📻 ${EPISODE_MANIFEST.length} episodes | Local + GitHub raw fallback`);
 console.log('⚡ Carr-Forge Powered | Open Source | Aegis Certified');
 </script>
 </body>
