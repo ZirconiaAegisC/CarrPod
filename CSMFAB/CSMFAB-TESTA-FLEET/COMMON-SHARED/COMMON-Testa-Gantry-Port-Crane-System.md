@@ -1,0 +1,4 @@
+# Testa-Gantry Port Crane System
+## CSMFAB-TESTA-FLEET | Common Architecture | All 5 Tiers
+
+Common specification shared across all Testa Fleet container tiers. AegisC construction, FEATHER mesh, ISO-compliant, Carr-Forge documented.
