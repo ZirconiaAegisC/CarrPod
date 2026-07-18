@@ -121,15 +121,12 @@ def parse_email_file(filepath):
     to_line = to_match.group(1).strip() if to_match else ''
     subject = subj_match.group(1).strip() if subj_match else 'No Subject'
     
-    # Extract body: everything after second '---'
+    # Extract body: everything after FIRST '---' (includes human declaration + main body)
     body_start = 0
-    dash_count = 0
     for i, line in enumerate(content.split('\n')):
         if line.strip() == '---':
-            dash_count += 1
-            if dash_count == 2:
-                body_start = i + 1
-                break
+            body_start = i + 1
+            break
     
     body_md = '\n'.join(content.split('\n')[body_start:])
     
