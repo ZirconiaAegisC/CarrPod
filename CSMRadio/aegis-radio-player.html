@@ -309,220 +309,176 @@ const warmLight = new THREE.PointLight(0xe8a840, 0.8, 4, 2);
 warmLight.position.set(-2, 0.3, 2.5);
 scene.add(warmLight);
 
-// ── 1920s Cathedral Radio — Philco-inspired, Art Deco details ──
+// ── 1920s Cathedral Radio — flat front, realistic proportions ──
 const radioGroup = new THREE.Group();
-const walnutMat = new THREE.MeshStandardMaterial({ color: 0x3d2010, roughness: 0.55, metalness: 0.03 });
-const walnutDark = new THREE.MeshStandardMaterial({ color: 0x2a1508, roughness: 0.5, metalness: 0.05 });
+const walnutMat = new THREE.MeshStandardMaterial({ color: 0x3d2010, roughness: 0.5, metalness: 0.03 });
+const walnutDark = new THREE.MeshStandardMaterial({ color: 0x2a1508, roughness: 0.45, metalness: 0.05 });
+const walnutLight = new THREE.MeshStandardMaterial({ color: 0x4a2a15, roughness: 0.55, metalness: 0.02 });
 const brassMat = new THREE.MeshStandardMaterial({ color: 0xc9a84c, roughness: 0.3, metalness: 0.92 });
 const brassBright = new THREE.MeshStandardMaterial({ color: 0xe8c860, roughness: 0.25, metalness: 0.95, emissive: 0x1a1000, emissiveIntensity: 0.3 });
-const dialFaceMat = new THREE.MeshStandardMaterial({ color: 0xf5e6c0, roughness: 0.4, metalness: 0.05, emissive: 0x331800, emissiveIntensity: 0.5 });
-const grilleCloth = new THREE.MeshStandardMaterial({ color: 0x8b7355, roughness: 0.9, metalness: 0.0 });
+const dialFaceMat = new THREE.MeshStandardMaterial({ color: 0xf5e6c0, roughness: 0.4, metalness: 0.05, emissive: 0x441800, emissiveIntensity: 0.6, transparent: true, opacity: 0.85 });
+const grilleCloth = new THREE.MeshStandardMaterial({ color: 0x8b7355, roughness: 0.9, metalness: 0.0, transparent: true, opacity: 0.9 });
 const bakeliteMat = new THREE.MeshStandardMaterial({ color: 0x1a0a00, roughness: 0.35, metalness: 0.08 });
-const glassMat = new THREE.MeshStandardMaterial({ color: 0x332211, roughness: 0.15, metalness: 0.02, transparent: true, opacity: 0.7, emissive: 0x441800, emissiveIntensity: 0.4 });
 const tubeGlow = new THREE.MeshStandardMaterial({ color: 0xff8830, roughness: 0.1, emissive: 0xff6610, emissiveIntensity: 0.9, transparent: true, opacity: 0.85 });
 
 // ── BASE & FEET ──
-const baseGeom = new THREE.BoxGeometry(2.7, 0.12, 1.5);
+const baseGeom = new THREE.BoxGeometry(2.7, 0.08, 0.7);
 const baseMesh = new THREE.Mesh(baseGeom, walnutDark);
 baseMesh.position.y = -0.75;
 radioGroup.add(baseMesh);
 
-// Stepped foot profile — wider than the body, with a bevel
-const footGeom = new THREE.BoxGeometry(2.85, 0.06, 1.62);
+const footGeom = new THREE.BoxGeometry(2.82, 0.04, 0.78);
 const footMesh = new THREE.Mesh(footGeom, walnutDark);
 footMesh.position.y = -0.81;
 radioGroup.add(footMesh);
 
-// Four turned brass feet
 for (let i = 0; i < 4; i++) {
-  const footPillar = new THREE.Mesh(new THREE.CylinderGeometry(0.06, 0.07, 0.1, 16), brassMat);
-  footPillar.position.set((i < 2 ? -1.1 : 1.1), -0.83, (i % 2 === 0 ? -0.5 : 0.5));
+  const footPillar = new THREE.Mesh(new THREE.CylinderGeometry(0.05, 0.06, 0.08, 12), brassMat);
+  footPillar.position.set((i < 2 ? -1.1 : 1.1), -0.83, (i % 2 === 0 ? -0.22 : 0.22));
   radioGroup.add(footPillar);
-  const footDisc = new THREE.Mesh(new THREE.CylinderGeometry(0.09, 0.09, 0.03, 16), brassBright);
-  footDisc.position.set((i < 2 ? -1.1 : 1.1), -0.88, (i % 2 === 0 ? -0.5 : 0.5));
-  radioGroup.add(footDisc);
 }
 
-// ── MAIN BODY — cathedral shape with side shoulders ──
-// Lower rectangular body
-const bodyGeom = new THREE.BoxGeometry(2.6, 1.25, 1.4);
+// ── MAIN BODY — thin, flat front panel ──
+const bodyGeom = new THREE.BoxGeometry(2.6, 1.3, 0.55);
 const bodyMesh = new THREE.Mesh(bodyGeom, walnutMat);
-bodyMesh.position.y = -0.1;
+bodyMesh.position.y = -0.08;
 radioGroup.add(bodyMesh);
 
-// Side shoulder projections (tombstone-style)
+// Side shoulder wings — subtle tombstone shoulders
 for (let side = -1; side <= 1; side += 2) {
-  const shoulderGeom = new THREE.BoxGeometry(0.15, 0.7, 1.4);
-  const shoulderMesh = new THREE.Mesh(shoulderGeom, walnutMat);
-  shoulderMesh.position.set(side * 1.37, 0.5, 0);
+  const shoulderGeom = new THREE.BoxGeometry(0.12, 0.5, 0.55);
+  const shoulderMesh = new THREE.Mesh(shoulderGeom, walnutLight);
+  shoulderMesh.position.set(side * 1.36, 0.35, 0);
   radioGroup.add(shoulderMesh);
 }
 
-// ── CATHEDRAL ARCH TOP — compound curve ──
+// ── CATHEDRAL ARCH — flatter bezier top ──
 const archShape = new THREE.Shape();
 archShape.moveTo(-1.3, 0.55);
-archShape.lineTo(-1.3, 1.0);
-// Gentle Philco double-ogee arch
-archShape.bezierCurveTo(-1.3, 1.35, -0.6, 1.55, 0, 1.58);
-archShape.bezierCurveTo(0.6, 1.55, 1.3, 1.35, 1.3, 1.0);
+archShape.lineTo(-1.3, 0.85);
+archShape.bezierCurveTo(-1.3, 1.2, -0.5, 1.45, 0, 1.48);
+archShape.bezierCurveTo(0.5, 1.45, 1.3, 1.2, 1.3, 0.85);
 archShape.lineTo(1.3, 0.55);
 archShape.lineTo(-1.3, 0.55);
 
-const extrudeSettings = { steps: 1, depth: 1.42, bevelEnabled: true, bevelThickness: 0.04, bevelSize: 0.04, bevelSegments: 5 };
-const archExtrude = new THREE.ExtrudeGeometry(archShape, extrudeSettings);
+const archExtrude = new THREE.ExtrudeGeometry(archShape, { steps: 1, depth: 0.57, bevelEnabled: true, bevelThickness: 0.03, bevelSize: 0.03, bevelSegments: 3 });
 const archMesh = new THREE.Mesh(archExtrude, walnutMat);
-archMesh.position.set(0, 0.5, -0.71);
+archMesh.position.set(0, 0.55, -0.285);
 radioGroup.add(archMesh);
 
-// ── SUNBURST SPEAKER GRILLE — Art Deco radial pattern ──
-const grilleBase = new THREE.Mesh(new THREE.CircleGeometry(0.52, 48), grilleCloth);
-grilleBase.position.set(0.55, 0.15, 0.73);
+// ── SUNBURST SPEAKER GRILLE — radial Art Deco ──
+const grilleBase = new THREE.Mesh(new THREE.CircleGeometry(0.48, 48), grilleCloth);
+grilleBase.position.set(0.52, 0.1, 0.3);
 radioGroup.add(grilleBase);
 
-// Radiating sunburst bars
-for (let i = 0; i < 18; i++) {
-  const angle = (i / 18) * Math.PI * 2;
-  const barGeom = new THREE.BoxGeometry(0.02, 0.42, 0.015);
+for (let i = 0; i < 16; i++) {
+  const angle = (i / 16) * Math.PI * 2;
+  const barGeom = new THREE.BoxGeometry(0.015, 0.38, 0.01);
   const bar = new THREE.Mesh(barGeom, walnutDark);
-  bar.position.set(0.55 + Math.cos(angle) * 0.25, 0.15 + Math.sin(angle) * 0.25, 0.73);
+  bar.position.set(0.52 + Math.cos(angle) * 0.22, 0.1 + Math.sin(angle) * 0.22, 0.3);
   bar.rotation.z = angle;
   radioGroup.add(bar);
 }
 
-// Concentric grille rings (like a phonograph record)
-for (let r = 0; r < 4; r++) {
-  const ringGeom = new THREE.TorusGeometry(0.12 + r * 0.1, 0.008, 8, 48);
+for (let r = 0; r < 3; r++) {
+  const ringGeom = new THREE.TorusGeometry(0.1 + r * 0.14, 0.006, 8, 40);
   const ring = new THREE.Mesh(ringGeom, walnutDark);
-  ring.position.set(0.55, 0.15, 0.74);
+  ring.position.set(0.52, 0.1, 0.31);
   radioGroup.add(ring);
 }
 
-// ── BRASS GRILLE FRAME — decorative escutcheon ──
-const grilleFrame = new THREE.Mesh(new THREE.TorusGeometry(0.54, 0.025, 16, 48), brassMat);
-grilleFrame.position.set(0.55, 0.15, 0.74);
+const grilleFrame = new THREE.Mesh(new THREE.TorusGeometry(0.5, 0.02, 12, 40), brassMat);
+grilleFrame.position.set(0.52, 0.1, 0.31);
 radioGroup.add(grilleFrame);
 
-// ── ILLUMINATED DIAL — edge-lit with amber glow ──
-const dialHousing = new THREE.Mesh(new THREE.CylinderGeometry(0.38, 0.38, 0.08, 48), bakeliteMat);
-dialHousing.position.set(-0.55, 0.35, 0.75);
-dialHousing.rotation.x = Math.PI / 2;
-radioGroup.add(dialHousing);
-
-const dialFace = new THREE.Mesh(new THREE.CircleGeometry(0.34, 48), dialFaceMat);
-dialFace.position.set(-0.55, 0.35, 0.79);
+// ── ILLUMINATED DIAL — amber edge-lit ──
+const dialFace = new THREE.Mesh(new THREE.CircleGeometry(0.32, 48), dialFaceMat);
+dialFace.position.set(-0.55, 0.3, 0.3);
 radioGroup.add(dialFace);
 
-// Frequency markings — concentric arcs
-for (let m = 0; m < 5; m++) {
-  const markAngle = -2.2 + m * 1.1;
-  const markGeom = new THREE.BoxGeometry(0.008, 0.06, 0.003);
-  const mark = new THREE.Mesh(markGeom, brassMat);
-  mark.position.set(-0.55 + Math.cos(markAngle) * 0.28, 0.35 + Math.sin(markAngle) * 0.28, 0.8);
-  mark.rotation.z = markAngle;
-  radioGroup.add(mark);
+// Station dots
+for (let m = 0; m < 4; m++) {
+  const markAngle = -1.8 + m * 1.2;
+  const dot = new THREE.Mesh(new THREE.SphereGeometry(0.01, 6, 6), brassBright);
+  dot.position.set(-0.55 + Math.cos(markAngle) * 0.22, 0.3 + Math.sin(markAngle) * 0.22, 0.31);
+  radioGroup.add(dot);
 }
 
-// Station call letters on dial (tiny brass rectangles)
-const stations = ['KDKA', 'WJZ', 'WLW', 'KYW'];
-stations.forEach((st, i) => {
-  const stAngle = -1.8 + i * 1.2;
-  const px = -0.55 + Math.cos(stAngle) * 0.2;
-  const py = 0.35 + Math.sin(stAngle) * 0.2;
-  // Small brass dot markers
-  const dot = new THREE.Mesh(new THREE.SphereGeometry(0.012, 8, 8), brassBright);
-  dot.position.set(px, py, 0.8);
-  radioGroup.add(dot);
-});
-
-const dialRing = new THREE.Mesh(new THREE.TorusGeometry(0.36, 0.022, 16, 48), brassMat);
-dialRing.position.set(-0.55, 0.35, 0.79);
+const dialRing = new THREE.Mesh(new THREE.TorusGeometry(0.33, 0.02, 12, 40), brassMat);
+dialRing.position.set(-0.55, 0.3, 0.31);
 radioGroup.add(dialRing);
 
-// Dial needle — brass with luminous tip
-const needleBase = new THREE.Mesh(new THREE.CylinderGeometry(0.008, 0.008, 0.32, 8), brassMat);
-needleBase.position.set(-0.55, 0.35, 0.8);
+// Dial needle — slow gentle sweep
+const needleBase = new THREE.Mesh(new THREE.CylinderGeometry(0.006, 0.006, 0.3, 8), brassBright);
+needleBase.position.set(-0.55, 0.3, 0.32);
 radioGroup.add(needleBase);
 radioGroup.userData.needle = needleBase;
 
-const needleTip = new THREE.Mesh(new THREE.SphereGeometry(0.016, 8, 8), brassBright);
-needleTip.position.set(-0.15, 0.35, 0.8);
+const needleTip = new THREE.Mesh(new THREE.SphereGeometry(0.014, 6, 6), brassBright);
+needleTip.position.set(-0.25, 0.3, 0.32);
 radioGroup.add(needleTip);
 radioGroup.userData.needleTip = needleTip;
 
-// ── BAKELITE KNOBS — fluted barrels ──
+// ── BAKELITE KNOBS — three fluted controls ──
 const knobPositions = [
   { x: -1.0, label: 'VOL' },
   { x: -0.55, label: 'TUNE' },
   { x: -0.1, label: 'TONE' },
 ];
-
-knobPositions.forEach((kp, i) => {
-  // Knob body
-  const knobGeom = new THREE.CylinderGeometry(0.09, 0.1, 0.1, 24);
+knobPositions.forEach((kp) => {
+  const knobGeom = new THREE.CylinderGeometry(0.08, 0.09, 0.08, 20);
   const knob = new THREE.Mesh(knobGeom, bakeliteMat);
-  knob.position.set(kp.x, -0.4, 0.76);
+  knob.position.set(kp.x, -0.42, 0.3);
   knob.rotation.x = Math.PI / 2;
   radioGroup.add(knob);
   
-  // Knob fluting — vertical grooves
-  for (let f = 0; f < 12; f++) {
-    const flAngle = (f / 12) * Math.PI * 2;
-    const flGeom = new THREE.BoxGeometry(0.01, 0.03, 0.005);
-    const flute = new THREE.Mesh(flGeom, brassMat);
-    flute.position.set(kp.x + Math.cos(flAngle) * 0.1, -0.4 + Math.sin(flAngle) * 0.1, 0.81);
+  // Fluting lines
+  for (let f = 0; f < 8; f++) {
+    const flAngle = (f / 8) * Math.PI * 2;
+    const flute = new THREE.Mesh(new THREE.BoxGeometry(0.008, 0.02, 0.004), brassMat);
+    flute.position.set(kp.x + Math.cos(flAngle) * 0.085, -0.42 + Math.sin(flAngle) * 0.085, 0.34);
     radioGroup.add(flute);
   }
-  
-  // Knob indicator line
-  const indicatorGeom = new THREE.BoxGeometry(0.015, 0.04, 0.006);
-  const indicator = new THREE.Mesh(indicatorGeom, brassBright);
-  indicator.position.set(kp.x, -0.32, 0.81);
-  radioGroup.add(indicator);
-  
-  // Brass escutcheon label plate
-  const labelGeom = new THREE.PlaneGeometry(0.1, 0.04);
+
+  const labelGeom = new THREE.PlaneGeometry(0.08, 0.03);
   const labelPlate = new THREE.Mesh(labelGeom, brassMat);
-  labelPlate.position.set(kp.x, -0.24, 0.78);
+  labelPlate.position.set(kp.x, -0.26, 0.32);
   radioGroup.add(labelPlate);
 });
 
-// ── VACUUM TUBE GLOW — visible through grille ──
-for (let t = 0; t < 3; t++) {
-  const tubeGeom = new THREE.CylinderGeometry(0.04, 0.04, 0.18, 12);
-  const tube = new THREE.Mesh(tubeGeom, tubeGlow);
-  tube.position.set(0.55, -0.35 + t * 0.35, 0.6);
+// ── TUBE GLOW — visible through grille ──
+for (let t = 0; t < 2; t++) {
+  const tube = new THREE.Mesh(new THREE.CylinderGeometry(0.035, 0.035, 0.14, 10), tubeGlow);
+  tube.position.set(0.52, -0.3 + t * 0.35, 0.2);
   radioGroup.add(tube);
 }
 
-// ── BRAND BADGE — arched nameplate above dial ──
-const badgeBack = new THREE.Mesh(new THREE.BoxGeometry(0.45, 0.08, 0.03), brassMat);
-badgeBack.position.set(-0.55, 0.65, 0.78);
-radioGroup.add(badgeBack);
-
-// ── ANTENNA SYSTEM ──
-// Porcelain insulators
+// ── ANTENNA — twin V-wires ──
 for (let i = 0; i < 2; i++) {
-  const insGeom = new THREE.CylinderGeometry(0.025, 0.025, 0.1, 8);
+  const insGeom = new THREE.CylinderGeometry(0.02, 0.02, 0.08, 8);
   const insulator = new THREE.Mesh(insGeom, new THREE.MeshStandardMaterial({ color: 0xfafaf5, roughness: 0.3 }));
-  insulator.position.set(-0.1 + i * 0.2, -0.2, 0.4);
+  insulator.position.set(-0.08 + i * 0.16, -0.2, 0.05);
   radioGroup.add(insulator);
 }
-// Twin antenna wires — V formation
 for (let i = 0; i < 2; i++) {
   const points = [
-    new THREE.Vector3(-0.1 + i * 0.2, -0.15, 0.4),
-    new THREE.Vector3(-0.3 + i * 0.15, 1.8, 0.8),
-    new THREE.Vector3(-0.5 + i * 0.1, 2.6, 1.4),
+    new THREE.Vector3(-0.08 + i * 0.16, -0.15, 0.05),
+    new THREE.Vector3(-0.25 + i * 0.15, 1.6, 0.6),
+    new THREE.Vector3(-0.4 + i * 0.1, 2.4, 1.2),
   ];
   const antGeom = new THREE.BufferGeometry().setFromPoints(points);
-  const antWire = new THREE.Line(antGeom, new THREE.LineBasicMaterial({ color: 0xc9a84c, linewidth: 1, transparent: true, opacity: 0.55 }));
+  const antWire = new THREE.Line(antGeom, new THREE.LineBasicMaterial({ color: 0xc9a84c, transparent: true, opacity: 0.5 }));
   radioGroup.add(antWire);
 }
 
-// ── PILOT LAMP INDICATOR — small jewel light ──
-const pilotGeom = new THREE.SphereGeometry(0.03, 12, 12);
-const pilotLight = new THREE.Mesh(pilotGeom, new THREE.MeshStandardMaterial({ color: 0xff8820, roughness: 0.1, emissive: 0xff6610, emissiveIntensity: 1.2 }));
-pilotLight.position.set(-1.05, 0.0, 0.76);
+// ── BRAND BADGE ──
+const badgeBack = new THREE.Mesh(new THREE.BoxGeometry(0.4, 0.06, 0.02), brassMat);
+badgeBack.position.set(-0.55, 0.62, 0.32);
+radioGroup.add(badgeBack);
+
+// ── PILOT LIGHT ──
+const pilotLight = new THREE.Mesh(new THREE.SphereGeometry(0.025, 8, 8), new THREE.MeshStandardMaterial({ color: 0xff8820, roughness: 0.1, emissive: 0xff6610, emissiveIntensity: 1.2 }));
+pilotLight.position.set(-1.02, -0.02, 0.3);
 radioGroup.add(pilotLight);
 
 scene.add(radioGroup);
@@ -939,32 +895,25 @@ function stopPlayback() {
 function skipForward() {
   if (!isPlaying || playQueue.length === 0) return;
   speechSynthesis.cancel();
-  // Find next segment (skip commercials)
+  currentUtterance = null;
   let next = queueIndex + 1;
   while (next < playQueue.length && playQueue[next].type === 'commercial') next++;
-  if (next >= playQueue.length) {
-    stopPlayback();
-    return;
-  }
+  if (next >= playQueue.length) { stopPlayback(); return; }
   queueIndex = next;
   document.getElementById('statPlaying').textContent = `📻 Segment ${playQueue[next].index + 1}/${episodeSegments.length}`;
-  processQueue();
+  setTimeout(() => processQueue(), 150);
 }
 
 function skipBackward() {
   if (!isPlaying || playQueue.length === 0) return;
   speechSynthesis.cancel();
-  // Find previous segment (skip commercials)
+  currentUtterance = null;
   let prev = queueIndex - 1;
   while (prev >= 0 && playQueue[prev].type === 'commercial') prev--;
-  if (prev < 0) {
-    // Go to first segment
-    queueIndex = 0;
-  } else {
-    queueIndex = prev;
-  }
-  document.getElementById('statPlaying').textContent = `📻 Segment ${playQueue[queueIndex].index + 1}/${episodeSegments.length}`;
-  processQueue();
+  if (prev < 0) prev = 0;
+  queueIndex = prev;
+  document.getElementById('statPlaying').textContent = `📻 Segment ${playQueue[prev].index + 1}/${episodeSegments.length}`;
+  setTimeout(() => processQueue(), 150);
 }
 
 function togglePause() {
@@ -1075,8 +1024,27 @@ document.getElementById('episodeSelect').addEventListener('change', async (e) =>
 });
 
 // ──────────────────────────────────────
-// ANIMATION LOOP — gentle swimming particles, frequency tails
+// DRAG-TO-ROTATE — touch the radio to spin it
 // ──────────────────────────────────────
+let isDragging = false, prevMouseX = 0, prevMouseY = 0;
+let targetRotY = 0, targetRotX = 0;
+
+renderer.domElement.addEventListener('pointerdown', (e) => {
+  isDragging = true;
+  prevMouseX = e.clientX;
+  prevMouseY = e.clientY;
+});
+window.addEventListener('pointerup', () => { isDragging = false; });
+window.addEventListener('pointermove', (e) => {
+  if (!isDragging) return;
+  const dx = e.clientX - prevMouseX;
+  const dy = e.clientY - prevMouseY;
+  targetRotY += dx * 0.008;
+  targetRotX += dy * 0.005;
+  targetRotX = Math.max(-0.4, Math.min(0.4, targetRotX));
+  prevMouseX = e.clientX;
+  prevMouseY = e.clientY;
+});
 const clock = new THREE.Clock();
 
 function animate() {
@@ -1158,13 +1126,16 @@ function animate() {
 
   // Rotate dial needle when "playing"
   if (isPlaying && !isPaused && radioGroup.userData.needle) {
-    radioGroup.userData.needle.rotation.z += dt * 1.8;
-    if (radioGroup.userData.needleTip) radioGroup.userData.needleTip.rotation.z += dt * 1.8;
+    // Gentle oscillation instead of spinning — sweeps back and forth like tuning
+    const sweep = Math.sin(particleTime * 0.7) * 0.25;
+    radioGroup.userData.needle.rotation.z = sweep;
+    if (radioGroup.userData.needleTip) radioGroup.userData.needleTip.rotation.z = sweep;
   }
 
-  // Subtle radio float — very gentle
-  radioGroup.position.y = Math.sin(particleTime * 0.4) * 0.06;
-  radioGroup.rotation.y = Math.sin(particleTime * 0.25) * 0.03;
+  // Subtle radio float — gentle + drag rotation
+  radioGroup.position.y = Math.sin(particleTime * 0.4) * 0.04;
+  radioGroup.rotation.y += (targetRotY - radioGroup.rotation.y) * 3 * dt;
+  radioGroup.rotation.x += (targetRotX - radioGroup.rotation.x) * 3 * dt;
 
   // Dial light intensity — warm pulse with speech
   dialLight.intensity = 1.8 + currentParticleEnergy * 1.6;
