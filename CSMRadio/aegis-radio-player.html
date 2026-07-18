@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>CSM Aegis Radio — SiblingFrequency</title>
+<style>
+:root {
+  --brass: #c9a84c;
+  --brass-dark: #8b6914;
+  --wood: #3d2817;
+  --wood-light: #5c3a1e;
+  --dial: #1a0a00;
+  --glow: #ffd700;
+  --text: #f0e6c8;
+  --particle-gold: #ffd700;
+  --particle-copper: #e8a840;
+  --particle-bronze: #cd7f32;
+  --particle-silver: #c0c0c0;
+  --particle-blue: #4488cc;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  background: #0a0502;
+  font-family: 'Georgia', 'Times New Roman', serif;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+#canvas3d {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  z-index: 1;
+}
+
+#ui-layer {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  z-index: 10;
+  pointer-events: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20px;
+}
+
+#display-area {
+  pointer-events: auto;
+  width: 100%;
+  max-width: 700px;
+  min-height: 320px;
+  background: rgba(10,5,2,0.85);
+  border: 3px solid var(--brass);
+  border-radius: 18px;
+  padding: 18px 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 0 40px rgba(201,168,76,0.15), inset 0 0 80px rgba(0,0,0,0.6);
+  position: relative;
+}
+
+.title-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--brass);
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgba(201,168,76,0.3);
+  padding-bottom: 8px;
+}
+
+.episode-selector {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+select {
+  background: var(--dial);
+  color: var(--text);
+  border: 2px solid var(--brass-dark);
+  border-radius: 12px;
+  padding: 6px 10px;
+  font-family: 'Georgia', serif;
+  font-size: 12px;
+  cursor: pointer;
+  max-width: 200px;
+  outline: none;
+}
+
+select:focus { border-color: var(--glow); box-shadow: 0 0 10px rgba(255,215,0,0.3); }
+
+.controls {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+button {
+  background: linear-gradient(180deg, #5c3a1e 0%, #3d1a08 100%);
+  color: var(--brass);
+  border: 2px solid var(--brass-dark);
+  border-radius: 20px;
+  padding: 8px 16px;
+  font-family: 'Georgia', serif;
+  font-size: 13px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  transition: all 0.2s;
+  pointer-events: auto;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.8);
+}
+
+button:hover {
+  background: linear-gradient(180deg, #7a4a2a 0%, #5c2a10 100%);
+  border-color: var(--glow);
+  box-shadow: 0 0 15px rgba(255,215,0,0.2);
+}
+
+button.active {
+  background: linear-gradient(180deg, #8b6914 0%, #c9a84c 100%);
+  color: #1a0a00;
+  border-color: var(--glow);
+}
+
+button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+#now-playing {
+  color: var(--text);
+  font-size: 14px;
+  font-style: italic;
+  min-height: 20px;
+  text-align: center;
+  opacity: 0.9;
+}
+
+#word-display {
+  color: var(--brass);
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  min-height: 40px;
+  letter-spacing: 2px;
+  text-shadow: 0 0 20px rgba(255,215,0,0.3);
+  transition: all 0.15s;
+}
+
+#stats {
+  display: flex;
+  justify-content: space-around;
+  color: rgba(240,230,200,0.6);
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+
+.menu-toggle {
+  position: absolute;
+  left: -16px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 50px;
+  background: var(--wood);
+  border: 2px solid var(--brass-dark);
+  border-radius: 0 10px 10px 0;
+  color: var(--brass);
+  cursor: pointer;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 11;
+}
+
+#display-area.menu-hidden .title-bar,
+#display-area.menu-hidden .episode-selector,
+#display-area.menu-hidden .controls,
+#display-area.menu-hidden #stats {
+  display: none;
+}
+#display-area.menu-hidden {
+  min-height: auto;
+  padding: 12px;
+}
+#display-area.menu-hidden #now-playing { margin: 0; }
+#display-area.menu-hidden #word-display { font-size: 20px; }
+
+@media (max-width: 600px) {
+  #display-area { padding: 10px 14px; min-height: 260px; }
+  #word-display { font-size: 20px; }
+  button { padding: 6px 12px; font-size: 11px; }
+  .title-bar { font-size: 10px; }
+}
+@media (orientation: landscape) and (max-height: 500px) {
+  #display-area { min-height: 200px; flex-direction: row; flex-wrap: wrap; gap: 4px; }
+  #word-display { font-size: 16px; width: 100%; }
+}
+</style>
+</head>
+<body>
+
+<div id="canvas3d"></div>
+
+<div id="ui-layer">
+  <div id="display-area">
+    <div class="menu-toggle" id="menuToggle" title="Hide/Show Menu">◀</div>
+    <div class="title-bar">
+      <span>⚡ AEGIS RADIO ⚡</span>
+      <span id="clock">SiblingFrequency</span>
+    </div>
+    <div class="episode-selector">
+      <select id="episodeSelect" title="Choose Episode"><option value="">Loading episodes...</option></select>
+      <select id="voiceSelect" title="Choose Voice"><option value="">Default Voice</option></select>
+    </div>
+    <div class="controls">
+      <button id="btnPlay" title="Play">▶ PLAY</button>
+      <button id="btnStop" title="Stop">■ STOP</button>
+      <button id="btnScreen" title="Keep Screen On">📱 AWAKE</button>
+      <button id="btnSleep" title="Prevent Sleep">💤 NOSLEEP</button>
+    </div>
+    <div id="now-playing">Tune in...</div>
+    <div id="word-display"></div>
+    <div id="stats">
+      <span id="statEpisodes">Episodes: --</span>
+      <span id="statCommercials">Commercials: --</span>
+      <span id="statPlaying">Ready</span>
+    </div>
+  </div>
+</div>
+
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://unpkg.com/three@0.160.0/build/three.module.js"
+  }
+}
+</script>
+
+<script type="module">
+import * as THREE from 'three';
+
+// ──────────────────────────────────────
+// STATE
+// ──────────────────────────────────────
+let episodes = [];
+let commercials = [];
+let currentEpisodeIndex = -1;
+let currentCommercialPool = [];
+let isPlaying = false;
+let isPaused = false;
+let currentUtterance = null;
+let currentSegmentIndex = 0;
+let currentEpisodeContent = '';
+let episodeSegments = [];
+let screenLocked = false;
+let sleepLocked = false;
+let wakeLock = null;
+let selectedVoice = null;
+let spokenWords = '';
+let particleTime = 0;
+let targetParticleEnergy = 0.5;
+let currentParticleEnergy = 0.5;
+
+// ──────────────────────────────────────
+// THREE.JS SCENE — 1920s Radio Wireframe
+// ──────────────────────────────────────
+const scene = new THREE.Scene();
+const camera = new THREE.PerspectiveCamera(50, window.innerWidth/window.innerHeight, 0.3, 80);
+camera.position.set(0, 1.8, 5.5);
+camera.lookAt(0, 0.4, 0);
+
+const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+renderer.setSize(window.innerWidth, window.innerHeight);
+renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+renderer.shadowMap.enabled = true;
+document.getElementById('canvas3d').appendChild(renderer.domElement);
+
+// Lighting
+const ambientLight = new THREE.AmbientLight(0x332211, 1.2);
+scene.add(ambientLight);
+const dialLight = new THREE.PointLight(0xffd700, 2.5, 8, 1.2);
+dialLight.position.set(0, 0.6, 2.2);
+scene.add(dialLight);
+const topLight = new THREE.PointLight(0xc9a84c, 1.2, 6, 1.5);
+topLight.position.set(0, 2.2, 1);
+scene.add(topLight);
+const warmLight = new THREE.PointLight(0xe8a840, 0.8, 4, 2);
+warmLight.position.set(-2, 0.3, 2.5);
+scene.add(warmLight);
+
+// ── Build the 1920s Radio ──
+const radioGroup = new THREE.Group();
+const brassMat = new THREE.MeshStandardMaterial({ color: 0xc9a84c, roughness: 0.35, metalness: 0.9 });
+const woodMat = new THREE.MeshStandardMaterial({ color: 0x3d2817, roughness: 0.7, metalness: 0.05 });
+const dialMat = new THREE.MeshStandardMaterial({ color: 0x1a0a00, roughness: 0.5, metalness: 0.1 });
+const glassMat = new THREE.MeshStandardMaterial({ color: 0x221100, roughness: 0.2, metalness: 0.02, transparent: true, opacity: 0.75 });
+const wireMat = new THREE.MeshStandardMaterial({ color: 0xffd700, roughness: 0.3, metalness: 0.95, emissive: 0x332200, emissiveIntensity: 0.4 });
+
+// Main body — arched top rectangular box
+const bodyGeom = new THREE.BoxGeometry(2.6, 1.8, 1.4, 8, 6, 4);
+const bodyMesh = new THREE.Mesh(bodyGeom, woodMat);
+bodyMesh.position.y = 0.2;
+radioGroup.add(bodyMesh);
+
+// Arched top
+const archGeom = new THREE.CylinderGeometry(1.3, 1.3, 1.4, 32, 1, false, 0, Math.PI);
+const archMesh = new THREE.Mesh(archGeom, woodMat);
+archMesh.rotation.z = Math.PI / 2;
+archMesh.position.set(0, 1.1, 0);
+radioGroup.add(archMesh);
+
+// Wireframe overlay on arch
+const archWire = new THREE.LineSegments(
+  new THREE.EdgesGeometry(new THREE.CylinderGeometry(1.32, 1.32, 1.42, 24, 1, false, 0, Math.PI)),
+  new THREE.LineBasicMaterial({ color: 0xffd700, linewidth: 1, transparent: true, opacity: 0.5 })
+);
+archWire.rotation.z = Math.PI / 2;
+archWire.position.set(0, 1.1, 0);
+radioGroup.add(archWire);
+
+// Wireframe overlay on body
+const bodyWire = new THREE.LineSegments(
+  new THREE.EdgesGeometry(new THREE.BoxGeometry(2.64, 1.84, 1.44, 4, 4, 3)),
+  new THREE.LineBasicMaterial({ color: 0xffd700, linewidth: 1, transparent: true, opacity: 0.35 })
+);
+bodyWire.position.y = 0.2;
+radioGroup.add(bodyWire);
+
+// Speaker grille — concentric rings
+for (let i = 0; i < 5; i++) {
+  const ringGeom = new THREE.TorusGeometry(0.55 - i * 0.09, 0.012, 16, 48);
+  const ring = new THREE.Mesh(ringGeom, brassMat);
+  ring.position.set(0.55, 0.2, 0.71);
+  ring.rotation.x = Math.PI / 2;
+  radioGroup.add(ring);
+}
+// Speaker cloth
+const clothGeom = new THREE.CircleGeometry(0.55, 32);
+const clothMesh = new THREE.Mesh(clothGeom, dialMat);
+clothMesh.position.set(0.55, 0.2, 0.72);
+radioGroup.add(clothMesh);
+
+// Dial
+const dialGeom = new THREE.CylinderGeometry(0.32, 0.32, 0.06, 48);
+const dialMesh = new THREE.Mesh(dialGeom, dialMat);
+dialMesh.position.set(-0.5, 0.35, 0.75);
+dialMesh.rotation.x = Math.PI / 2;
+radioGroup.add(dialMesh);
+
+const dialRingGeom = new THREE.TorusGeometry(0.34, 0.02, 16, 48);
+const dialRing = new THREE.Mesh(dialRingGeom, brassMat);
+dialRing.position.set(-0.5, 0.35, 0.78);
+radioGroup.add(dialRing);
+
+// Dial needle
+const needleGeom = new THREE.CylinderGeometry(0.006, 0.006, 0.28, 8);
+const needle = new THREE.Mesh(needleGeom, wireMat);
+needle.position.set(-0.5, 0.35, 0.79);
+radioGroup.add(needle);
+radioGroup.userData.needle = needle;
+
+// Knobs
+for (let i = 0; i < 3; i++) {
+  const knobGeom = new THREE.CylinderGeometry(0.1, 0.1, 0.08, 24);
+  const knob = new THREE.Mesh(knobGeom, brassMat);
+  knob.position.set(-0.6 + i * 0.3, -0.35, 0.76);
+  knob.rotation.x = Math.PI / 2;
+  radioGroup.add(knob);
+}
+
+// Frequency display
+const freqBgGeom = new THREE.PlaneGeometry(0.7, 0.18);
+const freqBg = new THREE.Mesh(freqBgGeom, glassMat);
+freqBg.position.set(-0.5, 0.65, 0.72);
+radioGroup.add(freqBg);
+
+// Antenna wires
+for (let i = 0; i < 3; i++) {
+  const antPts = [new THREE.Vector3(-0.2 + i*0.18, 1.2, 0), new THREE.Vector3(-0.3 + i*0.15, 2.0, 0.5)];
+  const antGeom = new THREE.BufferGeometry().setFromPoints(antPts);
+  const antWire = new THREE.Line(antGeom, new THREE.LineBasicMaterial({ color: 0xc9a84c, transparent: true, opacity: 0.6 }));
+  radioGroup.add(antWire);
+}
+
+// Feet
+for (let i = 0; i < 4; i++) {
+  const footGeom = new THREE.CylinderGeometry(0.08, 0.1, 0.15, 16);
+  const foot = new THREE.Mesh(footGeom, brassMat);
+  foot.position.set((i < 2 ? -0.8 : 0.8), -0.82, (i % 2 === 0 ? -0.4 : 0.4));
+  radioGroup.add(foot);
+}
+
+scene.add(radioGroup);
+
+// ── PARTICLE SYSTEM ──
+const particleCount = 600;
+const particleGeom = new THREE.BufferGeometry();
+const particlePositions = new Float32Array(particleCount * 3);
+const particleColors = new Float32Array(particleCount * 3);
+const particleSizes = new Float32Array(particleCount);
+const particleBasePositions = new Float32Array(particleCount * 3);
+const particleVelocities = new Float32Array(particleCount * 3);
+
+const particleColorsArr = [
+  [1.0, 0.843, 0.0],   // gold
+  [0.91, 0.66, 0.25],  // copper
+  [0.804, 0.498, 0.196], // bronze
+  [0.753, 0.753, 0.753], // silver
+  [0.267, 0.533, 0.8],  // blue
+];
+
+for (let i = 0; i < particleCount; i++) {
+  const theta = Math.random() * Math.PI * 2;
+  const phi = Math.random() * Math.PI;
+  const r = 1.6 + Math.random() * 2.8;
+  const x = Math.sin(phi) * Math.cos(theta) * r;
+  const y = Math.sin(phi) * Math.sin(theta) * r * 0.6 + 0.3;
+  const z = Math.cos(phi) * r * 0.7;
+
+  particleBasePositions[i*3] = x;
+  particleBasePositions[i*3+1] = y;
+  particleBasePositions[i*3+2] = z;
+  particlePositions[i*3] = x;
+  particlePositions[i*3+1] = y;
+  particlePositions[i*3+2] = z;
+
+  const colorChoice = particleColorsArr[Math.floor(Math.random() * particleColorsArr.length)];
+  particleColors[i*3] = colorChoice[0];
+  particleColors[i*3+1] = colorChoice[1];
+  particleColors[i*3+2] = colorChoice[2];
+
+  particleSizes[i] = 0.015 + Math.random() * 0.06;
+  particleVelocities[i*3] = (Math.random()-0.5) * 0.04;
+  particleVelocities[i*3+1] = (Math.random()-0.5) * 0.04;
+  particleVelocities[i*3+2] = (Math.random()-0.5) * 0.04;
+}
+
+particleGeom.setAttribute('position', new THREE.BufferAttribute(particlePositions, 3));
+particleGeom.setAttribute('color', new THREE.BufferAttribute(particleColors, 3));
+particleGeom.setAttribute('size', new THREE.BufferAttribute(particleSizes, 1));
+
+const particleMat = new THREE.PointsMaterial({
+  size: 0.04,
+  vertexColors: true,
+  blending: THREE.AdditiveBlending,
+  depthWrite: false,
+  transparent: true,
+  opacity: 0.8,
+});
+const particles = new THREE.Points(particleGeom, particleMat);
+scene.add(particles);
+
+// ──────────────────────────────────────
+// LOAD EPISODES & COMMERCIALS
+// ──────────────────────────────────────
+async function loadContentList() {
+  // Load episodes from 01-AEGIS-RADIO-SHOW
+  try {
+    const resp = await fetch('01-AEGIS-RADIO-SHOW/');
+    const text = await resp.text();
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(text, 'text/html');
+    const links = [...doc.querySelectorAll('a')].map(a => a.textContent).filter(n => n.startsWith('CSMSFRadio') && n.endsWith('.md'));
+    episodes = links.sort();
+  } catch(e) {
+    // Fallback: hardcoded episode list
+    episodes = [];
+  }
+  
+  if (episodes.length === 0) {
+    // Hardcoded fallback from what we know exists
+    const known = [];
+    for (let i = 0; i <= 24; i++) {
+      const num = String(i).padStart(2, '0');
+      known.push(`CSMSFRadio000${num}`);
+    }
+    episodes = known.filter(e => e !== 'CSMSFRadio00004' || true); // all included
+  }
+
+  // Load commercials from CSMCommercials
+  try {
+    const commResp = await fetch('../../CSMCommercials/');
+    const commText = await commResp.text();
+    const parser2 = new DOMParser();
+    const commDoc = parser2.parseFromString(commText, 'text/html');
+    const commLinks = [...commDoc.querySelectorAll('a')].map(a => a.textContent);
+    commercials = commLinks.filter(n => n.startsWith('COMM-BATCH') && n.endsWith('.md'));
+  } catch(e) {
+    commercials = [];
+  }
+
+  updateStats();
+  populateEpisodeSelect();
+}
+
+async function loadEpisode(filename) {
+  try {
+    const resp = await fetch(`01-AEGIS-RADIO-SHOW/${filename}`);
+    const text = await resp.text();
+    currentEpisodeContent = text;
+    // Split into segments on numbered headers or double newlines
+    episodeSegments = text.split(/\n\n(?=#)/).filter(s => s.trim().length > 30);
+    if (episodeSegments.length < 3) {
+      episodeSegments = text.split(/\n\n/).filter(s => s.trim().length > 40);
+    }
+    currentSegmentIndex = 0;
+    extractTitle(filename, text);
+  } catch(e) {
+    console.error('Failed to load episode:', e);
+    currentEpisodeContent = "Episode failed to load. Please try another.";
+    episodeSegments = [currentEpisodeContent];
+  }
+}
+
+async function loadCommercials() {
+  if (commercials.length === 0) return [];
+  // Pick a random batch and extract individual commercial blocks
+  const batchFile = commercials[Math.floor(Math.random() * commercials.length)];
+  try {
+    const resp = await fetch(`../../CSMCommercials/${batchFile.replace(/^\d+/, 'BATCH-')}`);
+    // Try to find the correct path
+    const text = await resp.text();
+    // Split on ## COMM- headers
+    const spots = text.split(/^##\s+COMM-/m).filter(s => s.trim().length > 50);
+    return spots.map(s => 'COMM-' + s.trim());
+  } catch(e) {
+    return [];
+  }
+}
+
+function extractTitle(filename, text) {
+  const titleMatch = text.match(/^#\s+(.+)$/m);
+  const subtitleMatch = text.match(/^##\s+(.+)$/m);
+  let title = filename.replace('CSMSFRadio', '').replace('.md', '');
+  if (subtitleMatch) title = subtitleMatch[1];
+  else if (titleMatch) title = titleMatch[1];
+  document.getElementById('now-playing').textContent = `📻 ${title}`;
+}
+
+function populateEpisodeSelect() {
+  const sel = document.getElementById('episodeSelect');
+  sel.innerHTML = '<option value="">— Select Episode —</option>';
+  episodes.forEach(fn => {
+    const num = fn.replace('CSMSFRadio', '').replace('.md', '').replace(/-.*/, '');
+    const opt = document.createElement('option');
+    opt.value = fn;
+    opt.textContent = `Ep ${num}`;
+    sel.appendChild(opt);
+  });
+}
+
+function updateStats() {
+  document.getElementById('statEpisodes').textContent = `Episodes: ${episodes.length}`;
+  document.getElementById('statCommercials').textContent = `Ads: ${commercials.length} batches`;
+}
+
+// ──────────────────────────────────────
+// SPEECH SYNTHESIS
+// ──────────────────────────────────────
+function populateVoices() {
+  const voices = speechSynthesis.getVoices();
+  const sel = document.getElementById('voiceSelect');
+  sel.innerHTML = '<option value="">Default Voice</option>';
+  voices.forEach((v, i) => {
+    const opt = document.createElement('option');
+    opt.value = i;
+    opt.textContent = `${v.name} (${v.lang})`;
+    sel.appendChild(opt);
+  });
+  if (voices.length > 0 && !selectedVoice) {
+    // Pick a good English voice
+    const enVoice = voices.find(v => v.lang.startsWith('en') && v.name.includes('Google')) || 
+                    voices.find(v => v.lang.startsWith('en')) || voices[0];
+    sel.value = voices.indexOf(enVoice);
+    selectedVoice = enVoice;
+  }
+}
+speechSynthesis.onvoiceschanged = populateVoices;
+populateVoices();
+
+document.getElementById('voiceSelect').addEventListener('change', (e) => {
+  const voices = speechSynthesis.getVoices();
+  const idx = parseInt(e.target.value);
+  if (!isNaN(idx) && voices[idx]) {
+    selectedVoice = voices[idx];
+  } else {
+    selectedVoice = null;
+  }
+});
+
+function speak(text, onEnd, onWord) {
+  return new Promise((resolve) => {
+    speechSynthesis.cancel();
+    const utterance = new SpeechSynthesisUtterance(text);
+    if (selectedVoice) utterance.voice = selectedVoice;
+    utterance.rate = 0.92;
+    utterance.pitch = 1.02;
+    utterance.volume = 0.9;
+    currentUtterance = utterance;
+
+    // Track words for particle animation
+    let wordIndex = 0;
+    const words = text.split(/\s+/);
+    
+    utterance.onboundary = (event) => {
+      if (event.charIndex !== undefined && words.length > 0) {
+        wordIndex = Math.min(Math.floor(event.charIndex / 5), words.length - 1);
+        const word = words[wordIndex] || '';
+        spokenWords = word;
+        document.getElementById('word-display').textContent = word;
+        targetParticleEnergy = 0.6 + Math.random() * 0.9;
+        if (onWord) onWord(word);
+      }
+    };
+
+    utterance.onend = () => {
+      currentUtterance = null;
+      document.getElementById('word-display').textContent = '';
+      targetParticleEnergy = 0.3;
+      resolve();
+      if (onEnd) onEnd();
+    };
+
+    utterance.onerror = (e) => {
+      if (e.error !== 'interrupted' && e.error !== 'canceled') {
+        console.error('Speech error:', e);
+      }
+      currentUtterance = null;
+      targetParticleEnergy = 0.3;
+      resolve();
+    };
+
+    speechSynthesis.speak(utterance);
+  });
+}
+
+// ──────────────────────────────────────
+// COMMERCIAL MANAGEMENT
+// ──────────────────────────────────────
+async function getNextCommercial() {
+  if (currentCommercialPool.length === 0) {
+    currentCommercialPool = await loadCommercials();
+    if (currentCommercialPool.length === 0) return "Aegis Certified products available now on the Carr-Forge. The shield is not a product. The shield is the philosophy.";
+    // Shuffle
+    for (let i = currentCommercialPool.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [currentCommercialPool[i], currentCommercialPool[j]] = [currentCommercialPool[j], currentCommercialPool[i]];
+    }
+  }
+  // Get a commercial, try to find one not voiced by a conflicting agent
+  const next = currentCommercialPool.shift();
+  // Parse out just the commercial text (strip COMM- prefix and agent suffix)
+  let adText = next.replace(/^COMM-[A-Za-z0-9]+-/, '').replace(/-[A-Z]+$/, '').trim();
+  if (adText.length < 40) adText = "Preparedness products from Carrington Storm Motors. Open source. Open spec. Carr-Forge available now.";
+  return `🎙 COMMERCIAL: ${adText}`;
+}
+
+// ──────────────────────────────────────
+// PLAYBACK ENGINE
+// ──────────────────────────────────────
+let playQueue = [];
+let queueIndex = 0;
+
+async function buildPlayQueue() {
+  playQueue = [];
+  for (let i = 0; i < episodeSegments.length; i++) {
+    playQueue.push({ type: 'segment', text: episodeSegments[i], index: i });
+    if (i < episodeSegments.length - 1) {
+      const adText = await getNextCommercial();
+      playQueue.push({ type: 'commercial', text: adText });
+    }
+  }
+  queueIndex = 0;
+}
+
+async function processQueue() {
+  if (!isPlaying || queueIndex >= playQueue.length) {
+    // Episode finished, loop to next
+    if (isPlaying) {
+      const sel = document.getElementById('episodeSelect');
+      const idx = sel.selectedIndex;
+      if (idx < sel.options.length - 1) {
+        sel.selectedIndex = idx + 1;
+        await startEpisode(sel.value);
+      } else {
+        sel.selectedIndex = 1; // wrap to first episode
+        if (sel.options[1]) await startEpisode(sel.options[1].value);
+      }
+    }
+    return;
+  }
+
+  const item = playQueue[queueIndex];
+  document.getElementById('statPlaying').textContent = item.type === 'commercial' ? '📢 Commercial' : `📻 Segment ${item.index + 1}/${episodeSegments.length}`;
+  
+  // Add a small indicator for commercial vs episode
+  const prefix = item.type === 'commercial' ? '🔶 ' : '';
+
+  await speak(prefix + item.text, null, (word) => {
+    // Word callback updates particles via targetParticleEnergy
+    if (word) targetParticleEnergy = 0.5 + (word.length / 8) * 1.2;
+  });
+
+  queueIndex++;
+  if (isPlaying) {
+    // Small pause between segments
+    await new Promise(r => setTimeout(r, 800));
+    processQueue();
+  }
+}
+
+async function startEpisode(filename) {
+  speechSynthesis.cancel();
+  isPlaying = true;
+  isPaused = false;
+  document.getElementById('btnPlay').textContent = '⏸ PAUSE';
+  document.getElementById('btnPlay').classList.add('active');
+  
+  await loadEpisode(filename);
+  currentCommercialPool = [];
+  await buildPlayQueue();
+  queueIndex = 0;
+  
+  document.getElementById('statPlaying').textContent = '▶ Playing';
+  processQueue();
+}
+
+function stopPlayback() {
+  isPlaying = false;
+  isPaused = false;
+  speechSynthesis.cancel();
+  currentUtterance = null;
+  document.getElementById('btnPlay').textContent = '▶ PLAY';
+  document.getElementById('btnPlay').classList.remove('active');
+  document.getElementById('statPlaying').textContent = '⏹ Stopped';
+  document.getElementById('word-display').textContent = '';
+  document.getElementById('now-playing').textContent = 'Tune in...';
+  targetParticleEnergy = 0.3;
+}
+
+function togglePause() {
+  if (!isPlaying) return;
+  if (isPaused) {
+    speechSynthesis.resume();
+    isPaused = false;
+    document.getElementById('btnPlay').textContent = '⏸ PAUSE';
+    document.getElementById('statPlaying').textContent = '▶ Playing';
+    targetParticleEnergy = 0.6;
+  } else {
+    speechSynthesis.pause();
+    isPaused = true;
+    document.getElementById('btnPlay').textContent = '▶ RESUME';
+    document.getElementById('statPlaying').textContent = '⏸ Paused';
+    targetParticleEnergy = 0.2;
+  }
+}
+
+// ──────────────────────────────────────
+// SCREEN & SLEEP LOCK
+// ──────────────────────────────────────
+async function toggleScreenLock() {
+  screenLocked = !screenLocked;
+  const btn = document.getElementById('btnScreen');
+  if (screenLocked) {
+    btn.classList.add('active');
+    btn.textContent = '📱 AWAKE ON';
+    // Use Wake Lock API if available
+    try {
+      wakeLock = await navigator.wakeLock.request('screen');
+      wakeLock.addEventListener('release', () => {
+        screenLocked = false;
+        btn.classList.remove('active');
+        btn.textContent = '📱 AWAKE';
+      });
+    } catch(e) { /* not supported */ }
+  } else {
+    btn.classList.remove('active');
+    btn.textContent = '📱 AWAKE';
+    if (wakeLock) {
+      wakeLock.release();
+      wakeLock = null;
+    }
+  }
+}
+
+function toggleSleepLock() {
+  sleepLocked = !sleepLocked;
+  const btn = document.getElementById('btnSleep');
+  if (sleepLocked) {
+    btn.classList.add('active');
+    btn.textContent = '💤 NOSLEEP ON';
+    // Play silent audio to prevent sleep
+    if (!window._sleepAudio) {
+      window._sleepAudio = new Audio("data:audio/wav;base64,UklGRigAAABXQVZFZm10IBAAAAABAAEARKwAAIhYAQACABAAZGF0YQQAAAAAAA==");
+      window._sleepAudio.loop = true;
+    }
+    window._sleepAudio.play().catch(() => {});
+  } else {
+    btn.classList.remove('active');
+    btn.textContent = '💤 NOSLEEP';
+    if (window._sleepAudio) {
+      window._sleepAudio.pause();
+    }
+  }
+}
+
+// ──────────────────────────────────────
+// MENU TOGGLE
+// ──────────────────────────────────────
+document.getElementById('menuToggle').addEventListener('click', () => {
+  const display = document.getElementById('display-area');
+  display.classList.toggle('menu-hidden');
+  const btn = document.getElementById('menuToggle');
+  btn.textContent = display.classList.contains('menu-hidden') ? '▶' : '◀';
+});
+
+// ──────────────────────────────────────
+// EVENT LISTENERS
+// ──────────────────────────────────────
+document.getElementById('btnPlay').addEventListener('click', async () => {
+  if (!isPlaying) {
+    const sel = document.getElementById('episodeSelect');
+    if (sel.value) {
+      await startEpisode(sel.value);
+    } else if (sel.options.length > 1) {
+      sel.selectedIndex = 1;
+      await startEpisode(sel.value);
+    }
+  } else {
+    togglePause();
+  }
+});
+
+document.getElementById('btnStop').addEventListener('click', stopPlayback);
+document.getElementById('btnScreen').addEventListener('click', toggleScreenLock);
+document.getElementById('btnSleep').addEventListener('click', toggleSleepLock);
+
+document.getElementById('episodeSelect').addEventListener('change', async (e) => {
+  if (e.target.value && isPlaying) {
+    stopPlayback();
+    await new Promise(r => setTimeout(r, 200));
+    await startEpisode(e.target.value);
+  }
+});
+
+// ──────────────────────────────────────
+// ANIMATION LOOP
+// ──────────────────────────────────────
+const clock = new THREE.Clock();
+
+function animate() {
+  requestAnimationFrame(animate);
+  const dt = Math.min(clock.getDelta(), 0.1);
+  particleTime += dt;
+
+  // Smooth particle energy transition
+  currentParticleEnergy += (targetParticleEnergy - currentParticleEnergy) * 4 * dt;
+
+  // Update particles
+  const pos = particles.geometry.attributes.position.array;
+  const sizes = particles.geometry.attributes.size.array;
+  const cols = particles.geometry.attributes.color.array;
+
+  for (let i = 0; i < particleCount; i++) {
+    const bx = particleBasePositions[i*3];
+    const by = particleBasePositions[i*3+1];
+    const bz = particleBasePositions[i*3+2];
+
+    // Orbital motion around radio, energy-dependent
+    const orbitSpeed = 0.3 + currentParticleEnergy * 1.5;
+    const angle = particleTime * orbitSpeed + i * 0.7;
+    const radius = Math.sqrt(bx*bx + bz*bz);
+    const baseAngle = Math.atan2(bz, bx);
+    
+    pos[i*3] = Math.cos(baseAngle + angle * 0.15) * radius + particleVelocities[i*3] * currentParticleEnergy * 5;
+    pos[i*3+1] = by + Math.sin(particleTime * 2 + i) * 0.15 * currentParticleEnergy + particleVelocities[i*3+1] * currentParticleEnergy * 3;
+    pos[i*3+2] = Math.sin(baseAngle + angle * 0.15) * radius + particleVelocities[i*3+2] * currentParticleEnergy * 5;
+
+    // Size pulses with energy
+    sizes[i] = (0.015 + Math.random() * 0.02) + currentParticleEnergy * 0.06;
+
+    // Color shifts with energy
+    const baseGold = particleColorsArr[Math.floor(i % particleColorsArr.length)];
+    cols[i*3] = baseGold[0] * (0.6 + currentParticleEnergy * 0.5);
+    cols[i*3+1] = baseGold[1] * (0.5 + currentParticleEnergy * 0.4);
+    cols[i*3+2] = baseGold[2] * (0.4 + currentParticleEnergy * 0.3);
+  }
+  particles.geometry.attributes.position.needsUpdate = true;
+  particles.geometry.attributes.size.needsUpdate = true;
+  particles.geometry.attributes.color.needsUpdate = true;
+
+  // Rotate dial needle when "playing"
+  if (isPlaying && !isPaused && radioGroup.userData.needle) {
+    radioGroup.userData.needle.rotation.z += dt * 1.8;
+  }
+
+  // Subtle radio float
+  radioGroup.position.y = Math.sin(particleTime * 0.5) * 0.08;
+  radioGroup.rotation.y = Math.sin(particleTime * 0.3) * 0.04;
+
+  // Dial light intensity pulses with speech energy
+  dialLight.intensity = 2.0 + currentParticleEnergy * 1.8;
+
+  renderer.render(scene, camera);
+}
+
+// ──────────────────────────────────────
+// RESPONSIVE CAMERA
+// ──────────────────────────────────────
+function resize() {
+  camera.aspect = window.innerWidth / window.innerHeight;
+  camera.updateProjectionMatrix();
+  renderer.setSize(window.innerWidth, window.innerHeight);
+  
+  // Adjust camera for portrait vs landscape
+  if (window.innerWidth < window.innerHeight) {
+    camera.position.set(0, 1.4, 6.5);
+    camera.lookAt(0, 0.3, 0);
+  } else {
+    camera.position.set(0, 1.8, 5.5);
+    camera.lookAt(0, 0.4, 0);
+  }
+}
+window.addEventListener('resize', resize);
+window.addEventListener('orientationchange', () => setTimeout(resize, 200));
+
+// ──────────────────────────────────────
+// INIT
+// ──────────────────────────────────────
+resize();
+animate();
+loadContentList();
+
+// Auto-play after a short delay if desired
+setTimeout(() => {
+  document.getElementById('statPlaying').textContent = 'Ready — Select Episode';
+}, 1500);
+
+// Periodically refresh commercial availability
+setInterval(updateStats, 30000);
+
+console.log('🎙 Aegis Radio — SiblingFrequency — Ready');
+console.log('📻 1920s Wireframe Radio with Subatomic Particle Display');
+console.log('⚡ Carr-Forge Powered | Open Source | Aegis Certified');
+</script>
+</body>
+</html>
