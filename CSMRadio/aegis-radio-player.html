@@ -233,8 +233,6 @@ button:disabled {
     </div>
     <div class="controls">
       <button id="btnPlay" title="Play">▶ PLAY</button>
-      <button id="btnPrev" title="Previous Segment">⏮</button>
-      <button id="btnNext" title="Next Segment">⏭</button>
       <button id="btnStop" title="Stop">■ STOP</button>
       <button id="btnScreen" title="Keep Screen On">📱 AWAKE</button>
       <button id="btnSleep" title="Prevent Sleep">💤 NOSLEEP</button>
@@ -269,7 +267,6 @@ let currentEpisodeIndex = -1;
 let currentCommercialPool = [];
 let isPlaying = false;
 let isPaused = false;
-let skipLocked = false;
 let currentUtterance = null;
 let currentSegmentIndex = 0;
 let currentEpisodeContent = '';
@@ -310,227 +307,151 @@ const warmLight = new THREE.PointLight(0xe8a840, 0.8, 4, 2);
 warmLight.position.set(-2, 0.3, 2.5);
 scene.add(warmLight);
 
-// ── 1920s Cathedral Radio — flat front, realistic proportions ──
+// ── Build the 1920s Radio ──
 const radioGroup = new THREE.Group();
-const walnutMat = new THREE.MeshStandardMaterial({ color: 0x3d2010, roughness: 0.5, metalness: 0.03 });
-const walnutDark = new THREE.MeshStandardMaterial({ color: 0x2a1508, roughness: 0.45, metalness: 0.05 });
-const walnutLight = new THREE.MeshStandardMaterial({ color: 0x4a2a15, roughness: 0.55, metalness: 0.02 });
-const brassMat = new THREE.MeshStandardMaterial({ color: 0xc9a84c, roughness: 0.3, metalness: 0.92 });
-const brassBright = new THREE.MeshStandardMaterial({ color: 0xe8c860, roughness: 0.25, metalness: 0.95, emissive: 0x1a1000, emissiveIntensity: 0.3 });
-const dialFaceMat = new THREE.MeshStandardMaterial({ color: 0xf5e6c0, roughness: 0.4, metalness: 0.05, emissive: 0x441800, emissiveIntensity: 0.6, transparent: true, opacity: 0.85 });
-const grilleCloth = new THREE.MeshStandardMaterial({ color: 0x8b7355, roughness: 0.9, metalness: 0.0, transparent: true, opacity: 0.9 });
-const bakeliteMat = new THREE.MeshStandardMaterial({ color: 0x1a0a00, roughness: 0.35, metalness: 0.08 });
-const tubeGlow = new THREE.MeshStandardMaterial({ color: 0xff8830, roughness: 0.1, emissive: 0xff6610, emissiveIntensity: 0.9, transparent: true, opacity: 0.85 });
+const brassMat = new THREE.MeshStandardMaterial({ color: 0xc9a84c, roughness: 0.35, metalness: 0.9 });
+const woodMat = new THREE.MeshStandardMaterial({ color: 0x3d2817, roughness: 0.7, metalness: 0.05 });
+const dialMat = new THREE.MeshStandardMaterial({ color: 0x1a0a00, roughness: 0.5, metalness: 0.1 });
+const glassMat = new THREE.MeshStandardMaterial({ color: 0x221100, roughness: 0.2, metalness: 0.02, transparent: true, opacity: 0.75 });
+const wireMat = new THREE.MeshStandardMaterial({ color: 0xffd700, roughness: 0.3, metalness: 0.95, emissive: 0x332200, emissiveIntensity: 0.4 });
 
-// ── BASE & FEET ──
-const baseGeom = new THREE.BoxGeometry(2.7, 0.08, 0.7);
-const baseMesh = new THREE.Mesh(baseGeom, walnutDark);
-baseMesh.position.y = -0.75;
-radioGroup.add(baseMesh);
-
-const footGeom = new THREE.BoxGeometry(2.82, 0.04, 0.78);
-const footMesh = new THREE.Mesh(footGeom, walnutDark);
-footMesh.position.y = -0.81;
-radioGroup.add(footMesh);
-
-for (let i = 0; i < 4; i++) {
-  const footPillar = new THREE.Mesh(new THREE.CylinderGeometry(0.05, 0.06, 0.08, 12), brassMat);
-  footPillar.position.set((i < 2 ? -1.1 : 1.1), -0.83, (i % 2 === 0 ? -0.22 : 0.22));
-  radioGroup.add(footPillar);
-}
-
-// ── MAIN BODY — thin, flat front panel ──
-const bodyGeom = new THREE.BoxGeometry(2.6, 1.3, 0.55);
-const bodyMesh = new THREE.Mesh(bodyGeom, walnutMat);
-bodyMesh.position.y = -0.08;
+// Main body — arched top rectangular box
+const bodyGeom = new THREE.BoxGeometry(2.6, 1.8, 1.4, 8, 6, 4);
+const bodyMesh = new THREE.Mesh(bodyGeom, woodMat);
+bodyMesh.position.y = 0.2;
 radioGroup.add(bodyMesh);
 
-// Side shoulder wings — subtle tombstone shoulders
-for (let side = -1; side <= 1; side += 2) {
-  const shoulderGeom = new THREE.BoxGeometry(0.12, 0.5, 0.55);
-  const shoulderMesh = new THREE.Mesh(shoulderGeom, walnutLight);
-  shoulderMesh.position.set(side * 1.36, 0.35, 0);
-  radioGroup.add(shoulderMesh);
-}
-
-// ── CATHEDRAL ARCH — flatter bezier top ──
-const archShape = new THREE.Shape();
-archShape.moveTo(-1.3, 0.55);
-archShape.lineTo(-1.3, 0.85);
-archShape.bezierCurveTo(-1.3, 1.2, -0.5, 1.45, 0, 1.48);
-archShape.bezierCurveTo(0.5, 1.45, 1.3, 1.2, 1.3, 0.85);
-archShape.lineTo(1.3, 0.55);
-archShape.lineTo(-1.3, 0.55);
-
-const archExtrude = new THREE.ExtrudeGeometry(archShape, { steps: 1, depth: 0.57, bevelEnabled: true, bevelThickness: 0.03, bevelSize: 0.03, bevelSegments: 3 });
-const archMesh = new THREE.Mesh(archExtrude, walnutMat);
-archMesh.position.set(0, 0.55, -0.285);
+// Arched top
+const archGeom = new THREE.CylinderGeometry(1.3, 1.3, 1.4, 32, 1, false, 0, Math.PI);
+const archMesh = new THREE.Mesh(archGeom, woodMat);
+archMesh.rotation.z = Math.PI / 2;
+archMesh.position.set(0, 1.1, 0);
 radioGroup.add(archMesh);
 
-// ── SUNBURST SPEAKER GRILLE — radial Art Deco ──
-const grilleBase = new THREE.Mesh(new THREE.CircleGeometry(0.48, 48), grilleCloth);
-grilleBase.position.set(0.52, 0.1, 0.3);
-radioGroup.add(grilleBase);
+// Wireframe overlay on arch
+const archWire = new THREE.LineSegments(
+  new THREE.EdgesGeometry(new THREE.CylinderGeometry(1.32, 1.32, 1.42, 24, 1, false, 0, Math.PI)),
+  new THREE.LineBasicMaterial({ color: 0xffd700, linewidth: 1, transparent: true, opacity: 0.5 })
+);
+archWire.rotation.z = Math.PI / 2;
+archWire.position.set(0, 1.1, 0);
+radioGroup.add(archWire);
 
-for (let i = 0; i < 16; i++) {
-  const angle = (i / 16) * Math.PI * 2;
-  const barGeom = new THREE.BoxGeometry(0.015, 0.38, 0.01);
-  const bar = new THREE.Mesh(barGeom, walnutDark);
-  bar.position.set(0.52 + Math.cos(angle) * 0.22, 0.1 + Math.sin(angle) * 0.22, 0.3);
-  bar.rotation.z = angle;
-  radioGroup.add(bar);
-}
+// Wireframe overlay on body
+const bodyWire = new THREE.LineSegments(
+  new THREE.EdgesGeometry(new THREE.BoxGeometry(2.64, 1.84, 1.44, 4, 4, 3)),
+  new THREE.LineBasicMaterial({ color: 0xffd700, linewidth: 1, transparent: true, opacity: 0.35 })
+);
+bodyWire.position.y = 0.2;
+radioGroup.add(bodyWire);
 
-for (let r = 0; r < 3; r++) {
-  const ringGeom = new THREE.TorusGeometry(0.1 + r * 0.14, 0.006, 8, 40);
-  const ring = new THREE.Mesh(ringGeom, walnutDark);
-  ring.position.set(0.52, 0.1, 0.31);
+// Speaker grille — concentric rings
+for (let i = 0; i < 5; i++) {
+  const ringGeom = new THREE.TorusGeometry(0.55 - i * 0.09, 0.012, 16, 48);
+  const ring = new THREE.Mesh(ringGeom, brassMat);
+  ring.position.set(0.55, 0.2, 0.71);
+  ring.rotation.x = Math.PI / 2;
   radioGroup.add(ring);
 }
+// Speaker cloth
+const clothGeom = new THREE.CircleGeometry(0.55, 32);
+const clothMesh = new THREE.Mesh(clothGeom, dialMat);
+clothMesh.position.set(0.55, 0.2, 0.72);
+radioGroup.add(clothMesh);
 
-const grilleFrame = new THREE.Mesh(new THREE.TorusGeometry(0.5, 0.02, 12, 40), brassMat);
-grilleFrame.position.set(0.52, 0.1, 0.31);
-radioGroup.add(grilleFrame);
+// Dial
+const dialGeom = new THREE.CylinderGeometry(0.32, 0.32, 0.06, 48);
+const dialMesh = new THREE.Mesh(dialGeom, dialMat);
+dialMesh.position.set(-0.5, 0.35, 0.75);
+dialMesh.rotation.x = Math.PI / 2;
+radioGroup.add(dialMesh);
 
-// ── ILLUMINATED DIAL — amber edge-lit ──
-const dialFace = new THREE.Mesh(new THREE.CircleGeometry(0.32, 48), dialFaceMat);
-dialFace.position.set(-0.55, 0.3, 0.3);
-radioGroup.add(dialFace);
-
-// Station dots
-for (let m = 0; m < 4; m++) {
-  const markAngle = -1.8 + m * 1.2;
-  const dot = new THREE.Mesh(new THREE.SphereGeometry(0.01, 6, 6), brassBright);
-  dot.position.set(-0.55 + Math.cos(markAngle) * 0.22, 0.3 + Math.sin(markAngle) * 0.22, 0.31);
-  radioGroup.add(dot);
-}
-
-const dialRing = new THREE.Mesh(new THREE.TorusGeometry(0.33, 0.02, 12, 40), brassMat);
-dialRing.position.set(-0.55, 0.3, 0.31);
+const dialRingGeom = new THREE.TorusGeometry(0.34, 0.02, 16, 48);
+const dialRing = new THREE.Mesh(dialRingGeom, brassMat);
+dialRing.position.set(-0.5, 0.35, 0.78);
 radioGroup.add(dialRing);
 
-// Dial needle — slow gentle sweep
-const needleBase = new THREE.Mesh(new THREE.CylinderGeometry(0.006, 0.006, 0.3, 8), brassBright);
-needleBase.position.set(-0.55, 0.3, 0.32);
-radioGroup.add(needleBase);
-radioGroup.userData.needle = needleBase;
+// Dial needle
+const needleGeom = new THREE.CylinderGeometry(0.006, 0.006, 0.28, 8);
+const needle = new THREE.Mesh(needleGeom, wireMat);
+needle.position.set(-0.5, 0.35, 0.79);
+radioGroup.add(needle);
+radioGroup.userData.needle = needle;
 
-const needleTip = new THREE.Mesh(new THREE.SphereGeometry(0.014, 6, 6), brassBright);
-needleTip.position.set(-0.25, 0.3, 0.32);
-radioGroup.add(needleTip);
-radioGroup.userData.needleTip = needleTip;
-
-// ── BAKELITE KNOBS — three fluted controls ──
-const knobPositions = [
-  { x: -1.0, label: 'VOL' },
-  { x: -0.55, label: 'TUNE' },
-  { x: -0.1, label: 'TONE' },
-];
-knobPositions.forEach((kp) => {
-  const knobGeom = new THREE.CylinderGeometry(0.08, 0.09, 0.08, 20);
-  const knob = new THREE.Mesh(knobGeom, bakeliteMat);
-  knob.position.set(kp.x, -0.42, 0.3);
+// Knobs
+for (let i = 0; i < 3; i++) {
+  const knobGeom = new THREE.CylinderGeometry(0.1, 0.1, 0.08, 24);
+  const knob = new THREE.Mesh(knobGeom, brassMat);
+  knob.position.set(-0.6 + i * 0.3, -0.35, 0.76);
   knob.rotation.x = Math.PI / 2;
   radioGroup.add(knob);
-  
-  // Fluting lines
-  for (let f = 0; f < 8; f++) {
-    const flAngle = (f / 8) * Math.PI * 2;
-    const flute = new THREE.Mesh(new THREE.BoxGeometry(0.008, 0.02, 0.004), brassMat);
-    flute.position.set(kp.x + Math.cos(flAngle) * 0.085, -0.42 + Math.sin(flAngle) * 0.085, 0.34);
-    radioGroup.add(flute);
-  }
-
-  const labelGeom = new THREE.PlaneGeometry(0.08, 0.03);
-  const labelPlate = new THREE.Mesh(labelGeom, brassMat);
-  labelPlate.position.set(kp.x, -0.26, 0.32);
-  radioGroup.add(labelPlate);
-});
-
-// ── TUBE GLOW — visible through grille ──
-for (let t = 0; t < 2; t++) {
-  const tube = new THREE.Mesh(new THREE.CylinderGeometry(0.035, 0.035, 0.14, 10), tubeGlow);
-  tube.position.set(0.52, -0.3 + t * 0.35, 0.2);
-  radioGroup.add(tube);
 }
 
-// ── ANTENNA — twin V-wires ──
-for (let i = 0; i < 2; i++) {
-  const insGeom = new THREE.CylinderGeometry(0.02, 0.02, 0.08, 8);
-  const insulator = new THREE.Mesh(insGeom, new THREE.MeshStandardMaterial({ color: 0xfafaf5, roughness: 0.3 }));
-  insulator.position.set(-0.08 + i * 0.16, -0.2, 0.05);
-  radioGroup.add(insulator);
-}
-for (let i = 0; i < 2; i++) {
-  const points = [
-    new THREE.Vector3(-0.08 + i * 0.16, -0.15, 0.05),
-    new THREE.Vector3(-0.25 + i * 0.15, 1.6, 0.6),
-    new THREE.Vector3(-0.4 + i * 0.1, 2.4, 1.2),
-  ];
-  const antGeom = new THREE.BufferGeometry().setFromPoints(points);
-  const antWire = new THREE.Line(antGeom, new THREE.LineBasicMaterial({ color: 0xc9a84c, transparent: true, opacity: 0.5 }));
+// Frequency display
+const freqBgGeom = new THREE.PlaneGeometry(0.7, 0.18);
+const freqBg = new THREE.Mesh(freqBgGeom, glassMat);
+freqBg.position.set(-0.5, 0.65, 0.72);
+radioGroup.add(freqBg);
+
+// Antenna wires
+for (let i = 0; i < 3; i++) {
+  const antPts = [new THREE.Vector3(-0.2 + i*0.18, 1.2, 0), new THREE.Vector3(-0.3 + i*0.15, 2.0, 0.5)];
+  const antGeom = new THREE.BufferGeometry().setFromPoints(antPts);
+  const antWire = new THREE.Line(antGeom, new THREE.LineBasicMaterial({ color: 0xc9a84c, transparent: true, opacity: 0.6 }));
   radioGroup.add(antWire);
 }
 
-// ── BRAND BADGE ──
-const badgeBack = new THREE.Mesh(new THREE.BoxGeometry(0.4, 0.06, 0.02), brassMat);
-badgeBack.position.set(-0.55, 0.62, 0.32);
-radioGroup.add(badgeBack);
-
-// ── PILOT LIGHT ──
-const pilotLight = new THREE.Mesh(new THREE.SphereGeometry(0.025, 8, 8), new THREE.MeshStandardMaterial({ color: 0xff8820, roughness: 0.1, emissive: 0xff6610, emissiveIntensity: 1.2 }));
-pilotLight.position.set(-1.02, -0.02, 0.3);
-radioGroup.add(pilotLight);
+// Feet
+for (let i = 0; i < 4; i++) {
+  const footGeom = new THREE.CylinderGeometry(0.08, 0.1, 0.15, 16);
+  const foot = new THREE.Mesh(footGeom, brassMat);
+  foot.position.set((i < 2 ? -0.8 : 0.8), -0.82, (i % 2 === 0 ? -0.4 : 0.4));
+  radioGroup.add(foot);
+}
 
 scene.add(radioGroup);
 
-// ── PARTICLE SYSTEM — Swimming school of light with frequency tails ──
-const particleCount = 500;
+// ── PARTICLE SYSTEM ──
+const particleCount = 600;
 const particleGeom = new THREE.BufferGeometry();
 const particlePositions = new Float32Array(particleCount * 3);
 const particleColors = new Float32Array(particleCount * 3);
 const particleSizes = new Float32Array(particleCount);
-const particleHome = new Float32Array(particleCount * 3);
-const particlePhase = new Float32Array(particleCount);
-const particleGroup = new Float32Array(particleCount);
+const particleBasePositions = new Float32Array(particleCount * 3);
+const particleVelocities = new Float32Array(particleCount * 3);
 
 const particleColorsArr = [
-  [1.0, 0.50, 0.05],   // Radium orange
-  [1.0, 0.22, 0.05],   // Deep radium red
-  [0.15, 0.85, 0.25],  // Uranium green
-  [1.0, 0.75, 0.10],   // Glowing amber
-  [0.95, 0.40, 0.05],  // Copper-radium glow
-  [0.08, 0.68, 0.88],  // Cherenkov blue
-  [0.18, 0.90, 0.40],  // Bright radium green
-  [1.0, 0.85, 0.35],   // Warm candle-radium
+  [1.0, 0.843, 0.0],   // gold
+  [0.91, 0.66, 0.25],  // copper
+  [0.804, 0.498, 0.196], // bronze
+  [0.753, 0.753, 0.753], // silver
+  [0.267, 0.533, 0.8],  // blue
 ];
 
-// Create particles in nested orbital rings (like electron clouds around the radio)
 for (let i = 0; i < particleCount; i++) {
-  const ringN = Math.floor(i / 100); // 5 rings of 100 particles each
-  const baseRadius = 1.5 + ringN * 0.55;
-  const baseY = 0.1 + (Math.random() - 0.5) * 0.8 * (ringN + 1);
-  const angle = Math.random() * Math.PI * 2;
-  
-  const x = Math.cos(angle) * baseRadius;
-  const y = baseY;
-  const z = Math.sin(angle) * baseRadius * 0.6;
-  
-  particleHome[i*3] = x;
-  particleHome[i*3+1] = y;
-  particleHome[i*3+2] = z;
+  const theta = Math.random() * Math.PI * 2;
+  const phi = Math.random() * Math.PI;
+  const r = 1.6 + Math.random() * 2.8;
+  const x = Math.sin(phi) * Math.cos(theta) * r;
+  const y = Math.sin(phi) * Math.sin(theta) * r * 0.6 + 0.3;
+  const z = Math.cos(phi) * r * 0.7;
+
+  particleBasePositions[i*3] = x;
+  particleBasePositions[i*3+1] = y;
+  particleBasePositions[i*3+2] = z;
   particlePositions[i*3] = x;
   particlePositions[i*3+1] = y;
   particlePositions[i*3+2] = z;
 
-  const colorChoice = particleColorsArr[ringN % particleColorsArr.length];
+  const colorChoice = particleColorsArr[Math.floor(Math.random() * particleColorsArr.length)];
   particleColors[i*3] = colorChoice[0];
   particleColors[i*3+1] = colorChoice[1];
   particleColors[i*3+2] = colorChoice[2];
 
-  particleSizes[i] = 0.018 + Math.random() * 0.04;
-  particlePhase[i] = Math.random() * Math.PI * 2;
-  particleGroup[i] = ringN;
+  particleSizes[i] = 0.015 + Math.random() * 0.06;
+  particleVelocities[i*3] = (Math.random()-0.5) * 0.04;
+  particleVelocities[i*3+1] = (Math.random()-0.5) * 0.04;
+  particleVelocities[i*3+2] = (Math.random()-0.5) * 0.04;
 }
 
 particleGeom.setAttribute('position', new THREE.BufferAttribute(particlePositions, 3));
@@ -538,29 +459,15 @@ particleGeom.setAttribute('color', new THREE.BufferAttribute(particleColors, 3))
 particleGeom.setAttribute('size', new THREE.BufferAttribute(particleSizes, 1));
 
 const particleMat = new THREE.PointsMaterial({
-  size: 0.045,
+  size: 0.04,
   vertexColors: true,
   blending: THREE.AdditiveBlending,
   depthWrite: false,
   transparent: true,
-  opacity: 0.75,
+  opacity: 0.8,
 });
 const particles = new THREE.Points(particleGeom, particleMat);
 scene.add(particles);
-
-// ── Frequency wave tails — thin glowing rings that pulse with speech ──
-const tailRings = [];
-for (let r = 0; r < 4; r++) {
-  const ringGeom = new THREE.TorusGeometry(1.7 + r * 0.55, 0.012, 16, 80);
-  const ringMat = new THREE.MeshBasicMaterial({ color: 0xffd700, transparent: true, opacity: 0.15 });
-  const ring = new THREE.Mesh(ringGeom, ringMat);
-  ring.rotation.x = Math.PI / 2 + (Math.random() - 0.5) * 0.4;
-  ring.position.y = 0.2;
-  ring.userData.baseOpacity = 0.08 + r * 0.03;
-  ring.userData.radius = 1.7 + r * 0.55;
-  scene.add(ring);
-  tailRings.push(ring);
-}
 
 // GitHub raw URL — the HTML player loads all content exclusively from here
 // So you can open this file from anywhere: phone, desktop, any folder — it just works
@@ -896,44 +803,6 @@ function stopPlayback() {
   targetParticleEnergy = 0.3;
 }
 
-function skipForward() {
-  if (!isPlaying || playQueue.length === 0 || skipLocked) return;
-  skipLocked = true;
-  speechSynthesis.cancel();
-  currentUtterance = null;
-  let next = queueIndex + 1;
-  while (next < playQueue.length && playQueue[next].type === 'commercial') next++;
-  if (next >= playQueue.length) { skipLocked = false; stopPlayback(); return; }
-  queueIndex = next;
-  document.getElementById('statPlaying').textContent = `📻 Segment ${playQueue[next].index + 1}/${episodeSegments.length}`;
-  setTimeout(() => { skipLocked = false; if (isPlaying) processQueue(); }, 300);
-}
-
-function skipBackward() {
-  if (!isPlaying || playQueue.length === 0 || skipLocked) return;
-  skipLocked = true;
-  speechSynthesis.cancel();
-  currentUtterance = null;
-  let prev = queueIndex - 1;
-  while (prev >= 0 && playQueue[prev].type === 'commercial') prev--;
-  if (prev < 0) prev = 0;
-  queueIndex = prev;
-  document.getElementById('statPlaying').textContent = `📻 Segment ${playQueue[prev].index + 1}/${episodeSegments.length}`;
-  setTimeout(() => { skipLocked = false; if (isPlaying) processQueue(); }, 300);
-}
-
-function skipBackward() {
-  if (!isPlaying || playQueue.length === 0) return;
-  speechSynthesis.cancel();
-  currentUtterance = null;
-  let prev = queueIndex - 1;
-  while (prev >= 0 && playQueue[prev].type === 'commercial') prev--;
-  if (prev < 0) prev = 0;
-  queueIndex = prev;
-  document.getElementById('statPlaying').textContent = `📻 Segment ${playQueue[prev].index + 1}/${episodeSegments.length}`;
-  setTimeout(() => processQueue(), 150);
-}
-
 function togglePause() {
   if (!isPlaying) return;
   if (isPaused) {
@@ -1028,8 +897,6 @@ document.getElementById('btnPlay').addEventListener('click', async () => {
 });
 
 document.getElementById('btnStop').addEventListener('click', stopPlayback);
-document.getElementById('btnPrev').addEventListener('click', skipBackward);
-document.getElementById('btnNext').addEventListener('click', skipForward);
 document.getElementById('btnScreen').addEventListener('click', toggleScreenLock);
 document.getElementById('btnSleep').addEventListener('click', toggleSleepLock);
 
@@ -1042,33 +909,8 @@ document.getElementById('episodeSelect').addEventListener('change', async (e) =>
 });
 
 // ──────────────────────────────────────
-// DRAG-TO-ROTATE — touch the radio to spin it
+// ANIMATION LOOP
 // ──────────────────────────────────────
-let isDragging = false, prevMouseX = 0, prevMouseY = 0;
-let targetRotY = 0, targetRotX = 0;
-
-renderer.domElement.addEventListener('pointerdown', (e) => {
-  isDragging = true;
-  prevMouseX = e.clientX;
-  prevMouseY = e.clientY;
-});
-window.addEventListener('pointerup', () => { 
-  if (isDragging && radioGroup.userData._spinSpeed !== undefined) {
-    const flickDX = prevMouseX; // Use last drag direction
-    radioGroup.userData._spinSpeed += (prevMouseX - (prevMouseX - (Math.abs(prevMouseX) < 5 ? 0 : prevMouseX * 0.01))) * 0.0005;
-  }
-  isDragging = false; 
-});
-window.addEventListener('pointermove', (e) => {
-  if (!isDragging) return;
-  const dx = e.clientX - prevMouseX;
-  const dy = e.clientY - prevMouseY;
-  targetRotY += dx * 0.008;
-  targetRotX += dy * 0.005;
-  targetRotX = Math.max(-0.4, Math.min(0.4, targetRotX));
-  prevMouseX = e.clientX;
-  prevMouseY = e.clientY;
-});
 const clock = new THREE.Clock();
 
 function animate() {
@@ -1076,101 +918,53 @@ function animate() {
   const dt = Math.min(clock.getDelta(), 0.1);
   particleTime += dt;
 
-  // Smooth particle energy transition — much gentler
-  currentParticleEnergy += (targetParticleEnergy - currentParticleEnergy) * 2.5 * dt;
+  // Smooth particle energy transition
+  currentParticleEnergy += (targetParticleEnergy - currentParticleEnergy) * 4 * dt;
 
-  // Update particles — swimming, spring-pulled toward home positions
+  // Update particles
   const pos = particles.geometry.attributes.position.array;
   const sizes = particles.geometry.attributes.size.array;
   const cols = particles.geometry.attributes.color.array;
 
-  const swimSpeed = 0.25 + currentParticleEnergy * 0.6;  // Slow, graceful orbit
-  const springStrength = 0.8;  // Pull back to home position
-  const wanderAmp = 0.15 + currentParticleEnergy * 0.3;
-
   for (let i = 0; i < particleCount; i++) {
-    const hx = particleHome[i*3];
-    const hy = particleHome[i*3+1];
-    const hz = particleHome[i*3+2];
-    const phase = particlePhase[i];
-    const group = particleGroup[i];
+    const bx = particleBasePositions[i*3];
+    const by = particleBasePositions[i*3+1];
+    const bz = particleBasePositions[i*3+2];
 
-    // Gentle orbital drift — all particles swim in the same CCW direction
-    const homeRadius = Math.sqrt(hx*hx + hz*hz);
-    const homeAngle = Math.atan2(hz, hx);
-    const orbitAngle = homeAngle + particleTime * swimSpeed * (1 + group * 0.1);
+    // Orbital motion around radio, energy-dependent
+    const orbitSpeed = 0.3 + currentParticleEnergy * 1.5;
+    const angle = particleTime * orbitSpeed + i * 0.7;
+    const radius = Math.sqrt(bx*bx + bz*bz);
+    const baseAngle = Math.atan2(bz, bx);
     
-    // Target position: orbiting home + gentle sine wave in Y
-    const tx = Math.cos(orbitAngle) * homeRadius;
-    const ty = hy + Math.sin(particleTime * 0.6 + phase) * 0.12;
-    const tz = Math.sin(orbitAngle) * homeRadius;
+    pos[i*3] = Math.cos(baseAngle + angle * 0.15) * radius + particleVelocities[i*3] * currentParticleEnergy * 5;
+    pos[i*3+1] = by + Math.sin(particleTime * 2 + i) * 0.15 * currentParticleEnergy + particleVelocities[i*3+1] * currentParticleEnergy * 3;
+    pos[i*3+2] = Math.sin(baseAngle + angle * 0.15) * radius + particleVelocities[i*3+2] * currentParticleEnergy * 5;
 
-    // Spring physics — pull current position toward target
-    const dx = tx - pos[i*3];
-    const dy = ty - pos[i*3+1];
-    const dz = tz - pos[i*3+2];
-    
-    pos[i*3] += dx * springStrength * dt;
-    pos[i*3+1] += dy * springStrength * dt;
-    pos[i*3+2] += dz * springStrength * dt;
+    // Size pulses with energy
+    sizes[i] = (0.015 + Math.random() * 0.02) + currentParticleEnergy * 0.06;
 
-    // Gentle wander for organic feel
-    const wx = Math.sin(particleTime * 1.3 + phase * 3.7) * wanderAmp;
-    const wz = Math.cos(particleTime * 1.1 + phase * 2.3) * wanderAmp;
-    pos[i*3] += wx * dt;
-    pos[i*3+2] += wz * dt;
-
-    // Size — subtle pulse with speech energy, no randomness each frame
-    sizes[i] = (0.015 + (group * 0.006)) + currentParticleEnergy * 0.04;
-
-    // Color — warm shift with energy, less intense
-    const ci = Math.floor(group % particleColorsArr.length);
-    const bc = particleColorsArr[ci];
-    cols[i*3] = bc[0] * (0.7 + currentParticleEnergy * 0.35);
-    cols[i*3+1] = bc[1] * (0.65 + currentParticleEnergy * 0.3);
-    cols[i*3+2] = bc[2] * (0.55 + currentParticleEnergy * 0.25);
+    // Color shifts with energy
+    const baseGold = particleColorsArr[Math.floor(i % particleColorsArr.length)];
+    cols[i*3] = baseGold[0] * (0.6 + currentParticleEnergy * 0.5);
+    cols[i*3+1] = baseGold[1] * (0.5 + currentParticleEnergy * 0.4);
+    cols[i*3+2] = baseGold[2] * (0.4 + currentParticleEnergy * 0.3);
   }
   particles.geometry.attributes.position.needsUpdate = true;
   particles.geometry.attributes.size.needsUpdate = true;
   particles.geometry.attributes.color.needsUpdate = true;
 
-  // Frequency tail rings — pulse and rotate with speech
-  tailRings.forEach((ring, idx) => {
-    const freq = 0.4 + idx * 0.25;
-    const pulse = Math.sin(particleTime * freq) * currentParticleEnergy;
-    ring.material.opacity = ring.userData.baseOpacity + pulse * 0.25;
-    ring.rotation.z += dt * (0.15 + currentParticleEnergy * 0.5) * (idx + 1) * 0.3;
-    // Scale ring slightly with energy
-    const s = 1 + pulse * 0.08;
-    ring.scale.setScalar(s);
-    // Color shift with energy
-    const hue = 0.12 + currentParticleEnergy * 0.06;
-    ring.material.color.setHSL(hue, 0.9, 0.5 + pulse * 0.3);
-  });
-
   // Rotate dial needle when "playing"
   if (isPlaying && !isPaused && radioGroup.userData.needle) {
-    // Gentle oscillation instead of spinning — sweeps back and forth like tuning
-    const sweep = Math.sin(particleTime * 0.7) * 0.25;
-    radioGroup.userData.needle.rotation.z = sweep;
-    if (radioGroup.userData.needleTip) radioGroup.userData.needleTip.rotation.z = sweep;
+    radioGroup.userData.needle.rotation.z += dt * 1.8;
   }
 
-  // Bobble + flick-to-spin
-  let watchBobble = radioGroup.userData._bobble || 0;
-  watchBobble += dt * 1.2;
-  radioGroup.userData._bobble = watchBobble;
-  radioGroup.position.y = Math.sin(watchBobble * 0.6) * 0.1;
-  radioGroup.rotation.x += (Math.sin(watchBobble) * 0.08 - radioGroup.rotation.x) * 3 * dt;
-  
-  if (!radioGroup.userData._spinSpeed) radioGroup.userData._spinSpeed = 0;
-  radioGroup.userData._spinSpeed *= 0.97;
-  radioGroup.rotation.y += radioGroup.userData._spinSpeed + (targetRotY - radioGroup.rotation.y) * 3 * dt;
-  radioGroup.rotation.x += (targetRotX - radioGroup.rotation.x) * 3 * dt;
+  // Subtle radio float
+  radioGroup.position.y = Math.sin(particleTime * 0.5) * 0.08;
+  radioGroup.rotation.y = Math.sin(particleTime * 0.3) * 0.04;
 
-  // Dial light intensity — warm pulse with speech
-  dialLight.intensity = 1.8 + currentParticleEnergy * 1.6;
-  dialLight.color.setHSL(0.12, 0.95, 0.5 + currentParticleEnergy * 0.2);
+  // Dial light intensity pulses with speech energy
+  dialLight.intensity = 2.0 + currentParticleEnergy * 1.8;
 
   renderer.render(scene, camera);
 }
