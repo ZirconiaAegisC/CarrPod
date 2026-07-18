@@ -961,6 +961,9 @@ document.getElementById('menuToggle').addEventListener('click', () => {
 // ──────────────────────────────────────
 document.getElementById('btnPlay').addEventListener('click', togglePlayStop);
 
+// SegNav tap = forward (simple fallback)
+document.getElementById('segNav').addEventListener('click', skipForward);
+
 // Slider acts as pull-switch: must reach far edge to trigger, then snaps back
 let sliderArmed = true;
 document.getElementById('segSlider').addEventListener('input', (e) => {
