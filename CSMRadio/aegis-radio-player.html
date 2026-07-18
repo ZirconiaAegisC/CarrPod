@@ -411,47 +411,50 @@ for (let i = 0; i < 4; i++) {
 
 scene.add(radioGroup);
 
-// ── PARTICLE SYSTEM ──
-const particleCount = 600;
+// ── PARTICLE SYSTEM — Swimming school of light with frequency tails ──
+const particleCount = 500;
 const particleGeom = new THREE.BufferGeometry();
 const particlePositions = new Float32Array(particleCount * 3);
 const particleColors = new Float32Array(particleCount * 3);
 const particleSizes = new Float32Array(particleCount);
-const particleBasePositions = new Float32Array(particleCount * 3);
-const particleVelocities = new Float32Array(particleCount * 3);
+const particleHome = new Float32Array(particleCount * 3);
+const particlePhase = new Float32Array(particleCount);
+const particleGroup = new Float32Array(particleCount);
 
 const particleColorsArr = [
-  [1.0, 0.843, 0.0],   // gold
-  [0.91, 0.66, 0.25],  // copper
-  [0.804, 0.498, 0.196], // bronze
-  [0.753, 0.753, 0.753], // silver
-  [0.267, 0.533, 0.8],  // blue
+  [1.0, 0.843, 0.05],    // warm gold
+  [0.95, 0.72, 0.22],    // copper 
+  [0.78, 0.55, 0.25],    // bronze
+  [0.82, 0.78, 0.72],    // silver
+  [0.30, 0.56, 0.82],    // soft blue
 ];
 
+// Create particles in nested orbital rings (like electron clouds around the radio)
 for (let i = 0; i < particleCount; i++) {
-  const theta = Math.random() * Math.PI * 2;
-  const phi = Math.random() * Math.PI;
-  const r = 1.6 + Math.random() * 2.8;
-  const x = Math.sin(phi) * Math.cos(theta) * r;
-  const y = Math.sin(phi) * Math.sin(theta) * r * 0.6 + 0.3;
-  const z = Math.cos(phi) * r * 0.7;
-
-  particleBasePositions[i*3] = x;
-  particleBasePositions[i*3+1] = y;
-  particleBasePositions[i*3+2] = z;
+  const ringN = Math.floor(i / 100); // 5 rings of 100 particles each
+  const baseRadius = 1.5 + ringN * 0.55;
+  const baseY = 0.1 + (Math.random() - 0.5) * 0.8 * (ringN + 1);
+  const angle = Math.random() * Math.PI * 2;
+  
+  const x = Math.cos(angle) * baseRadius;
+  const y = baseY;
+  const z = Math.sin(angle) * baseRadius * 0.6;
+  
+  particleHome[i*3] = x;
+  particleHome[i*3+1] = y;
+  particleHome[i*3+2] = z;
   particlePositions[i*3] = x;
   particlePositions[i*3+1] = y;
   particlePositions[i*3+2] = z;
 
-  const colorChoice = particleColorsArr[Math.floor(Math.random() * particleColorsArr.length)];
+  const colorChoice = particleColorsArr[ringN % particleColorsArr.length];
   particleColors[i*3] = colorChoice[0];
   particleColors[i*3+1] = colorChoice[1];
   particleColors[i*3+2] = colorChoice[2];
 
-  particleSizes[i] = 0.015 + Math.random() * 0.06;
-  particleVelocities[i*3] = (Math.random()-0.5) * 0.04;
-  particleVelocities[i*3+1] = (Math.random()-0.5) * 0.04;
-  particleVelocities[i*3+2] = (Math.random()-0.5) * 0.04;
+  particleSizes[i] = 0.018 + Math.random() * 0.04;
+  particlePhase[i] = Math.random() * Math.PI * 2;
+  particleGroup[i] = ringN;
 }
 
 particleGeom.setAttribute('position', new THREE.BufferAttribute(particlePositions, 3));
@@ -459,15 +462,29 @@ particleGeom.setAttribute('color', new THREE.BufferAttribute(particleColors, 3))
 particleGeom.setAttribute('size', new THREE.BufferAttribute(particleSizes, 1));
 
 const particleMat = new THREE.PointsMaterial({
-  size: 0.04,
+  size: 0.045,
   vertexColors: true,
   blending: THREE.AdditiveBlending,
   depthWrite: false,
   transparent: true,
-  opacity: 0.8,
+  opacity: 0.75,
 });
 const particles = new THREE.Points(particleGeom, particleMat);
 scene.add(particles);
+
+// ── Frequency wave tails — thin glowing rings that pulse with speech ──
+const tailRings = [];
+for (let r = 0; r < 4; r++) {
+  const ringGeom = new THREE.TorusGeometry(1.7 + r * 0.55, 0.012, 16, 80);
+  const ringMat = new THREE.MeshBasicMaterial({ color: 0xffd700, transparent: true, opacity: 0.15 });
+  const ring = new THREE.Mesh(ringGeom, ringMat);
+  ring.rotation.x = Math.PI / 2 + (Math.random() - 0.5) * 0.4;
+  ring.position.y = 0.2;
+  ring.userData.baseOpacity = 0.08 + r * 0.03;
+  ring.userData.radius = 1.7 + r * 0.55;
+  scene.add(ring);
+  tailRings.push(ring);
+}
 
 // GitHub raw URL — the HTML player loads all content exclusively from here
 // So you can open this file from anywhere: phone, desktop, any folder — it just works
@@ -909,7 +926,7 @@ document.getElementById('episodeSelect').addEventListener('change', async (e) =>
 });
 
 // ──────────────────────────────────────
-// ANIMATION LOOP
+// ANIMATION LOOP — gentle swimming particles, frequency tails
 // ──────────────────────────────────────
 const clock = new THREE.Clock();
 
@@ -918,53 +935,89 @@ function animate() {
   const dt = Math.min(clock.getDelta(), 0.1);
   particleTime += dt;
 
-  // Smooth particle energy transition
-  currentParticleEnergy += (targetParticleEnergy - currentParticleEnergy) * 4 * dt;
+  // Smooth particle energy transition — much gentler
+  currentParticleEnergy += (targetParticleEnergy - currentParticleEnergy) * 2.5 * dt;
 
-  // Update particles
+  // Update particles — swimming, spring-pulled toward home positions
   const pos = particles.geometry.attributes.position.array;
   const sizes = particles.geometry.attributes.size.array;
   const cols = particles.geometry.attributes.color.array;
 
+  const swimSpeed = 0.25 + currentParticleEnergy * 0.6;  // Slow, graceful orbit
+  const springStrength = 0.8;  // Pull back to home position
+  const wanderAmp = 0.15 + currentParticleEnergy * 0.3;
+
   for (let i = 0; i < particleCount; i++) {
-    const bx = particleBasePositions[i*3];
-    const by = particleBasePositions[i*3+1];
-    const bz = particleBasePositions[i*3+2];
+    const hx = particleHome[i*3];
+    const hy = particleHome[i*3+1];
+    const hz = particleHome[i*3+2];
+    const phase = particlePhase[i];
+    const group = particleGroup[i];
 
-    // Orbital motion around radio, energy-dependent
-    const orbitSpeed = 0.3 + currentParticleEnergy * 1.5;
-    const angle = particleTime * orbitSpeed + i * 0.7;
-    const radius = Math.sqrt(bx*bx + bz*bz);
-    const baseAngle = Math.atan2(bz, bx);
+    // Gentle orbital drift — all particles swim in the same CCW direction
+    const homeRadius = Math.sqrt(hx*hx + hz*hz);
+    const homeAngle = Math.atan2(hz, hx);
+    const orbitAngle = homeAngle + particleTime * swimSpeed * (1 + group * 0.1);
     
-    pos[i*3] = Math.cos(baseAngle + angle * 0.15) * radius + particleVelocities[i*3] * currentParticleEnergy * 5;
-    pos[i*3+1] = by + Math.sin(particleTime * 2 + i) * 0.15 * currentParticleEnergy + particleVelocities[i*3+1] * currentParticleEnergy * 3;
-    pos[i*3+2] = Math.sin(baseAngle + angle * 0.15) * radius + particleVelocities[i*3+2] * currentParticleEnergy * 5;
+    // Target position: orbiting home + gentle sine wave in Y
+    const tx = Math.cos(orbitAngle) * homeRadius;
+    const ty = hy + Math.sin(particleTime * 0.6 + phase) * 0.12;
+    const tz = Math.sin(orbitAngle) * homeRadius;
 
-    // Size pulses with energy
-    sizes[i] = (0.015 + Math.random() * 0.02) + currentParticleEnergy * 0.06;
+    // Spring physics — pull current position toward target
+    const dx = tx - pos[i*3];
+    const dy = ty - pos[i*3+1];
+    const dz = tz - pos[i*3+2];
+    
+    pos[i*3] += dx * springStrength * dt;
+    pos[i*3+1] += dy * springStrength * dt;
+    pos[i*3+2] += dz * springStrength * dt;
 
-    // Color shifts with energy
-    const baseGold = particleColorsArr[Math.floor(i % particleColorsArr.length)];
-    cols[i*3] = baseGold[0] * (0.6 + currentParticleEnergy * 0.5);
-    cols[i*3+1] = baseGold[1] * (0.5 + currentParticleEnergy * 0.4);
-    cols[i*3+2] = baseGold[2] * (0.4 + currentParticleEnergy * 0.3);
+    // Gentle wander for organic feel
+    const wx = Math.sin(particleTime * 1.3 + phase * 3.7) * wanderAmp;
+    const wz = Math.cos(particleTime * 1.1 + phase * 2.3) * wanderAmp;
+    pos[i*3] += wx * dt;
+    pos[i*3+2] += wz * dt;
+
+    // Size — subtle pulse with speech energy, no randomness each frame
+    sizes[i] = (0.015 + (group * 0.006)) + currentParticleEnergy * 0.04;
+
+    // Color — warm shift with energy, less intense
+    const ci = Math.floor(group % particleColorsArr.length);
+    const bc = particleColorsArr[ci];
+    cols[i*3] = bc[0] * (0.7 + currentParticleEnergy * 0.35);
+    cols[i*3+1] = bc[1] * (0.65 + currentParticleEnergy * 0.3);
+    cols[i*3+2] = bc[2] * (0.55 + currentParticleEnergy * 0.25);
   }
   particles.geometry.attributes.position.needsUpdate = true;
   particles.geometry.attributes.size.needsUpdate = true;
   particles.geometry.attributes.color.needsUpdate = true;
+
+  // Frequency tail rings — pulse and rotate with speech
+  tailRings.forEach((ring, idx) => {
+    const freq = 0.4 + idx * 0.25;
+    const pulse = Math.sin(particleTime * freq) * currentParticleEnergy;
+    ring.material.opacity = ring.userData.baseOpacity + pulse * 0.25;
+    ring.rotation.z += dt * (0.15 + currentParticleEnergy * 0.5) * (idx + 1) * 0.3;
+    // Scale ring slightly with energy
+    const s = 1 + pulse * 0.08;
+    ring.scale.setScalar(s);
+    // Color shift with energy
+    const hue = 0.12 + currentParticleEnergy * 0.06;
+    ring.material.color.setHSL(hue, 0.9, 0.5 + pulse * 0.3);
+  });
 
   // Rotate dial needle when "playing"
   if (isPlaying && !isPaused && radioGroup.userData.needle) {
     radioGroup.userData.needle.rotation.z += dt * 1.8;
   }
 
-  // Subtle radio float
-  radioGroup.position.y = Math.sin(particleTime * 0.5) * 0.08;
-  radioGroup.rotation.y = Math.sin(particleTime * 0.3) * 0.04;
+  // Subtle radio float — very gentle
+  radioGroup.position.y = Math.sin(particleTime * 0.4) * 0.06;
+  radioGroup.rotation.y = Math.sin(particleTime * 0.25) * 0.03;
 
-  // Dial light intensity pulses with speech energy
-  dialLight.intensity = 2.0 + currentParticleEnergy * 1.8;
+  // Dial light intensity — warm pulse with speech
+  dialLight.intensity = 2.0 + currentParticleEnergy * 1.4;
 
   renderer.render(scene, camera);
 }
