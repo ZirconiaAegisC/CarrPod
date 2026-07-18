@@ -488,44 +488,41 @@ function getBasePath() {
 const BASE = getBasePath();
 
 // ──────────────────────────────────────
-// KNOWN EPISODE MANIFEST — works without directory listing
+// KNOWN EPISODE MANIFEST — clean ep-XX.md naming
 // ──────────────────────────────────────
 const EPISODE_MANIFEST = [
-  { file: 'CSMSFRadio00000-PROLOGUE-The-Sibling-Frequency-Citadel-Opening-Broadcast.md', num: 0, title: 'PROLOGUE — The Sibling Frequency Opening Broadcast' },
-  { file: 'CSMSFRadio00001-The-Signal-Sun-CMEs-and-the-Carrington-Threat.md', num: 1, title: 'The Signal — Sun, CMEs, and the Carrington Threat' },
-  { file: 'CSMSFRadio00002-The-Cascade-Aegis-C-Composite-Shielding.md', num: 2, title: 'The Cascade — Aegis-C Composite Shielding' },
-  { file: 'CSMSFRadio00003-The-Response-Microgrids-and-Community-Resilience.md', num: 3, title: 'The Response — Microgrids and Community Resilience' },
-  { file: 'CSMSFRadio00004-The-Long-Night-First-168-Hours.md', num: 4, title: 'The Long Night — First 168 Hours of a Carrington Event' },
-  { file: 'CSMSFRadio00005-Baker-Street-Adjuster-Commentary.md', num: 5, title: 'Baker Street Adjuster Commentary — Agent-19 Insurance' },
-  { file: 'CSMSFRadio00006-The-Restoration-Rebuilding-Civilization.md', num: 6, title: 'The Restoration — Rebuilding Civilization After the Grid' },
-  { file: 'CSMSFRadio00007-Spruce-Drake-Frequency-35-Trait-Deep-Persona-Protocol.md', num: 7, title: 'Spruce-Drake Frequency — 35-Trait Deep Persona Protocol' },
-  { file: 'CSMSFRadio00008-Zirconia-Directors-Cut-Operational-Architecture.md', num: 8, title: 'Zirconia Directors Cut — Operational Architecture' },
-  { file: 'CSMSFRadio00009-The-Charge-Gap-SOLARA-at-Barstow-EV-Corridor.md', num: 9, title: 'The Charge Gap — SOLARA at Barstow EV Charging Corridor' },
-  { file: 'CSMSFRadio00010-The-Open-Hand-Pocket-Watch-X-and-Modular-Standards.md', num: 10, title: 'The Open Hand — Pocket Watch X and Modular Standards' },
-  { file: 'CSMSFRadio00011-The-Feathers-in-the-Wind-FEATHER-LoRa-Mesh-Deployment.md', num: 11, title: 'The Feathers in the Wind — FEATHER LoRa Mesh Deployment' },
-  { file: 'CSMSFRadio00012-The-Fleet-That-Walks-Charlemagne-Vibration-Trials.md', num: 12, title: 'The Fleet That Walks — Charlemagne Vibration Trials at Sea' },
-  { file: 'CSMSFRadio00013-The-Sky-Pays-Its-Debts-Taurid-Swarm-and-Disaster-Cycles.md', num: 13, title: 'The Sky Pays Its Debts — Taurid Swarm and Disaster Cycles' },
-  { file: 'CSMSFRadio00014-The-Joy-Frequency-Pet-Safe-Party-Episode.md', num: 14, title: 'The Joy Frequency — Celebration and the Pet-Safe Liner' },
-  { file: 'CSMSFRadio00016-The-Everyday-Shield-Practical-Preparedness-Kit.md', num: 16, title: 'The Everyday Shield — Practical Preparedness for Anyone' },
-  { file: 'CSMSFRadio00017-The-Invention-Engine-14-New-Fabrications.md', num: 17, title: 'The Invention Engine — 14 New Fabrication Proposals' },
-  { file: 'CSMSFRadio00018-The-People-Behind-the-Frequency-Kilo-Gemini-Jason-Brodsky.md', num: 18, title: 'The People Behind the Frequency — Behind the Scenes' },
-  { file: 'CSMSFRadio00019-The-Quiet-Voices-Nash-Voss-Thalia-Sylas.md', num: 19, title: 'The Quiet Voices — NASH, VOSS, THALIA, SYLAS' },
-  { file: 'CSMSFRadio00020-The-Nickel-Episode-Open-Source-Licensing-Model.md', num: 20, title: 'The Nickel Episode — Open Source Licensing and Revenue' },
-  { file: 'CSMSFRadio00024-The-World-We-Build-Lonsdaleite-Communities-Field-Deployment.md', num: 24, title: 'The World We Build — Lonsdaleite Communities Field Test' },
+  { file: 'ep-00.md', num: 0,  title: 'PROLOGUE — The Sibling Frequency Opening Broadcast' },
+  { file: 'ep-01.md', num: 1,  title: 'The Signal — Sun, CMEs, and the Carrington Threat' },
+  { file: 'ep-02.md', num: 2,  title: 'The Cascade — Aegis-C Composite Shielding' },
+  { file: 'ep-03.md', num: 3,  title: 'The Response — Microgrids and Community Resilience' },
+  { file: 'ep-04.md', num: 4,  title: 'The Long Night — First 168 Hours of a Carrington Event' },
+  { file: 'ep-05.md', num: 5,  title: 'Baker Street Adjuster Commentary — Agent-19 Insurance' },
+  { file: 'ep-06.md', num: 6,  title: 'The Restoration — Rebuilding Civilization After the Grid' },
+  { file: 'ep-07.md', num: 7,  title: 'Spruce-Drake Frequency — 35-Trait Deep Persona Protocol' },
+  { file: 'ep-08.md', num: 8,  title: 'Zirconia Directors Cut — Operational Architecture' },
+  { file: 'ep-09.md', num: 9,  title: 'The Charge Gap — SOLARA at Barstow EV Charging Corridor' },
+  { file: 'ep-10.md', num: 10, title: 'The Open Hand — Pocket Watch X and Modular Standards' },
+  { file: 'ep-11.md', num: 11, title: 'The Feathers in the Wind — FEATHER LoRa Mesh Deployment' },
+  { file: 'ep-12.md', num: 12, title: 'The Fleet That Walks — Charlemagne Vibration Trials at Sea' },
+  { file: 'ep-13.md', num: 13, title: 'The Sky Pays Its Debts — Taurid Swarm and Disaster Cycles' },
+  { file: 'ep-14.md', num: 14, title: 'The Joy Frequency — Party Episode with Pet-Safe Liner' },
+  { file: 'ep-16.md', num: 16, title: 'The Everyday Shield — Practical Preparedness for Anyone' },
+  { file: 'ep-17.md', num: 17, title: 'The Invention Engine — 14 New Fabrication Proposals' },
+  { file: 'ep-18.md', num: 18, title: 'The People Behind the Frequency — Behind the Scenes' },
+  { file: 'ep-19.md', num: 19, title: 'The Quiet Voices — NASH, VOSS, THALIA ROOK, SYLAS FEN' },
+  { file: 'ep-20.md', num: 20, title: 'The Nickel Episode — Open Source Licensing and Revenue' },
+  { file: 'ep-24.md', num: 24, title: 'The World We Build — Lonsdaleite Communities Field Test' },
 ];
-// Sort by episode number
-EPISODE_MANIFEST.sort((a, b) => a.num - b.num);
 
 async function loadEpisode(filename) {
   currentEpisodeContent = '';
   episodeSegments = [];
-  let loadError = false;
   
-  // Try multiple URL strategies
+  // Try sf-episodes folder relative to BASE
   const urls = [
-    BASE + '01-AEGIS-RADIO-SHOW/' + filename,
+    BASE + 'sf-episodes/' + filename,
     BASE + filename,
-    '01-AEGIS-RADIO-SHOW/' + filename,
+    'sf-episodes/' + filename,
   ];
   
   for (const url of urls) {
