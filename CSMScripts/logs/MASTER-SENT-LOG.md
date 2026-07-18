@@ -17,3 +17,4 @@ Total: 225 emails across 9 batches
 | 02:41 | BATCH-01 | kwolcott@rims.org | RIMS VP Business Dev | SENT |
 | 02:41 | BATCH-01 | prteam@rms.com | RMS Model Product Mgmt | SENT |
 | 02:41 | BATCH-03 | kwolcott@rims.org | RIMS RISKWORLD 2026 Exhibitor Proposal | SENT |
+| 21:59:31 | BATCH-05 | E036 | DNV/ABS/Lloyd's | SENT (3 PDFs via sendMail) |
