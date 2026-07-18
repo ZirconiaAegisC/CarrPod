@@ -1,11 +1,11 @@
-# E028-NASA-Heliophysics — NASA HELIOPHYSICS
-## NASA Heliophysics — SWPC integration and sensor hardening partnership
+# E026-DARPA-Defense-Sciences — DARPA DEFENSE SCIENCES
+## EMP Hardening Branch — Aegis-C composite ceramics for defense applications
 ### CSMEmailOutgoing | BATCH-04 | July 2026
 
-**TO:** NASA Heliophysics
+**TO:** DARPA Defense Sciences
 **FROM:** Jason Brodsky, Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
 **REPLY-TO:** zirconia@aegisc.space
-**SUBJECT:** NASA Heliophysics — SWPC integration and sensor hardening partnership
+**SUBJECT:** EMP Hardening Branch — Aegis-C composite ceramics for defense applications
 
 ---
 

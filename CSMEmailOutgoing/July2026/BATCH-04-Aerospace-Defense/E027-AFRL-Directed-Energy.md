@@ -1,11 +1,11 @@
-# E028-NASA-Heliophysics — NASA HELIOPHYSICS
-## NASA Heliophysics — SWPC integration and sensor hardening partnership
+# E027-AFRL-Directed-Energy — AFRL DIRECTED ENERGY
+## AFRL EMP Hardening Branch — MXene and UHTC for aircraft systems
 ### CSMEmailOutgoing | BATCH-04 | July 2026
 
-**TO:** NASA Heliophysics
+**TO:** AFRL Directed Energy
 **FROM:** Jason Brodsky, Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
 **REPLY-TO:** zirconia@aegisc.space
-**SUBJECT:** NASA Heliophysics — SWPC integration and sensor hardening partnership
+**SUBJECT:** AFRL EMP Hardening Branch — MXene and UHTC for aircraft systems
 
 ---
 

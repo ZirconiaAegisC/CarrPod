@@ -1,11 +1,11 @@
-# E028-NASA-Heliophysics — NASA HELIOPHYSICS
-## NASA Heliophysics — SWPC integration and sensor hardening partnership
+# E029-NOAA-SWPC-Public-Affairs — NOAA SWPC PUBLIC AFFAIRS
+## NOAA SWPC — public-private data partnership for insurer alerts
 ### CSMEmailOutgoing | BATCH-04 | July 2026
 
-**TO:** NASA Heliophysics
+**TO:** NOAA SWPC Public Affairs
 **FROM:** Jason Brodsky, Director of External Affairs | Carrington Storm Motors | Safe Pod Engineering Company
 **REPLY-TO:** zirconia@aegisc.space
-**SUBJECT:** NASA Heliophysics — SWPC integration and sensor hardening partnership
+**SUBJECT:** NOAA SWPC — public-private data partnership for insurer alerts
 
 ---
 
