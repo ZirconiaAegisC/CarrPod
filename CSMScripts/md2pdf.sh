@@ -59,11 +59,17 @@ fi
 
 echo -e "${CYAN}Starting conversion of '${INPUT_FILE}'...${NC}"
 
+# Pre-process: replace unicode box-drawing horizontal rules (─) with standard MD ---
+# These chars (U+2500) aren't in standard LaTeX fonts and cause missing-glyph warnings.
+TMP_MD=$(mktemp /tmp/pandoc_input_XXXXXX.md)
+sed 's/─\{10,\}/---/g' "$INPUT_FILE" > "$TMP_MD"
+
 # Run Pandoc. 
-# Note: We specify xelatex as the engine because it handles rich Markdown 
-# (like Unicode characters and emojis) much better than standard pdflatex.
-pandoc "$INPUT_FILE" -o "$OUTPUT_FILE" --pdf-engine=xelatex -V geometry:margin=1in
+# Note: We specify xelatex as the engine because it handles Unicode and rich Markdown 
+# much better than standard pdflatex.
+pandoc "$TMP_MD" -o "$OUTPUT_FILE" --pdf-engine=xelatex -V geometry:margin=1in -V mainfont='DejaVu Serif' -V monofont='DejaVu Sans Mono'
 PANDOC_EXIT_CODE=$?
+rm -f "$TMP_MD"
 
 # ------------------------------------------------------------------------------
 # 3. Post-flight Verifications
