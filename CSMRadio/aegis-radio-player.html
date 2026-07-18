@@ -498,7 +498,7 @@ async function loadContentList() {
 
   // Load commercials from CSMCommercials
   try {
-    const commResp = await fetch('../../CSMCommercials/');
+    const commResp = await fetch('CSMCommercials/');
     const commText = await commResp.text();
     const parser2 = new DOMParser();
     const commDoc = parser2.parseFromString(commText, 'text/html');
@@ -536,7 +536,7 @@ async function loadCommercials() {
   // Pick a random batch and extract individual commercial blocks
   const batchFile = commercials[Math.floor(Math.random() * commercials.length)];
   try {
-    const resp = await fetch(`../../CSMCommercials/${batchFile.replace(/^\d+/, 'BATCH-')}`);
+    const resp = await fetch(`CSMCommercials/${batchFile.replace(/^\d+/, 'BATCH-')}`);
     // Try to find the correct path
     const text = await resp.text();
     // Split on ## COMM- headers
