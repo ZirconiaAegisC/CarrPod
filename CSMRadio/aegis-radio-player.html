@@ -532,19 +532,33 @@ async function loadEpisode(filename) {
 }
 
 async function loadCommercials() {
-  if (commercials.length === 0) return [];
-  // Pick a random batch and extract individual commercial blocks
-  const batchFile = commercials[Math.floor(Math.random() * commercials.length)];
+  // Known batch files within CSMRadio/CSMCommercials/
+  const batchDirs = ['BATCH-001', 'BATCH-002', 'BATCH-003', 'BATCH-004', 'BATCH-005', 'BATCH-006', 'BATCH-007', 'BATCH-008', 'BATCH-009'];
+  const dir = batchDirs[Math.floor(Math.random() * batchDirs.length)];
+  // Find the .md file in that batch directory
+  let batchFile = '';
   try {
-    const resp = await fetch(`CSMCommercials/${batchFile.replace(/^\d+/, 'BATCH-')}`);
-    // Try to find the correct path
+    const dirResp = await fetch(`CSMCommercials/${dir}/`);
+    const dirText = await dirResp.text();
+    const parser = new DOMParser();
+    const dirDoc = parser.parseFromString(dirText, 'text/html');
+    const links = [...dirDoc.querySelectorAll('a')].map(a => a.textContent);
+    batchFile = links.find(l => l.endsWith('.md')) || '';
+  } catch(e) { return []; }
+  
+  if (!batchFile) return [];
+  try {
+    const resp = await fetch(`CSMCommercials/${dir}/${batchFile}`);
     const text = await resp.text();
-    // Split on ## COMM- headers
-    const spots = text.split(/^##\s+COMM-/m).filter(s => s.trim().length > 50);
+    // Split on ## COMM- headers or numbered commercial blocks
+    const spots = text.split(/^##\s+COMM-/m).filter(s => s.trim().length > 60);
+    if (spots.length === 0) {
+      // Try splitting on --- dividers
+      const altSpots = text.split(/^---$/m).filter(s => s.trim().length > 60);
+      return altSpots.map(s => s.trim());
+    }
     return spots.map(s => 'COMM-' + s.trim());
-  } catch(e) {
-    return [];
-  }
+  } catch(e) { return []; }
 }
 
 function extractTitle(filename, text) {
