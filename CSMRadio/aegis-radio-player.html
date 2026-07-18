@@ -267,6 +267,7 @@ let currentEpisodeIndex = -1;
 let currentCommercialPool = [];
 let isPlaying = false;
 let isPaused = false;
+let skipLocked = false;
 let currentUtterance = null;
 let currentSegmentIndex = 0;
 let currentEpisodeContent = '';
@@ -421,11 +422,11 @@ const particleBasePositions = new Float32Array(particleCount * 3);
 const particleVelocities = new Float32Array(particleCount * 3);
 
 const particleColorsArr = [
-  [1.0, 0.843, 0.0],   // gold
-  [0.91, 0.66, 0.25],  // copper
-  [0.804, 0.498, 0.196], // bronze
-  [0.753, 0.753, 0.753], // silver
-  [0.267, 0.533, 0.8],  // blue
+  [1.0, 0.50, 0.05],   // Radium orange
+  [1.0, 0.22, 0.05],   // Radium red
+  [0.15, 0.85, 0.25],  // Uranium green
+  [1.0, 0.75, 0.10],   // Amber glow
+  [0.10, 0.70, 0.90],  // Cherenkov blue
 ];
 
 for (let i = 0; i < particleCount; i++) {
