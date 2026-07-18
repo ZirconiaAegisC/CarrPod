@@ -269,6 +269,7 @@ let currentEpisodeIndex = -1;
 let currentCommercialPool = [];
 let isPlaying = false;
 let isPaused = false;
+let skipLocked = false;
 let currentUtterance = null;
 let currentSegmentIndex = 0;
 let currentEpisodeContent = '';
@@ -494,11 +495,14 @@ const particlePhase = new Float32Array(particleCount);
 const particleGroup = new Float32Array(particleCount);
 
 const particleColorsArr = [
-  [1.0, 0.843, 0.05],    // warm gold
-  [0.95, 0.72, 0.22],    // copper 
-  [0.78, 0.55, 0.25],    // bronze
-  [0.82, 0.78, 0.72],    // silver
-  [0.30, 0.56, 0.82],    // soft blue
+  [1.0, 0.50, 0.05],   // Radium orange
+  [1.0, 0.22, 0.05],   // Deep radium red
+  [0.15, 0.85, 0.25],  // Uranium green
+  [1.0, 0.75, 0.10],   // Glowing amber
+  [0.95, 0.40, 0.05],  // Copper-radium glow
+  [0.08, 0.68, 0.88],  // Cherenkov blue
+  [0.18, 0.90, 0.40],  // Bright radium green
+  [1.0, 0.85, 0.35],   // Warm candle-radium
 ];
 
 // Create particles in nested orbital rings (like electron clouds around the radio)
@@ -893,15 +897,29 @@ function stopPlayback() {
 }
 
 function skipForward() {
-  if (!isPlaying || playQueue.length === 0) return;
+  if (!isPlaying || playQueue.length === 0 || skipLocked) return;
+  skipLocked = true;
   speechSynthesis.cancel();
   currentUtterance = null;
   let next = queueIndex + 1;
   while (next < playQueue.length && playQueue[next].type === 'commercial') next++;
-  if (next >= playQueue.length) { stopPlayback(); return; }
+  if (next >= playQueue.length) { skipLocked = false; stopPlayback(); return; }
   queueIndex = next;
   document.getElementById('statPlaying').textContent = `📻 Segment ${playQueue[next].index + 1}/${episodeSegments.length}`;
-  setTimeout(() => processQueue(), 150);
+  setTimeout(() => { skipLocked = false; if (isPlaying) processQueue(); }, 300);
+}
+
+function skipBackward() {
+  if (!isPlaying || playQueue.length === 0 || skipLocked) return;
+  skipLocked = true;
+  speechSynthesis.cancel();
+  currentUtterance = null;
+  let prev = queueIndex - 1;
+  while (prev >= 0 && playQueue[prev].type === 'commercial') prev--;
+  if (prev < 0) prev = 0;
+  queueIndex = prev;
+  document.getElementById('statPlaying').textContent = `📻 Segment ${playQueue[prev].index + 1}/${episodeSegments.length}`;
+  setTimeout(() => { skipLocked = false; if (isPlaying) processQueue(); }, 300);
 }
 
 function skipBackward() {
@@ -1034,7 +1052,13 @@ renderer.domElement.addEventListener('pointerdown', (e) => {
   prevMouseX = e.clientX;
   prevMouseY = e.clientY;
 });
-window.addEventListener('pointerup', () => { isDragging = false; });
+window.addEventListener('pointerup', () => { 
+  if (isDragging && radioGroup.userData._spinSpeed !== undefined) {
+    const flickDX = prevMouseX; // Use last drag direction
+    radioGroup.userData._spinSpeed += (prevMouseX - (prevMouseX - (Math.abs(prevMouseX) < 5 ? 0 : prevMouseX * 0.01))) * 0.0005;
+  }
+  isDragging = false; 
+});
 window.addEventListener('pointermove', (e) => {
   if (!isDragging) return;
   const dx = e.clientX - prevMouseX;
@@ -1132,9 +1156,16 @@ function animate() {
     if (radioGroup.userData.needleTip) radioGroup.userData.needleTip.rotation.z = sweep;
   }
 
-  // Subtle radio float — gentle + drag rotation
-  radioGroup.position.y = Math.sin(particleTime * 0.4) * 0.04;
-  radioGroup.rotation.y += (targetRotY - radioGroup.rotation.y) * 3 * dt;
+  // Bobble + flick-to-spin
+  let watchBobble = radioGroup.userData._bobble || 0;
+  watchBobble += dt * 1.2;
+  radioGroup.userData._bobble = watchBobble;
+  radioGroup.position.y = Math.sin(watchBobble * 0.6) * 0.1;
+  radioGroup.rotation.x += (Math.sin(watchBobble) * 0.08 - radioGroup.rotation.x) * 3 * dt;
+  
+  if (!radioGroup.userData._spinSpeed) radioGroup.userData._spinSpeed = 0;
+  radioGroup.userData._spinSpeed *= 0.97;
+  radioGroup.rotation.y += radioGroup.userData._spinSpeed + (targetRotY - radioGroup.rotation.y) * 3 * dt;
   radioGroup.rotation.x += (targetRotX - radioGroup.rotation.x) * 3 * dt;
 
   // Dial light intensity — warm pulse with speech
