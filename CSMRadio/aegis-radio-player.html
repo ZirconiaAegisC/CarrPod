@@ -3,7 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-<title>CSM Aegis Radio — SiblingFrequency — V2 Portable</title>
+<title>CSM Aegis Radio — V3.0-INTERNET — vat-working</title>
+<meta name="version" content="V3.0-INTERNET-vat-working-20260718">
+<meta name="description" content="Aegis Radio Player — Internet-only loading via GitHub raw. 21 episodes, 196 commercials, 1920s wireframe radio with particle display. Save anywhere, works everywhere.">
 <style>
 :root {
   --brass: #c9a84c;
@@ -601,185 +603,35 @@ setTimeout(() => {
 }, 500);
 
 // ──────────────────────────────────────
-// SPEECH SYNTHESIS — optimized for Edge neural voices + Android fallback
+// SPEECH SYNTHESIS
 // ──────────────────────────────────────
-const isEdge = /Edg/i.test(navigator.userAgent);
-const isChrome = /Chrome/i.test(navigator.userAgent) && !isEdge;
-let neuralVoicesAvailable = false;
-
 function populateVoices() {
   const voices = speechSynthesis.getVoices();
   if (voices.length === 0) return;
-  
-  // Group voices by quality
-  const neural = voices.filter(v => v.name.includes('Natural') || v.name.includes('Neural'));
-  const premium = voices.filter(v => !neural.includes(v) && (v.name.includes('Microsoft') || v.name.includes('Google')));
-  const standard = voices.filter(v => !neural.includes(v) && !premium.includes(v) && v.lang.startsWith('en'));
-  
-  neuralVoicesAvailable = neural.length > 0;
-  
   const sel = document.getElementById('voiceSelect');
-  sel.innerHTML = '<option value="-1">🎤 Auto (Best Available)</option>';
-  
-  if (neural.length > 0) {
-    const grp = document.createElement('optgroup');
-    grp.label = '⭐ Neural Voices (Highest Quality)';
-    neural.forEach((v, i) => {
-      const voicesIdx = voices.indexOf(v);
-      const opt = document.createElement('option');
-      opt.value = voicesIdx;
-      opt.textContent = v.name.replace(/Microsoft\s+|Online\s+|\(Natural\)/g, '').trim();
-      grp.appendChild(opt);
-    });
-    sel.appendChild(grp);
-  }
-  
-  if (premium.length > 0) {
-    const grp = document.createElement('optgroup');
-    grp.label = 'Premium Voices';
-    premium.forEach(v => {
-      const voicesIdx = voices.indexOf(v);
-      const opt = document.createElement('option');
-      opt.value = voicesIdx;
-      opt.textContent = v.name.replace(/Microsoft\s+|Google\s+/g, '').trim();
-      grp.appendChild(opt);
-    });
-    sel.appendChild(grp);
-  }
-  
-  if (standard.length > 0 && standard.length < voices.length) {
-    const grp = document.createElement('optgroup');
-    grp.label = 'Standard Voices';
-    standard.forEach(v => {
-      const voicesIdx = voices.indexOf(v);
-      const opt = document.createElement('option');
-      opt.value = voicesIdx;
-      opt.textContent = v.name;
-      grp.appendChild(opt);
-    });
-    sel.appendChild(grp);
-  }
-}
-
-function autoPickBestVoice() {
-  const voices = speechSynthesis.getVoices();
-  if (voices.length === 0 || selectedVoice) return;
-  
-  // Priority: Edge Neural > Chrome Google > Any English
-  const edgeNatural = voices.find(v => v.name.includes('Microsoft') && v.name.includes('Natural'));
-  const edgeJenny = voices.find(v => v.name.includes('Jenny') && v.name.includes('Natural'));
-  const edgeGuy = voices.find(v => v.name.includes('Guy') && v.name.includes('Natural'));
-  const googleUS = voices.find(v => v.name.includes('Google') && v.lang === 'en-US');
-  const anyEnglish = voices.find(v => v.lang.startsWith('en-US') || v.lang.startsWith('en-GB'));
-  
-  selectedVoice = edgeJenny || edgeNatural || edgeGuy || googleUS || anyEnglish || voices[0];
-  
-  const sel = document.getElementById('voiceSelect');
-  const idx = voices.indexOf(selectedVoice);
-  if (idx >= 0) sel.value = idx;
-}
-
-// Load voices — Edge needs time to register neural voices
-speechSynthesis.onvoiceschanged = () => {
-  populateVoices();
-  autoPickBestVoice();
-};
-// Also try after a delay for Edge's async voice loading
-setTimeout(() => {
-  populateVoices();
-  autoPickBestVoice();
-}, 300);
-setTimeout(() => {
-  populateVoices();
-  autoPickBestVoice();
-}, 1200);
-
-document.getElementById('voiceSelect').addEventListener('change', (e) => {
-  const idx = parseInt(e.target.value);
-  const voices = speechSynthesis.getVoices();
-  if (idx >= 0 && voices[idx]) {
-    selectedVoice = voices[idx];
-  } else {
-    selectedVoice = null;
-    autoPickBestVoice();
-  }
-});
-
-// ──────────────────────────────────────
-// IMPROVED SPEAK — better pacing, natural pauses, Edge optimization
-// ──────────────────────────────────────
-function speak(text, onEnd, onWord) {
-  return new Promise((resolve) => {
-    speechSynthesis.cancel();
-    
-    // Clean up text for better TTS — remove markdown artifacts
-    const cleanText = text
-      .replace(/#{1,6}\s+/g, '')          // Remove markdown headers
-      .replace(/\*\*(.+?)\*\*/g, '$1')     // Bold to plain
-      .replace(/\*(.+?)\*/g, '$1')         // Italic to plain
-      .replace(/\[(.+?)\]\(.+?\)/g, '$1')  // Links to plain
-      .replace(/`{1,3}[^`]*`{1,3}/g, '')  // Remove code blocks
-      .replace(/^>\s+/gm, '')              // Remove blockquotes
-      .replace(/---+/g, '')                // Remove horizontal rules
-      .replace(/\n{3,}/g, '\n\n')          // Normalize spacing
-      .trim();
-    
-    if (cleanText.length < 10) {
-      resolve(); return;
-    }
-    
-    const utterance = new SpeechSynthesisUtterance(cleanText);
-    if (selectedVoice) utterance.voice = selectedVoice;
-    
-    // Optimize for neural voices — slower, more natural pacing
-    if (neuralVoicesAvailable) {
-      utterance.rate = 0.88;   // Slightly slower for neural voices
-      utterance.pitch = 1.0;   // Natural pitch
-    } else {
-      utterance.rate = 0.92;
-      utterance.pitch = 1.02;
-    }
-    utterance.volume = 0.95;
-    currentUtterance = utterance;
-
-    // Track words for particle animation
-    const words = cleanText.split(/\s+/).filter(w => w.length > 0);
-    let lastWordIdx = -1;
-    
-    utterance.onboundary = (event) => {
-      if (event.charIndex !== undefined && words.length > 0) {
-        const wordIdx = Math.min(Math.floor(event.charIndex / 5.5), words.length - 1);
-        if (wordIdx !== lastWordIdx && wordIdx < words.length) {
-          lastWordIdx = wordIdx;
-          const word = words[wordIdx] || '';
-          spokenWords = word;
-          document.getElementById('word-display').textContent = word;
-          targetParticleEnergy = 0.5 + Math.min(word.length / 6, 1.8);
-          if (onWord) onWord(word);
-        }
-      }
-    };
-
-    utterance.onend = () => {
-      currentUtterance = null;
-      document.getElementById('word-display').textContent = '';
-      targetParticleEnergy = 0.3;
-      resolve();
-      if (onEnd) onEnd();
-    };
-
-    utterance.onerror = (e) => {
-      if (e.error !== 'interrupted' && e.error !== 'canceled') {
-        console.warn('Speech error:', e.error);
-      }
-      currentUtterance = null;
-      targetParticleEnergy = 0.3;
-      resolve();
-    };
-
-    speechSynthesis.speak(utterance);
+  sel.innerHTML = '<option value="-1">🎤 Default System Voice</option>';
+  voices.forEach((v, i) => {
+    const opt = document.createElement('option');
+    opt.value = i;
+    const langLabel = v.lang || '';
+    opt.textContent = `${v.name} (${langLabel})`;
+    sel.appendChild(opt);
   });
 }
+
+// Force voice loading
+speechSynthesis.onvoiceschanged = () => {
+  populateVoices();
+  const voices = speechSynthesis.getVoices();
+  const sel = document.getElementById('voiceSelect');
+  if (!selectedVoice && voices.length > 0) {
+    const googleVoice = voices.find(v => v.name.includes('Google') && v.lang.startsWith('en'));
+    const enVoice = voices.find(v => v.lang.startsWith('en-US') || v.lang.startsWith('en-GB'));
+    const pick = googleVoice || enVoice || voices[0];
+    if (pick) {
+      selectedVoice = pick;
+      sel.value = voices.indexOf(pick);
+    }
   }
 };
 // Also try loading immediately
@@ -1144,12 +996,9 @@ window.addEventListener('orientationchange', () => setTimeout(resize, 200));
 // ──────────────────────────────────────
 resize();
 animate();
-// V2 — manifest-based loading, no directory listing needed
-console.log('🎙 Aegis Radio — SiblingFrequency V2 — Ready');
-console.log('🎙 Aegis Radio — V3.1 Edge-Optimized — Ready');
-console.log(`📻 ${EPISODE_MANIFEST.length} episodes | Neural voice detection active`);
-console.log(`🌐 Browser: ${isEdge ? 'Edge (neural voices supported)' : isChrome ? 'Chrome' : 'Other'}`);
-console.log('⚡ Internet-only loading via GitHub raw | Carr-Forge Powered');
+console.log('🎙 Aegis Radio — V3.0-INTERNET-vat-working — Ready');
+console.log(`📻 ${EPISODE_MANIFEST.length} episodes | Internet-only GitHub raw loading`);
+console.log('⚡ Carr-Forge Powered | Open Source | Aegis Certified');
 </script>
 </body>
 </html>
