@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-<title>CSM Aegis Radio — SiblingFrequency</title>
+<title>CSM Aegis Radio — SiblingFrequency — V2 Portable</title>
 <style>
 :root {
   --brass: #c9a84c;
@@ -470,12 +470,31 @@ const particles = new THREE.Points(particleGeom, particleMat);
 scene.add(particles);
 
 // ──────────────────────────────────────
+// DYNAMIC BASE PATH — works from any hosted location
+// ──────────────────────────────────────
+function getBasePath() {
+  // Detect where this HTML file is hosted
+  const scriptEl = document.currentScript;
+  if (scriptEl && scriptEl.src) {
+    return scriptEl.src.replace(/\/[^\/]*$/, '/');
+  }
+  // Fallback: use the HTML file's own location
+  const loc = window.location.href;
+  if (loc.startsWith('http')) {
+    return loc.replace(/\/[^\/]*$/, '/');
+  }
+  return './';
+}
+const BASE = getBasePath();
+
+// ──────────────────────────────────────
 // LOAD EPISODES & COMMERCIALS
 // ──────────────────────────────────────
 async function loadContentList() {
-  // Load episodes from 01-AEGIS-RADIO-SHOW
+  // Load episodes from 01-AEGIS-RADIO-SHOW relative to this file's location
+  const episodeDir = BASE + '01-AEGIS-RADIO-SHOW/';
   try {
-    const resp = await fetch('01-AEGIS-RADIO-SHOW/');
+    const resp = await fetch(episodeDir);
     const text = await resp.text();
     const parser = new DOMParser();
     const doc = parser.parseFromString(text, 'text/html');
@@ -498,7 +517,7 @@ async function loadContentList() {
 
   // Load commercials from CSMCommercials
   try {
-    const commResp = await fetch('CSMCommercials/');
+    const commResp = await fetch(BASE + 'CSMCommercials/');
     const commText = await commResp.text();
     const parser2 = new DOMParser();
     const commDoc = parser2.parseFromString(commText, 'text/html');
@@ -514,7 +533,7 @@ async function loadContentList() {
 
 async function loadEpisode(filename) {
   try {
-    const resp = await fetch(`01-AEGIS-RADIO-SHOW/${filename}`);
+    const resp = await fetch(BASE + `01-AEGIS-RADIO-SHOW/${filename}`);
     const text = await resp.text();
     currentEpisodeContent = text;
     // Split into segments on numbered headers or double newlines
@@ -538,7 +557,7 @@ async function loadCommercials() {
   // Find the .md file in that batch directory
   let batchFile = '';
   try {
-    const dirResp = await fetch(`CSMCommercials/${dir}/`);
+    const dirResp = await fetch(BASE + `CSMCommercials/${dir}/`);
     const dirText = await dirResp.text();
     const parser = new DOMParser();
     const dirDoc = parser.parseFromString(dirText, 'text/html');
@@ -548,7 +567,7 @@ async function loadCommercials() {
   
   if (!batchFile) return [];
   try {
-    const resp = await fetch(`CSMCommercials/${dir}/${batchFile}`);
+    const resp = await fetch(BASE + `CSMCommercials/${dir}/${batchFile}`);
     const text = await resp.text();
     // Split on ## COMM- headers or numbered commercial blocks
     const spots = text.split(/^##\s+COMM-/m).filter(s => s.trim().length > 60);
@@ -972,8 +991,8 @@ setTimeout(() => {
 // Periodically refresh commercial availability
 setInterval(updateStats, 30000);
 
-console.log('🎙 Aegis Radio — SiblingFrequency — Ready');
-console.log('📻 1920s Wireframe Radio with Subatomic Particle Display');
+console.log('🎙 Aegis Radio — SiblingFrequency V2 — Ready');
+console.log('📻 Portable — works from any hosted URL location');
 console.log('⚡ Carr-Forge Powered | Open Source | Aegis Certified');
 </script>
 </body>
