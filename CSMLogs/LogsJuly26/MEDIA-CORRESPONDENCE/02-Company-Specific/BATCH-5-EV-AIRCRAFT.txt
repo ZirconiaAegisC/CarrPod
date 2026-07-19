@@ -1,0 +1,196 @@
+===============================================================================
+ACS CONGRESSIONAL LIAISON — MEDIA CORRESPONDENCE BATCH 5
+SECTOR: ELECTRIC VEHICLES & ADVANCED AIRCRAFT
+STATUS: DRAFT | DATE: July 19, 2026 | TEMPLATE: A/B mixed
+===============================================================================
+
+COMPANY 5.1 — TESLA, INC.
+TO: Elon Musk, CEO — elon.musk@tesla.com
+CC: Vaibhav Taneja, CFO — vaibhav.taneja@tesla.com
+    Drew Baglino, SVP Powertrain & Energy — drew.baglino@tesla.com
+SUBJECT: Tesla — ACS Research Partnership on EV Manufacturing & Energy Storage — ACS-MC-2026-B501
+INTRO: ACS dossier ACS-DOS-2026-0016 covers Tesla's global EV manufacturing leadership
+(Gigafactory Texas, Fremont, Berlin, Shanghai), 4680 cell production, Megapack grid
+storage, and Full Self-Driving program. Austin, TX HQ. Key US manufacturing employer
+and IRA beneficiary. Seeking engagement on EV charging infrastructure standards and
+utility-scale battery deployment policy.
+DOSSIER: ACS-DOS-2026-0016 | PRIORITY: CRITICAL | CITY: Austin, TX
+-------------------------------------------------------------------------------
+
+COMPANY 5.2 — RIVIAN AUTOMOTIVE, INC.
+TO: RJ Scaringe, Founder & CEO — rj@rivian.com
+CC: Claire McDonough, CFO — claire.mcdonough@rivian.com
+    Nick Kalayjian, Chief Platform Engineer — nick.kalayjian@rivian.com
+SUBJECT: Rivian — Federal Advanced Manufacturing & Energy Partnership Inquiry — ACS-MC-2026-B502
+INTRO: Rivian produces the R1T pickup, R1S SUV, and EDV commercial van (Amazon contract).
+Normal, IL factory with $5.8B Georgia plant planned. Irvine, CA HQ. VW Group partnership
+announced 2024. Seeking engagement on EV manufacturing incentives and charging infrastructure.
+DOSSIER: NONE | PRIORITY: HIGH | CITY: Irvine, CA
+-------------------------------------------------------------------------------
+
+COMPANY 5.3 — LUCID GROUP, INC.
+TO: Peter Rawlinson, CEO & CTO — peter.rawlinson@lucidmotors.com
+CC: Gagan Dhingra, CFO — gagan.dhingra@lucidmotors.com
+    Eric Bach, SVP Product — eric.bach@lucidmotors.com
+SUBJECT: Lucid — Federal Advanced Manufacturing & Energy Partnership Inquiry — ACS-MC-2026-B503
+INTRO: Lucid produces the Air luxury sedan with class-leading efficiency (5 miles/kWh).
+Casa Grande, AZ factory (AMP-1) with AMP-2 expansion planned. Newark, CA HQ. Gravity
+SUV launching. PIF majority ownership. Seeking engagement on EV efficiency standards
+and domestic manufacturing workforce development programs.
+DOSSIER: NONE | PRIORITY: HIGH | CITY: Newark, CA
+-------------------------------------------------------------------------------
+
+COMPANY 5.4 — CHARGEPOINT HOLDINGS, INC.
+TO: Rick Wilmer, President & CEO — rick.wilmer@chargepoint.com
+CC: Mansi Khetani, CFO — mansi.khetani@chargepoint.com
+    Bill Loewenthal, SVP Product — bill.loewenthal@chargepoint.com
+SUBJECT: ChargePoint — Federal Advanced Manufacturing & Energy Partnership Inquiry — ACS-MC-2026-B504
+INTRO: ChargePoint operates the largest EV charging network in North America with 280K+
+ports. Campbell, CA HQ. Hardware and software platform serving commercial, fleet, and
+residential markets. NEVI formula program key driver. Seeking engagement on federal EV
+charging infrastructure policy and Buy America compliance.
+DOSSIER: NONE | PRIORITY: HIGH | CITY: Campbell, CA
+-------------------------------------------------------------------------------
+
+COMPANY 5.5 — JOBY AVIATION, INC.
+TO: JoeBen Bevirt, Founder & CEO — joeben@jobyaviation.com
+CC: Didier Papadopoulos, President Aircraft OEM — didier.papadopoulos@jobyaviation.com
+    Bonny Simi, President Operations — bonny.simi@jobyaviation.com
+SUBJECT: Joby — Federal Advanced Manufacturing & Energy Partnership Inquiry — ACS-MC-2026-B505
+INTRO: Joby is developing an all-electric vertical takeoff and landing (eVTOL) aircraft
+for urban air mobility. Santa Cruz, CA HQ with Marina, CA pilot production and Dayton,
+OH manufacturing plant under construction. $500M+ investment including Toyota and Delta.
+FAA Part 135 air carrier certificate. Seeking engagement on advanced air mobility
+certification, vertiport standards, and DoD Agility Prime program alignment.
+DOSSIER: NONE | PRIORITY: HIGH | CITY: Santa Cruz, CA
+-------------------------------------------------------------------------------
+
+COMPANY 5.6 — ARCHER AVIATION INC.
+TO: Adam Goldstein, Founder & CEO — adam.goldstein@archer.com
+CC: Tom Muniz, CTO — tom.muniz@archer.com
+    Andy Missan, CFO — andy.missan@archer.com
+SUBJECT: Archer — Federal Advanced Manufacturing & Energy Partnership Inquiry — ACS-MC-2026-B506
+INTRO: Archer is developing the Midnight eVTOL aircraft for urban air mobility. San Jose,
+CA HQ with Covington, GA high-volume manufacturing facility under construction. United
+Airlines order for 200 aircraft. Stellantis manufacturing partnership. Seeking engagement
+on FAA eVTOL certification pathway and AAM infrastructure funding.
+DOSSIER: NONE | PRIORITY: HIGH | CITY: San Jose, CA
+-------------------------------------------------------------------------------
+
+COMPANY 5.7 — BETA TECHNOLOGIES
+TO: Kyle Clark, Founder & CEO — kyle.clark@beta.team
+CC: Blain Newton, COO — blain.newton@beta.team
+SUBJECT: Beta Technologies — Federal Advanced Manufacturing & Energy Partnership Inquiry — ACS-MC-2026-B507
+INTRO: Beta Technologies is developing the ALIA electric conventional takeoff and landing
+(eCTOL) and eVTOL aircraft with focus on cargo, defense, and medical logistics. South
+Burlington, VT HQ. USDOT and USAF Agility Prime contracts. Charging infrastructure
+network across eastern US. Seeking engagement on electric aviation infrastructure
+and military dual-use certification.
+DOSSIER: NONE | PRIORITY: HIGH | CITY: South Burlington, VT
+-------------------------------------------------------------------------------
+
+COMPANY 5.8 — HEART AEROSPACE
+TO: Anders Forslund, Founder & CEO — anders.forslund@heartaerospace.com
+CC: Sofia Graflund, COO — sofia.graflund@heartaerospace.com
+SUBJECT: Heart Aerospace — US-Sweden Advanced Technology Partnership — ACS-MC-2026-B508
+INTRO: Heart Aerospace is developing the ES-30, a 30-seat hybrid-electric regional
+aircraft with all-electric range of 200 km and extended hybrid range of 400 km.
+Gothenburg, Sweden HQ. Orders from United Airlines, Mesa Air Group, Air Canada.
+Seeking engagement on FAA/EASA certification harmonization and US regional aviation
+decarbonization. Template D for international.
+DOSSIER: NONE | PRIORITY: HIGH | CITY: Gothenburg, Sweden
+-------------------------------------------------------------------------------
+
+COMPANY 5.9 — EVIATION
+TO: Andre Stein, CEO — andre.stein@eviation.com
+CC: Gregory Davis, President — gregory.davis@eviation.com
+SUBJECT: Eviation — US-Israel Advanced Technology Partnership — ACS-MC-2026-B509
+INTRO: Eviation is developing Alice, an all-electric 9-passenger commuter aircraft.
+Arlington, WA HQ (with Israel R&D origins). First flight in 2022. Targeting 250 nm
+range for regional commuter and cargo markets. Orders from DHL, GlobalX, and
+regional carriers. Seeking engagement on FAA Part 23 certification pathway and
+electric aviation charging standards. Template D for international.
+DOSSIER: NONE | PRIORITY: MEDIUM | CITY: Arlington, WA
+-------------------------------------------------------------------------------
+
+COMPANY 5.10 — ZEROAVIA
+TO: Val Miftakhov, Founder & CEO — val.miftakhov@zeroavia.com
+CC: James Peck, CCO — james.peck@zeroavia.com
+SUBJECT: ZeroAvia — US-UK Advanced Technology Partnership — ACS-MC-2026-B510
+INTRO: ZeroAvia is developing hydrogen fuel cell powertrains for aviation, targeting
+20-seat (ZA600) and 80-seat (ZA2000) platforms. Hollister, CA HQ with UK operations
+at Cotswold Airport. Partners include United Airlines, Alaska Airlines, American Airlines,
+and Airbus. First hydrogen-electric test flights completed. Seeking engagement on FAA
+hydrogen aviation certification and DoE hydrogen hubs integration.
+DOSSIER: NONE | PRIORITY: HIGH | CITY: Hollister, CA / Kemble, UK
+-------------------------------------------------------------------------------
+
+COMPANY 5.11 — AMPAIRE, INC.
+TO: Kevin Noertker, Founder & CEO — kevin.noertker@ampaire.com
+CC: Cory Combs, CTO — cory.combs@ampaire.com
+SUBJECT: Ampaire — Federal Advanced Manufacturing & Energy Partnership Inquiry — ACS-MC-2026-B511
+INTRO: Ampaire develops hybrid-electric propulsion systems for existing aircraft retrofits
+(Eco Caravan, Electric EEL). Hawthorne, CA HQ. Flight testing with regional airlines
+including Mokulele Airlines in Hawaii. ARPA-E and NASA partnerships. Seeking engagement
+on hybrid-electric aircraft certification and regional air mobility policy.
+DOSSIER: NONE | PRIORITY: MEDIUM | CITY: Hawthorne, CA
+-------------------------------------------------------------------------------
+
+COMPANY 5.12 — RELATIVITY SPACE
+TO: Tim Ellis, Co-Founder & CEO — tim.ellis@relativityspace.com
+CC: Josh Brost, CRO — josh.brost@relativityspace.com
+SUBJECT: Relativity Space — Federal Advanced Manufacturing & Energy Partnership Inquiry — ACS-MC-2026-B512
+INTRO: Relativity Space is developing the Terran R fully reusable 3D-printed rocket.
+Long Beach, CA HQ with Stargate 3D printing factory and Launch Complex 16 at Cape
+Canaveral. $1.2B+ raised. Seeking engagement on additive manufacturing for defense
+and aerospace with federal R&D collaboration and USSF launch contracts.
+DOSSIER: NONE | PRIORITY: MEDIUM | CITY: Long Beach, CA
+-------------------------------------------------------------------------------
+
+COMPANY 5.13 — ROCKET LAB USA, INC.
+TO: Peter Beck, Founder & CEO — peter.beck@rocketlabusa.com
+CC: Adam Spice, CFO — adam.spice@rocketlabusa.com
+SUBJECT: Rocket Lab — Federal Advanced Manufacturing & Energy Partnership Inquiry — ACS-MC-2026-B513
+INTRO: Rocket Lab provides dedicated small satellite launch (Electron) and developing the
+larger Neutron reusable rocket. Long Beach, CA HQ with Launch Complex 1 in New Zealand
+and LC-2 at Wallops Island, VA. Also a leading satellite component manufacturer (reaction
+wheels, star trackers, solar panels). Seeking engagement on US launch infrastructure
+and space industrial base expansion.
+DOSSIER: NONE | PRIORITY: HIGH | CITY: Long Beach, CA
+-------------------------------------------------------------------------------
+
+COMPANY 5.14 — REDWIRE CORPORATION
+TO: Peter Cannito, Chairman & CEO — peter.cannito@redwirespace.com
+CC: Jonathan Baliff, CFO — jonathan.baliff@redwirespace.com
+    Al Tadros, CTO — al.tadros@redwirespace.com
+SUBJECT: Redwire — Federal Advanced Manufacturing & Energy Partnership Inquiry — ACS-MC-2026-B514
+INTRO: Redwire provides critical space infrastructure: solar arrays (ROSA), on-orbit
+manufacturing, sensors, and avionics. Jacksonville, FL HQ. Key supplier for ISS,
+Artemis, and national security space programs. In-space manufacturing capabilities
+including 3D printing and bioprinting. Seeking engagement on space industrial base
+and DoD space resilience programs.
+DOSSIER: NONE | PRIORITY: MEDIUM | CITY: Jacksonville, FL
+-------------------------------------------------------------------------------
+
+COMPANY 5.15 — PLANET LABS PBC
+TO: Will Marshall, Co-Founder & CEO — will.marshall@planet.com
+CC: Ashley Johnson, CFO — ashley.johnson@planet.com
+    Robbie Schingler, Co-Founder & CSO — robbie.schingler@planet.com
+SUBJECT: Planet Labs — Federal Advanced Manufacturing & Energy Partnership Inquiry — ACS-MC-2026-B515
+INTRO: Planet Labs operates the world's largest Earth imaging satellite constellation
+(200+ Doves, SkySats, Pelican fleet). San Francisco, CA HQ. Daily global imagery
+for agriculture, defense, climate monitoring, and disaster response. NRO and NASA
+contracts. Seeking engagement on civil and defense geospatial intelligence programs
+and climate monitoring data partnerships.
+DOSSIER: NONE | PRIORITY: HIGH | CITY: San Francisco, CA
+-------------------------------------------------------------------------------
+
+===============================================================================
+BATCH SUMMARY
+  Template: A (dossier, Tesla only) + B (no-dossier, 14 companies)
+  Total Companies: 15
+  Priority Distribution: CRITICAL=1, HIGH=10, MEDIUM=4
+  Prepared By: ACS Congressional Liaison Office
+  Date: July 19, 2026
+  Next Review: July 26, 2026
+===============================================================================
