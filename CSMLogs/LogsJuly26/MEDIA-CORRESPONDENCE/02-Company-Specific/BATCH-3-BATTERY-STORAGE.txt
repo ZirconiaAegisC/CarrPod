@@ -1,0 +1,184 @@
+===============================================================================
+ACS CONGRESSIONAL LIAISON — MEDIA CORRESPONDENCE BATCH 3
+SECTOR: BATTERY STORAGE & ADVANCED BATTERY MATERIALS
+STATUS: DRAFT | DATE: July 19, 2026 | TEMPLATE: B (No-dossier outreach)
+===============================================================================
+
+COMPANY 3.1 — QUANTUMSCAPE CORPORATION
+TO: Siva Sivaram, President & CEO — siva.sivaram@quantumscape.com
+CC: Kevin Hettrich, CFO — kevin.hettrich@quantumscape.com
+    Tim Holme, Co-Founder & CTO — tim.holme@quantumscape.com
+SUBJECT: QuantumScape — Federal Advanced Manufacturing & Energy Partnership Inquiry — ACS-MC-2026-B301
+INTRO: QuantumScape is developing lithium-metal solid-state batteries for EVs with VW
+as anchor partner (PowerCo JV). San Jose, CA HQ. Anodeless ceramic separator design
+targeting 800 Wh/L energy density. Cobra separator production process. Seeking engagement
+on DOE battery manufacturing grants and defense battery applications.
+DOSSIER: NONE | PRIORITY: HIGH | CITY: San Jose, CA
+-------------------------------------------------------------------------------
+
+COMPANY 3.2 — FORM ENERGY, INC.
+TO: Mateo Jaramillo, Co-Founder & CEO — mateo@formenergy.com
+CC: Yet-Ming Chiang, Co-Founder & CSO — ychiang@formenergy.com
+    Jody Hunt, CFO — jody.hunt@formenergy.com
+SUBJECT: Form Energy — Federal Advanced Manufacturing & Energy Partnership Inquiry — ACS-MC-2026-B302
+INTRO: Form Energy is developing iron-air batteries for multi-day (100+ hour) grid storage.
+Factory 1 in Weirton, WV for high-volume production. Somerville, MA HQ. $800M+ raised
+including DOE and ARPA-E support. First commercial projects with Xcel Energy and Georgia
+Power. Seeking engagement on long-duration energy storage (LDES) tax credit policy.
+DOSSIER: NONE | PRIORITY: HIGH | CITY: Somerville, MA
+-------------------------------------------------------------------------------
+
+COMPANY 3.3 — EOS ENERGY ENTERPRISES
+TO: Joe Mastrangelo, CEO — joe.mastrangelo@eose.com
+CC: Randy Bricken, CFO — randy.bricken@eose.com
+    Francis Richey, CTO — francis.richey@eose.com
+SUBJECT: Eos Energy — Federal Advanced Manufacturing & Energy Partnership Inquiry — ACS-MC-2026-B303
+INTRO: Eos Energy produces zinc-hybrid cathode batteries (Znyth) for utility-scale storage.
+Edison, NJ HQ with Turtle Creek, PA manufacturing (Project AMAZE). DOE LPO conditional
+commitment of $398.6M for manufacturing expansion. Non-lithium, domestically sourced
+chemistry. Seeking engagement on LDES procurement mandates and domestic content credits.
+DOSSIER: NONE | PRIORITY: HIGH | CITY: Edison, NJ
+-------------------------------------------------------------------------------
+
+COMPANY 3.4 — ESS INC. (ESS Tech, Inc.)
+TO: Eric Dresselhuys, CEO — eric.dresselhuys@essinc.com
+CC: Craig Evans, Co-Founder & President — craig.evans@essinc.com
+SUBJECT: ESS Inc. — Federal Advanced Manufacturing & Energy Partnership Inquiry — ACS-MC-2026-B304
+INTRO: ESS Inc. manufactures iron flow batteries for LDES (4-12 hour duration). Wilsonville,
+OR HQ with manufacturing in the US. Iron, salt, and water electrolyte — fully recyclable
+and domestically sourced materials. Deployments with Sacramento Municipal Utility District
+and US Army Corps of Engineers. Seeking engagement on DoD energy resilience programs.
+DOSSIER: NONE | PRIORITY: HIGH | CITY: Wilsonville, OR
+-------------------------------------------------------------------------------
+
+COMPANY 3.5 — SOLID POWER, INC.
+TO: John Van Scoter, President & CEO — john.vanscoter@solidpowerbattery.com
+CC: Joshua Buettner-Garrett, CTO — joshua.buettner-garrett@solidpowerbattery.com
+SUBJECT: Solid Power — Federal Advanced Manufacturing & Energy Partnership Inquiry — ACS-MC-2026-B305
+INTRO: Solid Power develops sulfide-based solid-state batteries for EVs with partners
+BMW and Ford. Louisville, CO HQ. Silicon EV cell platform targeting higher energy density
+with lithium metal anode roadmap. Electrolyte production capability. Seeking engagement
+on DOE Vehicle Technologies Office programs and ARPA-E PROPEL-1K.
+DOSSIER: NONE | PRIORITY: HIGH | CITY: Louisville, CO
+-------------------------------------------------------------------------------
+
+COMPANY 3.6 — SES AI CORPORATION
+TO: Qichao Hu, Founder & CEO — qichao.hu@ses.ai
+CC: Jing Nealis, CFO — jing.nealis@ses.ai
+SUBJECT: SES AI — Federal Advanced Manufacturing & Energy Partnership Inquiry — ACS-MC-2026-B306
+INTRO: SES AI (formerly SolidEnergy Systems) develops lithium-metal batteries for EVs
+and urban air mobility. Woburn, MA HQ with Shanghai operations. Li-Metal anode with
+proprietary electrolyte for higher energy density (400+ Wh/kg). Partners include GM,
+Hyundai, and Honda. Seeking engagement on EV battery critical materials supply chain.
+DOSSIER: NONE | PRIORITY: MEDIUM | CITY: Woburn, MA
+-------------------------------------------------------------------------------
+
+COMPANY 3.7 — FACTORIAL ENERGY
+TO: Siyu Huang, Co-Founder & CEO — siyu.huang@factorialenergy.com
+CC: Alex Yu, Co-Founder & CTO — alex.yu@factorialenergy.com
+SUBJECT: Factorial — Federal Advanced Manufacturing & Energy Partnership Inquiry — ACS-MC-2026-B307
+INTRO: Factorial develops quasi-solid-state lithium-metal batteries using proprietary
+Factorial Electrolyte System Technology (FEST). Woburn, MA HQ. Partnerships with
+Mercedes-Benz, Stellantis, and Hyundai Motor Group. 100+ Ah cell demonstrated.
+Seeking engagement on US advanced battery manufacturing scale-up and workforce.
+DOSSIER: NONE | PRIORITY: MEDIUM | CITY: Woburn, MA
+-------------------------------------------------------------------------------
+
+COMPANY 3.8 — PROLOGIUM TECHNOLOGY
+TO: Vincent Yang, Founder & CEO — vincent.yang@prologium.com
+CC: Thomas Sheng, President Global Business — thomas.sheng@prologium.com
+SUBJECT: ProLogium — US-Taiwan Advanced Technology Partnership — ACS-MC-2026-B308
+INTRO: ProLogium is a Taiwan-based developer of lithium ceramic solid-state batteries.
+Building first overseas gigafactory (Gigafactory Dunkirk) in France for 48 GWh capacity.
+Taipei HQ. Oxide ceramic electrolyte technology achieving 380-480 Wh/kg. Seeking engagement
+on US market entry and potential manufacturing investment. Template D for international.
+DOSSIER: NONE | PRIORITY: HIGH | CITY: Taipei, Taiwan / Dunkirk, France
+-------------------------------------------------------------------------------
+
+COMPANY 3.9 — ENOVIX CORPORATION
+TO: Raj Talluri, President & CEO — raj.talluri@enovix.com
+CC: Farhan Ahmad, CFO — farhan.ahmad@enovix.com
+    Ashok Lahiri, CTO — ashok.lahiri@enovix.com
+SUBJECT: Enovix — Federal Advanced Manufacturing & Energy Partnership Inquiry — ACS-MC-2026-B309
+INTRO: Enovix manufactures 3D silicon lithium-ion batteries with 100% active silicon anode.
+Fremont, CA HQ with Fab1 in Fremont and Fab2 (Agility Line) in Malaysia. Targeting
+consumer electronics first, then EV market. Unique mechanical constraint architecture
+for cycle life. Seeking engagement on silicon anode supply chain and DOE battery programs.
+DOSSIER: NONE | PRIORITY: MEDIUM | CITY: Fremont, CA
+-------------------------------------------------------------------------------
+
+COMPANY 3.10 — SILA NANOTECHNOLOGIES, INC.
+TO: Gene Berdichevsky, Co-Founder & CEO — gene@silanano.com
+CC: Gleb Yushin, Co-Founder & CTO — gleb@silanano.com
+SUBJECT: Sila Nano — Federal Advanced Manufacturing & Energy Partnership Inquiry — ACS-MC-2026-B310
+INTRO: Sila Nano produces Titan Silicon anode material (silicon-based nanocomposite) to
+replace graphite in Li-ion batteries. Alameda, CA HQ with Moses Lake, WA manufacturing
+facility. Partners include Mercedes-Benz (EQG) and Panasonic. DOE grant recipient.
+Seeking engagement on IRA Section 48C advanced energy manufacturing credits.
+DOSSIER: NONE | PRIORITY: HIGH | CITY: Alameda, CA
+-------------------------------------------------------------------------------
+
+COMPANY 3.11 — GROUP14 TECHNOLOGIES
+TO: Rick Luebbe, Co-Founder & CEO — rick.luebbe@group14technologies.com
+CC: Rick Costantino, Co-Founder & CTO — rick.costantino@group14technologies.com
+SUBJECT: Group14 — Federal Advanced Manufacturing & Energy Partnership Inquiry — ACS-MC-2026-B311
+INTRO: Group14 manufactures SCC55 silicon-carbon anode material for Li-ion batteries.
+Woodinville, WA HQ with Moses Lake, WA factory (BAM-2) and upcoming South Korea JV
+with SK Materials. $614M DOE grant for US manufacturing. Porsche, ATL, and SK as
+customers/investors. Seeking engagement on DOE battery materials processing grants.
+DOSSIER: NONE | PRIORITY: HIGH | CITY: Woodinville, WA
+-------------------------------------------------------------------------------
+
+COMPANY 3.12 — ONED BATTERY SCIENCES
+TO: Vincent Pluvinage, CEO — vincent.pluvinage@onedbattery.com
+CC: Yimin Zhu, Co-Founder & CTO — yimin.zhu@onedbattery.com
+SUBJECT: OneD — Federal Advanced Manufacturing & Energy Partnership Inquiry — ACS-MC-2026-B312
+INTRO: OneD develops SINANODE silicon nanowire anode technology that integrates into
+existing graphite anode production lines. Palo Alto, CA HQ with pilot production in
+Moses Lake, WA. Partnered with GM on joint R&D. Modular factory concept for scaling.
+Seeking engagement on DOE MESC battery supply chain programs and graphite alternatives.
+DOSSIER: NONE | PRIORITY: MEDIUM | CITY: Palo Alto, CA
+-------------------------------------------------------------------------------
+
+COMPANY 3.13 — FREYR BATTERY
+TO: Tom Einar Jensen, Co-Founder & CEO — tom.einar.jensen@freyrbattery.com
+CC: Jeremy Bezdek, EVP Global BD — jeremy.bezdek@freyrbattery.com
+SUBJECT: Freyr — US-Norway Advanced Technology Partnership — ACS-MC-2026-B313
+INTRO: Freyr is developing semi-solid lithium-iron phosphate (LFP) battery manufacturing
+based on 24M Technologies platform. Luxembourg HQ with Norway operations. Coweta County,
+GA gigafactory (Giga America) planned with IRA benefits. Seeking engagement on US LFP
+supply chain and defense battery applications. Template D for international.
+DOSSIER: NONE | PRIORITY: HIGH | CITY: Luxembourg / Newnan, GA
+-------------------------------------------------------------------------------
+
+COMPANY 3.14 — REDFLOW LIMITED
+TO: Tim Harris, CEO & Managing Director — tim.harris@redflow.com
+CC: Richard Aird, CTO — richard.aird@redflow.com
+SUBJECT: Redflow — US-Australia Advanced Technology Partnership — ACS-MC-2026-B314
+INTRO: Redflow manufactures zinc-bromine flow batteries for commercial, industrial, and
+utility applications. Brisbane, Australia HQ with US deployments including California
+Energy Commission projects. Non-flammable, 100% depth of discharge, recyclable.
+Seeking engagement on US LDES market and defense energy storage programs.
+DOSSIER: NONE | PRIORITY: MEDIUM | CITY: Brisbane, Australia
+-------------------------------------------------------------------------------
+
+COMPANY 3.15 — E-ZINC
+TO: James Larsen, CEO — james.larsen@ezinc.ca
+CC: Simon Fan, CTO — simon.fan@ezinc.ca
+SUBJECT: e-Zinc — US-Canada Advanced Technology Partnership — ACS-MC-2026-B315
+INTRO: e-Zinc is developing zinc-air long-duration energy storage with 24-72+ hour
+duration and no degradation over cycling. Toronto, ON HQ. Targeting commercial and
+industrial behind-the-meter applications. Pilot projects in Ontario and California.
+Seeking engagement on LDES demonstrations and cross-border energy resilience.
+DOSSIER: NONE | PRIORITY: MEDIUM | CITY: Toronto, ON, Canada
+-------------------------------------------------------------------------------
+
+===============================================================================
+BATCH SUMMARY
+  Template: B (no-dossier outreach)
+  Total Companies: 15
+  Priority Distribution: HIGH=9, MEDIUM=6
+  Prepared By: ACS Congressional Liaison Office
+  Date: July 19, 2026
+  Next Review: July 26, 2026
+===============================================================================

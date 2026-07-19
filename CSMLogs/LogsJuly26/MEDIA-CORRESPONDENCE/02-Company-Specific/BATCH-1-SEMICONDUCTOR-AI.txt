@@ -1,0 +1,184 @@
+===============================================================================
+ACS CONGRESSIONAL LIAISON — MEDIA CORRESPONDENCE BATCH 1
+SECTOR: SEMICONDUCTOR & ARTIFICIAL INTELLIGENCE
+STATUS: DRAFT | DATE: July 19, 2026 | TEMPLATE: A (Dossier companies)
+===============================================================================
+
+COMPANY 1.1 — NVIDIA CORPORATION
+TO: Jensen Huang, Founder & CEO — jensen.huang@nvidia.com
+CC: Colette Kress, EVP & CFO — colette.kress@nvidia.com
+    Ian Buck, VP Accelerated Computing — ian.buck@nvidia.com
+SUBJECT: NVIDIA — ACS Research Partnership on GPU-Accelerated AI Infrastructure — ACS-MC-2026-B101
+INTRO: ACS dossier ACS-DOS-2026-0001 details NVIDIA's H200/B200 architecture dominance,
+DGX Cloud expansion, and the company's pivotal role in US AI infrastructure. Santa Clara
+headquarters. Seeking dialogue on CHIPS Act alignment and AI data center energy policy.
+DOSSIER: ACS-DOS-2026-0001 | PRIORITY: CRITICAL | CITY: Santa Clara, CA
+-------------------------------------------------------------------------------
+
+COMPANY 1.2 — TAIWAN SEMICONDUCTOR MANUFACTURING COMPANY (TSMC)
+TO: C.C. Wei, Chairman & CEO — cc.wei@tsmc.com
+CC: Y.J. Mii, EVP & Co-COO — yj.mii@tsmc.com
+    Lora Ho, SVP Finance — lora.ho@tsmc.com
+SUBJECT: TSMC — ACS Research Partnership on Advanced Node Semiconductor Fabrication — ACS-MC-2026-B102
+INTRO: ACS dossier ACS-DOS-2026-0002 covers TSMC's Arizona fabs (Fab 21 phase 1-3),
+N3/N2 node roadmaps, and CHIPS Act funding of $6.6B. Hsinchu HQ with Phoenix operations.
+Critical US national security supply chain partner. Template D for international angle.
+DOSSIER: ACS-DOS-2026-0002 | PRIORITY: CRITICAL | CITY: Hsinchu, Taiwan / Phoenix, AZ
+-------------------------------------------------------------------------------
+
+COMPANY 1.3 — INTEL CORPORATION
+TO: Pat Gelsinger, CEO — pat.gelsinger@intel.com
+CC: Keyvan Esfarjani, EVP Manufacturing — keyvan.esfarjani@intel.com
+    Ann Kelleher, EVP Technology Development — ann.kelleher@intel.com
+SUBJECT: Intel — ACS Research Partnership on US Foundry Expansion & 18A Process — ACS-MC-2026-B103
+INTRO: ACS dossier ACS-DOS-2026-0003 covers Intel's IDM 2.0 strategy, Ohio mega-site,
+$8.5B CHIPS Act award, and 18A process technology. Santa Clara HQ. Foundry services for
+US defense and commercial sectors. Seeking alignment with Defense Production Act Title III.
+DOSSIER: ACS-DOS-2026-0003 | PRIORITY: CRITICAL | CITY: Santa Clara, CA
+-------------------------------------------------------------------------------
+
+COMPANY 1.4 — ADVANCED MICRO DEVICES (AMD)
+TO: Lisa Su, Chair & CEO — lisa.su@amd.com
+CC: Mark Papermaster, EVP & CTO — mark.papermaster@amd.com
+    Victor Peng, President AECG — victor.peng@amd.com
+SUBJECT: AMD — ACS Research Partnership on AI Inference & Data Center CPUs — ACS-MC-2026-B104
+INTRO: ACS dossier ACS-DOS-2026-0004 details AMD's MI300X accelerator, EPYC server CPUs,
+and competitive positioning vs. NVIDIA in AI training/inference. Santa Clara HQ. Key
+supplier for DOE exascale computing programs at Oak Ridge and Lawrence Livermore.
+DOSSIER: ACS-DOS-2026-0004 | PRIORITY: HIGH | CITY: Santa Clara, CA
+-------------------------------------------------------------------------------
+
+COMPANY 1.5 — BROADCOM INC.
+TO: Hock Tan, President & CEO — hock.tan@broadcom.com
+CC: Charlie Kawwas, President Semiconductor — charlie.kawwas@broadcom.com
+    Kirsten Spears, CFO — kirsten.spears@broadcom.com
+SUBJECT: Broadcom — ACS Research Partnership on Custom ASICs & Networking Silicon — ACS-MC-2026-B105
+INTRO: ACS dossier ACS-DOS-2026-0005 covers Broadcom's custom AI chip programs (TPU for
+Google), Tomahawk/Jericho switch silicon, and VMware acquisition for enterprise software.
+Palo Alto HQ. Critical networking infrastructure supplier. Seeking engagement on AI
+supply chain resilience and custom silicon for defense applications.
+DOSSIER: ACS-DOS-2026-0005 | PRIORITY: HIGH | CITY: Palo Alto, CA
+-------------------------------------------------------------------------------
+
+COMPANY 1.6 — QUALCOMM INCORPORATED
+TO: Cristiano Amon, President & CEO — cristiano.amon@qualcomm.com
+CC: Akash Palkhiwala, CFO — akash.palkhiwala@qualcomm.com
+    Durga Malladi, SVP Technology — durga.malladi@qualcomm.com
+SUBJECT: Qualcomm — ACS Research Partnership on Edge AI & 5G/6G Modem Technology — ACS-MC-2026-B106
+INTRO: ACS dossier ACS-DOS-2026-0006 details Qualcomm's Snapdragon X Elite for on-device AI,
+5G Advanced modem leadership, and automotive chip platform. San Diego HQ. Seeking dialogue
+on edge AI for defense communications and spectrum policy.
+DOSSIER: ACS-DOS-2026-0006 | PRIORITY: HIGH | CITY: San Diego, CA
+-------------------------------------------------------------------------------
+
+COMPANY 1.7 — GOOGLE LLC (ALPHABET INC.)
+TO: Sundar Pichai, CEO — sundar@google.com
+CC: Thomas Kurian, CEO Google Cloud — tkurian@google.com
+    Demis Hassabis, CEO Google DeepMind — demishassabis@google.com
+SUBJECT: Google — ACS Research Partnership on AI Infrastructure & TPU Architecture — ACS-MC-2026-B107
+INTRO: ACS dossier ACS-DOS-2026-0007 covers Google's TPU v5p deployment, Gemini model
+family, DeepMind research capabilities, and data center footprint across US. Mountain View
+HQ. Seeking engagement on AI safety standards, energy infrastructure for compute, and
+public-private AI research partnerships.
+DOSSIER: ACS-DOS-2026-0007 | PRIORITY: HIGH | CITY: Mountain View, CA
+-------------------------------------------------------------------------------
+
+COMPANY 1.8 — MICROSOFT CORPORATION
+TO: Satya Nadella, Chairman & CEO — satyan@microsoft.com
+CC: Scott Guthrie, EVP Cloud & AI — scottgu@microsoft.com
+    Kevin Scott, CTO — kevinscott@microsoft.com
+SUBJECT: Microsoft — ACS Research Partnership on Azure AI & OpenAI Infrastructure — ACS-MC-2026-B108
+INTRO: ACS dossier ACS-DOS-2026-0008 covers Microsoft's Azure AI infrastructure expansion,
+OpenAI partnership, Maia custom AI chips, and data center energy commitments. Redmond HQ.
+Seeking engagement on AI data center siting, power infrastructure, and federal AI procurement.
+DOSSIER: ACS-DOS-2026-0008 | PRIORITY: HIGH | CITY: Redmond, WA
+-------------------------------------------------------------------------------
+
+COMPANY 1.9 — AMAZON WEB SERVICES (AMAZON.COM, INC.)
+TO: Matt Garman, CEO AWS — garman@amazon.com
+CC: Werner Vogels, CTO Amazon — werner@amazon.com
+    David Brown, VP Compute — dbrown@amazon.com
+SUBJECT: AWS — ACS Research Partnership on AI Cloud Infrastructure & Trainium Chips — ACS-MC-2026-B109
+INTRO: ACS dossier ACS-DOS-2026-0009 details AWS's Trainium2/Inferentia custom AI chips,
+Project Rainier (Anthropic cluster), and global data center footprint. Seattle HQ.
+Seeking dialogue on cloud AI infrastructure security standards and energy procurement.
+DOSSIER: ACS-DOS-2026-0009 | PRIORITY: HIGH | CITY: Seattle, WA
+-------------------------------------------------------------------------------
+
+COMPANY 1.10 — APPLE INC.
+TO: Tim Cook, CEO — tcook@apple.com
+CC: Johny Srouji, SVP Hardware Technologies — jsrouji@apple.com
+    John Giannandrea, SVP ML & AI Strategy — johng@apple.com
+SUBJECT: Apple — ACS Research Partnership on On-Device AI & Silicon Architecture — ACS-MC-2026-B110
+INTRO: ACS dossier ACS-DOS-2026-0010 covers Apple's M-series and A-series silicon, on-device
+AI capabilities (Apple Intelligence), and domestic manufacturing partnerships. Cupertino HQ.
+Seeking engagement on edge AI standardization, privacy-preserving AI, and semiconductor
+manufacturing supply chain.
+DOSSIER: ACS-DOS-2026-0010 | PRIORITY: HIGH | CITY: Cupertino, CA
+-------------------------------------------------------------------------------
+
+COMPANY 1.11 — IBM CORPORATION
+TO: Arvind Krishna, Chairman & CEO — arvind.krishna@ibm.com
+CC: Dario Gil, SVP & Director of Research — dario.gil@ibm.com
+    Rob Thomas, SVP Software — robert.thomas@ibm.com
+SUBJECT: IBM — ACS Research Partnership on Quantum Computing & Enterprise AI — ACS-MC-2026-B111
+INTRO: ACS dossier ACS-DOS-2026-0011 covers IBM's quantum computing roadmap (1,000+ qubit),
+watsonx AI platform, and semiconductor research at Albany NanoTech Complex. Armonk HQ.
+Seeking engagement on quantum computing for national security, AI governance frameworks,
+and US semiconductor R&D ecosystem.
+DOSSIER: ACS-DOS-2026-0011 | PRIORITY: HIGH | CITY: Armonk, NY
+-------------------------------------------------------------------------------
+
+COMPANY 1.12 — CISCO SYSTEMS, INC.
+TO: Chuck Robbins, Chair & CEO — chuck.robbins@cisco.com
+CC: Jeetu Patel, EVP Security & Collaboration — jeetu.patel@cisco.com
+    Liz Centoni, EVP & Chief Strategy Officer — liz.centoni@cisco.com
+SUBJECT: Cisco — ACS Research Partnership on AI Networking & Silicon One Architecture — ACS-MC-2026-B112
+INTRO: ACS dossier ACS-DOS-2026-0012 covers Cisco's Silicon One networking chips, AI fabric
+solutions for data centers, and acquisition of Splunk for AI-driven observability. San Jose
+HQ. Seeking engagement on AI network infrastructure resilience and federal cybersecurity.
+DOSSIER: ACS-DOS-2026-0012 | PRIORITY: MEDIUM | CITY: San Jose, CA
+-------------------------------------------------------------------------------
+
+COMPANY 1.13 — MICRON TECHNOLOGY, INC.
+TO: Sanjay Mehrotra, President & CEO — sanjay.mehrotra@micron.com
+CC: Sumit Sadana, EVP & Chief Business Officer — ssadana@micron.com
+    Scott DeBoer, EVP Technology — scott.deboer@micron.com
+SUBJECT: Micron — ACS Research Partnership on HBM Memory & US DRAM Manufacturing — ACS-MC-2026-B113
+INTRO: ACS dossier ACS-DOS-2026-0013 covers Micron's HBM3E memory for AI, Boise and Clay NY
+fab expansions, and $6.1B CHIPS Act funding. Boise HQ. Critical supplier for AI memory
+hierarchy. Seeking engagement on memory technology for defense and HPC applications.
+DOSSIER: ACS-DOS-2026-0013 | PRIORITY: HIGH | CITY: Boise, ID
+-------------------------------------------------------------------------------
+
+COMPANY 1.14 — MARVELL TECHNOLOGY, INC.
+TO: Matt Murphy, President & CEO — matt.murphy@marvell.com
+CC: Chris Koopmans, COO — ckoopmans@marvell.com
+    Loi Nguyen, EVP Optical — loi.nguyen@marvell.com
+SUBJECT: Marvell — ACS Research Partnership on Data Infrastructure Silicon & Optical DSPs — ACS-MC-2026-B114
+INTRO: ACS dossier ACS-DOS-2026-0014 covers Marvell's custom AI compute silicon, PAM4 DSP
+leadership for optical interconnects, and data infrastructure platform. Santa Clara HQ.
+Seeking engagement on optical networking for AI data centers and custom silicon programs.
+DOSSIER: ACS-DOS-2026-0014 | PRIORITY: MEDIUM | CITY: Santa Clara, CA
+-------------------------------------------------------------------------------
+
+COMPANY 1.15 — SYNOPSYS, INC.
+TO: Sassine Ghazi, President & CEO — sassine.ghazi@synopsys.com
+CC: Shekhar Kapoor, SVP EDA — shekhar.kapoor@synopsys.com
+    Sriram Sitaraman, CTO — sriram.sitaraman@synopsys.com
+SUBJECT: Synopsys — ACS Research Partnership on EDA & AI-Driven Chip Design — ACS-MC-2026-B115
+INTRO: ACS dossier ACS-DOS-2026-0015 covers Synopsys's AI-driven EDA tools (Synopsys.ai),
+3D-IC design platforms, and role in enabling US semiconductor design ecosystem. Sunnyvale HQ.
+Seeking engagement on chip design infrastructure, workforce development, and export controls.
+DOSSIER: ACS-DOS-2026-0015 | PRIORITY: MEDIUM | CITY: Sunnyvale, CA
+-------------------------------------------------------------------------------
+
+===============================================================================
+BATCH SUMMARY
+  Template: A (companies with existing ACS dossiers)
+  Total Companies: 15
+  Priority Distribution: CRITICAL=3, HIGH=9, MEDIUM=3
+  Prepared By: ACS Congressional Liaison Office
+  Date: July 19, 2026
+  Next Review: July 26, 2026
+===============================================================================
