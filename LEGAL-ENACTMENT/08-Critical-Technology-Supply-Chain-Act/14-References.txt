@@ -1,0 +1,139 @@
+================================================================================
+                    TITLE XII — REFERENCES AND AUTHORITIES
+                    CTSCRA OF 2026
+================================================================================
+
+SECTION 1201. STATUTORY REFERENCES.
+
+  This Act draws upon and amends, as applicable, the following Acts:
+
+    (1) CHIPS and Science Act of 2022 (Public Law 117-167, Div. A),
+        $52.7B semiconductor manufacturing incentive and R&D framework.
+
+    (2) National Defense Authorization Act, FY 2021 (Public Law 116-283,
+        Title XCIX), initial authorization for CHIPS incentives.
+
+    (3) Energy Act of 2020 (Public Law 116-260, Div. Z, §7002),
+        critical minerals definition and DOE research program.
+
+    (4) Defense Production Act of 1950 (50 U.S.C. 4501 et seq.), Title
+        III domestic industrial base authorities, as amended.
+
+    (5) Export Control Reform Act of 2018 (50 U.S.C. 4801 et seq.),
+        statutory authority for EAR administered by BIS.
+
+    (6) Foreign Investment Risk Review Modernization Act of 2018
+        (FIRRMA), CFIUS jurisdiction and authority expansion.
+
+    (7) Inflation Reduction Act of 2022 (Public Law 117-169), advanced
+        manufacturing tax credits and critical mineral provisions.
+
+    (8) Infrastructure Investment and Jobs Act of 2021 (Public Law
+        117-58), grid modernization and transmission provisions.
+
+    (9) Atomic Energy Act of 1954 (42 U.S.C. 2011 et seq.), nuclear
+        reactor and SMR licensing framework.
+
+    (10) Immigration and Nationality Act (8 U.S.C. 1101 et seq.),
+         H-1B visa provisions under §214(g).
+
+SECTION 1202. AGENCY AND INDUSTRY REPORTS.
+
+  This Act references the following foundational reports:
+
+    (1) SIA, "2025 State of the U.S. Semiconductor Industry," March
+        2025, providing manufacturing capacity and employment data.
+
+    (2) SIA and BCG, "Emerging Resilience in the Semiconductor Supply
+        Chain," April 2024, analyzing CHIPS Act impact and remaining
+        vulnerabilities.
+
+    (3) BIS, "Assessment of the Critical Supply Chains Supporting the
+        U.S. ICT Industry," February 2024.
+
+    (4) NIST, "Strategic Plan for the National Semiconductor Technology
+        Center," 2024, providing R&D roadmap.
+
+    (5) CHIPS Program Office, "Notice of Funding Opportunity: Commercial
+        Fabrication Facilities," 88 Fed. Reg. 12566 (Feb. 28, 2023).
+
+    (6) CHIPS Program Office, "Vision for Success," February 2024,
+        articulating 20% leading-edge logic target by 2030.
+
+    (7) DOE, "Critical Materials Assessment," 2023 and 2025 eds.,
+        identifying rare earths, gallium, germanium, graphite as
+        high supply risk materials.
+
+    (8) DOE, "America's Strategy to Secure the Supply Chain for a Robust
+        Clean Energy Transition," February 2023 (EO 14017 response).
+
+    (9) DoD, "Annual Report on Military and Security Developments
+        Involving the PRC," 2024 and 2025 editions.
+
+    (10) ODNI, "Annual Threat Assessment," 2025, documenting adversarial
+         technology acquisition efforts.
+
+    (11) NSCAI, "Final Report," March 2021, recommending national AI
+         compute infrastructure.
+
+    (12) PCAST, "Revitalizing the U.S. Semiconductor Ecosystem,"
+         September 2024.
+
+    (13) GAO, "Semiconductor Supply Chain: Policy Options to Improve
+         Resilience," GAO-24-106876, April 2024.
+
+SECTION 1203. INDUSTRY INVESTMENT ANNOUNCEMENTS.
+
+  This Act references the following private-sector commitments that
+  are contingent upon, or accelerated by, Federal support:
+
+    (1) TSMC Arizona Corp., $65B for three fabs (3nm/4nm) in Phoenix,
+        AZ, announced December 2022 and expanded April 2024.
+
+    (2) Intel Corp., $20B+ Ohio mega-fab campus (New Albany), announced
+        January 2022, with potential for eight fabs exceeding $100B.
+
+    (3) Samsung Electronics, ~$40B for fabs in Taylor and Austin, TX,
+        announced November 2021 and updated 2024.
+
+    (4) Micron Technology, up to $100B for memory fabs in Boise, ID and
+        Clay, NY, announced September 2022-October 2023.
+
+    (5) MP Materials Corp, Mountain Pass, CA, rare earth mining,
+        separation, and magnet manufacturing (DPA Title III).
+
+    (6) Lynas Rare Earths Ltd., Seadrift, TX, heavy rare earth
+        separation facility ($258M DoD funding).
+
+    (7) SK Hynix, West Lafayette, IN, advanced packaging and HBM
+        facility (~$3.9B, announced 2024).
+
+SECTION 1204. EXPORT CONTROL REGULATIONS AND EXECUTIVE ORDERS.
+
+    (1) BIS, "Additional Export Controls: Advanced Computing and
+        Semiconductor Manufacturing Items," 87 Fed. Reg. 62186
+        (Oct. 13, 2022) (IFR).
+
+    (2) BIS, "Export Controls on Semiconductor Manufacturing Items,"
+        88 Fed. Reg. 73444 (Oct. 25, 2023) (IFR).
+
+    (3) BIS, "Additional Export Controls: Updates and Corrections,"
+        89 Fed. Reg. 23876 (Apr. 4, 2024) (IFR).
+
+    (4) BIS, "Entity List," 15 C.F.R. Part 744, Supp. No. 4, as
+        amended through 2025.
+
+    (5) Treasury, "U.S. Investments in Certain National Security
+        Technologies and Products in Countries of Concern," 89 Fed.
+        Reg. 90462 (Nov. 15, 2024) (outbound investment final rule).
+
+    (6) Executive Order 14105 (Aug. 9, 2023), addressing U.S. outbound
+        investments in countries of concern.
+
+    (7) Executive Order 14083 (Aug. 25, 2022), implementation of the
+        CHIPS Act of 2022.
+
+    (8) Executive Order 13873 (May 15, 2019), securing the ICTS supply
+        chain.
+
+    (9) Executive Order 14017 (Feb. 24, 2021), America's supply chains.

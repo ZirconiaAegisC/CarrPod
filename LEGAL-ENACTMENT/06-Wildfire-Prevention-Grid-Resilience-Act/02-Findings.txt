@@ -1,0 +1,151 @@
+================================================================================
+119TH CONGRESS — 2ND SESSION                                     H.R. _______
+================================================================================
+
+                       SECTION 2. FINDINGS AND PURPOSES
+
+================================================================================
+
+(a) FINDINGS. — The Congress finds the following:
+
+    (1) WILDFIRE CRISIS SCOPE. — Wildfires in the United States cause
+    between $20 billion and $50 billion in annual economic damages,
+    encompassing:
+        (A) Direct fire suppression costs exceeding $4 billion annually
+            for federal agencies alone;
+        (B) Insured property losses averaging $10 billion to $15 billion
+            per year since 2017;
+        (C) Uninsured and indirect losses, including business
+            interruption, health impacts from smoke exposure affecting
+            an estimated 30 million Americans annually, watershed
+            contamination, and ecosystem service degradation, estimated
+            at $10 billion to $20 billion annually;
+        (D) Carbon emissions from wildfire combustion exceeding 100
+            million metric tons of CO2 equivalent in extreme fire years.
+
+    (2) UTILITY INFRASTRUCTURE AS IGNITION SOURCE. — Electric utility
+    infrastructure has been identified as the ignition source for
+    multiple catastrophic wildfires. In California, seven of the twenty
+    most destructive wildfires since 1991 involved utility equipment.
+    The 2018 Camp Fire, ignited by Pacific Gas and Electric Company
+    (PG&E) transmission equipment, resulted in 85 fatalities, the
+    destruction of 18,804 structures, and total damages estimated at
+    $16.5 billion. PG&E's resulting bankruptcy—the largest utility
+    bankruptcy in United States history—demonstrates the existential
+    financial risk that wildfire liability poses to investor-owned
+    utilities and, by extension, to ratepayers and energy markets.
+
+    (3) PG&E TRANSFORMATION AS NATIONAL MODEL. — Since emerging from
+    bankruptcy in 2020, PG&E has executed the most comprehensive
+    wildfire prevention program of any electric utility in North
+    America. Operating with $24.9 billion in operating revenue (FY2025)
+    and executing a $73 billion five-year capital investment plan,
+    PG&E has demonstrated the following measurable outcomes:
+        (A) 1,241 miles of distribution and transmission lines
+            undergrounded in high-fire-threat districts since 2021;
+        (B) Three consecutive calendar years (2023, 2024, 2025) with
+            zero major utility-caused wildfires, a result unprecedented
+            in the company's history;
+        (C) Deployment of 2,000 Downed Conductor Detection (DCD) devices
+            on high-fire-risk circuits, which have prevented 45
+            confirmed ignitions through automatic circuit de-
+            energization upon detection of a downed or faulted
+            conductor;
+        (D) Installation and operation of 1,627 weather stations and
+            706 high-definition cameras equipped with automated
+            detection capabilities, providing real-time situational
+            awareness across the service territory;
+        (E) Public Safety Power Shutoff (PSPS) program achieving 95%
+            risk reduction compared to pre-2020 operational protocols;
+        (F) Enhanced Powerline Safety Settings (EPSS) achieving 69%
+            reduction in ignition frequency on enabled circuits.
+
+    (4) CALIFORNIA AND PACIFIC NORTHWEST RISK CONCENTRATION. — The
+    Western United States, particularly California, Oregon, and
+    Washington, contains the nation's highest concentration of
+    wildfire-vulnerable electric infrastructure. California's High Fire
+    Threat District (HFTD), as designated by the California Public
+    Utilities Commission (CPUC), encompasses approximately 44% of the
+    state's land area and includes 25.5 million acres of wildland-
+    urban interface. Oregon and Washington have experienced a five-fold
+    increase in large fire frequency since 1990, with electric utility
+    infrastructure implicated in multiple catastrophic events, including
+    the 2020 Labor Day fires that burned over 1 million acres across
+    both states.
+
+    (5) GRID INFRASTRUCTURE AGING AND CLIMATE EXPOSURE. — The average
+    age of distribution infrastructure in high-fire-risk regions exceeds
+    40 years, with significant portions dating to the post-World War II
+    era. Climate change has extended the fire season by approximately
+    78 days since 1970, with mean temperatures in the Western United
+    States increasing by 2.0 degrees Fahrenheit over the same period.
+    The compounding effect of aging infrastructure, increased
+    temperatures, prolonged drought conditions, and expanding wildland-
+    urban interface development has created a systemic risk that
+    individual utility ratepayers cannot reasonably be expected to
+    bear through electricity rates alone.
+
+    (6) DATA CENTER LOAD GROWTH AND GRID STRAIN. — The United States is
+    experiencing unprecedented growth in data center electricity demand,
+    with a projected 4.6 GW pipeline of new data center load seeking
+    interconnection in high-fire-risk regions of the Western United
+    States. This represents approximately $500 billion in capital
+    investment at risk. Ensuring wildfire-resilient electric service to
+    critical digital infrastructure is an imperative of national
+    economic security and technological competitiveness.
+
+    (7) INADEQUACY OF STATE-LEVEL RESPONSES. — While California, through
+    the CPUC's wildfire mitigation proceedings (including the Wildfire
+    Mitigation Plan process established by SB 901 of 2018), has created
+    the most advanced state-level wildfire regulatory framework in the
+    nation, the scope and cost of comprehensive wildfire prevention
+    infrastructure exceeds the financial capacity of individual states
+    and their ratepayers. A federal partnership is essential to achieve
+    wildfire prevention at the scale and pace required by the escalating
+    risk environment.
+
+    (8) TECHNOLOGICAL READINESS. — Technologies essential to
+    comprehensive wildfire prevention—including underground cable
+    systems rated for high-fire environments, DCD devices capable of
+    sub-cycle fault detection and automatic circuit interruption,
+    weather stations with integrated AI detection capability, HD camera
+    networks with automated smoke and flame recognition, composite
+    utility poles with fire resistance ratings exceeding 60 minutes,
+    covered conductor systems with arc-suppression capability, grid-
+    forming battery inverters, and utility-scale lithium-iron-phosphate
+    storage systems—have reached commercial maturity and are currently
+    deployed at scale within PG&E and other leading utilities. The
+    technological foundation for the programs authorized by this Act
+    is established and proven.
+
+(b) PURPOSES. — The purposes of this Act are:
+
+    (1) To establish a coordinated federal-state-utility partnership
+        for comprehensive wildfire prevention and grid resilience.
+
+    (2) To provide federal cost-sharing for the undergrounding of
+        10,000 miles of high-fire-threat electric lines.
+
+    (3) To mandate and fund the deployment of DCD technology on all
+        high-fire-threat distribution and sub-transmission circuits.
+
+    (4) To create a national network of weather stations and HD
+        cameras providing real-time wildfire situational awareness.
+
+    (5) To establish national standards for Public Safety Power
+        Shutoffs with protections for medically vulnerable populations.
+
+    (6) To fund community microgrids, utility-scale storage, and
+        solar-plus-storage systems for critical facility resilience.
+
+    (7) To enhance vegetation management through advanced technology
+        and expanded workforce training.
+
+    (8) To harden transmission infrastructure with fire-resistant
+        materials and structural upgrades.
+
+    (9) To ensure grid reliability for data centers and critical
+        digital infrastructure in wildfire-prone regions.
+
+    (10) To create approximately 500,000 jobs and avoid an estimated
+         $300 billion in wildfire-related costs over 20 years.

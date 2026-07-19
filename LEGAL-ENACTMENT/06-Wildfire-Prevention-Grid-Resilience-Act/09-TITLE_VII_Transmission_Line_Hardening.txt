@@ -1,0 +1,153 @@
+================================================================================
+119TH CONGRESS — 2ND SESSION                                     H.R. _______
+================================================================================
+
+               TITLE VII — TRANSMISSION LINE HARDENING
+
+================================================================================
+
+SEC. 701. STRUCTURAL UPGRADE STANDARDS.
+
+    (a) MINIMUM STANDARDS. — Within 365 days of enactment, the
+    Secretary of Energy, in consultation with the American Society of
+    Civil Engineers (ASCE) and the IEEE Power and Energy Society, shall
+    promulgate enhanced structural standards for electric transmission
+    and distribution lines in High Fire Threat Districts. Such standards
+    shall require:
+
+        (1) WIND LOADING. — Structures shall be designed to withstand
+            the 99th percentile three-second gust wind speed for the
+            location, as determined by ASCE 7-22 or successor standard,
+            with a minimum design wind speed of 90 mph in all High
+            Fire Threat Districts.
+
+        (2) FIRE RESISTANCE. — Poles and towers shall maintain
+            structural integrity for not less than 60 minutes when
+            exposed to a surface fire with flame lengths of up to 8
+            feet, equivalent to the Fire Resistant Design for Utility
+            Poles (FIRE-RES-UP) standard.
+
+        (3) CONDUCTOR ATTACHMENT. — Insulators, crossarms, and
+            conductor attachment hardware shall be designed with a
+            safety factor of not less than 2.5 under maximum
+            combined wind, ice, and thermal loading conditions.
+
+        (4) GUYING AND ANCHORING. — Guyed structures in High Fire
+            Threat Districts shall utilize non-conductive guy
+            insulators rated for not less than 50 kV impulse
+            withstand and anchors designed for the site-specific
+            soil conditions.
+
+    (b) SEISMIC CONSIDERATIONS. — Transmission structures in High Fire
+    Threat Districts located in Seismic Design Categories D, E, or F
+    shall be designed to ASCE 7-22 seismic provisions, accounting for
+    the potential for cascading failures initiated by seismic events
+    that could produce wildfire ignitions.
+
+SEC. 702. COMPOSITE AND FIRE-RESISTANT MATERIALS.
+
+    (a) COMPOSITE POLE STANDARDS. — The Secretary shall establish a
+    program to accelerate the deployment of composite utility poles
+    in High Fire Threat Districts. Composite poles deployed under this
+    Title shall:
+
+        (1) Achieve a fire-resistance rating of not less than 60
+            minutes when tested in accordance with ASTM E119 or an
+            equivalent fire-endurance test standard;
+
+        (2) Maintain not less than 85 percent of original bending
+            strength after exposure to a standardized wildfire
+            simulation protocol;
+
+        (3) Exhibit Class A flame-spread index when tested in
+            accordance with ASTM E84;
+
+        (4) Have a design service life of not less than 60 years
+            in the intended deployment environment.
+
+    (b) COST-SHARE FOR COMPOSITE POLES. — Utilities replacing wood
+    poles with composite poles in High Fire Threat Districts shall
+    be eligible for a federal cost-share of 50 percent of the
+    incremental cost of composite poles relative to equivalent-
+    class wood poles.
+
+    (c) FIRE-RESISTANT COATINGS. — The Secretary shall fund research,
+    development, testing, and field validation of fire-resistant
+    coatings and wraps for application to existing wood poles in
+    High Fire Threat Districts, with the objective of achieving fire-
+    resistance performance equivalent to composite poles at a cost
+    not exceeding 30 percent of the cost of pole replacement.
+
+SEC. 703. COVERED CONDUCTOR DEPLOYMENT.
+
+    (a) DEFINITION. — For purposes of this Title, "covered conductor"
+    means an overhead conductor with a covering of cross-linked
+    polyethylene, ethylene propylene rubber, or equivalent polymeric
+    material that provides:
+        (1) Protection against phase-to-phase and phase-to-ground
+            faults from incidental conductor contact with vegetation,
+            wildlife, or wind-blown debris;
+        (2) Electrical tracking resistance sufficient to prevent
+            arc initiation under contaminated surface conditions;
+        (3) Ultraviolet and thermal degradation resistance for not
+            less than 40 years of service life.
+
+    (b) DEPLOYMENT REQUIREMENT. — Not later than December 31, 2032,
+    every electric utility operating distribution circuits within
+    High Fire Threat Districts shall deploy covered conductor on not
+    less than 75 percent of overhead circuit miles within such
+    districts, with priority given to circuits:
+        (1) With the highest historical ignition frequency;
+        (2) Traversing the most severe terrain for vegetation
+            management access;
+        (3) Serving critical facilities.
+
+    (c) COST-SHARE. — Utilities shall be eligible for a federal
+    cost-share of 50 percent of the cost of covered conductor
+    deployment, including associated hardware, installation labor,
+    and project management.
+
+SEC. 704. INSPECTION AND MAINTENANCE REQUIREMENTS.
+
+    (a) ENHANCED INSPECTION CYCLE. — Utilities shall conduct detailed
+    inspections of all transmission and distribution structures in
+    High Fire Threat Districts at intervals not exceeding:
+        (1) 3 years for steel and concrete transmission structures;
+        (2) 2 years for wood transmission structures;
+        (3) 1 year for all distribution poles and structures,
+            whether wood, steel, concrete, or composite.
+
+    (b) INSPECTION METHODOLOGY. — Inspections shall include, at
+    minimum:
+        (1) Visual inspection by qualified personnel;
+        (2) Infrared thermography of all splices, connectors, and
+            terminations;
+        (3) Non-destructive evaluation of wood pole condition at
+            the ground line, including resistograph or sonic
+            tomography testing;
+        (4) Drone-based inspection of overhead conductors and
+            hardware, with high-resolution imagery archived for
+            comparison with future inspections.
+
+    (c) CORRECTIVE ACTION. — Conditions identified during
+    inspections that could lead to conductor contact, structural
+    failure, or equipment ignition shall be corrected within:
+        (1) 30 days for conditions rated as presenting an
+            immediate fire risk;
+        (2) 90 days for conditions rated as presenting an elevated
+            fire risk;
+        (3) 365 days for conditions rated as presenting a routine
+            fire risk.
+
+SEC. 705. AUTHORIZATION OF APPROPRIATIONS.
+
+    (a) There is authorized to be appropriated $10 billion for the
+    period of fiscal years 2027 through 2036 to carry out this Title,
+    allocated as follows:
+        (1) $4 billion for composite pole and fire-resistant
+            material deployment;
+        (2) $4 billion for covered conductor deployment;
+        (3) $1 billion for enhanced inspection and maintenance
+            programs;
+        (4) $1 billion for research, standards development, and
+            fire-resistant coating technology.

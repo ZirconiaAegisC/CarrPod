@@ -1,0 +1,148 @@
+================================================================================
+119TH CONGRESS — 2ND SESSION                                     H.R. _______
+================================================================================
+
+             TITLE VI — VEGETATION MANAGEMENT AND
+                       FUELS REDUCTION
+
+================================================================================
+
+SEC. 601. ENHANCED CLEARANCE STANDARDS.
+
+    (a) MINIMUM CLEARANCE. — Within 365 days of enactment, the
+    Secretary of Energy, in consultation with the U.S. Forest Service,
+    shall promulgate enhanced minimum vegetation clearance standards
+    for electric transmission and distribution rights-of-way in areas
+    designated as High Fire Threat Districts. Such standards shall, at
+    minimum, require:
+
+        (1) TRANSMISSION LINES (>100 kV). — Minimum clearance of 15
+            feet in all directions from energized conductors under
+            worst-case sag and sway conditions, including consideration
+            of conductor blow-out under the 99th percentile wind speed
+            for the location.
+
+        (2) DISTRIBUTION LINES (<100 kV). — Minimum clearance of 10
+            feet in all directions from energized conductors under
+            worst-case conditions, with 4 feet of clearance from
+            communication attachments.
+
+        (3) HAZARD TREES. — Removal of all dead, dying, or diseased
+            trees within striking distance of conductors, as
+            determined by a certified arborist or professional
+            forester, regardless of whether such trees are within
+            the utility's easement.
+
+        (4) SURFACE FUELS. — Removal or treatment of surface fuels
+            within utility rights-of-way to achieve a fuel loading
+            of not more than 3 tons per acre of fine fuels in
+            High Fire Threat Districts.
+
+    (b) INSPECTION CYCLE. — Utilities shall conduct patrol
+    inspections of vegetation conditions on all high-fire-threat
+    circuits at intervals not exceeding:
+        (1) 6 months for circuits in Tier 3 (Extreme) High Fire
+            Threat Districts;
+        (2) 12 months for circuits in Tier 2 (Elevated) High Fire
+            Threat Districts.
+
+    (c) PG&E VEGETATION MANAGEMENT REFERENCE. — PG&E's vegetation
+    management program, which includes enhanced clearances exceeding
+    state minimums and annual patrol inspection of all high-fire-
+    threat circuits, shall inform the national standards developed
+    under this section.
+
+SEC. 602. TECHNOLOGY-ENABLED RISK MAPPING.
+
+    (a) LIDAR MAPPING PROGRAM. — There is established a LIDAR-Based
+    Vegetation Risk Mapping Program to provide federal grants to
+    utilities for aerial and ground-based LIDAR scanning of vegetation
+    within and adjacent to electric transmission and distribution
+    rights-of-way in High Fire Threat Districts.
+
+    (b) MAPPING REQUIREMENTS. — LIDAR data collected under this
+    section shall:
+        (1) Achieve a minimum point density of 30 points per square
+            meter for aerial scans and 500 points per square meter for
+            mobile ground-based scans;
+        (2) Be collected at intervals not exceeding 24 months;
+        (3) Be processed to identify:
+            (A) Vegetation encroachment within clearance zones;
+            (B) Hazard trees with height exceeding strike distance
+                to conductors;
+            (C) Surface fuel loading and continuity;
+            (D) Terrain slope and aspect affecting fire behavior.
+
+    (c) DATA INTEGRATION. — LIDAR data shall be integrated with:
+        (1) Utility GIS and asset management systems;
+        (2) The National Wildfire Hazard Potential map maintained by
+            the U.S. Forest Service;
+        (3) State and local community wildfire protection plans.
+
+    (d) PREDICTIVE ANALYTICS. — The Secretary shall fund research and
+    development of predictive vegetation-risk models that combine
+    LIDAR data, satellite imagery, weather data, and fire-history
+    data to forecast vegetation-related fire risk at a circuit-
+    segment level and enable risk-based prioritization of vegetation
+    management work.
+
+SEC. 603. WORKFORCE DEVELOPMENT AND TRAINING.
+
+    (a) VEGETATION MANAGEMENT WORKFORCE PROGRAM. — There is
+    established a Vegetation Management Workforce Development Program
+    to provide grants to:
+        (1) Community colleges and trade schools for the development
+            of utility vegetation management and arboriculture
+            training programs;
+        (2) Nonprofit organizations and workforce development boards
+            for pre-apprenticeship and apprenticeship programs in
+            utility vegetation management;
+        (3) Tribal governments for forestry workforce development
+            on tribal lands within or adjacent to utility rights-of-way.
+
+    (b) CERTIFICATION. — The Secretary, in consultation with the
+    International Society of Arboriculture (ISA) and the Utility
+    Arborist Association (UAA), shall develop a national Utility
+    Vegetation Management Specialist certification program.
+
+    (c) VETERANS PREFERENCE. — The Vegetation Management Workforce
+    Development Program shall include a set-aside of not less than 10
+    percent of grant funds for programs that recruit and train
+    military veterans for utility vegetation management careers.
+
+SEC. 604. PRESCRIBED FIRE ACCELERATION.
+
+    (a) UTILITY RIGHT-OF-WAY PRESCRIBED FIRE PROGRAM. — There is
+    established a grant program to support the use of prescribed fire
+    by qualified burn practitioners within and adjacent to electric
+    utility rights-of-way in High Fire Threat Districts for the
+    purpose of:
+        (1) Reducing surface and ladder fuel loading;
+        (2) Creating and maintaining fuel breaks along utility
+            corridors;
+        (3) Restoring fire-adapted ecosystem conditions.
+
+    (b) LIABILITY PROTECTION. — Certified prescribed burn managers
+    conducting burns under this section in accordance with an
+    approved burn plan shall be entitled to liability protection
+    equivalent to that provided under applicable state prescribed
+    fire statutes.
+
+    (c) COORDINATION. — Prescribed fire projects funded under this
+    section shall be coordinated with:
+        (1) The U.S. Forest Service and Bureau of Land Management
+            for federal lands;
+        (2) State forestry agencies for state and private lands;
+        (3) Local fire safe councils and prescribed burn
+            associations.
+
+SEC. 605. AUTHORIZATION OF APPROPRIATIONS.
+
+    (a) There is authorized to be appropriated $20 billion for the
+    period of fiscal years 2027 through 2036 to carry out this Title,
+    allocated as follows:
+        (1) $10 billion for vegetation management federal cost-share;
+        (2) $4 billion for LIDAR mapping and predictive analytics;
+        (3) $3 billion for workforce development and training;
+        (4) $3 billion for prescribed fire acceleration and fuels
+            reduction on and adjacent to utility rights-of-way.

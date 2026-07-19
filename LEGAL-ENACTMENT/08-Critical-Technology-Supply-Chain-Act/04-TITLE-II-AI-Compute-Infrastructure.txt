@@ -1,0 +1,168 @@
+================================================================================
+                      TITLE II — AI COMPUTE INFRASTRUCTURE
+                      CTSCRA OF 2026
+================================================================================
+
+SECTION 201. SHORT TITLE.
+
+  This title may be cited as the "National AI Compute Infrastructure Act of
+  2026."
+
+SECTION 202. FINDINGS AND PURPOSE.
+
+  (a) FINDINGS. — Congress finds that:
+
+    (1) Artificial intelligence has emerged as a general-purpose technology
+        of transformative economic and military significance, with projected
+        global economic impact exceeding $15 trillion by 2030 according to
+        industry analyses.
+
+    (2) The development, training, and deployment of frontier artificial
+        intelligence models requires access to computing infrastructure of
+        extraordinary scale and cost, with leading AI training clusters
+        costing in excess of $1 billion per deployment and consuming
+        electrical power equivalent to a medium-sized city.
+
+    (3) A single corporation—Nvidia Corporation—commands approximately 80
+        to 90 percent of the global market for AI training accelerators,
+        with its CUDA software ecosystem functioning as a de facto monopoly
+        platform for AI development. Nvidia's 2025 fiscal year revenue
+        exceeded $130 billion, driven primarily by AI chip demand, and the
+        company's market valuation exceeded $3 trillion, reflecting the
+        extraordinary concentration of AI compute supply.
+
+    (4) Access to frontier AI compute resources is increasingly concentrated
+        in a small number of large technology corporations—including
+        Alphabet Inc. (Google), Microsoft Corporation, Amazon.com Inc.,
+        and Meta Platforms Inc.—limiting the ability of academic
+        researchers, small businesses, and government agencies to
+        participate in foundational AI research and development.
+
+    (5) The People's Republic of China has established a national strategy
+        for AI dominance, investing an estimated $150 billion through state-
+        directed funds, and has pursued aggressive acquisition of advanced
+        semiconductor manufacturing equipment and AI chips through third-
+        party intermediaries despite United States export controls.
+
+  (b) PURPOSE. — The purpose of this title is to establish a National AI
+      Compute Reserve accessible to government agencies, academic
+      researchers, and qualifying domestic entities; to fund the acquisition
+      of advanced AI computing infrastructure; to democratize access to AI
+      compute resources; and to ensure that the United States maintains
+      global leadership in artificial intelligence research and development.
+
+SECTION 203. NATIONAL AI COMPUTE RESERVE.
+
+  (a) ESTABLISHMENT. — The Secretary of Energy, in coordination with the
+      Director of the National Science Foundation and the Director of the
+      Office of Science and Technology Policy, shall establish a National
+      AI Compute Reserve (in this title referred to as the "Reserve").
+
+  (b) FUNCTIONS. — The Reserve shall:
+
+    (1) Acquire, operate, and maintain advanced AI computing systems of
+        DGX SuperPOD-class or equivalent capability, including associated
+        networking, storage, and power infrastructure;
+
+    (2) Allocate compute hours to Federal agencies, national laboratories,
+        accredited universities, and qualified domestic research
+        institutions;
+
+    (3) Establish tiered access models providing free compute allocations
+        to academic researchers, cost-recovery allocations to government
+        agencies, and market-rate allocations to commercial entities;
+
+    (4) Ensure geographic distribution of compute capacity across not fewer
+        than five regional nodes within the United States; and
+
+    (5) Develop and publish benchmarks for AI compute utilization, energy
+        efficiency, and research output productivity.
+
+  (c) PROCUREMENT REQUIREMENTS. — In acquiring computing systems under this
+      section, the Secretary of Energy shall:
+
+    (1) Procure systems manufactured by United States-headquartered
+        companies to the maximum extent practicable;
+
+    (2) Require that AI accelerator chips in procured systems are
+        manufactured, packaged, and tested in the United States or in
+        allied nations within ten years of enactment;
+
+    (3) Prioritize systems incorporating domestically packaged advanced
+        semiconductors; and
+
+    (4) Ensure interoperability with existing national laboratory and
+        Department of Defense computing infrastructure.
+
+  (d) AUTHORIZATION OF APPROPRIATIONS. — There is authorized to be
+      appropriated $15,000,000,000 for the period of fiscal years 2027
+      through 2036 to carry out this section.
+
+SECTION 204. ACADEMIC AI COMPUTE GRANT PROGRAM.
+
+  (a) ESTABLISHMENT. — The Director of the National Science Foundation shall
+      establish a competitive grant program to provide computing resources
+      and funding to accredited United States universities and colleges for
+      artificial intelligence research and education.
+
+  (b) ELIGIBLE USES. — Grant funds may be used for:
+
+    (1) Acquisition of AI computing hardware, including GPU clusters,
+        AI accelerators, and associated infrastructure;
+
+    (2) Cloud computing credits for AI research workloads;
+
+    (3) Development of AI curricula and training programs;
+
+    (4) Establishment of on-campus AI research computing centers; and
+
+    (5) Collaborative AI research projects with national laboratories,
+        nonprofit research organizations, and industry partners.
+
+  (c) PREFERENCE. — In awarding grants, the Director shall give preference
+      to applications from:
+
+    (1) Historically Black Colleges and Universities (HBCUs) and Minority-
+        Serving Institutions (MSIs);
+
+    (2) Institutions in States without existing significant AI compute
+        infrastructure;
+
+    (3) Institutions located in proximity to semiconductor manufacturing
+        clusters; and
+
+    (4) Consortia of multiple institutions pooling resources.
+
+  (d) AUTHORIZATION OF APPROPRIATIONS. — There is authorized to be
+      appropriated $3,000,000,000 for the period of fiscal years 2027
+      through 2036 to carry out this section.
+
+SECTION 205. NATIONAL AI RESEARCH CLOUD.
+
+  (a) ESTABLISHMENT. — The Director of the National Science Foundation, in
+      coordination with the Secretary of Energy, shall establish a National
+      AI Research Cloud providing on-demand access to advanced computing
+      resources, curated datasets, pre-trained models, and collaborative
+      research tools.
+
+  (b) AUTHORIZATION OF APPROPRIATIONS. — There is authorized to be
+      appropriated $2,000,000,000 for the period of fiscal years 2027
+      through 2036 to carry out this section.
+
+SECTION 206. REPORTING REQUIREMENTS.
+
+  Not later than 180 days after the date of enactment, and annually
+  thereafter, the Secretary of Energy and the Director of the National
+  Science Foundation shall jointly submit to the appropriate congressional
+  committees a report detailing:
+
+    (1) The total compute capacity of the Reserve;
+
+    (2) Allocation of compute hours by sector;
+
+    (3) Research outputs attributable to Reserve resources;
+
+    (4) Energy consumption and efficiency metrics; and
+
+    (5) Recommendations for improving United States AI compute
+        competitiveness.

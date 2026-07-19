@@ -1,0 +1,168 @@
+================================================================================
+                    TITLE X — IMPLEMENTATION SCHEDULE
+                    CTSCRA OF 2026
+================================================================================
+
+SECTION 1001. IMPLEMENTATION PHASES AND MILESTONES.
+
+  (a) PHASE I — IMMEDIATE ACTIONS (Fiscal Years 2027-2028). —
+
+    (1) PROGRAM ESTABLISHMENT. — Not later than 180 days after the date
+        of enactment, the Secretary of Commerce shall issue a Notice of
+        Funding Opportunity for CHIPS Act 2.0 semiconductor fabrication
+        facility incentives, advanced packaging incentives, and
+        semiconductor equipment and materials manufacturing incentives.
+
+    (2) AI COMPUTE RESERVE. — Not later than 270 days after enactment,
+        the Secretary of Energy shall publish the site selection criteria
+        and procurement plan for the National AI Compute Reserve.
+
+    (3) RARE EARTH PROGRAM. — Not later than 180 days after enactment,
+        the Secretary of Energy shall issue a solicitation for rare earth
+        permanent magnet production loan guarantees and begin negotiation
+        of the Mountain Pass Defense Production Act agreement.
+
+    (4) WORKFORCE GRANTS. — Not later than 120 days after enactment, the
+        Director of the National Science Foundation shall issue a
+        solicitation for university microelectronics education program
+        grants and designate the first five Semiconductor Manufacturing
+        Centers of Excellence.
+
+    (5) EXPORT CONTROL UPDATES. — Not later than 90 days after enactment,
+        the Secretary of Commerce shall finalize and publish the Critical
+        Semiconductor Manufacturing Equipment List and the Semiconductor
+        Restricted Entity List.
+
+    (6) ALLIED FRAMEWORK. — Not later than 180 days after enactment, the
+        Secretary of State shall formally open negotiations with the
+        European Union, Japan, and the Republic of Korea for the
+        Quadrilateral Semiconductor Alliance Treaty.
+
+    (7) ENERGY CORRIDORS. — Not later than 180 days after enactment, the
+        Secretary of Energy shall designate the first three Semiconductor
+        Energy Corridors.
+
+    (8) CHIPS ACT NOTIFICATION. — Not later than 60 days after enactment,
+        the Secretary of Commerce shall notify existing CHIPS Act
+        applicants of the availability of supplemental funding and the
+        expanded scope of the program.
+
+  (b) PHASE II — PROGRAM RAMP (Fiscal Years 2029-2031). —
+
+    (1) FABRICATION FACILITIES. — Award and commence construction of not
+        fewer than 10 additional semiconductor fabrication facility
+        projects beyond those funded under the original CHIPS Act.
+
+    (2) AI COMPUTE. — Complete procurement and installation of the first
+        National AI Compute Reserve node, achieving not fewer than 50,000
+        AI accelerator equivalent compute units.
+
+    (3) RARE EARTHS. — Achieve domestic rare earth separation capacity
+        of not fewer than 20,000 metric tons of rare earth oxide
+        equivalent per year. Commence domestic sintered NdFeB magnet
+        production of not fewer than 5,000 metric tons per year.
+
+    (4) ADVANCED PACKAGING. — Award advanced packaging incentives for not
+        fewer than five facilities and commence construction of not fewer
+        than three.
+
+    (5) WORKFORCE. — Enroll not fewer than 50,000 students in
+        semiconductor-related degree and certificate programs funded
+        under this Act. Achieve H-1B semiconductor talent visa utilization
+        of not fewer than 8,000 visas per year.
+
+    (6) ENERGY. — Commence construction of not fewer than two
+        Semiconductor Energy Corridor transmission projects and not
+        fewer than one SMR co-location project at a semiconductor
+        manufacturing cluster.
+
+    (7) ALLIED. — Conclude the Quadrilateral Semiconductor Alliance Treaty
+        and establish the shared supply chain mapping platform.
+
+  (c) PHASE III — SCALING (Fiscal Years 2032-2034). —
+
+    (1) FABRICATION FACILITIES. — Achieve United States advanced
+        semiconductor manufacturing share of not fewer than 25 percent
+        of global capacity at process nodes of 7 nanometers and below.
+
+    (2) AI COMPUTE. — Achieve National AI Compute Reserve capacity of not
+        fewer than 200,000 AI accelerator equivalent compute units across
+        not fewer than five regional nodes.
+
+    (3) RARE EARTHS. — Achieve domestic sintered NdFeB magnet production
+        of not fewer than 15,000 metric tons per year. Complete
+        construction of domestic gallium, germanium, and graphite
+        processing facilities.
+
+    (4) ADVANCED PACKAGING. — Achieve commercial operation of not fewer
+        than seven domestic advanced packaging facilities covering all
+        four primary technology domains (CoWoS, EMIB, Foveros, and hybrid
+        bonding).
+
+    (5) WORKFORCE. — Achieve cumulative semiconductor workforce placement
+        of not fewer than 200,000 trained workers.
+
+    (6) ENERGY. — Achieve commercial operation of not fewer than two
+        SMR facilities co-located with semiconductor manufacturing
+        clusters. Complete not fewer than four Semiconductor Energy
+        Corridor transmission projects.
+
+  (d) PHASE IV — SUSTAINMENT (Fiscal Years 2035-2036). —
+
+    (1) Meet or exceed the 30 percent United States share of global
+        advanced semiconductor manufacturing capacity target.
+
+    (2) Achieve commercial operation of not fewer than 10 domestic
+        advanced packaging facilities.
+
+    (3) Achieve domestic NdFeB magnet production of not fewer than
+        20,000 metric tons per year.
+
+    (4) Conduct comprehensive program review and prepare final report
+        to Congress with recommendations for any continuing programs.
+
+SECTION 1002. ANNUAL REPORT TO CONGRESS.
+
+  (a) IN GENERAL. — Not later than March 1 of each year from 2028 through
+      2037, the Secretary of Commerce shall submit to the appropriate
+      congressional committees a report on the implementation of this Act.
+
+  (b) REPORT CONTENTS. — Each report shall include:
+
+    (1) Status of each program element against established milestones;
+
+    (2) Aggregate and project-level expenditure data;
+
+    (3) Metrics on manufacturing capacity added, jobs created, and
+        supply chain resilience improved;
+
+    (4) Assessment of technology security and export control
+        effectiveness;
+
+    (5) Recommendations for legislative or administrative action to
+        improve program effectiveness.
+
+SECTION 1003. COMPTROLLER GENERAL AUDITS.
+
+  (a) INITIAL AUDIT. — Not later than three years after the date of
+      enactment, the Comptroller General shall submit an audit assessing:
+
+    (1) Efficiency and effectiveness of program administration;
+
+    (2) Adequacy of internal controls and fraud prevention measures;
+
+    (3) Accuracy of performance data reported by the Department of
+        Commerce;
+
+    (4) Progress toward statutory goals and milestones.
+
+  (b) BIENNIAL AUDITS. — Biennially thereafter through fiscal year 2037,
+      the Comptroller General shall conduct follow-up audits and provide
+      recommendations for improvement.
+
+SECTION 1004. PRESIDENTIAL DETERMINATION OF CONTINUING NEED.
+
+  Not later than June 30, 2035, the President shall transmit to Congress
+  a determination of whether the authorities and appropriations under
+  this Act should be extended beyond fiscal year 2036, accompanied by a
+  detailed justification.

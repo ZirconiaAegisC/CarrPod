@@ -1,0 +1,160 @@
+================================================================================
+               TITLE VIII — ENERGY FOR SEMICONDUCTOR MANUFACTURING
+               CTSCRA OF 2026
+================================================================================
+
+SECTION 801. SHORT TITLE.
+
+  This title may be cited as the "Semiconductor Manufacturing Energy
+  Security Act of 2026."
+
+SECTION 802. FINDINGS.
+
+  Congress finds that:
+
+    (1) Advanced semiconductor fabrication facilities are among the most
+        energy-intensive industrial facilities in the world, with a single
+        leading-edge logic fabrication facility consuming 100 to 150
+        megawatts of continuous electrical power—equivalent to the
+        consumption of approximately 100,000 households—and next-generation
+        facilities projected to require 200 megawatts or more.
+
+    (2) Semiconductor manufacturing requires power of exceptional quality
+        and reliability; voltage sags, frequency deviations, or momentary
+        interruptions lasting even milliseconds can destroy entire wafer
+        batches valued at millions of dollars, requiring fabrication
+        facilities to maintain multiple redundant uninterruptible power
+        supply systems and on-site backup generation.
+
+    (3) The projected expansion of domestic semiconductor manufacturing
+        under the CHIPS Act and CTSCRA—including the TSMC Arizona campus
+        (three fabs totaling an estimated 500 megawatts at full buildout),
+        the Intel Ohio mega-fab campus (potentially eight fabs exceeding
+        1 gigawatt total demand), Samsung's Taylor, Texas facility, and
+        Micron's planned Boise, Idaho and Clay, New York facilities—will
+        require approximately 5 to 8 gigawatts of new, firm, 24-hour-
+        per-day, 365-day-per-year electrical generation and transmission
+        capacity by 2035.
+
+    (4) Existing electrical transmission infrastructure in many regions
+        identified for semiconductor manufacturing expansion—including
+        central Ohio, Maricopa County, Arizona, and upstate New York—is
+        insufficient to accommodate projected load growth and requires
+        substantial investment in new high-voltage transmission corridors,
+        substations, and grid interconnections.
+
+    (5) Nuclear power and advanced Small Modular Reactors (SMRs) offer
+        unique advantages for semiconductor manufacturing, including
+        continuous baseload operation independent of weather conditions,
+        high power density permitting co-location with fabrication
+        facilities, zero-carbon operation aligning with corporate
+        sustainability commitments, and exceptionally high power quality
+        characteristics suitable for sensitive manufacturing processes.
+
+SECTION 803. FABRICATION FACILITY POWER GUARANTEE PROGRAM.
+
+  (a) ESTABLISHMENT. — The Secretary of Energy shall establish a Fabrication
+      Facility Power Guarantee Program to ensure that semiconductor
+      fabrication facilities constructed with Federal incentives under
+      this Act or the CHIPS and Science Act of 2022 receive reliable,
+      24-hour-per-day electrical power at rates competitive with those
+      available to comparable industrial facilities in Asia.
+
+  (b) PROGRAM ELEMENTS. — The Program shall:
+
+    (1) Enter into long-term power purchase agreements or provide
+        guarantees for power purchase agreements between fabrication
+        facility operators and electrical generation and transmission
+        providers;
+
+    (2) Provide financial support for dedicated transmission infrastructure
+        connecting semiconductor manufacturing clusters to generation
+        sources, including new high-voltage direct current (HVDC) and
+        extra-high-voltage alternating current (EHVAC) transmission lines;
+
+    (3) Establish a Semiconductor Manufacturing Energy Rate Stabilization
+        Fund to offset electrical rate differentials where domestic
+        industrial power rates exceed a benchmark based on rates available
+        to comparable facilities in Taiwan, South Korea, and Japan;
+
+    (4) Provide grants for on-site energy storage systems to enhance
+        power quality and provide backup capability for critical
+        manufacturing processes.
+
+  (c) AUTHORIZATION OF APPROPRIATIONS. — There is authorized to be
+      appropriated $8,000,000,000 for the period of fiscal years 2027
+      through 2036 to carry out this section.
+
+SECTION 804. NUCLEAR AND SMALL MODULAR REACTOR CO-LOCATION.
+
+  (a) ESTABLISHMENT. — The Secretary of Energy shall establish a Nuclear
+      Co-Location Incentive Program for Semiconductor Manufacturing, in
+      coordination with the Nuclear Regulatory Commission, to:
+
+    (1) Provide direct grants and loan guarantees for the deployment of
+        advanced nuclear reactors, including Small Modular Reactors and
+        microreactors, at sites proximate to or co-located with
+        semiconductor manufacturing clusters;
+
+    (2) Fund pre-application and licensing activities for SMR deployments
+        serving semiconductor facilities;
+
+    (3) Support feasibility studies, site characterization, and
+        environmental review for nuclear co-location with semiconductor
+        manufacturing;
+
+    (4) Provide economic incentives including production tax credits
+        and accelerated depreciation for nuclear facilities supplying
+        dedicated power to semiconductor fabrication facilities.
+
+  (b) REGULATORY COORDINATION. — The Nuclear Regulatory Commission shall
+      establish an expedited licensing track for SMR and advanced reactor
+      projects supplying power to semiconductor manufacturing facilities
+      designated as critical national security infrastructure.
+
+  (c) TARGETS. — The Secretary shall establish a goal of not fewer than
+      five operational nuclear or SMR facilities co-located with or
+      dedicated to semiconductor manufacturing clusters by December 31,
+      2035.
+
+  (d) AUTHORIZATION OF APPROPRIATIONS. — There is authorized to be
+      appropriated $6,000,000,000 for the period of fiscal years 2027
+      through 2036 to carry out this section.
+
+SECTION 805. TRANSMISSION CORRIDOR BUILDOUT.
+
+  (a) DESIGNATION OF SEMICONDUCTOR ENERGY CORRIDORS. — The Secretary of
+      Energy, in coordination with the Federal Energy Regulatory
+      Commission, shall designate not fewer than six Semiconductor
+      Energy Corridors connecting semiconductor manufacturing clusters
+      to existing and planned generation resources.
+
+  (b) FEDERAL BACKSTOP SITING AUTHORITY. — For transmission projects within
+      designated Semiconductor Energy Corridors, the Federal Energy
+      Regulatory Commission shall have backstop siting authority
+      consistent with section 216 of the Federal Power Act, with
+      expedited procedures requiring final determination not later than
+      one year after application.
+
+  (c) TRANSMISSION INVESTMENT TAX CREDIT. — An investment tax credit of
+      30 percent shall be available for qualifying transmission
+      infrastructure investments located within designated Semiconductor
+      Energy Corridors.
+
+  (d) AUTHORIZATION OF APPROPRIATIONS. — There is authorized to be
+      appropriated $1,000,000,000 for the period of fiscal years 2027
+      through 2036 to carry out this section.
+
+SECTION 806. RENEWABLE ENERGY INTEGRATION.
+
+  (a) IN GENERAL. — The Secretary of Energy shall establish a grant
+      program to support integration of renewable energy generation,
+      including solar, wind, geothermal, and long-duration energy
+      storage, with semiconductor manufacturing facilities to reduce
+      Scope 2 emissions and comply with corporate sustainability
+      commitments while maintaining power quality and reliability
+      standards.
+
+  (b) AUTHORIZATION OF APPROPRIATIONS. — There is authorized to be
+      appropriated $500,000,000 for the period of fiscal years 2027
+      through 2036 to carry out this section.

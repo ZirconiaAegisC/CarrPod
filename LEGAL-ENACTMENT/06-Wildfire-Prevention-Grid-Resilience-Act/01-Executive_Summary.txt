@@ -1,0 +1,138 @@
+================================================================================
+119TH CONGRESS — 2ND SESSION                                     H.R. _______
+================================================================================
+
+                         EXECUTIVE SUMMARY
+
+       WILDFIRE PREVENTION AND GRID RESILIENCE ACT OF 2026
+                        (WPGRA of 2026)
+
+                     TOTAL AUTHORIZATION:
+        $150,000,000,000 OVER TEN FISCAL YEARS (FY2027–FY2036)
+
+================================================================================
+
+I.   PROBLEM STATEMENT
+
+     The United States confronts an escalating wildfire crisis driven by
+     climate change, prolonged drought, and aging electric infrastructure.
+     Annual wildfire costs to the U.S. economy range from $20 billion to
+     $50 billion, encompassing direct fire suppression expenditures,
+     property loss, business interruption, health impacts from smoke
+     exposure, watershed degradation, and carbon release from burning
+     forests. Electric utility infrastructure has been identified as the
+     ignition source for multiple catastrophic wildfires, including the
+     2018 Camp Fire ($16.5 billion in damages, 85 fatalities), the 2017
+     Northern California fire siege ($14 billion in insured losses), the
+     2020 Labor Day fires in Oregon and Washington, and the 2021 Dixie
+     Fire. In California alone, seven of the twenty most destructive
+     wildfires in state history have involved utility equipment as a
+     causal or contributing factor.
+
+     The Pacific Gas and Electric Company (PG&E), serving approximately
+     16 million people across 70,000 square miles of Northern and Central
+     California, operates in the nation's highest wildfire risk territory.
+     PG&E's experience—both its bankruptcy following the 2017–2018 fires
+     and its subsequent transformation into an industry leader in wildfire
+     prevention—provides a comprehensive operational template for national
+     wildfire mitigation policy. With $24.9 billion in operating revenue
+     for Fiscal Year 2025 and a $73 billion five-year capital investment
+     plan, PG&E has demonstrated that systematic infrastructure investment
+     can dramatically reduce wildfire ignition risk while maintaining
+     reliable electric service.
+
+     PG&E's performance metrics since 2021:
+       • 1,241 miles of power lines undergrounded in high-fire-threat
+         districts
+       • 3rd consecutive year (2023, 2024, 2025) with zero major utility-
+         caused wildfires
+       • Deployment of 2,000 Downed Conductor Detection (DCD) devices,
+         preventing 45 confirmed ignitions
+       • Installation of 1,627 weather stations and 706 high-definition
+         AI-enabled cameras providing real-time situational awareness
+       • Public Safety Power Shutoff (PSPS) events achieving 95% risk
+         reduction compared to pre-2020 operations
+       • Enhanced Powerline Safety Settings (EPSS) achieving 69%
+         reduction in ignitions on enabled circuits
+
+     These results establish that a comprehensive, technology-enabled,
+     infrastructure-intensive approach to wildfire prevention is both
+     operationally feasible and quantitatively effective. The WPGRA
+     codifies PG&E's demonstrated best practices into a national framework
+     and provides the federal investment necessary to replicate these
+     results across all high-risk utility territories.
+
+II.  PROGRAM OVERVIEW
+
+     The WPGRA establishes a coordinated federal-state-utility partnership
+     organized under the Department of Energy (DOE) with designated
+     implementation roles for the Federal Energy Regulatory Commission
+     (FERC), the U.S. Forest Service (USFS), the Environmental Protection
+     Agency (EPA), the National Oceanic and Atmospheric Administration
+     (NOAA), and the Department of the Interior (DOI). The Act authorizes
+     $150 billion in total federal expenditures over ten fiscal years
+     (FY2027 through FY2036), allocated across eight programmatic titles:
+
+          TITLE I:   Undergrounding ($60 billion) — Federal cost-share
+                     for 10,000 miles of high-fire-threat line
+                     undergrounding at approximately $3 million per mile,
+                     with expedited CEQA and NEPA review.
+
+          TITLE II:  Downed Conductor Detection ($10 billion) — Mandatory
+                     deployment of DCD technology on all high-fire-threat
+                     distribution and sub-transmission circuits.
+
+          TITLE III: Weather and Sensor Network ($10 billion) — Federal
+                     grants for deployment of 10,000 weather stations
+                     and HD camera networks with automated detection.
+
+          TITLE IV:  PSPS Reform ($5 billion) — National standards for
+                     Public Safety Power Shutoffs, medically vulnerable
+                     customer compensation, and backup power grants.
+
+          TITLE V:   Microgrid and Distributed Energy ($40 billion) —
+                     Community microgrid development, utility-scale
+                     battery storage for resilience hubs, solar-plus-
+                     storage for critical facilities.
+
+          TITLE VI:  Vegetation Management ($20 billion) — Enhanced
+                     clearance standards, technology-enabled risk
+                     mapping, workforce training, prescribed fire
+                     acceleration.
+
+          TITLE VII: Transmission Hardening ($10 billion) — Structural
+                     upgrades, composite poles, covered conductor
+                     deployment, fire-resistant materials.
+
+          TITLE VIII: Data Center Protection ($5 billion) — Grid
+                     integration standards, behind-meter storage
+                     requirements, demand response mandates for the
+                     4.6 GW data center load pipeline.
+
+III. ECONOMIC IMPACT
+
+     The WPGRA is projected to generate approximately 500,000 direct and
+     indirect jobs over the ten-year authorization period, with sustained
+     employment in utility construction, manufacturing of grid components,
+     forestry and vegetation management, sensor and technology production,
+     and energy storage installation. The Act is projected to avoid $300
+     billion in wildfire-related costs over a twenty-year horizon through
+     the prevention of catastrophic fire events, reduction in suppression
+     expenditures, preservation of property values, avoidance of business
+     interruption, and protection of watershed and air quality resources.
+
+     The WPGRA directly supports the nation's 4.6 GW data center load
+     growth pipeline by ensuring reliable, wildfire-resilient electric
+     service to critical digital infrastructure, protecting an estimated
+     $500 billion in data center capital investment currently planned
+     across high-fire-risk regions of the Western United States.
+
+IV.  CONCLUSION
+
+     The Wildfire Prevention and Grid Resilience Act of 2026 represents
+     the most comprehensive federal investment in electric grid wildfire
+     safety in United States history. The Act draws upon the demonstrated
+     operational success of PG&E's multi-layered wildfire mitigation
+     program while establishing the oversight, standards, and funding
+     necessary to extend these protections to every American community
+     served by electric infrastructure in wildfire-prone regions.

@@ -1,0 +1,154 @@
+================================================================================
+                      TITLE I — CHIPS ACT 2.0
+                      EXPANDED SEMICONDUCTOR MANUFACTURING SUPPORT
+                      CTSCRA OF 2026
+================================================================================
+
+SECTION 101. SHORT TITLE.
+
+  This title may be cited as the "CHIPS and Science Act Expansion and
+  Extension Act of 2026."
+
+SECTION 102. FINDINGS AND PURPOSE.
+
+  (a) FINDINGS. — Congress finds that:
+
+    (1) The CHIPS and Science Act of 2022 (Public Law 117-167) authorized
+        $52.7 billion for semiconductor manufacturing incentives, research
+        and development, and related programs, catalyzing approximately
+        $450 billion in private sector semiconductor investment announcements
+        through 2026, including TSMC's $65 billion commitment to construct
+        three advanced fabrication facilities in Phoenix, Arizona (3 nanometer
+        and 4 nanometer process nodes), and Intel Corporation's $20 billion
+        investment in a mega-fabrication site in New Albany, Ohio.
+
+    (2) The initial CHIPS Act funding has proven insufficient to fully
+        address the scope of semiconductor supply chain vulnerability, with
+        the Department of Commerce reporting that qualified applications for
+        CHIPS incentives exceeded available funding by a factor of
+        approximately three to one.
+
+    (3) The semiconductor equipment and materials supply chain remains
+        highly concentrated, with the five largest semiconductor equipment
+        manufacturers—Applied Materials, ASML, Lam Research, Tokyo Electron,
+        and KLA Corporation—together controlling approximately 70 percent of
+        the global market, and critical input materials such as ultra-high
+        purity silicon, photoresists, and specialty chemicals sourced from
+        a limited number of foreign suppliers.
+
+    (4) Advanced semiconductor packaging, which is essential to modern chip
+        performance including artificial intelligence accelerators, high-
+        performance computing processors, and advanced memory, is
+        predominantly conducted in Asia, with Taiwan and South Korea
+        accounting for over 90 percent of global advanced packaging capacity
+        as of 2025.
+
+  (b) PURPOSE. — The purpose of this title is to double the Federal
+      investment in domestic semiconductor manufacturing, to extend support
+      to semiconductor equipment, materials, and advanced packaging sectors,
+      and to provide enhanced research and development incentives to ensure
+      enduring United States leadership in semiconductor technology.
+
+SECTION 103. AUTHORIZATION OF SUPPLEMENTAL APPROPRIATIONS.
+
+  (a) IN GENERAL. — There is authorized to be appropriated to the Secretary
+      of Commerce $100,000,000,000 for the period of fiscal years 2027
+      through 2036 to carry out the programs authorized under this title.
+
+  (b) ALLOCATION. — Of the amounts authorized under subsection (a):
+
+    (1) $55,000,000,000 shall be available for semiconductor fabrication
+        facility incentives pursuant to section 104;
+
+    (2) $15,000,000,000 shall be available for semiconductor equipment and
+        materials manufacturing incentives pursuant to section 105;
+
+    (3) $15,000,000,000 shall be available for advanced packaging subsidy
+        programs pursuant to section 106;
+
+    (4) $10,000,000,000 shall be available for research and development
+        tax credit enhancements pursuant to section 107; and
+
+    (5) $5,000,000,000 shall be available for State and local incentive
+        coordination and semiconductor infrastructure pursuant to
+        section 108.
+
+SECTION 104. SEMICONDUCTOR FABRICATION FACILITY INCENTIVES.
+
+  (a) PROGRAM EXPANSION. — The Secretary of Commerce shall expand the
+      semiconductor fabrication facility incentive program established
+      under section 9902 of the William M. (Mac) Thornberry National
+      Defense Authorization Act for Fiscal Year 2021, as amended by the
+      CHIPS Act of 2022, to provide additional grants, cooperative
+      agreements, loans, and loan guarantees for the construction,
+      expansion, and modernization of semiconductor fabrication
+      facilities in the United States.
+
+  (b) PRIORITY CONSIDERATIONS. — The Secretary shall give priority to
+      projects producing advanced logic (7nm and below), advanced memory,
+      integrating domestic packaging, and including workforce development
+      and energy efficiency commitments.
+
+  (c) INVESTMENT TAX CREDIT. — The advanced manufacturing investment
+      credit under 26 U.S.C. 48D is extended through December 31, 2036,
+      at 25 percent for facilities commencing construction by 2032.
+
+  (d) DIRECT FUNDING AGREEMENTS. — The Secretary may enter into direct
+      funding agreements, structured as milestone-based grants, with
+      semiconductor fabrication facility applicants, consistent with
+      the model established for the CHIPS Act awards to TSMC Arizona,
+      Intel, Samsung, and Micron.
+
+SECTION 105. SEMICONDUCTOR EQUIPMENT AND MATERIALS MANUFACTURING.
+
+  (a) NEW PROGRAM. — The Secretary shall establish grants and loan
+      guarantees for domestic manufacturing of semiconductor equipment
+      (deposition, etch, lithography, metrology, CMP, etc.), critical
+      materials (silicon wafers, photoresists, photomasks, specialty
+      chemicals, high-purity gases), and equipment components and
+      subsystems.
+
+  (b) GOAL. — The Secretary shall establish a goal that by 2035, not
+      less than 30 percent of semiconductor manufacturing equipment
+      installed in United States fabrication facilities shall be
+      manufactured in the United States.
+
+SECTION 106. ADVANCED PACKAGING SUBSIDY PROGRAM.
+
+  The Secretary of Commerce shall, in coordination with the Advanced
+  Packaging Incentive Program established under Title IV of this Act,
+  ensure that semiconductor fabrication facility incentives under this
+  title include requirements and incentives for co-located or proximate
+  advanced packaging capability.
+
+SECTION 107. RESEARCH AND DEVELOPMENT TAX CREDIT ENHANCEMENT.
+
+  (a) INCREASED RATE. — The credit rate for qualified research expenses
+      related to semiconductor design, manufacturing, advanced packaging,
+      and equipment shall be increased to 40 percent for taxable years
+      beginning after December 31, 2026 and before January 1, 2037,
+      covering transistor architectures, materials, manufacturing
+      processes, EDA software, and equipment innovation.
+
+SECTION 108. STATE AND LOCAL INCENTIVE COORDINATION.
+
+  (a) FEDERAL-STATE PARTNERSHIP FUND. — The Secretary shall establish a
+      fund providing matching grants to States, territories, and Tribal
+      governments for semiconductor manufacturing incentives including
+      property tax abatements, infrastructure improvements, workforce
+      training, site preparation, and expedited permitting.
+
+SECTION 109. SEMICONDUCTOR MANUFACTURING SECURITY.
+
+  (a) TECHNOLOGY SECURITY. — All facilities receiving Federal incentives
+      shall comply with technology security requirements established by
+      the Secretary of Commerce in consultation with the Secretary of
+      Defense and the Director of National Intelligence.
+
+  (b) PROHIBITED SHARING. — No recipient may transfer semiconductor
+      manufacturing process technology developed with Federal support
+      to foreign adversary entities without explicit authorization.
+
+  (c) CYBERSECURITY. — Recipients shall implement cybersecurity measures
+      consistent with NIST Special Publication 800-171 or successor
+      framework.

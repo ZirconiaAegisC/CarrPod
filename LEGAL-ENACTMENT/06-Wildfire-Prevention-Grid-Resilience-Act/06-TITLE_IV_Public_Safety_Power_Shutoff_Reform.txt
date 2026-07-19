@@ -1,0 +1,153 @@
+================================================================================
+119TH CONGRESS — 2ND SESSION                                     H.R. _______
+================================================================================
+
+             TITLE IV — PUBLIC SAFETY POWER SHUTOFF REFORM
+
+================================================================================
+
+SEC. 401. NATIONAL PSPS STANDARDS.
+
+    (a) MINIMUM STANDARDS. — Not later than 365 days after enactment,
+    the Secretary of Energy, in consultation with FERC and the National
+    Association of Regulatory Utility Commissioners (NARUC), shall
+    promulgate national minimum standards for Public Safety Power
+    Shutoff (PSPS) events. Such standards shall, at minimum, require:
+
+        (1) RISK THRESHOLD. — PSPS events shall be initiated only when
+        forecasted weather conditions meet or exceed established
+        thresholds for wind speed, relative humidity, fuel moisture,
+        and fire danger rating that create a high probability of
+        utility-infrastructure-caused wildfire ignition.
+
+        (2) GEOGRAPHIC TARGETING. — PSPS de-energization shall be
+        limited to the minimum geographic area and the minimum number
+        of circuits necessary to mitigate the identified wildfire risk.
+        Utilities shall deploy sectionalizing devices, automated
+        switches, and circuit reconfiguration to minimize the number
+        of customers affected by each PSPS event.
+
+        (3) ADVANCE NOTIFICATION. — Utilities shall provide:
+            (A) 48-hour advance notice to state and local emergency
+                management agencies of potential PSPS activation;
+            (B) 24-hour advance notice to all potentially affected
+                customers, delivered through at least three
+                communication channels including text message, email,
+                and automated voice call;
+            (C) Real-time updates during the PSPS event at intervals
+                not exceeding 4 hours.
+
+        (4) RESTORATION. — Utilities shall deploy field patrol
+        resources before, during, and after PSPS events to enable
+        restoration of service within 24 hours of the cessation of
+        the fire-weather conditions that triggered the event, weather
+        and daylight permitting.
+
+        (5) POST-EVENT REPORTING. — Within 30 days of each PSPS event,
+        the utility shall file a public report with the relevant state
+        regulatory authority and the Department of Energy detailing:
+            (A) The meteorological conditions that triggered the
+                event;
+            (B) The geographic area and number of circuits and
+                customers affected;
+            (C) The duration of the de-energization;
+            (D) Whether any ignitions occurred on de-energized
+                circuits during the event window;
+            (E) An assessment of whether the geographic scope and
+                duration of the event were proportionate to the
+                wildfire risk identified.
+
+    (b) PG&E PSPS PERFORMANCE. — PG&E's PSPS program, which has
+    achieved a 95% reduction in wildfire risk compared to pre-2020
+    protocols through enhanced weather modeling, circuit
+    sectionalizing, and customer notification systems, shall serve
+    as a benchmark for the national standards developed under this
+    section.
+
+SEC. 402. MEDICALLY VULNERABLE CUSTOMER PROTECTIONS.
+
+    (a) REGISTRY. — Each utility subject to PSPS standards shall
+    maintain a confidential registry of customers who are medically
+    vulnerable to power loss, including:
+        (1) Individuals who rely on electric-powered medical devices,
+            including but not limited to ventilators, oxygen
+            concentrators, dialysis machines, and power wheelchairs;
+        (2) Individuals with medical conditions for which loss of
+            heating or cooling poses a significant health risk;
+        (3) Individuals who require refrigerated medications.
+
+    (b) SPECIAL NOTIFICATION. — Utilities shall provide medically
+    vulnerable registered customers with:
+        (1) Direct outreach by utility personnel via telephone not
+            less than 48 hours before a planned PSPS event;
+        (2) Priority restoration of service upon cessation of fire-
+            weather conditions;
+        (3) Information on available backup power resources and
+            relocation options.
+
+    (c) COMPENSATION. — Utilities shall compensate medically
+    vulnerable customers at a rate of $100 per day for each full
+    24-hour period of PSPS-caused power loss, with payments made
+    within 30 days of the end of the PSPS event.
+
+SEC. 403. BACKUP POWER GRANT PROGRAM.
+
+    (a) ESTABLISHMENT. — There is established a Backup Power Grant
+    Program, administered by the Department of Energy, to provide
+    grants to:
+        (1) Medically vulnerable customers for the purchase of
+            portable backup batteries, portable generators, or
+            permanently installed battery storage systems;
+        (2) Critical community facilities, including hospitals,
+            fire stations, police stations, emergency shelters,
+            and water and wastewater treatment plants, for the
+            installation of permanent backup power systems.
+
+    (b) PRIORITY. — Grant priority shall be given to:
+        (1) Medically vulnerable customers in census tracts where
+            the median household income is below 80 percent of the
+            state median;
+        (2) Critical facilities located in High Fire Threat
+            Districts that serve as designated community refuge
+            points during PSPS events.
+
+    (c) SOLAR-PLUS-STORAGE PREFERENCE. — For permanent backup
+    power installations at critical community facilities, the
+    Program shall provide a 25 percent grant premium for systems
+    that combine solar photovoltaic generation with battery
+    storage capable of islanding from the grid and providing not
+    less than 72 hours of autonomous operation.
+
+SEC. 404. POST-EVENT REPORTING AND TRANSPARENCY.
+
+    (a) PUBLIC DATABASE. — The Secretary shall maintain a publicly
+    accessible database of all PSPS events occurring in the United
+    States, updated within 30 days of each event, containing at
+    minimum:
+        (1) The date, duration, and geographic extent of each event;
+        (2) The number of customers affected;
+        (3) The meteorological conditions at initiation and
+            termination;
+        (4) Whether any wildfire ignitions occurred on de-energized
+            or adjacent circuits during the event.
+
+    (b) ANNUAL ANALYSIS. — The Secretary shall publish an annual
+    analysis of national PSPS trends, including:
+        (1) Year-over-year changes in PSPS frequency, geographic
+            scope, and customer impact;
+        (2) Correlation between PSPS events and wildfire ignition
+            outcomes;
+        (3) Identification of best practices and areas requiring
+            improvement.
+
+SEC. 405. AUTHORIZATION OF APPROPRIATIONS.
+
+    (a) There is authorized to be appropriated $5 billion for the
+    period of fiscal years 2027 through 2036 to carry out this
+    Title, allocated as follows:
+        (1) $3.0 billion for backup power grants to medically
+            vulnerable customers and critical facilities;
+        (2) $1.0 billion for state and local PSPS preparedness and
+            community resilience grants;
+        (3) $1.0 billion for program administration, PSPS database
+            maintenance, and technical assistance.

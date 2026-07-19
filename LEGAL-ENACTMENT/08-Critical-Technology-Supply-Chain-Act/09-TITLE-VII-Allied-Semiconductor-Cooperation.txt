@@ -1,0 +1,145 @@
+================================================================================
+                 TITLE VII — ALLIED SEMICONDUCTOR COOPERATION
+                 CTSCRA OF 2026
+================================================================================
+
+SECTION 701. SHORT TITLE.
+
+  This title may be cited as the "Allied Semiconductor Partnership and
+  Supply Chain Coordination Act of 2026."
+
+SECTION 702. FINDINGS.
+
+  Congress finds that:
+
+    (1) No single nation possesses the complete semiconductor supply
+        chain from raw materials through finished products; achieving
+        supply chain resilience requires structured cooperation among
+        the United States and its allies and partners.
+
+    (2) The United States, European Union, Japan, and Republic of Korea
+        collectively represent the democratic world's semiconductor
+        design, equipment, materials, and manufacturing capabilities,
+        encompassing firms including Nvidia, Intel, AMD, Qualcomm,
+        Broadcom, ASML, Tokyo Electron, Samsung Electronics, SK Hynix,
+        and leading research institutions.
+
+    (3) The European Union enacted the European Chips Act in 2023,
+        authorizing 43 billion euros for semiconductor manufacturing,
+        research, and supply chain resilience; Japan has committed over
+        $13 billion to support domestic semiconductor manufacturing,
+        including subsidies for TSMC's Kumamoto fabrication facility and
+        the Rapidus 2-nanometer consortium; and the Republic of Korea
+        has enacted the K-Chips Act providing substantial tax incentives
+        for semiconductor investment, including Samsung's planned $230
+        billion semiconductor cluster in Yongin.
+
+    (4) Joint allied semiconductor cooperation can reduce redundant
+        investment, share research and development costs, strengthen
+        collective export control enforcement, and create a resilient
+        semiconductor supply chain less dependent on any single geography.
+
+SECTION 703. US-EU-JAPAN-KOREA SEMICONDUCTOR ALLIANCE FRAMEWORK.
+
+  (a) ESTABLISHMENT. — The President, acting through the Secretary of State
+      and the Secretary of Commerce, shall seek to negotiate and conclude a
+      Quadrilateral Semiconductor Alliance Treaty or equivalent executive
+      agreement among the United States, the European Union, Japan, and the
+      Republic of Korea (in this title referred to as the "Alliance").
+
+  (b) ALLIANCE OBJECTIVES. — The Alliance shall pursue:
+
+    (1) Coordinated semiconductor manufacturing investment to ensure
+        geographic diversification of advanced fabrication capacity;
+
+    (2) Shared early warning and rapid response mechanisms for supply
+        chain disruptions affecting semiconductor or critical material
+        flows;
+
+    (3) Joint research and development programs in advanced semiconductor
+        technology, including sub-2-nanometer process nodes, advanced
+        packaging, new materials, and next-generation lithography;
+
+    (4) Coordinated export controls on semiconductor technology, equipment,
+        and materials to prevent diversion to foreign adversaries;
+
+    (5) Mutual recognition of trusted foundry, packaging, and test
+        facility certifications to enable secure allied supply chains;
+
+    (6) Joint workforce development and talent exchange programs.
+
+  (c) ANNUAL ALLIED SEMICONDUCTOR SUMMIT. — The Secretary of Commerce shall
+      convene an annual Allied Semiconductor Supply Chain Summit with
+      ministerial-level representatives of Alliance members to review
+      progress, coordinate investment strategies, and address emerging
+      supply chain vulnerabilities.
+
+SECTION 704. JOINT RESEARCH AND DEVELOPMENT PROGRAMS.
+
+  (a) ALLIED SEMICONDUCTOR RESEARCH FUND. — The Secretary of Commerce shall
+      establish the Allied Semiconductor Research Fund to co-finance joint
+      research and development projects with Alliance member nations.
+
+  (b) ELIGIBLE PROJECTS. — The Fund may support:
+
+    (1) Joint development of sub-2-nanometer transistor architectures,
+        including gate-all-around and complementary FET technologies;
+
+    (2) Advanced lithography research, including High-NA EUV and beyond;
+
+    (3) Three-dimensional heterogeneous integration and advanced packaging;
+
+    (4) Wide-bandgap and ultra-wide-bandgap semiconductor materials for
+        power electronics and radio-frequency applications;
+
+    (5) Cryogenic computing and superconducting digital logic;
+
+    (6) Chiplet interface standards and open chiplet ecosystem development.
+
+  (c) AUTHORIZATION OF APPROPRIATIONS. — There is authorized to be
+      appropriated $5,000,000,000 for the period of fiscal years 2027
+      through 2036 to carry out this section.
+
+SECTION 705. GLOBAL SUPPLY CHAIN MAPPING AND TRANSPARENCY.
+
+  (a) IN GENERAL. — The Secretary of Commerce, in coordination with Alliance
+      members, shall establish a secure, shared information platform for:
+
+    (1) Mapping the complete allied semiconductor supply chain from raw
+        materials through finished products;
+
+    (2) Identifying single points of failure and critical dependencies;
+
+    (3) Tracking inventories and production capacities of critical
+        semiconductor inputs;
+
+    (4) Sharing early warning indicators of supply disruptions.
+
+  (b) AUTHORIZATION OF APPROPRIATIONS. — There is authorized to be
+      appropriated $500,000,000 for the period of fiscal years 2027
+      through 2031 to carry out this section.
+
+SECTION 706. MUTUAL INVESTMENT FACILITATION.
+
+  (a) IN GENERAL. — The Secretary of Commerce shall establish an Allied
+      Semiconductor Investment Office to facilitate cross-border
+      investment among Alliance members in semiconductor manufacturing,
+      equipment, materials, and packaging facilities.
+
+  (b) FUNCTIONS. — The Office shall:
+
+    (1) Maintain a database of investment opportunities and site
+        readiness information across Alliance member locations;
+
+    (2) Coordinate regulatory review processes to expedite allied
+        semiconductor investments;
+
+    (3) Facilitate consortia of allied companies for large-scale
+        semiconductor investment projects;
+
+    (4) Provide technical assistance to Alliance members developing
+        semiconductor investment incentive frameworks.
+
+  (c) AUTHORIZATION OF APPROPRIATIONS. — There is authorized to be
+      appropriated $500,000,000 for the period of fiscal years 2027
+      through 2036 to carry out this section.

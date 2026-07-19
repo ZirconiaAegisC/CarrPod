@@ -1,0 +1,244 @@
+================================================================================
+119TH CONGRESS — 2ND SESSION                                     H.R. _______
+================================================================================
+
+                               REFERENCES
+
+         WILDFIRE PREVENTION AND GRID RESILIENCE ACT OF 2026
+
+================================================================================
+
+SECTION 1. CALIFORNIA REGULATORY PROCEEDINGS AND REPORTS.
+
+    (a) California Public Utilities Commission (CPUC):
+        (1) Wildfire Mitigation Plan (WMP) Proceedings (R.18-10-007
+            and successor dockets), including annual WMP submissions
+            from Pacific Gas and Electric Company, Southern California
+            Edison, and San Diego Gas & Electric, 2019–2025.
+        (2) High Fire Threat District (HFTD) Map, CPUC, adopted
+            January 2018, incorporating Tier 2 (Elevated) and Tier 3
+            (Extreme) designations per California Public Utilities
+            Code Section 8386.
+        (3) Decision 20-05-019: Phase 1 Decision in the Wildfire
+            Mitigation Plan Proceeding, CPUC, May 2020.
+        (4) Decision 20-09-005: Phase 2 Decision Adopting Wildfire
+            Mitigation Plan Guidelines, CPUC, September 2020.
+        (5) Decision 21-06-035: Decision Adopting Utility Wildfire
+            Mitigation Maturity Model, CPUC, June 2021.
+        (6) SB 901 (Dodd, Chapter 626, Statutes of 2018): Wildfire
+            Preparedness, Response, and Recovery.
+        (7) AB 1054 (Holden, Chapter 79, Statutes of 2019): Utility
+            Wildfire Liability, Wildfire Fund, and Safety
+            Certification.
+
+    (b) California Department of Forestry and Fire Protection
+        (CAL FIRE):
+        (1) CAL FIRE Incident Database, Wildfire Perimeters and
+            Damage Assessments, 2015–2025.
+        (2) Community Wildfire Prevention and Mitigation Report,
+            CAL FIRE, February 2019 (45-Day Report to the Governor
+            pursuant to Executive Order N-05-19).
+        (3) Top 20 Most Destructive California Wildfires, CAL FIRE,
+            updated annually.
+
+    (c) California Energy Commission (CEC):
+        (1) 2025 Integrated Energy Policy Report (IEPR), CEC,
+            Docket 24-IEPR-01.
+        (2) SB 100 Joint Agency Report: Achieving 100 Percent Clean
+            Electricity in California, CEC/CPUC/CARB, March 2021.
+
+SECTION 2. PACIFIC GAS AND ELECTRIC COMPANY (PG&E).
+
+    (a) PG&E Corporation and Pacific Gas and Electric Company:
+        (1) PG&E Corporation Annual Report (Form 10-K) for Fiscal
+            Year Ended December 31, 2025, filed with the U.S.
+            Securities and Exchange Commission.
+        (2) PG&E Corporation Quarterly Reports (Form 10-Q) for
+            Fiscal Quarters Q1, Q2, and Q3 of 2025.
+        (3) 2025 Wildfire Mitigation Plan (WMP), PG&E, submitted
+            to CPUC, February 2025, and annual updates.
+        (4) PG&E 2023–2025 Wildfire Mitigation Plan Annual Reports,
+            submitted to CPUC, 2024, 2025.
+        (5) PG&E Undergrounding Program: 10,000-Mile Undergrounding
+            Plan, PG&E, filed with CPUC, 2022, and quarterly
+            progress reports, 2022–2025.
+        (6) PG&E Downed Conductor Detection (DCD) Program Technical
+            Overview, PG&E, published 2024.
+        (7) PG&E Weather Station Network: 1,627 Stations and 706 HD
+            Cameras — System Architecture and Operational
+            Performance, PG&E, 2025.
+        (8) PG&E Public Safety Power Shutoff (PSPS) Post-Event
+            Reports, 2019–2025.
+        (9) PG&E Enhanced Powerline Safety Settings (EPSS) Program
+            Performance Data, 2021–2025.
+        (10) PG&E Vegetation Management Program Annual Reports,
+            2020–2025.
+        (11) PG&E $73 Billion Five-Year Capital Investment Plan
+            (2024–2028), filed with CPUC in General Rate Case (GRC)
+            Phase 1, 2023.
+
+    (b) Key Performance Data (PG&E, 2025):
+        (1) Revenue: $24.9 billion (FY2025).
+        (2) Undergrounding: 1,241 miles completed since 2021.
+        (3) Wildfire Performance: 3rd consecutive year (2023, 2024,
+            2025) with zero major utility-caused wildfires.
+        (4) DCD Devices: 2,000 deployed, 45 ignitions prevented.
+        (5) Weather Stations: 1,627 deployed across 70,000 sq miles.
+        (6) HD Cameras: 706 deployed with automated detection.
+        (7) PSPS Risk Reduction: 95% vs. pre-2020 protocols.
+        (8) EPSS Ignition Reduction: 69%.
+
+SECTION 3. FEDERAL AGENCY PROGRAMS AND DATA.
+
+    (a) U.S. Department of Energy (DOE):
+        (1) Grid Modernization Initiative (GMI), DOE, 2016–2025.
+        (2) Grid Modernization Multi-Year Program Plan, DOE Office
+            of Electricity, November 2020.
+        (3) "Preventing Outages and Enhancing the Resilience of the
+            Electric Grid," DOE Office of Electricity, 2022.
+        (4) "Wildfire Risk Assessment for Electric Utilities," DOE
+            Office of Cybersecurity, Energy Security, and Emergency
+            Response (CESER), 2023.
+        (5) Energy Storage Grand Challenge Roadmap, DOE, 2020.
+        (6) "Pathways to Commercial Liftoff: Long Duration Energy
+            Storage," DOE Loan Programs Office, 2023.
+        (7) "Undergrounding Electric Distribution Lines: Benefits,
+            Costs, and Technical Considerations," DOE Office of
+            Electricity, Technical Report, 2022.
+
+    (b) Federal Energy Regulatory Commission (FERC):
+        (1) Order No. 841: Electric Storage Participation in Markets
+            Operated by Regional Transmission Organizations and
+            Independent System Operators, 162 FERC ¶ 61,127 (2018).
+        (2) Order No. 2222: Participation of Distributed Energy
+            Resource Aggregations in Markets, 172 FERC ¶ 61,247
+            (2020).
+        (3) Order No. 2023: Improvements to Generator
+            Interconnection Procedures and Agreements, 184 FERC ¶
+            61,054 (2023).
+
+    (c) National Oceanic and Atmospheric Administration (NOAA):
+        (1) National Fire Danger Rating System (NFDRS), NOAA/NWS,
+            current version.
+        (2) High-Resolution Rapid Refresh (HRRR) Model, NOAA/ESRL.
+        (3) Storm Prediction Center Fire Weather Outlooks, NOAA/NWS.
+
+    (d) U.S. Forest Service (USFS):
+        (1) Wildfire Hazard Potential (WHP) Map, USFS Fire Modeling
+            Institute, 2024 Edition.
+        (2) "Confronting the Wildfire Crisis: A Strategy for
+            Protecting Communities and Improving Resilience in
+            America's Forests," USFS, January 2022.
+        (3) National Cohesive Wildland Fire Management Strategy,
+            USFS/DOI, 2014, and 2023 Addendum.
+
+    (e) National Interagency Fire Center (NIFC):
+        (1) National Interagency Mobilization Guide, current edition.
+        (2) Wildland Fire Summary and Statistics Annual Reports,
+            2015–2025.
+        (3) Federal Firefighting Costs (Suppression Only), NIFC,
+            annual data series 1985–2025.
+
+    (f) National Institute of Standards and Technology (NIST):
+        (1) SP 800-82, Revision 3: Guide to Operational Technology
+            (OT) Security, NIST, 2023.
+        (2) "The Camp Fire: Public Safety Communications and
+            Infrastructure Resilience," NIST Special Publication
+            1300, 2021.
+
+SECTION 4. WILDFIRE COST AND LOSS DATA.
+
+    (a) NOAA National Centers for Environmental Information (NCEI):
+        (1) Billion-Dollar Weather and Climate Disasters, 1980–2025,
+            including wildfire event cost estimates.
+
+    (b) Insurance Information Institute (III):
+        (1) "Facts + Statistics: Wildfires," III, annual compilation.
+
+    (c) Munich Re NatCatSERVICE:
+        (1) North American Wildfire Loss Database, 2000–2025.
+
+    (d) Congressional Research Service (CRS):
+        (1) "Wildfire Statistics," CRS In Focus IF10244, updated
+            annually.
+        (2) "Federal Wildfire Management: Ten-Year Funding Trends,"
+            CRS Report R46583, 2020, updated 2025.
+        (3) "Electric Grid Resilience and Wildfire Mitigation,"
+            CRS Report R47080, 2022.
+
+    (e) Headwaters Economics:
+        (1) "The Full Community Costs of Wildfire," 2018, updated
+            2023.
+
+SECTION 5. STANDARDS AND TECHNICAL REFERENCES.
+
+    (a) American Society of Civil Engineers (ASCE):
+        (1) ASCE 7-22: Minimum Design Loads and Associated Criteria
+            for Buildings and Other Structures, 2022.
+        (2) Manual of Practice No. 74: Guidelines for Electrical
+            Transmission Line Structural Loading, 4th Edition, 2020.
+
+    (b) Institute of Electrical and Electronics Engineers (IEEE):
+        (1) IEEE Std 1547-2018: Standard for Interconnection and
+            Interoperability of Distributed Energy Resources.
+        (2) IEEE Std 2800-2022: Standard for Interconnection and
+            Interoperability of Inverter-Based Resources.
+        (3) IEEE Std C37.114-2014: Guide for Determining Fault
+            Location on AC Transmission and Distribution Lines.
+        (4) IEEE PES Task Force on Wildfire Prevention and
+            Mitigation, Technical Report, 2023.
+
+    (c) National Fire Protection Association (NFPA):
+        (1) NFPA 70: National Electrical Code (NEC), 2023 Edition.
+        (2) NFPA 855: Standard for the Installation of Stationary
+            Energy Storage Systems, 2023 Edition.
+        (3) NFPA 1144: Standard for Reducing Structure Ignition
+            Hazards from Wildland Fire, 2022 Edition.
+
+    (d) ASTM International:
+        (1) ASTM E119: Standard Test Methods for Fire Tests of
+            Building Construction and Materials.
+        (2) ASTM E84: Standard Test Method for Surface Burning
+            Characteristics of Building Materials.
+        (3) ASTM FIRE-RES-UP: Fire-Resistant Design for Utility
+            Poles, draft standard under development.
+
+SECTION 6. DATA CENTER AND DIGITAL INFRASTRUCTURE.
+
+    (a) Lawrence Berkeley National Laboratory (LBNL):
+        (1) "United States Data Center Energy Usage Report," LBNL,
+            2024 Edition.
+        (2) "Characteristics and Trends of U.S. Data Center Load,"
+            LBNL, 2025 Technical Brief.
+
+    (b) Uptime Institute:
+        (1) "Annual Outage Analysis 2025," Uptime Institute.
+        (2) "Data Center Cost of Downtime," Uptime Institute, 2024.
+
+    (c) OpenADR Alliance:
+        (1) OpenADR 2.0b Profile Specification, 2013.
+
+SECTION 7. SELECTED ACADEMIC AND RESEARCH PUBLICATIONS.
+
+    (a) Abatzoglou, J.T. and Williams, A.P. (2016). "Impact of
+        anthropogenic climate change on wildfire across western US
+        forests." Proceedings of the National Academy of Sciences,
+        113(42), 11770–11775.
+
+    (b) Westerling, A.L. (2016). "Increasing western US forest
+        wildfire activity: sensitivity to changes in the timing of
+        spring." Philosophical Transactions of the Royal Society B,
+        371(1696), 20150178.
+
+    (c) Syphard, A.D. and Keeley, J.E. (2015). "Location, timing and
+        extent of wildfire vary by cause of ignition." International
+        Journal of Wildland Fire, 24(1), 37–47.
+
+    (d) Moreno, R. et al. (2021). "Microgrids for Wildfire
+        Resilience: A Techno-Economic Analysis." IEEE Transactions
+        on Power Systems, 36(4), 3204–3214.
+
+    (e) Taylor, J. et al. (2022). "Effectiveness of Covered Conductor
+        in Reducing Wildfire Ignitions: Evidence from Australian and
+        California Deployments." Electric Power Systems Research,
+        198, 107342.

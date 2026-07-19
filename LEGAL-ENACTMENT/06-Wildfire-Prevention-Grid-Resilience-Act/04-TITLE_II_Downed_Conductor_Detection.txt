@@ -1,0 +1,144 @@
+================================================================================
+119TH CONGRESS — 2ND SESSION                                     H.R. _______
+================================================================================
+
+               TITLE II — DOWNED CONDUCTOR DETECTION
+                        AND RAPID SHUTOFF
+
+================================================================================
+
+SEC. 201. MANDATORY DCD DEPLOYMENT.
+
+    (a) DEPLOYMENT REQUIREMENT. — Not later than December 31, 2030, every
+    electric utility operating distribution or sub-transmission circuits
+    within any area designated as a High Fire Threat District by the
+    relevant state regulatory authority shall deploy Downed Conductor
+    Detection (DCD) technology on all circuits within such districts.
+
+    (b) DEFINITION OF DCD TECHNOLOGY. — For purposes of this Title, the
+    term "Downed Conductor Detection" means an integrated system capable
+    of detecting a high-impedance fault or broken conductor condition and
+    automatically de-energizing the affected circuit segment within 200
+    milliseconds of fault detection, utilizing one or more of the
+    following technical approaches:
+        (1) Sub-cycle traveling-wave fault detection;
+        (2) Voltage and current signature analysis with machine-learning
+            classification of fault type;
+        (3) Distributed line sensor networks with real-time
+            communication to substation protection relays;
+        (4) Equivalent or superior technologies as certified by the
+            Secretary of Energy.
+
+    (c) PG&E DCD MODEL. — The DCD deployment model developed and
+    implemented by PG&E, comprising approximately 2,000 devices installed
+    on high-fire-risk circuits as of 2025 and having prevented 45
+    confirmed ignitions through automatic de-energization, shall serve
+    as the reference implementation for the national DCD program. The
+    Secretary shall:
+        (1) Publish technical specifications based on PG&E's DCD
+            system architecture and performance data;
+        (2) Establish a knowledge-transfer program enabling PG&E
+            engineering personnel to provide technical assistance to
+            deploying utilities.
+
+SEC. 202. FEDERAL PROCUREMENT AND TECHNICAL STANDARDS.
+
+    (a) PERFORMANCE STANDARDS. — Within 270 days of enactment, the
+    Secretary, in consultation with the National Institute of Standards
+    and Technology (NIST) and the Federal Energy Regulatory Commission
+    (FERC), shall promulgate mandatory minimum performance standards
+    for DCD systems deployed under this Title, including:
+        (1) Maximum fault detection time not to exceed 200 milliseconds;
+        (2) Maximum circuit de-energization time not to exceed 500
+            milliseconds from fault detection;
+        (3) False positive rate not to exceed 5 percent of total
+            de-energization events, measured annually;
+        (4) Communication latency between field devices and substation
+            protection systems not to exceed 50 milliseconds;
+        (5) Cybersecurity requirements consistent with NIST Special
+            Publication 800-82, Revision 3, or successor guidance;
+        (6) Interoperability with utility SCADA, ADMS, and OMS
+            platforms through open-standard protocols.
+
+    (b) NATIONAL PROCUREMENT CONTRACT. — The General Services
+    Administration (GSA) shall, within 365 days of enactment, negotiate
+    and award one or more government-wide acquisition contracts for DCD
+    equipment meeting the standards promulgated under subsection (a).
+    All federal cost-share funds disbursed for DCD deployment shall
+    require procurement of equipment through such GSA contracts, unless
+    the Secretary grants a waiver based on specific technical or
+    operational requirements of the requesting utility.
+
+    (c) DOMESTIC MANUFACTURING PREFERENCE. — DCD equipment procured
+    with federal funds under this Title shall comply with Buy America
+    requirements under 49 U.S.C. 5323(j), with the Secretary authorized
+    to grant waivers where domestic manufacturing capacity is
+    insufficient to meet program demand within required timelines.
+
+SEC. 203. DCD PERFORMANCE METRICS.
+
+    (a) METRICS. — Each utility deploying DCD under this Title shall
+    report to the Secretary, on a quarterly basis:
+        (1) Total number of DCD devices deployed and operational;
+        (2) Circuit miles protected by DCD devices;
+        (3) Number of DCD-initiated de-energization events;
+        (4) Number of confirmed ignitions prevented, as determined by
+            post-event inspection;
+        (5) Number of false positive de-energizations;
+        (6) Mean time to restoration following DCD-initiated
+            de-energization.
+
+    (b) PUBLIC DATABASE. — The Secretary shall maintain a publicly
+    accessible database of DCD performance metrics, aggregated by
+    utility and by state, updated quarterly, with redaction of
+    information that could compromise grid security.
+
+    (c) PERFORMANCE IMPROVEMENT. — Utilities whose DCD systems fail to
+    meet the performance standards established under section 202(a) for
+    any two consecutive quarters shall be required to submit a
+    corrective action plan to the Secretary within 90 days and shall
+    be ineligible for enhanced federal cost-share rates until
+    compliance is restored.
+
+SEC. 204. INTEROPERABILITY REQUIREMENTS.
+
+    (a) DATA SHARING. — DCD systems deployed under this Title shall be
+    capable of sharing fault-detection data with:
+        (1) The deploying utility's Energy Management System (EMS) and
+            Distribution Management System (DMS);
+        (2) Adjacent utilities' control centers, through secure
+            inter-utility communication protocols, for coordinated
+            response to multi-circuit fault events;
+        (3) State and federal emergency operations centers during
+            declared wildfire emergencies.
+
+    (b) COMMUNICATIONS RESILIENCE. — DCD field devices shall be
+    equipped with dual-path communications capability, including at
+    minimum one terrestrial path (fiber optic or licensed microwave)
+    and one satellite or cellular backup path, to ensure continued
+    operability during wildfire events that may damage or disable
+    primary communications infrastructure.
+
+    (c) EMERGENCY OVERRIDE. — DCD systems shall include a secure
+    manual override capability accessible only to authorized utility
+    operations personnel, subject to the following conditions:
+        (1) Override events shall be logged with timestamp, operator
+            identity, and justification;
+        (2) Any circuit segment subject to override shall remain in
+            Enhanced Powerline Safety Settings (EPSS) mode, with
+            sensitivity increased by not less than 50 percent above
+            normal operating parameters;
+        (3) Aggregate override events shall be reported quarterly
+            to the relevant state regulatory authority.
+
+SEC. 205. AUTHORIZATION OF APPROPRIATIONS.
+
+    (a) There is authorized to be appropriated $10 billion for the
+    period of fiscal years 2027 through 2036 to carry out this Title,
+    allocated as follows:
+        (1) $7.5 billion for DCD equipment procurement and
+            installation cost-share grants to eligible utilities;
+        (2) $1.5 billion for research, development, testing, and
+            evaluation of next-generation DCD technologies;
+        (3) $1.0 billion for program administration, technical
+            assistance, and the national DCD performance database.

@@ -1,0 +1,129 @@
+================================================================================
+                     TITLE XI — ECONOMIC IMPACT ASSESSMENT
+                     CTSCRA OF 2026
+================================================================================
+
+SECTION 1101. CONGRESSIONAL BUDGET OFFICE SCORING REQUIREMENT.
+
+  The Director of the Congressional Budget Office shall, not later than
+  60 days after the date of introduction of this Act, provide a formal
+  cost estimate and ten-year economic impact projection consistent with
+  section 402 of the Congressional Budget Act of 1974.
+
+SECTION 1102. DEPARTMENT OF COMMERCE ECONOMIC IMPACT ANALYSIS.
+
+  (a) IN GENERAL. — The Secretary of Commerce, in coordination with the
+      Secretary of Labor, the Secretary of the Treasury, and the Director
+      of the Office of Management and Budget, shall prepare and publish
+      an Economic Impact Analysis of this Act not later than 180 days
+      after enactment and updated biennially thereafter.
+
+  (b) PROJECTED ECONOMIC BENEFITS. — Based on preliminary analysis and
+      modeling of analogous industrial policy interventions including the
+      CHIPS and Science Act of 2022, the Department of Commerce projects
+      the following economic outcomes from full implementation of this Act:
+
+    (1) DOMESTIC SEMICONDUCTOR MANUFACTURING CAPACITY. — Increase of
+        United States share of global advanced semiconductor manufacturing
+        capacity from approximately 12 percent in 2024 to no less than
+        30 percent by 2035, representing a structural reversal of the
+        three-decade decline in domestic manufacturing share.
+
+    (2) SEMICONDUCTOR INDUSTRY EMPLOYMENT. — Creation of approximately
+        500,000 direct and indirect domestic jobs, comprising:
+
+        (A) Approximately 125,000 direct semiconductor fabrication,
+            packaging, equipment, and materials manufacturing jobs;
+
+        (B) Approximately 175,000 indirect jobs in the semiconductor
+            supply chain, construction, and related services;
+
+        (C) Approximately 200,000 induced jobs in communities hosting
+            semiconductor manufacturing clusters through multiplier
+            effects.
+
+    (3) GROSS DOMESTIC PRODUCT GROWTH. — Cumulative contribution of
+        approximately $500 billion to United States gross domestic
+        product over the ten-year authorization period, with annual GDP
+        contribution growing from approximately $20 billion in fiscal
+        year 2028 to approximately $80 billion in fiscal year 2036.
+
+    (4) REGIONAL ECONOMIC DEVELOPMENT. — Catalytic economic
+        transformation of regions hosting major semiconductor
+        manufacturing clusters, including:
+
+        (A) Maricopa County, Arizona: TSMC fab campus buildout
+            supporting an estimated 50,000 direct and indirect jobs,
+            $120 billion cumulative regional GDP contribution;
+
+        (B) Central Ohio: Intel mega-fab campus buildout supporting
+            an estimated 80,000 direct and indirect jobs at full
+            buildout, $200 billion cumulative regional GDP contribution;
+
+        (C) Central Texas: Samsung Austin/Taylor campus expansion
+            supporting an estimated 40,000 jobs, $100 billion regional
+            GDP contribution;
+
+        (D) Upstate New York: Micron Clay facility and associated
+            ecosystem supporting an estimated 50,000 jobs, $120
+            billion regional GDP contribution;
+
+        (E) Idaho: Micron Boise expansion supporting 20,000 jobs,
+            $50 billion regional GDP contribution.
+
+    (5) ARTIFICIAL INTELLIGENCE INDUSTRY SECURITY. — Protection and
+        enablement of the domestic artificial intelligence industry,
+        which independent analysts project to represent a global market
+        of $1.5 trillion to $4.4 trillion by 2035, by:
+
+        (A) Ensuring domestic manufacturing of AI accelerator chips;
+
+        (B) Providing domestic advanced packaging capacity for
+            leading-edge AI chip architectures;
+
+        (C) Democratizing access to AI compute infrastructure for
+            research and small business innovation;
+
+        (D) Maintaining United States leadership in AI semiconductor
+            design through a secure and resilient supply chain.
+
+    (6) RARE EARTH SUPPLY CHAIN RESILIENCE. — Reduction of United States
+        dependency on the People's Republic of China for rare earth
+        permanent magnets from approximately 90 percent to no more than
+        30 percent by 2035, with domestic and allied-sourced rare earth
+        magnet supply sufficient to meet defense and essential civilian
+        requirements.
+
+    (7) ENERGY SECTOR BENEFITS. — Acceleration of advanced nuclear and
+        Small Modular Reactor deployment for industrial applications,
+        with semiconductor manufacturing serving as the anchor tenant
+        for new nuclear capacity that subsequently enables broader
+        grid decarbonization and industrial electrification.
+
+    (8) TAX REVENUE GENERATION. — Estimated cumulative Federal, State,
+        and local tax revenues of approximately $80 billion to $120
+        billion over the ten-year period, partially offsetting the
+        Federal investment, from direct and indirect economic activity
+        generated by programs authorized under this Act.
+
+    (9) TECHNOLOGICAL SPILLOVER EFFECTS. — The semiconductor
+        manufacturing ecosystem established under this Act is projected
+        to generate substantial technological spillover benefits
+        including:
+
+        (A) Acceleration of materials science, photonics, quantum
+            computing, and advanced manufacturing technologies;
+
+        (B) Creation of a durable domestic innovation ecosystem
+            attracting and retaining scientific and engineering talent;
+
+        (C) Establishment of manufacturing process expertise
+            transferable to pharmaceuticals, biotechnology, advanced
+            materials, and clean energy manufacturing.
+
+    (10) NATIONAL SECURITY BENEFIT. — Reduction of the estimated
+         probability of catastrophic supply chain disruption from
+         geopolitical conflict in the Taiwan Strait, quantified
+         through avoided expected economic loss of between $1 trillion
+         and $3 trillion, substantially exceeding the total authorization
+         under this Act.

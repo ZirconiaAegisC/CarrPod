@@ -1,0 +1,139 @@
+================================================================================
+                 TITLE VI — EXPORT CONTROLS AND TECHNOLOGY SECURITY
+                 CTSCRA OF 2026
+================================================================================
+
+SECTION 601. SHORT TITLE.
+
+  This title may be cited as the "Critical Technology Export Control and
+  Investment Security Act of 2026."
+
+SECTION 602. FINDINGS.
+
+  Congress finds that:
+
+    (1) The U.S. export control system requires modernization to address
+        adversary acquisition of advanced semiconductor technology and
+        AI capabilities.
+
+    (2) The October 2022 and October 2023 BIS interim final rules on AI
+        chips and semiconductor equipment demonstrated effectiveness,
+        yet third-party transshipment circumvention persists.
+
+    (3) CFIUS, as strengthened by FIRRMA, has effectively mitigated
+        risks from foreign acquisitions but lacks jurisdiction over
+        outbound investment and greenfield technology transfer.
+
+    (4) The PRC has invested in excess of $50 billion through its
+        National IC Industry Investment Fund to acquire semiconductor
+        technology through investment, espionage, and forced transfer.
+
+SECTION 603. EXPANSION OF BIS ENTITY LIST AUTHORITIES.
+
+  (a) IN GENERAL. — Section 744.11 of the Export Administration Regulations
+      (15 C.F.R. 744.11) is affirmed and expanded as follows:
+
+  (b) SEMICONDUCTOR ENTITY LIST. — The Secretary of Commerce shall maintain
+      a dedicated Semiconductor Restricted Entity List, a subset of the
+      Entity List, comprising foreign persons and entities determined to
+      pose an unacceptable risk of diversion of advanced semiconductors,
+      semiconductor manufacturing equipment, electronic design automation
+      software, or related technology to foreign adversaries.
+
+  (c) CRITERIA FOR DESIGNATION. — In making Entity List designations under
+      this section, the Secretary shall consider:
+
+    (1) Whether the entity is involved in semiconductor manufacturing for
+        the People's Liberation Army or Chinese military-civil fusion
+        programs;
+
+    (2) Whether the entity has procured United States-origin items on
+        behalf of designated entities through third-party intermediaries;
+
+    (3) Whether the entity is located in, or operates through, a
+        jurisdiction identified by the Secretary as a transshipment hub
+        for controlled technology;
+
+    (4) Whether the entity is subject to ownership or control, directly
+        or indirectly, by a foreign adversary government or military
+        organization.
+
+SECTION 604. AI CHIP EXPORT CONTROL FRAMEWORK.
+
+  (a) PERFORMANCE-BASED THRESHOLDS. — The Secretary of Commerce shall
+      maintain export control thresholds based on:
+
+    (1) Aggregate bidirectional chip-to-chip data transfer rate, measured
+        in terabytes per second;
+
+    (2) Aggregate processing performance, measured in TOPS (trillions of
+        operations per second) at a specified precision; and
+
+    (3) Chip-to-chip interconnect density, measured in gigatransfers per
+        second per millimeter of die edge.
+
+  (b) DYNAMIC ADJUSTMENT. — The Secretary shall review and adjust thresholds
+      under subsection (a) not less frequently than annually to maintain
+      controls at a level consistent with advancing technology and evolving
+      national security requirements.
+
+  (c) PRESUMPTION OF CONTROL. — For purposes of the EAR, all advanced AI
+      accelerator integrated circuits with aggregate bidirectional
+      interconnect bandwidth exceeding 600 gigabytes per second shall be
+      presumed subject to export control licensing requirements when
+      destined for Macau or the People's Republic of China, displacing
+      the de minimis rule for such items.
+
+  (d) WORLDWIDE CONTROLS. — Items subject to control under this section
+      that are manufactured outside the United States but incorporate
+      United States-origin technology, software, or equipment subject to
+      the EAR shall remain subject to United States export jurisdiction
+      consistent with the foreign direct product rule framework.
+
+SECTION 605. SEMICONDUCTOR MANUFACTURING EQUIPMENT RESTRICTIONS.
+
+  (a) CRITICAL EQUIPMENT LIST. — The Secretary of Commerce shall publish
+      and maintain a Critical Semiconductor Manufacturing Equipment List
+      identifying categories of equipment, components, and associated
+      software for which exports to Macau or the People's Republic of China
+      require a license, which shall be subject to a presumption of denial.
+
+  (b) EQUIPMENT CATEGORIES. — The list shall include EUV lithography
+      equipment, DUV immersion lithography below 40nm pitch, ALD and
+      selective epitaxial growth equipment, advanced etch equipment,
+      e-beam and x-ray metrology for sub-10nm nodes, and EDA software
+      for gate-all-around or backside power delivery design.
+
+  (c) MAINTENANCE AND SERVICE RESTRICTIONS. — The authorization required
+      for the export of controlled equipment shall include authorization
+      for provision of maintenance, repair, service, spare parts, and
+      software updates, except as specifically licensed by the Secretary.
+
+SECTION 606. CFIUS EXPANSION.
+
+  (a) COVERED TRANSACTIONS. — Section 721(a)(4) of the Defense Production
+      Act (50 U.S.C. 4565(a)(4)) is expanded to include any transaction
+      involving U.S. businesses developing or manufacturing advanced
+      semiconductors, equipment, or packaging; greenfield fab construction
+      by foreign adversary-linked entities; and joint ventures or
+      licensing providing foreign adversary access to semiconductor
+      process technology or design methodology.
+
+  (b) OUTBOUND INVESTMENT. — The Secretary of the Treasury is authorized
+      to review and prohibit U.S. person investments in semiconductor
+      manufacturing, advanced packaging, or AI accelerator design
+      entities in foreign adversary countries where such investment
+      poses national security risk.
+
+SECTION 607. ENFORCEMENT AND PENALTIES.
+
+  (a) ADDITIONAL RESOURCES. — There is authorized to be appropriated
+      $1,000,000,000 for the period of fiscal years 2027 through 2031 to
+      the Bureau of Industry and Security for enforcement of export controls
+      under this title, including:
+
+    (1) Expansion of the Office of Export Enforcement field offices;
+
+    (2) Enhanced end-use monitoring and verification capabilities;
+
+    (3) Interagency task forces for semiconductor diversion investigations.

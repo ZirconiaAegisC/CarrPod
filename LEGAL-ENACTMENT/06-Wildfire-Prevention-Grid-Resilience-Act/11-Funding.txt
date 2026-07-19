@@ -1,0 +1,156 @@
+================================================================================
+119TH CONGRESS — 2ND SESSION                                     H.R. _______
+================================================================================
+
+                   TITLE IX — FUNDING AUTHORIZATIONS
+
+================================================================================
+
+SEC. 901. TOTAL AUTHORIZATION.
+
+    (a) There is authorized to be appropriated to carry out this Act
+    a total of $150,000,000,000 for the period of fiscal years 2027
+    through 2036.
+
+    (b) Funds authorized under this Act shall remain available until
+    expended, subject to the program completion and sunset provisions
+    of Title X.
+
+    (c) Amounts authorized under this Act are in addition to any
+    other amounts authorized for wildfire prevention, grid resilience,
+    or related purposes under any other provision of law.
+
+SEC. 902. ALLOCATION BY PROGRAM AREA.
+
+    (a) The total authorization under section 901 shall be allocated
+    among program areas as follows:
+
+    ┌──────────────────────────────────────────────────────────────┐
+    │ PROGRAM AREA                          AUTHORIZATION (FY27–36) │
+    ├──────────────────────────────────────────────────────────────┤
+    │ TITLE I — Undergrounding              $60,000,000,000         │
+    │   Federal cost-share at 60–80% for                           │
+    │   approximately 10,000 miles at                              │
+    │   approximately $3M/mile                                     │
+    ├──────────────────────────────────────────────────────────────┤
+    │ TITLE II — Downed Conductor Detection  $10,000,000,000        │
+    │   DCD deployment grants: $7.5B                               │
+    │   R&D and next-gen technology: $1.5B                         │
+    │   Administration: $1.0B                                      │
+    ├──────────────────────────────────────────────────────────────┤
+    │ TITLE III — Weather & Sensor Network   $10,000,000,000        │
+    │   Weather station grants: $6.0B                              │
+    │   HD camera/detection: $3.0B                                 │
+    │   NOAA integration/admin: $1.0B                              │
+    ├──────────────────────────────────────────────────────────────┤
+    │ TITLE IV — PSPS Reform                $5,000,000,000          │
+    │   Backup power grants: $3.0B                                 │
+    │   Community resilience: $1.0B                                │
+    │   Administration/database: $1.0B                             │
+    ├──────────────────────────────────────────────────────────────┤
+    │ TITLE V — Microgrid & Distributed     $40,000,000,000         │
+    │          Energy Resources                                    │
+    │   Community microgrids: $10.0B                               │
+    │   Utility-scale storage: $20.0B                              │
+    │   Solar+storage critical facilities: $8.0B                   │
+    │   R&D/standards/administration: $2.0B                        │
+    ├──────────────────────────────────────────────────────────────┤
+    │ TITLE VI — Vegetation Management      $20,000,000,000         │
+    │   Vegetation management cost-share: $10.0B                   │
+    │   LIDAR/predictive analytics: $4.0B                          │
+    │   Workforce development: $3.0B                               │
+    │   Prescribed fire/fuels: $3.0B                               │
+    ├──────────────────────────────────────────────────────────────┤
+    │ TITLE VII — Transmission Hardening    $10,000,000,000         │
+    │   Composite/fire-resistant materials: $4.0B                  │
+    │   Covered conductor deployment: $4.0B                        │
+    │   Inspection/maintenance: $1.0B                              │
+    │   R&D/fire-resistant coatings: $1.0B                         │
+    ├──────────────────────────────────────────────────────────────┤
+    │ TITLE VIII — Data Center Protection   $5,000,000,000          │
+    │   Behind-meter storage ITC: $3.0B                            │
+    │   Grid integration infrastructure: $1.0B                     │
+    │   R&D/standards/administration: $1.0B                        │
+    └──────────────────────────────────────────────────────────────┘
+
+    (b) PROGRAM RESERVE. — The Secretary may reserve not more than
+    3 percent of each program area's annual appropriation for
+    program administration, technical assistance, and oversight.
+
+SEC. 903. STATE MATCHING REQUIREMENTS.
+
+    (a) STATES. — As a condition of receiving federal cost-share
+    funds under Titles I, II, V, VI, and VII, each participating
+    state shall provide a contribution of not less than 10 percent
+    of the non-federal share of project costs within that state,
+    which may be satisfied through:
+        (1) Direct state appropriations;
+        (2) State infrastructure bank loans or loan guarantees;
+        (3) Ratepayer-backed securitization bonds issued by a
+            state infrastructure authority;
+        (4) Tax credits or other financial incentives provided
+            by the state to the participating utility.
+
+    (b) WAIVER. — The Secretary may waive or reduce the state
+    matching requirement under subsection (a) for:
+        (1) States that have experienced a major disaster
+            declaration under the Robert T. Stafford Disaster Relief
+            and Emergency Assistance Act within the preceding 24
+            months;
+        (2) States where the median household income is below 75
+            percent of the national median as determined by the
+            Bureau of the Census;
+        (3) Projects located on tribal lands.
+
+    (c) TRIBAL PROJECTS. — Projects located on federally recognized
+    tribal lands shall be exempt from state matching requirements
+    and shall be eligible for a federal cost-share of not less than
+    90 percent.
+
+SEC. 904. OVERSIGHT AND AUDIT.
+
+    (a) INSPECTOR GENERAL. — The Inspector General of the Department
+    of Energy shall conduct an annual audit of expenditures under
+    this Act and shall report findings to the Committee on Energy and
+    Commerce of the House of Representatives and the Committee on
+    Energy and Natural Resources of the Senate.
+
+    (b) GAO REVIEW. — The Comptroller General of the United States
+    shall conduct a comprehensive review of the programs established
+    under this Act not later than 5 years after enactment and every
+    5 years thereafter, assessing:
+        (1) The effectiveness of each program in achieving its
+            stated wildfire prevention and grid resilience
+            objectives;
+        (2) The efficiency of fund allocation and expenditure;
+        (3) The adequacy of program oversight and accountability
+            mechanisms;
+        (4) Recommendations for legislative or administrative
+            improvements.
+
+    (c) RECAPTURE AUTHORITY. — The Secretary may recapture funds
+    from any grant recipient that:
+        (1) Fails to comply with program requirements after notice
+            and a 90-day opportunity to cure;
+        (2) Engages in fraud, waste, or abuse in connection with
+            Program funds;
+        (3) Fails to achieve substantial completion of funded work
+            within timelines established in the grant agreement.
+
+    (d) FRAUD REPORTING. — The Secretary shall establish and
+    publicize a mechanism for reporting suspected fraud, waste, or
+    abuse in programs funded under this Act, including a toll-free
+    hotline and a secure web-based reporting portal.
+
+SEC. 905. SUPPLEMENT NOT SUPPLANT.
+
+    (a) Funds provided under this Act shall supplement, and not
+    supplant, state and utility expenditures for wildfire prevention
+    and grid resilience that would otherwise be made in the absence
+    of this Act.
+
+    (b) As a condition of receiving federal funds under this Act,
+    each recipient utility shall certify annually that federal funds
+    have not been used to reduce the utility's own wildfire
+    prevention expenditures below the average annual level of such
+    expenditures during the three fiscal years preceding enactment.

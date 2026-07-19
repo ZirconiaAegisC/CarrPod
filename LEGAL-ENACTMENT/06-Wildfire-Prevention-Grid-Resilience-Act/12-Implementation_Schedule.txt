@@ -1,0 +1,175 @@
+================================================================================
+119TH CONGRESS — 2ND SESSION                                     H.R. _______
+================================================================================
+
+              TITLE X — IMPLEMENTATION AND REPORTING
+
+================================================================================
+
+SEC. 1001. IMPLEMENTATION TIMELINE.
+
+    (a) The following implementation milestones shall apply to the
+    programs established under this Act:
+
+    ┌──────────────────────────────────────────────────────────────┐
+    │ MILESTONE                                DEADLINE            │
+    ├──────────────────────────────────────────────────────────────┤
+    │ PROMULGATION OF REGULATIONS                                  │
+    │   Secretary to publish NPRM for all      180 days after      │
+    │   Titles                                   enactment          │
+    │   Secretary to publish Final Rules       365 days after      │
+    │                                           enactment          │
+    ├──────────────────────────────────────────────────────────────┤
+    │ TITLE I — UNDERGROUNDING                                     │
+    │   First grant application window opens   365 days after      │
+    │                                           enactment          │
+    │   First project construction commences   540 days after      │
+    │                                           enactment          │
+    │   Cumulative 2,500 miles complete        December 31, 2029   │
+    │   Cumulative 5,000 miles complete        December 31, 2032   │
+    │   Cumulative 7,500 miles complete        December 31, 2034   │
+    │   Final 10,000-mile target                September 30, 2036  │
+    ├──────────────────────────────────────────────────────────────┤
+    │ TITLE II — DOWNED CONDUCTOR DETECTION                        │
+    │   DCD performance standards published   270 days after       │
+    │                                           enactment          │
+    │   GSA procurement contracts awarded      365 days after       │
+    │                                           enactment          │
+    │   First utility DCD deployment complete  730 days after       │
+    │                                           enactment          │
+    │   Full deployment on all HFTD circuits   December 31, 2030   │
+    ├──────────────────────────────────────────────────────────────┤
+    │ TITLE III — WEATHER AND SENSOR NETWORK                       │
+    │   Station and camera standards published 270 days after       │
+    │                                           enactment          │
+    │   First grant application window opens   365 days after       │
+    │                                           enactment          │
+    │   Cumulative 2,500 stations deployed     December 31, 2029   │
+    │   Cumulative 5,000 stations deployed     December 31, 2031   │
+    │   Cumulative 7,500 stations deployed     December 31, 2033   │
+    │   Final 10,000-station target            December 31, 2035   │
+    ├──────────────────────────────────────────────────────────────┤
+    │ TITLE IV — PSPS REFORM                                        │
+    │   National PSPS standards promulgated    365 days after       │
+    │                                           enactment          │
+    │   Medical registry operational           545 days after       │
+    │                                           enactment          │
+    │   Backup power grant program active      455 days after       │
+    │                                           enactment          │
+    │   PSPS public database online            455 days after       │
+    │                                           enactment          │
+    ├──────────────────────────────────────────────────────────────┤
+    │ TITLE V — MICROGRID AND STORAGE                              │
+    │   Microgrid Fund operational             270 days after       │
+    │                                           enactment          │
+    │   First microgrid construction awards    455 days after       │
+    │                                           enactment          │
+    │   Grid-forming inverter standards        540 days after       │
+    │     published                              enactment          │
+    │   First 50 community microgrids online   December 31, 2030   │
+    │   Cumulative 5 GW storage deployed       December 31, 2032   │
+    │   Cumulative 10 GW storage deployed      December 31, 2035   │
+    ├──────────────────────────────────────────────────────────────┤
+    │ TITLE VI — VEGETATION MANAGEMENT                             │
+    │   Enhanced clearance standards published 365 days after       │
+    │                                           enactment          │
+    │   LIDAR mapping program operational      365 days after       │
+    │                                           enactment          │
+    │   Workforce development grants begin     455 days after       │
+    │                                           enactment          │
+    │   Prescribed fire program operational    455 days after       │
+    │                                           enactment          │
+    ├──────────────────────────────────────────────────────────────┤
+    │ TITLE VII — TRANSMISSION HARDENING                            │
+    │   Structural standards published         365 days after       │
+    │                                           enactment          │
+    │   Covered conductor mandate: 50%          December 31, 2030   │
+    │     of HFTD circuit miles                                    │
+    │   Covered conductor mandate: 75%          December 31, 2032   │
+    │     of HFTD circuit miles                                    │
+    ├──────────────────────────────────────────────────────────────┤
+    │ TITLE VIII — DATA CENTER PROTECTION                          │
+    │   Grid integration standards published   365 days after       │
+    │                                           enactment          │
+    │   Behind-meter storage mandate effective  January 1, 2029     │
+    │   First resilience plans due             540 days after       │
+    │                                           enactment          │
+    └──────────────────────────────────────────────────────────────┘
+
+    (b) QUARTERLY STATUS REVIEWS. — The Secretary shall conduct
+    quarterly program status reviews for each Title and shall
+    publish a summary report on the Department's public website
+    within 30 days of each quarter-end.
+
+    (c) DELAY CORRECTIVE ACTION. — Any program that has not
+    achieved its milestone under subsection (a) within 180 days
+    of the specified deadline shall trigger a mandatory review
+    by the Secretary, with findings and a corrective action plan
+    submitted to the relevant congressional committees within
+    90 days.
+
+SEC. 1002. ANNUAL REPORTS TO CONGRESS.
+
+    (a) REPORT CONTENTS. — Not later than March 31 of each year,
+    the Secretary shall submit to the Committee on Energy and
+    Commerce of the House of Representatives and the Committee on
+    Energy and Natural Resources of the Senate an annual report
+    on the implementation of this Act, which shall include:
+
+        (1) A summary of expenditures and obligations for each
+            program area during the preceding fiscal year;
+        (2) Progress toward each milestone identified in section
+            1001(a);
+        (3) Outcome metrics including, at minimum:
+            (A) Miles of line undergrounded;
+            (B) Number of DCD devices deployed and ignitions
+                prevented;
+            (C) Number of weather stations and cameras installed;
+            (D) PSPS events, customer-hours of outage, and
+                medically vulnerable customers served;
+            (E) Megawatts of storage deployed and microgrids
+                operational;
+            (F) Acres of vegetation managed and miles of covered
+                conductor deployed;
+            (G) Number of data center facilities in compliance
+                with Title VIII requirements;
+        (4) An independent evaluation of program effectiveness
+            conducted by a qualified third-party organization;
+        (5) Recommendations for legislative or administrative
+            improvements.
+
+    (b) PUBLIC AVAILABILITY. — Annual reports shall be made
+    available to the public on the Department of Energy's website
+    within 7 days of submission to Congress.
+
+SEC. 1003. PROGRAM EVALUATION AND SUNSET REVIEW.
+
+    (a) MID-TERM EVALUATION. — Not later than September 30, 2031,
+    the Secretary shall contract with the National Academies of
+    Sciences, Engineering, and Medicine to conduct an independent
+    mid-term evaluation of all programs established under this Act,
+    which shall address:
+        (1) Program effectiveness in reducing wildfire ignition
+            risk from electric infrastructure;
+        (2) Cost-effectiveness of each program element relative
+            to alternatives;
+        (3) Equity of program benefits across communities of
+            varying income levels and geographic regions;
+        (4) Adequacy of program funding levels to achieve stated
+            objectives;
+        (5) Recommendations for the second five years of program
+            implementation.
+
+    (b) SUNSET REVIEW. — Not later than September 30, 2035, the
+    Secretary shall submit to Congress a sunset review assessing
+    whether each program authorized under this Act should be
+    reauthorized, modified, or terminated, based on:
+        (1) Demonstrated effectiveness;
+        (2) Continued need as measured by residual wildfire risk;
+        (3) Lessons learned from program implementation;
+        (4) Stakeholder input from utilities, state regulators,
+            fire agencies, and affected communities.
+
+    (c) REAUTHORIZATION. — Programs authorized under this Act
+    shall terminate on September 30, 2036, unless reauthorized
+    by Act of Congress prior to such date.

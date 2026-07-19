@@ -1,0 +1,105 @@
+================================================================================
+119TH CONGRESS — 2ND SESSION
+================================================================================
+
+                               H.R. _______
+
+    To enhance the resilience of the electric grid against wildfire ignition, 
+    to establish a national program for wildfire prevention and electric 
+    infrastructure hardening, to provide federal cost-sharing for utility 
+    undergrounding, advanced detection, and weather monitoring systems, and 
+    for other purposes.
+
+================================================================================
+
+                    IN THE HOUSE OF REPRESENTATIVES
+
+                             ____________
+
+    Mr./Ms. ____________ introduced the following bill; which was referred 
+    to the Committee on Energy and Commerce, and in addition to the 
+    Committees on Natural Resources, Agriculture, Transportation and 
+    Infrastructure, and Science, Space, and Technology, for a period to be 
+    subsequently determined by the Speaker, in each case for consideration 
+    of such provisions as fall within the jurisdiction of the committee 
+    concerned.
+
+================================================================================
+
+                               A BILL
+
+    Entitled: "Wildfire Prevention and Grid Resilience Act of 2026"
+    Short Title Citation: "WPGRA of 2026" or "Grid Resilience Act"
+
+================================================================================
+
+                           TABLE OF CONTENTS
+
+    Sec. 1.   Short Title; Table of Contents.
+    Sec. 2.   Findings and Purposes.
+    Sec. 3.   Definitions.
+
+          TITLE I — UNDERGROUNDING OF HIGH-FIRE-THREAT ELECTRIC LINES
+    Sec. 101.  National Undergrounding Program.
+    Sec. 102.  Federal Cost-Share Formula.
+    Sec. 103.  Expedited Environmental Review.
+    Sec. 104.  Eligible Utilities and Prioritization.
+    Sec. 105.  Reporting and Accountability.
+
+          TITLE II — DOWNED CONDUCTOR DETECTION AND RAPID SHUTOFF
+    Sec. 201.  Mandatory DCD Deployment.
+    Sec. 202.  Federal Procurement and Technical Standards.
+    Sec. 203.  DCD Performance Metrics.
+    Sec. 204.  Interoperability Requirements.
+
+          TITLE III — NATIONAL WEATHER AND SENSOR NETWORK
+    Sec. 301.  Federal Grant Program for Weather Stations.
+    Sec. 302.  High-Definition Camera and Detection Network.
+    Sec. 303.  Data Sharing and Integration with NOAA.
+    Sec. 304.  Standards for Meteorological Data Collection.
+
+          TITLE IV — PUBLIC SAFETY POWER SHUTOFF REFORM
+    Sec. 401.  National PSPS Standards.
+    Sec. 402.  Medically Vulnerable Customer Protections.
+    Sec. 403.  Backup Power Grant Program.
+    Sec. 404.  Post-Event Reporting and Transparency.
+
+          TITLE V — MICROGRID AND DISTRIBUTED ENERGY RESOURCES
+    Sec. 501.  Community Microgrid Development Fund.
+    Sec. 502.  Utility-Scale Battery Storage for Resilience.
+    Sec. 503.  Solar Plus Storage for Critical Facilities.
+    Sec. 504.  Grid-Forming Inverter Standards.
+
+          TITLE VI — VEGETATION MANAGEMENT AND FUELS REDUCTION
+    Sec. 601.  Enhanced Clearance Standards.
+    Sec. 602.  Technology-Enabled Risk Mapping.
+    Sec. 603.  Workforce Development and Training.
+    Sec. 604.  Prescribed Fire Acceleration.
+
+          TITLE VII — TRANSMISSION LINE HARDENING
+    Sec. 701.  Structural Upgrade Standards.
+    Sec. 702.  Composite and Fire-Resistant Materials.
+    Sec. 703.  Covered Conductor Deployment.
+    Sec. 704.  Inspection and Maintenance Requirements.
+
+          TITLE VIII — DATA CENTER AND CRITICAL LOAD PROTECTION
+    Sec. 801.  Grid Integration Standards.
+    Sec. 802.  Behind-Meter Storage Requirements.
+    Sec. 803.  Demand Response Mandates.
+    Sec. 804.  Critical Infrastructure Resilience Planning.
+
+          TITLE IX — FUNDING AUTHORIZATIONS
+    Sec. 901.  Total Authorization.
+    Sec. 902.  Allocation by Program Area.
+    Sec. 903.  State Matching Requirements.
+    Sec. 904.  Oversight and Audit.
+
+          TITLE X — IMPLEMENTATION AND REPORTING
+    Sec. 1001. Implementation Timeline.
+    Sec. 1002. Annual Reports to Congress.
+    Sec. 1003. Program Evaluation and Sunset Review.
+
+================================================================================
+                    WILDFIRE PREVENTION AND GRID RESILIENCE ACT
+                             (WPGRA of 2026)
+================================================================================

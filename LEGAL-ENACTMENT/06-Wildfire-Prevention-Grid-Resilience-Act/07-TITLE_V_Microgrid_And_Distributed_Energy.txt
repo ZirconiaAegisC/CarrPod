@@ -1,0 +1,155 @@
+================================================================================
+119TH CONGRESS — 2ND SESSION                                     H.R. _______
+================================================================================
+
+           TITLE V — MICROGRID AND DISTRIBUTED ENERGY
+                     RESOURCES FOR RESILIENCE
+
+================================================================================
+
+SEC. 501. COMMUNITY MICROGRID DEVELOPMENT FUND.
+
+    (a) ESTABLISHMENT. — There is established within the Department of
+    Energy a Community Microgrid Development Fund ("the Microgrid Fund")
+    to provide grants, loans, and loan guarantees for the planning,
+    design, and construction of community microgrids in wildfire-prone
+    regions.
+
+    (b) ELIGIBLE PROJECTS. — The Microgrid Fund shall support projects
+    that:
+        (1) Serve a defined geographic area containing critical
+            community facilities including, at minimum, one or more
+            of the following: a hospital or medical clinic, a fire
+            station, a police station, an emergency shelter, a
+            school, a grocery store, or a water or wastewater
+            treatment facility;
+        (2) Are capable of islanding from the main grid and
+            operating autonomously for not less than 72 consecutive
+            hours at full design load;
+        (3) Incorporate distributed generation from one or more
+            sources, including solar photovoltaic, fuel cells, small
+            wind, or combined heat and power systems;
+        (4) Include battery energy storage sufficient to balance
+            generation and load during islanded operation;
+        (5) Utilize grid-forming inverter technology capable of
+            establishing and maintaining voltage and frequency
+            reference during islanded operation without reliance
+            on the main grid.
+
+    (c) GRANT AMOUNTS. — Grants under this section shall cover:
+        (1) Up to 80 percent of eligible planning and feasibility
+            study costs, not to exceed $2 million per project;
+        (2) Up to 60 percent of eligible design and construction
+            costs, not to exceed $50 million per project.
+
+    (d) TRIBAL AND DISADVANTAGED COMMUNITY SET-ASIDE. — Not less than
+    25 percent of Microgrid Fund resources shall be reserved for
+    projects located in or serving:
+        (1) Federally recognized tribal lands;
+        (2) Census tracts where the median household income is below
+            65 percent of the state median;
+        (3) Communities identified as disadvantaged pursuant to state
+            environmental justice screening tools.
+
+SEC. 502. UTILITY-SCALE BATTERY STORAGE FOR RESILIENCE.
+
+    (a) RESILIENCE STORAGE PROGRAM. — There is established a Utility-
+    Scale Battery Storage for Resilience Program ("Storage Program")
+    to provide federal cost-sharing for the deployment of battery
+    energy storage systems (BESS) that enhance grid resilience in
+    wildfire-prone regions.
+
+    (b) ELIGIBLE STORAGE SYSTEMS. — The Storage Program shall provide
+    cost-sharing for BESS installations that:
+        (1) Have a rated capacity of not less than 10 MW and a
+            duration of not less than 4 hours at rated power;
+        (2) Are sited at substations, distribution switching centers,
+            or other grid nodes serving High Fire Threat Districts;
+        (3) Are capable of providing backup power to designated
+            critical facilities and community resilience hubs during
+            grid outages through pre-established islanding schemes;
+        (4) Utilize lithium-iron-phosphate (LFP) battery chemistry
+            or alternative non-flammable battery chemistry approved
+            by the Secretary;
+        (5) Comply with NFPA 855 standards for energy storage system
+            installation and fire protection.
+
+    (c) FEDERAL COST-SHARE. — The federal cost-share for eligible
+    BESS installations shall be 50 percent of total installed cost,
+    including engineering, procurement, construction, commissioning,
+    and grid interconnection.
+
+    (d) PERFORMANCE REQUIREMENTS. — BESS installations receiving
+    federal cost-sharing shall maintain not less than 95 percent
+    availability during wildfire season (June 1 through November 30)
+    and shall be tested under islanded operation conditions not less
+    than twice per calendar year.
+
+SEC. 503. SOLAR-PLUS-STORAGE FOR CRITICAL FACILITIES.
+
+    (a) PROGRAM. — There is established a Solar-Plus-Storage for
+    Critical Facilities Program to provide federal grants for the
+    installation of solar photovoltaic generation paired with
+    battery storage at critical community facilities in wildfire-
+    prone regions.
+
+    (b) ELIGIBLE FACILITIES. — Critical facilities eligible for
+    grants under this section include:
+        (1) Hospitals and medical clinics;
+        (2) Fire stations and emergency operations centers;
+        (3) Police stations and public safety facilities;
+        (4) Public schools designated as emergency shelters;
+        (5) Water and wastewater treatment and pumping facilities;
+        (6) Grocery stores and pharmacies in food deserts;
+        (7) Community centers serving as cooling or heating centers;
+        (8) Cellular communications tower sites serving rural areas.
+
+    (c) SYSTEM REQUIREMENTS. — Solar-plus-storage systems funded
+    under this section shall:
+        (1) Provide not less than 72 hours of autonomous operation
+            for essential facility loads;
+        (2) Include automatic transfer switch capability for
+            seamless transition between grid-connected and islanded
+            modes;
+        (3) Comply with applicable National Electrical Code (NEC)
+            requirements for energy storage systems.
+
+    (d) GRANT AMOUNT. — Grants shall cover up to 75 percent of
+    total installed system cost, not to exceed $5 million per
+    facility, with priority given to facilities in census tracts
+    where the median household income is below 80 percent of the
+    state median.
+
+SEC. 504. GRID-FORMING INVERTER STANDARDS.
+
+    (a) STANDARDS DEVELOPMENT. — The Secretary, in coordination with
+    NIST and the Institute of Electrical and Electronics Engineers
+    (IEEE), shall, within 18 months of enactment, develop and publish
+    mandatory performance standards for grid-forming inverters deployed
+    in microgrid and energy storage applications under this Title.
+
+    (b) STANDARD REQUIREMENTS. — Grid-forming inverter standards shall
+    address, at minimum:
+        (1) Voltage and frequency regulation capability during
+            islanded operation;
+        (2) Fault current contribution sufficient to operate
+            protective devices;
+        (3) Black-start capability;
+        (4) Seamless transition between grid-following and grid-
+            forming modes;
+        (5) Cybersecurity requirements;
+        (6) Interoperability with utility SCADA and microgrid
+            controllers.
+
+SEC. 505. AUTHORIZATION OF APPROPRIATIONS.
+
+    (a) There is authorized to be appropriated $40 billion for the
+    period of fiscal years 2027 through 2036 to carry out this Title,
+    allocated as follows:
+        (1) $10 billion for the Community Microgrid Development Fund;
+        (2) $20 billion for the Utility-Scale Battery Storage for
+            Resilience Program;
+        (3) $8 billion for the Solar-Plus-Storage for Critical
+            Facilities Program;
+        (4) $2 billion for research, standards development, and
+            program administration.

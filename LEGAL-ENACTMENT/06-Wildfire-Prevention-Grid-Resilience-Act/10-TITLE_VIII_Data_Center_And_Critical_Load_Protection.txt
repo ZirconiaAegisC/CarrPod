@@ -1,0 +1,152 @@
+================================================================================
+119TH CONGRESS — 2ND SESSION                                     H.R. _______
+================================================================================
+
+        TITLE VIII — DATA CENTER AND CRITICAL LOAD PROTECTION
+
+================================================================================
+
+SEC. 801. GRID INTEGRATION STANDARDS.
+
+    (a) FINDINGS. — Congress finds that:
+        (1) The United States is experiencing unprecedented growth in
+            data center electricity demand, with a projected 4.6 GW
+            pipeline of new data center load seeking interconnection,
+            representing approximately $500 billion in capital
+            investment;
+        (2) A significant portion of this load growth is concentrated
+            in regions of the Western United States that overlap with
+            High Fire Threat Districts;
+        (3) Data center outages caused by wildfire-related grid
+            disruptions pose risks to national economic security,
+            financial systems, cloud computing infrastructure,
+            artificial intelligence training workloads, and
+            government digital services.
+
+    (b) INTERCONNECTION STANDARDS. — Within 365 days of enactment,
+    FERC, in consultation with the North American Electric Reliability
+    Corporation (NERC), shall promulgate mandatory grid integration
+    standards for new large-load interconnections in High Fire Threat
+    Districts, including:
+
+        (1) MINIMUM REDUNDANCY. — Data centers with a connected load
+            exceeding 50 MW shall be served by not fewer than two
+            independent transmission supply paths, with each path
+            capable of carrying not less than 100 percent of the
+            facility's peak demand.
+
+        (2) BEHIND-METER RESILIENCE. — Data centers shall maintain
+            behind-meter generation or storage resources capable of
+            sustaining not less than 24 hours of operation at 50
+            percent of peak load without grid power.
+
+        (3) DEMAND RESPONSE CAPABILITY. — Data centers shall be
+            capable of reducing load by not less than 30 percent
+            within 10 minutes of receiving a demand response signal
+            from the balancing authority or utility.
+
+        (4) SITING RESTRICTIONS. — New data center facilities shall
+            not be sited in Tier 3 (Extreme) High Fire Threat
+            Districts unless the applicant demonstrates that no
+            feasible alternative site exists and that comprehensive
+            wildfire mitigation measures are incorporated into the
+            facility design.
+
+    (c) INTERCONNECTION QUEUE PRIORITY. — FERC shall direct
+    transmission providers to establish a fast-track interconnection
+    process for behind-meter storage and generation resources that
+    reduce the net grid load of data center facilities in High Fire
+    Threat Districts.
+
+SEC. 802. BEHIND-METER STORAGE REQUIREMENTS.
+
+    (a) MINIMUM STORAGE MANDATE. — Effective January 1, 2029, any
+    new data center with a connected load exceeding 25 MW that
+    interconnects to the grid within a High Fire Threat District
+    shall install behind-meter battery energy storage with:
+
+        (1) A rated power capacity of not less than 25 percent of
+            the facility's peak demand;
+        (2) A discharge duration of not less than 4 hours at rated
+            power;
+        (3) Black-start and islanding capability to support critical
+            facility loads during grid outages;
+        (4) Fire suppression systems compliant with NFPA 855.
+
+    (b) FEDERAL INVESTMENT TAX CREDIT ENHANCEMENT. — Behind-meter
+    storage systems meeting the requirements of subsection (a) and
+    installed at data center facilities shall be eligible for a 10
+    percent adder to the Energy Investment Tax Credit under section
+    48 of the Internal Revenue Code of 1986.
+
+    (c) CO-LOCATED GENERATION. — Data centers that install behind-
+    meter generation resources sufficient to meet 100 percent of
+    their peak demand during grid outages shall be eligible for an
+    additional 10 percent federal investment tax credit adder.
+
+SEC. 803. DEMAND RESPONSE MANDATES.
+
+    (a) PARTICIPATION REQUIREMENT. — Each data center facility with
+    a connected load exceeding 25 MW and located in a High Fire
+    Threat District shall:
+        (1) Register as a demand response resource with the
+            relevant balancing authority;
+        (2) Maintain automated demand response capability compliant
+            with OpenADR 2.0b or successor standard;
+        (3) Participate in demand response events when called upon,
+            subject to a maximum of 200 hours of curtailment per
+            calendar year.
+
+    (b) COMPENSATION. — Data centers participating in demand response
+    shall be compensated at prevailing wholesale market prices for
+    the capacity and energy value of their load reductions, or at
+    rates established by the relevant state regulatory authority for
+    vertically integrated utilities.
+
+    (c) CRITICAL LOAD EXEMPTION. — Data center loads designated as
+    Critical Infrastructure under Presidential Policy Directive 21
+    (PPD-21) or serving essential government functions may be
+    exempted from demand response participation upon certification
+    by the Secretary of Homeland Security.
+
+SEC. 804. CRITICAL INFRASTRUCTURE RESILIENCE PLANNING.
+
+    (a) RESILIENCE PLANS. — Within 18 months of enactment, each data
+    center operator with facilities exceeding 25 MW of connected load
+    in High Fire Threat Districts shall submit to the Department of
+    Energy a Wildfire Resilience Plan that addresses:
+
+        (1) Identification of wildfire risks to the facility's grid
+            supply and on-site infrastructure;
+        (2) Redundant power supply arrangements and fuel supply
+            agreements for backup generation;
+        (3) Procedures for orderly load shedding and facility
+            shutdown in the event of a forecasted PSPS event or
+            wildfire approaching the facility;
+        (4) Coordination protocols with local emergency management
+            agencies and the serving electric utility;
+        (5) Employee safety and evacuation procedures during
+            wildfire events.
+
+    (b) INFORMATION SHARING. — Data center operators shall share
+    their Wildfire Resilience Plans with the serving electric
+    utility, the state energy office, and the relevant county
+    emergency management agency.
+
+    (c) ANNUAL EXERCISES. — Data center operators shall conduct an
+    annual tabletop or functional exercise of their Wildfire
+    Resilience Plan, with results reported to the Department of
+    Energy.
+
+SEC. 805. AUTHORIZATION OF APPROPRIATIONS.
+
+    (a) There is authorized to be appropriated $5 billion for the
+    period of fiscal years 2027 through 2036 to carry out this Title,
+    allocated as follows:
+        (1) $3 billion for behind-meter storage and generation
+            investment tax credit enhancements;
+        (2) $1 billion for grid integration infrastructure
+            supporting redundant supply paths to critical data
+            center facilities;
+        (3) $1 billion for research, standards development, and
+            program administration.

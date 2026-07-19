@@ -1,0 +1,121 @@
+================================================================================
+                      EXECUTIVE SUMMARY
+                      CRITICAL TECHNOLOGY SUPPLY CHAIN
+                      RESILIENCE ACT OF 2026
+================================================================================
+
+I. PURPOSE AND SCOPE
+
+  The Critical Technology Supply Chain Resilience Act of 2026 (CTSCRA)
+  constitutes a comprehensive legislative framework authorizing $200 billion
+  in Federal investment over a ten-year period to restore United States
+  leadership in critical technology supply chains. This legislation builds
+  upon the foundational CHIPS and Science Act of 2022 (Public Law 117-167),
+  which authorized $52.7 billion for semiconductor manufacturing incentives
+  and research and development. CTSCRA addresses the urgent national and
+  economic security imperatives arising from persistent vulnerabilities in
+  semiconductor manufacturing, advanced packaging, rare earth materials,
+  artificial intelligence compute infrastructure, and related sectors.
+
+II. STRATEGIC CONTEXT
+
+  The United States share of global semiconductor manufacturing capacity has
+  declined from approximately 37 percent in 1990 to approximately 12 percent
+  in 2024. An estimated 92 percent of the world's most advanced semiconductor
+  chips are manufactured in Taiwan, an island territory facing significant
+  geopolitical risk from the People's Republic of China. The semiconductor
+  shortages of 2020-2023 exposed the fragility of global supply chains,
+  causing an estimated $240 billion in lost United States GDP in 2021 alone
+  and disrupting critical industries including automotive manufacturing,
+  defense systems, medical devices, and consumer electronics. The People's
+  Republic of China controls approximately 60 percent of global rare earth
+  element production and approximately 90 percent of rare earth permanent
+  magnet manufacturing, while advanced semiconductor packaging is concentrated
+  over 90 percent in Asia, primarily in Taiwan and South Korea.
+
+III. KEY PROVISIONS AND FUNDING ALLOCATION
+
+  The CTSCRA authorizes $200 billion across eight titles:
+
+  TITLE I — CHIPS ACT 2.0 ($100 billion): Doubles the initial CHIPS Act
+  investment to $100 billion, expanding semiconductor fabrication incentives;
+  incorporating semiconductor equipment and materials manufacturing into the
+  subsidy framework; establishing an advanced packaging subsidy program; and
+  providing enhanced research and development tax credits.
+
+  TITLE II — AI COMPUTE INFRASTRUCTURE ($20 billion): Creates a National AI
+  Compute Reserve within the Department of Energy; authorizes acquisition of
+  government DGX SuperPOD-class computing systems; establishes academic AI
+  compute grants; and creates a National AI Research Cloud accessible to
+  qualified researchers at American universities and national laboratories.
+
+  TITLE III — RARE EARTH AND ADVANCED MATERIALS ($15 billion): Provides
+  incentives for domestic rare earth permanent magnet production; supports
+  permanent magnet supply chain development; funds domestic processing
+  facilities for gallium, germanium, and graphite; and expands the National
+  Defense Stockpile for critical minerals.
+
+  TITLE IV — ADVANCED PACKAGING ($20 billion): Establishes incentives for
+  domestic advanced packaging facilities targeting CoWoS, EMIB, Foveros,
+  and hybrid bonding technologies; sets a target of ten or more advanced
+  packaging facilities operational in the United States by 2035.
+
+  TITLE V — SEMICONDUCTOR WORKFORCE ($10 billion): Funds university
+  microelectronics education programs; reforms H-1B visa processing for
+  semiconductor-sector talent; establishes veteran retraining programs;
+  and expands community college semiconductor technician certification.
+
+  TITLE VI — EXPORT CONTROLS AND TECHNOLOGY SECURITY: Expands Bureau of
+  Industry and Security (BIS) entity list authorities; codifies AI chip
+  export control frameworks; strengthens semiconductor manufacturing
+  equipment restrictions; and expands Committee on Foreign Investment in
+  the United States (CFIUS) jurisdiction over critical technology sectors.
+
+  TITLE VII — ALLIED SEMICONDUCTOR COOPERATION: Formalizes a United States-
+  European Union-Japan-Korea semiconductor alliance framework; establishes
+  joint research and development programs; mandates global supply chain
+  mapping; and facilitates mutual investment.
+
+  TITLE VIII — ENERGY FOR SEMICONDUCTOR MANUFACTURING ($15 billion):
+  Guarantees reliable 24/7 power for fabrication facilities at competitive
+  industrial rates; provides incentives for nuclear and Small Modular Reactor
+  co-location with semiconductor clusters; and funds transmission corridor
+  buildout for designated semiconductor manufacturing corridors.
+
+  Additional appropriations of $20 billion are authorized for foundational
+  research and development across all program areas.
+
+IV. ECONOMIC PROJECTIONS
+
+  The Department of Commerce estimates that CTSCRA implementation will:
+
+  1. Increase the United States share of global advanced semiconductor
+     manufacturing from approximately 12 percent to no less than 30 percent
+     by 2035;
+
+  2. Generate approximately 500,000 direct and indirect domestic jobs in
+     semiconductor manufacturing, equipment, materials, and related sectors;
+
+  3. Contribute approximately $500 billion in cumulative GDP growth over
+     the ten-year authorization period;
+
+  4. Secure the domestic artificial intelligence industry supply chain,
+     which is projected to represent a multi-trillion dollar global market
+     by 2035; and
+
+  5. Reduce strategic dependency on potentially adversarial nations for
+     critical technology inputs.
+
+V. NATIONAL SECURITY IMPERATIVE
+
+  The CTSCRA finds that the current concentration of critical technology
+  supply chains in geographically concentrated and politically vulnerable
+  regions constitutes a clear and present danger to the national security
+  of the United States. The uninterrupted availability of advanced
+  semiconductors, rare earth materials, and associated technologies is
+  essential to the economic prosperity, military readiness, and technological
+  competitiveness of the United States. This legislation represents an
+  operationalization of the consensus view across the Intelligence Community,
+  the Department of Defense, and the Department of Commerce that supply chain
+  resilience in critical technologies must be treated with the same strategic
+  urgency as conventional defense procurement.

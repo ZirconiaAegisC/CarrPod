@@ -1,0 +1,206 @@
+================================================================================
+119TH CONGRESS — 2ND SESSION                                     H.R. _______
+================================================================================
+
+                         ECONOMIC IMPACT ANALYSIS
+
+         WILDFIRE PREVENTION AND GRID RESILIENCE ACT OF 2026
+
+================================================================================
+
+SECTION 1. JOB CREATION AND WORKFORCE DEVELOPMENT.
+
+    (a) DIRECT EMPLOYMENT. — The programs authorized under this Act
+    are projected to generate approximately 500,000 direct and indirect
+    jobs over the ten-year authorization period (FY2027–FY2036),
+    distributed across the following sectors:
+
+    ┌──────────────────────────────────────────────┬───────────────┐
+    │ EMPLOYMENT SECTOR                            │  EST. JOBS    │
+    ├──────────────────────────────────────────────┼───────────────┤
+    │ Undergrounding construction and engineering  │   180,000     │
+    │   (TITLE I: 10,000 miles at ~$3M/mile)       │               │
+    ├──────────────────────────────────────────────┼───────────────┤
+    │ Battery storage and microgrid manufacturing   │   120,000     │
+    │   and installation (TITLE V: $40B)            │               │
+    ├──────────────────────────────────────────────┼───────────────┤
+    │ Vegetation management, forestry, and fuels    │    80,000     │
+    │   reduction (TITLE VI: $20B)                  │               │
+    ├──────────────────────────────────────────────┼───────────────┤
+    │ Transmission hardening, composite pole        │    40,000     │
+    │   manufacturing, covered conductor (TITLE VII)│               │
+    ├──────────────────────────────────────────────┼───────────────┤
+    │ Sensor, weather station, and DCD              │    30,000     │
+    │   manufacturing (TITLES II, III)              │               │
+    ├──────────────────────────────────────────────┼───────────────┤
+    │ Data center infrastructure and behind-meter   │    25,000     │
+    │   storage (TITLE VIII)                        │               │
+    ├──────────────────────────────────────────────┼───────────────┤
+    │ Program administration, research,             │    25,000     │
+    │   technical assistance (all Titles)           │               │
+    ├──────────────────────────────────────────────┼───────────────┤
+    │ TOTAL ESTIMATED JOB-YEARS                     │   500,000     │
+    └──────────────────────────────────────────────┴───────────────┘
+
+    (b) INDIRECT AND INDUCED EMPLOYMENT. — Using a multiplier of 1.8,
+    total employment impact including indirect (supply chain) and
+    induced (worker spending) effects is estimated at approximately
+    900,000 job-years.
+
+    (c) WORKFORCE TRAINING. — The Act authorizes $3 billion (within
+    TITLE VI) specifically for workforce development and training
+    programs, including community college partnerships, registered
+    apprenticeship programs, and veteran transition programs in
+    utility vegetation management, grid construction, and energy
+    storage installation.
+
+    (d) DOMESTIC MANUFACTURING. — Buy America provisions in Titles
+    II, III, V, and VII are projected to support an estimated 50,000
+    domestic manufacturing jobs in the production of composite
+    utility poles, covered conductor, battery storage systems, DCD
+    devices, weather stations, and related grid-hardening equipment.
+
+SECTION 2. WILDFIRE COST AVOIDANCE.
+
+    (a) BASELINE WILDFIRE COSTS. — The United States currently
+    experiences annual wildfire-related economic costs estimated
+    at $20 billion to $50 billion, comprising:
+        (1) Direct federal, state, and local fire suppression
+            expenditures exceeding $5 billion annually;
+        (2) Insured property losses averaging $10 billion to $15
+            billion per year (2017–2025 average);
+        (3) Uninsured losses, business interruption, health
+            impacts from smoke exposure, watershed degradation,
+            and ecosystem service losses estimated at $5 billion
+            to $30 billion annually.
+
+    (b) COST AVOIDANCE PROJECTION. — The comprehensive wildfire
+    prevention measures authorized by this Act are projected to
+    reduce utility-caused wildfire ignitions by an estimated 80
+    to 95 percent in treated areas, based on PG&E's demonstrated
+    results:
+
+        (1) PG&E achieved a reduction from an average of
+            approximately 1,500 ignitions per year (2015–2017
+            baseline) to zero major utility-caused wildfires for
+            three consecutive years (2023, 2024, 2025) through
+            systematic implementation of undergrounding, DCD,
+            enhanced vegetation management, weather monitoring,
+            and PSPS protocols.
+
+        (2) Extrapolating PG&E's outcomes to all high-fire-threat
+            utility territories nationally yields an estimated
+            reduction of 200 to 400 major utility-caused wildfires
+            over the twenty-year evaluation horizon.
+
+        (3) Using a conservative avoided-cost estimate of $1.5
+            billion per avoided major wildfire (based on the
+            average cost of the 2017–2021 California wildfire
+            events attributed to utility infrastructure), total
+            avoided costs over 20 years are projected at $300
+            billion.
+
+    (c) NET BENEFIT. — Deducting the $150 billion federal
+    authorization from the projected $300 billion in avoided
+    wildfire costs yields a net benefit to the United States
+    economy of approximately $150 billion over 20 years, a
+    benefit-cost ratio of approximately 2:1 using conservative
+    assumptions and excluding co-benefits.
+
+    (d) CO-BENEFITS NOT QUANTIFIED. — Additional economic
+    benefits not quantified in the above analysis include:
+        (1) Reduced greenhouse gas emissions from avoided
+            wildfire combustion, with avoided carbon emissions
+            conservatively valued at $20 to $40 per metric ton
+            CO2 equivalent under federal social cost of carbon
+            guidance;
+        (2) Avoided public health costs from reduced wildfire
+            smoke exposure, which affects an estimated 30
+            million Americans in high-fire-risk regions;
+        (3) Improved electric reliability for residential,
+            commercial, and industrial customers, including
+            avoided outage costs;
+        (4) Preservation of watershed function and reduced
+            water treatment costs;
+        (5) Avoided liability and bankruptcy costs for
+            investor-owned utilities and their ratepayers.
+
+SECTION 3. DATA CENTER ECONOMIC PROTECTION.
+
+    (a) The United States is experiencing a 4.6 GW pipeline of
+    new data center load seeking interconnection, concentrated
+    in regions overlapping with High Fire Threat Districts. This
+    load represents approximately $500 billion in capital
+    investment at risk from wildfire-related grid disruptions.
+
+    (b) Title VIII of this Act protects this investment by:
+        (1) Establishing minimum grid resilience standards for
+            data center interconnections;
+        (2) Mandating behind-meter storage to ensure continuity
+            of critical digital infrastructure operations;
+        (3) Reducing the probability of extended data center
+            outages caused by wildfire-related transmission
+            disruptions.
+
+    (c) The economic value of avoided data center downtime,
+    conservatively estimated at $5,000 to $9,000 per minute for
+    a large hyperscale facility, reinforces the benefit-cost
+    justification for the Title VIII provisions.
+
+SECTION 4. RATEPAYER IMPACT.
+
+    (a) Without the federal cost-sharing provided by this Act,
+    the full cost of wildfire prevention infrastructure would
+    be borne by utility ratepayers, with estimated residential
+    rate increases of 8 to 15 percent in high-fire-risk utility
+    territories (based on PG&E's $73 billion five-year capital
+    plan and California Public Utilities Commission rate
+    proceedings).
+
+    (b) The 60 to 80 percent federal cost-share provided by this
+    Act reduces the ratepayer burden proportionally, preserving
+    electricity affordability while achieving fire-prevention
+    outcomes at the scale and pace required.
+
+    (c) The $300 billion in avoided wildfire costs over 20 years
+    translates to avoided insurance premium increases, avoided
+    property value depreciation, and avoided business disruption
+    costs that would otherwise fall disproportionately on
+    residents and businesses in wildfire-prone communities.
+
+SECTION 5. REGIONAL ECONOMIC DISTRIBUTION.
+
+    (a) Program benefits are distributed across the following
+    regions in approximate proportion to wildfire risk exposure:
+
+    ┌──────────────────────────────────────┬──────────────────────┐
+    │ REGION                               │ EST. % OF PROGRAM    │
+    │                                      │ ALLOCATION           │
+    ├──────────────────────────────────────┼──────────────────────┤
+    │ California                           │        40%           │
+    │   (25.5M acres WUI, highest          │                      │
+    │    concentration of HFTD circuits)   │                      │
+    ├──────────────────────────────────────┼──────────────────────┤
+    │ Pacific Northwest (OR, WA)           │        15%           │
+    ├──────────────────────────────────────┼──────────────────────┤
+    │ Intermountain West (NV, ID, MT, WY,  │        20%           │
+    │   UT, CO)                            │                      │
+    ├──────────────────────────────────────┼──────────────────────┤
+    │ Southwest (AZ, NM)                   │        10%           │
+    ├──────────────────────────────────────┼──────────────────────┤
+    │ Southern Plains (TX, OK)             │         8%           │
+    ├──────────────────────────────────────┼──────────────────────┤
+    │ Southeast (FL, GA, SC, NC)           │         5%           │
+    ├──────────────────────────────────────┼──────────────────────┤
+    │ Northeast and Midwest                 │         2%           │
+    └──────────────────────────────────────┴──────────────────────┘
+
+SECTION 6. CONCLUSION.
+
+    The Wildfire Prevention and Grid Resilience Act of 2026
+    represents an investment of $150 billion projected to return
+    $300 billion in avoided wildfire costs over twenty years,
+    create 500,000 jobs, protect $500 billion in data center
+    capital investment, and preserve electricity affordability
+    for millions of American households and businesses in
+    wildfire-prone regions.

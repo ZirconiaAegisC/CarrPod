@@ -1,0 +1,149 @@
+================================================================================
+                     TITLE III — RARE EARTH AND ADVANCED MATERIALS
+                     CTSCRA OF 2026
+================================================================================
+
+SECTION 301. SHORT TITLE.
+
+  This title may be cited as the "Domestic Critical Materials Production and
+  Processing Act of 2026."
+
+SECTION 302. FINDINGS.
+
+  Congress finds that:
+
+    (1) The People's Republic of China currently controls approximately 60
+        percent of global rare earth element mining production and 90 percent
+        of rare earth permanent magnet manufacturing capacity, creating a
+        near-monopoly position in materials essential to defense systems,
+        electric vehicles, wind turbines, medical imaging, consumer
+        electronics, and precision-guided munitions.
+
+    (2) China's Ministry of Commerce imposed formal export restrictions on
+        gallium and germanium in August 2023, followed by expanded controls
+        on graphite in December 2023 and antimony in August 2024, asserting
+        leverage over materials critical to semiconductor manufacturing,
+        infrared optics, fiber optics, battery production, and flame
+        retardants.
+
+    (3) The Mountain Pass rare earth mine and processing facility in
+        California, operated by MP Materials Corp, represents the only
+        operating rare earth mining and primary processing facility in the
+        Western Hemisphere, yet the facility currently ships concentrated
+        rare earth ore to China for final separation and magnet production.
+
+    (4) Lynas Rare Earths Ltd., an Australian corporation, has received
+        $258 million in Department of Defense funding to establish a heavy
+        rare earth separation facility in Texas; however, the facility
+        remains under construction and the supply chain from mine to magnet
+        remains incomplete within allied territory.
+
+    (5) The Department of Energy's Critical Materials Assessment has
+        identified rare earth elements (neodymium, praseodymium, dysprosium,
+        terbium), gallium, germanium, graphite, cobalt, and lithium as
+        materials facing high supply risk critical to energy, defense, and
+        technology sectors.
+
+SECTION 303. DOMESTIC RARE EARTH PERMANENT MAGNET PRODUCTION.
+
+  (a) DIRECT LOAN AND LOAN GUARANTEE PROGRAM. — The Secretary of Energy
+      shall establish a program of direct loans and loan guarantees for
+      projects related to:
+
+    (1) Domestic rare earth element mining, beneficiation, and separation;
+
+    (2) Domestic rare earth metal and alloy production;
+
+    (3) Domestic rare earth permanent magnet manufacturing, including
+        neodymium-iron-boron (NdFeB) sintered and bonded magnets;
+
+    (4) Magnet recycling and urban mining facilities recovering rare earth
+        elements from end-of-life products;
+
+    (5) Research and development into rare earth-free or rare earth-reduced
+        magnet technologies.
+
+  (b) MAXIMUM LOAN AMOUNTS. — The total amount of loans and loan guarantees
+      outstanding under this section shall not exceed $10,000,000,000 at any
+      one time.
+
+  (c) PREFERENCE FOR VERTICAL INTEGRATION. — In evaluating applications
+      under this section, the Secretary shall give preference to projects
+      that demonstrate vertical integration across mining, separation,
+      metal production, alloy production, and magnet manufacturing within
+      the United States or allied nations.
+
+  (d) MOUNTAIN PASS EXPANSION SUPPORT. — The Secretary of Defense, in
+      coordination with the Secretary of Energy, shall negotiate and execute
+      a Defense Production Act Title III agreement with MP Materials Corp
+      for the establishment of a fully integrated rare earth permanent magnet
+      production line, from separated oxides through finished sintered
+      magnets, at the Mountain Pass, California facility.
+
+  (e) LYNAS TEXAS FACILITY COMPLETION. — The Secretary of Defense is
+      authorized to provide additional funding, not to exceed $500,000,000,
+      to accelerate completion of the Lynas Rare Earths heavy rare earth
+      separation and processing facility in Texas, and to support upstream
+      mine development at the Mount Weld operation in Western Australia for
+      supply to the Texas facility.
+
+SECTION 304. GALLIUM, GERMANIUM, AND GRAPHITE DOMESTIC PROCESSING.
+
+  (a) PROCESSING FACILITY INCENTIVES. — The Secretary of Commerce shall
+      establish a grant program to incentivize the construction and operation
+      of domestic processing facilities for:
+
+    (1) High-purity gallium (99.9999 percent or greater) for compound
+        semiconductor manufacturing;
+
+    (2) Germanium metal and germanium tetrachloride for fiber optic and
+        infrared optics manufacturing;
+
+    (3) Battery-grade spherical purified graphite for lithium-ion battery
+        anode material;
+
+    (4) Isotropic and extruded graphite for semiconductor crystal growth
+        furnaces and other industrial applications.
+
+  (b) AUTHORIZATION OF APPROPRIATIONS. — There is authorized to be
+      appropriated $3,000,000,000 for the period of fiscal years 2027
+      through 2036 to carry out this section.
+
+SECTION 305. NATIONAL DEFENSE STOCKPILE EXPANSION.
+
+  (a) IN GENERAL. — The Secretary of Defense shall expand the National
+      Defense Stockpile to include minimum inventory levels of:
+
+    (1) Rare earth oxides and metals sufficient to supply domestic defense
+        manufacturing requirements for not fewer than five years;
+
+    (2) Gallium, germanium, graphite, cobalt, and lithium sufficient for
+        not fewer than three years of defense and essential civilian demand;
+
+    (3) Completed rare earth permanent magnets in standard military
+        specification configurations.
+
+  (b) AUTHORIZATION OF APPROPRIATIONS. — There is authorized to be
+      appropriated $2,000,000,000 for the period of fiscal years 2027
+      through 2031 to carry out this section.
+
+SECTION 306. CRITICAL MATERIALS RESEARCH AND DEVELOPMENT.
+
+  (a) DEPARTMENT OF ENERGY PROGRAM. — The Secretary of Energy shall
+      establish a Critical Materials Innovation Hub focused on:
+
+    (1) Alternative magnet materials with reduced or eliminated rare earth
+        content;
+
+    (2) Advanced separation technologies, including bio-extraction and
+        continuous ion exchange;
+
+    (3) Recycling and recovery technologies for rare earth elements,
+        gallium, germanium, and graphite from end-of-life products;
+
+    (4) Substitutes for critical materials in semiconductor manufacturing
+        processes.
+
+  (b) AUTHORIZATION OF APPROPRIATIONS. — There is authorized to be
+      appropriated $500,000,000 for the period of fiscal years 2027
+      through 2036 to carry out this section.

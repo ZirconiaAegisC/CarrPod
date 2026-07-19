@@ -1,0 +1,131 @@
+================================================================================
+                                TITLE 00 — FINDINGS
+                                CTSCRA OF 2026
+================================================================================
+
+SECTION 001. CONGRESSIONAL FINDINGS.
+
+  The Congress finds the following:
+
+    (1) DECLINE OF UNITED STATES SEMICONDUCTOR MANUFACTURING. — The United
+        States share of global semiconductor manufacturing capacity has
+        declined from approximately 37 percent in 1990 to approximately
+        12 percent in 2024, a structural shift of profound economic and
+        national security consequence.
+
+    (2) OFFSHORE CONCENTRATION OF ADVANCED CHIP PRODUCTION. — Approximately
+        92 percent of the world's most advanced semiconductor chips,
+        fabricated at process nodes below 7 nanometers, are manufactured
+        on the island of Taiwan, a territory the People's Republic of
+        China has consistently claimed as part of its sovereign territory
+        and over which it has not renounced the use of force.
+
+    (3) TAIWAN STRAIT GEOPOLITICAL RISK. — The Department of Defense Annual
+        Report on Military and Security Developments Involving the People's
+        Republic of China has consistently identified the Taiwan Strait as
+        a potential flashpoint for military conflict. A disruption of
+        semiconductor manufacturing in Taiwan, whether by military action,
+        blockade, natural disaster, or other contingency, would sever
+        access to advanced chips powering the entirety of the United States
+        defense industrial base, financial infrastructure, artificial
+        intelligence systems, and commercial technology sectors.
+
+    (4) SEMICONDUCTOR SHORTAGE CASCADE EFFECTS. — The global semiconductor
+        shortage of 2020-2023, triggered by COVID-19 pandemic supply-demand
+        imbalances, caused an estimated $240 billion in lost United States
+        gross domestic product in calendar year 2021 and forced production
+        shutdowns across the automotive, consumer electronics, medical
+        device, and defense manufacturing sectors.
+
+    (5) ARTIFICIAL INTELLIGENCE NATIONAL SECURITY IMPERATIVE. — Advanced
+        AI accelerator chips, including Graphics Processing Units (GPUs)
+        and purpose-built AI processors, constitute the foundational
+        infrastructure for modern artificial intelligence systems. The
+        Department of Defense, Intelligence Community, and United States
+        technology industry rely on a single supplier—Nvidia Corporation—
+        for in excess of 80 percent of AI training accelerator hardware,
+        which hardware is manufactured by a single foundry, Taiwan
+        Semiconductor Manufacturing Company (TSMC), creating a concentrated
+        supply chain vulnerability of extraordinary national security
+        significance.
+
+    (6) CHINESE DOMINANCE IN RARE EARTH ELEMENTS. — The People's Republic
+        of China controls approximately 60 percent of the global mining
+        production of rare earth elements and approximately 90 percent of
+        the global manufacturing of rare earth permanent magnets, which
+        are essential components in defense systems, electric vehicles,
+        wind turbines, consumer electronics, and precision-guided munitions.
+
+    (7) CHINESE EXPORT CONTROL LEVERAGE. — The People's Republic of China
+        has demonstrated willingness to weaponize its rare earth supply
+        chain dominance through formal export controls, including the
+        restrictions imposed on gallium and germanium exports in 2023 and
+        the subsequent expansion of controls on graphite and antimony
+        exports, creating immediate supply disruptions for United States
+         semiconductor, defense, and clean energy manufacturing.
+
+    (8) ADVANCED PACKAGING CONCENTRATION. — Over 90 percent of global
+        advanced semiconductor packaging capacity—including Chip-on-Wafer-
+        on-Substrate (CoWoS) technology essential for artificial intelligence
+        accelerator chips—is concentrated in Asia, primarily in Taiwan and
+        South Korea, creating a critical chokepoint between semiconductor
+        fabrication and finished product delivery.
+
+    (9) SEMICONDUCTOR EQUIPMENT DEPENDENCY. — The global semiconductor
+        manufacturing equipment market is dominated by five corporations—
+        Applied Materials, ASML, Lam Research, Tokyo Electron, and KLA
+        Corporation—which together account for approximately 70 percent of
+        global equipment revenue. ASML, a Netherlands-based corporation,
+        holds a monopoly on extreme ultraviolet (EUV) lithography equipment
+        essential for manufacturing advanced logic chips below 7 nanometers.
+
+    (10) CHINESE SEMICONDUCTOR INDUSTRIAL POLICY. — The People's Republic
+         of China has invested in excess of $150 billion through its National
+         Integrated Circuit Industry Investment Fund and associated state-
+         directed initiatives to build an indigenous semiconductor
+         manufacturing capability, with the explicit goal of semiconductor
+         self-sufficiency and technological decoupling from United States
+         and allied suppliers.
+
+    (11) ECONOMIC COERCION AND TECHNOLOGY DENIAL. — The People's Republic
+         of China has employed a range of economic coercion measures,
+         including restrictions on exports of critical minerals and
+         materials, procurement preferences favoring domestic semiconductor
+         products, intellectual property transfer requirements as conditions
+         of market access, and state-sponsored industrial espionage targeting
+         semiconductor technology, with the Department of Justice reporting
+         that over 80 percent of all economic espionage cases filed involve
+         Chinese actors seeking United States trade secrets.
+
+    (12) DEFENSE INDUSTRIAL BASE VULNERABILITY. — The Department of Defense
+         has identified over 300 semiconductor-dependent defense systems,
+         including the F-35 Joint Strike Fighter, Aegis Combat System, Patriot
+         missile defense system, and nuclear command, control, and
+         communications infrastructure, that rely on advanced semiconductors
+         manufactured predominantly in Taiwan and subject to supply
+         disruption from a Taiwan Strait contingency.
+
+    (13) COMMERCIAL INNOVATION AT RISK. — The United States semiconductor
+         design industry, including Nvidia, AMD, Qualcomm, Broadcom, Apple,
+         Google, Microsoft, and Amazon, generated combined revenue exceeding
+         $500 billion in 2025 and invested over $80 billion in research and
+         development, yet these United States-headquartered companies depend
+         almost entirely on foreign foundries for manufacturing, creating a
+         fundamental disconnect between design leadership and manufacturing
+         capability that threatens long-term innovation leadership.
+
+    (14) PRIVATE SECTOR INVESTMENT RESPONSE. — The CHIPS and Science Act of
+         2022 has catalyzed over $450 billion in private sector semiconductor
+         manufacturing investment announcements in the United States, and
+         continuing Federal partnership is essential to ensure these projects
+         reach commercial operation, expand in scope, and attract a
+         supporting ecosystem of equipment, materials, and packaging
+         suppliers.
+
+    (15) WORKFORCE IMPERATIVE. — The Semiconductor Industry Association
+         projects a need for 115,000 additional semiconductor workers by
+         2030, yet current science and engineering graduation rates will meet
+         only approximately 40 percent of projected demand, and more than
+         55 percent of graduate students in United States electrical
+         engineering programs are international students, making visa policy
+         a direct determinant of semiconductor workforce availability.

@@ -1,0 +1,155 @@
+================================================================================
+119TH CONGRESS — 2ND SESSION
+================================================================================
+
+                               H.R. __________
+
+================================================================================
+  To authorize appropriations for Federal support of critical technology supply
+    chain resilience, to establish domestic semiconductor manufacturing and
+    advanced packaging capacity, to secure rare earth and advanced material
+    supply chains, to expand artificial intelligence compute infrastructure,
+    to strengthen allied technology cooperation, and for other purposes.
+================================================================================
+
+================================================================================
+                     IN THE HOUSE OF REPRESENTATIVES
+================================================================================
+
+                              _______________
+
+
+
+Mr. _______________ introduced the following bill; which was referred to the
+Committee on _________________
+
+================================================================================
+                                 A BILL
+================================================================================
+
+  To authorize appropriations for Federal support of critical technology supply
+    chain resilience, to establish domestic semiconductor manufacturing and
+    advanced packaging capacity, to secure rare earth and advanced material
+    supply chains, to expand artificial intelligence compute infrastructure,
+    to strengthen allied technology cooperation, and for other purposes.
+
+
+================================================================================
+     Be it enacted by the Senate and House of Representatives of the United
+            States of America in Congress assembled,
+================================================================================
+
+
+
+================================================================================
+SECTION 1. SHORT TITLE.
+================================================================================
+
+  This Act may be cited as the "Critical Technology Supply Chain Resilience Act
+  of 2026."
+
+
+================================================================================
+SECTION 2. TABLE OF CONTENTS.
+================================================================================
+
+  Sec. 1. Short title.
+  Sec. 2. Table of contents.
+  Sec. 3. Definitions.
+
+  TITLE I — CHIPS ACT 2.0: EXPANDED SEMICONDUCTOR MANUFACTURING SUPPORT
+    Sec. 101. Authorization of supplemental appropriations.
+    Sec. 102. Expansion of semiconductor fabrication incentives.
+    Sec. 103. Semiconductor equipment and materials manufacturing support.
+    Sec. 104. Advanced packaging subsidy program.
+    Sec. 105. Research and development tax credit enhancements.
+    Sec. 106. State and local incentive coordination.
+
+  TITLE II — AI COMPUTE INFRASTRUCTURE
+    Sec. 201. National AI Compute Reserve.
+    Sec. 202. Government DGX SuperPOD-class system acquisition.
+    Sec. 203. Academic AI compute grant program.
+    Sec. 204. National AI Research Cloud.
+    Sec. 205. Energy efficiency standards for AI infrastructure.
+
+  TITLE III — RARE EARTH AND ADVANCED MATERIALS
+    Sec. 301. Domestic rare earth magnet production incentives.
+    Sec. 302. Permanent magnet supply chain security.
+    Sec. 303. Gallium, germanium, and graphite domestic processing.
+    Sec. 304. Critical materials stockpile expansion.
+    Sec. 305. Mountain Pass and domestic rare earth facility support.
+
+  TITLE IV — ADVANCED PACKAGING MANUFACTURING
+    Sec. 401. Advanced packaging facility incentives.
+    Sec. 402. CoWoS, EMIB, Foveros, and hybrid bonding facility targets.
+    Sec. 403. Public-private advanced packaging consortia.
+    Sec. 404. Advanced packaging workforce training.
+
+  TITLE V — SEMICONDUCTOR WORKFORCE DEVELOPMENT
+    Sec. 501. University microelectronics education programs.
+    Sec. 502. H-1B visa reform for semiconductor talent.
+    Sec. 503. Veteran retraining and transition programs.
+    Sec. 504. Community college semiconductor technician programs.
+
+  TITLE VI — EXPORT CONTROLS AND TECHNOLOGY SECURITY
+    Sec. 601. Expansion of BIS entity list authorities.
+    Sec. 602. AI chip export control framework.
+    Sec. 603. Semiconductor manufacturing equipment restrictions.
+    Sec. 604. CFIUS expansion for critical technology sectors.
+    Sec. 605. Outbound investment screening.
+
+  TITLE VII — ALLIED SEMICONDUCTOR COOPERATION
+    Sec. 701. US-EU-Japan-Korea semiconductor alliance framework.
+    Sec. 702. Joint research and development programs.
+    Sec. 703. Global supply chain mapping and transparency.
+    Sec. 704. Mutual investment facilitation.
+
+  TITLE VIII — ENERGY FOR SEMICONDUCTOR MANUFACTURING
+    Sec. 801. Reliable 24/7 power guarantees for fabrication facilities.
+    Sec. 802. Nuclear and small modular reactor (SMR) co-location incentives.
+    Sec. 803. Transmission corridor buildout for semiconductor clusters.
+    Sec. 804. Renewable energy integration for semiconductor facilities.
+
+  TITLE IX — FUNDING AND APPROPRIATIONS
+    Sec. 901. Authorization of appropriations.
+    Sec. 902. Allocation among titles.
+    Sec. 903. Oversight and accountability.
+    Sec. 904. Sunset provisions.
+
+  TITLE X — IMPLEMENTATION AND REPORTING
+    Sec. 1001. Implementation schedule and milestones.
+    Sec. 1002. Annual report to Congress.
+    Sec. 1003. Comptroller General audits.
+    Sec. 1004. Economic impact assessment.
+
+
+================================================================================
+SECTION 3. DEFINITIONS.
+================================================================================
+
+  In this Act:
+
+    (1) ADVANCED PACKAGING. — The term "advanced packaging" means semiconductor
+        packaging technologies including Chip-on-Wafer-on-Substrate (CoWoS),
+        Embedded Multi-Die Interconnect Bridge (EMIB), Foveros, hybrid bonding,
+        and other three-dimensional integration technologies identified by the
+        Secretary of Commerce.
+
+    (2) ADVANCED SEMICONDUCTOR. — The term "advanced semiconductor" means logic
+        chips manufactured at process nodes of 7 nanometers or below, high-
+        bandwidth memory (HBM), and AI accelerator chips.
+
+    (3) CRITICAL MINERAL. — The term "critical mineral" has the meaning given
+        such term in section 7002 of the Energy Act of 2020 (30 U.S.C. 1606).
+
+    (4) SEMICONDUCTOR FABRICATION FACILITY. — The term "semiconductor
+        fabrication facility" means a facility for the front-end fabrication
+        of integrated circuits on semiconductor wafers.
+
+    (5) SECRETARY. — The term "Secretary" means the Secretary of Commerce,
+        unless otherwise specified.
+
+    (6) APPROPRIATE CONGRESSIONAL COMMITTEES. — The term "appropriate
+        congressional committees" means the Committee on Commerce, Science,
+        and Transportation of the Senate and the Committee on Energy and
+        Commerce of the House of Representatives.

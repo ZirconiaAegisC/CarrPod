@@ -1,0 +1,143 @@
+================================================================================
+                    TITLE V — SEMICONDUCTOR WORKFORCE DEVELOPMENT
+                    CTSCRA OF 2026
+================================================================================
+
+SECTION 501. SHORT TITLE.
+
+  This title may be cited as the "Semiconductor Workforce for American
+  Competitiveness Act of 2026."
+
+SECTION 502. FINDINGS.
+
+  Congress finds that:
+
+    (1) The Semiconductor Industry Association estimates that the United
+        States semiconductor industry will require an additional 115,000
+        workers by 2030 to staff planned fabrication facilities, advanced
+        packaging facilities, and related operations, yet current graduation
+        rates in relevant science and engineering disciplines project a
+        shortfall of approximately 67,000 workers at current trends.
+
+    (2) Semiconductor manufacturing requires a uniquely interdisciplinary
+        workforce spanning electrical engineering, materials science,
+        chemical engineering, mechanical engineering, industrial
+        engineering, and specialized technician skills in cleanroom
+        operations, vacuum systems, plasma processing, photolithography,
+        metrology, and chemical handling.
+
+    (3) The H-1B visa program, which provides essential talent recruitment
+        pathways for the semiconductor industry, remains oversubscribed,
+        with annual demand exceeding the statutory cap of 85,000 visas by
+        a factor of more than three, and processing delays measured in
+        months creating uncertainty for employers and employees.
+
+    (4) Veterans of the United States Armed Forces possess technical skills
+        highly transferable to semiconductor manufacturing, including
+        experience with complex equipment operation, maintenance protocols,
+        cleanroom discipline, safety procedures, and team-based operational
+        environments.
+
+SECTION 503. UNIVERSITY MICROELECTRONICS EDUCATION PROGRAMS.
+
+  (a) ESTABLISHMENT. — The Director of the National Science Foundation shall
+      establish a competitive grant program to expand and enhance
+      microelectronics and semiconductor manufacturing education at
+      accredited United States universities and colleges.
+
+  (b) PROGRAM COMPONENTS. — Grants under this section may support:
+
+    (1) Establishment of new undergraduate and graduate degree programs
+        in semiconductor engineering, microelectronics manufacturing,
+        and related disciplines;
+
+    (2) Expansion of cleanroom laboratory facilities for hands-on
+        semiconductor fabrication instruction;
+
+    (3) Development of semiconductor-focused curricula incorporating
+        industry-standard electronic design automation tools;
+
+    (4) Faculty recruitment and retention in semiconductor-related fields;
+
+    (5) Scholarship and fellowship programs for students pursuing
+        semiconductor-related degrees, with preference for students
+        from underrepresented groups;
+
+    (6) Cooperative education and internship programs in partnership with
+        domestic semiconductor manufacturers.
+
+  (c) CENTERS OF EXCELLENCE. — The Director shall designate not fewer than
+      10 university-based Semiconductor Manufacturing Centers of
+      Excellence, geographically distributed to align with semiconductor
+      manufacturing clusters, each receiving enhanced funding to serve
+      as regional hubs for semiconductor education, research, and
+      workforce development.
+
+  (d) AUTHORIZATION OF APPROPRIATIONS. — There is authorized to be
+      appropriated $5,000,000,000 for the period of fiscal years 2027
+      through 2036 to carry out this section.
+
+SECTION 504. H-1B VISA REFORM FOR SEMICONDUCTOR SECTOR.
+
+  (a) SEMICONDUCTOR TALENT VISA CATEGORY. — Not later than 180 days after
+      the date of enactment, the Secretary of Homeland Security shall
+      establish a dedicated H-1B visa sub-allocation of not fewer than
+      10,000 visas per fiscal year exclusively for positions in the
+      semiconductor manufacturing, semiconductor equipment, semiconductor
+      materials, and advanced packaging sectors.
+
+  (b) EXPEDITED PROCESSING. — The Secretary of Homeland Security shall
+      establish premium processing service standards guaranteeing
+      adjudication within 15 calendar days for H-1B petitions in the
+      semiconductor talent sub-allocation.
+
+  (c) DUAL INTENT CLARIFICATION. — Petitions for semiconductor talent
+      sub-allocation visas shall not be denied on the basis of immigrant
+      intent, and beneficiaries shall be eligible for employment-based
+      immigrant visa processing concurrent with H-1B status.
+
+  (d) ANNUAL REPORT. — The Secretary of Homeland Security shall report
+      annually to Congress on the utilization of the semiconductor talent
+      sub-allocation, including the number of petitions filed, approved,
+      and denied, countries of origin of beneficiaries, sponsoring
+      employers, and average processing times.
+
+SECTION 505. VETERAN RETRAINING AND TRANSITION PROGRAMS.
+
+  (a) ESTABLISHMENT. — The Secretary of Labor, in coordination with the
+      Secretary of Veterans Affairs and the Secretary of Defense, shall
+      establish a Semiconductor Veterans Transition Program to recruit,
+      train, and place separating service members and veterans into
+      semiconductor manufacturing careers.
+
+  (b) PROGRAM ELEMENTS. — The program shall include:
+
+    (1) Semiconductor manufacturing skills assessment and gap analysis
+        for military occupational specialties;
+
+    (2) Accelerated training programs at community colleges near military
+        installations and semiconductor manufacturing clusters;
+
+    (3) Paid apprenticeship programs with domestic semiconductor
+        manufacturers;
+
+    (4) Relocation assistance for veterans accepting semiconductor
+        manufacturing positions; and
+
+    (5) Recognition of military training and experience for semiconductor
+        industry certification and credentialing purposes.
+
+  (c) AUTHORIZATION OF APPROPRIATIONS. — There is authorized to be
+      appropriated $1,000,000,000 for the period of fiscal years 2027
+      through 2036 to carry out this section.
+
+SECTION 506. COMMUNITY COLLEGE TECHNICIAN PROGRAMS.
+
+  (a) ESTABLISHMENT. — The Secretary of Education, in coordination with
+      the Secretary of Commerce, shall establish a grant program for
+      community and technical colleges to develop and expand semiconductor
+      manufacturing technician training programs.
+
+  (b) AUTHORIZATION OF APPROPRIATIONS. — There is authorized to be
+      appropriated $4,000,000,000 for the period of fiscal years 2027
+      through 2036 to carry out this section.

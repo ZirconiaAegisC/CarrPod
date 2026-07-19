@@ -1,0 +1,153 @@
+================================================================================
+                       TITLE IX — FUNDING AND APPROPRIATIONS
+                       CTSCRA OF 2026
+================================================================================
+
+SECTION 901. AUTHORIZATION OF APPROPRIATIONS.
+
+  (a) IN GENERAL. — There are authorized to be appropriated to carry out
+      this Act, in addition to amounts otherwise authorized by law, a
+      total of $200,000,000,000 for the period of fiscal years 2027
+      through 2036.
+
+  (b) ANNUAL FUNDING PROFILE. — The annual appropriation profile shall
+      follow a front-loaded investment curve with a ramp-up period from
+      fiscal years 2027-2028, peak investment from fiscal years 2029-2033,
+      and sustained investment through fiscal year 2036:
+
+    Fiscal Year 2027: $12,000,000,000
+    Fiscal Year 2028: $18,000,000,000
+    Fiscal Year 2029: $24,000,000,000
+    Fiscal Year 2030: $26,000,000,000
+    Fiscal Year 2031: $26,000,000,000
+    Fiscal Year 2032: $24,000,000,000
+    Fiscal Year 2033: $22,000,000,000
+    Fiscal Year 2034: $18,000,000,000
+    Fiscal Year 2035: $16,000,000,000
+    Fiscal Year 2036: $14,000,000,000
+
+SECTION 902. ALLOCATION AMONG TITLES.
+
+  (a) TITLE I — CHIPS ACT 2.0: $100,000,000,000
+
+    (1) Semiconductor fabrication facility incentives: $55,000,000,000
+    (2) Semiconductor equipment and materials manufacturing: $15,000,000,000
+    (3) Advanced packaging subsidy program: $15,000,000,000
+    (4) Research and development tax credit expansion: $10,000,000,000
+    (5) State and local incentive coordination: $5,000,000,000
+
+  (b) TITLE II — AI COMPUTE INFRASTRUCTURE: $20,000,000,000
+
+    (1) National AI Compute Reserve infrastructure: $15,000,000,000
+    (2) Academic AI compute grant program: $3,000,000,000
+    (3) National AI Research Cloud: $2,000,000,000
+
+  (c) TITLE III — RARE EARTH AND ADVANCED MATERIALS: $15,000,000,000
+
+    (1) Domestic rare earth magnet production: $10,000,000,000
+    (2) Gallium, germanium, and graphite processing: $3,000,000,000
+    (3) National Defense Stockpile expansion: $2,000,000,000
+    (4) Critical materials R&D: $500,000,000 (from R&D reserve)
+
+  (d) TITLE IV — ADVANCED PACKAGING: $20,000,000,000
+
+    (1) Advanced packaging facility incentives: $17,500,000,000
+    (2) Public-private R&D consortia: $2,000,000,000
+    (3) Advanced packaging workforce: $500,000,000 (from Title V)
+
+  (e) TITLE V — SEMICONDUCTOR WORKFORCE: $10,000,000,000
+
+    (1) University microelectronics education programs: $5,000,000,000
+    (2) Community college technician programs: $4,000,000,000
+    (3) Veteran retraining and transition programs: $1,000,000,000
+
+  (f) TITLE VI — EXPORT CONTROLS AND TECHNOLOGY SECURITY: $1,000,000,000
+
+    (1) BIS enforcement expansion: $500,000,000
+    (2) Interagency technology security operations: $500,000,000
+
+  (g) TITLE VII — ALLIED SEMICONDUCTOR COOPERATION: $6,000,000,000
+
+    (1) Allied Semiconductor Research Fund (joint R&D): $5,000,000,000
+    (2) Supply chain mapping platform: $500,000,000
+    (3) Allied Semiconductor Investment Office: $500,000,000
+
+  (h) TITLE VIII — ENERGY FOR SEMICONDUCTOR MANUFACTURING: $15,500,000,000
+
+    (1) Fabrication facility power guarantee program: $8,000,000,000
+    (2) Nuclear and SMR co-location incentives: $6,000,000,000
+    (3) Transmission corridor buildout: $1,000,000,000
+    (4) Renewable energy integration: $500,000,000
+
+  (i) FOUNDATIONAL RESEARCH AND DEVELOPMENT RESERVE: $20,000,000,000
+
+    (1) National Science Foundation semiconductor and materials research:
+        $8,000,000,000
+    (2) Department of Energy Office of Science microelectronics research:
+        $6,000,000,000
+    (3) Defense Advanced Research Projects Agency (DARPA) next-generation
+        semiconductor and packaging programs: $4,000,000,000
+    (4) National Institute of Standards and Technology metrology and
+        standards: $2,000,000,000
+
+  (j) ADMINISTRATION, OVERSIGHT, AND CONTINGENCY: $12,500,000,000
+
+SECTION 903. OVERSIGHT AND ACCOUNTABILITY.
+
+  (a) INSPECTOR GENERAL. — The Inspector General of the Department of
+      Commerce shall conduct annual audits of all programs authorized
+      under this Act and submit findings to the appropriate congressional
+      committees.
+
+  (b) GAO REVIEW. — The Comptroller General of the United States shall
+      conduct a comprehensive review of the implementation of this Act
+      not later than three years after the date of enactment, and
+      biennially thereafter.
+
+  (c) RECIPIENT REPORTING. — Each recipient of Federal financial assistance
+      under this Act shall submit annual reports to the Secretary of
+      Commerce detailing:
+
+    (1) Amount of Federal assistance received and expended;
+
+    (2) Project milestones achieved and timeline status;
+
+    (3) Jobs created, disaggregated by occupation category and
+        demographic characteristics;
+
+    (4) Domestic and foreign supply chain dependencies identified;
+
+    (5) Technology security measures implemented.
+
+  (d) CLAWBACK PROVISIONS. — The Secretary of Commerce shall include in
+      all agreements for Federal financial assistance under this Act
+      provisions for the recapture of funds in the event of:
+
+    (1) Material failure to meet project milestones without reasonable
+        justification;
+
+    (2) Unauthorized technology transfer to foreign adversary entities;
+
+    (3) Material misrepresentation in the application for assistance;
+
+    (4) Cessation of covered manufacturing operations within ten years
+        of project completion without Department approval.
+
+  (e) PUBLIC TRANSPARENCY. — The Secretary shall maintain a publicly
+      accessible online dashboard displaying, for each awarded project:
+      recipient name, location, award amount, project status, jobs
+      created, and milestone achievement, updated not less frequently
+      than quarterly.
+
+SECTION 904. SUNSET PROVISIONS.
+
+  (a) IN GENERAL. — The authority to enter into new obligations under this
+      Act shall expire on September 30, 2036.
+
+  (b) CONTINUING OBLIGATIONS. — Obligations entered into before the
+      expiration date under subsection (a) shall continue in effect
+      according to their terms.
+
+  (c) UNEXPENDED FUNDS. — Any funds appropriated under this Act not
+      obligated by September 30, 2038, shall be returned to the
+      general fund of the Treasury.

@@ -1,0 +1,133 @@
+================================================================================
+                    TITLE IV — ADVANCED PACKAGING MANUFACTURING
+                    CTSCRA OF 2026
+================================================================================
+
+SECTION 401. SHORT TITLE.
+
+  This title may be cited as the "Domestic Advanced Semiconductor Packaging
+  Act of 2026."
+
+SECTION 402. FINDINGS.
+
+  Congress finds that:
+
+    (1) Advanced semiconductor packaging technologies—including Chip-on-
+        Wafer-on-Substrate (CoWoS), Embedded Multi-Die Interconnect Bridge
+        (EMIB), Intel Foveros three-dimensional stacking, and hybrid
+        bonding—have become essential to the performance, power efficiency,
+        and functional density of modern semiconductor products, including
+        artificial intelligence accelerators, high-performance computing
+        processors, advanced graphics processors, and mobile system-on-chip
+        designs.
+
+    (2) As of 2025, approximately 90 percent of global advanced packaging
+        capacity is concentrated in Asia, with Taiwan Semiconductor
+        Manufacturing Company dominating CoWoS production (used by Nvidia
+        for its AI GPU products), Samsung Electronics and SK Hynix leading
+        in High-Bandwidth Memory (HBM) packaging, and ASE Technology
+        Holding operating the world's largest independent packaging and
+        test facility in Kaohsiung, Taiwan.
+
+    (3) The CHIPS and Science Act of 2022 included provisions for advanced
+        packaging under the National Advanced Packaging Manufacturing
+        Program, but funding for actual packaging facility construction
+        was limited, and as of 2026, the only major domestic advanced
+        packaging facility announcements are Intel's Foveros packaging
+        site in New Mexico and a planned Samsung advanced packaging
+        facility in Texas.
+
+    (4) Artificial intelligence chip demand is accelerating advanced
+        packaging requirements, with Nvidia's next-generation GPU
+        architectures requiring more complex CoWoS configurations,
+        Intel's roadmap projecting increased reliance on EMIB and Foveros
+        Direct, and AMD projecting increased chiplet-based designs
+        requiring advanced interconnect technologies.
+
+SECTION 403. ADVANCED PACKAGING FACILITY INCENTIVE PROGRAM.
+
+  (a) ESTABLISHMENT. — The Secretary of Commerce shall establish within the
+      CHIPS Program Office an Advanced Packaging Incentive Program to provide
+      grants, cooperative agreements, loans, and loan guarantees to support
+      the construction, expansion, and modernization of advanced
+      semiconductor packaging and test facilities in the United States.
+
+  (b) ELIGIBLE TECHNOLOGIES. — Projects eligible for support under this
+      section shall involve one or more of the following technologies:
+
+    (1) Chip-on-Wafer-on-Substrate (CoWoS) and variants (CoWoS-S, CoWoS-R,
+        CoWoS-L) for high-performance computing applications;
+
+    (2) Embedded Multi-Die Interconnect Bridge (EMIB) technology;
+
+    (3) Three-dimensional die stacking, including Foveros, Foveros Omni,
+        and Foveros Direct technologies;
+
+    (4) Hybrid bonding, including copper-to-copper direct bond interconnect
+        with sub-10-micron pitch;
+
+    (5) High-Bandwidth Memory (HBM) die stacking and integration;
+
+    (6) Fan-out wafer-level packaging (FOWLP) and fan-out panel-level
+        packaging (FOPLP);
+
+    (7) Silicon interposer and bridge technologies;
+
+    (8) System-in-Package (SiP) and heterogeneous integration technologies.
+
+  (c) FACILITY TARGETS. — The Secretary shall establish a goal of not fewer
+      than 10 advanced packaging facilities operating at commercial scale
+      in the United States by December 31, 2035.
+
+  (d) NATIONAL SECURITY PACKAGING MANDATE. — Not later than January 1, 2033,
+      all advanced semiconductor components procured by the Department of
+      Defense and the Intelligence Community shall be packaged and tested
+      either in the United States or in a facility located in a formal
+      allied nation as designated under Title VII of this Act.
+
+  (e) AUTHORIZATION OF APPROPRIATIONS. — There is authorized to be
+      appropriated $20,000,000,000 for the period of fiscal years 2027
+      through 2036 to carry out this section.
+
+SECTION 404. ADVANCED PACKAGING RESEARCH AND DEVELOPMENT CONSORTIA.
+
+  (a) PUBLIC-PRIVATE CONSORTIA. — The Secretary of Commerce, acting through
+      the Director of the National Institute of Standards and Technology
+      (NIST), shall establish not fewer than three public-private advanced
+      packaging research and development consortia, each focused on a
+      different advanced packaging technology domain.
+
+  (b) CONSORTIA FOCUS AREAS. — The consortia shall address:
+
+    (1) Substrate and interposer technology, including glass core substrates
+        and advanced organic substrates;
+
+    (2) Thermal management for high-power-density three-dimensional
+        integrated packages;
+
+    (3) Design automation and electronic design automation (EDA) tools for
+        heterogeneous integration;
+
+    (4) Metrology and inspection for advanced packaging processes;
+
+    (5) materials for advanced packaging, including underfill, thermal
+        interface materials, and microbump metallurgy;
+
+    (6) Reliability testing and qualification standards for advanced
+        packages in military, aerospace, and automotive applications.
+
+  (c) AUTHORIZATION OF APPROPRIATIONS. — There is authorized to be
+      appropriated $2,000,000,000 for the period of fiscal years 2027
+      through 2036 to carry out this section.
+
+SECTION 405. ADVANCED PACKAGING WORKFORCE INITIATIVE.
+
+  (a) IN GENERAL. — The Secretary of Labor, in coordination with the
+      Secretary of Commerce, shall establish a grant program to support
+      workforce training for advanced semiconductor packaging technicians,
+      process engineers, and related occupations.
+
+  (b) AUTHORIZATION OF APPROPRIATIONS. — There is authorized to be
+      appropriated $500,000,000 for the period of fiscal years 2027
+      through 2036 to carry out this section, from amounts authorized
+      under Title V of this Act.

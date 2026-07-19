@@ -1,0 +1,134 @@
+================================================================================
+119TH CONGRESS — 2ND SESSION                                     H.R. _______
+================================================================================
+
+          TITLE III — NATIONAL WEATHER AND SENSOR NETWORK
+                 FOR WILDFIRE SITUATIONAL AWARENESS
+
+================================================================================
+
+SEC. 301. FEDERAL GRANT PROGRAM FOR WEATHER STATIONS.
+
+    (a) ESTABLISHMENT. — There is established within the Department of
+    Energy, in coordination with the National Oceanic and Atmospheric
+    Administration (NOAA), a National Wildfire Weather and Sensor
+    Network Grant Program ("the Weather Network Program").
+
+    (b) DEPLOYMENT TARGET. — The Weather Network Program shall provide
+    federal grants to eligible utilities and state agencies for the
+    deployment of not fewer than 10,000 wildfire-weather monitoring
+    stations across high-fire-risk regions of the United States over
+    the ten-year authorization period.
+
+    (c) STATION SPECIFICATIONS. — Each weather station shall, at
+    minimum, measure and report at 10-minute intervals:
+        (1) Wind speed and wind direction at 10-meter height;
+        (2) Temperature and relative humidity;
+        (3) Fuel moisture content, measured directly or calculated
+            from meteorological inputs using the National Fire Danger
+            Rating System (NFDRS) methodology;
+        (4) Solar radiation;
+        (5) Precipitation;
+        (6) Soil moisture at two depths.
+
+    (d) PG&E WEATHER NETWORK MODEL. — The PG&E weather station network,
+    comprising 1,627 stations providing coverage across 70,000 square
+    miles of high-fire-risk territory at an average density of one
+    station per 43 square miles, shall serve as the reference design
+    for the national network. The Secretary shall:
+        (1) Adopt PG&E's station siting methodology, which positions
+            stations to capture microclimate variability across
+            complex terrain including ridgelines, canyons, and
+            wildland-urban interface transition zones;
+        (2) Require participating entities to maintain a minimum
+            station density calibrated to local fire risk as
+            determined by the Wildfire Hazard Potential Index.
+
+SEC. 302. HIGH-DEFINITION CAMERA AND DETECTION NETWORK.
+
+    (a) CAMERA NETWORK. — The Weather Network Program shall include
+    grants for the deployment of a national network of high-definition
+    pan-tilt-zoom (PTZ) cameras equipped with automated wildfire
+    detection capability.
+
+    (b) DEPLOYMENT DENSITY. — Participating entities shall deploy
+    cameras at a minimum density sufficient to provide overlapping
+    visual coverage of all Tier 2 and Tier 3 High Fire Threat
+    Districts within their service territories, with priority given
+    to corridors that provide line-of-sight coverage of electric
+    transmission and distribution rights-of-way.
+
+    (c) DETECTION CAPABILITIES. — Camera systems shall incorporate
+    automated detection algorithms capable of identifying:
+        (1) Smoke plumes within 60 seconds of visibility;
+        (2) Flame front location and estimated rate of spread;
+        (3) Changes in vegetation condition indicative of elevated
+            fire risk.
+
+    (d) PG&E CAMERA NETWORK REFERENCE. — PG&E's network of 706 HD
+    cameras with automated detection, providing real-time visual
+    monitoring of high-fire-risk corridors, shall serve as the
+    reference implementation. The Secretary shall document and
+    disseminate PG&E's camera siting methodology, detection
+    algorithm performance characteristics, and operational
+    integration with utility control centers and fire agency
+    emergency operations centers.
+
+SEC. 303. DATA SHARING AND INTEGRATION WITH NOAA.
+
+    (a) DATA INTEGRATION. — All weather station and camera data
+    collected under this Title shall be transmitted in real time to:
+        (1) The deploying utility's control center;
+        (2) NOAA's National Weather Service forecast offices
+            serving the relevant geographic area;
+        (3) The National Interagency Fire Center (NIFC);
+        (4) State and local fire agencies with jurisdiction;
+        (5) A centralized national data repository maintained by
+            the Department of Energy.
+
+    (b) NOAA INTEGRATION. — The Secretary of Commerce, acting through
+    the Administrator of NOAA, shall:
+        (1) Incorporate data from the Weather Network Program into
+            operational weather forecast models, including the High-
+            Resolution Rapid Refresh (HRRR) model;
+        (2) Use network data to improve the Spatial Fire Danger
+            Index and other fire-weather decision-support products;
+        (3) Ensure that Weather Network Program data is accessible
+            through the NOAA Big Data Program and the National
+            Centers for Environmental Information.
+
+    (c) DATA STANDARDS. — All data generated by the Weather Network
+    Program shall conform to open data format standards established
+    by the Federal Geographic Data Committee (FGDC) and shall be
+    made publicly available, except for camera imagery within 30
+    minutes of an active fire event, which may be restricted to
+    authorized emergency response personnel.
+
+SEC. 304. STANDARDS FOR METEOROLOGICAL DATA COLLECTION.
+
+    (a) CALIBRATION. — All weather stations shall be calibrated to
+    NIST-traceable standards upon installation and at intervals not
+    exceeding 12 months thereafter.
+
+    (b) QUALITY ASSURANCE. — The Secretary shall establish automated
+    data quality assurance procedures, including range checks,
+    temporal consistency checks, and spatial consistency checks
+    against neighboring stations, with flagged data excluded from
+    operational fire-weather calculations.
+
+    (c) TRAINING. — The Secretary shall provide a training program
+    for utility meteorologists and operations personnel on the use
+    of Weather Network data for fire-risk assessment, PSPS decision-
+    making, and operational planning.
+
+SEC. 305. AUTHORIZATION OF APPROPRIATIONS.
+
+    (a) There is authorized to be appropriated $10 billion for the
+    period of fiscal years 2027 through 2036 to carry out this Title,
+    allocated as follows:
+        (1) $6.0 billion for weather station procurement, installation,
+            and maintenance cost-share grants;
+        (2) $3.0 billion for HD camera procurement, installation, and
+            detection algorithm licensing;
+        (3) $1.0 billion for NOAA data integration, the national data
+            repository, and program administration.
