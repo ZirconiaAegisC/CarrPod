@@ -1,0 +1,169 @@
+================================================================================
+              TITLE IV — WESTERN DROUGHT RESILIENCE
+================================================================================
+
+  Authorization: $25,000,000,000 over 10 fiscal years
+
+================================================================================
+SECTION 401. COLORADO RIVER BASIN CONSERVATION PROGRAM.
+================================================================================
+
+  (a) VOLUNTARY SYSTEM CONSERVATION PROGRAM. — The Secretary shall establish
+      a permanent, fully funded System Conservation Program within the
+      Colorado River Basin to provide compensation for voluntary, verifiable
+      reductions in water consumption by agricultural, municipal, industrial,
+      and Tribal water users.
+
+  (b) COMPENSATION RATES. — The Secretary shall establish compensation rates
+      for conserved water based on:
+        (1) Regional market prices for water rights transfers;
+        (2) The economic value of agricultural production foregone;
+        (3) Environmental and recreational co-benefits;
+        (4) The value of avoided shortage declaration impacts.
+
+  (c) PRIORITY BASIN. — Not less than 60 percent of funds authorized under
+      this section shall be allocated to the Lower Colorado River Basin,
+      with priority for conservation in Arizona, California, and Nevada.
+
+  (d) QUANTIFICATION AND VERIFICATION. — All conserved water under this
+      section shall be quantified using best available science, satellite
+      evapotranspiration data, and direct flow measurement, and shall be
+      verified by the Bureau of Reclamation or an approved third-party
+      verifier.
+
+  (e) AUTHORIZATION. — $8,000,000,000 is authorized for the Conservation
+      Program established under this section.
+
+================================================================================
+SECTION 402. GROUNDWATER MANAGEMENT AND AQUIFER RECHARGE.
+================================================================================
+
+  (a) MANAGED AQUIFER RECHARGE GRANTS. — The Secretary shall award grants to
+      States, water districts, irrigation districts, and groundwater
+      sustainability agencies for:
+        (1) Construction of infiltration basins and injection wells;
+        (2) Aquifer storage and recovery (ASR) well systems;
+        (3) Conveyance infrastructure connecting surface water supplies
+            to recharge facilities;
+        (4) Monitoring well networks to verify recharge effectiveness.
+
+  (b) CRITICAL AQUIFER PROTECTION. — The Secretary shall identify and
+      prioritize aquifers that are:
+        (1) Designated as critically overdrafted by the relevant State;
+        (2) Serving as the primary drinking water source for a population
+            greater than 100,000;
+        (3) Demonstrating declines in average water level of more than
+            2 feet per year.
+
+  (c) GROUNDWATER DATA PROGRAM. — The United States Geological Survey, in
+      coordination with State geological surveys, shall establish a National
+      Groundwater Monitoring Network expansion program to deploy 5,000
+      additional monitoring wells across priority aquifers, with real-time
+      data transmission and public access.
+
+  (d) AUTHORIZATION. — $5,000,000,000 is authorized for programs established
+      under this section.
+
+================================================================================
+SECTION 403. INTERSTATE WATER BANKING AND TRANSFER AGREEMENTS.
+================================================================================
+
+  (a) COLORADO RIVER WATER BANK. — The Secretary shall facilitate the
+      establishment of a Colorado River Basin Water Bank to enable:
+        (1) Temporary, voluntary leasing of water rights among States
+            and water users within the Basin;
+        (2) Storage and accounting of conserved water for subsequent use
+            or transfer;
+        (3) Emergency water supply allocations during shortage declarations.
+
+  (b) INTERSTATE COMPACT FACILITATION. — The Secretary shall provide technical
+      and legal support for negotiations toward updated interstate water
+      compacts reflecting current hydrologic realities, including the Colorado
+      River Compact of 1922, the Rio Grande Compact, and the Republican River
+      Compact.
+
+  (c) PROHIBITION ON FEDERAL WATER RIGHTS PREEMPTION. — Nothing in this
+      section shall be construed to preempt, modify, or abrogate State water
+      law, interstate water compacts, or decreed water rights, including
+      Tribal water rights.
+
+  (d) AUTHORIZATION. — $2,000,000,000 is authorized for activities under
+      this section.
+
+================================================================================
+SECTION 404. DROUGHT EARLY WARNING SYSTEM EXPANSION.
+================================================================================
+
+  (a) NATIONAL INTEGRATED DROUGHT INFORMATION SYSTEM (NIDIS) EXPANSION. —
+      The Director of the National Oceanic and Atmospheric Administration
+      shall expand NIDIS to include:
+        (1) Sub-seasonal to seasonal drought forecasting at a spatial
+            resolution of 1 kilometer or finer;
+        (2) Soil moisture monitoring network expansion to 5,000 stations;
+        (3) Snowpack and snow water equivalent monitoring network expansion;
+        (4) Satellite-based evapotranspiration and groundwater monitoring;
+        (5) Integration of paleoclimate and tree-ring reconstructions into
+            drought risk assessments.
+
+  (b) INTERAGENCY COORDINATION. — The Director shall establish an interagency
+      Drought Monitoring and Prediction Council comprising representatives
+      from NOAA, USGS, USDA, the Bureau of Reclamation, the Army Corps of
+      Engineers, and the Federal Emergency Management Agency.
+
+  (c) STATE AND LOCAL PARTNERSHIPS. — The Director shall provide grants to
+      States, Tribes, and regional authorities to develop and maintain
+      locally relevant drought monitoring and decision-support tools.
+
+  (d) AUTHORIZATION. — $1,500,000,000 is authorized for programs established
+      under this section.
+
+================================================================================
+SECTION 405. WATER-EFFICIENT LANDSCAPING AND URBAN CONSERVATION.
+================================================================================
+
+  (a) TURF REMOVAL AND XERISCAPING PROGRAM. — The Secretary shall establish
+      a grant program providing financial incentives to residential,
+      commercial, and institutional property owners for:
+        (1) Removal of non-functional turf grass and replacement with
+            drought-tolerant landscaping;
+        (2) Installation of high-efficiency drip irrigation systems;
+        (3) Rainwater harvesting and graywater systems for landscape use.
+
+  (b) URBAN WATER CONSERVATION GRANTS. — The Administrator shall award
+      grants to municipalities for:
+        (1) Distribution system leak detection and repair programs;
+        (2) Water-efficient plumbing fixture rebate programs;
+        (3) Public water conservation education and outreach;
+        (4) Water rate structure reform to incentivize conservation.
+
+  (c) AUTHORIZATION. — $2,500,000,000 is authorized for programs under
+      this section.
+
+================================================================================
+SECTION 406. RURAL COMMUNITY DROUGHT ASSISTANCE.
+================================================================================
+
+  (a) EMERGENCY WATER SUPPLY PROGRAM. — The Secretary shall establish a
+      program to provide emergency water supply assistance to rural
+      communities experiencing drought-related water shortages, including:
+        (1) Temporary water hauling and distribution;
+        (2) Emergency well drilling and deepening;
+        (3) Emergency interties and pipeline connections to alternative
+            water sources;
+        (4) Mobile water treatment units.
+
+  (b) LONG-TERM RESILIENCE PLANNING. — The Secretary of Agriculture shall
+      provide technical assistance and grants to rural communities for
+      development of long-term drought resilience plans addressing:
+        (1) Source water diversification;
+        (2) Demand management and conservation;
+        (3) Infrastructure modernization;
+        (4) Cooperative water supply agreements.
+
+  (c) COLONIAS ASSISTANCE. — Not less than 10 percent of funds authorized
+      under this section shall be allocated to colonias and other rural
+      communities along the United States-Mexico border lacking basic
+      water and wastewater infrastructure.
+
+  (d) AUTHORIZATION. — $6,000,000,000 is authorized for programs under
+      this section.

@@ -1,0 +1,151 @@
+================================================================================
+                              EXECUTIVE SUMMARY
+                        WATER INFRASTRUCTURE AND
+                     DROUGHT RESILIENCE ACT OF 2026
+================================================================================
+
+I. PURPOSE AND SCOPE
+
+  The Water Infrastructure and Drought Resilience Act of 2026 (WIDRA)
+  constitutes a comprehensive legislative framework authorizing $120 billion
+  in Federal investment over a ten-year period to modernize the nation's
+  deteriorating water infrastructure, eliminate lead service lines from public
+  drinking water systems, address perfluoroalkyl and polyfluoroalkyl substance
+  (PFAS) contamination, build long-term drought resilience across the Western
+  United States, and advance water recycling, desalination, and agricultural
+  efficiency technologies. WIDRA represents the most significant Federal
+  investment in water infrastructure since the Clean Water Act of 1972.
+
+II. STRATEGIC CONTEXT
+
+  The United States water infrastructure faces an existential crisis. An
+  estimated 2.2 million miles of aging underground pipes distribute drinking
+  water and collect wastewater across the nation, much of it installed in the
+  early to mid-20th century and now well beyond its designed service life.
+  The American Society of Civil Engineers awarded United States drinking
+  water infrastructure a grade of C-minus in its 2021 Report Card, and the
+  American Water Works Association estimates that restoring and expanding
+  existing water systems will require at least $1 trillion over the next 25
+  years. Approximately 6 billion gallons of treated water are lost daily
+  through leaks in distribution systems, equivalent to the daily water
+  consumption of 15 million households. An estimated 240,000 water main breaks
+  occur annually, one every two minutes, costing municipalities and utilities
+  over $2.6 billion per year in emergency repairs.
+
+  The lead service line crisis affects an estimated 9.2 million lead service
+  lines still in operation across the United States, disproportionately
+  concentrated in low-income communities and communities of color. Lead
+  exposure, even at low levels, causes irreversible neurological damage in
+  children, contributing to reduced IQ, behavioral disorders, and lifelong
+  health disparities. The Congressional Budget Office estimates the economic
+  cost of lead exposure in the United States at approximately $50 billion per
+  year in lost lifetime earnings, increased healthcare costs, and educational
+  underperformance.
+
+  The Colorado River Basin, which supplies water to 40 million people and
+  irrigates 5.5 million acres of farmland across seven Western States, has
+  experienced a 20 percent decline in average annual flow since 2000 due to
+  a combination of climate-driven aridification and chronic over-allocation
+  under the 1922 Colorado River Compact. Lake Mead, the nation's largest
+  reservoir by capacity, reached its lowest recorded elevation of 1,040.58
+  feet above sea level in July 2022, triggering the first-ever Tier 2a
+  shortage declaration and mandatory water delivery reductions to Arizona,
+  Nevada, and Mexico.
+
+  The United States recycles less than 1 percent of its municipal wastewater,
+  compared with approximately 85 percent in Israel and over 40 percent in
+  Singapore. With more than 18,000 desalination plants operating globally, only
+  approximately 400 are located in the United States, primarily in California,
+  Florida, and Texas. Meanwhile, PFAS contamination has been detected at over
+  3,000 sites nationwide, including drinking water sources serving tens of
+  millions of Americans, with health effects linked to cancer, thyroid disease,
+  and developmental disorders.
+
+III. KEY PROVISIONS AND FUNDING ALLOCATION
+
+  The WIDRA authorizes $120 billion across eight substantive titles plus
+  program administration, oversight, and economic impact assessment:
+
+  TITLE I — LEAD PIPE ELIMINATION ($45 billion): Mandates comprehensive lead
+  service line inventory and replacement over a ten-year period, with priority
+  for disadvantaged communities; provides low-income household assistance;
+  capitalizes State revolving funds; funds school and childcare facility
+  remediation; and supports workforce training for lead pipe replacement.
+
+  TITLE II — WATER RECYCLING AND REUSE ($20 billion): Establishes national
+  water recycling targets modeled after Israel's successful program; funds
+  direct potable reuse demonstration projects; provides industrial and
+  agricultural reuse incentives; deploys advanced treatment technologies
+  including reverse osmosis and advanced oxidation; and funds public education
+  campaigns to build acceptance of recycled water.
+
+  TITLE III — PFAS REMEDIATION ($15 billion): Establishes enforceable national
+  primary drinking water regulations for PFAS; funds research and deployment
+  of PFAS destruction technologies; provides remediation grants for
+  contaminated sites; supports drinking water utilities with monitoring and
+  treatment costs; and funds biomonitoring and health impact studies.
+
+  TITLE IV — WESTERN DROUGHT RESILIENCE ($25 billion): Funds Colorado River
+  Basin conservation programs; supports groundwater management and managed
+  aquifer recharge; facilitates interstate water banking agreements; expands
+  drought early warning systems; and provides rural community drought
+  assistance.
+
+  TITLE V — AGRICULTURAL WATER EFFICIENCY ($10 billion): Provides irrigation
+  modernization grants; deploys precision agriculture water technologies;
+  supports crop transition assistance; promotes regenerative agriculture
+  and soil water retention practices; and funds livestock water supply
+  resilience programs.
+
+  TITLE VI — SMART WATER METERING: Funds nationwide smart metering
+  deployment; supports advanced leak detection technologies; establishes
+  real-time distribution system monitoring requirements; and mandates
+  non-revenue water reduction targets.
+
+  TITLE VII — DESALINATION RESEARCH AND DEVELOPMENT: Funds advanced membrane
+  research; establishes brackish water desalination demonstration facilities;
+  addresses brine management challenges; supports renewable energy-powered
+  desalination; and funds cost reduction and commercialization efforts.
+
+  TITLE VIII — TRIBAL WATER RIGHTS ($5 billion): Establishes a Tribal water
+  rights settlement fund; funds water infrastructure on Indian reservations;
+  requires meaningful Tribal consultation; provides technical assistance;
+  and addresses emergency water supply needs for Tribal communities.
+
+  An additional $5 billion is allocated for program administration, oversight,
+  and economic impact assessment across all program areas.
+
+IV. ECONOMIC PROJECTIONS
+
+  The Department of the Interior and the Environmental Protection Agency
+  estimate that WIDRA implementation will:
+
+  1. Eliminate all 9.2 million remaining lead service lines within 10 years,
+     preventing an estimated 200,000 childhood lead poisoning cases annually;
+
+  2. Create approximately 350,000 direct and indirect domestic jobs in water
+     infrastructure construction, engineering, manufacturing, and operations;
+
+  3. Generate approximately $180 billion in cumulative economic benefits
+     through avoided water loss, reduced public health costs, increased
+     agricultural productivity, and enhanced property values;
+
+  4. Increase United States municipal wastewater recycling from less than
+     1 percent to no less than 10 percent by 2036; and
+
+  5. Establish resilient water supplies for 40 million Americans in the
+     Colorado River Basin and other drought-affected regions.
+
+V. NATIONAL SECURITY AND PUBLIC HEALTH IMPERATIVE
+
+  WIDRA finds that the nation's deteriorating water infrastructure, widespread
+  lead contamination, emerging PFAS threats, and intensifying drought
+  conditions collectively constitute a national emergency requiring Federal
+  action commensurate with the scale of the challenge. Access to safe,
+  reliable, and affordable drinking water is a fundamental human right and a
+  prerequisite for public health, economic prosperity, and community vitality.
+  This legislation operationalizes the consensus view across the Environmental
+  Protection Agency, the Department of the Interior, the Centers for Disease
+  Control and Prevention, and the National Academies of Sciences, Engineering,
+  and Medicine that water infrastructure investment must be prioritized at a
+  level comparable to national transportation and defense spending.

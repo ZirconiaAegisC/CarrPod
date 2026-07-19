@@ -1,0 +1,163 @@
+================================================================================
+              TITLE VII — DESALINATION RESEARCH AND
+              DEVELOPMENT
+================================================================================
+
+  Authorization: Subsumed within administrative allocations
+
+================================================================================
+SECTION 701. ADVANCED MEMBRANE AND MATERIALS RESEARCH.
+================================================================================
+
+  (a) RESEARCH PROGRAM. — The Secretary of Energy, in coordination with the
+      Administrator, shall establish an Advanced Desalination Materials
+      Research Program to fund development of:
+        (1) Biomimetic and aquaporin-based membranes offering 50 percent
+            or greater permeability improvement over current thin-film
+            composite reverse osmosis membranes;
+        (2) Graphene oxide, carbon nanotube, and other nanostructured
+            membranes with enhanced fouling resistance;
+        (3) Chlorine-tolerant membrane materials eliminating the need for
+            dechlorination prior to reverse osmosis treatment;
+        (4) High-selectivity membranes for selective removal of specific
+            contaminants including boron, arsenic, and nitrate;
+        (5) Membrane distillation and forward osmosis draw solutions with
+            reduced energy requirements.
+
+  (b) RESEARCH CENTERS. — The Secretary shall establish at least 5 university-
+      based National Desalination Research Centers, each focused on a distinct
+      aspect of desalination science and technology:
+        (1) Novel membrane materials and fabrication;
+        (2) Energy recovery and process intensification;
+        (3) Brine management and mineral recovery;
+        (4) Renewable energy integration and hybrid systems;
+        (5) Environmental monitoring and impact mitigation.
+
+  (c) AUTHORIZATION. — $2,000,000,000 is authorized for programs under
+      this section.
+
+================================================================================
+SECTION 702. BRACKISH WATER DESALINATION DEMONSTRATION FACILITIES.
+================================================================================
+
+  (a) DEMONSTRATION PROGRAM. — The Secretary shall fund the design,
+      construction, and operation of not fewer than 10 brackish water
+      desalination demonstration facilities distributed across diverse
+      hydrogeologic settings, including:
+        (1) Deep brackish aquifers in the Ogallala Aquifer region;
+        (2) Coastal brackish aquifers in California, Texas, and Florida;
+        (3) Brackish surface waters in the Colorado River Basin;
+        (4) Agricultural drainage waters in the San Joaquin Valley.
+
+  (b) FACILITY REQUIREMENTS. — Each demonstration facility shall:
+        (1) Have a design capacity of at least 5 million gallons per day;
+        (2) Achieve a water recovery rate of at least 90 percent;
+        (3) Incorporate zero liquid discharge or beneficial brine reuse;
+        (4) Use renewable energy for not less than 75 percent of power
+            requirements;
+        (5) Include a comprehensive environmental monitoring program.
+
+  (c) KNOWLEDGE SHARING. — The Secretary shall establish a publicly
+      accessible database documenting the design, construction, operational,
+      and economic performance of all demonstration facilities funded under
+      this section.
+
+  (d) AUTHORIZATION. — $3,000,000,000 is authorized for programs under
+      this section.
+
+================================================================================
+SECTION 703. BRINE MANAGEMENT AND ZERO LIQUID DISCHARGE.
+================================================================================
+
+  (a) RESEARCH AND DEMONSTRATION. — The Secretary shall fund research,
+      development, and demonstration of technologies for brine minimizations
+      and beneficial use, including:
+        (1) High-efficiency brine concentrators and crystallizers;
+        (2) Electrodialysis reversal and membrane capacitive deionization
+            for brine volume reduction;
+        (3) Selective mineral recovery from brine including lithium,
+            magnesium, and rare earth elements;
+        (4) Brine-to-hydrogen conversion through electrolysis;
+        (5) Salinity gradient energy recovery;
+        (6) Beneficial brine use in aquaculture and agriculture.
+
+  (b) OCEAN DISCHARGE MITIGATION. — The Administrator shall, in coordination
+      with the National Oceanic and Atmospheric Administration, develop
+      updated guidance for brine discharge to marine environments based on:
+        (1) Best available science on marine ecosystem impacts of elevated
+            salinity and brine plume dispersion modeling;
+        (2) Diffuser design standards to maximize mixing and minimize
+            benthic impacts;
+        (3) Site-specific environmental monitoring requirements.
+
+  (c) AUTHORIZATION. — $1,500,000,000 is authorized for programs under
+      this section.
+
+================================================================================
+SECTION 704. RENEWABLE ENERGY-POWERED DESALINATION.
+================================================================================
+
+  (a) INTEGRATION PROGRAM. — The Secretary of Energy, in coordination with
+      the Secretary, shall establish a program to demonstrate the integration
+      of desalination facilities with renewable energy sources, including:
+        (1) Solar photovoltaic-powered reverse osmosis with battery storage;
+        (2) Concentrating solar power with thermal desalination;
+        (3) Offshore wind-powered seawater reverse osmosis;
+        (4) Geothermal-powered multi-effect distillation.
+
+  (b) LOAD MANAGEMENT. — Each project funded under this section shall
+      demonstrate the ability to:
+        (1) Operate under variable renewable energy input conditions;
+        (2) Manage desalination production as a flexible load for grid
+            balancing;
+        (3) Integrate energy storage to enable continuous water production.
+
+  (c) AUTHORIZATION. — $1,000,000,000 is authorized for programs under
+      this section.
+
+================================================================================
+SECTION 705. ENVIRONMENTAL IMPACT MITIGATION.
+================================================================================
+
+  (a) INTAKE TECHNOLOGY RESEARCH. — The Administrator shall fund research
+      on seawater intake technologies that minimize impingement and
+      entrainment of marine organisms, including:
+        (1) Subsurface slant well and beach gallery intakes;
+        (2) Wedge-wire passive screening systems;
+        (3) Variable-speed pumping to enable organism avoidance behavior.
+
+  (b) ENVIRONMENTAL MONITORING STANDARDS. — The Administrator, in
+      coordination with NOAA, shall promulgate standardized environmental
+      monitoring protocols for desalination facilities, including:
+        (1) Source water quality characterization;
+        (2) Brine discharge plume monitoring;
+        (3) Entrainment and impingement mortality assessments;
+        (4) Benthic community monitoring.
+
+  (c) AUTHORIZATION. — $500,000,000 is authorized for programs under
+      this section.
+
+================================================================================
+SECTION 706. COST REDUCTION AND COMMERCIALIZATION.
+================================================================================
+
+  (a) COST TARGETS. — The Secretary of Energy shall establish program targets
+      for achieving:
+        (1) Seawater desalination at an energy consumption of not more than
+            2.0 kilowatt-hours per cubic meter of water produced by 2031;
+        (2) Brackish water desalination at an energy consumption of not
+            more than 1.0 kilowatt-hours per cubic meter by 2031;
+        (3) Total levelized cost of seawater desalination not exceeding
+            $1.50 per cubic meter by 2031.
+
+  (b) COMMERCIALIZATION PROGRAM. — The Secretary shall provide grants,
+      loan guarantees, and technical assistance to support commercialization
+      of innovative desalination technologies that demonstrate:
+        (1) A credible pathway to meeting the cost and energy targets
+            specified in subsection (a);
+        (2) Verified performance at pilot scale of not less than
+            100,000 gallons per day;
+        (3) Compliance with environmental requirements under this title.
+
+  (c) AUTHORIZATION. — $1,000,000,000 is authorized for programs under
+      this section.

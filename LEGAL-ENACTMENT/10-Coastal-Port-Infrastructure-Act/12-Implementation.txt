@@ -1,0 +1,216 @@
+================================================================================
+              TITLE X — IMPLEMENTATION SCHEDULE AND
+              REPORTING REQUIREMENTS
+================================================================================
+
+================================================================================
+SECTION 1001. IMPLEMENTATION SCHEDULE AND MILESTONES.
+================================================================================
+
+  (a) YEAR 1 (FISCAL YEAR 2027):
+
+    (1) QUARTER 1 (Oct-Dec):
+        — Establishment of interagency coastal infrastructure task force
+        — National Coastal Vulnerability Assessment initiated
+        — Harbor deepening priority list published
+        — Notices of Funding Opportunity for Title I sea wall grants
+          and Title IV coastal ecosystem restoration published
+        — Port Resilience Hub designation criteria published
+
+    (2) QUARTER 2 (Jan-Mar):
+        — First awards under Title II shore power infrastructure grants
+        — Title III harbor deepening feasibility studies commenced for
+          priority ports
+        — Title IV wetland restoration project selection completed
+        — Title VI offshore wind port grant applications accepted
+        — Risk Rating 3.0 implementation plan published
+
+    (3) QUARTER 3 (Apr-Jun):
+        — Title I urban flood barrier feasibility studies initiated
+        — Title II zero-emission cargo handling equipment first grants
+          awarded
+        — Title VII green shipping corridor designations announced
+        — Title VIII flood mapping update program launched
+        — Dredging fleet assessment completed
+
+    (4) QUARTER 4 (Jul-Sep):
+        — Title III dredging fleet acquisition contracts awarded
+        — Title V resilience master plan guidance issued
+        — Title VII alternative fuel infrastructure first round awards
+        — First annual report to Congress submitted
+        — Coastal flood mapping program initial data release
+
+  (b) YEAR 2 (FISCAL YEAR 2028):
+
+    (1) QUARTER 1-2:
+        — National Coastal Vulnerability Assessment completed
+        — Title I prioritized sea wall construction commenced
+        — Five offshore wind staging port projects selected
+        — Green shipping corridor international agreements negotiated
+        — Community Rating System reform rulemaking completed
+
+    (2) QUARTER 3-4:
+        — Title III first harbor deepening construction commenced
+        — Title IV oyster reef restoration projects initiated
+        — Title V storm surge protection projects commenced at
+          Resilience Hubs
+        — Title VII zero-emission vessel demonstration design contract
+          awarded
+        — Risk Rating 3.0 premium updates implemented
+
+  (c) YEAR 3 (FISCAL YEAR 2029):
+
+    — At least 25 percent of major port shore power installations
+      completed
+    — First green shipping corridor operational
+    — Maritime emissions monitoring regulations promulgated
+    — Managed retreat pilot programs initiated in high-risk communities
+    — Blue carbon registry operational
+
+  (d) YEAR 5 (FISCAL YEAR 2031):
+
+    — At least 50 percent of priority harbor deepening projects
+      under construction
+    — At least 50 shore power berths operational nationwide
+    — First zero-emission demonstration vessel deployed
+    — Green port certification program fully launched
+    — Midpoint program evaluation completed by GAO
+
+  (e) YEAR 10 (FISCAL YEAR 2036):
+
+    — All priority harbor deepening projects completed
+    — Mandatory cold ironing effective at all major ports
+    — Zero-emission cargo handling equipment mandate in effect
+    — All green shipping corridors fully operational
+    — Net zero coastal wetland loss achieved
+    — Comprehensive program evaluation and sunset review
+    — Final report to Congress
+
+================================================================================
+SECTION 1002. ANNUAL REPORT TO CONGRESS.
+================================================================================
+
+  (a) REQUIREMENT. — Not later than September 30 of each fiscal year, the
+      Secretary of Transportation, in coordination with the Secretaries
+      of the Army, Homeland Security, the Interior, and Energy, and the
+      Administrators of NOAA and EPA, shall submit to the appropriate
+      congressional committees a comprehensive report.
+
+  (b) CONTENTS. — Each report under subsection (a) shall include:
+
+    (1) Detailed accounting of all funds appropriated, obligated, and
+        expended during the preceding fiscal year, disaggregated by
+        title, program, and State;
+
+    (2) Quantitative performance metrics including:
+        (A) Linear feet of sea wall and coastal protection constructed;
+        (B) Shore power berths completed and vessel connections logged;
+        (C) Cargo handling equipment electrified;
+        (D) Cubic yards of harbor deepening dredging completed;
+        (E) Acres of coastal wetlands restored or created;
+        (F) Alternative fuel bunkering events completed at United States
+            ports;
+        (G) Vessel emissions reductions measured in metric tons of
+            carbon dioxide equivalent;
+        (H) NFIP policies adjusted under Risk Rating 3.0;
+
+    (3) Assessment of progress toward statutory targets and milestones;
+
+    (4) Identification of regulatory, administrative, or statutory
+        barriers impeding program implementation;
+
+    (5) Recommendations for legislative or administrative actions;
+
+    (6) Environmental justice outcomes analysis, including distribution
+        of benefits to port-adjacent communities.
+
+================================================================================
+SECTION 1003. COMPTROLLER GENERAL AUDITS.
+================================================================================
+
+  (a) BIENNIAL AUDIT. — The Comptroller General shall conduct a
+      comprehensive audit of programs authorized under this Act not less
+      frequently than once every 2 years.
+
+  (b) SCOPE. — Each audit shall evaluate:
+
+    (1) Efficiency and effectiveness of program administration;
+    (2) Compliance with statutory requirements, including Buy America
+        provisions, environmental review requirements, and environmental
+        justice mandates;
+    (3) Accuracy of performance metrics reported to Congress;
+    (4) Adequacy of internal controls preventing waste, fraud, and abuse;
+    (5) Whether programs achieve stated objectives cost-effectively.
+
+  (c) PUBLIC AVAILABILITY. — All audits shall be publicly available on the
+      GAO website within 30 days of transmission to Congress.
+
+================================================================================
+SECTION 1004. ECONOMIC IMPACT ASSESSMENT.
+================================================================================
+
+  (a) INDEPENDENT ASSESSMENT. — Not later than 36 months after enactment and
+      every 3 years thereafter, the Secretary of Transportation shall
+      contract with an independent entity to conduct a comprehensive
+      economic impact assessment.
+
+  (b) ASSESSMENT SCOPE. — The assessment shall evaluate:
+
+    (1) Direct, indirect, and induced economic impacts of investments,
+        including GDP contributions, employment impacts by occupation and
+        geography, wage and income effects, and State and local tax
+        revenue impacts;
+
+    (2) Economic value of property and infrastructure protected from
+        sea level rise and storm surge;
+
+    (3) Transportation cost savings from harbor deepening and port
+        efficiency improvements;
+
+    (4) Supply chain resilience benefits and avoided congestion costs;
+
+    (5) Public health benefits and cost savings from port emissions
+        reductions in port-adjacent communities;
+
+    (6) Return on investment analysis for each major program category.
+
+  (c) ECONOMIC BENCHMARKS. — The assessment shall evaluate progress against:
+
+    (1) Creation of not fewer than 250,000 jobs attributable to this Act
+        by fiscal year 2036;
+    (2) Cumulative GDP contribution of not less than $150 billion;
+    (3) Protection of not less than $500 billion in coastal property
+        value from chronic flooding;
+    (4) Port congestion cost reduction of at least $50 billion;
+    (5) Greenhouse gas emissions reduction of 60 percent in port
+        operations relative to 2025 baseline.
+
+================================================================================
+SECTION 1005. BUY AMERICA REQUIREMENTS.
+================================================================================
+
+  (a) DOMESTIC CONTENT. — All iron and steel products, manufactured
+      products, and construction materials used in projects funded under
+      this Act shall be produced in the United States, consistent with
+      the Build America, Buy America Act (Title IX of Division G of
+      Public Law 117-58).
+
+  (b) WAIVER PROCESS. — The head of the relevant Federal agency may waive
+      requirements of subsection (a) only upon a written determination,
+      published in the Federal Register for public comment, that:
+
+    (1) Applying the requirement would be inconsistent with the public
+        interest;
+    (2) Materials of satisfactory quality and sufficient quantity are not
+        produced in the United States; or
+    (3) Inclusion of domestic material would increase overall project
+        cost by more than 25 percent.
+
+  (c) REPORTING. — Any waiver issued under subsection (b) shall be reported
+      to the appropriate congressional committees within 15 days of issuance
+      and included in the annual report required under section 1002.
+
+  (d) DOMESTIC SHIPBUILDING PREFERENCE. — For any project involving vessel
+      construction or retrofit, grants and loan guarantees shall be
+      conditioned on construction or retrofit occurring in a United
+      States shipyard, consistent with the Jones Act (46 U.S.C. 55102).

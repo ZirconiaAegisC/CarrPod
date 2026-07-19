@@ -1,0 +1,126 @@
+================================================================================
+              TITLE VI — SMART WATER METERING AND LEAK
+              DETECTION INFRASTRUCTURE
+================================================================================
+
+  Authorization: Subsumed within administrative allocations
+
+================================================================================
+SECTION 601. NATIONAL SMART METERING INITIATIVE.
+================================================================================
+
+  (a) GRANT PROGRAM. — The Administrator shall establish a competitive grant
+      program to fund deployment of advanced metering infrastructure (AMI)
+      in community water systems across the United States, including:
+        (1) Smart water meters with two-way communication capability;
+        (2) Fixed-network data collection systems;
+        (3) Meter data management software and analytics platforms;
+        (4) Customer-facing water use portals and leak notification
+            applications;
+        (5) Integration with existing utility billing and customer
+            information systems.
+
+  (b) DEPLOYMENT TARGETS. — Each community water system serving more than
+      10,000 persons shall achieve:
+        (1) Not less than 50 percent AMI coverage by December 31, 2031;
+        (2) Not less than 100 percent AMI coverage by December 31, 2036.
+
+  (c) CYBERSECURITY REQUIREMENTS. — All AMI systems funded under this
+      section shall comply with the National Institute of Standards and
+      Technology (NIST) Framework for Improving Critical Infrastructure
+      Cybersecurity and shall incorporate:
+        (1) End-to-end encryption of meter data transmissions;
+        (2) Role-based access control and multi-factor authentication;
+        (3) Secure firmware update mechanisms;
+        (4) Intrusion detection and anomaly monitoring.
+
+  (d) AUTHORIZATION. — $3,000,000,000 is authorized for the program
+      established under this section.
+
+================================================================================
+SECTION 602. ADVANCED LEAK DETECTION TECHNOLOGY DEPLOYMENT.
+================================================================================
+
+  (a) TECHNOLOGY DEPLOYMENT FUND. — The Administrator shall establish a fund
+      to accelerate deployment of advanced leak detection technologies
+      including:
+        (1) Acoustic leak detection sensors and correlators;
+        (2) Satellite-based synthetic aperture radar leak detection;
+        (3) In-pipe inspection technologies including tethered and
+            free-swimming sensors;
+        (4) Pressure transient monitoring and analysis systems;
+        (5) Distributed fiber optic acoustic and temperature sensing;
+        (6) Unmanned aerial vehicle-based thermal and multispectral
+            leak detection.
+
+  (b) PRIORITY. — Priority for funding under this section shall be given to
+      water systems with:
+        (1) Non-revenue water exceeding 25 percent of total production;
+        (2) Annual main break rates exceeding 25 per 100 miles of pipe;
+        (3) Infrastructure age averaging greater than 50 years.
+
+  (c) AUTHORIZATION. — $2,000,000,000 is authorized for the fund established
+      under this section.
+
+================================================================================
+SECTION 603. REAL-TIME DISTRIBUTION SYSTEM MONITORING.
+================================================================================
+
+  (a) MONITORING REQUIREMENT. — Not later than 5 years after enactment, every
+      community water system serving more than 50,000 persons shall deploy
+      a real-time distribution system monitoring network that includes:
+        (1) Continuous pressure monitoring at representative locations
+            throughout the distribution system;
+        (2) Continuous flow monitoring at district metered area boundaries;
+        (3) Water quality monitoring for chlorine residual, turbidity,
+            pH, and conductivity at critical control points;
+        (4) Integrated supervisory control and data acquisition (SCADA)
+            system with alarm and notification capabilities.
+
+  (b) DATA SHARING. — The Administrator shall establish a voluntary national
+      database of anonymized distribution system performance metrics,
+      including water loss rates, pressure management data, and pipe failure
+      statistics, to support benchmarking and best practice identification.
+
+  (c) AUTHORIZATION. — $1,000,000,000 is authorized for programs under
+      this section.
+
+================================================================================
+SECTION 604. NON-REVENUE WATER REDUCTION TARGETS.
+================================================================================
+
+  (a) STATE WATER LOSS AUDITING REQUIREMENT. — Not later than 24 months after
+      enactment, each State shall require all community water systems serving
+      more than 3,300 persons to:
+        (1) Conduct annual water audits using the American Water Works
+            Association (AWWA) M36 water audit methodology;
+        (2) Submit validated water audit results to the State;
+        (3) Publish annual water audit summary data.
+
+  (b) NATIONAL TARGETS. — The Administrator shall establish national
+      non-revenue water reduction targets, including:
+        (1) All community water systems exceeding 25 percent non-revenue
+            water shall reduce to no more than 20 percent within 5 years;
+        (2) All community water systems exceeding 15 percent non-revenue
+            water shall reduce to no more than 12 percent within 10 years.
+
+  (c) TECHNICAL ASSISTANCE. — The Administrator shall provide technical
+      assistance to small water systems serving fewer than 10,000 persons
+      for water loss auditing, leak detection, and water loss control
+      planning.
+
+================================================================================
+SECTION 605. DATA STANDARDIZATION AND INTEROPERABILITY.
+================================================================================
+
+  (a) NATIONAL STANDARDS. — The Administrator, in coordination with the
+      National Institute of Standards and Technology, shall develop:
+        (1) Data format and communication protocol standards for water
+            metering and distribution system monitoring equipment;
+        (2) Interoperability requirements for vendor-proprietary systems;
+        (3) Open data standards for water utility performance reporting.
+
+  (b) INTEROPERABILITY CERTIFICATION. — The Administrator shall establish a
+      voluntary certification program for water technology products that
+      demonstrate compliance with the interoperability standards developed
+      under subsection (a).

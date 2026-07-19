@@ -1,0 +1,132 @@
+================================================================================
+              TITLE IX — FUNDING AND APPROPRIATIONS
+================================================================================
+
+================================================================================
+SECTION 901. AUTHORIZATION OF APPROPRIATIONS.
+================================================================================
+
+  (a) TOTAL AUTHORIZATION. — There is authorized to be appropriated to carry
+      out this Act $100,000,000,000 for the period of fiscal years 2027
+      through 2036.
+
+  (b) ANNUAL AUTHORIZATION. — There is authorized to be appropriated
+      $10,000,000,000 for each of fiscal years 2027 through 2036.
+
+  (c) AVAILABILITY. — Amounts appropriated under this section shall remain
+      available until expended.
+
+================================================================================
+SECTION 902. ALLOCATION AMONG TITLES.
+================================================================================
+
+  (a) ALLOCATION. — Of the amounts authorized under section 901:
+
+      (1) TITLE I (Sea Wall and Coastal Armoring): ........... $30,000,000,000
+      (2) TITLE II (Port Electrification): ................... $25,000,000,000
+      (3) TITLE III (Harbor Deepening): ...................... $20,000,000,000
+      (4) TITLE IV (Coastal Ecosystem Restoration): .......... $15,000,000,000
+      (5) TITLE V (Port Resilience Hubs): .................... Subsumed below
+      (6) TITLE VI (Offshore Wind Port Infrastructure): ...... Subsumed below
+      (7) TITLE VII (Maritime Decarbonization): .............. Subsumed below
+      (8) TITLE VIII (Flood Insurance Reform): ............... Subsumed below
+      (9) Section 902(b) Reserve: ............................ $10,000,000,000
+
+  (b) RESERVE FUND. — Amounts deposited in the Reserve Fund under
+      paragraph (9) shall be available for:
+
+    (1) Title V, Title VI, Title VII, and Title VIII program allocations
+        as specified in this Act;
+
+    (2) Program administration, technical assistance, and oversight;
+
+    (3) Harbor Maintenance Trust Fund reform and transition costs;
+
+    (4) Emergency supplemental allocations upon determination by the
+        Secretary of the Treasury, in consultation with the appropriate
+        congressional committees, that additional funding is necessary
+        to meet program objectives.
+
+  (c) REPROGRAMMING. — Not more than 5 percent of the amount allocated to
+      any title under subsection (a) may be reprogrammed to another title
+      upon 30 days written notification to and approval by the appropriate
+      congressional committees.
+
+================================================================================
+SECTION 903. OVERSIGHT AND ACCOUNTABILITY.
+================================================================================
+
+  (a) INSPECTOR GENERAL AUDITS. — The Inspector General of each department
+      or agency receiving appropriations under this Act shall conduct annual
+      audits of all programs, grants, and expenditures to:
+
+    (1) Verify compliance with statutory requirements;
+    (2) Detect and prevent waste, fraud, and abuse;
+    (3) Evaluate program effectiveness and efficiency.
+
+  (b) RECIPIENT REPORTING. — Each recipient of funding exceeding $1,000,000
+      under this Act shall submit to the relevant agency an annual report
+      detailing funds expended, project milestones achieved, performance
+      metrics, and jobs created or retained.
+
+  (c) PUBLIC TRANSPARENCY PORTAL. — The Secretary of Transportation shall
+      establish and maintain a publicly accessible website providing:
+
+    (1) Quarterly data on all grant and contract awards, including
+        recipient name, project location, award amount, and description;
+
+    (2) Annual progress reports for each title;
+    (3) Searchable database of performance metrics;
+    (4) Map-based visualization of project locations and investments.
+
+  (d) WHISTLEBLOWER PROTECTIONS. — Employees, contractors, and grantees
+      reporting waste, fraud, or abuse related to funds under this Act
+      shall be entitled to protections under the Whistleblower Protection
+      Act (5 U.S.C. 2302(b)(8)).
+
+================================================================================
+SECTION 904. MATCHING FUND REQUIREMENTS.
+================================================================================
+
+  (a) STATE AND LOCAL MATCH. — Except as provided in subsection (b), the
+      Federal share of project costs under this Act shall not exceed:
+
+    (1) 80 percent for projects in disadvantaged communities;
+    (2) 65 percent for projects in communities with median household
+        income at or above 200 percent of the Federal poverty level;
+    (3) 50 percent for all other projects.
+
+  (b) WAIVER. — The Federal share may be increased to 100 percent for:
+
+    (1) Projects serving Tribal communities;
+    (2) Projects where the non-Federal sponsor demonstrates inability
+        to provide the required match;
+    (3) Emergency projects responding to declared disasters.
+
+  (c) IN-KIND CONTRIBUTIONS. — Non-Federal matching requirements may be met
+      through in-kind contributions of labor, materials, equipment, or land,
+      as determined by the relevant Secretary.
+
+================================================================================
+SECTION 905. HARBOR MAINTENANCE TRUST FUND REFORM.
+================================================================================
+
+  (a) FULL EXPENDITURE. — The Secretary of the Treasury shall ensure that
+      all amounts deposited in the Harbor Maintenance Trust Fund during
+      a fiscal year are appropriated and expended for authorized harbor
+      maintenance purposes during that or subsequent fiscal years.
+
+  (b) SET-ASIDE FOR EMERGING HARBORS. — Not less than 15 percent of HMTF
+      expenditures shall be allocated to:
+
+    (1) Emerging harbors, defined as ports handling less than 10 million
+        tons of cargo annually;
+
+    (2) Great Lakes navigation projects;
+
+    (3) Donor ports, defined as ports whose HMTF tax collections
+        substantially exceed HMTF expenditures at that port.
+
+  (c) BENEFICIAL USE ALLOCATION. — Not less than 10 percent of HMTF
+      expenditures shall be dedicated to beneficial use of dredged
+      material for coastal ecosystem restoration and resilience projects.

@@ -1,0 +1,168 @@
+================================================================================
+              TITLE III — HARBOR DEEPENING AND
+              NAVIGATION CHANNEL IMPROVEMENTS
+================================================================================
+
+  Authorization: $20,000,000,000 over 10 fiscal years
+
+================================================================================
+SECTION 301. HARBOR DEEPENING PRIORITIZATION.
+================================================================================
+
+  (a) PRIORITY LIST. — The Secretary shall, not later than 12 months after
+      the date of enactment of this Act, publish a prioritized list of
+      harbor deepening projects to be undertaken under this title, based on:
+
+    (1) Current and projected vessel draft requirements, with projects
+        to achieve a depth of not less than 50 feet mean lower low water
+        (MLLW) receiving highest priority;
+
+    (2) Tonnage and value of cargo handled, with nationally significant
+        ports receiving priority;
+
+    (3) Beneficial cost ratio, expressed as the ratio of transportation
+        cost savings and economic benefits to project construction cost;
+
+    (4) Supply chain criticality, including the port's role in energy
+        imports and exports, military logistics, and agricultural
+        commodity exports;
+
+    (5) State of readiness, including completed feasibility studies and
+        environmental documentation.
+
+  (b) PRIORITY PROJECTS. — The following projects shall be included in the
+      priority list developed under subsection (a):
+
+    (1) Port of Savannah, Georgia: deepening from 47 feet to 52 feet;
+    (2) Port of Charleston, South Carolina: deepening to 54 feet;
+    (3) Port of Mobile, Alabama: deepening to 52 feet;
+    (4) Port of Houston, Texas: deepening the Houston Ship Channel to
+        50 feet;
+    (5) Port of New York and New Jersey: deepening Ambrose Channel to
+        55 feet;
+    (6) Port of Long Beach-Los Angeles: deepening to accommodate vessels
+        exceeding 55-foot draft;
+    (7) Port of Seattle-Tacoma: deepening to 53 feet;
+    (8) Port of Norfolk, Virginia: deepening to 55 feet.
+
+  (c) PROJECT ACCELERATION. — For projects on the priority list, the
+      Secretary shall:
+
+    (1) Complete feasibility studies within 2 years;
+    (2) Complete environmental review and permitting within 3 years;
+    (3) Commence construction within 4 years;
+    (4) Achieve project completion within 10 years.
+
+  (d) AUTHORIZATION. — $12,000,000,000 is authorized for programs under
+      this section.
+
+================================================================================
+SECTION 302. NAVIGATION CHANNEL WIDENING.
+================================================================================
+
+  (a) WIDENING REQUIREMENT. — For each harbor deepening project authorized
+      under section 301, the Secretary shall evaluate and, where
+      economically justified, execute channel widening to a width of not
+      less than 1,000 feet in straight reaches and 1,400 feet in turning
+      basins and bendway sections.
+
+  (b) TWO-WAY TRAFFIC CAPABILITY. — Channel widening projects shall, to
+      the maximum extent economically justified, provide for simultaneous
+      two-way passage of the design vessel without tidal or daylight
+      restrictions.
+
+  (c) WIDENING BENEFITS. — In evaluating the economic justification for
+      channel widening, the Secretary shall consider:
+
+    (1) Vessel transit time savings and port throughput capacity increase;
+    (2) Vessel collision and grounding risk reduction;
+    (3) Accommodation of larger and wider-beam vessel designs;
+    (4) Reduction in pilotage and tug assist requirements;
+    (5) National security and military vessel passage requirements.
+
+  (d) AUTHORIZATION. — $3,000,000,000 is authorized for programs under
+      this section.
+
+================================================================================
+SECTION 303. BENEFICIAL USE OF DREDGED MATERIAL.
+================================================================================
+
+  (a) BENEFICIAL USE REQUIREMENT. — Not less than 60 percent of all
+      dredged material from projects authorized under this title shall
+      be placed for beneficial use, including:
+
+    (1) Beach nourishment and dune construction;
+    (2) Wetland, marsh, and island creation and restoration;
+    (3) Levee, berm, and flood protection structure construction;
+    (4) Habitat restoration and enhancement (bird nesting islands,
+        fish habitat, oyster reef substrate);
+    (5) Brownfield redevelopment and port expansion fill.
+
+  (b) REGIONAL SEDIMENT MANAGEMENT. — The Secretary shall establish
+      Regional Sediment Management Plans for each Corps of Engineers
+      coastal division that:
+
+    (1) Identify beneficial use placement opportunities for dredged
+        material from navigation projects within the region;
+
+    (2) Coordinate dredging schedules with beneficial use project
+        construction schedules;
+
+    (3) Quantify the environmental and economic benefits of beneficial
+        use compared with offshore or confined disposal.
+
+  (c) AUTHORIZATION. — $3,000,000,000 is authorized for programs under
+      this section.
+
+================================================================================
+SECTION 304. DREDGING FLEET MODERNIZATION.
+================================================================================
+
+  (a) FLEET ASSESSMENT. — The Secretary shall, not later than 12 months
+      after enactment, complete an assessment of the Army Corps of
+      Engineers hopper dredge, cutterhead dredge, and support vessel
+      fleet, quantifying:
+
+    (1) Fleet capacity in cubic yards per year relative to projected
+        annual dredging demand;
+
+    (2) Average vessel age, maintenance status, and remaining service
+        life;
+
+    (3) Technological obsolescence relative to current best available
+        dredging technology;
+
+    (4) Domestic dredging industry capacity and capability to
+        supplement Corps fleet operations.
+
+  (b) FLEET ACQUISITION. — The Secretary is authorized to acquire:
+
+    (1) Not fewer than 4 new or replacement trailing suction hopper
+        dredges of not less than 8,000 cubic yard hopper capacity;
+
+    (2) Not fewer than 3 new or replacement cutterhead suction dredges
+        with a dredging depth capability of not less than 60 feet;
+
+    (3) Associated support vessels including survey vessels, tender
+        vessels, and pipeline deployment vessels.
+
+  (c) AUTHORIZATION. — $2,000,000,000 is authorized for programs under
+      this section.
+
+================================================================================
+SECTION 305. INTERAGENCY COORDINATION AND PERMITTING REFORM.
+================================================================================
+
+  (a) LEAD AGENCY DESIGNATION. — The Secretary is designated as the lead
+      Federal agency for environmental review and permitting of navigation
+      improvement projects authorized under this title.
+
+  (b) CONCURRENT REVIEW. — All Federal, State, and local agency reviews
+      and permit decisions shall be conducted concurrently rather than
+      sequentially, with a target of completing all environmental review
+      and permitting within 3 years of initiation.
+
+  (c) PERMITTING DASHBOARD. — The Secretary shall maintain a publicly
+      accessible online permitting dashboard for each project authorized
+      under this title, displaying the status of each required permit,
+      review, and approval.

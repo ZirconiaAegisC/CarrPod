@@ -1,0 +1,148 @@
+================================================================================
+              TITLE I — LEAD PIPE ELIMINATION AND SAFE
+              DRINKING WATER INFRASTRUCTURE
+================================================================================
+
+  Authorization: $45,000,000,000 over 10 fiscal years
+
+================================================================================
+SECTION 101. LEAD SERVICE LINE INVENTORY AND REPLACEMENT MANDATE.
+================================================================================
+
+  (a) INVENTORY REQUIREMENT. — Not later than 18 months after the date of
+      enactment of this Act, every community water system shall complete and
+      submit to the Administrator a comprehensive inventory of all lead
+      service lines within its distribution system, including the material
+      composition and location of each service line.
+
+  (b) REPLACEMENT MANDATE. — Not later than 10 years after the date of
+      enactment of this Act, every community water system shall replace
+      all lead service lines identified in the inventory, with priority
+      given to:
+        (1) Service lines serving schools, childcare facilities, and
+            healthcare facilities;
+        (2) Service lines in disadvantaged communities;
+        (3) Service lines with the highest measured lead concentrations;
+        (4) Service lines in communities where children under age 6
+            constitute more than 10 percent of the population.
+
+  (c) FULL REPLACEMENT REQUIREMENT. — Replacement of lead service lines
+      under this section shall include replacement of the entire service
+      line from the water main to the building inlet, including both the
+      publicly owned and privately owned portions. Partial replacement
+      of lead service lines is prohibited.
+
+  (d) NOTIFICATION REQUIREMENTS. — Community water systems replacing lead
+      service lines under this section shall provide written notification
+      to affected residents not less than 45 days before commencing
+      replacement, including information on the health risks of lead
+      exposure, the replacement schedule, the provision of point-of-use
+      water filters, and post-replacement water testing.
+
+  (e) PENALTIES FOR NONCOMPLIANCE. — The Administrator may assess civil
+      penalties not to exceed $25,000 per day against any community water
+      system that fails to meet the requirements of this section.
+
+================================================================================
+SECTION 102. LOW-INCOME HOUSEHOLD ASSISTANCE PROGRAM.
+================================================================================
+
+  (a) ESTABLISHMENT. — The Administrator shall establish a grant program
+      to provide financial assistance to low-income households for the
+      replacement of the privately owned portion of lead service lines.
+
+  (b) ELIGIBILITY. — Households with annual income at or below 200 percent
+      of the Federal poverty level shall be eligible for 100 percent cost
+      coverage of private-side lead service line replacement.
+
+  (c) POINT-OF-USE FILTER PROVISION. — For households awaiting service line
+      replacement, the Administrator shall provide certified point-of-use
+      water filters meeting NSF/ANSI Standard 53 for lead reduction, with
+      filter replacement cartridges provided at no cost to the household
+      at intervals not to exceed 6 months.
+
+================================================================================
+SECTION 103. STATE REVOLVING FUND CAPITALIZATION GRANTS.
+================================================================================
+
+  (a) SUPPLEMENTAL CAPITALIZATION. — In addition to amounts authorized
+      under section 1452 of the Safe Drinking Water Act (42 U.S.C. 300j-12),
+      there is authorized to be appropriated $5,000,000,000 for each of
+      fiscal years 2027 through 2036 for capitalization grants to State
+      drinking water treatment revolving loan funds, of which:
+
+        (1) 49 percent shall be used for principal forgiveness loans or
+            grants to disadvantaged communities;
+        (2) 30 percent shall be available for lead service line replacement;
+        (3) 15 percent shall be available for emerging contaminant treatment;
+        (4) 6 percent shall be available for distribution system upgrades.
+
+  (b) BUY AMERICA REQUIREMENT. — All iron and steel products, manufactured
+      products, and construction materials used in projects funded under
+      this section shall be produced in the United States, consistent with
+      the requirements of the Build America, Buy America Act (Title IX of
+      Division G of Public Law 117-58).
+
+================================================================================
+SECTION 104. SCHOOL AND CHILDCARE FACILITY LEAD REMEDIATION.
+================================================================================
+
+  (a) GRANT PROGRAM. — The Administrator shall establish a competitive grant
+      program to fund lead remediation in public schools, charter schools,
+      and licensed childcare facilities, including:
+        (1) Replacement of lead-containing plumbing fixtures, pipes, and
+            solder within the facility;
+        (2) Installation of certified point-of-use filtration systems;
+        (3) Ongoing water quality testing.
+
+  (b) PRIORITY. — Priority for grants under this section shall be given to:
+        (1) Schools and childcare facilities located in disadvantaged
+            communities;
+        (2) Facilities serving children under age 6;
+        (3) Facilities built before 1988, when the Safe Drinking Water Act
+            lead ban took full effect.
+
+  (c) TESTING AND REPORTING. — All schools and childcare facilities receiving
+      grants under this section shall test drinking water outlets for lead
+      annually and publicly report results.
+
+================================================================================
+SECTION 105. LEAD TESTING AND COMPLIANCE STANDARDS.
+================================================================================
+
+  (a) STRENGTHENED LEAD AND COPPER RULE. — The Administrator shall, not
+      later than 12 months after the date of enactment of this Act,
+      promulgate revisions to the Lead and Copper Rule (40 CFR Part 141
+      Subpart I) to:
+        (1) Require a lead action level of 5 parts per billion;
+        (2) Mandate replacement of all lead service lines within 10 years
+            of the effective date of the revised rule;
+        (3) Require more frequent and comprehensive tap water sampling;
+        (4) Improve public notification and transparency requirements.
+
+  (b) WATER QUALITY TESTING INVENTORY. — The Administrator shall maintain
+      a publicly accessible, searchable online database of lead and copper
+      testing results for every community water system in the United States,
+      updated at least quarterly.
+
+================================================================================
+SECTION 106. WORKFORCE TRAINING FOR LEAD PIPE REPLACEMENT.
+================================================================================
+
+  (a) REGISTERED APPRENTICESHIP PROGRAM. — The Secretary of Labor, in
+      consultation with the Administrator, shall establish a national
+      registered apprenticeship program for lead service line replacement
+      workers, in coordination with labor unions and community colleges.
+
+  (b) GRANTS FOR TRAINING. — There is authorized $500,000,000 for grants
+      to community colleges, technical schools, labor-management training
+      programs, and other qualified training providers for:
+        (1) Curriculum development and instructor training;
+        (2) Equipment and facility modernization;
+        (3) Pre-apprenticeship programs targeting underrepresented
+            communities and veterans.
+
+  (c) LOCAL HIRING PREFERENCE. — To the maximum extent practicable, water
+      systems receiving funding under this title shall prioritize hiring
+      residents of the communities in which lead service line replacement
+      is being performed.

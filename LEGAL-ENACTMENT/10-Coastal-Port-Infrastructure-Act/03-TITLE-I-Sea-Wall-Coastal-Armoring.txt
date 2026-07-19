@@ -1,0 +1,187 @@
+================================================================================
+              TITLE I — SEA WALL AND COASTAL ARMORING
+              INFRASTRUCTURE
+================================================================================
+
+  Authorization: $30,000,000,000 over 10 fiscal years
+
+================================================================================
+SECTION 101. NATIONAL COASTAL VULNERABILITY ASSESSMENT.
+================================================================================
+
+  (a) COMPREHENSIVE ASSESSMENT. — Not later than 24 months after the date
+      of enactment of this Act, the Administrator, in coordination with the
+      United States Army Corps of Engineers and the Federal Emergency
+      Management Agency, shall complete a National Coastal Vulnerability
+      Assessment that:
+
+    (1) Maps and quantifies coastal flood risk under multiple sea level
+        rise scenarios (0.5 meters, 1.0 meters, and 2.0 meters) for all
+        coastal counties and municipalities;
+
+    (2) Identifies critical infrastructure at risk, including ports,
+        airports, energy facilities, wastewater treatment plants,
+        transportation corridors, hospitals, and military installations;
+
+    (3) Estimates the replacement cost and economic value of at-risk
+        property and infrastructure;
+
+    (4) Identifies communities facing disproportionate risk due to
+        socioeconomic vulnerability, historic disinvestment, and
+        limited adaptive capacity;
+
+    (5) Prioritizes locations for coastal protection investment based
+        on risk exposure, population density, economic value protected
+        per dollar invested, and environmental justice considerations.
+
+  (b) PUBLIC ACCESS. — The Assessment shall be made publicly available
+      through an interactive online mapping platform updated not less
+      frequently than every 5 years.
+
+  (c) AUTHORIZATION. — $500,000,000 is authorized for the Assessment
+      under this section.
+
+================================================================================
+SECTION 102. SEA WALL AND LEVEE CONSTRUCTION GRANTS.
+================================================================================
+
+  (a) GRANT PROGRAM. — The Secretary, in coordination with the Administrator,
+      shall establish a competitive grant program providing Federal cost-
+      share funding for:
+
+    (1) Construction, rehabilitation, and elevation of sea walls,
+        levees, floodwalls, and storm surge barriers;
+
+    (2) Tide gates, pump stations, and drainage infrastructure for
+        management of interior flooding behind flood defense structures;
+
+    (3) Elevation, relocation, or floodproofing of critical public
+        infrastructure including water and wastewater treatment plants,
+        electrical substations, and emergency response facilities.
+
+  (b) DESIGN STANDARDS. — All projects funded under this section shall:
+
+    (1) Be designed to withstand a 100-year storm event under 2050 sea
+        level rise projections at minimum;
+
+    (2) Incorporate sea level rise adaptation allowances permitting future
+        heightening or retrofitting without complete reconstruction;
+
+    (3) Include monitoring instrumentation measuring structural
+        performance, water levels, and wave conditions.
+
+  (c) URBAN COASTAL FLOOD BARRIER PROGRAM. — Not less than 30 percent of
+      funds authorized under this section shall be reserved for projects
+      protecting urban areas with populations exceeding 100,000 and
+      aggregate at-risk property value exceeding $10 billion, including:
+
+    (1) New York-New Jersey Harbor storm surge barrier system;
+    (2) Miami-Dade County coastal flood protection system;
+    (3) Galveston Bay and Houston Ship Channel surge barrier;
+    (4) Charleston Peninsula flood protection system;
+    (5) Norfolk and Hampton Roads regional flood protection.
+
+  (d) AUTHORIZATION. — $15,000,000,000 is authorized for programs under
+      this section.
+
+================================================================================
+SECTION 103. LIVING SHORELINE AND HYBRID COASTAL PROTECTION.
+================================================================================
+
+  (a) PROGRAM ESTABLISHMENT. — The Administrator, in coordination with the
+      Secretary, shall establish a Living Shoreline and Hybrid Coastal
+      Protection Program providing grants for projects that integrate
+      natural and nature-based features with traditional engineered
+      structures, including:
+
+    (1) Oyster reef breakwaters and artificial reef structures attenuating
+        wave energy while providing marine habitat;
+
+    (2) Vegetated berms, marsh terraces, and sills combining sediment
+        trapping with structural protection;
+
+    (3) Mangrove and salt marsh restoration in the intertidal zone
+        fronting engineered protection structures;
+
+    (4) Beach and dune systems with buried structural cores providing
+        backup protection during extreme events.
+
+  (b) DEMONSTRATION PROJECTS. — The Administrator shall fund not fewer
+      than 50 living shoreline demonstration projects distributed across
+      the Atlantic, Gulf, and Pacific coasts and the Great Lakes.
+
+  (c) AUTHORIZATION. — $5,000,000,000 is authorized for programs under
+      this section.
+
+================================================================================
+SECTION 104. URBAN COASTAL FLOOD BARRIER SYSTEMS.
+================================================================================
+
+  (a) CORPS OF ENGINEERS AUTHORITY. — The Secretary is directed to
+      expedite feasibility studies, environmental review, and project
+      authorization for urban coastal flood barrier systems at locations
+      identified in the National Coastal Vulnerability Assessment.
+
+  (b) ACCELERATED DELIVERY. — For projects with an estimated total cost
+      exceeding $5 billion, the Secretary may use continuing contracts
+      authority under section 902 of the Water Resources Development
+      Act of 1986 (33 U.S.C. 2280) to accelerate project delivery.
+
+  (c) LOCAL COST SHARE. — The non-Federal cost share for projects under
+      this section shall not exceed 35 percent of total project cost,
+      and may be reduced to 10 percent for disadvantaged communities
+      as defined in this Act.
+
+  (d) AUTHORIZATION. — $7,000,000,000 is authorized for programs under
+      this section.
+
+================================================================================
+SECTION 105. BEACH NOURISHMENT AND DUNE RESTORATION.
+================================================================================
+
+  (a) PROGRAM ESTABLISHMENT. — The Secretary shall expand the existing
+      Federal beach nourishment program to:
+
+    (1) Increase the authorized Federal cost share for periodic
+        nourishment from 50 percent to 65 percent;
+
+    (2) Fund initial construction of engineered dune systems providing
+        storm surge attenuation and wildlife habitat;
+
+    (3) Establish regional sediment management plans identifying sand
+        resources, sediment transport pathways, and nourishment needs
+        for each coastal sediment cell.
+
+  (b) SAND SOURCE MAPPING. — The United States Geological Survey, in
+      coordination with the Bureau of Ocean Energy Management, shall
+      conduct a comprehensive mapping of offshore sand resources
+      suitable for beach nourishment along the Atlantic, Gulf, and
+      Pacific coasts.
+
+  (c) AUTHORIZATION. — $1,500,000,000 is authorized for programs under
+      this section.
+
+================================================================================
+SECTION 106. COASTAL MONITORING AND EARLY WARNING.
+================================================================================
+
+  (a) SYSTEM EXPANSION. — The Administrator shall expand the National
+      Water Level Observation Network and the Physical Oceanographic
+      Real-Time System to:
+
+    (1) Deploy not fewer than 500 additional water level and wave
+        monitoring stations in high-risk coastal locations;
+
+    (2) Integrate coastal camera and satellite remote sensing for real-
+        time shoreline change and flood extent monitoring;
+
+    (3) Develop sub-seasonal to seasonal coastal flood prediction
+        capabilities with a spatial resolution of 50 meters or finer.
+
+  (b) EARLY WARNING. — The Administrator, in coordination with FEMA,
+      shall develop a national coastal flood early warning system
+      providing emergency managers and the public with actionable
+      flood forecasts not less than 72 hours in advance.
+
+  (c) AUTHORIZATION. — $1,000,000,000 is authorized for programs under
+      this section.

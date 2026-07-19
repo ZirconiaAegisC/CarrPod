@@ -1,0 +1,140 @@
+===============================================================================
+ACS CONGRESSIONAL LIAISON — MEDIA CORRESPONDENCE BATCH 7
+SECTOR: CEMENT, STEEL & CONSTRUCTION INNOVATION
+STATUS: DRAFT | DATE: July 19, 2026 | TEMPLATE: B (No-dossier outreach)
+===============================================================================
+
+COMPANY 7.1 — BOSTON METAL
+TO: Tadeu Carneiro, Chairman & CEO — tadeu.carneiro@bostonmetal.com
+CC: Adam Rauwerdink, SVP Business Development — adam.rauwerdink@bostonmetal.com
+SUBJECT: Boston Metal — Federal Advanced Manufacturing & Energy Partnership Inquiry — ACS-MC-2026-B701
+INTRO: Boston Metal is commercializing Molten Oxide Electrolysis (MOE) for zero-carbon
+primary steelmaking — replacing blast furnaces with electricity. Woburn, MA HQ with
+pilot plant in Woburn and Brazil subsidiary for high-value metals. $262M raised including
+ArcelorMittal, Breakthrough Energy Ventures, and Microsoft Climate Innovation Fund.
+Seeking engagement on DOE Industrial Demonstrations Program, IRA 48C credits, and green
+steel procurement standards for federal infrastructure projects.
+DOSSIER: NONE | PRIORITY: CRITICAL | CITY: Woburn, MA
+-------------------------------------------------------------------------------
+
+COMPANY 7.2 — SUBLIME SYSTEMS
+TO: Leah Ellis, Co-Founder & CEO — leah.ellis@sublime-systems.com
+CC: Yet-Ming Chiang, Co-Founder — yetming@sublime-systems.com
+SUBJECT: Sublime Systems — Federal Advanced Manufacturing & Energy Partnership Inquiry — ACS-MC-2026-B702
+INTRO: Sublime Systems has developed electrochemical cement production — replacing
+limestone calcination (60% of cement CO2) with ambient-temperature electrochemistry.
+Somerville, MA HQ with pilot plant. $50M+ funding including DOE grant and climate tech
+investors. DOE Industrial Demonstrations Program awardee for first commercial facility
+in Holyoke, MA. Seeking engagement on Buy Clean federal procurement standards and
+industrial decarbonization tax credits.
+DOSSIER: NONE | PRIORITY: CRITICAL | CITY: Somerville, MA
+-------------------------------------------------------------------------------
+
+COMPANY 7.3 — BRIMSTONE ENERGY
+TO: Cody Finke, Co-Founder & CEO — cody.finke@brimstone.com
+CC: Hugo Leandri, Co-Founder & CTO — hugo.leandri@brimstone.com
+SUBJECT: Brimstone — Federal Advanced Manufacturing & Energy Partnership Inquiry — ACS-MC-2026-B703
+INTRO: Brimstone has developed carbon-negative cement production using calcium silicate
+rocks instead of limestone — producing a supplementary cementitious material (SCM)
+and magnesium byproducts that passively absorb CO2. Oakland, CA HQ. $60M+ raised
+including Breakthrough Energy Ventures and DCVC. DOE grant recipient. Seeking engagement
+on alternative cement standards (ASTM), Buy Clean policy, and IRA Section 45Q for
+carbon utilization.
+DOSSIER: NONE | PRIORITY: HIGH | CITY: Oakland, CA
+-------------------------------------------------------------------------------
+
+COMPANY 7.4 — CARBONCURE TECHNOLOGIES
+TO: Robert Niven, Founder & CEO — rob.niven@carboncure.com
+CC: Randall Ye, CTO — randall.ye@carboncure.com
+    Christie Gamble, SVP Sustainability — christie.gamble@carboncure.com
+SUBJECT: CarbonCure — Federal Advanced Manufacturing & Energy Partnership Inquiry — ACS-MC-2026-B704
+INTRO: CarbonCure injects captured CO2 into fresh concrete where it mineralizes and is
+permanently stored while improving strength. Dartmouth, NS, Canada HQ with operations
+across US and globally. Technology installed at 800+ concrete plants. Deployed on
+Amazon HQ2, airport, and highway projects. Seeking engagement on federal concrete
+procurement standards for embodied carbon and Buy Clean Task Force alignment.
+DOSSIER: NONE | PRIORITY: HIGH | CITY: Dartmouth, NS, Canada
+-------------------------------------------------------------------------------
+
+COMPANY 7.5 — CARBON ENGINEERING LTD.
+TO: Daniel Friedmann, CEO — daniel.friedmann@carbonengineering.com
+CC: Suzanne Christensen, CFO — suzanne.christensen@carbonengineering.com
+SUBJECT: Carbon Engineering — US-Canada Advanced Technology Partnership — ACS-MC-2026-B705
+INTRO: Carbon Engineering is commercializing large-scale direct air capture and AIR TO
+FUELS synthetic fuel production. Squamish, BC, Canada HQ with Innovation Centre.
+DOE DAC Hub participant (South Texas DAC Hub with Occidental/1PointFive). Seeking
+engagement on US DAC hub deployment, IRA 45Q carbon capture credits, and synthetic
+fuels for aviation decarbonization. Template D.
+DOSSIER: NONE | PRIORITY: HIGH | CITY: Squamish, BC, Canada
+-------------------------------------------------------------------------------
+
+COMPANY 7.6 — ANTORA ENERGY, INC.
+TO: Justin Briggs, Co-Founder & CEO — justin.briggs@antoraenergy.com
+CC: Andrew Ponec, Co-Founder — andrew.ponec@antoraenergy.com
+SUBJECT: Antora — Federal Advanced Manufacturing & Energy Partnership Inquiry — ACS-MC-2026-B706
+INTRO: Antora is commercializing thermal batteries using carbon blocks heated to 1500-2000°C
+by renewable electricity to provide zero-carbon industrial heat and power for heavy
+industry. Sunnyvale, CA HQ. $150M+ raised including BlackRock, Breakthrough Energy
+Ventures, and Emerson Collective. Seeking engagement on industrial heat decarbonization
+incentives and DOE Industrial Demonstrations Program for thermal storage.
+DOSSIER: NONE | PRIORITY: HIGH | CITY: Sunnyvale, CA
+-------------------------------------------------------------------------------
+
+COMPANY 7.7 — MAINTSPRING ENERGY, INC.
+TO: Shannon Miller, Founder & CEO — shannon.miller@mainspringenergy.com
+CC: Matt Svrcek, Co-Founder & CTO — matt.svrcek@mainspringenergy.com
+SUBJECT: Mainspring — Federal Advanced Manufacturing & Energy Partnership Inquiry — ACS-MC-2026-B707
+INTRO: Mainspring has developed a linear generator that converts any gaseous fuel
+(natural gas, biogas, hydrogen, ammonia) to electricity with ultra-low emissions
+and fuel-flexible operation. Menlo Park, CA HQ with manufacturing in the US. $500M+
+raised. Customers include utilities, data centers, and commercial buildings. Seeking
+engagement on distributed clean generation for critical infrastructure resilience.
+DOSSIER: NONE | PRIORITY: MEDIUM | CITY: Menlo Park, CA
+-------------------------------------------------------------------------------
+
+COMPANY 7.8 — MALTA INC.
+TO: Ramya Swaminathan, CEO — ramya.swaminathan@maltainc.com
+CC: Adrienne Little, CTO — adrienne.little@maltainc.com
+SUBJECT: Malta — Federal Advanced Manufacturing & Energy Partnership Inquiry — ACS-MC-2026-B708
+INTRO: Malta has developed a pumped heat energy storage (PHES) system based on
+thermodynamic cycles using molten salt and chilled antifreeze — a grid-scale
+electro-thermal storage system (10-100+ hours). Cambridge, MA HQ. Spun out of Google
+X. $100M+ raised. Seeking engagement on LDES commercialization, DOE OCED demonstrations,
+and grid resilience programs.
+DOSSIER: NONE | PRIORITY: MEDIUM | CITY: Cambridge, MA
+-------------------------------------------------------------------------------
+
+COMPANY 7.9 — ICON TECHNOLOGY, INC.
+TO: Jason Ballard, Co-Founder & CEO — jason.ballard@iconbuild.com
+CC: Evan Loomis, Co-Founder — evan.loomis@iconbuild.com
+    Alex Le Roux, Co-Founder & CTO — alex.leroux@iconbuild.com
+SUBJECT: ICON — Federal Advanced Manufacturing & Energy Partnership Inquiry — ACS-MC-2026-B709
+INTRO: ICON is pioneering large-scale 3D printing of homes and structures using proprietary
+Lavacrete material and Vulcan construction printer. Austin, TX HQ. NASA partnership
+for lunar construction (Project Olympus). $450M+ raised. Built 100+ homes including
+largest 3D-printed community. Seeking engagement on advanced construction technology
+for affordable housing and defense infrastructure (USACE).
+DOSSIER: NONE | PRIORITY: HIGH | CITY: Austin, TX
+-------------------------------------------------------------------------------
+
+COMPANY 7.10 — VELO3D, INC.
+TO: Brad Kreger, CEO — brad.kreger@velo3d.com
+CC: Benny Buller, Founder — benny.buller@velo3d.com
+SUBJECT: Velo3D — Federal Advanced Manufacturing & Energy Partnership Inquiry — ACS-MC-2026-B710
+INTRO: Velo3D manufactures advanced metal 3D printers using Sapphire laser powder bed
+fusion technology — capable of printing complex geometries without support structures.
+Fremont, CA HQ. Customers include SpaceX, Honeywell, and defense primes. Seeking
+engagement on additive manufacturing for defense industrial base and DoD advanced
+manufacturing programs.
+DOSSIER: NONE | PRIORITY: MEDIUM | CITY: Fremont, CA
+-------------------------------------------------------------------------------
+
+===============================================================================
+BATCH SUMMARY
+  Template: B (no-dossier outreach)
+  Total Companies: 10
+  Priority Distribution: CRITICAL=2, HIGH=5, MEDIUM=3
+  Prepared By: ACS Congressional Liaison Office
+  Date: July 19, 2026
+  Next Review: July 26, 2026
+===============================================================================

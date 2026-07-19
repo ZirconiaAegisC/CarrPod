@@ -1,0 +1,162 @@
+================================================================================
+              TITLE VI — OFFSHORE WIND PORT
+              INFRASTRUCTURE
+================================================================================
+
+  Authorization: Subsumed within administrative allocations
+
+================================================================================
+SECTION 601. OFFSHORE WIND STAGING AND ASSEMBLY PORTS.
+================================================================================
+
+  (a) PROGRAM ESTABLISHMENT. — The Secretary of Transportation, through the
+      Maritime Administration, shall establish a competitive grant program
+      to fund development of ports and waterfront facilities for offshore
+      wind turbine staging, assembly, manufacturing, and deployment,
+      including:
+
+    (1) Heavy-lift wharves and quaysides with bearing capacities of not
+        less than 5,000 pounds per square foot for turbine component
+        staging;
+
+    (2) Laydown areas of not less than 50 acres with unobstructed access
+        to the wharf face;
+
+    (3) Deepening of approach channels and berth pockets to accommodate
+        wind turbine installation vessels (WTIVs) and heavy-lift
+        transport vessels;
+
+    (4) Onshore assembly halls for turbine nacelle integration, tower
+        section assembly, and blade handling;
+
+    (5) Navigational aids, mooring systems, and vessel traffic management
+        for installation vessel operations.
+
+  (b) NATIONAL NETWORK. — The Secretary shall designate a national network
+      of offshore wind staging ports sufficient to support the deployment
+      of not less than 30 gigawatts of offshore wind energy capacity by
+      2030 and 110 gigawatts by 2050, distributed along the Atlantic,
+      Pacific, and Gulf coasts.
+
+  (c) PRIORITY PORTS. — Priority shall be given to ports that:
+
+    (1) Are located within 100 nautical miles of designated offshore
+        wind lease areas;
+
+    (2) Possess or commit to developing heavy-lift crane capacity of
+        not less than 800 metric tons;
+
+    (3) Include plans for manufacturing and fabrication facilities
+        within the port complex.
+
+  (d) AUTHORIZATION. — $3,000,000,000 is authorized for programs under
+      this section.
+
+================================================================================
+SECTION 602. SPECIALIZED VESSEL AND CRANE INFRASTRUCTURE.
+================================================================================
+
+  (a) WTIV INCENTIVES. — The Secretary of Transportation shall establish
+      a program providing loan guarantees and grants to support:
+
+    (1) Construction of United States-flagged wind turbine installation
+        vessels compliant with the Jones Act (46 U.S.C. 55102);
+
+    (2) Construction of United States-flagged service operation vessels
+        (SOVs) and crew transfer vessels (CTVs) for offshore wind
+        operations and maintenance;
+
+    (3) Construction of United States-flagged cable-lay vessels and
+        rock placement vessels for offshore wind.
+
+  (b) HEAVY-LIFT CRANE PROGRAM. — The Secretary shall provide grants to
+      ports for acquisition and installation of heavy-lift cranes with:
+
+    (1) Lifting capacity of not less than 1,000 metric tons;
+    (2) Outreach sufficient to load and unload turbine components
+        from installation vessels;
+    (3) Mobile or crawler configurations permitting flexible port
+        yard layouts.
+
+  (c) AUTHORIZATION. — $2,000,000,000 is authorized for programs under
+      this section.
+
+================================================================================
+SECTION 603. SUBMARINE CABLE LANDING FACILITIES.
+================================================================================
+
+  (a) CABLE LANDING INFRASTRUCTURE. — The Secretary of Energy, in
+      coordination with the Secretary of Transportation, shall establish
+      a grant program for:
+
+    (1) Construction of submarine power cable landing points and
+        horizontal directional drilling duct banks at designated
+        offshore wind ports;
+
+    (2) Onshore cable transition facilities, substations, and
+        interconnection points for offshore wind export cables;
+
+    (3) Cable storage yards, jointing facilities, and cable
+        deployment equipment.
+
+  (b) INTERCONNECTION COORDINATION. — The Federal Energy Regulatory
+      Commission shall establish an expedited interconnection review
+      process for offshore wind projects utilizing ports funded under
+      this title.
+
+  (c) AUTHORIZATION. — $1,000,000,000 is authorized for programs under
+      this section.
+
+================================================================================
+SECTION 604. WORKFORCE TRAINING FOR OFFSHORE WIND LOGISTICS.
+================================================================================
+
+  (a) TRAINING PROGRAM. — The Secretary of Labor, in coordination with
+      the Secretary of Transportation, shall establish:
+
+    (1) Registered apprenticeship programs for offshore wind port
+        logistics occupations including heavy-lift crane operators,
+        stevedores, vessel crew, and terminal managers;
+
+    (2) Curriculum development grants to maritime academies, community
+        colleges, and technical schools for offshore wind logistics
+        programs;
+
+    (3) Pre-apprenticeship programs targeting underrepresented
+        communities in port-adjacent neighborhoods.
+
+  (b) SAFETY STANDARDS. — The Secretary of Labor, through the Occupational
+      Safety and Health Administration, shall develop safety standards
+      specific to offshore wind port operations addressing:
+
+    (1) Heavy-lift operations and rigging;
+    (2) Blade and tower component handling;
+    (3) Working at height and over water;
+    (4) Hazardous energy control and electrical safety.
+
+  (c) AUTHORIZATION. — $500,000,000 is authorized for programs under
+      this section.
+
+================================================================================
+SECTION 605. ENVIRONMENTAL MONITORING FOR OFFSHORE WIND.
+================================================================================
+
+  (a) MONITORING PROGRAM. — The Administrator shall establish a
+      comprehensive environmental monitoring program for offshore
+      wind development areas and associated port infrastructure,
+      addressing:
+
+    (1) Marine mammal presence, distribution, and behavioral response
+        to construction and operation noise;
+    (2) Avian and bat collision risk and population-level impacts;
+    (3) Benthic habitat changes from turbine foundation installation
+        and cable burial;
+    (4) Fisheries displacement and reef effects of turbine foundations;
+    (5) Cumulative effects of multiple wind energy areas on migratory
+        species.
+
+  (b) PUBLIC DATA. — All monitoring data shall be made publicly available
+      through an online data portal within 90 days of collection.
+
+  (c) AUTHORIZATION. — $500,000,000 is authorized for programs under
+      this section.

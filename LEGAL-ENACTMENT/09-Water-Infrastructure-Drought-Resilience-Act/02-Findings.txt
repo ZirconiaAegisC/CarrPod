@@ -1,0 +1,156 @@
+================================================================================
+                          FINDINGS AND DECLARATIONS
+                     WATER INFRASTRUCTURE AND DROUGHT
+                        RESILIENCE ACT OF 2026
+================================================================================
+
+SECTION 101. FINDINGS.
+
+  Congress finds the following:
+
+    (1) The United States drinking water infrastructure comprises an estimated
+        2.2 million miles of underground pipes, many of which were installed
+        between 1900 and 1970 and have exceeded their designed service life
+        of 50 to 75 years, creating an escalating risk of catastrophic system
+        failures.
+
+    (2) According to the American Society of Civil Engineers, there is a
+        water main break approximately every two minutes in the United States,
+        totaling an estimated 240,000 breaks per year, costing municipalities
+        and ratepayers more than $2.6 billion annually in emergency repairs.
+
+    (3) An estimated 6 billion gallons of treated drinking water are lost
+        daily through leaks in aging distribution systems, representing
+        approximately 16 percent of all treated water produced in the
+        United States and an annual economic loss of $7.6 billion.
+
+    (4) The American Water Works Association estimates that restoring and
+        expanding existing water infrastructure will require at least
+        $1 trillion in investment over the next 25 years.
+
+    (5) Approximately 9.2 million lead service lines remain in operation
+        across the United States, as documented by the Environmental
+        Protection Agency's 7th Drinking Water Infrastructure Needs Survey
+        and Assessment.
+
+    (6) There is no safe level of lead exposure in children, according to
+        the Centers for Disease Control and Prevention, the American Academy
+        of Pediatrics, and the World Health Organization; lead exposure
+        causes irreversible neurological damage, reduced IQ, behavioral
+        disorders, and increased risk of cardiovascular disease in adults.
+
+    (7) The environmental justice implications of lead service line
+        prevalence are severe: communities of color and low-income
+        communities are disproportionately served by water systems with
+        lead service lines, perpetuating systemic health inequities.
+
+    (8) The Flint, Michigan, water crisis of 2014-2019, in which an estimated
+        100,000 residents were exposed to elevated lead levels, demonstrates
+        the catastrophic consequences of deferred water infrastructure
+        investment and inadequate regulatory oversight.
+
+    (9) Perfluoroalkyl and polyfluoroalkyl substances (PFAS) have been
+        detected in drinking water sources serving at least 200 million
+        Americans across all 50 States, with contamination documented at
+        over 3,000 sites as of 2026.
+
+    (10) PFAS are linked to serious adverse health effects including kidney
+         and testicular cancer, thyroid disease, ulcerative colitis,
+         developmental delays in children, and reduced vaccine response,
+         according to the National Academies of Sciences, Engineering, and
+         Medicine.
+
+    (11) The Western United States is experiencing the most severe
+         megadrought in at least 1,200 years, with the period 2000-2025
+         representing the driest 25-year period in the region since at
+         least 800 CE, as documented in studies published in the journal
+         Nature Climate Change.
+
+    (12) The Colorado River Basin, which supplies water to 40 million people
+         and supports $1.4 trillion in annual economic activity across seven
+         States and 30 Tribal nations, has experienced a 20 percent decline
+         in average annual flow since 2000.
+
+    (13) Lake Mead dropped to its lowest recorded elevation of 1,040.58 feet
+         above sea level in July 2022, representing a decline of more than
+         180 feet since January 2000, triggering the first-ever Tier 2a
+         shortage declaration under the 2019 Drought Contingency Plan.
+
+    (14) Agriculture accounts for approximately 80 percent of consumptive
+         water use in the Western United States, yet many irrigation systems
+         date to the mid-20th century and operate at efficiency rates below
+         50 percent.
+
+    (15) The United States recycles less than 1 percent of its municipal
+         wastewater for beneficial reuse, compared with 85 percent in
+         Israel and over 40 percent in Singapore, representing an
+         opportunity to dramatically expand water supplies through
+         proven technology.
+
+    (16) While more than 18,000 desalination plants operate globally
+         producing over 25 billion gallons of fresh water daily, only
+         approximately 400 plants are located in the United States,
+         primarily in California, Florida, and Texas.
+
+    (17) Many Native American Tribal communities lack access to reliable
+         drinking water and wastewater infrastructure: an estimated 48
+         percent of Tribal households lack access to reliable water
+         sources or adequate sanitation facilities, compared with less
+         than 1 percent of non-Native American households.
+
+    (18) The economic cost of deferred water infrastructure investment
+         is substantial: water main breaks, water loss, public health
+         impacts, bottled water expenditures, and reduced economic
+         activity in water-insecure communities collectively impose
+         an estimated $100 billion annual economic burden on the
+         United States economy.
+
+SECTION 102. DECLARATIONS OF POLICY.
+
+  Congress declares that it is the policy of the United States to:
+
+    (1) Guarantee access to safe, clean, affordable drinking water and
+        wastewater services for all Americans as a matter of public
+        health, environmental justice, and national priority.
+
+    (2) Eliminate all lead service lines from public drinking water systems
+        within ten years, prioritizing disadvantaged communities and those
+        with the highest concentrations of lead service lines.
+
+    (3) Dramatically expand water recycling and reuse capacity, with a
+        goal of recycling at least 10 percent of municipal wastewater
+        by 2036 and 25 percent by 2046.
+
+    (4) Remediate PFAS contamination at drinking water sources, establish
+        enforceable national standards for PFAS in drinking water, and
+        eliminate industrial discharges of PFAS into waterways.
+
+    (5) Build long-term drought resilience in the Western United States
+        through conservation, water banking, groundwater management,
+        aquifer recharge, and interstate cooperation.
+
+    (6) Modernize agricultural irrigation infrastructure to improve
+        water use efficiency, with a goal of reducing agricultural
+        consumptive water use in the Colorado River Basin by 20 percent
+        by 2036.
+
+    (7) Deploy smart water metering and leak detection technologies
+        nationwide, with a target of reducing non-revenue water loss
+        from 16 percent to no more than 10 percent by 2036.
+
+    (8) Advance desalination technology through research, development,
+        and demonstration, with a target of achieving cost-competitive
+        desalination at an energy consumption of 2.0 kilowatt-hours
+        or less per cubic meter of water produced by 2036.
+
+    (9) Fulfill the Federal trust responsibility to Native American
+        Tribes by ensuring access to safe, reliable water supplies
+        and wastewater infrastructure on all Indian reservations.
+
+    (10) Prioritize Buy America requirements for all water infrastructure
+         materials, equipment, and components funded under this Act.
+
+    (11) Implement all programs under this Act in accordance with the
+         principles of environmental justice, ensuring that disadvantaged
+         communities receive no less than 40 percent of the overall
+         benefits of Federal water infrastructure investments.

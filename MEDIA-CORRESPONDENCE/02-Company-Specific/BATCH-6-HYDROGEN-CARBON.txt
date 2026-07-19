@@ -1,0 +1,131 @@
+===============================================================================
+ACS CONGRESSIONAL LIAISON — MEDIA CORRESPONDENCE BATCH 6
+SECTOR: HYDROGEN & CARBON CAPTURE
+STATUS: DRAFT | DATE: July 19, 2026 | TEMPLATE: B (No-dossier outreach)
+===============================================================================
+
+COMPANY 6.1 — ELECTRIC HYDROGEN CO.
+TO: Raffi Garabedian, Co-Founder & CEO — raffi@eh2.com
+CC: David Eaglesham, Co-Founder & CTO — david.eaglesham@eh2.com
+    Joe Riemer, VP Commercial — joe.riemer@eh2.com
+SUBJECT: Electric Hydrogen — Federal Advanced Manufacturing & Energy Partnership Inquiry — ACS-MC-2026-B601
+INTRO: Electric Hydrogen is developing large-scale PEM electrolyzers (100 MW modules)
+for green hydrogen production at industrial scale. Natick, MA HQ with electrolyzer
+gigafactory in Devens, MA. $380M Series C. Partners include New Fortress Energy and
+AES. Hydrogen Hub participant. Seeking engagement on IRA 45V clean hydrogen PTC
+implementation and DOE H2Hubs coordination.
+DOSSIER: NONE | PRIORITY: CRITICAL | CITY: Natick, MA
+-------------------------------------------------------------------------------
+
+COMPANY 6.2 — VERDAGY
+TO: Marty Neese, CEO — marty.neese@verdagy.com
+CC: Rahul Bammi, CCO — rahul.bammi@verdagy.com
+SUBJECT: Verdagy — Federal Advanced Manufacturing & Energy Partnership Inquiry — ACS-MC-2026-B602
+INTRO: Verdagy is developing advanced AEM (anion exchange membrane) electrolyzers for
+large-scale green hydrogen production targeting sub-$2/kg by 2026. Moss Landing, CA HQ
+with pilot plant. $100M+ raised including Temasek and Hyundai. Seeking engagement on
+DOE H2Hubs electrolyzer procurement and domestic electrolyzer manufacturing.
+DOSSIER: NONE | PRIORITY: HIGH | CITY: Moss Landing, CA
+-------------------------------------------------------------------------------
+
+COMPANY 6.3 — HYSTAR AS
+TO: Fredrik Mowill, CEO — fredrik.mowill@hystar.com
+CC: Alejandro Barnett, CTO — alejandro.barnett@hystar.com
+SUBJECT: Hystar — US-Norway Advanced Technology Partnership — ACS-MC-2026-B603
+INTRO: Hystar is developing ultra-efficient PEM electrolyzers with patented thin membrane
+design delivering 20-25% efficiency gains over conventional PEM. Hovik, Norway HQ with
+North American office. $26M in funding. Seeking engagement on electrolyzer technology
+demonstration in US H2Hubs and Norwegian-US clean hydrogen cooperation. Template D.
+DOSSIER: NONE | PRIORITY: HIGH | CITY: Høvik, Norway
+-------------------------------------------------------------------------------
+
+COMPANY 6.4 — SUNFIRE GMBH
+TO: Nils Aldag, CEO — nils.aldag@sunfire.de
+CC: Carl Berninghausen, Chairman — carl.berninghausen@sunfire.de
+SUBJECT: Sunfire — US-Germany Advanced Technology Partnership — ACS-MC-2026-B604
+INTRO: Sunfire is a leader in high-temperature SOEC (solid oxide electrolysis) and
+alkaline electrolysis for industrial hydrogen. Dresden, Germany HQ with operations in
+Switzerland. Over €500M raised. RWE, Uniper, and TotalEnergies among partners. Seeking
+engagement on industrial hydrogen offtake and technology deployment in US H2Hubs.
+DOSSIER: NONE | PRIORITY: HIGH | CITY: Dresden, Germany
+-------------------------------------------------------------------------------
+
+COMPANY 6.5 — NEL ASA
+TO: Håkon Volldal, President & CEO — hakon.volldal@nelhydrogen.com
+CC: Robert Borin, CFO — robert.borin@nelhydrogen.com
+    Kathy Ayers, VP R&D — kathy.ayers@nelhydrogen.com
+SUBJECT: Nel — US-Norway Advanced Technology Partnership — ACS-MC-2026-B605
+INTRO: Nel is the world's largest electrolyzer manufacturer by units shipped (PEM and
+alkaline). Oslo, Norway HQ with manufacturing in Norway (Herøya) and the US (Wallingford,
+CT). Expansion to Michigan with IRA incentives. $260M gigafactory investment. Seeking
+engagement on IRA 45V rules, domestic electrolyzer manufacturing, and H2Hub participation.
+DOSSIER: NONE | PRIORITY: CRITICAL | CITY: Oslo, Norway / Wallingford, CT
+-------------------------------------------------------------------------------
+
+COMPANY 6.6 — PLUG POWER INC.
+TO: Andy Marsh, CEO — andy.marsh@plugpower.com
+CC: Sanjay Shrestha, President — sanjay.shrestha@plugpower.com
+    Paul Middleton, CFO — paul.middleton@plugpower.com
+SUBJECT: Plug Power — Federal Advanced Manufacturing & Energy Partnership Inquiry — ACS-MC-2026-B606
+INTRO: Plug Power is a leading US hydrogen fuel cell and electrolyzer manufacturer with
+green hydrogen production plants in GA, TN, and NY. Latham, NY HQ. Gigafactory in
+Rochester, NY for fuel cell stacks and electrolyzers. $1.6B DOE loan commitment.
+Seeking engagement on IRA 45V hydrogen PTC final rules and hydrogen fueling infrastructure.
+DOSSIER: NONE | PRIORITY: CRITICAL | CITY: Latham, NY
+-------------------------------------------------------------------------------
+
+COMPANY 6.7 — BLOOM ENERGY CORPORATION
+TO: KR Sridhar, Founder, Chairman & CEO — kr.sridhar@bloomenergy.com
+CC: Greg Cameron, CFO — greg.cameron@bloomenergy.com
+    Sharelynn Moore, CRO — sharelynn.moore@bloomenergy.com
+SUBJECT: Bloom Energy — Federal Advanced Manufacturing & Energy Partnership Inquiry — ACS-MC-2026-B607
+INTRO: Bloom Energy manufactures solid oxide fuel cells (Energy Server) for distributed
+power generation, also developing SOEC electrolyzers for hydrogen production. San Jose,
+CA HQ with Fremont manufacturing. 1 GW+ deployed globally. Seeking engagement on
+distributed clean generation for data centers and industrial hydrogen production.
+DOSSIER: NONE | PRIORITY: HIGH | CITY: San Jose, CA
+-------------------------------------------------------------------------------
+
+COMPANY 6.8 — CERES POWER HOLDINGS PLC
+TO: Phil Caldwell, CEO — phil.caldwell@cerespower.com
+CC: Tony Cochrane, CTO — tony.cochrane@cerespower.com
+SUBJECT: Ceres Power — US-UK Advanced Technology Partnership — ACS-MC-2026-B608
+INTRO: Ceres Power develops SteelCell solid oxide fuel cell and electrolysis technology
+operating at intermediate temperatures. Horsham, West Sussex, UK HQ. Licensing model
+with Bosch, Doosan, and Weichai. Seeking engagement on US SOEC deployment for industrial
+hydrogen and distributed generation applications. Template D for international.
+DOSSIER: NONE | PRIORITY: HIGH | CITY: Horsham, West Sussex, UK
+-------------------------------------------------------------------------------
+
+COMPANY 6.9 — CLIMEWORKS AG
+TO: Christoph Gebald, Co-Founder & Co-CEO — christoph.gebald@climeworks.com
+CC: Jan Wurzbacher, Co-Founder & Co-CEO — jan.wurzbacher@climeworks.com
+    Daniel Egger, CCO — daniel.egger@climeworks.com
+SUBJECT: Climeworks — US-Switzerland Advanced Technology Partnership — ACS-MC-2026-B609
+INTRO: Climeworks is the global leader in direct air capture (DAC) with operational Orca
+and Mammoth plants in Iceland. Zurich, Switzerland HQ. DOE DAC Hub participant (Project
+Cypress in Louisiana with $50M+ federal funding). Seeking engagement on US DAC hub
+scale-up, IRA 45Q credit monetization, and carbon removal procurement standards.
+DOSSIER: NONE | PRIORITY: CRITICAL | CITY: Zurich, Switzerland
+-------------------------------------------------------------------------------
+
+COMPANY 6.10 — HEIRLOOM CARBON TECHNOLOGIES
+TO: Shashank Samala, Co-Founder & CEO — shashank@heirloomcarbon.com
+CC: Noah McQueen, Co-Founder & Head of Research — noah@heirloomcarbon.com
+SUBJECT: Heirloom — Federal Advanced Manufacturing & Energy Partnership Inquiry — ACS-MC-2026-B610
+INTRO: Heirloom uses limestone-based passive direct air capture — accelerating the natural
+carbon mineralization process. Brisbane, CA HQ. DOE DAC Hub participant (Project Cypress
+in Louisiana). Signed carbon removal agreements with Microsoft and others. Seeking
+engagement on DOE DAC commercialization and IRA 45Q expansion for DAC.
+DOSSIER: NONE | PRIORITY: HIGH | CITY: Brisbane, CA
+-------------------------------------------------------------------------------
+
+===============================================================================
+BATCH SUMMARY
+  Template: B (no-dossier outreach)
+  Total Companies: 10
+  Priority Distribution: CRITICAL=3, HIGH=7
+  Prepared By: ACS Congressional Liaison Office
+  Date: July 19, 2026
+  Next Review: July 26, 2026
+===============================================================================

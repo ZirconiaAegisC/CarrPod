@@ -1,0 +1,168 @@
+================================================================================
+              TITLE III — PFAS REMEDIATION AND EMERGING
+              CONTAMINANT RESPONSE
+================================================================================
+
+  Authorization: $15,000,000,000 over 10 fiscal years
+
+================================================================================
+SECTION 301. NATIONAL PRIMARY DRINKING WATER REGULATION FOR PFAS.
+================================================================================
+
+  (a) RULEMAKING REQUIREMENT. — Not later than 18 months after the date of
+      enactment of this Act, the Administrator shall promulgate a national
+      primary drinking water regulation for PFAS under section 1412 of the
+      Safe Drinking Water Act (42 U.S.C. 300g-1) that establishes:
+
+        (1) Maximum contaminant levels (MCLs) for perfluorooctanoic acid
+            (PFOA) and perfluorooctane sulfonic acid (PFOS) at not more
+            than 4 parts per trillion each;
+
+        (2) A hazard index approach for mixtures of perfluorohexane
+            sulfonic acid (PFHxS), hexafluoropropylene oxide dimer acid
+            (HFPO-DA, commonly known as GenX), perfluorononanoic acid
+            (PFNA), and perfluorobutane sulfonic acid (PFBS);
+
+        (3) Monitoring requirements for all community water systems serving
+            more than 3,300 persons, and a representative sampling program
+            for systems serving fewer than 3,300 persons;
+
+        (4) Public notification requirements for any exceedance of MCLs
+            established under this subsection.
+
+  (b) ADDITIONAL PFAS. — The Administrator shall, not less frequently than
+      every 5 years, evaluate additional PFAS compounds for potential
+      regulation and shall establish MCLs for such compounds where the
+      Administrator determines that:
+        (1) The compound may have an adverse effect on human health;
+        (2) The compound is known to occur or is likely to occur in public
+            water systems with a frequency and at levels of public health
+            concern.
+
+================================================================================
+SECTION 302. PFAS DESTRUCTION TECHNOLOGY RESEARCH AND DEPLOYMENT.
+================================================================================
+
+  (a) RESEARCH PROGRAM. — The Administrator shall establish a research program
+      to evaluate and advance PFAS destruction technologies including:
+        (1) Supercritical water oxidation;
+        (2) Electrochemical oxidation;
+        (3) Plasma-based destruction;
+        (4) Sonochemical degradation;
+        (5) Photocatalytic degradation;
+        (6) Thermal destruction and incineration with emissions monitoring;
+        (7) Biodegradation pathways and enzyme engineering.
+
+  (b) DEMONSTRATION GRANTS. — The Administrator shall award competitive grants
+      for full-scale demonstration of PFAS destruction technologies at:
+        (1) Contaminated groundwater sites;
+        (2) Wastewater treatment plants;
+        (3) Landfill leachate treatment facilities;
+        (4) Industrial discharge points;
+        (5) Drinking water treatment plants.
+
+  (c) TECHNOLOGY CERTIFICATION. — Not later than 36 months after enactment,
+      the Administrator shall establish a certification and verification
+      program to validate the performance of PFAS destruction technologies
+      based on:
+        (1) Destruction efficiency of greater than 99.99 percent for
+            regulated PFAS compounds;
+        (2) Absence of toxic byproducts of incomplete destruction;
+        (3) Energy efficiency and lifecycle cost analysis;
+        (4) Applicability to diverse waste matrices.
+
+  (d) AUTHORIZATION. — $3,000,000,000 is authorized for the research and
+      demonstration programs established under this section.
+
+================================================================================
+SECTION 303. CONTAMINATED SITE REMEDIATION FUND.
+================================================================================
+
+  (a) ESTABLISHMENT. — The Administrator shall establish a PFAS Site
+      Remediation Fund to provide grants to States, local governments,
+      and water utilities for the investigation, assessment, and remediation
+      of PFAS-contaminated sites, including:
+        (1) Military installations where aqueous film-forming foam (AFFF)
+            was used for firefighting training and operations;
+        (2) Airports and fire training facilities;
+        (3) Industrial manufacturing facilities producing or using PFAS;
+        (4) Biosolids application sites;
+        (5) Landfills and leachate management facilities.
+
+  (b) PRIORITY. — The Administrator shall prioritize grants for sites that:
+        (1) Are located in or adjacent to disadvantaged communities;
+        (2) Present an imminent and substantial endangerment to public health;
+        (3) Contaminate or threaten to contaminate drinking water sources
+            serving more than 10,000 persons.
+
+  (c) AUTHORIZATION. — $7,000,000,000 is authorized for the Fund established
+      under this section.
+
+================================================================================
+SECTION 304. DRINKING WATER UTILITY PFAS TREATMENT GRANTS.
+================================================================================
+
+  (a) GRANT PROGRAM. — The Administrator shall award grants to community
+      water systems and non-transient non-community water systems for
+      capital costs associated with installation of PFAS treatment
+      technologies including granular activated carbon, ion exchange,
+      reverse osmosis, and nanofiltration systems.
+
+  (b) SMALL SYSTEM SUPPORT. — Not less than 40 percent of amounts made
+      available under this section shall be awarded to water systems
+      serving fewer than 10,000 persons.
+
+  (c) PRIORITY. — The Administrator shall give priority to applications
+      from water systems where PFAS levels in finished drinking water
+      exceed the MCLs established under section 301 by a factor of 10 or
+      more.
+
+  (d) AUTHORIZATION. — $3,500,000,000 is authorized for the program
+      established under this section.
+
+================================================================================
+SECTION 305. PFAS SOURCE REDUCTION AND INDUSTRIAL DISCHARGE STANDARDS.
+================================================================================
+
+  (a) EFFLUENT LIMITATION GUIDELINES. — Not later than 24 months after
+      enactment, the Administrator shall promulgate effluent limitation
+      guidelines and pretreatment standards under sections 301, 304, and
+      307 of the Federal Water Pollution Control Act (33 U.S.C. 1311,
+      1314, and 1317) for PFAS discharges from:
+        (1) Organic chemicals, plastics, and synthetic fibers manufacturing;
+        (2) Metal finishing and electroplating operations;
+        (3) Pulp, paper, and paperboard manufacturing;
+        (4) Textile mills and carpet manufacturing;
+        (5) Landfill leachate discharges.
+
+  (b) AQUEOUS FILM-FORMING FOAM PHASE-OUT. — Not later than 12 months after
+      enactment, the Administrator shall prohibit the manufacture, import,
+      processing, and distribution of aqueous film-forming foam containing
+      intentionally added PFAS, except where no fluorine-free alternative
+      has been certified by the Administrator for the specific firefighting
+      application.
+
+================================================================================
+SECTION 306. BIOMONITORING AND HEALTH IMPACT STUDIES.
+================================================================================
+
+  (a) NATIONAL PFAS BIOMONITORING PROGRAM. — The Director of the Centers for
+      Disease Control and Prevention, in coordination with the Administrator,
+      shall establish and maintain a national PFAS biomonitoring program to:
+        (1) Measure PFAS concentrations in representative samples of the
+            United States population, stratified by geography, age,
+            occupation, and exposure risk;
+        (2) Track temporal trends in PFAS body burden;
+        (3) Identify communities with elevated PFAS exposure.
+
+  (b) HEALTH IMPACT RESEARCH. — The National Institutes of Health shall
+      expand research on the health effects of PFAS exposure, including:
+        (1) Carcinogenicity and cancer epidemiology;
+        (2) Immune system effects including vaccine response;
+        (3) Developmental and reproductive toxicity;
+        (4) Endocrine disruption;
+        (5) Metabolic effects including obesity and diabetes;
+        (6) Interactions between PFAS mixtures and co-exposures.
+
+  (c) AUTHORIZATION. — $1,500,000,000 is authorized for programs established
+      under this section.

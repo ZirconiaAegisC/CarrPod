@@ -1,0 +1,230 @@
+================================================================================
+              TITLE X — IMPLEMENTATION SCHEDULE AND
+              REPORTING REQUIREMENTS
+================================================================================
+
+================================================================================
+SECTION 1001. IMPLEMENTATION SCHEDULE AND MILESTONES.
+================================================================================
+
+  (a) YEAR 1 (FISCAL YEAR 2027):
+
+    (1) QUARTER 1 (Oct-Dec):
+        — Establishment of interagency implementation task force
+        — Promulgation of initial program regulations and guidance
+        — Publication of Notices of Funding Opportunity for Title I lead
+          service line inventory and replacement grants
+        — Initiation of Tribal water rights settlement consultations
+
+    (2) QUARTER 2 (Jan-Mar):
+        — First grant awards under Title I State revolving fund
+          capitalization
+        — Publication of draft revisions to the Lead and Copper Rule
+        — Initiation of PFAS destruction technology research grants
+        — Colorado River Basin conservation program framework published
+
+    (3) QUARTER 3 (Apr-Jun):
+        — First awards under Title IV Western Drought Resilience programs
+        — Title III PFAS monitoring grants awarded to water systems
+          exceeding current health advisory levels
+        — Title VI smart water metering Notice of Funding Opportunity
+          published
+        — National Water Recycling Implementation Plan guidance issued
+          to States
+
+    (4) QUARTER 4 (Jul-Sep):
+        — Title II water recycling demonstration project applications
+          due
+        — Title VII desalination research center designations announced
+        — Title V agricultural water efficiency first grant round
+        — Annual report to Congress submitted
+
+  (b) YEAR 2 (FISCAL YEAR 2028):
+
+    (1) QUARTER 1-2:
+        — Revised Lead and Copper Rule final rule published
+        — All community water systems serving more than 50,000 persons
+          shall have submitted lead service line inventories
+        — Title VIII Tribal water infrastructure grants first round
+        — Five direct potable reuse demonstration projects selected
+
+    (2) QUARTER 3-4:
+        — PFAS National Primary Drinking Water Regulation published
+        — Title IV groundwater monitoring network expansion contracts
+          awarded
+        — Title VII desalination demonstration facility site selection
+          complete
+        — Interstate water banking framework agreement completed for
+          Colorado River Basin
+
+  (c) YEAR 3 (FISCAL YEAR 2029):
+
+    — All community water systems shall have completed lead service line
+      inventories
+    — At least 15 percent of identified lead service lines replaced
+    — First desalination demonstration facility construction commenced
+    — State water recycling implementation plans submitted and reviewed
+    — Smart metering deployments in at least 50 water systems initiated
+
+  (d) YEAR 5 (FISCAL YEAR 2031):
+
+    — At least 40 percent of lead service lines replaced nationwide
+    — First direct potable reuse facility operational
+    — All community water systems serving more than 50,000 persons shall
+      have deployed real-time distribution system monitoring
+    — Energy-efficient desalination cost targets benchmark assessment
+      completed
+    — Midpoint program evaluation by Government Accountability Office
+
+  (e) YEAR 10 (FISCAL YEAR 2036):
+
+    — 100 percent of lead service lines replaced nationwide
+    — Municipal wastewater reuse rate of not less than 10 percent
+    — PFAS remediation completed at all priority sites
+    — Colorado River Basin system conservation target of 3 million
+      acre-feet annual savings achieved
+    — Agricultural water use efficiency improvement of 20 percent
+      in the Colorado River Basin
+    — Comprehensive program evaluation and sunset review
+    — Final report to Congress
+
+================================================================================
+SECTION 1002. ANNUAL REPORT TO CONGRESS.
+================================================================================
+
+  (a) REQUIREMENT. — Not later than September 30 of each fiscal year, the
+      Secretary of the Interior and the Administrator shall jointly submit
+      to the appropriate congressional committees a comprehensive report
+      on the implementation of this Act.
+
+  (b) CONTENTS. — Each report submitted under subsection (a) shall include:
+
+    (1) A detailed accounting of all funds appropriated, obligated, and
+        expended during the preceding fiscal year, disaggregated by title,
+        program, and State;
+
+    (2) Quantitative performance metrics including:
+        (A) Number and location of lead service lines replaced;
+        (B) Volume of water recycled through new facilities;
+        (C) Number of PFAS sites assessed and remediated;
+        (D) Acre-feet of water conserved through Title IV programs;
+        (E) Irrigated acres converted to high-efficiency systems;
+        (F) Number of smart meters deployed;
+        (G) Desalination research and demonstration milestones achieved;
+        (H) Tribal communities with new or improved water infrastructure;
+
+    (3) An assessment of progress toward statutory targets and milestones;
+
+    (4) Identification of any statutory, regulatory, or administrative
+        barriers impeding program implementation;
+
+    (5) Recommendations for legislative or administrative actions to
+        improve program effectiveness;
+
+    (6) An analysis of environmental justice outcomes, including the
+        distribution of benefits to disadvantaged communities.
+
+================================================================================
+SECTION 1003. COMPTROLLER GENERAL AUDITS.
+================================================================================
+
+  (a) BIENNIAL AUDIT. — The Comptroller General of the United States shall
+      conduct a comprehensive audit of the programs authorized under this
+      Act not less frequently than once every 2 years.
+
+  (b) SCOPE. — Each audit conducted under subsection (a) shall evaluate:
+
+    (1) The efficiency and effectiveness of program administration;
+
+    (2) Compliance with statutory requirements, including Buy America
+        provisions and environmental justice mandates;
+
+    (3) The accuracy of performance metrics reported to Congress;
+
+    (4) The adequacy of internal controls to prevent waste, fraud,
+        and abuse;
+
+    (5) Whether the programs are achieving their stated objectives
+        in a cost-effective manner.
+
+  (c) PUBLIC AVAILABILITY. — All audits conducted under this section shall
+      be made publicly available on the Government Accountability Office
+      website within 30 days of transmission to Congress.
+
+================================================================================
+SECTION 1004. ECONOMIC IMPACT ASSESSMENT.
+================================================================================
+
+  (a) INDEPENDENT ASSESSMENT. — Not later than 36 months after enactment,
+      and every 3 years thereafter, the Secretary shall contract with an
+      independent entity, such as the National Academies of Sciences,
+      Engineering, and Medicine, to conduct a comprehensive economic
+      impact assessment.
+
+  (b) ASSESSMENT SCOPE. — The assessment shall evaluate:
+
+    (1) Direct, indirect, and induced economic impacts of investments
+        made under each title, including:
+        (A) Gross domestic product contributions;
+        (B) Employment impacts disaggregated by occupation, geography,
+            and demographic characteristics;
+        (C) Wage and income effects;
+        (D) State and local tax revenue impacts;
+
+    (2) Public health benefits and cost savings from lead service line
+        elimination, including avoided:
+        (A) Healthcare costs;
+        (B) Special education expenditures;
+        (C) Lost lifetime earnings due to cognitive impairment;
+        (D) Criminal justice system costs;
+
+    (3) Economic value of water saved through recycling, conservation,
+        and efficiency programs;
+
+    (4) Regional economic effects of drought resilience investments
+        compared with costs of water shortage-driven economic disruption;
+
+    (5) Return on investment analysis for each major program category.
+
+  (c) ECONOMIC IMPACT BENCHMARKS. — The assessment shall evaluate progress
+      against the following benchmarks:
+
+    (1) Creation of not fewer than 350,000 jobs attributable to this Act
+        by fiscal year 2036;
+
+    (2) Cumulative GDP contribution attributable to this Act of not less
+        than $180 billion over the period of fiscal years 2027-2036;
+
+    (3) Annual public health cost savings attributable to lead service
+        line elimination of not less than $50 billion by fiscal year 2036;
+
+    (4) Economic value of water loss reduction of not less than
+        $5 billion annually by fiscal year 2036.
+
+================================================================================
+SECTION 1005. BUY AMERICA REQUIREMENTS.
+================================================================================
+
+  (a) DOMESTIC CONTENT REQUIREMENT. — All iron and steel products,
+      manufactured products, and construction materials used in projects
+      funded under this Act shall be produced in the United States,
+      consistent with the requirements of the Build America, Buy America
+      Act (Title IX of Division G of Public Law 117-58).
+
+  (b) WAIVER PROCESS. — The head of the relevant Federal agency may waive
+      the requirements of subsection (a) only upon a written determination,
+      published in the Federal Register for public comment, that:
+
+    (1) Applying the requirement would be inconsistent with the public
+        interest;
+
+    (2) Iron, steel, manufactured products, or construction materials
+        of satisfactory quality and sufficient quantity are not produced
+        in the United States; or
+
+    (3) Inclusion of domestic material would increase the cost of the
+        overall project by more than 25 percent.
+
+  (c) REPORTING. — Any waiver issued under subsection (b) shall be reported
+      to the appropriate congressional committees within 15 days of issuance
+      and included in the annual report required under section 1002.

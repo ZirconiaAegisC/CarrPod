@@ -1,0 +1,176 @@
+================================================================================
+              TITLE VII — MARITIME DECARBONIZATION
+================================================================================
+
+  Authorization: Subsumed within administrative allocations
+
+================================================================================
+SECTION 701. ALTERNATIVE MARITIME FUEL INFRASTRUCTURE.
+================================================================================
+
+  (a) FUEL INFRASTRUCTURE GRANTS. — The Secretary of Transportation, through
+      the Maritime Administration, shall establish a competitive grant
+      program to fund:
+
+    (1) Green methanol production, storage, and bunkering facilities at
+        United States seaports, with a target of methanol bunkering
+        capacity at not fewer than 10 ports by 2031;
+
+    (2) Green ammonia storage, handling, and bunkering infrastructure,
+        including cryogenic storage, ammonia-to-hydrogen crackers,
+        and safety systems compliant with international codes;
+
+    (3) Liquid hydrogen storage and bunkering infrastructure at ports
+        designated as green shipping corridor hubs;
+
+    (4) Battery charging and swapping infrastructure for electric harbor
+        craft, ferries, and short-sea vessels;
+
+    (5) On-site renewable hydrogen production through electrolysis
+        powered by dedicated renewable energy generation.
+
+  (b) FUEL STANDARD. — All alternative fuels dispensed at facilities
+      funded under this section shall:
+
+    (1) Achieve lifecycle greenhouse gas emissions reductions of not
+        less than 70 percent compared with conventional marine distillate
+        fuel, as determined under a methodology developed by the
+        Administrator;
+
+    (2) Be produced in compliance with applicable environmental,
+        safety, and labor standards, including Build America, Buy
+        America requirements.
+
+  (c) AUTHORIZATION. — $3,000,000,000 is authorized for programs under
+      this section.
+
+================================================================================
+SECTION 702. VESSEL ELECTRIFICATION AND HYBRIDIZATION.
+================================================================================
+
+  (a) GRANT AND LOAN PROGRAM. — The Maritime Administration shall
+      establish a program providing grants and loan guarantees for:
+
+    (1) Construction and retrofit of battery-electric and hybrid-electric
+        harbor craft including tugboats, pilot boats, crew transfer
+        vessels, and workboats;
+
+    (2) Construction and retrofit of battery-electric and hybrid-electric
+        ferries for passenger and vehicle transport;
+
+    (3) Design and construction of fully electric short-sea container
+        vessels for routes not exceeding 200 nautical miles;
+
+    (4) Fuel cell integration for auxiliary power and hotel loads on
+        ocean-going vessels.
+
+  (b) DOMESTIC SHIPYARD INCENTIVE. — Grants and loan guarantees under this
+      section shall be available exclusively for vessels constructed or
+      retrofitted in United States shipyards.
+
+  (c) AUTHORIZATION. — $2,000,000,000 is authorized for programs under
+      this section.
+
+================================================================================
+SECTION 703. GREEN SHIPPING CORRIDORS.
+================================================================================
+
+  (a) CORRIDOR DESIGNATION. — The Secretary of Transportation, in
+      coordination with the Secretary of State, shall:
+
+    (1) Designate not fewer than 5 international green shipping corridors
+        connecting United States ports to major trading partner ports,
+        prioritizing corridors with:
+
+        (A) High vessel traffic volumes and emissions;
+        (B) Proximity to alternative fuel production capacity;
+        (C) Availability of port-side bunkering infrastructure;
+        (D) Cooperation agreements with partner nations.
+
+    (2) Establish domestic green shipping corridors connecting major
+        ports within the United States, including:
+
+        (A) Los Angeles-Long Beach to Honolulu;
+        (B) Seattle-Tacoma to Anchorage;
+        (C) New York-New Jersey to San Juan, Puerto Rico;
+        (D) Houston to Tampa and Miami.
+
+  (b) CORRIDOR REQUIREMENTS. — Each green shipping corridor shall:
+
+    (1) Be served exclusively by zero-emission vessels by 2035, with
+        interim targets of 15 percent by 2031;
+
+    (2) Provide full alternative fuel bunkering infrastructure at
+        all designated corridor ports;
+
+    (3) Achieve total elimination of greenhouse gas emissions and
+        significant reduction of criteria pollutant emissions along
+        the corridor.
+
+  (c) INTERNATIONAL COOPERATION. — The Secretary of State shall pursue
+      bilateral and multilateral agreements with trading partner nations
+      to establish international green shipping corridors consistent with
+      the Clydebank Declaration and the International Maritime
+      Organization's greenhouse gas strategy.
+
+  (d) AUTHORIZATION. — $2,000,000,000 is authorized for programs under
+      this section.
+
+================================================================================
+SECTION 704. MARITIME EMISSIONS MONITORING AND REPORTING.
+================================================================================
+
+  (a) MONITORING REQUIREMENT. — Not later than 24 months after enactment,
+      the Administrator shall promulgate regulations requiring:
+
+    (1) All vessels calling at United States ports to report annual
+        carbon dioxide, methane, nitrous oxide, black carbon, sulfur
+        oxide, and nitrogen oxide emissions;
+
+    (2) Real-time emissions monitoring on vessels exceeding 5,000 gross
+        tonnage using continuous emissions monitoring systems or
+        equivalent technology;
+
+    (3) Public disclosure of vessel-level emissions data through an
+        online registry.
+
+  (b) FUEL LIFECYCLE ACCOUNTING. — The Administrator shall develop a
+      well-to-wake lifecycle greenhouse gas accounting methodology for
+      maritime fuels consistent with the International Maritime
+      Organization's guidelines on lifecycle GHG intensity of marine
+      fuels.
+
+================================================================================
+SECTION 705. RESEARCH AND DEVELOPMENT FOR ZERO-EMISSION VESSELS.
+================================================================================
+
+  (a) RESEARCH PROGRAM. — The Secretary of Energy, in coordination with the
+      Maritime Administration, shall establish a Zero-Emission Vessel
+      Research and Development Program funding:
+
+    (1) Advanced battery chemistries with energy densities exceeding
+        500 watt-hours per kilogram for marine applications;
+
+    (2) High-temperature proton exchange membrane and solid oxide fuel
+        cell systems for maritime use, including maritime fuel
+        processing and reformer systems;
+
+    (3) Ammonia-fueled internal combustion engines and ammonia fuel
+        cell systems;
+
+    (4) Onboard carbon capture systems for residual fossil fuel vessel
+        emissions during the transition period;
+
+    (5) Wind-assisted propulsion technologies including rotor sails,
+        rigid wing sails, and kite propulsion;
+
+    (6) Air lubrication and hull friction reduction technologies.
+
+  (b) DEMONSTRATION VESSEL. — The Maritime Administration shall fund the
+      design, construction, and operation of a United States-flagged
+      zero-emission demonstration vessel of not less than 500 TEU
+      capacity, to serve as a test platform for integrated zero-emission
+      propulsion technologies.
+
+  (c) AUTHORIZATION. — $2,000,000,000 is authorized for programs under
+      this section.

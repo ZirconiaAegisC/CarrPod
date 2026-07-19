@@ -1,0 +1,144 @@
+================================================================================
+              TITLE V — PORT RESILIENCE HUBS
+================================================================================
+
+  Authorization: Subsumed within administrative allocations
+
+================================================================================
+SECTION 501. PORT RESILIENCE HUB DESIGNATION.
+================================================================================
+
+  (a) DESIGNATION CRITERIA. — The Secretary of Homeland Security, in
+      coordination with the Secretary of Transportation, shall designate
+      not fewer than 15 United States seaports as Port Resilience Hubs
+      based on:
+
+    (1) Annual cargo tonnage and economic significance, including the
+        port's role in energy imports and exports;
+
+    (2) Role in Department of Defense strategic sealift and military
+        deployment operations;
+
+    (3) Vulnerability to sea level rise, storm surge, seismic events,
+        and other natural hazards;
+
+    (4) Criticality to regional and national supply chain resilience,
+        including provision of essential goods during emergencies;
+
+    (5) Geographic distribution ensuring resilience hub coverage on
+        each coast.
+
+  (b) RESILIENCE PLANNING. — Each designated Port Resilience Hub shall
+      develop, not later than 24 months after designation, a comprehensive
+      port resilience master plan addressing:
+
+    (1) Physical protection from sea level rise and storm surge;
+    (2) Emergency power and energy resilience;
+    (3) Supply chain continuity and cargo diversion capabilities;
+    (4) Cybersecurity of operational technology and information
+        systems;
+    (5) Community integration and equitable recovery.
+
+================================================================================
+SECTION 502. STORM SURGE AND FLOOD PROTECTION.
+================================================================================
+
+  (a) CRITICAL INFRASTRUCTURE ELEVATION. — The Secretary of Homeland
+      Security shall provide grants for:
+
+    (1) Elevation of electrical substations, emergency generators,
+        and fuel storage above the 500-year flood elevation;
+
+    (2) Floodproofing of warehouse, terminal, and intermodal yard
+        structures;
+
+    (3) Installation of deployable flood barrier systems at wharf
+        edges and terminal entries;
+
+    (4) Pump station and drainage system upgrades sufficient to manage
+        the 500-year storm event under 2075 sea level rise projections.
+
+  (b) AUTHORIZATION. — $2,000,000,000 is authorized for programs under
+      this section.
+
+================================================================================
+SECTION 503. EMERGENCY POWER AND BACKUP SYSTEMS.
+================================================================================
+
+  (a) POWER RESILIENCE REQUIREMENT. — Each designated Port Resilience Hub
+      shall maintain emergency power capability sufficient to:
+
+    (1) Power all critical port operations including container handling
+        equipment, lighting, security systems, and communications for
+        not less than 7 consecutive days without grid power;
+
+    (2) Provide cold ironing power to vessels carrying essential cargo
+        during emergencies;
+
+    (3) Provide power for emergency response staging, medical triage,
+        and community shelter operations, where port facilities are
+        designated as community emergency response sites.
+
+  (b) AUTHORIZATION. — $1,500,000,000 is authorized for programs under
+      this section.
+
+================================================================================
+SECTION 504. SUPPLY CHAIN RESILIENCE AND REDUNDANCY.
+================================================================================
+
+  (a) CARGO DIVERSION NETWORK. — The Secretary of Transportation shall
+      establish a National Port Cargo Diversion Network enabling
+      coordinated rerouting of cargo among designated Resilience Hubs
+      during disruptions, including:
+
+    (1) Real-time port capacity and congestion data sharing;
+    (2) Inter-port agreements for priority berthing during emergencies;
+    (3) Coordinated chassis, container, and intermodal equipment
+        repositioning;
+    (4) Expedited customs and inspection clearance for diverted cargo.
+
+  (b) STRATEGIC CARGO RESERVE. — The Secretary of Transportation, in
+      coordination with the Department of Homeland Security, shall
+      establish a Strategic Cargo Reserve Program maintaining stocks
+      of critical goods — including medical supplies, food, energy
+      products, and construction materials — at designated Resilience
+      Hubs for distribution during national emergencies.
+
+  (c) AUTHORIZATION. — $1,000,000,000 is authorized for programs under
+      this section.
+
+================================================================================
+SECTION 505. CYBERSECURITY FOR PORT INFRASTRUCTURE.
+================================================================================
+
+  (a) CYBERSECURITY REQUIREMENTS. — Each designated Port Resilience Hub
+      shall:
+
+    (1) Implement the National Institute of Standards and Technology
+        (NIST) Cybersecurity Framework for port operational technology
+        (OT) and information technology (IT) systems;
+
+    (2) Conduct annual cybersecurity assessments and penetration testing
+        performed by qualified third-party assessors;
+
+    (3) Deploy network segmentation between OT and IT systems to prevent
+        lateral movement of cyber threats;
+
+    (4) Maintain an incident response plan tested through annual tabletop
+        exercises and biennial live exercises.
+
+  (b) CYBERSECURITY GRANTS. — The Cybersecurity and Infrastructure Security
+      Agency (CISA) shall provide technical assistance and grants for
+      implementation of cybersecurity measures at all United States
+      seaports, with priority for designated Resilience Hubs.
+
+  (c) INFORMATION SHARING. — The Secretary of Homeland Security shall
+      establish a Port Cybersecurity Information Sharing and Analysis
+      Center (PC-ISAC) providing:
+
+    (1) Real-time threat intelligence sharing among ports;
+    (2) Vulnerability disclosure and coordinated remediation;
+    (3) Best practices and technical guidance for maritime OT security.
+
+  (d) AUTHORIZATION. — $500,000,000 is authorized for programs under
+      this section.

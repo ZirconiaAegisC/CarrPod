@@ -1,0 +1,144 @@
+================================================================================
+              TITLE II — WATER RECYCLING AND REUSE
+================================================================================
+
+  Authorization: $20,000,000,000 over 10 fiscal years
+
+================================================================================
+SECTION 201. NATIONAL WATER RECYCLING TARGETS.
+================================================================================
+
+  (a) ESTABLISHMENT OF TARGETS. — Congress establishes the following national
+      targets for municipal wastewater recycling and beneficial reuse:
+        (1) Not less than 10 percent of total municipal wastewater flow
+            recycled for beneficial reuse by December 31, 2036.
+        (2) Not less than 25 percent of total municipal wastewater flow
+            recycled for beneficial reuse by December 31, 2046.
+        (3) Not less than 50 percent of total municipal wastewater flow
+            recycled for beneficial reuse by December 31, 2056.
+
+  (b) STATE IMPLEMENTATION PLANS. — Not later than 24 months after the date
+      of enactment of this Act, each State shall submit to the Administrator
+      a water recycling implementation plan that identifies:
+        (1) Existing wastewater treatment capacity and current recycling rates;
+        (2) Projected water demand and supply deficits through 2056;
+        (3) Priority recycling projects and associated cost estimates;
+        (4) Regulatory and institutional barriers to recycling expansion.
+
+  (c) FEDERAL TECHNICAL STANDARDS. — The Administrator, in consultation with
+      the Secretary of Health and Human Services, shall promulgate Federal
+      technical and public health standards for:
+        (1) Indirect potable reuse through groundwater recharge;
+        (2) Direct potable reuse treatment train requirements;
+        (3) Industrial and agricultural non-potable reuse quality standards;
+        (4) Monitoring and reporting requirements for recycled water systems.
+
+================================================================================
+SECTION 202. DIRECT POTABLE REUSE DEMONSTRATION PROJECTS.
+================================================================================
+
+  (a) PROGRAM ESTABLISHMENT. — The Administrator shall establish a competitive
+      grant program to fund a minimum of 20 direct potable reuse demonstration
+      projects distributed across diverse geographic, climatic, and
+      hydrogeologic regions of the United States.
+
+  (b) PROJECT REQUIREMENTS. — Each demonstration project shall:
+        (1) Employ a full advanced treatment train including microfiltration
+            or ultrafiltration, reverse osmosis, and advanced oxidation;
+        (2) Include a comprehensive water quality monitoring program testing
+            for at least 250 constituents including pathogens, trace organic
+            compounds, pharmaceuticals, PFAS, and disinfection byproducts;
+        (3) Incorporate public education and community engagement components;
+        (4) Operate for a minimum period of 5 years with full monitoring.
+
+  (c) ISRAEL MODEL BENCHMARKING. — The Administrator shall, within 18 months
+      of enactment, produce a comprehensive report analyzing Israel's national
+      water recycling program, including regulatory frameworks, treatment
+      technologies, public acceptance strategies, agricultural reuse practices,
+      and economic models, and shall incorporate findings into United States
+      program design.
+
+  (d) AUTHORIZATION. — $5,000,000,000 is authorized for the program established
+      under this section.
+
+================================================================================
+SECTION 203. INDUSTRIAL AND AGRICULTURAL REUSE INCENTIVES.
+================================================================================
+
+  (a) INDUSTRIAL WATER REUSE CREDIT. — The Administrator shall establish a
+      tax credit of $0.50 per 1,000 gallons of recycled water used by
+      industrial facilities in lieu of potable water supplies, up to a maximum
+      credit of $5,000,000 per facility per year.
+
+  (b) AGRICULTURAL REUSE PIPELINE GRANTS. — The Secretary of Agriculture shall
+      establish a grant program to fund the construction of distribution
+      pipelines connecting municipal water recycling facilities to agricultural
+      users, with priority given to:
+        (1) Pipelines connecting treatment plants in urban areas to
+            agricultural areas in water-stressed basins;
+        (2) Projects that reduce groundwater extraction in critically
+            overdrafted basins;
+        (3) Projects providing drought-resilient supply to operations
+            producing high-value specialty crops.
+
+  (c) AUTHORIZATION. — $3,000,000,000 is authorized for grants under
+      subsection (b).
+
+================================================================================
+SECTION 204. ADVANCED TREATMENT TECHNOLOGY DEPLOYMENT.
+================================================================================
+
+  (a) TECHNOLOGY ACCELERATION FUND. — The Administrator shall establish a fund
+      to accelerate deployment of advanced water treatment technologies
+      including:
+        (1) Ceramic membrane filtration systems;
+        (2) Forward osmosis and pressure-retarded osmosis;
+        (3) Ultraviolet advanced oxidation processes;
+        (4) Granular activated carbon and ion exchange systems;
+        (5) Biological activated carbon filtration;
+        (6) Membrane bioreactor optimization.
+
+  (b) COST SHARING. — The Federal share of project costs under this section
+      shall not exceed 75 percent for non-disadvantaged communities and may
+      be up to 100 percent for disadvantaged communities.
+
+  (c) AUTHORIZATION. — $2,000,000,000 is authorized for the fund established
+      under this section.
+
+================================================================================
+SECTION 205. INTERNATIONAL BEST PRACTICES AND TECHNOLOGY TRANSFER.
+================================================================================
+
+  (a) INTERNATIONAL COOPERATION. — The Administrator shall establish a
+      water recycling technology exchange program with Israel, Singapore,
+      Australia, the European Union, and other nations identified as having
+      advanced water recycling infrastructure.
+
+  (b) ACTIVITIES. — The exchange program shall include:
+        (1) Biennial technical exchange conferences;
+        (2) Exchange of scientists, engineers, and regulatory officials;
+        (3) Joint research and development projects;
+        (4) Publication of translated technical standards and guidance.
+
+================================================================================
+SECTION 206. PUBLIC ACCEPTANCE AND EDUCATION CAMPAIGN.
+================================================================================
+
+  (a) NATIONAL CAMPAIGN. — The Administrator, in coordination with the
+      Centers for Disease Control and Prevention, shall conduct a national
+      public education campaign to:
+        (1) Communicate the safety and reliability of recycled water;
+        (2) Address public misperceptions and concerns;
+        (3) Highlight successful water recycling programs in the
+            United States and internationally;
+        (4) Explain the advanced treatment technologies that ensure
+            recycled water quality meets or exceeds drinking water
+            standards.
+
+  (b) COMMUNITY-SPECIFIC OUTREACH. — Grant recipients under this title
+      shall include community-specific public engagement activities,
+      including public meetings, facility tours, educational curricula,
+      and transparent water quality data reporting.
+
+  (c) AUTHORIZATION. — $500,000,000 is authorized for the campaign
+      established under this section.

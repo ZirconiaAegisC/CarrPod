@@ -1,0 +1,171 @@
+================================================================================
+119TH CONGRESS — 2ND SESSION
+================================================================================
+
+                               H.R. __________
+
+================================================================================
+  To authorize appropriations for Federal support of coastal resilience and
+    port infrastructure modernization, to establish programs for sea wall
+    and coastal armoring construction, port electrification and emissions
+    reduction, harbor deepening and navigation channel improvement, coastal
+    ecosystem restoration, port resilience hub development, offshore wind
+    port infrastructure, maritime decarbonization, flood insurance reform,
+    and for other purposes.
+================================================================================
+
+================================================================================
+                     IN THE HOUSE OF REPRESENTATIVES
+================================================================================
+
+                              _______________
+
+
+
+Mr. _______________ introduced the following bill; which was referred to the
+Committee on _________________
+
+================================================================================
+                                 A BILL
+================================================================================
+
+  To authorize appropriations for Federal support of coastal resilience and
+    port infrastructure modernization, to establish programs for sea wall
+    and coastal armoring construction, port electrification and emissions
+    reduction, harbor deepening and navigation channel improvement, coastal
+    ecosystem restoration, port resilience hub development, offshore wind
+    port infrastructure, maritime decarbonization, flood insurance reform,
+    and for other purposes.
+
+
+================================================================================
+     Be it enacted by the Senate and House of Representatives of the United
+            States of America in Congress assembled,
+================================================================================
+
+
+
+================================================================================
+SECTION 1. SHORT TITLE.
+================================================================================
+
+  This Act may be cited as the "Coastal and Port Infrastructure Protection
+  Act of 2026."
+
+
+================================================================================
+SECTION 2. TABLE OF CONTENTS.
+================================================================================
+
+  Sec. 1. Short title.
+  Sec. 2. Table of contents.
+  Sec. 3. Definitions.
+
+  TITLE I — SEA WALL AND COASTAL ARMORING INFRASTRUCTURE
+    Sec. 101. National coastal vulnerability assessment.
+    Sec. 102. Sea wall and levee construction grants.
+    Sec. 103. Living shoreline and hybrid coastal protection.
+    Sec. 104. Urban coastal flood barrier systems.
+    Sec. 105. Beach nourishment and dune restoration.
+    Sec. 106. Coastal monitoring and early warning.
+
+  TITLE II — PORT ELECTRIFICATION AND EMISSIONS REDUCTION
+    Sec. 201. Shore power and cold ironing infrastructure.
+    Sec. 202. Zero-emission cargo handling equipment.
+    Sec. 203. Port microgrids and renewable energy.
+    Sec. 204. Drayage truck electrification program.
+    Sec. 205. Port air quality monitoring and compliance.
+    Sec. 206. Green port certification program.
+
+  TITLE III — HARBOR DEEPENING AND NAVIGATION CHANNELS
+    Sec. 301. Harbor deepening prioritization.
+    Sec. 302. Navigation channel widening.
+    Sec. 303. Beneficial use of dredged material.
+    Sec. 304. Dredging fleet modernization.
+    Sec. 305. Interagency coordination and permitting reform.
+
+  TITLE IV — COASTAL ECOSYSTEM RESTORATION
+    Sec. 401. Wetland restoration and creation.
+    Sec. 402. Oyster reef and shellfish habitat restoration.
+    Sec. 403. Seagrass and kelp forest restoration.
+    Sec. 404. Coastal land acquisition and conservation.
+    Sec. 405. Blue carbon ecosystem preservation.
+
+  TITLE V — PORT RESILIENCE HUBS
+    Sec. 501. Port resilience hub designation.
+    Sec. 502. Storm surge and flood protection.
+    Sec. 503. Emergency power and backup systems.
+    Sec. 504. Supply chain resilience and redundancy.
+    Sec. 505. Cybersecurity for port infrastructure.
+
+  TITLE VI — OFFSHORE WIND PORT INFRASTRUCTURE
+    Sec. 601. Offshore wind staging and assembly ports.
+    Sec. 602. Specialized vessel and crane infrastructure.
+    Sec. 603. Submarine cable landing facilities.
+    Sec. 604. Workforce training for offshore wind logistics.
+    Sec. 605. Environmental monitoring for offshore wind.
+
+  TITLE VII — MARITIME DECARBONIZATION
+    Sec. 701. Alternative maritime fuel infrastructure.
+    Sec. 702. Vessel electrification and hybridization.
+    Sec. 703. Green shipping corridors.
+    Sec. 704. Maritime emissions monitoring and reporting.
+    Sec. 705. Research and development for zero-emission vessels.
+
+  TITLE VIII — FLOOD INSURANCE REFORM
+    Sec. 801. National Flood Insurance Program modernization.
+    Sec. 802. Risk Rating 3.0 implementation and affordability.
+    Sec. 803. Community Rating System enhancements.
+    Sec. 804. Coastal flood mapping update.
+    Sec. 805. Managed retreat and relocation assistance.
+
+  TITLE IX — FUNDING AND APPROPRIATIONS
+    Sec. 901. Authorization of appropriations.
+    Sec. 902. Allocation among titles.
+    Sec. 903. Oversight and accountability.
+    Sec. 904. Matching fund requirements.
+    Sec. 905. Harbor Maintenance Trust Fund reform.
+
+  TITLE X — IMPLEMENTATION AND ECONOMIC IMPACT
+    Sec. 1001. Implementation schedule and milestones.
+    Sec. 1002. Annual report to Congress.
+    Sec. 1003. Comptroller General audits.
+    Sec. 1004. Economic impact assessment.
+    Sec. 1005. Buy America requirements.
+
+
+================================================================================
+SECTION 3. DEFINITIONS.
+================================================================================
+
+  In this Act:
+
+    (1) ADMINISTRATOR. — The term "Administrator" means the Administrator
+        of the National Oceanic and Atmospheric Administration.
+
+    (2) BLUE CARBON. — The term "blue carbon" means carbon captured and
+        stored in coastal and marine ecosystems, including salt marshes,
+        seagrass meadows, and mangrove forests.
+
+    (3) COLD IRONING. — The term "cold ironing" means the practice of
+        providing shore-side electrical power to a ship at berth so that
+        its auxiliary engines may be shut down, eliminating emissions
+        during port stay.
+
+    (4) LIVING SHORELINE. — The term "living shoreline" means a protected,
+        stabilized coastal edge made of natural materials such as plants,
+        sand, oyster shells, or rock that provides shoreline erosion
+        control while maintaining or enhancing coastal habitat.
+
+    (5) PORT AUTHORITY. — The term "port authority" means a State,
+        municipal, or other public or private entity responsible for the
+        administration, operation, or security of a port facility.
+
+    (6) SECRETARY. — The term "Secretary" means the Secretary of the
+        Army, acting through the Chief of Engineers, unless otherwise
+        specified.
+
+    (7) APPROPRIATE CONGRESSIONAL COMMITTEES. — The term "appropriate
+        congressional committees" means the Committee on Environment and
+        Public Works of the Senate and the Committee on Transportation
+        and Infrastructure of the House of Representatives.

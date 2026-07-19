@@ -1,0 +1,177 @@
+================================================================================
+119TH CONGRESS — 2ND SESSION
+================================================================================
+
+                               H.R. __________
+
+================================================================================
+  To authorize appropriations for Federal support of water infrastructure
+    modernization, lead service line replacement, water recycling and reuse
+    programs, PFAS contamination remediation, Western drought resilience,
+    agricultural water efficiency, smart water metering deployment, desalination
+    research and development, Tribal water rights settlement, and for other
+    purposes.
+================================================================================
+
+================================================================================
+                     IN THE HOUSE OF REPRESENTATIVES
+================================================================================
+
+                              _______________
+
+
+
+Mr. _______________ introduced the following bill; which was referred to the
+Committee on _________________
+
+================================================================================
+                                 A BILL
+================================================================================
+
+  To authorize appropriations for Federal support of water infrastructure
+    modernization, lead service line replacement, water recycling and reuse
+    programs, PFAS contamination remediation, Western drought resilience,
+    agricultural water efficiency, smart water metering deployment, desalination
+    research and development, Tribal water rights settlement, and for other
+    purposes.
+
+
+================================================================================
+     Be it enacted by the Senate and House of Representatives of the United
+            States of America in Congress assembled,
+================================================================================
+
+
+
+================================================================================
+SECTION 1. SHORT TITLE.
+================================================================================
+
+  This Act may be cited as the "Water Infrastructure and Drought Resilience
+  Act of 2026."
+
+
+================================================================================
+SECTION 2. TABLE OF CONTENTS.
+================================================================================
+
+  Sec. 1. Short title.
+  Sec. 2. Table of contents.
+  Sec. 3. Definitions.
+
+  TITLE I — LEAD PIPE ELIMINATION AND SAFE DRINKING WATER
+    Sec. 101. Lead service line inventory and replacement mandate.
+    Sec. 102. Low-income household assistance program.
+    Sec. 103. State revolving fund capitalization grants.
+    Sec. 104. School and childcare facility lead remediation.
+    Sec. 105. Lead testing and compliance standards.
+    Sec. 106. Workforce training for lead pipe replacement.
+
+  TITLE II — WATER RECYCLING AND REUSE
+    Sec. 201. National water recycling targets.
+    Sec. 202. Direct potable reuse demonstration projects.
+    Sec. 203. Industrial and agricultural reuse incentives.
+    Sec. 204. Advanced treatment technology deployment.
+    Sec. 205. International best practices and technology transfer.
+    Sec. 206. Public acceptance and education campaign.
+
+  TITLE III — PFAS REMEDIATION AND EMERGING CONTAMINANTS
+    Sec. 301. National primary drinking water regulation for PFAS.
+    Sec. 302. PFAS destruction technology research and deployment.
+    Sec. 303. Contaminated site remediation fund.
+    Sec. 304. Drinking water utility PFAS treatment grants.
+    Sec. 305. PFAS source reduction and industrial discharge standards.
+    Sec. 306. Biomonitoring and health impact studies.
+
+  TITLE IV — WESTERN DROUGHT RESILIENCE
+    Sec. 401. Colorado River Basin conservation program.
+    Sec. 402. Groundwater management and aquifer recharge.
+    Sec. 403. Interstate water banking and transfer agreements.
+    Sec. 404. Drought early warning system expansion.
+    Sec. 405. Water-efficient landscaping and urban conservation.
+    Sec. 406. Rural community drought assistance.
+
+  TITLE V — AGRICULTURAL WATER EFFICIENCY
+    Sec. 501. Irrigation modernization grants.
+    Sec. 502. Precision agriculture water technology deployment.
+    Sec. 503. Crop transition assistance for drought-affected regions.
+    Sec. 504. Regenerative agriculture soil water retention.
+    Sec. 505. Livestock water supply resilience.
+
+  TITLE VI — SMART WATER METERING AND LEAK DETECTION
+    Sec. 601. National smart metering initiative.
+    Sec. 602. Advanced leak detection technology deployment.
+    Sec. 603. Real-time distribution system monitoring.
+    Sec. 604. Non-revenue water reduction targets.
+    Sec. 605. Data standardization and interoperability.
+
+  TITLE VII — DESALINATION RESEARCH AND DEVELOPMENT
+    Sec. 701. Advanced membrane and materials research.
+    Sec. 702. Brackish water desalination demonstration facilities.
+    Sec. 703. Brine management and zero liquid discharge.
+    Sec. 704. Renewable energy-powered desalination.
+    Sec. 705. Environmental impact mitigation.
+    Sec. 706. Cost reduction and commercialization.
+
+  TITLE VIII — TRIBAL WATER RIGHTS AND INFRASTRUCTURE
+    Sec. 801. Tribal water rights settlement fund.
+    Sec. 802. Indian reservation water infrastructure program.
+    Sec. 803. Tribal consultation and consent requirements.
+    Sec. 804. Technical assistance and capacity building.
+    Sec. 805. Emergency water supply for Tribal communities.
+
+  TITLE IX — FUNDING AND APPROPRIATIONS
+    Sec. 901. Authorization of appropriations.
+    Sec. 902. Allocation among titles.
+    Sec. 903. Oversight, accountability, and audit.
+    Sec. 904. Matching fund requirements.
+    Sec. 905. Sunset provisions.
+
+  TITLE X — IMPLEMENTATION AND ECONOMIC IMPACT
+    Sec. 1001. Implementation schedule and milestones.
+    Sec. 1002. Annual report to Congress.
+    Sec. 1003. Comptroller General audits.
+    Sec. 1004. Economic impact assessment.
+    Sec. 1005. Buy America requirements.
+
+
+================================================================================
+SECTION 3. DEFINITIONS.
+================================================================================
+
+  In this Act:
+
+    (1) ADMINISTRATOR. — The term "Administrator" means the Administrator of
+        the Environmental Protection Agency.
+
+    (2) COMMUNITY WATER SYSTEM. — The term "community water system" has the
+        meaning given such term in section 1401 of the Safe Drinking Water
+        Act (42 U.S.C. 300f).
+
+    (3) DIRECT POTABLE REUSE. — The term "direct potable reuse" means the
+        introduction of advanced treated recycled water directly into a
+        drinking water distribution system without an environmental buffer.
+
+    (4) DISADVANTAGED COMMUNITY. — The term "disadvantaged community" means
+        a community identified by the Administrator as having an annual
+        median household income less than 80 percent of the State median
+        household income, or a community with a service population of fewer
+        than 10,000 individuals that lacks adequate water infrastructure.
+
+    (5) LEAD SERVICE LINE. — The term "lead service line" means a pipe and
+        its fittings that connect the water main to the building inlet and
+        are made of lead, galvanized iron or steel that is or was downstream
+        of lead components, or are of unknown material.
+
+    (6) PFAS. — The term "PFAS" means perfluoroalkyl and polyfluoroalkyl
+        substances, including perfluorooctanoic acid (PFOA), perfluorooctane
+        sulfonic acid (PFOS), and any other substance identified by the
+        Administrator pursuant to section 301.
+
+    (7) SECRETARY. — The term "Secretary" means the Secretary of the
+        Interior, unless otherwise specified.
+
+    (8) APPROPRIATE CONGRESSIONAL COMMITTEES. — The term "appropriate
+        congressional committees" means the Committee on Environment and
+        Public Works of the Senate and the Committee on Transportation and
+        Infrastructure of the House of Representatives.

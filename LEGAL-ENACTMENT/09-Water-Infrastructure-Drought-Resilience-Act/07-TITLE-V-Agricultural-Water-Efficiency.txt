@@ -1,0 +1,142 @@
+================================================================================
+              TITLE V — AGRICULTURAL WATER EFFICIENCY
+================================================================================
+
+  Authorization: $10,000,000,000 over 10 fiscal years
+
+================================================================================
+SECTION 501. IRRIGATION MODERNIZATION GRANTS.
+================================================================================
+
+  (a) PROGRAM ESTABLISHMENT. — The Secretary of Agriculture shall establish
+      a competitive grant program to fund on-farm and irrigation district
+      water delivery system modernization, including:
+        (1) Conversion from flood and furrow irrigation to pressurized
+            sprinkler or micro-irrigation systems;
+        (2) Lining or piping of open earthen canals to eliminate seepage
+            losses;
+        (3) Automation and remote control of irrigation delivery gates
+            and turnout structures;
+        (4) Installation of tailwater recovery and recirculation systems;
+        (5) Laser leveling and precision land grading;
+        (6) Soil moisture sensor networks and variable rate irrigation.
+
+  (b) COST SHARE. — The Federal share shall not exceed:
+        (1) 50 percent for irrigation districts and large agricultural
+            operations with annual gross revenues exceeding $1,000,000;
+        (2) 75 percent for small and mid-sized operations with annual
+            gross revenues between $100,000 and $1,000,000;
+        (3) 90 percent for beginning farmers, ranchers, and operations
+            with annual gross revenues below $100,000.
+
+  (c) WATER SAVINGS QUANTIFICATION. — All grant recipients shall install
+      water measurement devices at delivery and return flow points and
+      report water savings to the Secretary on an annual basis.
+
+  (d) AUTHORIZATION. — $4,000,000,000 is authorized for the program
+      established under this section.
+
+================================================================================
+SECTION 502. PRECISION AGRICULTURE WATER TECHNOLOGY DEPLOYMENT.
+================================================================================
+
+  (a) TECHNOLOGY INCENTIVE PROGRAM. — The Secretary of Agriculture shall
+      establish a program providing cost-share payments for adoption of
+      precision agriculture water technologies, including:
+        (1) Drone and satellite-based crop water stress detection using
+            thermal and multispectral imaging;
+        (2) Soil moisture sensing networks with wireless data transmission;
+        (3) Variable rate irrigation systems with GPS-guided control;
+        (4) Weather station networks for microclimate-based irrigation
+            scheduling;
+        (5) Artificial water deficit and regulated deficit irrigation
+            strategies for permanent crops.
+
+  (b) TECHNICAL ASSISTANCE. — The Natural Resources Conservation Service
+      shall expand the Conservation Technical Assistance program to provide
+      dedicated water efficiency specialists in each State experiencing
+      severe, extreme, or exceptional drought as classified by the United
+      States Drought Monitor.
+
+  (c) DEMONSTRATION FARMS. — The Secretary shall establish a network of
+      100 Agricultural Water Efficiency Demonstration Farms distributed
+      across major irrigated agricultural regions to:
+        (1) Showcase integrated water efficiency technologies;
+        (2) Provide hands-on training for farmers and irrigation managers;
+        (3) Publish annual water use, yield, and economic return data.
+
+  (d) AUTHORIZATION. — $2,500,000,000 is authorized for programs under
+      this section.
+
+================================================================================
+SECTION 503. CROP TRANSITION ASSISTANCE FOR DROUGHT-AFFECTED REGIONS.
+================================================================================
+
+  (a) TRANSITION PAYMENTS. — The Secretary of Agriculture shall establish a
+      program providing multi-year transition payments to agricultural
+      producers in the Colorado River Basin and other critically drought-
+      affected regions who:
+        (1) Voluntarily convert from high-water-use crops to low-water-use
+            alternative crops;
+        (2) Transition from irrigated to dryland farming;
+        (3) Voluntarily and permanently retire irrigated acreage with
+            associated water rights dedicated to instream flow or system
+            conservation.
+
+  (b) CROP RESEARCH AND EXTENSION. — The Agricultural Research Service
+      and land-grant university extension services shall expand research
+      programs on:
+        (1) Breeding and development of drought-tolerant crop varieties
+            suited to arid and semi-arid regions;
+        (2) Crop water productivity optimization under deficit irrigation;
+        (3) Alternative cropping systems including agroforestry and
+            perennial grain systems.
+
+  (c) AUTHORIZATION. — $2,000,000,000 is authorized for programs under
+      this section.
+
+================================================================================
+SECTION 504. REGENERATIVE AGRICULTURE SOIL WATER RETENTION.
+================================================================================
+
+  (a) SOIL HEALTH WATER RETENTION PROGRAM. — The Secretary of Agriculture
+      shall expand the Environmental Quality Incentives Program (EQIP) and
+      the Conservation Stewardship Program (CSP) to specifically incentivize
+      practices that improve soil water-holding capacity, including:
+        (1) Cover cropping and continuous living cover;
+        (2) No-till and reduced-till farming systems;
+        (3) Compost and organic matter application at agronomic rates;
+        (4) Agroforestry, windbreaks, and riparian buffer restoration;
+        (5) Managed intensive rotational grazing.
+
+  (b) QUANTIFICATION. — The Secretary shall develop standardized
+      methodologies to quantify the water retention benefits of
+      regenerative agricultural practices, expressed as acre-inches
+      of additional soil water-holding capacity.
+
+  (c) AUTHORIZATION. — $1,000,000,000 is authorized for programs under
+      this section.
+
+================================================================================
+SECTION 505. LIVESTOCK WATER SUPPLY RESILIENCE.
+================================================================================
+
+  (a) WATER SUPPLY DEVELOPMENT GRANTS. — The Secretary of Agriculture shall
+      provide grants for:
+        (1) Development of off-stream livestock watering systems to reduce
+            riparian area degradation;
+        (2) Installation of solar-powered stock wells and pumping systems;
+        (3) Construction of stock ponds, water catchment systems, and
+            emergency water storage;
+        (4) Pipeline and distribution systems for rangeland livestock
+            watering.
+
+  (b) DROUGHT PREPAREDNESS PLANNING. — The Secretary shall provide technical
+      assistance to livestock producers for development of drought
+      preparedness plans addressing:
+        (1) Stocking rate flexibility and adaptive management triggers;
+        (2) Alternative water supply identification;
+        (3) Feed reserve and alternative forage strategies.
+
+  (c) AUTHORIZATION. — $500,000,000 is authorized for programs under
+      this section.

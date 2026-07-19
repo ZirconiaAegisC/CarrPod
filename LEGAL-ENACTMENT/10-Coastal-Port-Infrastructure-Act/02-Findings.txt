@@ -1,0 +1,161 @@
+================================================================================
+                          FINDINGS AND DECLARATIONS
+                        COASTAL AND PORT INFRASTRUCTURE
+                        PROTECTION ACT OF 2026
+================================================================================
+
+SECTION 101. FINDINGS.
+
+  Congress finds the following:
+
+    (1) Approximately 40 percent of the United States population, or more
+        than 130 million Americans, resides in coastal shoreline counties
+        that constitute less than 10 percent of the nation's land area,
+        according to the National Oceanic and Atmospheric Administration
+        and the United States Census Bureau.
+
+    (2) Coastal counties generate approximately $9.5 trillion in goods
+        and services annually, representing roughly 45 percent of the
+        national gross domestic product, and support more than 60 million
+        jobs.
+
+    (3) Global mean sea level has risen approximately 10 to 12 inches
+        since 1880, with the rate of rise accelerating: approximately
+        4 inches of the total rise has occurred since 1993, indicating
+        a rate approximately double that of the preceding century.
+
+    (4) The National Oceanic and Atmospheric Administration projects an
+        additional 10 to 12 inches of sea level rise along United States
+        coastlines by 2050, with higher scenarios reaching 18 inches or
+        more in subsiding regions such as the Gulf Coast.
+
+    (5) The United States coastline extends approximately 95,000 miles,
+        encompassing diverse geographic and ecological settings, including
+        barrier islands, estuaries, salt marshes, mangroves, coral reefs,
+        rocky shores, and bluffs.
+
+    (6) An estimated $1 trillion in coastal real estate value is at risk
+        of chronic tidal flooding by 2050 under intermediate sea level
+        rise scenarios, as documented in peer-reviewed research published
+        by the Union of Concerned Scientists.
+
+    (7) More than 300,000 residential and commercial properties in the
+        contiguous United States, with a collective market value exceeding
+        $135 billion, are projected to experience chronic inundation
+        defined as 26 or more flooding events per year by 2045.
+
+    (8) Flood damage to coastal properties already exceeds $20 billion
+        annually, and the Federal Emergency Management Agency projects
+        this cost to double by 2050 absent significant adaptation
+        investment.
+
+    (9) United States seaports handle approximately 99 percent of
+        overseas trade by volume and 65 percent by value, supporting
+        over 30 million jobs and $5.4 trillion in annual economic
+        activity, according to the American Association of Port
+        Authorities.
+
+    (10) The supply chain disruptions of 2021 through 2023, during which
+         port congestion at major United States container ports including
+         Los Angeles, Long Beach, Savannah, and New York-New Jersey
+         caused cumulative economic losses exceeding $20 billion,
+         demonstrated the acute vulnerability of the nation's port
+         infrastructure to demand surges and operational constraints.
+
+    (11) The average age of major United States port infrastructure,
+         including wharves, piers, navigation channels, and cargo handling
+         systems, exceeds 50 years; the American Society of Civil Engineers
+         awarded United States port infrastructure a grade of C-plus in
+         its 2021 Report Card.
+
+    (12) The new generation of ultra-large container vessels exceeding
+         24,000 twenty-foot equivalent unit (TEU) capacity, deployed by
+         global shipping lines including Maersk, MSC, and CMA CGM,
+         requires channel depths of 50 feet or greater and widths of
+         1,000 feet or greater; fewer than 10 United States ports
+         currently meet these dimensional requirements.
+
+    (13) The international maritime shipping sector accounts for
+         approximately 3 percent of global anthropogenic greenhouse gas
+         emissions, equivalent to the annual emissions of Germany, and
+         the International Maritime Organization has adopted a revised
+         strategy targeting net-zero greenhouse gas emissions from
+         international shipping by or around 2050.
+
+    (14) Port-related air pollution disproportionately affects
+         neighboring communities, which are predominantly low-income
+         communities and communities of color, through emissions of
+         particulate matter, nitrogen oxides, sulfur oxides, and
+         diesel exhaust from ships at berth, cargo handling equipment,
+         and drayage trucks.
+
+    (15) Coastal ecosystems — including salt marshes, mangroves, seagrass
+         meadows, and oyster reefs — provide an estimated $100 billion
+         annually in ecosystem services including storm surge attenuation,
+         fishery habitat, carbon sequestration, water quality improvement,
+         and recreational opportunities, yet the United States loses
+         approximately 80,000 acres of coastal wetlands annually.
+
+    (16) Vessels operating in United States waters, including ocean-going
+         container ships, cruise ships, tankers, bulk carriers, and
+         harbor craft, emitted approximately 40 million metric tons
+         of carbon dioxide equivalent in 2024, representing a growing
+         share of national transportation emissions.
+
+    (17) Global shipping companies including Maersk and Carnival
+         Corporation have publicly announced fleet emission reduction
+         targets and investments in alternative fuel vessels, creating
+         an opportunity for United States ports to attract green
+         shipping activity through infrastructure investment.
+
+    (18) The National Flood Insurance Program, with approximately
+         5 million policies in force and $1.3 trillion in coverage,
+         carries an accumulated debt to the United States Treasury of
+         approximately $20.5 billion as of 2026, and requires structural
+         reform to ensure long-term solvency while maintaining
+         affordability for policyholders.
+
+SECTION 102. DECLARATIONS OF POLICY.
+
+  Congress declares that it is the policy of the United States to:
+
+    (1) Protect coastal communities and critical infrastructure from
+        accelerating sea level rise, storm surge, and chronic tidal
+        flooding through strategic investment in sea walls, levees,
+        flood barriers, living shorelines, and hybrid coastal protection.
+
+    (2) Modernize United States port infrastructure to accommodate the
+        current and future global shipping fleet, improve operational
+        efficiency, enhance supply chain resilience, and maintain the
+        nation's competitive position in international trade.
+
+    (3) Electrify port operations and deploy zero-emission cargo handling
+        equipment to eliminate port-related air pollution, improve public
+        health in port-adjacent communities, and reduce greenhouse gas
+        emissions.
+
+    (4) Accelerate the maritime energy transition through investment in
+        alternative fuel infrastructure, green shipping corridors, vessel
+        electrification, and zero-emission vessel technology.
+
+    (5) Restore and protect coastal ecosystems for their intrinsic
+        ecological value, their critical role in attenuating storm surge
+        and buffering coastal communities, and their capacity as blue
+        carbon sinks to sequester atmospheric carbon dioxide.
+
+    (6) Reform the National Flood Insurance Program to ensure long-term
+        fiscal solvency, accurately reflect climate risk in premium
+        pricing, maintain affordability for policyholders of limited
+        means, and provide transition assistance for communities facing
+        unavoidable inundation.
+
+    (7) Prioritize environmental justice by ensuring that disadvantaged
+        communities receive not less than 40 percent of the overall
+        benefits of Federal coastal infrastructure investments and that
+        port-adjacent communities benefit directly from emissions
+        reduction investments.
+
+    (8) Apply Buy America requirements to all materials, equipment,
+        and components procured under this Act, supporting domestic
+        manufacturing of steel, concrete, electrical equipment, and
+        specialized maritime infrastructure.

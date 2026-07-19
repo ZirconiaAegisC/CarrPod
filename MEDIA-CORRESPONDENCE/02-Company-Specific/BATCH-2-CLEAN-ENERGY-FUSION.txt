@@ -1,0 +1,192 @@
+===============================================================================
+ACS CONGRESSIONAL LIAISON — MEDIA CORRESPONDENCE BATCH 2
+SECTOR: CLEAN ENERGY & FUSION
+STATUS: DRAFT | DATE: July 19, 2026 | TEMPLATE: B (No-dossier outreach)
+===============================================================================
+
+COMPANY 2.1 — COMMONWEALTH FUSION SYSTEMS (CFS)
+TO: Bob Mumgaard, CEO — bob.mumgaard@cfs.energy
+CC: Dennis Whyte, Co-Founder — dennis.whyte@cfs.energy
+    Brandon Sorbom, CSO — brandon.sorbom@cfs.energy
+SUBJECT: CFS — Federal Advanced Manufacturing & Energy Partnership Inquiry — ACS-MC-2026-B201
+INTRO: CFS is building SPARC, a compact tokamak fusion demonstrator in Devens, MA, with
+goal of net-energy fusion by 2030. ARC commercial plant design targets 400 MW output.
+Company has raised $2B+, partnered with MIT Plasma Science and Fusion Center. High
+relevance to DOE FES and ARPA-E fusion programs and NRC regulatory framework development.
+DOSSIER: NONE | PRIORITY: HIGH | CITY: Devens, MA
+-------------------------------------------------------------------------------
+
+COMPANY 2.2 — HELION ENERGY
+TO: David Kirtley, CEO — david.kirtley@helionenergy.com
+CC: Chris Pihl, Co-Founder & CTO — chris.pihl@helionenergy.com
+SUBJECT: Helion — Federal Advanced Manufacturing & Energy Partnership Inquiry — ACS-MC-2026-B202
+INTRO: Helion is developing a field-reversed configuration (FRC) fusion system using
+deuterium-helium-3 fuel. Has signed PPA with Microsoft for 50 MW by 2028. Everett, WA
+facility with Polaris prototype under construction. Raised $500M+ including Sam Altman.
+Direct applicability to DOE Milestone-Based Fusion Development Program.
+DOSSIER: NONE | PRIORITY: HIGH | CITY: Everett, WA
+-------------------------------------------------------------------------------
+
+COMPANY 2.3 — TAE TECHNOLOGIES (formerly Tri Alpha Energy)
+TO: Michl Binderbauer, CEO — michl@tae.com
+CC: Toshiki Tajima, CSO — toshiki.tajima@tae.com
+SUBJECT: TAE Technologies — Federal Advanced Manufacturing & Energy Partnership Inquiry — ACS-MC-2026-B203
+INTRO: TAE is developing beam-driven field-reversed configuration fusion with boron fuel
+(p-B11 reaction). 30+ years of R&D, over $1.2B raised. Foothill Ranch, CA HQ with
+Norman and Copernicus prototype machines. Also developing power management/EV charging
+tech via spin-off. Seeking engagement on DOE fusion milestones and medical isotopes.
+DOSSIER: NONE | PRIORITY: HIGH | CITY: Foothill Ranch, CA
+-------------------------------------------------------------------------------
+
+COMPANY 2.4 — GENERAL FUSION
+TO: Greg Twinney, CEO — greg.twinney@g generalfusion.com
+CC: Michel Laberge, Founder & CSO — michel.laberge@g generalfusion.com
+SUBJECT: General Fusion — Federal Advanced Manufacturing & Energy Partnership Inquiry — ACS-MC-2026-B204
+INTRO: General Fusion is developing magnetized target fusion (MTF) technology, compressing
+plasma with pneumatic pistons. Building demonstration plant (Lawson Machine 26) at UKAEA
+Culham Campus, UK. Vancouver, BC HQ. Raised $300M+ with backing from Jeff Bezos and
+Canadian government SIF. Significant international collaboration angle.
+DOSSIER: NONE | PRIORITY: HIGH | CITY: Vancouver, BC, Canada
+-------------------------------------------------------------------------------
+
+COMPANY 2.5 — TERRAPOWER, LLC
+TO: Chris Levesque, President & CEO — chris.levesque@terrapower.com
+CC: Bill Gates, Founder & Chairman — via Terrapower board office
+    Jeff Latkowski, SVP Natrium — jeff.latkowski@terrapower.com
+SUBJECT: TerraPower — Federal Advanced Manufacturing & Energy Partnership Inquiry — ACS-MC-2026-B205
+INTRO: TerraPower is building the Natrium sodium-cooled fast reactor demonstration in
+Kemmerer, WY, with $2B in DOE ARDP funding. Also developing Molten Chloride Fast Reactor.
+Bellevue, WA HQ with Bill Gates as Chairman. Key partner for DOE Advanced Reactor
+Demonstration Program. Seeking dialogue on advanced nuclear regulatory pathways.
+DOSSIER: NONE | PRIORITY: CRITICAL | CITY: Bellevue, WA
+-------------------------------------------------------------------------------
+
+COMPANY 2.6 — KAIROS POWER
+TO: Mike Laufer, CEO & Co-Founder — mike.laufer@kairospower.com
+CC: Per Peterson, Co-Founder & CNO — per.peterson@kairospower.com
+SUBJECT: Kairos — Federal Advanced Manufacturing & Energy Partnership Inquiry — ACS-MC-2026-B206
+INTRO: Kairos is developing fluoride salt-cooled high-temperature reactor (KP-FHR) with
+TRISO fuel. Building Hermes demonstration reactor in Oak Ridge, TN with DOE ARDP support.
+Alameda, CA HQ. Received NRC construction permit (first non-light-water reactor since 1960s).
+Seeking engagement on advanced reactor licensing reform and TRISO fuel supply chain.
+DOSSIER: NONE | PRIORITY: HIGH | CITY: Alameda, CA
+-------------------------------------------------------------------------------
+
+COMPANY 2.7 — X-ENERGY, LLC
+TO: J. Clay Sell, CEO — clay.sell@x-energy.com
+CC: Kam Ghaffarian, Founder & Executive Chairman — kam.ghaffarian@x-energy.com
+    Pete Pappano, COO — pete.pappano@x-energy.com
+SUBJECT: X-energy — Federal Advanced Manufacturing & Energy Partnership Inquiry — ACS-MC-2026-B207
+INTRO: X-energy is developing the Xe-100 high-temperature gas-cooled pebble bed reactor.
+Building demonstration at Dow Seadrift, TX site for industrial heat. $1.2B in DOE ARDP
+funding. Rockville, MD HQ. TRISO fuel fabrication facility under construction in Oak Ridge.
+Seeking engagement on industrial decarbonization and advanced reactor export frameworks.
+DOSSIER: NONE | PRIORITY: HIGH | CITY: Rockville, MD
+-------------------------------------------------------------------------------
+
+COMPANY 2.8 — NUSCALE POWER
+TO: John Hopkins, President & CEO — john.hopkins@nuscalepower.com
+CC: Jose Reyes, Co-Founder & CTO — jose.reyes@nuscalepower.com
+SUBJECT: NuScale — Federal Advanced Manufacturing & Energy Partnership Inquiry — ACS-MC-2026-B208
+INTRO: NuScale is the first and only NRC-certified SMR design (50 MWe module). VOYGR
+plants targeted at 6-12 module configurations. Portland, OR HQ with Fluor Corporation
+as majority investor. Carbon Free Power Project with UAMPS in Idaho. Seeking engagement
+on SMR deployment economics and domestic manufacturing supply chain.
+DOSSIER: NONE | PRIORITY: HIGH | CITY: Portland, OR
+-------------------------------------------------------------------------------
+
+COMPANY 2.9 — GE VERNOVA (General Electric)
+TO: Scott Strazik, CEO — scott.strazik@gevernova.com
+CC: Vic Abate, CTO — vic.abate@gevernova.com
+    Pablo Koziner, President Electrification — pablo.koziner@gevernova.com
+SUBJECT: GE Vernova — Federal Advanced Manufacturing & Energy Partnership Inquiry — ACS-MC-2026-B209
+INTRO: GE Vernova, spun out as independent energy company in 2024, is a leader in gas
+turbines, wind (onshore/offshore), grid solutions, and hydrogen-ready combustion technology.
+Cambridge, MA HQ. BWRX-300 SMR design in partnership with Hitachi. Massive US manufacturing
+footprint. Seeking engagement on grid modernization and hydrogen combustion for power gen.
+DOSSIER: NONE | PRIORITY: HIGH | CITY: Cambridge, MA
+-------------------------------------------------------------------------------
+
+COMPANY 2.10 — SIEMENS ENERGY
+TO: Christian Bruch, President & CEO — christian.bruch@siemens-energy.com
+CC: Tim Holt, Member Executive Board — tim.holt@siemens-energy.com
+    Vinod Philip, CTO — vinod.philip@siemens-energy.com
+SUBJECT: Siemens Energy — US-Germany Advanced Technology Partnership — ACS-MC-2026-B210
+INTRO: Siemens Energy is a global leader in gas turbines, HVDC transmission, offshore wind
+grid connection, and electrolyzer manufacturing (via Siemens Energy and Air Liquide JV).
+Munich HQ with major US operations in Orlando, FL and Charlotte, NC. Key supplier for
+US grid infrastructure and offshore wind. Template D for international engagement.
+DOSSIER: NONE | PRIORITY: HIGH | CITY: Munich, Germany / Orlando, FL
+-------------------------------------------------------------------------------
+
+COMPANY 2.11 — NEXTERA ENERGY, INC.
+TO: John Ketchum, Chairman, President & CEO — john.ketchum@nexteraenergy.com
+CC: Rebecca Kujawa, President NextEra Energy Resources — rebecca.kujawa@nexteraenergy.com
+    Mark Hickson, EVP Strategy — mark.hickson@nexteraenergy.com
+SUBJECT: NextEra — Federal Advanced Manufacturing & Energy Partnership Inquiry — ACS-MC-2026-B211
+INTRO: NextEra is the world's largest generator of wind and solar energy, with 70+ GW
+of generating capacity. Juno Beach, FL HQ. Florida Power & Light is regulated utility
+subsidiary. Aggressive renewable deployment, battery storage (4 GW+ planned), and
+green hydrogen pilot projects. Seeking engagement on FERC interconnection reform
+and transmission infrastructure policy.
+DOSSIER: NONE | PRIORITY: HIGH | CITY: Juno Beach, FL
+-------------------------------------------------------------------------------
+
+COMPANY 2.12 — ØRSTED A/S
+TO: Mads Nipper, Group President & CEO — mads.nipper@orsted.com
+CC: Rasmus Errboe, CFO — rasmus.errboe@orsted.com
+    Olivia Breese, CEO Region Americas — olivia.breese@orsted.com
+SUBJECT: Ørsted — US-Denmark Advanced Technology Partnership — ACS-MC-2026-B212
+INTRO: Ørsted is the world's largest offshore wind developer, with major US projects
+including Revolution Wind (RI/CT), South Fork Wind (NY), and Ocean Wind (cancelled NJ).
+Fredericia, Denmark HQ with US operations in Boston, MA. Deep expertise in HVDC offshore
+transmission. Seeking engagement on US offshore wind supply chain and Jones Act compliance.
+DOSSIER: NONE | PRIORITY: HIGH | CITY: Fredericia, Denmark / Boston, MA
+-------------------------------------------------------------------------------
+
+COMPANY 2.13 — VESTAS WIND SYSTEMS A/S
+TO: Henrik Andersen, Group President & CEO — henrik.andersen@vestas.com
+CC: Anders Nielsen, CTO — anders.nielsen@vestas.com
+    Laura Beane, President Vestas North America — laura.beane@vestas.com
+SUBJECT: Vestas — US-Denmark Advanced Technology Partnership — ACS-MC-2026-B213
+INTRO: Vestas is the world's largest wind turbine manufacturer by installed capacity (177+ GW
+globally). Aarhus, Denmark HQ with US blade factories in Colorado, towers in Colorado
+and Texas. V236-15.0 MW offshore platform. Seeking engagement on US onshore and offshore
+wind manufacturing tax credits (IRA Section 45X/48C) and domestic content requirements.
+DOSSIER: NONE | PRIORITY: HIGH | CITY: Aarhus, Denmark / Portland, OR
+-------------------------------------------------------------------------------
+
+COMPANY 2.14 — FIRST SOLAR, INC.
+TO: Mark Widmar, CEO — mark.widmar@firstsolar.com
+CC: Pat Buehler, CFO — pat.buehler@firstsolar.com
+    Georges Antoun, CCO — georges.antoun@firstsolar.com
+SUBJECT: First Solar — Federal Advanced Manufacturing & Energy Partnership Inquiry — ACS-MC-2026-B214
+INTRO: First Solar is the largest US-based solar manufacturer, producing cadmium telluride
+(CdTe) thin-film modules. Tempe, AZ HQ with manufacturing in Ohio (3 factories) and
+Alabama (under construction). 25+ GW annual capacity target. Key beneficiary of IRA
+Section 45X manufacturing credits. Seeking engagement on solar supply chain independence.
+DOSSIER: NONE | PRIORITY: HIGH | CITY: Tempe, AZ
+-------------------------------------------------------------------------------
+
+COMPANY 2.15 — ENPHASE ENERGY, INC.
+TO: Badri Kothandaraman, President & CEO — badri@enphase.com
+CC: Raghu Belur, Co-Founder & CPO — raghu.belur@enphase.com
+    David Ranhoff, CCO — david.ranhoff@enphase.com
+SUBJECT: Enphase — Federal Advanced Manufacturing & Energy Partnership Inquiry — ACS-MC-2026-B215
+INTRO: Enphase is the global leader in solar microinverters and home energy management.
+IQ Battery 5P residential storage, EV charger integration. Fremont, CA HQ with contract
+manufacturing in the US (Flex in South Carolina, Salcomp in Texas). IRA-driven domestic
+manufacturing expansion. Seeking engagement on distributed energy resource (DER) policy
+and virtual power plant regulatory frameworks.
+DOSSIER: NONE | PRIORITY: MEDIUM | CITY: Fremont, CA
+-------------------------------------------------------------------------------
+
+===============================================================================
+BATCH SUMMARY
+  Template: B (no-dossier outreach — new relationship cultivation)
+  Total Companies: 15
+  Priority Distribution: CRITICAL=1, HIGH=13, MEDIUM=1
+  Prepared By: ACS Congressional Liaison Office
+  Date: July 19, 2026
+  Next Review: July 26, 2026
+===============================================================================

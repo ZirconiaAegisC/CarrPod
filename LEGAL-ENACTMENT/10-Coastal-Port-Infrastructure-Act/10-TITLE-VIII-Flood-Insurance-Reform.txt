@@ -1,0 +1,173 @@
+================================================================================
+              TITLE VIII — FLOOD INSURANCE REFORM
+================================================================================
+
+  Authorization: Subsumed within administrative allocations
+
+================================================================================
+SECTION 801. NATIONAL FLOOD INSURANCE PROGRAM MODERNIZATION.
+================================================================================
+
+  (a) PROGRAM REFORM OBJECTIVES. — The Administrator of the Federal
+      Emergency Management Agency shall implement reforms to the
+      National Flood Insurance Program (NFIP) to:
+
+    (1) Ensure long-term fiscal solvency while maintaining affordability
+        for policyholders of limited means;
+
+    (2) Accurately reflect current and projected flood risk in premium
+        pricing through full implementation of Risk Rating 3.0;
+
+    (3) Incentivize community-level and property-level flood risk
+        reduction measures;
+
+    (4) Reduce losses to the NFIP from repetitive loss properties,
+        which account for a disproportionate share of claims;
+
+    (5) Provide mechanisms for orderly transition of properties facing
+        unavoidable inundation out of the program.
+
+  (b) REPETITIVE LOSS MITIGATION. — The Administrator shall:
+
+    (1) Identify all repetitive loss and severe repetitive loss
+        properties in the NFIP portfolio;
+
+    (2) Provide enhanced mitigation assistance for such properties,
+        including buyouts, elevations, and floodproofing;
+
+    (3) Establish a goal of reducing the number of severe repetitive
+        loss properties by 75 percent over 10 years.
+
+  (c) DEBT RESTRUCTURING. — The Secretary of the Treasury is authorized
+      to restructure the NFIP's existing debt, including provision for
+      partial debt cancellation upon certification by the Administrator
+      that program reforms under this title are fiscally sustainable.
+
+================================================================================
+SECTION 802. RISK RATING 3.0 IMPLEMENTATION AND AFFORDABILITY.
+================================================================================
+
+  (a) FULL IMPLEMENTATION. — The Administrator shall complete full
+      implementation of the Risk Rating 3.0 pricing methodology for
+      all NFIP policies, ensuring that premiums reflect:
+
+    (1) Individual property flood risk, including distance to coast
+        and waterbody, flood frequency, foundation type, and elevation;
+
+    (2) Future flood risk projections incorporating sea level rise,
+        increased precipitation intensity, and other climate change
+        factors;
+
+    (3) Replacement cost value of insured structures.
+
+  (b) AFFORDABILITY PROGRAM. — The Administrator shall establish an
+      affordability program providing means-tested premium assistance
+      for:
+
+    (1) Policyholders with household income at or below 80 percent
+        of area median income;
+
+    (2) Policyholders whose premiums under Risk Rating 3.0 exceed
+        5 percent of annual household income;
+
+    (3) Communities where 30 percent or more of households qualify
+        for affordability assistance.
+
+  (c) PREMIUM CAP. — No policyholder shall experience an annual premium
+      increase exceeding 15 percent as a result of Risk Rating 3.0
+      implementation.
+
+  (d) AUTHORIZATION. — $3,000,000,000 is authorized for the affordability
+      program under this section.
+
+================================================================================
+SECTION 803. COMMUNITY RATING SYSTEM ENHANCEMENTS.
+================================================================================
+
+  (a) CRS EXPANSION. — The Administrator shall reform the Community Rating
+      System (CRS) to:
+
+    (1) Provide enhanced premium discounts for communities undertaking
+        significant flood risk reduction investments, including sea
+        walls, levees, living shorelines, and stormwater management;
+
+    (2) Create a new CRS class (Class 1+) providing premium discounts
+        of not less than 50 percent for communities achieving net zero
+        growth in flood exposure through comprehensive floodplain
+        management;
+
+    (3) Incorporate community-level climate adaptation planning and
+        implementation into CRS credit calculations;
+
+    (4) Provide technical assistance to disadvantaged communities
+        seeking to improve their CRS classification.
+
+  (b) OPEN SPACE PRESERVATION. — The Administrator shall provide CRS
+      credits for:
+
+    (1) Acquisition and preservation of flood-prone lands as open space;
+    (2) Restoration of natural floodplain functions, including wetland
+        restoration and stream daylighting;
+    (3) Relocation of structures from high-risk flood zones.
+
+================================================================================
+SECTION 804. COASTAL FLOOD MAPPING UPDATE.
+================================================================================
+
+  (a) MAPPING PROGRAM. — The Administrator shall, in coordination with the
+      Administrator of NOAA, undertake a comprehensive update of coastal
+      flood hazard maps to:
+
+    (1) Incorporate updated sea level rise projections for 2050 and 2100;
+    (2) Map future flood zones under multiple sea level rise scenarios
+        for transparency and planning purposes;
+    (3) Map erosion hazard zones and projected shoreline change;
+    (4) Incorporate wave runup, overtopping, and coastal storm surge
+        modeling for all coastal counties;
+    (5) Update maps at intervals not exceeding 5 years.
+
+  (b) MAPPING MODERNIZATION. — The Administrator shall:
+
+    (1) Transition from static paper maps to dynamic, interactive online
+        mapping platforms with parcel-level granularity;
+    (2) Integrate LiDAR topographic data and bathymetric data at the
+        highest available resolution;
+    (3) Make all flood hazard data publicly available through open
+        application programming interfaces (APIs).
+
+  (c) AUTHORIZATION. — $1,000,000,000 is authorized for programs under
+      this section.
+
+================================================================================
+SECTION 805. MANAGED RETREAT AND RELOCATION ASSISTANCE.
+================================================================================
+
+  (a) RELOCATION PROGRAM. — The Administrator shall establish a voluntary
+      managed retreat and relocation assistance program for communities
+      where:
+
+    (1) Chronic tidal flooding exceeds 26 days per year;
+    (2) Shoreline erosion rates exceed 10 feet per year;
+    (3) Repeated NFIP claims demonstrate economic infeasibility of
+        continued occupancy.
+
+  (b) ASSISTANCE PACKAGES. — The program shall provide:
+
+    (1) Buyout offers at pre-flood risk fair market value;
+    (2) Relocation assistance covering moving expenses, temporary
+        housing, and transition counseling;
+    (3) Priority access to affordable replacement housing in lower-risk
+        areas;
+    (4) Community planning grants for neighborhood-scale relocation
+        preserving social networks and community identity.
+
+  (c) VOLUNTARY PARTICIPATION. — Participation in the relocation program
+      shall be entirely voluntary, and no property owner shall be required
+      to accept a buyout offer or relocate.
+
+  (d) LAND USE RESTRICTIONS. — Properties acquired through the program
+      shall be deed-restricted as open space, conservation, or public
+      access in perpetuity.
+
+  (e) AUTHORIZATION. — $2,000,000,000 is authorized for programs under
+      this section.
