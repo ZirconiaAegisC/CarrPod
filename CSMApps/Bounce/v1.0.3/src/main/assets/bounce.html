@@ -226,72 +226,7 @@ const Bounce={scene:null,camera:null,renderer:null,composer:null,controls:null,c
       ul.appendChild(li);
     });
   },
-  onScanResults(jsonArray,metaObj){
-    this.useRealData=true;
-    var data=JSON.parse(jsonArray);
-    var meta=JSON.parse(metaObj);
-    this.scanMeta=meta;
-    // Update real nodes with scan data
-    for(var i=0;i<data.length;i++){
-      var d=data[i];
-      var existing=null;
-      for(var j=0;j<this.realNodes.length;j++){
-        if(this.realNodes[j].bssid===d.bssid){existing=this.realNodes[j];break;}
-      }
-      if(existing){
-        existing.rssi=d.rssi;existing.dist=d.dist;existing.persist=d.persist;existing.reliable=d.reliable;
-        existing.lastSeen=Date.now();
-      }else{
-        var color=d.reliable?'#00FF88':(d.persist>30?'#4488FF':'#a855f7');
-        var sg=new THREE.SphereGeometry(.35,12,6);
-        var sm=new THREE.MeshBasicMaterial({color:color,transparent:true,opacity:.7,blending:THREE.AdditiveBlending,depthWrite:false});
-        var sdot=new THREE.Mesh(sg,sm);
-        var angle=Math.random()*Math.PI*2;
-        var dist=Math.min(d.dist*2,30);
-        sdot.position.set(Math.cos(angle)*dist,0,Math.sin(angle)*dist);
-        this.scene.add(sdot);
-        this.realNodes.push({dot:sdot,bssid:d.bssid,ssid:d.ssid,rssi:d.rssi,dist:d.dist,
-          persist:d.persist,reliable:d.reliable,lastSeen:Date.now(),vx:(Math.random()-.5)*1.5,vz:(Math.random()-.5)*1.5});
-      }
-    }
-    // Age out nodes not seen in 30 seconds
-    var now=Date.now();
-    for(var i=this.realNodes.length-1;i>=0;i--){
-      if(now-this.realNodes[i].lastSeen>30000){
-        this.scene.remove(this.realNodes[i].dot);
-        this.realNodes.splice(i,1);
-      }
-    }
-    this._rebuildScanner();
-  },
-  _rebuildScanner(){
-    var ul=document.getElementById('beacon-list');ul.innerHTML='';
-    // Metadata header
-    var meta=this.scanMeta;
-    var li=document.createElement('li');
-    li.innerHTML='<span style="font-size:7px;color:#6b7280">Scan #'+meta.scanNum+' · '+meta.elapsed+'ms · Poll 5s · '+meta.totalSSIDs+' known</span>';
-    li.style.borderBottom='1px solid rgba(255,102,0,.15)';li.style.background='rgba(68,136,255,.03)';
-    ul.appendChild(li);
-    // Real Wi-Fi nodes
-    var count=this.useRealData?this.realNodes.length:(this.beacons.length+this.staticNodes.length);
-    document.getElementById('beacon-count').textContent=count;
-    if(this.useRealData){
-      this.realNodes.sort(function(a,b){return a.dist-b.dist});
-      this.realNodes.forEach(function(n){
-        var li=document.createElement('li');
-        var color=n.reliable?'#00FF88':(n.persist>30?'#4488FF':'#a855f7');
-        var tag=n.reliable?'<span class="bctag bounce">REL</span>':(n.persist>30?'<span class="bctag" style="background:rgba(68,136,255,.15);color:#4488FF">TRACK</span>':'<span class="bctag wifi">NEW</span>');
-        li.innerHTML='<span style="color:'+color+'">●</span> <span>'+n.ssid+'</span><span class="bctag" style="background:rgba(255,102,0,.1);color:#FF6600">'+n.rssi+'dBm</span><span class="bctag" style="background:rgba(68,136,255,.1);color:#4488FF">'+n.dist+'m</span><span class="bctag" style="background:rgba(136,136,160,.1);color:#8888A0">'+n.persist+'s</span>'+tag;
-        if(n.reliable)li.className='bounce-tag';else li.className='static-tag';
-        ul.appendChild(li);
-      });
-    }else{
-      // Fallback to simulated data
-      var self=this;
-      this.beacons.forEach(function(b){var d=b.data;var dx=b.dot.position.x,dz=b.dot.position.z,dist=Math.sqrt(dx*dx+dz*dz).toFixed(1);var li=document.createElement('li');li.className='bounce-tag';li.innerHTML='<span>● '+d.ssid+'</span><span class="bctag bounce">BOUNCE</span><span class="bctag" style="background:rgba(68,136,255,.1);color:#4488FF">'+dist+'u</span>';ul.appendChild(li)});
-      this.staticNodes.forEach(function(sn){var dist=Math.sqrt(sn.x*sn.x+sn.z*sn.z).toFixed(1);var li=document.createElement('li');li.className='static-tag';li.innerHTML='<span>○ '+sn.name+'</span><span class="bctag wifi">WiFi</span><span class="bctag" style="background:rgba(68,136,255,.1);color:#4488FF">'+dist+'u</span>';ul.appendChild(li)});
-    }
-  },
+  _startScanner(){
     var self=this;
     setInterval(function(){
       // Simulate trajectory
@@ -308,17 +243,43 @@ const Bounce={scene:null,camera:null,renderer:null,composer:null,controls:null,c
         document.getElementById('broadcast-ssid').textContent=genSSID(base,dyn);
       }
       // Re-randomize static node positions slightly (simulates driving past)
-      if(!self.useRealData){
-        for(var i=0;i<self.staticNodes.length;i++){
-          var sn=self.staticNodes[i];
-          sn.x+=(Math.random()-.5)*.5;sn.z+=(Math.random()-.5)*.5;
-          sn.dot.position.set(sn.x,sn.y,sn.z);
-        }
+    if(!self.useRealData){
+        for(var i=0;i<self.staticNodes.length;i++){var sn=self.staticNodes[i];sn.x+=(Math.random()-.5)*.5;sn.z+=(Math.random()-.5)*.5;sn.dot.position.set(sn.x,sn.y,sn.z)}
         self._refreshUI();
       }else{
         self._rebuildScanner();
       }
     },2000);
+  },
+  onScanResults(jsonArray,metaObj){
+    try{
+    this.useRealData=true;
+    var data=JSON.parse(jsonArray);var meta=JSON.parse(metaObj);
+    this.scanMeta=meta;
+    for(var i=0;i<data.length;i++){
+      var d=data[i];
+      var existing=null;
+      for(var j=0;j<this.realNodes.length;j++){if(this.realNodes[j].bssid===d.bssid){existing=this.realNodes[j];break}}
+      if(existing){existing.rssi=d.rssi;existing.dist=d.dist;existing.persist=d.persist;existing.reliable=d.reliable;existing.lastSeen=Date.now()}
+      else{var color=d.reliable?'#00FF88':(d.persist>30?'#4488FF':'#a855f7');var sg=new THREE.SphereGeometry(.35,12,6);var sm=new THREE.MeshBasicMaterial({color:color,transparent:true,opacity:.7,blending:THREE.AdditiveBlending,depthWrite:false});var sdot=new THREE.Mesh(sg,sm);var angle=Math.random()*Math.PI*2;var dist2=Math.min(d.dist*2,30);sdot.position.set(Math.cos(angle)*dist2,0,Math.sin(angle)*dist2);if(this.scene)this.scene.add(sdot);this.realNodes.push({dot:sdot,bssid:d.bssid,ssid:d.ssid,rssi:d.rssi,dist:d.dist,persist:d.persist,reliable:d.reliable,lastSeen:Date.now(),vx:(Math.random()-.5)*1.5,vz:(Math.random()-.5)*1.5})}
+    }
+    var now=Date.now();
+    for(var i=this.realNodes.length-1;i>=0;i--){if(now-this.realNodes[i].lastSeen>30000){if(this.scene)this.scene.remove(this.realNodes[i].dot);this.realNodes.splice(i,1)}}
+    this._rebuildScanner();
+    }catch(e){}
+  },
+  _rebuildScanner(){
+    var ul=document.getElementById('beacon-list');if(!ul)return;ul.innerHTML='';
+    var meta=this.scanMeta;if(meta&&meta.scanNum>0){var li=document.createElement('li');li.innerHTML='<span style="font-size:7px;color:#6b7280">Scan #'+meta.scanNum+' · '+meta.elapsed+'ms · '+meta.totalSSIDs+' known</span>';li.style.borderBottom='1px solid rgba(255,102,0,.15)';li.style.background='rgba(68,136,255,.03)';ul.appendChild(li)}
+    var count=this.useRealData?this.realNodes.length:(this.beacons.length+this.staticNodes.length);
+    document.getElementById('beacon-count').textContent=count;
+    if(this.useRealData){
+      this.realNodes.sort(function(a,b){return a.dist-b.dist});
+      for(var i=0;i<this.realNodes.length;i++){var n=this.realNodes[i];var li=document.createElement('li');var color=n.reliable?'#00FF88':(n.persist>30?'#4488FF':'#a855f7');var tag=n.reliable?'<span class="bctag bounce">REL</span>':(n.persist>30?'<span class="bctag" style="background:rgba(68,136,255,.15);color:#4488FF">+'+n.persist+'s</span>':'<span class="bctag wifi">NEW</span>');li.innerHTML='<span style="color:'+color+'">●</span> '+n.ssid+' <span class="bctag" style="background:rgba(255,102,0,.1);color:#FF6600">'+n.rssi+'dBm</span><span class="bctag" style="background:rgba(68,136,255,.1);color:#4488FF">'+n.dist+'m</span>'+tag;if(n.reliable)li.className='bounce-tag';else li.className='static-tag';ul.appendChild(li)}
+    }else{
+      var self3=this;this.beacons.forEach(function(b){var d=b.data;var dist=Math.sqrt(b.dot.position.x*b.dot.position.x+b.dot.position.z*b.dot.position.z).toFixed(1);var li=document.createElement('li');li.className='bounce-tag';li.innerHTML='<span>● '+d.ssid+'</span><span class="bctag bounce">BOUNCE</span><span class="bctag" style="background:rgba(68,136,255,.1);color:#4488FF">'+dist+'u</span>';ul.appendChild(li)});
+      this.staticNodes.forEach(function(sn){var dist=Math.sqrt(sn.x*sn.x+sn.z*sn.z).toFixed(1);var li=document.createElement('li');li.className='static-tag';li.innerHTML='<span>○ '+sn.name+'</span><span class="bctag wifi">WiFi</span><span class="bctag" style="background:rgba(68,136,255,.1);color:#4488FF">'+dist+'u</span>';ul.appendChild(li)})
+    }
   },
   addSimVehicle(){this._addBeacon({make:MAKES[Math.floor(Math.random()*MAKES.length)],color:COLORS_V[Math.floor(Math.random()*COLORS_V.length)],type:TYPES[Math.floor(Math.random()*TYPES.length)],heading:Math.floor(Math.random()*360),speed:20+Math.floor(Math.random()*70),state:'FL',year:2020+Math.floor(Math.random()*6),fleet:this.fleetMode?'FLT':'CIV',hazard:null,status:'CRUISE',x:(Math.random()-.5)*30,y:0,z:(Math.random()-.5)*30});this._refreshUI()},
   addRandomFleet(){this.fleetMode=true;for(var i=0;i<3+Math.floor(Math.random()*4);i++)this.addSimVehicle();this.fleetMode=false},
@@ -354,13 +315,7 @@ const Bounce={scene:null,camera:null,renderer:null,composer:null,controls:null,c
       a.ring.position.copy(a.dot.position);a.ring.rotation.z+=.01*a.vx;a.group.position.copy(a.dot.position);
       a.label.position.copy(a.dot.position);a.label.position.y+=.8;
     }
-    // Update real Wi-Fi nodes (drift past us)
-    for(var i=0;i<this.realNodes.length;i++){
-      var rn=this.realNodes[i];
-      rn.dot.position.x+=rn.vx*dt;rn.dot.position.z+=rn.vz*dt;
-      rn.dot.position.y+=Math.sin(now*.001+i)*.15*dt;
-      rn.dot.material.opacity=.4+.2*Math.sin(now*.003+i);
-    }
+    for(var i=0;i<self.realNodes.length;i++){var rn=self.realNodes[i];rn.dot.position.x+=rn.vx*dt;rn.dot.position.z+=rn.vz*dt;rn.dot.position.y+=Math.sin(now*.001+i)*.15*dt}
     if(this._fly&&this._flyWp){var t=Math.min(this._flyP/12000,1);this._flyP+=dt*1000;var wp=this._flyWp,i=Math.floor(t*(wp.length-1)),f=(t*(wp.length-1))%1,p0=wp[Math.max(0,i-1)],p1=wp[i],p2=wp[Math.min(wp.length-1,i+1)],p3=wp[Math.min(wp.length-1,i+2)],f2=f*f,f3=f2*f;var pos=new THREE.Vector3(.5*((2*p1.x)+(-p0.x+p2.x)*f+(2*p0.x-5*p1.x+4*p2.x-p3.x)*f2+(-p0.x+3*p1.x-3*p2.x+p3.x)*f3),.5*((2*p1.y)+(-p0.y+p2.y)*f+(2*p0.y-5*p1.y+4*p2.y-p3.y)*f2+(-p0.y+3*p1.y-3*p2.y+p3.y)*f3),.5*((2*p1.z)+(-p0.z+p2.z)*f+(2*p0.z-5*p1.z+4*p2.z-p3.z)*f2+(-p0.z+3*p1.z-3*p2.z+p3.z)*f3));this.camera.position.lerp(pos,.04);if(t>=1){this._fly=false;this.controls.autoRotate=true}}
     this.controls.update();this.composer.render();
   }

@@ -1,10 +1,12 @@
 package com.carrpod.bounce;
 
+import android.Manifest;
 import android.app.Activity;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.content.pm.PackageManager;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.net.wifi.ScanResult;
@@ -29,10 +31,10 @@ import android.widget.Toast;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.Iterator;
 
 public class MainActivity extends Activity {
 
+    private static final int PERM_REQ = 1001;
     private WebView webView;
     private LinearLayout headerOverlay;
     private boolean cleanMode = false;
@@ -70,7 +72,32 @@ public class MainActivity extends Activity {
         setContentView(root);
 
         wifiManager = (WifiManager) getApplicationContext().getSystemService(WIFI_SERVICE);
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            if (checkSelfPermission(Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED ||
+                checkSelfPermission(Manifest.permission.ACCESS_WIFI_STATE) != PackageManager.PERMISSION_GRANTED) {
+                requestPermissions(new String[]{
+                    Manifest.permission.ACCESS_FINE_LOCATION,
+                    Manifest.permission.ACCESS_COARSE_LOCATION,
+                    Manifest.permission.ACCESS_WIFI_STATE,
+                    Manifest.permission.CHANGE_WIFI_STATE
+                }, PERM_REQ);
+                Toast.makeText(this, "Grant Wi-Fi + Location permissions for Bounce scanner", Toast.LENGTH_LONG).show();
+                return;
+            }
+        }
+
         startWifiScanning();
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int code, String[] perms, int[] results) {
+        super.onRequestPermissionsResult(code, perms, results);
+        if (code == PERM_REQ) {
+            boolean granted = results.length > 0 && results[0] == PackageManager.PERMISSION_GRANTED;
+            Toast.makeText(this, granted ? "Permissions granted — starting Wi-Fi scanner" : "Permissions denied — Wi-Fi scanning disabled", Toast.LENGTH_LONG).show();
+            if (granted) startWifiScanning();
+        }
     }
 
     private void startWifiScanning() {
