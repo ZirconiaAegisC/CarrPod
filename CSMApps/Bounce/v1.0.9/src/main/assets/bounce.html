@@ -375,7 +375,7 @@ const Bounce={scene:null,camera:null,renderer:null,composer:null,controls:null,c
     if(this._fly&&this._flyWp&&this._flyWp.length>0){var t=Math.min(this._flyP/10000,1);this._flyP+=dt*1000;var wp=this._flyWp,l=wp.length,i=Math.floor(t*(l-1)),f=(t*(l-1))%1;
       var p0=wp[Math.max(0,i-1)],p1=wp[i],p2=wp[Math.min(l-1,i+1)],p3=wp[Math.min(l-1,i+2)];
       var pos=new THREE.Vector3(.5*((2*p1.x)+(-p0.x+p2.x)*f+(2*p0.x-5*p1.x+4*p2.x-p3.x)*f*f+(-p0.x+3*p1.x-3*p2.x+p3.x)*f*f*f),.5*((2*p1.y)+(-p0.y+p2.y)*f+(2*p0.y-5*p1.y+4*p2.y-p3.y)*f*f+(-p0.y+3*p1.y-3*p2.y+p3.y)*f*f*f),.5*((2*p1.z)+(-p0.z+p2.z)*f+(2*p0.z-5*p1.z+4*p2.z-p3.z)*f*f+(-p0.z+3*p1.z-3*p2.z+p3.z)*f*f*f));
-      this.camera.position.lerp(pos,.04);if(t>=1){if(this._flyLoop){this._flyP=0}else{this._fly=false;this.controls.autoRotate=this.spin;document.getElementById('btn-fly').className='btn btn-o'}}
+      this.camera.position.lerp(pos,.04);if(t>=1){if(this._flyLoop){this._flyP=0}else{this._fly=false;this.controls.autoRotate=this.spin;document.getElementById('btn-fly').className='btn btn-o'}}}
     this.controls.update();
     // POV mode: lock camera to tardigrade position
     if(self.povMode){
