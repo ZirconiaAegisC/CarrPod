@@ -518,9 +518,7 @@ const Bounce={scene:null,camera:null,renderer:null,composer:null,controls:null,c
         if(self.trailLine){self.scene.remove(self.trailLine);if(self.trailLine.geometry)self.trailLine.geometry.dispose();if(self.trailLine.material)self.trailLine.material.dispose()}
         var pts=self.trailPoints.map(function(p){return new THREE.Vector3(p.x,p.y,p.z)});
         self.trailLine=new THREE.Line(new THREE.BufferGeometry().setFromPoints(pts),new THREE.LineBasicMaterial({color:0x00FF88,transparent:true,opacity:.7}));
-        self.scene.add(self.trailLine)}}pacity:.7}));
-        self.scene.add(self.trailLine);
-      }
+        self.scene.add(self.trailLine)}}
     }
     // BT 3D dots follow distance
     for(var i=0;i<self.bt3dNodes.length;i++){var bn=self.bt3dNodes[i],btNode=null;for(var j=0;j<self.btNodes.length;j++){if(self.btNodes[j].addr===bn.addr){btNode=self.btNodes[j];break}}if(btNode){bn.dist=bn.dist*.9+btNode.dist*.1;bn.dot.position.set(Math.cos(bn.angle)*bn.dist,0,Math.sin(bn.angle)*bn.dist)}}
