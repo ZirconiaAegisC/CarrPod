@@ -431,8 +431,8 @@ const Bounce={scene:null,camera:null,renderer:null,composer:null,controls:null,c
   },
   togglePOV(){this.povMode=!this.povMode;var btn=document.getElementById('btn-pov');
     if(this.povMode){this.controls.enabled=false;btn.textContent='POV ON';btn.className='btn btn-g';
-      var ov=document.createElement('div');ov.id='pov-indicator';ov.style.cssText='position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);z-index:5;pointer-events:none;width:8px;height:8px;border-radius:50%;background:rgba(0,255,136,.8);box-shadow:0 0 12px rgba(0,255,136,.6)';document.body.appendChild(ov)}
-    else{this.controls.enabled=true;btn.textContent='POV';btn.className='btn btn-o';var piv=document.getElementById('pov-indicator');if(piv)piv.remove()}
+      var ov=document.createElement('div');ov.id='pov-indicator';ov.style.cssText='position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);z-index:5;pointer-events:none;width:8px;height:8px;border-radius:50%;background:rgba(0,255,136,.8);box-shadow:0 0 12px rgba(0,255,136,.6)';      document.body.appendChild(ov);document.getElementById('btn-pov-less').style.display='inline-block';document.getElementById('btn-pov-more').style.display='inline-block'}
+    else{this.controls.enabled=true;btn.textContent='POV';btn.className='btn btn-o';var piv=document.getElementById('pov-indicator');if(piv)piv.remove();document.getElementById('btn-pov-less').style.display='none';document.getElementById('btn-pov-more').style.display='none'}
   },
   fly(){this._fly=!this._fly;
     if(!this._fly){this.controls.autoRotate=this.spin;document.getElementById('btn-fly').className='btn btn-o';
@@ -499,8 +499,8 @@ const Bounce={scene:null,camera:null,renderer:null,composer:null,controls:null,c
     // POV mode: chase camera behind vehicle (zoomed out)
     if(self.povMode){
       var brr=self.myHeading*Math.PI/180;
-      var cx=self.tardi.group.position.x-Math.sin(brr)*30;
-      var cy=18;var cz=self.tardi.group.position.z-Math.cos(brr)*30;
+      var cx=self.tardi.group.position.x-Math.sin(brr)*self.povDist;
+      var cy=self.povDist*.6;var cz=self.tardi.group.position.z-Math.cos(brr)*self.povDist;
       self.camera.position.lerp(new THREE.Vector3(cx,cy,cz),.04);
       self.camera.lookAt(self.tardi.group.position.x,2,self.tardi.group.position.z);
     }
@@ -515,6 +515,8 @@ const Bounce={scene:null,camera:null,renderer:null,composer:null,controls:null,c
     }
     // BT 3D dots follow distance
     for(var i=0;i<self.bt3dNodes.length;i++){var bn=self.bt3dNodes[i],btNode=null;for(var j=0;j<self.btNodes.length;j++){if(self.btNodes[j].addr===bn.addr){btNode=self.btNodes[j];break}}if(btNode){bn.dist=bn.dist*.9+btNode.dist*.1;bn.dot.position.set(Math.cos(bn.angle)*bn.dist,0,Math.sin(bn.angle)*bn.dist)}}
+    // BT pulse
+    for(var i=0;i<self.bt3dNodes.length;i++){var bn=self.bt3dNodes[i];if(bn.dot&&bn.dot.material)bn.dot.material.opacity=.35+.25*Math.sin(now*.002+bn.angle)}
     this.composer.render();
   }
 };
