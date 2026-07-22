@@ -442,9 +442,9 @@ const Bounce={scene:null,camera:null,renderer:null,composer:null,controls:null,c
     this._flyWp=allPos;this._flyP=0;this._flyLoop=true;
   },
   toggleTrail(){this.trailActive=!this.trailActive;var b=document.getElementById('btn-trail'),s=document.getElementById('btn-save');
-    if(this.trailActive){this._trailFrame=0;this.trailPoints=[];if(this.trailLine){this.scene.remove(this.trailLine);this.trailLine=null}b.textContent='TRAIL ON';b.className='btn btn-g';s.style.display='inline-block'}
+    if(this.trailActive){this.trailPoints=[];if(this.trailLine){this.scene.remove(this.trailLine);this.trailLine=null}b.textContent='TRAIL ON';b.className='btn btn-g';s.style.display='inline-block'}
     else{b.textContent='TRAIL';b.className='btn btn-b';s.style.display='none'}},
-  saveTrail(){if(!this.trailPoints||this.trailPoints.length<2)return;try{var d={v:'1.0.54',t:new Date().toISOString(),p:this.trailPoints.map(function(p){return{x:p.x.toFixed(2),y:p.y.toFixed(2),z:p.z.toFixed(2),time:p.time}})};var b=new Blob([JSON.stringify(d,null,2)],{type:'application/json'});var u=URL.createObjectURL(b);var a=document.createElement('a');a.href=u;a.download='bounce-trail-'+new Date().toISOString().replace(/[:.]/g,'-')+'.json';a.click();URL.revokeObjectURL(u)}catch(e){}},
+  saveTrail(){if(!this.trailPoints||this.trailPoints.length<2)return;var d={v:'1.0.51',t:new Date().toISOString(),p:this.trailPoints.map(function(p){return{x:p.x.toFixed(2),y:p.y.toFixed(2),z:p.z.toFixed(2),time:p.time}})};var b=new Blob([JSON.stringify(d,null,2)],{type:'application/json'});var u=URL.createObjectURL(b);var a=document.createElement('a');a.href=u;a.download='bounce-trail-'+new Date().toISOString().replace(/[:.]/g,'-')+'.json';a.click();URL.revokeObjectURL(u)},
   adjustFlySpeed(delta){this._flySpeed=Math.max(.25,Math.min(3,this._flySpeed+delta));},
   _animate(){
     var self=this;
@@ -481,20 +481,15 @@ const Bounce={scene:null,camera:null,renderer:null,composer:null,controls:null,c
       self.camera.position.lerp(new THREE.Vector3(cx,cy,cz),.04);
       self.camera.lookAt(self.tardi.group.position.x,2,self.tardi.group.position.z);
     }
-    // Trail (decimated: 2 points/sec, max 1000 points, auto-save at 900)
+    // Trail (decimated)
     if(self.trailActive){self._trailFrame=(self._trailFrame||0)+1;
-      if(self._trailFrame%30===0){
-        self.trailPoints.push({x:self.tardi.group.position.x,y:self.tardi.group.position.y,z:self.tardi.group.position.z,time:Date.now()});
-        if(self.trailPoints.length>1000){self.trailPoints.shift()}
-        // Auto-save at limit
-        if(self.trailPoints.length===900){self.autoSaved=true;var sd={v:'1.0.54',t:new Date().toISOString(),p:self.trailPoints.slice(-600).map(function(p){return{x:p.x.toFixed(2),y:p.y.toFixed(2),z:p.z.toFixed(2),time:p.time}})};
-          try{var sb=new Blob([JSON.stringify(sd)],{type:'application/json'});var su=URL.createObjectURL(sb);var sa=document.createElement('a');sa.href=su;sa.download='bounce-trail-auto-'+new Date().toISOString().replace(/[:.]/g,'-')+'.json';sa.click();URL.revokeObjectURL(su)}catch(e){}}
-        // Rebuild line every 15 points
-        if(self.trailPoints.length%15===0&&self.trailPoints.length>1){
-          try{if(self.trailLine)self.scene.remove(self.trailLine);
-            self.trailLine=new THREE.Line(new THREE.BufferGeometry().setFromPoints(self.trailPoints.map(function(p){return new THREE.Vector3(p.x,p.y,p.z)})),new THREE.LineBasicMaterial({color:0x00FF88,transparent:true,opacity:.7}));
-            self.scene.add(self.trailLine)}catch(e){self.trailPoints=[];self.trailActive=false}
-        }}}}
+      if(self._trailFrame%30===0){self.trailPoints.push({x:self.tardi.group.position.x,y:self.tardi.group.position.y,z:self.tardi.group.position.z,time:Date.now()});
+        if(self.trailPoints.length>1000)self.trailPoints.shift();
+        if(self.trailPoints.length===900){try{var sd={v:'1.0.54',t:new Date().toISOString(),p:self.trailPoints.slice(-600).map(function(p){return{x:p.x.toFixed(2),y:p.y.toFixed(2),z:p.z.toFixed(2),time:p.time}})},sb=new Blob([JSON.stringify(sd)],{type:'application/json'}),su=URL.createObjectURL(sb),sa=document.createElement('a');sa.href=su;sa.download='bounce-trail-auto-'+new Date().toISOString().replace(/[:.]/g,'-')+'.json';sa.click();URL.revokeObjectURL(su)}catch(e){}}
+        if(self.trailPoints.length%15===0){try{if(self.trailLine)self.scene.remove(self.trailLine);
+          self.trailLine=new THREE.Line(new THREE.BufferGeometry().setFromPoints(self.trailPoints.map(function(p){return new THREE.Vector3(p.x,p.y,p.z)})),new THREE.LineBasicMaterial({color:0x00FF88,transparent:true,opacity:.7}));
+          self.scene.add(self.trailLine)}catch(e){self.trailPoints=[];self.trailActive=false}}
+      }}
     // BT pulse
     for(var i=0;i<self.bt3dNodes.length;i++){var bn=self.bt3dNodes[i];if(bn.dot&&bn.dot.material)bn.dot.material.opacity=.35+.25*Math.sin(now*.002+bn.angle)}
     this.composer.render();
