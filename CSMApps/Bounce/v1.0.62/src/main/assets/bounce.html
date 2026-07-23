@@ -190,7 +190,7 @@ const Bounce={scene:null,camera:null,renderer:null,composer:null,controls:null,c
     var tm=new THREE.MeshPhongMaterial({color:0xFF6600,emissive:0x331100,transparent:true,opacity:.85,shininess:40});
     var top=new THREE.Mesh(tg,tm);g.add(top);
     var bg=new THREE.SphereGeometry(1.2,48,24,0,Math.PI*2,Math.PI*.4,Math.PI*.75);
-    var bm=new THREE.MeshPhongMaterial({color:0xFF8833,emissive:0x331100,transparent:true,opacity:.7,shininess:30});
+    var bm=new THREE.MeshPhongMaterial({color:0xFF8833,emissive:0x331100,transparent:true,opacity:.9,shininess:30});
     var bot=new THREE.Mesh(bg,bm);bot.position.y=-.6;g.add(bot);
     var eg=new THREE.SphereGeometry(.15,16,8);var em2=new THREE.MeshBasicMaterial({color:0xFFFFFF});
     var e1=new THREE.Mesh(eg,em2);e1.position.set(.5,.6,.9);g.add(e1);
@@ -328,7 +328,7 @@ const Bounce={scene:null,camera:null,renderer:null,composer:null,controls:null,c
         existing.approaching=delta>1;
       }else{
         var color=d.reliable?'#00FF88':(d.persist>30?'#4488FF':'#a855f7');
-        var sg=new THREE.SphereGeometry(.35,12,6);var sm=new THREE.MeshBasicMaterial({color:color,transparent:true,opacity:.7,blending:THREE.AdditiveBlending,depthWrite:false});
+        var sg=new THREE.SphereGeometry(.35,12,6);var sm=new THREE.MeshBasicMaterial({color:color,transparent:true,opacity:.9,blending:THREE.AdditiveBlending,depthWrite:false});
         var sdot=new THREE.Mesh(sg,sm);
         var angle=Math.random()*Math.PI*2;var dist2=Math.min(d.dist*2,30);
         sdot.position.set(Math.cos(angle)*dist2,0,Math.sin(angle)*dist2);
@@ -431,8 +431,8 @@ const Bounce={scene:null,camera:null,renderer:null,composer:null,controls:null,c
   },
   togglePOV(){this.povMode=!this.povMode;var btn=document.getElementById('btn-pov');
     if(this.povMode){this.controls.enabled=false;btn.textContent='POV ON';btn.className='btn btn-g';
-      var ov=document.createElement('div');ov.id='pov-indicator';ov.style.cssText='position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);z-index:5;pointer-events:none;width:8px;height:8px;border-radius:50%;background:rgba(0,255,136,.8);box-shadow:0 0 12px rgba(0,255,136,.6)';      document.body.appendChild(ov);document.getElementById('btn-pov-less').style.display='inline-block';document.getElementById('btn-pov-more').style.display='inline-block'}
-    else{this.controls.enabled=true;btn.textContent='POV';btn.className='btn btn-o';var piv=document.getElementById('pov-indicator');if(piv)piv.remove();document.getElementById('btn-pov-less').style.display='none';document.getElementById('btn-pov-more').style.display='none'}
+      var ov=document.createElement('div');ov.id='pov-indicator';ov.style.cssText='position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);z-index:5;pointer-events:none;width:8px;height:8px;border-radius:50%;background:rgba(0,255,136,.8);box-shadow:0 0 12px rgba(0,255,136,.6)';document.body.appendChild(ov);var a=document.getElementById('btn-pov-less'),b=document.getElementById('btn-pov-more');if(a)a.style.display='inline-block';if(b)b.style.display='inline-block'}
+    else{this.controls.enabled=true;btn.textContent='POV';btn.className='btn btn-o';var piv=document.getElementById('pov-indicator');if(piv)piv.remove();var a=document.getElementById('btn-pov-less'),b=document.getElementById('btn-pov-more');if(a)a.style.display='none';if(b)b.style.display='none'}
   },
   fly(){this._fly=!this._fly;
     if(!this._fly){this.controls.autoRotate=this.spin;document.getElementById('btn-fly').className='btn btn-o';
@@ -505,17 +505,19 @@ const Bounce={scene:null,camera:null,renderer:null,composer:null,controls:null,c
       self.camera.lookAt(self.tardi.group.position.x,2,self.tardi.group.position.z);
     }
     // Trail recording
-    if(self.trailActive){self.trailPoints.push({x:self.tardi.group.position.x,y:self.tardi.group.position.y,z:self.tardi.group.position.z,time:Date.now()});
-      if(self.trailPoints.length>1){
-        if(self.trailLine)self.scene.remove(self.trailLine);
+    if(self.trailActive&&self.mySpeed>1){self._tf=(self._tf||0)+1;
+      self.trailPoints.push({x:self.tardi.group.position.x,y:self.tardi.group.position.y,z:self.tardi.group.position.z,time:Date.now()});
+      if(self.trailPoints.length>2000)self.trailPoints.shift()
+      if(self._tf%5===0&&self.trailPoints.length>1){
+        if(self.trailLine){self.scene.remove(self.trailLine);if(self.trailLine.geometry)self.trailLine.geometry.dispose();if(self.trailLine.material)self.trailLine.material.dispose()}
         var pts=self.trailPoints.map(function(p){return new THREE.Vector3(p.x,p.y,p.z)});
-        self.trailLine=new THREE.Line(new THREE.BufferGeometry().setFromPoints(pts),new THREE.LineBasicMaterial({color:0x00FF88,transparent:true,opacity:.7}));
+        var smoothed=pts;if(pts.length>3){try{var curve=new THREE.CatmullRomCurve3(pts);smoothed=curve.getPoints(Math.min(600,pts.length*2))}catch(e){}}
+        self.trailLine=new THREE.Line(new THREE.BufferGeometry().setFromPoints(smoothed),new THREE.LineBasicMaterial({color:0x00FF88,transparent:true,opacity:.9}));
         self.scene.add(self.trailLine);
       }
     }
     // BT 3D dots follow distance
     for(var i=0;i<self.bt3dNodes.length;i++){var bn=self.bt3dNodes[i],btNode=null;for(var j=0;j<self.btNodes.length;j++){if(self.btNodes[j].addr===bn.addr){btNode=self.btNodes[j];break}}if(btNode){bn.dist=bn.dist*.9+btNode.dist*.1;bn.dot.position.set(Math.cos(bn.angle)*bn.dist,0,Math.sin(bn.angle)*bn.dist)}}
-    // BT pulse
     for(var i=0;i<self.bt3dNodes.length;i++){var bn=self.bt3dNodes[i];if(bn.dot&&bn.dot.material)bn.dot.material.opacity=.35+.25*Math.sin(now*.002+bn.angle)}
     this.composer.render();
   }
