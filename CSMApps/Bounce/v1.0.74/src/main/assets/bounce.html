@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>Bounce v1.0.2 — TAF/DMV Mesh Network | CarrPod</title>
+  <script src="js/three.min.js"></script>
+  <script src="js/OrbitControls.js"></script>
+  <script src="js/EffectComposer.js"></script>
+  <script src="js/RenderPass.js"></script>
+  <script src="js/ShaderPass.js"></script>
+  <script src="js/CopyShader.js"></script>
+  <script src="js/UnrealBloomPass.js"></script>
+  <script src="js/LuminosityHighPassShader.js"></script>
+  <style>
+    :root{--bo:#FF6600;--bg2:#00FF88;--bb:#4488FF;--by:#FFCC00;--br:#FF4466;--bp:#a855f7}
+    *{box-sizing:border-box}body{font-family:system-ui,sans-serif;background:#010206;color:#e2e8f0;overflow:hidden;margin:0}
+    #canvas-container{position:fixed;top:0;left:0;width:100vw;height:100vh;z-index:1}
+    .hud{background:rgba(3,6,16,.9);border:1px solid rgba(255,102,0,.2);border-radius:10px;z-index:10;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+    .pg{position:fixed;display:flex;flex-direction:column;gap:8px;z-index:20;pointer-events:none;transition:transform .4s cubic-bezier(.4,0,.2,1)}
+    .tab{position:absolute;background:rgba(8,8,16,.95);border:1px solid rgba(255,102,0,.5);color:#FF6600;font-size:9px;font-weight:700;text-align:center;padding:8px 3px;cursor:pointer;z-index:11;letter-spacing:.1em;pointer-events:auto;display:flex;flex-direction:column;align-items:center;justify-content:center;line-height:1.1;width:22px}
+    .tab:hover{color:#FF8833;box-shadow:0 0 14px rgba(255,102,0,.3)}
+    .tab-l{right:0;top:0;bottom:0;border-radius:0 8px 8px 0;border-left:2px solid rgba(255,102,0,.5);transform:translateX(100%)}
+    .tab-r{left:0;top:0;bottom:0;border-radius:8px 0 0 8px;border-right:2px solid rgba(255,102,0,.5);transform:translateX(-100%)}
+    .btn{padding:6px 11px;border-radius:5px;cursor:pointer;font-size:10px;text-transform:uppercase;letter-spacing:.05em;transition:all .2s;border:1px solid;font-weight:600}
+    .btn-o{background:rgba(255,102,0,.1);border-color:rgba(255,102,0,.35);color:#FF6600}.btn-o:active{background:rgba(255,102,0,.25)}
+    .btn-g{background:rgba(0,255,136,.1);border-color:rgba(0,255,136,.35);color:#00FF88}.btn-g:active{background:rgba(0,255,136,.25)}
+    .btn-b{background:rgba(68,136,255,.1);border-color:rgba(68,136,255,.35);color:#4488FF}.btn-b:active{background:rgba(68,136,255,.25)}
+    .btn-p{background:rgba(168,85,247,.1);border-color:rgba(168,85,247,.35);color:#a855f7}.btn-p:active{background:rgba(168,85,247,.25)}
+    #hdr{position:fixed;top:0;left:0;right:0;padding:40px 16px 10px 16px;z-index:20;pointer-events:none;display:flex;justify-content:space-between;align-items:flex-start;background:linear-gradient(to bottom,rgba(0,0,0,.95),rgba(0,0,0,.4) 85%,transparent)}
+    #hud-left{bottom:10px;left:10px;width:280px;transform:translateX(0)}
+    #hud-right{bottom:10px;right:10px;width:280px;transform:translateX(0)}
+    .flex{display:flex}.gap-1{gap:4px}.gap-2{gap:.5rem}.flex-wrap{flex-wrap:wrap}.justify-between{justify-content:space-between}
+    .pointer-events-auto{pointer-events:auto}.pointer-events-none{pointer-events:none}
+    .text-xs{font-size:.68rem}.font-bold{font-weight:700}.font-mono{font-family:monospace}.uppercase{text-transform:uppercase}
+    .p-2{padding:8px}.pb-1{padding-bottom:3px}.mb-1{margin-bottom:3px}.mb-2{margin-bottom:6px}.mt-1{margin-top:3px}
+    .text-orange{color:#FF6600}.text-green{color:#00FF88}.text-blue{color:#4488FF}.text-yellow{color:#FFCC00}.text-red{color:#FF4466}.text-purple{color:#a855f7}.text-gray{color:#9ca3af}
+    .border-b{border-bottom-width:1px}.rounded-full{border-radius:999px}
+    #beacon-list{font-size:8px;line-height:1.5;max-height:250px;overflow-y:auto;list-style:none;padding:0;margin:0}
+    #beacon-list li{padding:2px 3px;border-bottom:1px solid rgba(255,102,0,.06);color:#9ca3af;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap}
+    #beacon-list li.bounce-tag{color:#00FF88;background:rgba(0,255,136,.04)}
+    #beacon-list li.static-tag{color:#a855f7}
+    .bctag{font-size:7px;padding:1px 4px;border-radius:3px;margin-left:3px}
+    .bctag.bounce{background:rgba(0,255,136,.15);color:#00FF88}
+    .bctag.wifi{background:rgba(136,136,160,.1);color:#8888A0}
+    .pulse-g{animation:pulseG 1.5s infinite}@keyframes pulseG{0%,100%{opacity:1}50%{opacity:.5}}
+    .scroll::-webkit-scrollbar{width:3px}.scroll::-webkit-scrollbar-thumb{background:rgba(255,102,0,.3);border-radius:2px}
+  </style>
+</head>
+<body>
+<div id="canvas-container"></div>
+
+<div id="hdr">
+  <div class="pointer-events-auto">
+    <h1 style="font-size:20px;font-weight:700;color:transparent;background:linear-gradient(135deg,#FF6600,#4488FF,#00FF88);-webkit-background-clip:text;background-clip:text;filter:drop-shadow(0 0 14px rgba(255,102,0,.8))">BOUNCE</h1>
+    <p class="text-xs text-orange mt-1" style="opacity:.85"><span class="font-bold text-white">TAF/DMV Mesh · ATC-Ready</span><span style="color:#4488FF;margin-left:8px">v1.0.2</span></p>
+  </div>
+  <div class="pointer-events-auto flex gap-2 items-start">
+    <button id="btn-tuck" class="btn btn-g" onclick="UI.tuckToggle()">TUCK</button>
+    <button id="btn-pov" class="btn btn-o" onclick="Bounce.togglePOV()">POV</button>
+    <button id="btn-pov-less" class="btn btn-o" onclick="Bounce.povDist=Math.max(10,Bounce.povDist-5)" style="display:none;padding:4px 6px">-</button>
+    <button id="btn-pov-more" class="btn btn-o" onclick="Bounce.povDist=Math.min(120,Bounce.povDist+5)" style="display:none;padding:4px 6px">+</button>
+    <button id="btn-fleet" class="btn btn-p" onclick="Bounce.toggleFleet()">FLEET</button>
+    <button id="btn-lock" class="btn btn-o" onclick="LockScreen.enable()">LOCK</button>
+  </div>
+</div>
+
+<div id="hud-left2" class="pg" style="gap:4px;bottom:340px">
+  <div class="tab tab-l" onclick="UI2.toggle()">S<br>C<br>A<br>N</div>
+  <div class="hud pointer-events-auto scroll" style="padding:5px;max-width:280px">
+    <h3 class="text-green text-xs uppercase font-bold border-b pb-1 mb-1" style="border-color:rgba(0,255,136,.3)">Live Wi-Fi</h3>
+    <ul id="scan2-list" style="font-size:8px;max-height:140px;overflow-y:auto;list-style:none;padding:0;margin:0"></ul>
+  </div>
+</div>
+
+<div id="hud-bt" class="pg" style="gap:4px;bottom:480px">
+  <div class="tab tab-l" onclick="UI3.toggle()">B<br>T</div>
+  <div class="hud pointer-events-auto scroll" style="padding:5px;max-width:280px">
+    <h3 class="text-blue text-xs uppercase font-bold border-b pb-1 mb-1" style="border-color:rgba(68,136,255,.3)">Bluetooth</h3>
+    <ul id="bt-list" style="font-size:8px;max-height:120px;overflow-y:auto;list-style:none;padding:0;margin:0"></ul>
+  </div>
+</div>
+
+<div id="hud-left" class="pg" style="gap:4px">
+  <div class="tab tab-l" onclick="UI.toggleLeft()">B<br>E<br>A<br>C<br>O<br>N<br>S</div>
+  <div class="hud p-2 pointer-events-auto">
+    <h3 class="text-orange text-xs uppercase font-bold border-b pb-1 mb-1" style="border-color:rgba(255,102,0,.3)">◇ My Trajectory</h3>
+    <div class="flex justify-between text-xs text-gray mb-1"><span>Heading</span><span id="my-heading" class="text-orange font-mono">---°</span></div>
+    <div class="flex justify-between text-xs text-gray mb-1"><span>License Plate</span><span id="plate-display" class="text-yellow font-mono" style="cursor:pointer" onclick="Bounce.showPlateInput()">---</span></div>
+    <div class="flex justify-between text-xs text-gray mb-1"><span>Origin Key</span><span id="key-display" class="text-purple font-mono">---</span></div>
+    <div class="flex justify-between text-xs text-gray mb-1"><span>Speed</span><span id="my-speed" class="text-green font-mono">---</span></div>
+    <div class="flex justify-between text-xs text-gray mb-1"><span>Orientation</span><span id="orn-display" class="text-yellow font-mono">---</span></div>
+    <div class="flex justify-between text-xs text-gray mb-1"><span>Altitude</span><span id="my-alt" class="text-blue font-mono">450 ft</span></div>
+    <div class="flex justify-between text-xs text-gray mb-1"><span>GPS Position</span><span id="gps-display" class="text-green font-mono" style="font-size:7px">---</span></div>
+    <div class="flex justify-between text-xs text-gray mb-1"><span>Fleet Key</span><span id="fleet-ind" class="text-red font-mono">OFF</span></div>
+    <div class="flex justify-between text-xs text-gray"><span>Broadcast</span><span id="broadcast-status" class="text-red font-mono">OFF</span></div>
+    <div id="broadcast-bar" style="display:none;margin-top:4px;padding:3px 5px;background:rgba(0,255,136,.08);border:1px solid rgba(0,255,136,.25);border-radius:4px">
+      <span class="text-green" style="font-size:7px">TX: </span><span id="broadcast-ssid" class="text-white font-mono" style="font-size:7px">---</span>
+    </div>
+  </div>
+  <div class="hud p-2 pointer-events-auto scroll">
+    <h3 class="text-blue text-xs uppercase font-bold border-b pb-1 mb-1" style="border-color:rgba(68,136,255,.3)">◇ Scanner · <span id="beacon-count" class="text-blue font-mono">0</span> signals</h3>
+    <ul id="beacon-list"></ul>
+  </div>
+</div>
+
+<div id="hud-right" class="pg" style="gap:4px">
+  <div class="tab tab-r" onclick="UI.toggleRight()">F<br>O<br>R<br>G<br>E</div>
+  <div class="hud pointer-events-auto" style="padding:5px">
+    <h3 class="text-green text-xs uppercase font-bold border-b pb-1 mb-1" style="border-color:rgba(0,255,136,.3)">◇ Controls</h3>
+    <div class="flex gap-1 flex-wrap">
+      <button onclick="Bounce.showPlateInput()" class="btn btn-o">+VEHICLE</button>
+      <button onclick="Bounce.addRandomFleet()" class="btn btn-b">+FLEET</button>
+      <button id="btn-fly-h" class="btn btn-o" onclick="Bounce.fly()">FLY</button>
+      <button id="btn-spin-h" class="btn btn-b" onclick="Bounce.toggleSpin()">SPIN</button>
+      <button onclick="Bounce.scatterBeacons()" class="btn btn-p">SCATTER</button>
+      <button id="btn-broadcast" onclick="Bounce.toggleBroadcast()" class="btn btn-g">BROADCAST</button>
+      <button id="btn-trail" onclick="Bounce.toggleTrail()" class="btn btn-b">TRAIL</button>
+      <button id="btn-save" onclick="Bounce.saveTrail()" class="btn btn-g" style="display:none">SAVE</button>
+    </div>
+  </div>
+  <div class="hud pointer-events-auto" style="padding:5px">
+    <h3 class="text-yellow text-xs uppercase font-bold border-b pb-1 mb-1" style="border-color:rgba(255,204,0,.3)">◇ Legend</h3>
+    <div style="font-size:8px;color:#9ca3af;line-height:1.4">
+      <span style="color:#FF6600">●You</span> <span style="color:#00FF88">●Bounce</span> <span style="color:#4488FF">●Vehicle</span> <span style="color:#a855f7">●Static</span> <span style="color:#FF4466">●Hazard</span>
+      <br><span style="font-size:7px;color:#6b7280">FAA METAR: RA rain SN snow FG fog TS storm BR mist HZ haze FZ ice</span>
+      <br><span style="font-size:7px;color:#6b7280">Wind: 09010KT Vis: 5SM Sky: FEW BKN OVC CLR</span>
+      <br><span style="color:#FF6600;font-weight:700">Bounce v1.0.37</span> · CarrPod</div>
+  </div>
+  <div class="hud pointer-events-auto scroll" style="padding:5px">
+    <h3 class="text-green text-xs uppercase font-bold border-b pb-1 mb-1" style="border-color:rgba(0,255,136,.3)">◇ Wi-Fi Scanner</h3>
+    <ul id="wifi-scanner-list" style="font-size:8px;max-height:100px;overflow-y:auto;list-style:none;padding:0;margin:0"></ul>
+  </div>
+</div>
+
+<script>
+function androidBridge(m,d){if(typeof BounceBridge!=='undefined'&&BounceBridge[m])BounceBridge[m](JSON.stringify(d))}
+
+const MAKES=['Ford','Chevy','Toyota','Honda','BMW','Tesla','RAM','GMC','Nissan','Subaru','Jeep','Kia','Hyundai','Volvo','Mack','Peterbilt'];
+const MODELS={Ford:['F-150','Explorer','Mustang','Bronco'],Chevy:['Silverado','Tahoe','Camaro','Malibu'],Toyota:['Camry','RAV4','Tacoma','Corolla'],Honda:['Civic','CR-V','Accord','Pilot'],BMW:['X5','3-Series','M4','X3'],Tesla:['Model3','ModelY','ModelS','Cybertruck'],RAM:['1500','2500','3500'],GMC:['Sierra','Yukon','Terrain'],Nissan:['Altima','Rogue','Sentra'],Subaru:['Outback','Forester','Crosstrek'],Jeep:['Wrangler','Cherokee','GrandCherokee'],Kia:['Telluride','Sportage','Sorento'],Hyundai:['Tucson','SantaFe','Elantra'],Volvo:['XC90','XC60','V60'],Mack:['Anthem','Granite','Pinnacle'],Peterbilt:['579','389','567']};
+const COLORS_V=['White','Black','Silver','Blue','Red','Gray','Green','Orange','Yellow','Brown','Navy','Burgundy','Gold','Tan'];
+const TYPES=['sedan','SUV','truck','semi','van','coupe','EV','hybrid'];
+const HAZARDS=['FOG_PATCH','ICE_BRIDGE','DEBRIS_LN1','DEBRIS_LN2','ANIMAL_XING','CONSTRUCTION','ACCIDENT_AHEAD','FLOODING','LOW_VIS','WIND_GUST','HAIL_RISK','EMERGENCY_VEH'];
+const STATUSES=['CRUISE','ACCEL','BRAKE','TURN_L','TURN_R','LANE_CHG','STOPPED','REVERSE'];
+const FAKE_SSIDS=['HomeNet-5G','ATT-8G7XQ','xfinitywifi','MySpectrum','NETGEAR77','DIRECT-4B','TP-Link_Home','Linksys2020','CenturyLink','CoxWifi','Verizon_5G','Frontier1234','GoogleWifi','Eero-Mesh','OptimumWiFi'];
+const LOCATIONS=['Residence','Business','Municipal','Church','Library','GasStation','Restaurant','Hotel','Warehouse'];
+
+function genSSID(v,dynamic){
+  var h=String(dynamic?dynamic.heading:v.heading||90).padStart(3,'0');
+  var s=String(Math.floor(dynamic?dynamic.speed:v.speed||65)).padStart(3,'0');
+  return 'TAF'+h+'/'+(v.fleet||'CIV')+s+'-'+v.make.substring(0,3).toUpperCase()+v.color.substring(0,3).toUpperCase();
+}
+function genDMVCode(v){return (v.state||'FL')+'-'+String((v.year||2025)).substring(2)+'-'+String(Math.floor(Math.random()*99999)).padStart(5,'0')}
+function makeToColor(mk){var c={Ford:'#2B6EB0',Chevy:'#C4982E',Toyota:'#CC0000',Honda:'#0088CC',BMW:'#1C69D4',Tesla:'#CC0000',RAM:'#8B4513',GMC:'#CC3300',Nissan:'#CC0000',Subaru:'#1E6DB8',Jeep:'#6B8E23',Kia:'#CC0000',Hyundai:'#0077C8',Volvo:'#003366',Mack:'#CC7722',Peterbilt:'#CC0000'};return c[mk]||'#888888'}
+function colorToHex(cl){var c={White:'#F0F0F0',Black:'#222222',Silver:'#C0C0C0',Blue:'#4488FF',Red:'#FF4444',Gray:'#888888',Green:'#44BB44',Orange:'#FF8844',Yellow:'#FFCC00',Brown:'#8B6914',Navy:'#222266',Burgundy:'#882222',Gold:'#CCA600',Tan:'#C4A882'};return c[cl]||'#888888'}
+
+// ═══════════════════════════════════════════
+const Bounce={scene:null,camera:null,renderer:null,composer:null,controls:null,clock:new THREE.Clock(),beacons:[],staticNodes:[],realNodes:[],tardi:{},dots:[],spin:true,fleetMode:false,broadcast:false,povMode:false,povDist:50,myHeading:90,mySpeed:0,myAlt:450,scanMeta:{},useRealData:false,_flyVx:0,_flyVy:0,_flyVz:0,_flySpeed:1,_broadcastSlot:0,licensePlate:'CarrPodNet',originKey:'',_lastTiming:0,btNodes:[],bt3dNodes:[],trailActive:false,trailPoints:[],trailLine:null,
+  init(){
+    var c=document.getElementById('canvas-container');
+    this.scene=new THREE.Scene();this.scene.fog=new THREE.FogExp2(0x010206,.008);
+    this.camera=new THREE.PerspectiveCamera(60,innerWidth/innerHeight,.1,1000);
+    this.camera.position.set(0,18,30);
+    this.renderer=new THREE.WebGLRenderer({antialias:true,alpha:true});
+    this.renderer.setSize(innerWidth,innerHeight);this.renderer.setPixelRatio(Math.min(devicePixelRatio,2));
+    c.appendChild(this.renderer.domElement);
+    this.controls=new THREE.OrbitControls(this.camera,this.renderer.domElement);
+    this.controls.enableDamping=true;this.controls.dampingFactor=.07;this.controls.autoRotate=true;this.controls.autoRotateSpeed=.3;
+    var rp=new THREE.RenderPass(this.scene,this.camera);
+    var bloom=new THREE.UnrealBloomPass(new THREE.Vector2(innerWidth,innerHeight),1.0,.4,.8);
+    this.composer=new THREE.EffectComposer(this.renderer);this.composer.addPass(rp);this.composer.addPass(bloom);
+    this.scene.add(new THREE.AmbientLight(0x151525));
+    var pl=new THREE.PointLight(0xffffff,2,150);pl.position.set(0,25,0);this.scene.add(pl);
+    this._buildGrid();this._buildTardigrade();this._genBeacons(8);this._genStaticNodes(12);
+    window.addEventListener('resize',()=>{this.camera.aspect=innerWidth/innerHeight;this.camera.updateProjectionMatrix();this.renderer.setSize(innerWidth,innerHeight);this.composer.setSize(innerWidth,innerHeight)});
+    document.getElementById('fleet-ind').textContent='OFF';
+    this._startScanner();this._animate();setTimeout(()=>{androidBridge('onReady',{loaded:true})},1000);
+  },
+  _buildGrid(){
+    var m=new THREE.LineBasicMaterial({color:0x0a1230,transparent:true,opacity:.3});
+    for(var x=-40;x<=40;x+=5){this.scene.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints([new THREE.Vector3(x,-.1,-40),new THREE.Vector3(x,-.1,40)]),m))}
+    for(var z=-40;z<=40;z+=5){this.scene.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints([new THREE.Vector3(-40,-.1,z),new THREE.Vector3(40,-.1,z)]),m))}
+    var rm=new THREE.LineBasicMaterial({color:0xFF6600,transparent:true,opacity:.5,linewidth:1});this.scene.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints([new THREE.Vector3(0,-.1,-45),new THREE.Vector3(0,-.1,-35)]),rm));
+    var nm=new THREE.LineBasicMaterial({color:0x4488FF,transparent:true,opacity:.5});this.scene.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints([new THREE.Vector3(0,-.1,45),new THREE.Vector3(0,-.1,35)]),nm));
+    var em=new THREE.LineBasicMaterial({color:0x00FF88,transparent:true,opacity:.5});this.scene.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints([new THREE.Vector3(45,-.1,0),new THREE.Vector3(35,-.1,0)]),em));
+    var wm=new THREE.LineBasicMaterial({color:0xFF4466,transparent:true,opacity:.5});this.scene.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints([new THREE.Vector3(-45,-.1,0),new THREE.Vector3(-35,-.1,0)]),wm));
+  },
+  _buildTardigrade(){
+    var g=new THREE.Group();g.position.set(0,0,0);
+    var tg=new THREE.SphereGeometry(1.4,48,24,0,Math.PI*2,0,Math.PI*.7);
+    var tm=new THREE.MeshPhongMaterial({color:0xFF6600,emissive:0x331100,transparent:true,opacity:.85,shininess:40});
+    var top=new THREE.Mesh(tg,tm);g.add(top);
+    var bg=new THREE.SphereGeometry(1.2,48,24,0,Math.PI*2,Math.PI*.4,Math.PI*.75);
+    var bm=new THREE.MeshPhongMaterial({color:0xFF8833,emissive:0x331100,transparent:true,opacity:.9,shininess:30});
+    var bot=new THREE.Mesh(bg,bm);bot.position.y=-.6;g.add(bot);
+    var eg=new THREE.SphereGeometry(.15,16,8);var em2=new THREE.MeshBasicMaterial({color:0xFFFFFF});
+    var e1=new THREE.Mesh(eg,em2);e1.position.set(.5,.6,.9);g.add(e1);
+    var e2=new THREE.Mesh(eg,em2);e2.position.set(-.5,.6,.9);g.add(e2);
+    var wg=new THREE.SphereGeometry(1.7,32,16);var wm=new THREE.MeshBasicMaterial({color:0xFF6600,wireframe:true,transparent:true,opacity:.15});var wire=new THREE.Mesh(wg,wm);wire.name='wire';g.add(wire);
+    var rg=new THREE.TorusGeometry(1.8,.03,16,48);var rm2=new THREE.MeshBasicMaterial({color:0xFF6600,transparent:true,opacity:.5});var ring=new THREE.Mesh(rg,rm2);    ring.rotation.x=Math.PI/2;ring.position.y=.2;g.add(ring);
+    // Direction arrow (shows bearing)
+    var arr=new THREE.ConeGeometry(.2,.6,8);var arm=new THREE.MeshBasicMaterial({color:0x4488FF});var arrow=new THREE.Mesh(arr,arm);arrow.position.set(0,0,2.2);arrow.name='bearingArrow';g.add(arrow);
+    this.scene.add(g);this.tardi={group:g,top,bot,wire,ring,arrow};
+  },
+  _genBeacons(n){for(var i=0;i<n;i++)this._addBeacon({make:MAKES[Math.floor(Math.random()*MAKES.length)],color:COLORS_V[Math.floor(Math.random()*COLORS_V.length)],type:TYPES[Math.floor(Math.random()*TYPES.length)],heading:Math.floor(Math.random()*360),speed:15+Math.floor(Math.random()*75),state:'FL',year:2018+Math.floor(Math.random()*8),fleet:Math.random()>.7?'FLT':'CIV',hazard:Math.random()>.85?HAZARDS[Math.floor(Math.random()*HAZARDS.length)]:null,status:STATUSES[Math.floor(Math.random()*STATUSES.length)],x:(Math.random()-.5)*35,y:(Math.random()-.2)*8,z:(Math.random()-.5)*35});this._refreshUI()},
+  _addBeacon(v){
+    var color=v.hazard?'#FF4466':v.fleet==='FLT'?'#00FF88':'#4488FF';
+    if(v.hazard)color=colorToHex(v.color);else if(v.fleet!=='FLT')color=makeToColor(v.make);
+    var bg=new THREE.SphereGeometry(.5,16,8);var bmm=new THREE.MeshBasicMaterial({color:color,transparent:true,opacity:.8});
+    var dot=new THREE.Mesh(bg,bmm);dot.position.set(v.x||(Math.random()-.5)*35,v.y||0,v.z||(Math.random()-.5)*35);
+    var ringg=new THREE.TorusGeometry(.65,.04,8,16);var ringm=new THREE.MeshBasicMaterial({color:color,transparent:true,opacity:.4});
+    var ring=new THREE.Mesh(ringg,ringm);ring.rotation.x=Math.PI/2;
+    var grp=new THREE.Group();grp.add(dot);grp.add(ring);this.scene.add(grp);
+    var label=this._makeLabel(v.make.charAt(0)+v.color.charAt(0));label.position.copy(dot.position);label.position.y+=.8;this.scene.add(label);
+    v.id='B'+Date.now()+Math.floor(Math.random()*999);v.ssid=genSSID(v,null);v.dmv=genDMVCode(v);
+    var b={group:grp,dot,ring,label,data:v,home:{x:dot.position.x,y:dot.position.y,z:dot.position.z},vx:0,vy:0,vz:0};this.beacons.push(b);return b;
+  },
+  _genStaticNodes(n){
+    for(var i=0;i<n;i++){
+      var name=FAKE_SSIDS[Math.floor(Math.random()*FAKE_SSIDS.length)];
+      var loc=LOCATIONS[Math.floor(Math.random()*LOCATIONS.length)];
+      var x=(Math.random()-.5)*80,y=0,z=(Math.random()-.5)*80;
+      var sg=new THREE.SphereGeometry(.2,8,4);
+      var sm=new THREE.MeshBasicMaterial({color:0xa855f7,transparent:true,opacity:.45,blending:THREE.AdditiveBlending,depthWrite:false});
+      var sdot=new THREE.Mesh(sg,sm);sdot.position.set(x,y,z);this.scene.add(sdot);
+      this.staticNodes.push({dot:sdot,name,loc,x,y,z});
+    }
+  },
+  _makeLabel(txt){
+    var c=document.createElement('canvas');c.width=c.height=64;
+    var ctx=c.getContext('2d');ctx.fillStyle='white';ctx.font='bold 28px monospace';ctx.textAlign='center';ctx.textBaseline='middle';ctx.fillText(txt,32,32);
+    var tx=new THREE.CanvasTexture(c);tx.minFilter=THREE.LinearFilter;
+    var sm=new THREE.SpriteMaterial({map:tx,transparent:true,depthWrite:false,opacity:.9});
+    var s=new THREE.Sprite(sm);s.scale.set(.8,.8,1);return s;
+  },
+  _refreshUI(){
+    var ul=document.getElementById('beacon-list');ul.innerHTML='';
+    if(this.scanMeta&&this.scanMeta.scanNum>0){
+      var h=document.createElement('li');h.innerHTML='<span style="font-size:7px;color:#6b7280">Scan #'+this.scanMeta.scanNum+' · '+this.scanMeta.elapsed+'ms · '+this.scanMeta.total+' known</span>';h.style.borderBottom='1px solid rgba(255,102,0,.15)';h.style.background='rgba(68,136,255,.03)';ul.appendChild(h);
+    }
+    var total=this.useRealData?this.realNodes.length:0;
+    document.getElementById('beacon-count').textContent=total;
+    if(this.useRealData&&this.realNodes.length>0){
+      this.realNodes.sort(function(a,b){return a.dist-b.dist});
+      for(var i=0;i<this.realNodes.length;i++){var n=this.realNodes[i];var li=document.createElement('li');var color=n.reliable?'#00FF88':(n.persist>30?'#4488FF':'#a855f7');var tag=n.reliable?'REL':(n.persist>30?'TRACK':'NEW');li.innerHTML='<span style="color:'+color+'">●</span> '+n.ssid+' <span style="color:#FF6600;font-size:7px">'+n.rssi+'dBm</span> <span style="color:#4488FF;font-size:7px">'+n.dist+'m</span> <span style="color:#6b7280;font-size:7px">'+n.persist+'s '+tag+'</span>';if(n.reliable)li.className='bounce-tag';else li.className='static-tag';ul.appendChild(li)}
+    }else if(!this.useRealData){
+      ul.innerHTML='<li style="color:#6b7280;text-align:center;padding:8px">scanning for Wi-Fi signals...</li>';
+    }
+  },
+  onBtResult(jsonStr){
+    var r=typeof jsonStr==='string'?JSON.parse(jsonStr):jsonStr;
+    if(!this.btNodes)this.btNodes=[];
+    var existing=null;
+    for(var i=0;i<this.btNodes.length;i++){if(this.btNodes[i].addr===r.addr){existing=this.btNodes[i];break}}
+    if(existing){existing.rssi=r.rssi;existing.dist=r.dist;existing.lastSeen=Date.now()}
+    else{
+      this.btNodes.push({name:r.name||r.addr,addr:r.addr,rssi:r.rssi,dist:r.dist,lastSeen:Date.now()});
+      // Create 3D dot
+      if(this.scene){
+        var angle=(r.addr||'AA').charCodeAt(0)*2.7+((r.addr||'A').charCodeAt(1)||0)*1.3;
+        var bd=new THREE.SphereGeometry(.25,8,4);
+        var bm=new THREE.MeshBasicMaterial({color:0x4488FF,transparent:true,opacity:.6,blending:THREE.AdditiveBlending,depthWrite:false});
+        var dot2=new THREE.Mesh(bd,bm);
+        dot2.position.set(Math.cos(angle)*r.dist,0,Math.sin(angle)*r.dist);
+        this.scene.add(dot2);
+        this.bt3dNodes.push({dot:dot2,addr:r.addr,angle:angle,dist:r.dist,lastSeen:Date.now()});
+      }
+    }
+    var now=Date.now();
+    for(var i=this.btNodes.length-1;i>=0;i--){if(now-this.btNodes[i].lastSeen>60000)this.btNodes.splice(i,1)}
+  },
+  _startScanner(){
+    var self=this;
+    setInterval(function(){
+      if(!self._hasGps){
+        self.myHeading=(self.myHeading+.25+Math.sin(Date.now()*.0001)*.4)%360;
+        self.mySpeed=Math.max(20,Math.min(80,self.mySpeed+(Math.random()-.5)*1.5));
+        self.myAlt=Math.max(100,Math.min(2000,self.myAlt+(Math.random()-.5)*8));
+        document.getElementById('my-heading').textContent=Math.round(self.myHeading)+'°';
+        document.getElementById('my-speed').textContent=Math.round(self.mySpeed)+' mph';
+        document.getElementById('my-alt').textContent=Math.round(self.myAlt)+' ft';
+      }
+      // Update broadcast SSID if TX is on
+      if(self.broadcast){
+        var dyn={heading:self.myHeading,speed:self.mySpeed};
+        var base={make:'CarrPod',color:'Orange',fleet:self.fleetMode?'FLT':'CIV'};
+        document.getElementById('broadcast-ssid').textContent=genSSID(base,dyn);
+      }
+      // Re-randomize static node positions slightly (simulates driving past)
+      for(var i=0;i<self.staticNodes.length;i++){
+        var sn=self.staticNodes[i];
+        sn.x+=(Math.random()-.5)*.5;sn.z+=(Math.random()-.5)*.5;
+        sn.dot.position.set(sn.x,sn.y,sn.z);
+      }
+      self._refreshUI();
+    },250);
+  },
+  onGps(locStr){
+    var loc=typeof locStr==='string'?JSON.parse(locStr):locStr;
+    this._hasGps=true;
+    if(loc.bearing>=0){this.myHeading=loc.bearing;document.getElementById('my-heading').textContent=loc.bearing.toFixed(0)+'°'}
+    this.mySpeed=loc.speed*2.237||0;document.getElementById('my-speed').textContent=this.mySpeed.toFixed(0)+' mph';
+    if(loc.alt>0)document.getElementById('my-alt').textContent=(loc.alt*3.281).toFixed(0)+' ft';
+    this.gps={lat:loc.lat||0,lng:loc.lng||0,alt:loc.alt||0,speed:loc.speed||0,bearing:loc.bearing||0,acc:loc.acc||0};
+    var gpsEl=document.getElementById('gps-display');
+    if(gpsEl)gpsEl.textContent=loc.lat.toFixed(5)+', '+loc.lng.toFixed(5);
+    var ov=document.getElementById('gps-overlay');
+    if(!ov){ov=document.createElement('div');ov.id='gps-overlay';ov.style.cssText='position:fixed;top:80px;left:50%;transform:translateX(-50%);z-index:15;pointer-events:none;background:rgba(0,0,0,.7);padding:4px 10px;border-radius:6px;border:1px solid rgba(68,136,255,.3);font-size:9px;font-family:monospace;color:#4488FF;text-align:center';document.body.appendChild(ov)}
+    ov.innerHTML='📍 '+loc.lat.toFixed(5)+', '+loc.lng.toFixed(5)+' · '+(loc.speed*2.237).toFixed(0)+'mph · ▲'+(loc.alt*3.281).toFixed(0)+'ft · ±'+(loc.acc||0).toFixed(0)+'m';
+  },
+  onScanResults(jsonArray,metaObj){
+    try{
+    this.useRealData=true;
+    var data=JSON.parse(jsonArray);var meta=JSON.parse(metaObj);
+    this.scanMeta=meta;
+    // Scan ripple pulse on screen center
+    var pulse=document.getElementById('scan-pulse');
+    if(!pulse){pulse=document.createElement('div');pulse.id='scan-pulse';pulse.style.cssText='position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);z-index:2;pointer-events:none;width:60px;height:60px;border-radius:50%;border:2px solid rgba(0,255,136,.6);opacity:0';document.body.appendChild(pulse)}
+    pulse.style.transition='none';pulse.style.width='60px';pulse.style.height='60px';pulse.style.opacity='1';
+    setTimeout(function(){pulse.style.transition='all 1.5s ease-out';pulse.style.width='300px';pulse.style.height='300px';pulse.style.opacity='0'},20);
+    for(var i=0;i<data.length;i++){
+      var d=data[i];
+      var existing=null;
+      for(var j=0;j<this.realNodes.length;j++){if(this.realNodes[j].bssid===d.bssid){existing=this.realNodes[j];break}}
+      if(existing){
+        existing.prevRssi=existing.rssi;existing.rssi=d.rssi;existing.dist=d.dist;existing.persist=d.persist;existing.reliable=d.reliable;existing.lastSeen=Date.now();
+        // Direction: if RSSI increasing, node is ahead. If decreasing, behind.
+        var delta=existing.rssi-existing.prevRssi;
+        existing.approaching=delta>1;
+      }else{
+        var color=d.reliable?'#00FF88':(d.persist>30?'#4488FF':'#a855f7');
+        var sg=new THREE.SphereGeometry(.35,12,6);var sm=new THREE.MeshBasicMaterial({color:color,transparent:true,opacity:.9,blending:THREE.AdditiveBlending,depthWrite:false});
+        var sdot=new THREE.Mesh(sg,sm);
+        var angle=Math.random()*Math.PI*2;var dist2=Math.min(d.dist*2,30);
+        sdot.position.set(Math.cos(angle)*dist2,0,Math.sin(angle)*dist2);
+        if(this.scene)this.scene.add(sdot);
+        this.realNodes.push({dot:sdot,bssid:d.bssid,ssid:d.ssid,rssi:d.rssi,dist:d.dist,persist:d.persist,reliable:d.reliable,lastSeen:Date.now(),prevRssi:d.rssi,vx:(Math.random()-.5)*1.5,vz:(Math.random()-.5)*1.5,approaching:false})
+      }
+    }
+    var now2=Date.now();
+    for(var i=this.realNodes.length-1;i>=0;i--){if(now2-this.realNodes[i].lastSeen>120000){if(this.scene)this.scene.remove(this.realNodes[i].dot);this.realNodes.splice(i,1)}}
+    this._refreshUI();
+    }catch(e){}
+  },
+  addSimVehicle(){this._addBeacon({make:MAKES[Math.floor(Math.random()*MAKES.length)],color:COLORS_V[Math.floor(Math.random()*COLORS_V.length)],type:TYPES[Math.floor(Math.random()*TYPES.length)],heading:Math.floor(Math.random()*360),speed:20+Math.floor(Math.random()*70),state:'FL',year:2020+Math.floor(Math.random()*6),fleet:this.fleetMode?'FLT':'CIV',hazard:null,status:'CRUISE',x:(Math.random()-.5)*30,y:0,z:(Math.random()-.5)*30});this._refreshUI()},
+  addRandomFleet(){this.fleetMode=true;for(var i=0;i<3+Math.floor(Math.random()*4);i++)this.addSimVehicle();this.fleetMode=false},
+  scatterBeacons(){this.beacons.forEach(function(b){b.home={x:(Math.random()-.5)*40,y:(Math.random()-.2)*10,z:(Math.random()-.5)*40};b.vx+=(Math.random()-.5)*4;b.vz+=(Math.random()-.5)*4})},
+  resetBeacons(){var self=this;this.beacons.forEach(function(b){b.home={x:(Math.random()-.5)*20,y:0,z:(Math.random()-.5)*20}});setTimeout(function(){var ang=0;self.beacons.forEach(function(b,i){ang+=(Math.PI*2)/self.beacons.length;b.home={x:Math.cos(ang)*(6+Math.random()*10),y:0,z:Math.sin(ang)*(6+Math.random()*10)}})},2000);},
+  toggleBroadcast(){
+    this.broadcast=!this.broadcast;
+    var st=document.getElementById('broadcast-status'),bar=document.getElementById('broadcast-bar'),btn=document.getElementById('btn-broadcast');
+    if(this.broadcast){
+      bar.style.display='block';st.textContent='ON · TX';st.className='text-green font-mono pulse-g';
+      btn.textContent='STOP TX';btn.className='btn btn-o';
+      var self=this;
+      this._doBroadcast();
+      this._broadcastCycle=setInterval(function(){
+        if(!self.broadcast){clearInterval(self._broadcastCycle);return}
+        if(typeof BounceBridge!=='undefined'&&BounceBridge.stopBroadcast)BounceBridge.stopBroadcast();
+        bar.style.display='block';st.textContent='PAUSE · OFF';st.className='text-yellow font-mono';
+        setTimeout(function(){
+          if(!self.broadcast)return;
+          self._doBroadcast();
+        },2600);
+      },5100);
+    }else{
+      bar.style.display='none';st.textContent='OFF';st.className='text-red font-mono';
+      btn.textContent='BROADCAST';btn.className='btn btn-g';
+      if(this._broadcastCycle){clearInterval(this._broadcastCycle);this._broadcastCycle=null}
+      if(typeof BounceBridge!=='undefined'&&BounceBridge.stopBroadcast)BounceBridge.stopBroadcast();
+      if(typeof BounceBridge!=='undefined'&&BounceBridge.updateHeaderText)BounceBridge.updateHeaderText('GPS + Timing Header · v1.0.29');
+    }
+  },
+  _doBroadcast(){
+    this._broadcastSlot=(this._broadcastSlot||0)%4;
+    if(!this.originKey){var s='ABCDEFGHJKLMNPQRSTUVWXYZ23456789';this.originKey=s[Math.floor(Math.random()*s.length)]+s[Math.floor(Math.random()*s.length)]+s[Math.floor(Math.random()*s.length)]}
+    var key=this.originKey,plate=this.licensePlate||'NOID';
+    var base={make:'CarrPod',color:'Orange',fleet:this.fleetMode?'FLT':'CIV'};
+    var dyn={heading:this.myHeading,speed:this.mySpeed};
+    var gps=this.gps||{lat:0,lng:0};
+    var gpsShort=Math.round(Math.abs(gps.lat%1)*10000)+Math.round(Math.abs(gps.lng%1)*10000);
+    var taf=genSSID(base,dyn).replace(/[\/\-\.]/g,'')+'G'+gpsShort;
+    var dirs=['N','NE','E','SE','S','SW','W','NW'];
+    var dir=dirs[Math.round(this.myHeading/45)%8];
+    var mph=Math.round(this.mySpeed||0);
+    var hdg=Math.round(this.myHeading||0);
+    var human='HD'+hdg+'-'+dir+'-'+mph+'mph';
+    var code;
+    var wnd=Math.round(this.myHeading)+'KT';
+    if(this._broadcastSlot===0)code=key+plate.substring(0,22);
+    else if(this._broadcastSlot===1)code=key+taf.substring(0,22);
+    else if(this._broadcastSlot===2)code=key+human.substring(0,22);
+    else code=key+wnd.substring(0,22);
+    this._broadcastSlot++;
+    document.getElementById('broadcast-ssid').textContent=code;
+    document.getElementById('broadcast-status').textContent='ON · TX'+(this._broadcastSlot||4);
+    document.getElementById('broadcast-status').className='text-green font-mono pulse-g';
+    document.getElementById('key-display').textContent=key;
+    if(typeof BounceBridge!=='undefined'&&BounceBridge.startBroadcast)BounceBridge.startBroadcast(code);
+    var slotLabels=['ID','TAF','HUMAN'];
+    var label=slotLabels[(this._broadcastSlot-1+3)%3];
+    var hdr='TX'+this._broadcastSlot+': '+code+(this._lastTiming?' ('+this._lastTiming+'ms)':'');
+    if(typeof BounceBridge!=='undefined'&&BounceBridge.updateHeaderText)BounceBridge.updateHeaderText(hdr);
+  },
+  showPlateInput(){
+    var ov=document.getElementById('plate-overlay');
+    if(!ov){ov=document.createElement('div');ov.id='plate-overlay';ov.style.cssText='position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);z-index:30;background:rgba(0,0,0,.95);padding:16px;border-radius:10px;border:2px solid rgba(255,102,0,.5);text-align:center';document.body.appendChild(ov)}
+    ov.innerHTML='<div style="color:#FF6600;font-size:12px;font-weight:700;margin-bottom:8px">ENTER LICENSE PLATE</div><input id="plate-input" type="text" maxlength="25" placeholder="e.g. FL235FT" value="'+this.licensePlate+'" style="width:200px;padding:8px;background:#1a1a2e;border:1px solid #FF6600;color:#fff;font-size:18px;text-align:center;border-radius:6px;font-family:monospace"><div style="margin-top:10px;display:flex;gap:8px;justify-content:center"><button onclick="Bounce.savePlate()" style="padding:8px 20px;background:rgba(0,255,136,.15);border:1px solid #00FF88;color:#00FF88;border-radius:6px;cursor:pointer;font-weight:700">SAVE</button><button onclick="Bounce.cancelPlate()" style="padding:8px 20px;background:rgba(255,68,102,.15);border:1px solid #FF4466;color:#FF4466;border-radius:6px;cursor:pointer">CANCEL</button></div>';
+    setTimeout(function(){document.getElementById('plate-input').focus()},200);
+  },
+  savePlate(){
+    var inp=document.getElementById('plate-input');
+    if(inp&&inp.value.trim()){this.licensePlate=inp.value.trim().toUpperCase().replace(/[^A-Z0-9]/g,'')}
+    var ov=document.getElementById('plate-overlay');if(ov)ov.remove();
+    var st=document.getElementById('plate-display');if(st)st.textContent='Plate: '+this.licensePlate;
+  },
+  cancelPlate(){var ov=document.getElementById('plate-overlay');if(ov)ov.remove()},
+  onBroadcastStatus(result){
+    var r=typeof result==='string'?JSON.parse(result):result;
+    var st=document.getElementById('broadcast-status');
+    if(r.status==='visible'&&st){st.className='text-green font-mono pulse-g'}
+    else if(r.status==='failed'&&st){st.textContent='TX FAIL';st.className='text-red font-mono'}
+  },
+  onTransitionTiming(ms,ssid,method){
+    this._lastTiming=ms;
+    var hdr='TX'+((this._broadcastSlot||3))+': '+ssid+' ('+ms+'ms '+method+')';
+    if(typeof BounceBridge!=='undefined'&&BounceBridge.updateHeaderText)BounceBridge.updateHeaderText(hdr);
+  },
+  toggleFleet(){this.fleetMode=!this.fleetMode;var self=this;this.beacons.forEach(function(b){b.data.fleet=self.fleetMode?'FLT':'CIV';b.data.ssid=genSSID(b.data,null);b.dot.material.color.set(self.fleetMode?'#00FF88':'#4488FF');b.ring.material.color.set(self.fleetMode?'#00FF88':'#4488FF')});this._refreshUI();document.getElementById('fleet-ind').textContent=this.fleetMode?'FLT-KEY-ACTIVE':'OFF'},
+  toggleSpin(){this.spin=!this.spin;this.controls.autoRotate=this.spin;document.getElementById('btn-spin-h').textContent=this.spin?'SPIN ON':'SPIN'},
+  onCompass(azimuth,orn){
+    if(!this.gps||this.gps.bearing<=0){this.myHeading=azimuth;document.getElementById('my-heading').textContent=azimuth.toFixed(0)+'°'}
+    var el=document.getElementById('orn-display');if(el)el.textContent=orn;
+  },
+  togglePOV(){this.povMode=!this.povMode;var btn=document.getElementById('btn-pov');
+    if(this.povMode){this.controls.enabled=false;btn.textContent='POV ON';btn.className='btn btn-g';
+      var ov=document.createElement('div');ov.id='pov-indicator';ov.style.cssText='position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);z-index:5;pointer-events:none;width:8px;height:8px;border-radius:50%;background:rgba(0,255,136,.8);box-shadow:0 0 12px rgba(0,255,136,.6)';document.body.appendChild(ov);var a=document.getElementById('btn-pov-less'),b=document.getElementById('btn-pov-more');if(a)a.style.display='inline-block';if(b)b.style.display='inline-block'}
+    else{this.controls.enabled=true;btn.textContent='POV';btn.className='btn btn-o';var piv=document.getElementById('pov-indicator');if(piv)piv.remove();var a=document.getElementById('btn-pov-less'),b=document.getElementById('btn-pov-more');if(a)a.style.display='none';if(b)b.style.display='none'}
+  },
+  fly(){this._fly=!this._fly;
+    if(!this._fly){this.controls.autoRotate=this.spin;document.getElementById('btn-fly-h').className='btn btn-o';
+      document.getElementById('btn-slower').style.display='none';document.getElementById('btn-faster').style.display='none';return}
+    document.getElementById('btn-fly-h').className='btn btn-g';
+    document.getElementById('btn-slower').style.display='inline-block';document.getElementById('btn-faster').style.display='inline-block';
+    this._flySpeed=1;
+    this._flyWp=[];this._flyP=0;
+    var allPos=[{x:0,y:8,z:20}];
+    var self=this;
+    if(this.useRealData&&this.realNodes.length>0){this.realNodes.forEach(function(n){allPos.push({x:n.dot.position.x,y:n.dot.position.y+4,z:n.dot.position.z})})}
+    this.beacons.forEach(function(b){allPos.push({x:b.dot.position.x,y:b.dot.position.y+5,z:b.dot.position.z})});
+    this.staticNodes.forEach(function(sn){allPos.push({x:sn.x,y:sn.y+3,z:sn.z})});
+    if(allPos.length<4){for(var i=0;i<8;i++)allPos.push({x:(Math.random()-.5)*40,y:5+Math.random()*8,z:(Math.random()-.5)*40})}
+    this._flyWp=allPos;this._flyP=0;this._flyLoop=true;
+  },
+  toggleTrail(){
+    this.trailActive=!this.trailActive;
+    var btn=document.getElementById('btn-trail'),saveBtn=document.getElementById('btn-save');
+    if(this.trailActive){
+      this.trailPoints=[];
+      if(this.trailLine){this.scene.remove(this.trailLine);this.trailLine=null}
+      btn.textContent='TRAIL ON';btn.className='btn btn-g';saveBtn.style.display='inline-block';
+    }else{
+      btn.textContent='TRAIL';btn.className='btn btn-b';saveBtn.style.display='none';
+    }
+  },
+  saveTrail(){
+    if(!this.trailPoints||this.trailPoints.length<2)return;
+    var data={version:'1.0.49',date:new Date().toISOString(),points:this.trailPoints.map(function(p){return{x:p.x.toFixed(2),y:p.y.toFixed(2),z:p.z.toFixed(2),time:p.time}})};
+    var blob=new Blob([JSON.stringify(data,null,2)],{type:'application/json'});
+    var url=URL.createObjectURL(blob);
+    var a=document.createElement('a');a.href=url;a.download='bounce-trail-'+new Date().toISOString().replace(/[:.]/g,'-')+'.json';a.click();
+    URL.revokeObjectURL(url);
+  },
+  adjustFlySpeed(delta){this._flySpeed=Math.max(.25,Math.min(3,this._flySpeed+delta));},
+  _animate(){
+    var self=this;
+    requestAnimationFrame(function(){self._animate()});var dt=this.clock.getDelta(),now=Date.now();
+    this.tardi.group.rotation.y+=.002;this.tardi.wire.rotation.y+=.003;this.tardi.ring.rotation.z+=.008;
+    // Rotate group to face bearing direction (slowly lerp)
+    var targetRot=self.myHeading*Math.PI/180+Math.PI;
+    var cr=this.tardi.group.rotation.y;this.tardi.group.rotation.y=cr+(targetRot-cr)*.02;
+    var s=1+Math.sin(now*.002)*.06;this.tardi.wire.scale.setScalar(s);
+    var bs=this.beacons,n=bs.length;
+    for(var i=0;i<n;i++){
+      var a=bs[i],ax=0,az=0;
+      for(var j=0;j<n;j++){if(i===j)continue;var b=bs[j];var dx=a.dot.position.x-b.dot.position.x,dz=a.dot.position.z-b.dot.position.z,dist=Math.sqrt(dx*dx+dz*dz)+.01;if(dist<4){var overlap=4-dist,f=overlap*6;ax+=dx/dist*f;az+=dz/dist*f}}
+      a.vx=(a.vx+ax+(a.home.x-a.dot.position.x)*.1)*.88;a.vz=(a.vz+az+(a.home.z-a.dot.position.z)*.1)*.88;
+      a.dot.position.x+=a.vx*dt;a.dot.position.z+=a.vz*dt;a.dot.position.y+=Math.sin(now*.0015+a.data.heading*.01)*.3*dt;
+      a.ring.position.copy(a.dot.position);a.ring.rotation.z+=.01*a.vx;a.group.position.copy(a.dot.position);
+      a.label.position.copy(a.dot.position);a.label.position.y+=.8;
+    }
+    for(var i=0;i<self.realNodes.length;i++){var rn=self.realNodes[i];rn.dot.position.x+=rn.vx*dt;rn.dot.position.z+=rn.vz*dt;rn.dot.position.y+=Math.sin(now*.001+i)*.15*dt}
+    // Momentum: shift grid in direction opposite to bearing (user driving forward)
+    var bearingRad=self.myHeading*Math.PI/180;
+    self.tardi.group.position.x+=Math.sin(bearingRad)*.01;self.tardi.group.position.z+=Math.cos(bearingRad)*.01;
+    if(self.useRealData&&self.realNodes.length>0){self._refreshUI()}
+    if(this._fly&&this._flyWp&&this._flyWp.length>0){var t=Math.min(this._flyP/10000,1);this._flyP+=dt*1000*self._flySpeed;var wp=this._flyWp,l=wp.length,i=Math.floor(t*(l-1)),f=(t*(l-1))%1;var p0=wp[Math.max(0,i-1)],p1=wp[i],p2=wp[Math.min(l-1,i+1)],p3=wp[Math.min(l-1,i+2)];var pos=new THREE.Vector3(.5*((2*p1.x)+(-p0.x+p2.x)*f+(2*p0.x-5*p1.x+4*p2.x-p3.x)*f*f+(-p0.x+3*p1.x-3*p2.x+p3.x)*f*f*f),.5*((2*p1.y)+(-p0.y+p2.y)*f+(2*p0.y-5*p1.y+4*p2.y-p3.y)*f*f+(-p0.y+3*p1.y-3*p2.y+p3.y)*f*f*f),.5*((2*p1.z)+(-p0.z+p2.z)*f+(2*p0.z-5*p1.z+4*p2.z-p3.z)*f*f+(-p0.z+3*p1.z-3*p2.z+p3.z)*f*f*f));
+      var K=10,D=.9;self._flyVx=(self._flyVx+(pos.x-self.camera.position.x)*K)*D;self._flyVy=(self._flyVy+(pos.y-self.camera.position.y)*K)*D;self._flyVz=(self._flyVz+(pos.z-self.camera.position.z)*K)*D;
+      self.camera.position.x+=self._flyVx*dt;self.camera.position.y+=self._flyVy*dt;self.camera.position.z+=self._flyVz*dt;
+      if(t>=1){if(this._flyLoop){self._flyVx*=1.5;self._flyVy*=1.5;self._flyVz*=1.5;this._flyP=0}else{this._fly=false;this.controls.autoRotate=this.spin;document.getElementById('btn-fly-h').className='btn btn-o';document.getElementById('btn-slower').style.display='none';document.getElementById('btn-faster').style.display='none'}}}
+    this.controls.update();
+    // POV mode: chase camera behind vehicle (zoomed out)
+    if(self.povMode){
+      var brr=self.myHeading*Math.PI/180;
+      var cx=self.tardi.group.position.x-Math.sin(brr)*self.povDist;
+      var cy=self.povDist*.6;var cz=self.tardi.group.position.z-Math.cos(brr)*self.povDist;
+      self.camera.position.lerp(new THREE.Vector3(cx,cy,cz),.04);
+      self.camera.lookAt(self.tardi.group.position.x,2,self.tardi.group.position.z);
+    }
+    // Trail recording
+    if(self.trailActive&&self.mySpeed>1){self._tf=(self._tf||0)+1;
+      self.trailPoints.push({x:self.tardi.group.position.x,y:self.tardi.group.position.y,z:self.tardi.group.position.z,time:Date.now()});
+      if(self.trailPoints.length>2000)self.trailPoints.shift()
+      if(self._tf%5===0&&self.trailPoints.length>1){
+        if(self.trailLine){self.scene.remove(self.trailLine);if(self.trailLine.geometry)self.trailLine.geometry.dispose();if(self.trailLine.material)self.trailLine.material.dispose()}
+        var pts=self.trailPoints.map(function(p){return new THREE.Vector3(p.x,p.y,p.z)});
+        var smoothed=pts;if(pts.length>3){try{var curve=new THREE.CatmullRomCurve3(pts);smoothed=curve.getPoints(Math.min(600,pts.length*2))}catch(e){}}
+        self.trailLine=new THREE.Line(new THREE.BufferGeometry().setFromPoints(smoothed),new THREE.LineBasicMaterial({color:0x00FF88,transparent:true,opacity:.9}));
+        self.scene.add(self.trailLine);
+      }
+    }
+    // BT 3D dots follow distance
+    for(var i=0;i<self.bt3dNodes.length;i++){var bn=self.bt3dNodes[i],btNode=null;for(var j=0;j<self.btNodes.length;j++){if(self.btNodes[j].addr===bn.addr){btNode=self.btNodes[j];break}}if(btNode){bn.dist=bn.dist*.9+btNode.dist*.1;bn.dot.position.set(Math.cos(bn.angle)*bn.dist,0,Math.sin(bn.angle)*bn.dist)}}
+    for(var i=0;i<self.bt3dNodes.length;i++){var bn=self.bt3dNodes[i];if(bn.dot&&bn.dot.material)bn.dot.material.opacity=.35+.25*Math.sin(now*(.001+.0003*(i%7))+bn.angle+(i*1.3))}
+    this.composer.render();
+  }
+};
+const UI2={t:false,toggle(){this.t=!this.t;document.getElementById('hud-left2').style.transform=this.t?'translateX(calc(-100% + 22px))':'translateX(0)'}};
+const UI3={t:false,toggle(){this.t=!this.t;document.getElementById('hud-bt').style.transform=this.t?'translateX(calc(-100% + 16px))':'translateX(0)'}};
+
+const UI={hidden:false,lT:false,rT:false,tA:false,
+  setInsets(sb,nb){document.getElementById('hdr').style.paddingTop=(parseInt(sb,10)+10)+'px'},
+  toggleLeft(){this.lT=!this.lT;document.getElementById('hud-left').style.transform=this.lT?'translateX(calc(-100% + 28px))':'translateX(0)'},
+  toggleRight(){this.rT=!this.rT;document.getElementById('hud-right').style.transform=this.rT?'translateX(calc(100% - 28px))':'translateX(0)'},
+  tuckToggle(){this.tA=!this.tA;var l=document.getElementById('hud-left'),r=document.getElementById('hud-right');if(this.tA){this.lT=true;this.rT=true;l.style.transform='translateX(calc(-100% + 28px))';r.style.transform='translateX(calc(100% - 28px))';document.getElementById('btn-tuck').textContent='UNTUCK'}else{this.lT=false;this.rT=false;l.style.transform='translateX(0)';r.style.transform='translateX(0)';document.getElementById('btn-tuck').textContent='TUCK'}}
+};
+window.addEventListener('DOMContentLoaded',function(){Bounce.init()});
+setTimeout(function(){
+  setInterval(function(){
+    var listR=document.getElementById('wifi-scanner-list');
+    var list2=document.getElementById('scan2-list');
+    if(!Bounce.realNodes)return;
+    var h='';Bounce.realNodes.sort(function(a,b){return a.dist-b.dist});
+    for(var i=0;i<Math.min(Bounce.realNodes.length,12);i++){var n=Bounce.realNodes[i];var c=n.reliable?'#00FF88':(n.persist>30?'#4488FF':'#a855f7');h+='<li style="color:'+c+';padding:1px 0;border-bottom:1px solid rgba(255,102,0,.05)">'+n.ssid+' <span style="color:#FF6600;font-size:7px">'+n.rssi+'dBm</span> <span style="color:#4488FF;font-size:7px">'+n.dist+'m</span></li>'}
+    if(listR)listR.innerHTML=h||'<li style="color:#6b7280">waiting...</li>';
+    if(list2)list2.innerHTML=h||'<li style="color:#FF8800">waiting...</li>';
+    var bl=document.getElementById('bt-list');
+    if(bl&&Bounce.btNodes&&Bounce.btNodes.length>0){
+      var bh='';Bounce.btNodes.sort(function(a,b){return a.dist-b.dist});
+      for(var i=0;i<Math.min(Bounce.btNodes.length,8);i++){var n=Bounce.btNodes[i];bh+='<li style="color:#4488FF;padding:1px 0;display:flex;justify-content:space-between"><span>'+n.name.substring(0,12)+'</span><span style="color:#FF6600;font-size:7px">'+n.rssi+'dBm</span><span style="color:#4488FF;font-size:7px">'+n.dist+'m</span></li>'}
+      bl.innerHTML=bh;
+    }else if(bl){bl.innerHTML='<li style="color:#6b7280">no BT devices</li>'}
+  },500);
+},3000);
+</script>
+
+
+<style>
+#lock-overlay{position:fixed;top:0;left:0;width:100vw;height:100vh;z-index:100;background:rgba(0,0,0,0);pointer-events:all;display:none}
+#lock-btn-l{position:fixed;top:10px;left:10px;width:60px;height:60px;border-radius:50%;z-index:101;background:rgba(0,255,136,.2);border:2px solid rgba(0,255,136,.5);color:#00FF88;font-size:10px;font-weight:700;display:none;cursor:pointer;align-items:center;justify-content:center}
+#lock-btn-r{position:fixed;top:10px;right:10px;width:60px;height:60px;border-radius:50%;z-index:101;background:rgba(0,255,136,.2);border:2px solid rgba(0,255,136,.5);color:#00FF88;font-size:10px;font-weight:700;display:none;cursor:pointer;align-items:center;justify-content:center}
+</style>
+<div id="lock-overlay"></div>
+<button id="lock-btn-l">UNLOCK</button>
+<button id="lock-btn-r">UNLOCK</button>
+<script>
+var LockScreen={active:false,lPressed:false,rPressed:false,
+  enable(){this.active=true;document.getElementById('lock-overlay').style.display='block';
+    document.getElementById('lock-btn-l').style.display='flex';document.getElementById('lock-btn-r').style.display='flex';
+    document.getElementById('btn-lock').textContent='LOCKED';this.lPressed=false;this.rPressed=false},
+  tryUnlock(side){
+    if(side==='L')this.lPressed=true;else this.rPressed=true;
+    if(this.lPressed&&this.rPressed){this.active=false;
+      document.getElementById('lock-overlay').style.display='none';
+      document.getElementById('lock-btn-l').style.display='none';document.getElementById('lock-btn-r').style.display='none';
+      document.getElementById('btn-lock').textContent='LOCK';this.lPressed=false;this.rPressed=false}
+    setTimeout(function(){LockScreen.lPressed=false;LockScreen.rPressed=false},500)},
+};
+document.getElementById('lock-btn-l').addEventListener('pointerdown',function(e){e.preventDefault();LockScreen.tryUnlock('L')});
+document.getElementById('lock-btn-r').addEventListener('pointerdown',function(e){e.preventDefault();LockScreen.tryUnlock('R')});
+</script>
+</body>
+</html>
