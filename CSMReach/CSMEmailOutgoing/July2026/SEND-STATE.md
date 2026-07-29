@@ -261,3 +261,51 @@
 *Updated 2026-07-29T00:30Z with comprehensive bounce analysis*
 *For use by csm-email-sender.py auto-resume capability*
 *All email addresses and personal names replaced with organization abbreviations per privacy protocol*
+---
+## MASTER RECIPIENT LIST (Updated 2026-07-29 04:35)
+
+### Hotmail AegisC Sends (384 in last 500, ~388 total campaign)
+| Email | Last Subject | Sent | Attachments |
+|-------|--------------|------|-------------|
+| media@stanford.edu | Infrastructure Resilience — Aegis-C Shielding Data for Stanford | 2026-07-29T00:55:12Z | ✅ |
+| media@asme.org | Infrastructure Resilience — Aegis-C Shielding Data for ASME | 2026-07-29T00:55:10Z | ✅ |
+| media@awea.org | Infrastructure Resilience — Aegis-C Shielding Data for AWEA | 2026-07-29T00:55:08Z | ✅ |
+| media@ferc.gov | Infrastructure Resilience — Aegis-C Shielding Data for FERC | 2026-07-29T00:55:06Z | ✅ |
+| media@hud.gov | Infrastructure Resilience — Aegis-C Shielding Data for HUD | 2026-07-29T00:55:04Z | ✅ |
+| media@gsa.gov | Infrastructure Resilience — Aegis-C Shielding Data for GSA | 2026-07-29T00:55:02Z | ✅ |
+| media@state.gov | Infrastructure Resilience — Aegis-C Shielding Data for State | 2026-07-29T00:55:00Z | ✅ |
+| media@va.gov | Infrastructure Resilience — Aegis-C Shielding Data for VA | 2026-07-29T00:54:58Z | ✅ |
+| media@blm.gov | Infrastructure Resilience — Aegis-C Shielding Data for BLM | 2026-07-29T00:54:56Z | ✅ |
+| media@governor.michigan.gov | Infrastructure Resilience — Aegis-C Shielding Data for Michigan | 2026-07-29T00:54:54Z | ✅ |
+| ... | ... (374 more) | ... | ... |
+
+### Zirconia AegisC Sends (93 in last 500, ~20 campaign drafts + earlier)
+| Email | Last Subject | Sent |
+|-------|--------------|------|
+| media@austin-health.gov | Infrastructure Resilience — Aegis-C for Austin-Health | 2026-07-29T01:12:07Z |
+| media@jacksonville-health.gov | Infrastructure Resilience — Aegis-C for Jacksonville-Health | 2026-07-29T01:12:05Z |
+| media@sf-health.gov | Infrastructure Resilience — Aegis-C for SF-Health | 2026-07-29T01:12:03Z |
+| media@seattle-king-health.gov | Infrastructure Resilience — Aegis-C for Seattle-King-Health | 2026-07-29T01:12:01Z |
+| media@denver-health.gov | Infrastructure Resilience — Aegis-C for Denver-Health | 2026-07-29T01:11:59Z |
+| media@boston-health.gov | Infrastructure Resilience — Aegis-C for Boston-Health | 2026-07-29T01:11:57Z |
+| media@detroit-health.gov | Infrastructure Resilience — Aegis-C for Detroit-Health | 2026-07-29T01:11:55Z |
+| media@memphis-health.gov | Infrastructure Resilience — Aegis-C for Memphis-Health | 2026-07-29T01:11:53Z |
+| media@louisville-health.gov | Infrastructure Resilience — Aegis-C for Louisville-Health | 2026-07-29T01:11:51Z |
+| media@baltimore-health.gov | Infrastructure Resilience — Aegis-C for Baltimore-Health | 2026-07-29T01:11:49Z |
+| ... | ... (83 more) | ... |
+
+### Combined Stats
+| Metric | Count |
+|--------|-------|
+| Hotmail Unique Recipients | ~194 (2 per org × 97 orgs) |
+| Zirconia Unique Recipients | ~20 (2 per org × 10 orgs) |
+| **Total Unique Recipients** | **~214** |
+| **Total AegisC Sends** | **~408** |
+| FundRaisingContacts Research Drafts | **5** |
+| FundRaisingContacts Folder ID | AAMkAGI3NGFjYzg4LTc3ZjctNDFlNC1hM2U1LTQ5YTA5MDliZDk0YwAuAAAAAAAe3LK_HiAnQ5bt_iTJ4aPCAQD4yrgtyCB-S4agEHXKN3NsAAAQXvShAAA= |
+| FundRaisingContacts Folder Name | Campaign-CC-Archive (Zirconia) |
+
+---
+
+## FUNDRAISING RESEARCH — 5 GRANT EXTENDERS IDENTIFIED
+---
