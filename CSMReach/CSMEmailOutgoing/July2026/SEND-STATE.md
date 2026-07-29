@@ -7,7 +7,73 @@
 ## CAMPAIGN STATUS
 
 | Field | Value |
-|-------|-------|
+|---
+---
+## BOUNCE CLEANUP LOG (2026-07-29 04:16)
+
+| Metric | Count |
+|--------|-------|
+| Total bounces | 146 |
+| AegisC bounces | 53 |
+| Other bounces | 93 |
+| Moved to basketballs | 146 |
+
+### Top Bounced Domains
+| gmail.com | 9 |
+| hotmail.com | 7 |
+| cognizant.com | 6 |
+| nscc.ca | 4 |
+| aikidojapantown.com | 4 |
+| yahoo.com | 4 |
+| antikytherian.com | 3 |
+| softhq.com | 3 |
+| nvidia.com | 3 |
+| texas.edu | 2 |
+| hitachi.com | 2 |
+| skinnovation.com | 2 |
+| governor.idaho.gov | 2 |
+| governor.nevada.gov | 2 |
+| gov.st | 2 |
+| mitsubishi.com | 2 |
+| petrole.gouv.td | 2 |
+| gouvernement.dj | 2 |
+| minee.cm | 2 |
+| energy-slovakia.org | 2 |
+
+### Bounced Emails
+| 2013171@cognizant.com | 6 |
+| Doug.Crowell@nscc.ca | 4 |
+| SGupca@hotmail.com | 4 |
+| sensei@aikidojapantown.com | 4 |
+| jsnb76@antikytherian.com | 3 |
+| shubham.kukreti@quantumworld.us | 2 |
+| wasimrehman@softhq.com | 2 |
+| miesha.brodsky@ciao-group.com | 2 |
+| support@starlink.com | 2 |
+| haggis@cesium.com | 2 |
+| johnhaggis@nevro.com | 2 |
+| gabriel.herrerra408@gmail.com | 2 |
+| bradbond@nvidia.com | 2 |
+| fgbuttle@franklincountyohio.com | 2 |
+| wakeasault@yahoo.com | 2 |
+| Thesynapsemail@gmail.com | 2 |
+| Patrick.lownet@Techworkers.com | 2 |
+| Patrick.lownet@Techworkrs.com | 2 |
+| claire@goodtimes.sc | 2 |
+| jwhite@santacruzsentinel.com | 2 |
+| khamerz@yahoo.com | 2 |
+| someone@example.com | 2 |
+| oberon@anitikytherian.com | 2 |
+| oberon@tardigradia.com | 2 |
+| jasonbrodsky@hotmail.com | 2 |
+| media@illinois.edu | 1 |
+| media@texas.edu | 1 |
+| news@texas.edu | 1 |
+| media@hitachi.com | 1 |
+| press@hitachi.com | 1 |
+
+---
+----|-------|
 | Total emails in campaign plan | 225 |
 | **Actually Sent (tracked)** | **~80** |
 | Emails sent with full 9-paragraph body + PDFs | ~40 |
