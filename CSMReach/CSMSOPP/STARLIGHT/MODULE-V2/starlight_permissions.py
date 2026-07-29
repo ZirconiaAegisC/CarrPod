@@ -10,6 +10,8 @@ RULES — DO NOT BREAK:
   ⚖️  LEGAL/LEGISLATIVE → Human-in-the-loop MANDATORY
   ❌ NEVER conflate CREATE permission with SEND permission
   ❌ NEVER send without the exact word "send" or "sent" from user
+  📧 ONLY SEND FROM jasonbrodsky@hotmail.com — NEVER from zirconia@aegisc.space or any other account
+  👤 JASON BRODSKY IS HELD RESPONSIBLE for every email sent — ALWAYS ask before sending
   
 CHECKPOINT:
   After every creation batch, print:
@@ -21,6 +23,8 @@ SESSION RULES LEARNED (July 19, 2026):
   2. Auto-pilot mode ends when user says "pause" or "wait"
   3. When in doubt, put it in drafts and ASK
   4. This script must be imported before any send operation
+  5. ONLY hotmail account (jasonbrodsky@hotmail.com) may send emails
+  6. User must explicitly authorize EACH send — Jason is responsible for all content
 """
 import sys
 
